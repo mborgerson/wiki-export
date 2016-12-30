@@ -32,6 +32,7 @@ Development
     -   [NV2A/Fixed Function
         Pipeline](/wiki/NV2A/Fixed_Function_Pipeline "wikilink")
     -   [NV2A/Vertex Shader](/wiki/NV2A/Vertex_Shader "wikilink")
+    -   [NV2A/Surface Formats](/wiki/NV2A/Surface_Formats "wikilink")
 
 [Chihiro](http://segaretro.org/Sega_Chihiro)
 

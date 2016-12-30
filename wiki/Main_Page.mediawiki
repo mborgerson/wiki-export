@@ -23,6 +23,7 @@ Development
 ** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Fixed Function Pipeline]]
 ** [[NV2A/Vertex Shader]]
+** [[NV2A/Surface Formats]]
 
 [http://segaretro.org/Sega_Chihiro Chihiro]
 
