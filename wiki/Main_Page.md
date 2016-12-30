@@ -27,7 +27,7 @@ Development
 -   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 
-[Chihiro](/wiki/Chihiro "wikilink")
+[Chihiro](http://segaretro.org/Sega_Chihiro)
 
 -   [Chihiro Pictures](/wiki/Chihiro_Pictures "wikilink")
 -   [Chihiro-Tools](/wiki/Chihiro-Tools "wikilink")

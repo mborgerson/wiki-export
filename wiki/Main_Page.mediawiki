@@ -19,7 +19,7 @@ Development
 * [[Hardware revisions]]
 * [[Xbox Input Devices]]
 
-[[Chihiro]]
+[http://segaretro.org/Sega_Chihiro Chihiro]
 
 * [[Chihiro Pictures]]
 * [[Chihiro-Tools]]
