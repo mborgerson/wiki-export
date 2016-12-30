@@ -21,6 +21,7 @@ Development
 
 -   [NXDK (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
 -   [OpenXDK](/wiki/OpenXDK "wikilink")
+-   [Microsoft XDK](/wiki/Microsoft_XDK "wikilink")
 
 [Xbox](/wiki/Xbox "wikilink")
 
