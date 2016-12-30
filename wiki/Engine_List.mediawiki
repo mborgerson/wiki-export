@@ -1,0 +1,162 @@
+There might also be games which were released for Xbox 360 but not the original Xbox. I forgot to respect that with grep, so I’ll remove them manually…
+
+= GoldSrc =
+
+{|
+! Title
+|-
+| Counter-Strike
+|}
+
+= Source Engine =
+
+{|
+! Title
+|-
+| Half-Life 2
+|}
+
+= CryEngine 1 =
+
+{|
+! Title
+! Year
+! Developer
+! Publisher
+! Platform
+|-
+| Far Cry Instincts
+| 2005
+| Ubisoft Montreal
+| Ubisoft
+| Xbox
+|-
+| Far Cry Instincts: Evolution
+| 2006
+| Ubisoft Montreal
+| Ubisoft
+| Xbox
+|}
+
+= Renderware =
+
+{|
+!width="10%"| Title
+!width="8%"| Year
+!width="13%"| Platform
+!width="27%"| Publisher/Developer
+|-
+| AFL Live 2003
+| 2002
+| PlayStation 2, Xbox, PC
+| IR Gurus
+|-
+| AFL Live 2004
+| 2003
+| PlayStation 2, Xbox, PC
+| IR Gurus
+|-
+| AFL Live Premiership Edition
+| 2004
+| PlayStation 2, Xbox, PC
+| IR Gurus
+|-
+| Battlefield 2: Modern Combat
+| 2005
+| PlayStation 2, Xbox, Xbox 360
+| Digital Illusions CE
+|-
+| Black
+| 2006
+| PlayStation 2, Xbox
+| Criterion Games/Electronic Arts
+|-
+| Blitz: The League
+| 2005
+| PlayStation 2, Xbox, Xbox 360, PSP
+| Midway Games
+|-
+| Broken Sword: The Sleeping Dragon
+| 2003
+| PlayStation 2, PC, Xbox
+| The Adventure Company, THQ
+|-
+| Burnout
+| 2001
+| GameCube, PlayStation 2, Xbox
+| Criterion Games/Acclaim Entertainment
+|-
+| Burnout 2: Point of Impact
+| 2002
+| GameCube, PlayStation 2, Xbox
+| Criterion Games/Acclaim Entertainment
+|-
+| Burnout 3: Takedown
+| 2004
+| PlayStation 2, Xbox
+| Criterion Games/Electronic Arts
+|-
+| Burnout: Revenge
+| 2005
+| PlayStation 2, Xbox, Xbox 360
+| Criterion Games/Electronic Arts
+|-
+| Call of Duty: Finest Hour
+| 2004
+| GameCube, PlayStation 2, Xbox
+| Activision Publishing
+|-
+| Cold Fear
+| 2005
+| PlayStation 2, Xbox, PC
+| Darkworks, Ubisoft
+|-
+| Commandos: Strike Force
+| 2006
+| PlayStation 2, PC, Xbox
+| Eidos Interactive
+|-
+| Darkwatch
+| 2005
+| PlayStation 2, Xbox
+| Capcom
+|-
+| Dead to Rights II
+| 2005
+| PlayStation 2, Xbox, PC
+| WideScreen Games, Namco Hometek
+|-
+| Evil Dead: Regeneration
+| 2005
+| PlayStation 2, Xbox, PC
+| Cranky Pants Games, THQ
+|-
+| Gauntlet: Seven Sorrows
+| 2005
+| PlayStation 2, Xbox, Xbox 360
+| Midway Home Entertainment Inc.
+|-
+| Grand Theft Auto III
+| 2001
+| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Mac OS X, IOS, Android, Fire OS
+| Rockstar Games, Take-Two Interactive
+|-
+| Grand Theft Auto: Vice City
+| 2002
+| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Mac OS X, IOS, Android, Fire OS
+| Rockstar Games, Take-Two Interactive
+|-
+| Grand Theft Auto: San Andreas
+| 2004
+| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Xbox 360, Mac OS X, IOS, Android, Windows Phone, Fire OS
+| Rockstar Games, Take-Two Interactive
+|-
+| Harry Potter and the Prisoner of Azkaban
+| 2004
+| PlayStation 2, GameCube, Xbox, PC, GBA
+| Electronic Arts
+|-
+| Harry Potter and the Goblet of Fire
+| 2005
+| Nintendo DS, PlayStation 2, PSP, GameC
+|}
