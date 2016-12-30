@@ -7,7 +7,15 @@ layout: wiki
 xboxdevwiki.net
 ---------------
 
-Chat with us in \#xqemu on freenode.
+Please help us fix this mess. This is an effort to document how the
+original Microsoft Xbox and the SEGA Chihiro work. We not only care
+about technical details about those platforms, but also how to develop
+homebrew and emulate them.
+
+If you are interested in helping or discussing this, please come chat
+with us in \#xqemu on freenode.
+
+------------------------------------------------------------------------
 
 Development
 
@@ -36,6 +44,8 @@ Emulation / Emulators
 -   [kvmbox](kvmbox "wikilink")
 -   [MAME/Chihiro](/wiki/MAME/Chihiro "wikilink")
 -   [MAME/Xbox](/wiki/MAME/Xbox "wikilink")
+
+Find random stuff in [Resources](/wiki/Resources "wikilink")
 
 Getting started
 ---------------
