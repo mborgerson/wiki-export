@@ -13,3 +13,9 @@ There was a demo released for ??? on ???.
 
 This is a rundown of how the scene is being rendered in the THPS2X Demo
 version
+
+#### World
+
+#### Skater
+
+#### HUD
