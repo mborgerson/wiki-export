@@ -43,6 +43,11 @@ Development
 
 Games
 
+-   [Games/Grand Theft Auto 3](/wiki/Games/Grand_Theft_Auto_3 "wikilink")
+-   [Games/Grand Theft Auto Vice
+    City](/wiki/Games/Grand_Theft_Auto_Vice_City "wikilink")
+-   [Games/Grand Theft Auto San
+    Andreas](/wiki/Games/Grand_Theft_Auto_San_Andreas "wikilink")
 -   [Games/Tony Hawk's Pro Skater
     2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
 

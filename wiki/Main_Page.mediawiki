@@ -34,6 +34,9 @@ Development
 
 Games
 
+* [[Games/Grand Theft Auto 3]]
+* [[Games/Grand Theft Auto Vice City]]
+* [[Games/Grand Theft Auto San Andreas]]
 * [[Games/Tony Hawk's Pro Skater 2x]]
 
 Emulation / Emulators
