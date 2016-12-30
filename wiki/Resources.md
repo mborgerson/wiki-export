@@ -14,4 +14,6 @@ Random resources about xbox hacking
     360](http://michaelbrundage.com/project/xbox-360-emulator/)
 -   [More information about the original Xbox emulator in the Xbox
     360](http://michaelbrundage.com/note/2005/05/15/xbox-360-emulator/)
+-   [Bunnies “Hacking the Xbox” e-book for
+    free](https://www.nostarch.com/xboxfree)
 
