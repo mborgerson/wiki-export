@@ -21,3 +21,48 @@ version
 Shader:
 
 #### HUD
+
+#### Shadow
+
+##### Skater
+
+Skater shadows are rendered into a 256x256 texture after the entire
+scene has been rendered
+
+###### Shader
+
+<code>
+
+` /* Slot 0: 0x00000000 0x007002AA 0x0C361400 0x28200FF8 */`  
+` ADD(R2,x, c[128].z, -v1.x);`  
+` /* Slot 1: 0x00000000 0x00CC001B 0x0836186C 0x28300FF8 */`  
+` DPH(R3,x, v0, c[96]);`  
+` /* Slot 2: 0x00000000 0x00CC201B 0x0836186C 0x24300FF8 */`  
+` DPH(R3,y, v0, c[97]);`  
+` /* Slot 3: 0x00000000 0x00CC401B 0x0836186C 0x22300FF8 */`  
+` DPH(R3,z, v0, c[98]);`  
+` /* Slot 4: 0x00000000 0x00CC601B 0x0836186C 0x28400FF8 */`  
+` DPH(R4,x, v0, c[99]);`  
+` /* Slot 5: 0x00000000 0x00CC801B 0x0836186C 0x24400FF8 */`  
+` DPH(R4,y, v0, c[100]);`  
+` /* Slot 6: 0x00000000 0x00CCA01B 0x0836186C 0x22400FF8 */`  
+` DPH(R4,z, v0, c[101]);`  
+` /* Slot 7: 0x00000000 0x0040021A 0x3400106C 0x2E500FF8 */`  
+` MUL(R5,xyz, R3.xyz, v1.x);`  
+` /* Slot 8: 0x00000000 0x0080001A 0x44004869 0x5E600FF8 */`  
+` MAD(R6,xyz, R4.xyz, R2.x, R5.xyz);`  
+` /* Slot 9: 0x00000000 0x00CEA01B 0x6436186C 0x20708800 */`  
+` DPH(oPos,x, R6, c[117]);`  
+` /* Slot 10: 0x00000000 0x00CEC01B 0x6436186C 0x20704800 */`  
+` DPH(oPos,y, R6, c[118]);`  
+` /* Slot 11: 0x00000000 0x00CEE01B 0x6436186C 0x20702800 */`  
+` DPH(oPos,z, R6, c[119]);`  
+` /* Slot 12: 0x00000000 0x00CF001B 0x6436186C 0x20701800 */`  
+` DPH(oPos,w, R6, c[120]);`  
+` /* Slot 13: 0x00000000 0x0647401B 0xC4361BFF 0x1078E800 */`  
+` MUL(oPos,xyz, R12, c[58]);`  
+` RCC(R1,x, R12.w);`  
+` /* Slot 14: 0x00000000 0x0087601B 0xC400286C 0x3070E801 */`  
+` MAD(oPos,xyz, R12, R1.x, c[59]);`
+
+</code>
