@@ -1,10 +1,22 @@
 == xboxdevwiki.net ==
 
+Chat with us in #xqemu on freenode.
 
 Development
 
 * [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
 * [[OpenXDK]]
+
+[[Xbox]]
+
+* [[Hardware revisions]]
+* [[Xbox Input Devices]]
+
+[[Chihiro]]
+
+* [[Chihiro Pictures]]
+* [[Chihiro-Tools]]
+* [[Chihiro-Launcher]]
 
 Emulation / Emulators
 
@@ -19,6 +31,7 @@ Emulation / Emulators
 * [[MAME/Xbox]]
 
 == Getting started ==
+
 * [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Configuration settings list]
 * [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
 * [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]

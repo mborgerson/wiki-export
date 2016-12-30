@@ -7,10 +7,23 @@ layout: wiki
 xboxdevwiki.net
 ---------------
 
+Chat with us in \#xqemu on freenode.
+
 Development
 
 -   [NXDK (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
 -   [OpenXDK](/wiki/OpenXDK "wikilink")
+
+[Xbox](/wiki/Xbox "wikilink")
+
+-   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
+-   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
+
+[Chihiro](/wiki/Chihiro "wikilink")
+
+-   [Chihiro Pictures](/wiki/Chihiro_Pictures "wikilink")
+-   [Chihiro-Tools](/wiki/Chihiro-Tools "wikilink")
+-   [Chihiro-Launcher](/wiki/Chihiro-Launcher "wikilink")
 
 Emulation / Emulators
 
