@@ -7,8 +7,22 @@ layout: wiki
 xboxdevwiki.net
 ---------------
 
+Development
+
+-   [NXDK (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
+-   [OpenXDK](/wiki/OpenXDK "wikilink")
+
+Emulation / Emulators
+
 -   [xqemu Xbox emulator](http://xqemu.com)
--   [New Xbox Development Kit](https://github.com/xqemu/nxdk)
+-   [cxbx-reloaded](cxbx-reloaded "wikilink")
+-   [cxbx](cxbx "wikilink")
+-   [dxbx](dxbx "wikilink")
+-   [Xeon](/wiki/Xeon "wikilink")
+-   [Hackbox](/wiki/Hackbox "wikilink")
+-   [kvmbox](kvmbox "wikilink")
+-   [MAME/Chihiro](/wiki/MAME/Chihiro "wikilink")
+-   [MAME/Xbox](/wiki/MAME/Xbox "wikilink")
 
 Getting started
 ---------------
