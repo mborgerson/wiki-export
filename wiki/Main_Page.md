@@ -4,11 +4,11 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
-<strong>MediaWiki has been installed.</strong>
+xboxdevwiki.net
+---------------
 
-Consult the [User's
-Guide](https://meta.wikimedia.org/wiki/Help:Contents) for information on
-using the wiki software.
+-   [xqemu Xbox emulator](http://xqemu.com)
+-   [New Xbox Development Kit](https://github.com/xqemu/nxdk)
 
 Getting started
 ---------------

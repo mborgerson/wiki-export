@@ -1,6 +1,7 @@
-<strong>MediaWiki has been installed.</strong>
+== xboxdevwiki.net ==
 
-Consult the [https://meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
+* [http://xqemu.com xqemu Xbox emulator]
+* [https://github.com/xqemu/nxdk New Xbox Development Kit]
 
 == Getting started ==
 * [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Configuration settings list]
