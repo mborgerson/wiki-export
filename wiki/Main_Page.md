@@ -41,6 +41,11 @@ Development
 -   [Chihiro-Tools](/wiki/Chihiro-Tools "wikilink")
 -   [Chihiro-Launcher](/wiki/Chihiro-Launcher "wikilink")
 
+Games
+
+-   [Games/Tony Hawk's Pro Skater
+    2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
+
 Emulation / Emulators
 
 -   [xqemu Xbox emulator](http://xqemu.com)
