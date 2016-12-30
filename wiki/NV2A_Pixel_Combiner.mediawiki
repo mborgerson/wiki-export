@@ -1,0 +1,3 @@
+== Debugging ==
+
+PIX from the Microsoft XDK provides great debugging capabilities.
