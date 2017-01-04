@@ -4,6 +4,12 @@ permalink: wiki/NV2A/Vertex_Shader/
 layout: wiki
 ---
 
+The Xbox implements
+<https://www.opengl.org/registry/specs/NV/vertex_program.txt> and
+<https://www.opengl.org/registry/specs/NV/vertex_program1_1.txt> This
+article will mainly focus on actual encoding on hardware as the
+behaviour is mostly outlined in those GL extensions already.
+
 Registers
 ---------
 
