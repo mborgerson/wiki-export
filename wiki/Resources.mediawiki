@@ -5,3 +5,4 @@ Random resources about xbox hacking
 * [http://michaelbrundage.com/project/xbox-360-emulator/ Michael Brundages page about the original Xbox emulator in the Xbox 360]
 * [http://michaelbrundage.com/note/2005/05/15/xbox-360-emulator/ More information about the original Xbox emulator in the Xbox 360]
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
+* [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]

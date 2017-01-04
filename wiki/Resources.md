@@ -16,4 +16,6 @@ Random resources about xbox hacking
     360](http://michaelbrundage.com/note/2005/05/15/xbox-360-emulator/)
 -   [Bunnies “Hacking the Xbox” e-book for
     free](https://www.nostarch.com/xboxfree)
+-   [List of original Xbox DVD
+    drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
 
