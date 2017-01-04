@@ -48,6 +48,7 @@ Games
     City](/wiki/Games/Grand_Theft_Auto_Vice_City "wikilink")
 -   [Games/Grand Theft Auto San
     Andreas](/wiki/Games/Grand_Theft_Auto_San_Andreas "wikilink")
+-   [Games/Kung Fu Chaos](/wiki/Games/Kung_Fu_Chaos "wikilink")
 -   [Games/Tony Hawk's Pro Skater
     2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
 
