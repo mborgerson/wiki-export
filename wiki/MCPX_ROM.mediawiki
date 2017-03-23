@@ -4,9 +4,11 @@ The purpose of the MCPX ROM is to setup the GPT table, enter 32 bit mode, Enable
 
 This is no mean feat. In the event of failure, or shortly after the 2BL execution has started, the Xbox executes the following codes:
 
-<code>mov eax,0x80000880
+<pre>
+mov eax,0x80000880
 mov dx,0xcf8
-out dx,eax</code>
+out dx,eax
+</pre>
 
 This turns off the MCPX ROM, making it invisible to anything trying to read it. See [MCPX Dumping] for more details.
 

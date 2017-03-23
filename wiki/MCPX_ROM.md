@@ -20,7 +20,9 @@ Dumping the MCPX ROM
 This is no mean feat. In the event of failure, or shortly after the 2BL
 execution has started, the Xbox executes the following codes:
 
-`mov eax,0x80000880` `mov dx,0xcf8` `out dx,eax`
+    mov eax,0x80000880
+    mov dx,0xcf8
+    out dx,eax
 
 This turns off the MCPX ROM, making it invisible to anything trying to
 read it. See \[MCPX Dumping\] for more details.
