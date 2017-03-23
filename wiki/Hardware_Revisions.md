@@ -15,7 +15,7 @@ There are 7 Xbox revisions
 -   MCPX 1.0 ROM
 -   Thomson DVD Drive
 -   Seagate Hard Drive
--   Conexant \[Video Chip\]
+-   Conexant [Video Chip](/wiki/Video_Chip "wikilink")
 
 1.1
 ---
