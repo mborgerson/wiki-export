@@ -32,10 +32,10 @@ from BIOS to BIOS, but with some differences.
 From 0x00000000 - 0x000000079
 
 Not sure what this does. Some people think it might be involved with
-initialising the \]\[MCPX ROM\]\], but I don't know. The Reset Vector on
-the Pentium 3 would mean that this wasn't called before the MCPX ROM,
-but I'm guessing there are people out there who know a lot more about it
-than me.
+initialising the [MCPX ROM](/wiki/MCPX_ROM "wikilink"), but I don't know. The
+Reset Vector on the Pentium 3 would mean that this wasn't called before
+the MCPX ROM, but I'm guessing there are people out there who know a lot
+more about it than me.
 
 ### xcodes
 
