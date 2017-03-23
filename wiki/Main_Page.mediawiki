@@ -22,7 +22,7 @@ Development
 
 * [[Hardware revisions]]
 ** [[BIOS]]
-** [[MCPX]]
+** [[MCPX]] [[MCPX ROM|(ROM)]]
 * [[Xbox Input Devices]]
 * [[Operating System]]
 * [[NV2A]]
