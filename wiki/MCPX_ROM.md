@@ -65,3 +65,10 @@ The MCPX turns itself off when there is an error and then jumps to
 0x000001FA. This is technically in the BIOS (there is no MCPX to read
 from any more), but the code is still relevant. It pretty much just
 makes the LEDs flash and hang.
+
+References
+----------
+
+-   [Deconstructing the Xbox Boot
+    ROM](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
+
