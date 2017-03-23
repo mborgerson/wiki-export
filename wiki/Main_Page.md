@@ -31,7 +31,7 @@ Development
 [Xbox](/wiki/Xbox "wikilink")
 
 -   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
-    -   [Bios](/wiki/Bios "wikilink")
+    -   [BIOS](/wiki/BIOS "wikilink")
     -   [MCPX](/wiki/MCPX "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [Operating System](/wiki/Operating_System "wikilink")
