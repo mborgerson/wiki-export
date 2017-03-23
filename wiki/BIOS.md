@@ -90,8 +90,9 @@ Still need to analyse
 
 ### Decoy bootloader
 
-This is very similar to the \[MCPX ROM\], only the xcode interpreter is
-different, and it doesn't include any decryption/hashing algorithms.
+This is very similar to the [MCPX ROM](/wiki/MCPX_ROM "wikilink"), only the
+xcode interpreter is different, and it doesn't include any
+decryption/hashing algorithms.
 
 Known Retail BIOSs
 ------------------
