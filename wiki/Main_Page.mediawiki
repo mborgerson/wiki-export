@@ -21,6 +21,7 @@ Development
 [[Xbox]]
 
 * [[Hardware revisions]]
+** [[Memory]]
 ** [[BIOS]]
 ** [[MCPX]] [[MCPX ROM|(ROM)]]
 * [[Xbox Input Devices]]
