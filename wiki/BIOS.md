@@ -106,6 +106,11 @@ Known Retail BIOSs
 -   5713
 -   5838
 
+See Also
+--------
+
+[BIOS Dumping](/wiki/BIOS_Dumping "wikilink")
+
 References
 ----------
 

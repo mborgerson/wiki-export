@@ -79,6 +79,10 @@ This is very similar to the [[MCPX ROM]], only the xcode interpreter is differen
 * 5713
 * 5838
 
+== See Also ==
+
+[[BIOS Dumping]]
+
 == References ==
 
 * [http://hackspot.net/XboxBlog/?p=1 Understanding the Xbox boot process]
