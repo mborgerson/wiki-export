@@ -21,6 +21,7 @@ Development
 [[Xbox]]
 
 * [[Hardware revisions]]
+** [[CPU|CPU (Custom Pentium 3 733 MHz)]]
 ** [[Memory]]
 ** [[BIOS]]
 ** [[MCPX]] [[MCPX ROM|(ROM)]]

@@ -31,6 +31,7 @@ Development
 [Xbox](/wiki/Xbox "wikilink")
 
 -   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
+    -   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
     -   [Memory](/wiki/Memory "wikilink")
     -   [BIOS](/wiki/BIOS "wikilink")
     -   [MCPX](/wiki/MCPX "wikilink") [(ROM)](MCPX_ROM "wikilink")
