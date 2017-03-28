@@ -1,0 +1,12 @@
+---
+title: Boot Process
+permalink: wiki/Boot_Process/
+layout: wiki
+---
+
+If we wish to HLE the MCPX, then there are certain things that can be
+ignored, for example, getting the CPU to 32 bit protected mode and
+enabling caching. The pseudo code for a high level MCPX will look
+something like this:
+
+    coming soon.....
