@@ -63,9 +63,9 @@ Games
 Emulation / Emulators
 
 -   [xqemu Xbox emulator](http://xqemu.com)
--   [cxbx-reloaded](cxbx-reloaded "wikilink")
+-   [Cxbx-Reloaded](http://cxbx-reloaded.co.uk)
 -   [cxbx](cxbx "wikilink")
--   [dxbx](dxbx "wikilink")
+-   [Dxbx](http://dxbx-emu.com)
 -   [Xeon](/wiki/Xeon "wikilink")
 -   [Hackbox](/wiki/Hackbox "wikilink")
 -   [kvmbox](kvmbox "wikilink")
