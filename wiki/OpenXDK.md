@@ -10,4 +10,4 @@ years of inactivity.
 References
 ----------
 
-[1](http://openxdk.sourceforge.net/)
+[openxdk.sourceforge.net](http://openxdk.sourceforge.net/)
