@@ -51,13 +51,14 @@ Emulation / Emulators
 
 * [http://xqemu.com xqemu Xbox emulator]
 * [http://cxbx-reloaded.co.uk Cxbx-Reloaded]
-* [[cxbx]]
+* [http://www.caustik.com/cxbx/ cxbx]
 * [http://dxbx-emu.com Dxbx]
-* [[Xeon]]
-* [[Hackbox]]
-* [[kvmbox]]
-* [[MAME/Chihiro]]
-* [[MAME/Xbox]]
+* [http://www.emulator-zone.com/doc.php/xbox/xeon.html Xeon (no known official homepage)]
+* [http://ngemu.com/threads/hackbox.146461/ Hackbox]
+* [https://github.com/phire/kvmbox kvmbox]
+* [http://mamedev.org/ MAME/Chihiro]
+* [http://mamedev.org/ MAME/Xbox]
+* [https://github.com/monocasa/xbvm XBVM]
 
 
 Find random stuff in [[Resources]]
