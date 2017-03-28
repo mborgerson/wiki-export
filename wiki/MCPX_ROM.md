@@ -69,8 +69,8 @@ makes the LEDs flash and hang.
 See Also
 --------
 
--   \[MCPX 1.0\]
--   \[MCPX 1.1\]
+-   [MCPX 1.0](/wiki/MCPX_1.0 "wikilink")
+-   [MCPX 1.1](/wiki/MCPX_1.1 "wikilink")
 
 References
 ----------
