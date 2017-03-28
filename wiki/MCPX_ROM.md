@@ -66,6 +66,12 @@ The MCPX turns itself off when there is an error and then jumps to
 from any more), but the code is still relevant. It pretty much just
 makes the LEDs flash and hang.
 
+See Also
+--------
+
+-   \[MCPX 1.0\]
+-   \[MCPX 1.1\]
+
 References
 ----------
 

@@ -28,6 +28,11 @@ Because of the flaws of the previous method, Microsoft changed the way the 2BL w
 
 The MCPX turns itself off when there is an error and then jumps to 0x000001FA. This is technically in the BIOS (there is no MCPX to read from any more), but the code is still relevant. It pretty much just makes the LEDs flash and hang.
 
+== See Also ==
+
+* [MCPX 1.0]
+* [MCPX 1.1]
+
 == References ==
 
 * [https://mborgerson.com/deconstructing-the-xbox-boot-rom Deconstructing the Xbox Boot ROM]
