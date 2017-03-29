@@ -1,8 +1,8 @@
-There might also be games which were released for Xbox 360 but not the original Xbox. I forgot to respect that with grep, so I’ll remove them manually…
+There might also be games which were released for Xbox 360 but not the original Xbox. I forgot to respect that with grep, so I'll remove them manually...
 
 = GoldSrc =
 
-{|
+{| class="wikitable"
 ! Title
 |-
 | Counter-Strike
@@ -10,7 +10,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = Source Engine =
 
-{|
+{| class="wikitable"
 ! Title
 |-
 | Half-Life 2
@@ -18,7 +18,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = CryEngine 1 =
 
-{|
+{| class="wikitable"
 ! Title
 ! Year
 ! Developer
@@ -40,25 +40,25 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = Renderware =
 
-{|
-!width="10%"| Title
-!width="8%"| Year
-!width="13%"| Platform
-!width="27%"| Publisher/Developer
+{| class="wikitable"
+!width="11%"| Title
+!width="9%"| Year
+!width="15%"| Platform
+!width="30%"| Publisher/Developer
 |-
 | AFL Live 2003
 | 2002
-| PlayStation 2, Xbox, PC
+| PlayStation 2, Xbox
 | IR Gurus
 |-
 | AFL Live 2004
 | 2003
-| PlayStation 2, Xbox, PC
+| PlayStation 2, Xbox
 | IR Gurus
 |-
 | AFL Live Premiership Edition
 | 2004
-| PlayStation 2, Xbox, PC
+| PlayStation 2, Xbox
 | IR Gurus
 |-
 | Battlefield 2: Modern Combat
@@ -68,12 +68,12 @@ There might also be games which were released for Xbox 360 but not the original 
 |-
 | Black
 | 2006
-| PlayStation 2, Xbox
+| PlayStation 2, Xbox,
 | Criterion Games/Electronic Arts
 |-
 | Blitz: The League
 | 2005
-| PlayStation 2, Xbox, Xbox 360, PSP
+| PlayStation 2, Xbox
 | Midway Games
 |-
 | Broken Sword: The Sleeping Dragon
@@ -123,40 +123,489 @@ There might also be games which were released for Xbox 360 but not the original 
 |-
 | Dead to Rights II
 | 2005
-| PlayStation 2, Xbox, PC
+| PlayStation 2, Xbox
 | WideScreen Games, Namco Hometek
 |-
 | Evil Dead: Regeneration
 | 2005
-| PlayStation 2, Xbox, PC
+| PlayStation 2, Xbox, Windows
 | Cranky Pants Games, THQ
 |-
 | Gauntlet: Seven Sorrows
 | 2005
-| PlayStation 2, Xbox, Xbox 360
+| PlayStation 2, Xbox
 | Midway Home Entertainment Inc.
 |-
 | Grand Theft Auto III
 | 2001
-| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Mac OS X, IOS, Android, Fire OS
+| PlayStation 2, PlayStation 3, PC, Xbox, Mac OS X, IOS, Android
 | Rockstar Games, Take-Two Interactive
 |-
 | Grand Theft Auto: Vice City
 | 2002
-| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Mac OS X, IOS, Android, Fire OS
+| PlayStation 2, PlayStation 3, PC, Xbox, Mac OS X, IOS, Android
 | Rockstar Games, Take-Two Interactive
 |-
 | Grand Theft Auto: San Andreas
 | 2004
-| PlayStation 2, PlayStation 3, PlayStation 4, PC, Xbox, Xbox 360, Mac OS X, IOS, Android, Windows Phone, Fire OS
+| PlayStation 2, PlayStation 3, PC, Xbox, Xbox 360, Mac OS X, IOS, Android, Windows Phone, Amazon Kindle
 | Rockstar Games, Take-Two Interactive
 |-
 | Harry Potter and the Prisoner of Azkaban
 | 2004
-| PlayStation 2, GameCube, Xbox, PC, GBA
+| PlayStation 2, GameCube, Xbox
 | Electronic Arts
 |-
 | Harry Potter and the Goblet of Fire
 | 2005
-| Nintendo DS, PlayStation 2, PSP, GameC
+| Nintendo DS, PlayStation 2, PSP, GameCube, Windows, Xbox
+| Electronic Arts
+|-
+| Harry Potter and the Order of the Phoenix
+| 2007
+| Nintendo DS, PlayStation 2, PSP, Windows, Wii, Xbox
+| Electronic Arts
+|-
+| Headhunter Redemption
+| 2004
+| PlayStation 2, Xbox
+| SEGA of America
+|-
+| Hello Kitty: Roller Rescue
+| 2005
+| PlayStation 2, GameCube, Xbox, PC
+| XPEC Entertainment
+|-
+| Kill Switch
+| 2003
+| PlayStation 2, PC, Xbox
+| Hip Interactive, Namco Hometek
+|-
+| Madagascar
+| 2005
+| GameCube, PlayStation 2, PC, Xbox
+| Activision Publishing
+|-
+| Manhunt
+| 2003
+| PC, PlayStation 2, Xbox
+| Rockstar North
+|-
+| Max Payne 2: The Fall of Max Payne
+| 2003
+| PlayStation 2, Xbox
+| Rockstar Vienna
+|-
+| MLB 2K5
+| 2004
+| PlayStation 2, Xbox
+| 2K Sports
+|-
+| Mortal Kombat: Armageddon
+| 2006
+| PlayStation 2, Xbox, Wii
+| Midway Home Entertainment Inc.
+|-
+| Mortal Kombat: Deadly Alliance
+| 2002
+| Game Boy Advance, GameCube, PlayStation 2, Xbox
+| Midway
+|-
+| Mortal Kombat: Deception
+| 2004
+| GameCube, PlayStation 2, Xbox
+| Midway Home Entertainment
+|-
+| NBA Ballers
+| 2004
+| PlayStation 2, Xbox
+| Midway, Midway Games
+|-
+| NFL Blitz 20-03
+| 2002
+| PlayStation 2, GameCube, Microsoft Xbox
+| Midway
+|-
+| NRL Rugby League
+| 2003
+| PlayStation 2, PC, Xbox
+| Tru Blu Entertainment
+|-
+| ObsCure
+| 2004
+| PlayStation 2, Windows, Xbox
+| DreamCatcher Interactive, MC2 France, MC2-Microïds
+|-
+| Outlaw Golf 2
+| 2004
+| PlayStation 2, Xbox
+| Global Star Software
+|-
+| Puyo Pop Fever
+| 2004
+| PlayStation 2, GameCube, Xbox
+| SEGA
+|-
+| RoboCop
+| 2003
+| PC, PlayStation 2, Xbox
+| Titus Software
+|-
+| Rolling
+| 2003
+| PlayStation 2, Xbox
+| Rage Software
+|-
+| S.C.A.R. - Squadra Corse Alfa Romeo / Alfa Romeo Racing Italiano
+| 2005
+| PlayStation 2, Xbox, PC
+| Black Bean, Milestone
+|-
+| Secret Weapons Over Normandy
+| 2003
+| PlayStation 2, Xbox, PC
+| Lucas Arts/Totally Games
+|-
+| Shadow the Hedgehog
+| 2005
+| PlayStation 2, GameCube, Xbox
+| SEGA/Sonic Team USA
+|-
+| Sonic Heroes
+| 2003
+| PlayStation 2, GameCube, Xbox, PC
+| SEGA/Sonic Team USA
+|-
+| SpongeBob SquarePants: Battle for Bikini Bottom
+| 2003
+| GameCube, PlayStation 2, PC, Xbox
+| THQ, Heavy Iron Studios, Aspyr
+|-
+| Tech Deck: Bare Knuckle Grind
+| 2005
+| Xbox
+| Visionscape Interactive
+|-
+| Teenage Mutant Ninja Turtles: Mutant Melee
+| 2005
+| GameCube, PlayStation 2, Xbox, PC
+| Konami
+|-
+| The Incredibles: Rise of the Underminer
+| 2005
+| Mac OS X, GameCube, PlayStation 2, Windows, Xbox
+| THQ
+|-
+| The Incredibles
+| 2004
+| Mac OS X, GameCube, PlayStation 2, Windows, Xbox
+| D3 Publisher, Noviy Disk, Snowball.ru, THQ
+|-
+| The SpongeBob SquarePants Movie
+| 2005
+| GameCube, PlayStation 2, PC, Xbox
+| THQ, Aspyr, Heavy Iron Studios
+|-
+| The Warriors
+| 2005
+| PlayStation 2, Xbox
+| Rockstar Toronto, Rockstar Games
+|-
+| Tony Hawk's Pro Skater 3
+| 2001
+| GameCube, PlayStation 2, PC, Xbox
+| Neversoft, Activision
+|-
+| Tony Hawk's Pro Skater 4
+| 2002
+| GameCube, PlayStation 2, PC, Xbox
+| Neversoft, Activision
+|-
+| Total Overdose
+| 2005
+| PlayStation 2, Xbox, PC
+| SCI Games
+|-
+| Toxic Grind
+| 2002
+| Xbox
+| THQ, Blue Shift Inc.
+|-
+| Without Warning
+| 2005
+| PlayStation 2, Xbox
+| Capcom Entertainment
+|-
+| Yourself!Fitness
+| 2004
+| PlayStation 2, Xbox, PC
+| responDESIGN
 |}
+
+= Unreal Engine 1 =
+
+{| class="wikitable"
+!width="18%"| Release date
+!width="9%"| Title
+!width="9%"| Genre
+!width="13%"| Platform
+!width="14%"| Developer
+!width="14%"| Publisher
+!width="20%"| Engine Version
+|-
+| 2002/02/17
+| New Legends
+| Action-adventure
+| Xbox
+| Infinite Machine[http://www.smartcomputing.com/editorial/article.asp?article=articles/archive/g0810/029g10/29g10.asp&guid=%20this <sup>[Ref]</sup>]
+| THQ
+| UT Build 613
+|}
+
+= Unreal Engine 2 =
+
+{| class="wikitable"
+!width="18%"| Release date
+!width="9%"| Title
+!width="9%"| Genre
+!width="13%"| Platform
+!width="14%"| Developer
+!width="14%"| Publisher
+!width="20%"| Engine Version
+|-
+| 2005/05/31 - Xbox<br>2005/08/09 - PC
+| Advent Rising
+| Third person action-adventure
+| Microsoft Windows, Xbox
+| GlyphX Games
+| Majesco Entertainment
+| UE2 Build 2226
+|-
+| 2005/11/17
+| America's Army: Rise of a Soldier
+| First Person Shooter
+| Xbox
+| Secret Level
+| Ubisoft
+| UT2003 Build 928
+|-
+| 2005/10/06 - PC<br>2005/10/06 - Xbox<br>2005/10/26 - PS2
+| Brothers In Arms: Earned in Blood
+| First Person Shooter
+| Microsoft Windows,<br>Xbox, PlayStation 2
+| Gearbox Software
+| Ubisoft
+| UE2 Build 2226
+|-
+| 2005/03/01 - Xbox<br>2005/03/15 - PC<br>2005/03/15 - Xbox
+| Brothers In Arms: Road to Hill 30
+| First Person Shooter
+| Microsoft Windows,<br>Xbox, PlayStation 2
+| Gearbox Software
+| Ubisoft
+| UE2 Build 2226
+|-
+| 2005/03/23 - PC<br>2005/03/23 - Xbox<br>2006/01/26 - Europe(PC)
+| Combat: Task Force 121<br>America's Secret Operations(City Interactive Europe version)
+| First-person shooter
+| Microsoft Windows, Xbox
+| Direct Action Games[http://www.xgpgaming.com/news/news.php?id=1216%20XGP%20Gaming:%20Combat:%20Task%20Force%20121%20Announced <sup>[Ref]</sup>][http://www.extremegamer.ca/xbox/games/combat121.php <sup>[Ref]</sup>]
+| Groove Games
+| UE2 Build 2110
+|-
+| 2004/03/03 - Xbox<br>2004/03/18 - PC
+| Dead Man's Hand
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Human Head Studios
+| Atari
+| UE2 Build 2110
+|-
+| 2003/12/02
+| Deus Ex: Invisible War
+| Action role-playing game
+| Microsoft Windows, Xbox
+| Ion Storm Inc.
+| Eidos Interactive
+| Warfare Build 777
+|-
+| 2005/10/20 - PC<br>2005/10/26 - Xbox
+| Land of the Dead: Road to Fiddler's Green
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Brainbox Games
+| Groove Games
+| UE2 BUild 2226
+|-
+| 2003/11/18
+| Magic: The Gathering - Battlegrounds
+| Fighting
+| Microsoft Windows, Xbox
+| Secret Level
+| Atari
+| Warfare Build 926
+|-
+| 2004/10/19 - Xbox<br>2004/10/26 - PC
+| Men of Valor: Vietnam
+| First Person Shooter
+| Microsoft Windows, Xbox
+| 2015, Inc.
+| Vivendi Universal Games
+| Warfare Build 926
+|-
+| 2006/09/19 - PC<br>2006/09/19 - Xbox<br>2006/09/19 - Xbox 360<br>2006/09/19 - PS2<br>2006/09/19 - PS3<br>2006/09/19 - PSP<br>2006/09/19 - GC<br>2006/11/30 - Wii
+| Open Season
+| Action-adventure
+| Microsoft Windows,<br>Xbox, PlayStation 2,<br>Xbox 360,<br>GameCube, Wii,<br> PlayStation Portable
+| Ubisoft Montreal(PC and Consoles),<br>Ubisoft Quebec(PSP)
+| Ubisoft
+| Warfare Build 927
+|-
+| 2005/05/03
+| Pariah
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Digital Extremes[http://web.archive.org/web/20080223094646/http://www.pcauthority.com.au/review.aspx?CIaRID=2691%20Pariah%20-%20Games%20-%20Review%20-%20www.pcauthority.com.au <sup>[Ref]</sup>][http://pc.ign.com/objects/665/665243.html <sup>[Ref]</sup>]
+| Groove Games
+| UT2003 Build 928 with some UE2.5 code
+|-
+| 2004/06/15 - Xbox<br>2004/09/21 - PC
+| Shadow Ops: Red Mercury
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Zombie Studios
+| Atari
+| UE2 Build 2110
+|-
+| 2005/03/01
+| Star Wars: Republic Commando
+| First Person Shooter
+| Microsoft Windows, Xbox
+| LucasArts[http://pc.ign.com/objects/566/566923.html%20IGN:%20Star%20Wars%20Republic%20Commando <sup>[Ref]</sup>]</ref>[http://web.archive.org/web/20060530190850/http://www.gameaxis.com/articles/view.gax?id=530&gid=884 <sup>[Ref]</sup>]
+| LucasArts
+| UE2 Build 2226
+|-
+| 2004/05/25
+| Thief: Deadly Shadows
+| Stealth
+| Microsoft Windows, Xbox
+| Ion Storm
+| Eidos Interactive
+| Warfare Build 777
+|-
+| 2006/03/09 - Xbox<br>2006/03/28 - PS2
+| Tom Clancy's Ghost Recon Advanced Warfighter
+| First Person Shooter
+| Xbox, PlayStation 2
+| Ubisoft Shanghai / Ubisoft Paris
+| Ubisoft
+| Warfare Build 927
+|-
+| 2003/10/28 - Xbox<br>2004/03/23 - PS2<br>2004/06/15 - GC
+| Tom Clancy's Rainbow Six 3: Raven Shield
+| First Person Shooter
+| Xbox, PlayStation 2,<br>GameCube
+| Ubisoft Montreal
+| Ubisoft
+| Warfare Build 927
+|-
+| 2004/08/04
+| Tom Clancy's Rainbow Six 3: Black Arrow
+| First Person Shooter
+| Xbox
+| Ubisoft Montreal
+| Ubisoft
+| Warfare Build 927
+|-
+| 2002/11/17 - Xbox<br>2003/02/19 - PC<br>2003/04/08 - PS2<br>2003/04/10 - GC
+| Tom Clancy's Splinter Cell
+| Stealth
+| Microsoft Windows, Xbox,<br>PlayStation 2, GameCube, OS X
+| Ubisoft Montreal
+| Ubisoft
+| Warfare Build 829
+|-
+| 2005/03/28 - PC<br>2005/03/28 - Xbox<br>2005/03/28 - PS2<br>2005/03/31 - GC<br>2008/04/21 - Xbox 360
+| Tom Clancy's Splinter Cell: Chaos Theory
+| Stealth
+| Microsoft Windows, Xbox,<br>PlayStation 2, GameCube,<br>Xbox 360
+| Ubisoft Montreal - Singleplayer &amp; Co-op mode<br>Ubisoft Annency - Versus mode
+| Ubisoft
+| Warfare Build 829 - Singleplayer &amp; Co-op mode<br>UE2 Build 2110 - Versus mode
+|-
+| 2006/10/17 - Xbox 360<br>2006/10/24 - Xbox<br>2006/10/24 - PS2<br>2006/10/26 - GC<br>2006/11/07 - PC<br>2007/11/28 - Wii<br>2007/03/30 - PS3
+| Tom Clancy's Splinter Cell: Double Agent
+| Stealth
+| Microsoft Windows,<br> Xbox, PlayStation 2,<br>Xbox 360, PlayStation 3,<br>GameCube, Wii
+| Ubisoft Montreal - Offline mode for Xbox, PlayStation 2, GameCube, and Wii versions<br>Ubisoft Shanghai - Offline mode for Xbox 360, PlayStation 3, and PC versions<br>Ubisoft Annency - Online mode for PC, Xbox, Xbox 360, PlayStation 2, and PlayStation 3 version<br>online excluded that GC and Wii versions
+| Ubisoft
+| Warfare Build 829 - Offline mode<br>UE2 Build 2110 - Online mode
+|-
+| 2004/03/23 - PC<br>2004/03/23 - Xbox<br>2004/06/16 - PS2<br>2004/06/20 - GC
+| Tom Clancy's Splinter Cell: Pandora Tomorrow
+| Stealth
+| Microsoft Windows, Xbox,<br>PlayStation 2, GameCube
+| Ubisoft Shanghai - Singleplayer mode<br>Ubisoft Annency - Multiplayer mode
+| Ubisoft
+| Warfare Build 829 - Singleplayer mode<br>UE2 Build 2110 - Multiplayer mode
+|-
+| 2003/02/03 - PC<br>2004/02/10 - Xbox
+| Unreal II: The Awakening
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Legend Entertainment
+| Atari
+| Warfare Build 829 - Retail box<br>UE2 Build 2001 - Patch v1403
+|-
+| 2002/11/12
+| Unreal Championship
+| First Person Shooter
+| Xbox
+| Digital Extremes
+| Atari
+| UT2003 Build 928
+|-
+| 2005/04/18
+| Unreal Championship 2: The Liandri Conflict
+| First Person Shooter / Third Person Shooter
+| Xbox
+| Epic Games
+| Midway Games
+| UE2 build 2227 with some UE2.5 code<br>(UE2X)
+|-
+| 2006/06/18 - PC<br>2006/06/24 - Xbox
+| Warpath
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Digital Extremes[http://web.archive.org/web/20070323035959/http://www.groovegames.com/Games/Warpath/index.php%3E <sup>[Ref]</sup>]
+| Groove Games
+| UT2003 Build 928 with some UE2.5 code
+|-
+| 2006/01/24 - Xbox<br>2006/04/03 - PC<br>2007/03/27 - Europe(PC)
+| World War II Combat: Road to Berlin<br>Battlestrike: Secret Weapons(City Interactive Europe version)
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Direct Action Games
+| Groove Games
+| UE2 Build 2110
+|-
+| 2006/06/21 - Xbox<br>2006/06/25 - PC<br>2007/06/25 - Europe(PC)
+| World War II Combat: Iwo Jima<br>The Heat of War(City Interactive Europe version)
+| First Person Shooter
+| Microsoft Windows, Xbox
+| Direct Action Games[http://web.archive.org/web/20110718173237/http://bonusweb.idnes.cz/download/screenshoty/ww2combat_ijscr.html <sup>[Ref]</sup>]
+| Groove Games
+| UE2 Build 2110
+|-
+| 2003/11/18 - PC<br>2003/11/18 - PS2<br>2003/11/24 - Xbox
+| XIII
+| First Person Shooter
+| Microsoft Windows,<br>Xbox, PlayStation 2,<br>GameCube, OS X
+| Ubisoft Paris
+| Ubisoft
+| Warfare Build 829
+|}
+
+*Contains information from [https://en.wikipedia.org/wiki/List_of_CryEngine_games here], [https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games here] and [https://en.wikipedia.org/wiki/List_of_RenderWare_games here].
+
+License: https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License*
