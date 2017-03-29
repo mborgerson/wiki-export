@@ -2,7 +2,7 @@
 
 ==== Skinning code / Shader rounding mode ====
 
-This game suffers from issues with non-exact rounding in the shaders which do the skinning / skeletal animation.
+This game depends on correct GPU rounding. If an emulator suffers from issues with non-exact rounding in the shaders which do the skinning / skeletal animation the character models will be very broken.
 
 [[File:http://i.imgur.com/tpmLpjP.png]]
 
@@ -21,5 +21,5 @@ IIRC Code is like:
  v2 is GL_UNSIGNED_BYTE, normalized => v2 = raw/255.
  A0 = 765 * raw/255 = 3*raw.
 
-This should all be working, but it's not. NV2A expects round-to-zero, GLSL and other modern graphic APIs have it undefined..
-It works with A0 += 1.0/255.0 as a temporary hack
+This should all be working, but it's not. [[NV2A/Vertex Shader]] does round-to-zero. Behaviour for GLSL and other modern graphic APIs is undefined..
+To work around this rounding issue <code>A0 += 1.0/255.0</code> can be used as a temporary hack
