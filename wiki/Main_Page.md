@@ -18,7 +18,8 @@ console at this point.
 This wiki was started by xqemu (Xbox emulator) authors. It will become
 the place for all remaining Xbox projects to come together. If you are
 interested in helping or discussing this, please come chat with us in
-\#xqemu on freenode.
+\#xqemu on freenode or [Cxbx-Reloaded/Lobby on
+gitter.im](https://gitter.im/Cxbx-Reloaded/Lobby).
 
 ------------------------------------------------------------------------
 
