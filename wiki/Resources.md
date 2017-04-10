@@ -20,4 +20,6 @@ Random resources about xbox hacking
     drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
 -   [Matt Borgerson about the Xbox
     bootrom](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
+-   [Deferred Rendering in
+    Shrek](https://sites.google.com/site/richgel99/home)
 

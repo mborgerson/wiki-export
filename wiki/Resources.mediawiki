@@ -7,3 +7,4 @@ Random resources about xbox hacking
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
 * [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]
 * [https://mborgerson.com/deconstructing-the-xbox-boot-rom Matt Borgerson about the Xbox bootrom]
+* [https://sites.google.com/site/richgel99/home Deferred Rendering in Shrek]
