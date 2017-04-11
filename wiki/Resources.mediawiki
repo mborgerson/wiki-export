@@ -8,3 +8,5 @@ Random resources about xbox hacking
 * [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]
 * [https://mborgerson.com/deconstructing-the-xbox-boot-rom Matt Borgerson about the Xbox bootrom]
 * [https://sites.google.com/site/richgel99/home Deferred Rendering in Shrek]
+* [https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
+* [http://www.anandtech.com/show/853 Technical article about the Xbox by AnandTech]
