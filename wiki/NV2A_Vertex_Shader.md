@@ -40,6 +40,12 @@ select=0x17. Each constant slot is 4x DWORD, ordered as WZYX.
 Alternatively they can be uploaded through method \[FIXME\], with 4x
 DWORD, ordered XYZW.
 
+In nvidia vertex programs only 96 constants are normally accessible.
+Microsoft exposed the 96 additional constant registers in D3D shaders
+through c\[-96\] to c\[-1\]. This documentation uses the GL terminology
+instead and expose the new registers as c\[96\] to c\[191\]. This means
+c\[0\] to c\[191\] valid.
+
 Instructions
 ------------
 
