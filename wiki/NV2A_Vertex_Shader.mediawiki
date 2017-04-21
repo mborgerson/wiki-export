@@ -18,8 +18,71 @@ They normally [[NV2A/Vertex attributes|map to the vertex attributes]]. However, 
 
 === Output registers ===
 
-output registers: o[0] to o[?] (initialized to XYZ=0x00000000 W=0x3F800000)
-The alias names from the GL extension match.
+11 output registers o[<RegName>] (initialized to XYZ=0x00000000 W=0x3F800000).
+
+{|class="wikitable"
+|+Output registers
+|-
+|Index
+|GL Name
+|D3D Name
+|Meaning
+|-
+|0
+|HPOS
+|oPos
+|Homogeneous clip space position
+|-
+|3
+|oD0
+|COL0
+|Primary color (front-facing)
+|-
+|4
+|oD1
+|COL1
+|Secondary color (front-facing)
+|-
+|5
+|FOGC
+|oFog
+|Fog coordinate
+|-
+|6
+|PSIZ
+|oPts
+|Point size
+|-
+|7
+|BFC0
+|oB0
+|Back-facing primary color
+|-
+|8
+|BFC1
+|oB1
+|Back-facing secondary color
+|-
+|9
+|TEX0
+|oT0
+|Texture coordinate set 0
+|-
+|10
+|TEX1
+|oT1
+|Texture coordinate set 1
+|-
+|11
+|TEX2
+|oT2
+|Texture coordinate set 2
+|-
+|12
+|TEX3
+|oT3
+|Texture coordinate set 3
+|}
 
 === Address register ===
 
