@@ -1,4 +1,4 @@
-The Xbox implements https://www.opengl.org/registry/specs/NV/vertex_program.txt and https://www.opengl.org/registry/specs/NV/vertex_program1_1.txt
+The Xbox implements the 2 GL extensions [https://www.opengl.org/registry/specs/NV/vertex_program.txt NV_vertex_program] and [https://www.opengl.org/registry/specs/NV/vertex_program1_1.txt NV_vertex_program1_1] (with some modifications).
 This article will mainly focus on actual encoding on hardware as the behaviour is mostly outlined in those GL extensions already.
 
 == Operating modes ==
@@ -14,7 +14,7 @@ This article will mainly focus on actual encoding on hardware as the behaviour i
 
 There are 16 input registers v[0] to v[15].
 
-They normally [map to the vertex attributes|NV2A/Vertex attributes]. However, in the case of vertex state programs, v[0] is fed from LAUNCH_DATA (PGRAPH Methods 0x1E80, 0x1E84, 0x1E88, 0x1E8C for XYZW respectively) instead.
+They normally [[NV2A/Vertex attributes|map to the vertex attributes]]. However, in the case of vertex state programs, v[0] is fed from LAUNCH_DATA (PGRAPH Methods 0x1E80, 0x1E84, 0x1E88, 0x1E8C for XYZW respectively) instead.
 
 === Output registers ===
 
@@ -34,7 +34,7 @@ Additionally, o[POS] is mirrored as R12 and can be used as source operand; so ef
 
 There are 192 constant registers in two seperate blocks with 96 constants each.
 They can be accessed through the PGRAPH RDI: select=0x17. Each constant slot is 4x DWORD, ordered as WZYX.
-Alternatively they can be uploaded through method [FIXME], with 4x DWORD, ordered XYZW.
+Alternatively they can be uploaded through PGRAPH method [FIXME], with 4x DWORD, ordered XYZW.
 
 In nvidia vertex programs only 96 constants are normally accessible. Microsoft exposed the 96 additional constant registers in D3D shaders through c[-96] to c[-1].
 This documentation uses the GL terminology instead and expose the new registers as c[96] to c[191]. This means c[0] to c[191] valid.

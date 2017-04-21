@@ -4,11 +4,13 @@ permalink: wiki/NV2A/Vertex_Shader/
 layout: wiki
 ---
 
-The Xbox implements
-<https://www.opengl.org/registry/specs/NV/vertex_program.txt> and
-<https://www.opengl.org/registry/specs/NV/vertex_program1_1.txt> This
-article will mainly focus on actual encoding on hardware as the
-behaviour is mostly outlined in those GL extensions already.
+The Xbox implements the 2 GL extensions
+[NV\_vertex\_program](https://www.opengl.org/registry/specs/NV/vertex_program.txt)
+and
+[NV\_vertex\_program1\_1](https://www.opengl.org/registry/specs/NV/vertex_program1_1.txt)
+(with some modifications). This article will mainly focus on actual
+encoding on hardware as the behaviour is mostly outlined in those GL
+extensions already.
 
 Operating modes
 ---------------
@@ -25,10 +27,10 @@ Registers
 
 There are 16 input registers v\[0\] to v\[15\].
 
-They normally \[map to the vertex attributes|NV2A/Vertex attributes\].
-However, in the case of vertex state programs, v\[0\] is fed from
-LAUNCH\_DATA (PGRAPH Methods 0x1E80, 0x1E84, 0x1E88, 0x1E8C for XYZW
-respectively) instead.
+They normally [map to the vertex
+attributes](/wiki/NV2A/Vertex_attributes "wikilink"). However, in the case of
+vertex state programs, v\[0\] is fed from LAUNCH\_DATA (PGRAPH Methods
+0x1E80, 0x1E84, 0x1E88, 0x1E8C for XYZW respectively) instead.
 
 ### Output registers
 
@@ -51,8 +53,8 @@ effectively you have 13 temporaries
 There are 192 constant registers in two seperate blocks with 96
 constants each. They can be accessed through the PGRAPH RDI:
 select=0x17. Each constant slot is 4x DWORD, ordered as WZYX.
-Alternatively they can be uploaded through method \[FIXME\], with 4x
-DWORD, ordered XYZW.
+Alternatively they can be uploaded through PGRAPH method \[FIXME\], with
+4x DWORD, ordered XYZW.
 
 In nvidia vertex programs only 96 constants are normally accessible.
 Microsoft exposed the 96 additional constant registers in D3D shaders
