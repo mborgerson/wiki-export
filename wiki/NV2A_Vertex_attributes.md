@@ -1,0 +1,42 @@
+---
+title: NV2A/Vertex attributes
+permalink: wiki/NV2A/Vertex_attributes/
+layout: wiki
+---
+
+This article documents the attribute types which are supported by the
+Xbox GPU.
+
+### Normalized unsigned Byte (D3D)
+
+Unsigned bytes aranged as ZYXW (BGRA) in memory (Also see [this GL
+extension](http://www.opengl.org/registry/specs/ARB/vertex_array_bgra.txt)).
+This is commonly used with an attribute count of 4. FIXME: Does this
+still work with attribute count =/= 4 ? Each byte will be mapped into
+the range 0.0 to 1.0. FIXME: Verify
+
+### Normalized unsigned Byte (GL)
+
+Unsigned bytes arranged as XYZW (RGBA) in memory. Each byte will be
+mapped into the range 0.0 to 1.0. FIXME: Verify
+
+### Normalized short
+
+Shorts, arranged as XYZW. Each short will be mapped into the range -1.0
+to 1.0 FIXME: Verify
+
+### Float
+
+IEEE-754 single precision float arranged as XYZW. FIXME: What happens to
+NaN or denormals?
+
+### Short
+
+Shorts, arranged as XYZW. Each short will be mapped into the range
+-32768.0 to 32767.0 FIXME: Verify
+
+### Compressed normal
+
+Each 32 bit attribute is consisting of 11 bit X, 11 bit Y, 10 bit Z.
+Each component is signed and will be mapped into the range -1.0 to 1.0.
+FIXME: Verify FIXME: Is the attribute count ignored?
