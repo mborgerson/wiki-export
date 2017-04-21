@@ -41,8 +41,8 @@ W=0x3F800000).
 |-------|---------|----------|---------------------------------|
 | Index | GL Name | D3D Name | Meaning                         |
 | 0     | HPOS    | oPos     | Homogeneous clip space position |
-| 3     | oD0     | COL0     | Primary color (front-facing)    |
-| 4     | oD1     | COL1     | Secondary color (front-facing)  |
+| 3     | COL0    | oD0      | Primary color (front-facing)    |
+| 4     | COL1    | oD1      | Secondary color (front-facing)  |
 | 5     | FOGC    | oFog     | Fog coordinate                  |
 | 6     | PSIZ    | oPts     | Point size                      |
 | 7     | BFC0    | oB0      | Back-facing primary color       |

@@ -34,13 +34,13 @@ They normally [[NV2A/Vertex attributes|map to the vertex attributes]]. However, 
 |Homogeneous clip space position
 |-
 |3
-|oD0
 |COL0
+|oD0
 |Primary color (front-facing)
 |-
 |4
-|oD1
 |COL1
+|oD1
 |Secondary color (front-facing)
 |-
 |5
