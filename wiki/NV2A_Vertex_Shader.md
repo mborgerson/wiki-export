@@ -13,14 +13,17 @@ behaviour is mostly outlined in those GL extensions already.
 Registers
 ---------
 
-There are:
+-   16 input registers v\[0\] to v\[15\] (from vertex, v\[0\] is fed
+    from LAUNCH\_DATA for VSPs)
+-   output registers: o\[0\] to o\[?\] (initialized to XYZ=0x00000000
+    W=0x3F800000)
 
--   12 temporary registers: R0 to R11
--   output registers: oPos, oD0, oD1, oFog, oPts, oB0, oB1, oT0, oT1,
-    oT2, oT3, A0.x
--   Input data: ???
+` * Following indices are aliased: Pos, oD0, oD1, oFog, oPts, oB0, oB1, oT0, oT1, oT2, oT3`
 
-R12 is a mirror of the output register oPos
+-   1 Address register: A0.x
+-   12 temporary registers: R0 to R11 (initialized to XYZW=0x00000000)
+
+` * The POS register is mirrored as R12 so it can be used as source operand, so effectively you have 13 temporaries`
 
 Instructions
 ------------
