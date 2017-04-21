@@ -7,7 +7,7 @@ layout: wiki
 This article documents the attribute types which are supported by the
 Xbox GPU.
 
-### Normalized unsigned Byte (D3D)
+### Normalized unsigned byte (D3D)
 
 Unsigned bytes aranged as ZYXW (BGRA) in memory (Also see [this GL
 extension](http://www.opengl.org/registry/specs/ARB/vertex_array_bgra.txt)).
@@ -15,7 +15,7 @@ This is commonly used with an attribute count of 4. FIXME: Does this
 still work with attribute count =/= 4 ? Each byte will be mapped into
 the range 0.0 to 1.0. FIXME: Verify
 
-### Normalized unsigned Byte (GL)
+### Normalized unsigned byte (GL)
 
 Unsigned bytes arranged as XYZW (RGBA) in memory. Each byte will be
 mapped into the range 0.0 to 1.0. FIXME: Verify
