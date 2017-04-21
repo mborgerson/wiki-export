@@ -28,9 +28,10 @@ Development
 * [[Xbox Input Devices]]
 * [[Operating System]]
 * [[NV2A]]
-** [[NV2A/Pixel Combiner]]
+** [[NV2A/Vertex attributes]]
 ** [[NV2A/Fixed Function Pipeline]]
 ** [[NV2A/Vertex Shader]]
+** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Surface Formats]]
 
 [http://segaretro.org/Sega_Chihiro Chihiro]

@@ -39,10 +39,11 @@ Development
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [Operating System](/wiki/Operating_System "wikilink")
 -   [NV2A](/wiki/NV2A "wikilink")
-    -   [NV2A/Pixel Combiner](/wiki/NV2A/Pixel_Combiner "wikilink")
+    -   [NV2A/Vertex attributes](/wiki/NV2A/Vertex_attributes "wikilink")
     -   [NV2A/Fixed Function
         Pipeline](/wiki/NV2A/Fixed_Function_Pipeline "wikilink")
     -   [NV2A/Vertex Shader](/wiki/NV2A/Vertex_Shader "wikilink")
+    -   [NV2A/Pixel Combiner](/wiki/NV2A/Pixel_Combiner "wikilink")
     -   [NV2A/Surface Formats](/wiki/NV2A/Surface_Formats "wikilink")
 
 [Chihiro](http://segaretro.org/Sega_Chihiro)
