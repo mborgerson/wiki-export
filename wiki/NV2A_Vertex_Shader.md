@@ -60,7 +60,7 @@ A0.x exists as documented in the GL extension.
 
 There are 12 temporary registers: R0 to R11 (initialized to
 XYZW=0x00000000), as documented in the GL extension. Additionally,
-o\[POS\] is mirrored as R12 and can be used as source operand; so
+o\[HPOS\] is mirrored as R12 and can be used as source operand; so
 effectively you have 13 temporaries
 
 ### Constant space
