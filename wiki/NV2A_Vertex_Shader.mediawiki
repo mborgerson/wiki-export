@@ -10,12 +10,25 @@ This article will mainly focus on actual encoding on hardware as the behaviour i
 
 == Registers ==
 
-* 16 input registers v[0] to v[15] (from vertex, v[0] is fed from LAUNCH_DATA for VSPs)
-* output registers: o[0] to o[?] (initialized to XYZ=0x00000000 W=0x3F800000)
-** Following indices are aliased: Pos, oD0, oD1, oFog, oPts, oB0, oB1, oT0, oT1, oT2, oT3
-* 1 Address register: A0.x
-* 12 temporary registers: R0 to R11 (initialized to XYZW=0x00000000)
-** The POS register is mirrored as R12 so it can be used as source operand, so effectively you have 13 temporaries
+=== Input registers ===
+
+There are 16 input registers v[0] to v[15].
+
+They normally [map to the vertex attributes|NV2A/Vertex attributes]. However, in the case of vertex state programs, v[0] is fed from LAUNCH_DATA (PGRAPH Methods 0x1E80, 0x1E84, 0x1E88, 0x1E8C for XYZW respectively) instead.
+
+=== Output registers ===
+
+output registers: o[0] to o[?] (initialized to XYZ=0x00000000 W=0x3F800000)
+The alias names from the GL extension match.
+
+=== Address register ===
+
+A0.x exists as documented in the GL extension.
+
+=== Temporary registers ===
+
+There are 12 temporary registers: R0 to R11 (initialized to XYZW=0x00000000), as documented in the GL extension.
+Additionally, o[POS] is mirrored as R12 and can be used as source operand; so effectively you have 13 temporaries
 
 === Constant space ===
 
