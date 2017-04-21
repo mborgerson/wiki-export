@@ -27,20 +27,207 @@ Alternatively they can be uploaded through method [FIXME], with 4x DWORD, ordere
 
 In total, there are 136 instruction slots.
 
-Each slot consists of 16 bytes, describing the operation:
+Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DWORDS describing the operation. Word 0 is inused.
 
 {| class="wikitable"
 |+Fields
 |-
+|Meaning
+|Word
 |Offset (bits)
 |Size (bits)
+|-
+|ILU Operation
+|1
+|25
+|3
+|-
+|MAC Operation
+|1
+|21
+|4
+|-
+|Constant index
+|1
+|13
+|8
+|-
+|Input index
+|1
+|9
+|4
+|-
+|Source 1 negate
+|1
+|8
+|1
+|-
+|Source 1 swizzle X
+|1
+|6
+|2
+|-
+|Source 1 swizzle Y
+|1
+|4
+|2
+|-
+|Source 1 swizzle Z
+|1
+|2
+|2
+|-
+|Source 1 swizzle W
+|1
+|0
+|2
+|-
+|Source 1 register
+|2
+|28
+|4
+|-
+|Source 1 mux
+|2
+|26
+|2
+|-
+|Source 2 negate
+|2
+|25
+|1
+|-
+|Source 2 swizzle X
+|2
+|23
+|2
+|-
+|Source 2 swizzle Y
+|2
+|21
+|2
+|-
+|Source 2 swizzle Z
+|2
+|19
+|2
+|-
+|Source 2 swizzle W
+|2
+|17
+|2
+|-
+|Source 2 register
+|2
+|13
+|4
+|-
+|Source 2 mux
+|2
+|11
+|2
+|-
+|Source 3 negate
+|2
+|10
+|1
+|-
+|Source 3 swizzle X
+|2
+|8
+|2
+|-
+|Source 3 swizzle Y
+|2
+|6
+|2
+|-
+|Source 3 swizzle Z
+|2
+|4
+|2
+|-
+|Source 3 swizzle W
+|2
+|2
+|2
+|-
+|Source 3 register (Hi)
+|2
+|0
+|2
+|-
+|Source 3 register (Lo)
+|3
+|30
+|2
+|-
+|Source 3 mux
+|3
+|28
+|2
+|-
+|Destination MAC mask
+|3
+|24
+|4
+|-
+|Destination temporary register
+|3
+|20
+|4
+|-
+|Destination ILU mask
+|3
+|16
+|4
+|-
+|Destination overall mask
+|3
+|12
+|4
+|-
+|Destination select
+|3
+|11
+|1
+|-
+|Destination output register
+|3
+|3
+|8
+|-
+|Destination mux
+|3
+|2
+|1
+|-
+|Relative constant addressing
+|3
+|1
+|1
+|-
+|Final instruction marker (EOF)
+|3
+|0
+|1
+|}
+
+{| class="wikitable"
+|+Swizzle table
+|-
+|Value
 |Meaning
 |-
 |0
-|0
-|TODO
+|X
 |-
-|0
-|0
-|TODO
+|1
+|Y
+|-
+|2
+|Z
+|-
+|3
+|W
 |}
