@@ -32,7 +32,7 @@
 |-
 |[[Kernel/DbgLoadImageSymbols]]
 |7
-|Devkits only?!??
+|Devkits only
 |-
 |[[Kernel/DbgPrint]]
 |8
@@ -48,7 +48,7 @@
 |-
 |[[Kernel/DbgUnLoadImageSymbols]]
 |11
-|Devkits only?!??
+|Devkits only!
 |-
 |[[Kernel/ExAcquireReadWriteLockExclusive]]
 |12
@@ -1446,19 +1446,19 @@
 |360
 |
 |-
-|
+|[[Kernel/RtlSnprintf]]
 |361
 |Unused?
 |-
-|
+|[[Kernel/RtlSprintf]]
 |362
 |Unused?
 |-
-|
+|[[Kernel/RtlVsnprintf]]
 |363
 |Unused?
 |-
-|
+|[[Kernel/RtlVsprintf]]
 |364
 |Unused?
 |-
@@ -1500,23 +1500,23 @@
 |-
 |[[Kernel/MmDbgAllocateMemory]]
 |374
-|Devkits only?!
+|Devkits only!
 |-
 |[[Kernel/MmDbgFreeMemory]]
 |375
-|Devkits only?!
+|Devkits only!
 |-
 |[[Kernel/MmDbgQueryAvailablePages]]
 |376
-|Devkits only?!
+|Devkits only!
 |-
 |[[Kernel/MmDbgReleaseAddress]]
 |377
-|Devkits only?!
+|Devkits only!
 |-
 |[[Kernel/MmDbgWriteCheck]]
 |378
-|Devkits only?!
+|Devkits only!
 |}
 
 == See Also ==
