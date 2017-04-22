@@ -23,10 +23,10 @@ They normally [[NV2A/Vertex attributes|map to the vertex attributes]]. However, 
 {|class="wikitable"
 |+Output registers
 |-
-|Index
-|GL Name
-|D3D Name
-|Meaning
+!Index
+!GL Name
+!D3D Name
+!Meaning
 |-
 |0
 |HPOS
@@ -111,10 +111,10 @@ Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DW
 {| class="wikitable"
 |+Fields
 |-
-|Meaning
-|Word
-|Offset (bits)
-|Size (bits)
+!Meaning
+!Word
+!Offset (bits)
+!Size (bits)
 |-
 |ILU Operation
 |1
@@ -295,8 +295,8 @@ Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DW
 {| class="wikitable"
 |+Swizzle table
 |-
-|Value
-|Meaning
+!Value
+!Meaning
 |-
 |0
 |X
@@ -319,8 +319,8 @@ Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DW
 {| class="wikitable"
 |+ILU Operations
 |-
-|Value
-|Meaning
+!Value
+!Meaning
 |-
 |0
 |NOP
@@ -352,8 +352,8 @@ Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DW
 {| class="wikitable"
 |+MAC Operations
 |-
-|Value
-|Meaning
+!Value
+!Meaning
 |-
 |0
 |NOP

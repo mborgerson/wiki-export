@@ -37,9 +37,8 @@ vertex state programs, v\[0\] is fed from LAUNCH\_DATA (PGRAPH Methods
 11 output registers o\[<RegName>\] (initialized to XYZ=0x00000000
 W=0x3F800000).
 
-|       |         |          |                                 |
-|-------|---------|----------|---------------------------------|
 | Index | GL Name | D3D Name | Meaning                         |
+|-------|---------|----------|---------------------------------|
 | 0     | HPOS    | oPos     | Homogeneous clip space position |
 | 3     | COL0    | oD0      | Primary color (front-facing)    |
 | 4     | COL1    | oD1      | Secondary color (front-facing)  |
@@ -85,9 +84,8 @@ In total, there are 136 instruction slots.
 Each slot consists of 16 bytes, we consider those as 4 seperate
 little-endian DWORDS describing the operation. Word 0 is inused.
 
-|                                |      |               |             |
-|--------------------------------|------|---------------|-------------|
 | Meaning                        | Word | Offset (bits) | Size (bits) |
+|--------------------------------|------|---------------|-------------|
 | ILU Operation                  | 1    | 25            | 3           |
 | MAC Operation                  | 1    | 21            | 4           |
 | Constant index                 | 1    | 13            | 8           |
@@ -124,9 +122,8 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 | Relative constant addressing   | 3    | 1             | 1           |
 | Final instruction marker (EOF) | 3    | 0             | 1           |
 
-|       |         |
-|-------|---------|
 | Value | Meaning |
+|-------|---------|
 | 0     | X       |
 | 1     | Y       |
 | 2     | Z       |
@@ -136,9 +133,8 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 
 #### Inverse Logic Unit (ILU)
 
-|       |         |
-|-------|---------|
 | Value | Meaning |
+|-------|---------|
 | 0     | NOP     |
 | 1     | MOV     |
 | 2     | RCP     |
@@ -150,9 +146,8 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 
 #### Multiply-Accumulate (MAC)
 
-|       |         |
-|-------|---------|
 | Value | Meaning |
+|-------|---------|
 | 0     | NOP     |
 | 1     | MOV     |
 | 2     | MUL     |
