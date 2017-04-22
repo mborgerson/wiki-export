@@ -66,5 +66,5 @@ Code for emulating the memory might consist of:
     }
 
     void deactivate_mcpx() {
-        mcpx = 0;
+        mcpx_active = 0;
     }
