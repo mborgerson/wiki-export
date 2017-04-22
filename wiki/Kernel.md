@@ -7,9 +7,8 @@ layout: wiki
 Kernel exports
 --------------
 
-|                                                                                                     |         |                  |
-|-----------------------------------------------------------------------------------------------------|---------|------------------|
 | Name                                                                                                | Ordinal | Notes            |
+|-----------------------------------------------------------------------------------------------------|---------|------------------|
 | [Kernel/AvGetSavedDataAddress](/wiki/Kernel/AvGetSavedDataAddress "wikilink")                             | 1       |                  |
 | [Kernel/AvSendTVEncoderOption](/wiki/Kernel/AvSendTVEncoderOption "wikilink")                             | 2       |                  |
 | [Kernel/AvSetDisplayMode](/wiki/Kernel/AvSetDisplayMode "wikilink")                                       | 3       |                  |

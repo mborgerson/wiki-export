@@ -2,9 +2,9 @@
 {| class="wikitable"
 |+Kernel exports
 |-
-|Name
-|Ordinal
-|Notes
+!Name
+!Ordinal
+!Notes
 |-
 |[[Kernel/AvGetSavedDataAddress]]
 |1
