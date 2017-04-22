@@ -1,4 +1,36 @@
 This article documents the attribute types which are supported by the Xbox GPU.
+Please take everything with a grain of salt - it's still being researched.
+
+== Draw methods ==
+
+=== Draw Arrays ===
+
+Data uploaded through DMA.
+Each attribute has it's own offset and stride.
+Decoded using the attribute information.
+
+=== Inline Buffer ===
+
+Data uploaded and decoded through PGRAPH methods.
+
+==== NV097_SET_VERTEX_DATA2F_M ... NV097_SET_VERTEX_DATA2F_M + 0x7c ====
+==== NV097_SET_VERTEX_DATA4F_M ... NV097_SET_VERTEX_DATA4F_M + 0xfc ====
+==== NV097_SET_VERTEX_DATA2S ... NV097_SET_VERTEX_DATA2S + 0x3c ====
+==== NV097_SET_VERTEX_DATA4UB ... NV097_SET_VERTEX_DATA4UB + 0x3c ====
+==== NV097_SET_VERTEX_DATA4S_M ... NV097_SET_VERTEX_DATA4S_M + 0x7c ====
+
+=== Inline Array ===
+
+Data uploaded through PHRAPH method NV097_INLINE_ARRAY.
+The attributes are tightly packed in that buffer.
+Decoded using the attribute information.
+
+=== Inline Elements ===
+
+Same as "Draw Arrays" but with an extra index buffer.
+The index buffer is uploaded through PGRAPH methods NV097_ARRAY_ELEMENT16 and NV097_ARRAY_ELEMENT32.
+
+== Attribute Types ==
 
 === Normalized unsigned byte (D3D) === 
 
