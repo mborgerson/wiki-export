@@ -132,4 +132,40 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 | 2     | Z       |
 | 3     | W       |
 
+### Functional units
+
+#### Inverse Logic Unit (ILU)
+
+|       |         |
+|-------|---------|
+| Value | Meaning |
+| 0     | NOP     |
+| 1     | MOV     |
+| 2     | RCP     |
+| 3     | RCC     |
+| 4     | RSQ     |
+| 5     | EXP     |
+| 6     | LOG     |
+| 7     | LIT     |
+
+#### Multiply-Accumulate (MAC)
+
+|       |         |
+|-------|---------|
+| Value | Meaning |
+| 0     | NOP     |
+| 1     | MOV     |
+| 2     | MUL     |
+| 3     | ADD     |
+| 4     | MAD     |
+| 5     | DP3     |
+| 6     | DPH     |
+| 7     | DP4     |
+| 8     | DST     |
+| 9     | MIN     |
+| 10    | MAX     |
+| 11    | SLT     |
+| 12    | SGE     |
+| 13    | ARL     |
+
 
