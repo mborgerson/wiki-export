@@ -21,7 +21,7 @@ Data uploaded and decoded through PGRAPH methods.
 
 === Inline Array ===
 
-Data uploaded through PHRAPH method NV097_INLINE_ARRAY.
+Data uploaded through PGRAPH method NV097_INLINE_ARRAY.
 The attributes are tightly packed in that buffer.
 Decoded using the attribute information.
 
