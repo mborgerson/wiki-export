@@ -15,7 +15,7 @@ Kernel exports
 | [Kernel/AvSetSavedDataAddress](/wiki/Kernel/AvSetSavedDataAddress "wikilink")                             | 4       |               |
 | [Kernel/DbgBreakPoint](/wiki/Kernel/DbgBreakPoint "wikilink")                                             | 5       |               |
 | [Kernel/DbgBreakPointWithStatus](/wiki/Kernel/DbgBreakPointWithStatus "wikilink")                         | 6       |               |
-| [Kernel/DbgLoadImageSymbols](/wiki/Kernel/DbgLoadImageSymbols "wikilink")                                 | 7       | Devkits only  |
+| [Kernel/DbgLoadImageSymbols](/wiki/Kernel/DbgLoadImageSymbols "wikilink")                                 | 7       | Devkits only! |
 | [Kernel/DbgPrint](/wiki/Kernel/DbgPrint "wikilink")                                                       | 8       |               |
 | [Kernel/HalReadSMCTrayState](/wiki/Kernel/HalReadSMCTrayState "wikilink")                                 | 9       |               |
 | [Kernel/DbgPrompt](/wiki/Kernel/DbgPrompt "wikilink")                                                     | 10      |               |

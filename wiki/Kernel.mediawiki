@@ -32,7 +32,7 @@
 |-
 |[[Kernel/DbgLoadImageSymbols]]
 |7
-|Devkits only
+|Devkits only!
 |-
 |[[Kernel/DbgPrint]]
 |8
