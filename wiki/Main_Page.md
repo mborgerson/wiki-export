@@ -4,25 +4,6 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
-xboxdevwiki.net
----------------
-
-Please help us fix this mess. This is an effort to document how the
-original Microsoft Xbox and the SEGA Chihiro work. We not only care
-about technical details about those platforms, but also how to develop
-homebrew and emulate them.
-
-We are not interested in documenting the Xbox 360, Xbox One or any other
-console at this point.
-
-This wiki was started by xqemu (Xbox emulator) authors. It will become
-the place for all remaining Xbox projects to come together. If you are
-interested in helping or discussing this, please come chat with us in
-\#xqemu on freenode or [Cxbx-Reloaded/Lobby on
-gitter.im](https://gitter.im/Cxbx-Reloaded/Lobby).
-
-------------------------------------------------------------------------
-
 Development
 
 -   [NXDK (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
