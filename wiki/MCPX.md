@@ -9,4 +9,4 @@ contains the sound processors (there are 4 of them) and also the USB,
 PCI, IDE, etc, controllers (please remove this disclaimer if I'm right,
 or fix it if I'm wrong.)
 
-The MCPX is also the home to the secret \[MCPX ROM\].
+The MCPX is also the home to the secret [MCPX ROM](/wiki/MCPX_ROM "wikilink").
