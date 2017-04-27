@@ -154,8 +154,11 @@ and compares it to a magic number. If it matches, all was successful,
 and we jump to the start of the 2BL to start decrypting the kernel.
 
     void verify() {
-        if (get_memory_dword(0x95fe4) == MAGIC_NUMBER) {
+        if (get_memory_dword(0x95FE4) == MAGIC_NUMBER) {
             eip = 0x900000;
+        } else {
+            // Else, things have gone wrong
+            eip = 0xFFFFFF94;
         }
     }
 

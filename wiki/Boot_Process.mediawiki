@@ -145,8 +145,11 @@ Verification. Finally the MCPX reads a string from the un-encrypted 2BL and comp
 
 <pre>
 void verify() {
-    if (get_memory_dword(0x95fe4) == MAGIC_NUMBER) {
+    if (get_memory_dword(0x95FE4) == MAGIC_NUMBER) {
         eip = 0x900000;
+    } else {
+        // Else, things have gone wrong
+        eip = 0xFFFFFF94;
     }
 }
 </pre>
