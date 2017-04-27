@@ -6,9 +6,13 @@ layout: wiki
 
 If we wish to HLE the MCPX, then there are certain things that can be
 ignored, for example, getting the CPU to 32 bit protected mode and
-enabling caching. The xcode interpreter is common through both versions
-of the MCPX ROM. The high level interpretation of the MCPX ROM might
-look like this:
+enabling caching.
+
+Xcodes
+------
+
+The xcode interpreter is common through both versions of the MCPX ROM.
+The high level interpretation of the MCPX ROM might look like this:
 
     void xcode_interpreter() {
         int run_xcodes = 1;
