@@ -78,6 +78,92 @@ The high level interpretation of the MCPX ROM might look like this:
         }
     }
 
+RC4 Decryption of the 2BL
+-------------------------
+
+Decryption of the 2BL seems to happen in 4 stages.
+
+### Stage 1
+
+Initialising the working space. The MCPX ROM seems to just write 1, 2,
+3, 4.... 253, 254, 255 in memory addresses 0x8f000 to 0x850FF. This
+might look something like:
+
+    void init_rc4() {
+        uint32_t stack_pointer = 0x8f000;
+
+        for (int iterator = 0; iterator <= 255; iterator++) {
+            set_memory_byte(stack_pointer + iterator, iterator);
+        }
+    }
+
+### Stage 2
+
+Preparing for decryption. This gets the key from memory location
+0xFFFFFFA5 and starts preparing and environment for decryption of the
+2BL.
+
+    void load_key() {
+        uint32_t key_location = 0xffffffa5;
+        uint32_t stack_pointer = 0x8f000;
+        uint8_t i, j = 0;
+
+        for (int iterator = 0; iterator <= 255; iterator++) {
+            i = get_memory_byte(iterator + stack_pointer);
+            j += i + get_memory_byte(key_location + (iterator % 16));
+            set_memory_byte(iterator+stack_pointer, get_memory_byte(j+stack_pointer));
+            set_memory_byte(j+stack_pointer, i);
+        }
+    }
+
+### Stage 3
+
+Perform the decryption. The MCPX reads the 2BL from 0xFFFF9E00 and
+decrypts it to 0x90000. It is 24K in size.
+
+    void decrypt() {
+        uint32_t stack_pointer = 0x8f000;
+        uint32_t encrypted = 0xFFFF9E00;
+        uint32_t decrypted = 0x90000;
+
+        uint8_t a, b, j, i = 0;
+
+        i = get_memory_byte(stack_pointer + 0x100); // 0
+        j = get_memory_byte(stack_pointer + 0x101); // 0
+
+        for (int edi = 0; edi <= 0x6000; ++edi) {
+            ++i;
+
+            a = get_memory_byte(stack_pointer + i);
+            j += a;
+            b = get_memory_byte(stack_pointer + j);
+            set_memory_byte(stack_pointer + i, b);
+            set_memory_byte(stack_pointer + j, a);
+            a += b;
+            b = get_memory_byte(edi + encrypted);
+            a = get_memory_byte(stack_pointer + a);
+            b ^= a;
+            set_memory_byte(edi + decrypted, b);
+        }
+    }
+
+### Stage 4
+
+Verification. Finally the MCPX reads a string from the un-encrypted 2BL
+and compares it to a magic number. If it matches, all was successful,
+and we jump to the start of the 2BL to start decrypting the kernel.
+
+    void verify() {
+        if (get_memory_dword(0x95fe4) == MAGIC_NUMBER) {
+            eip = 0x900000;
+        }
+    }
+
+### Notes
+
+The RC4 algorithm was included as part of MCPX 1.0 and seems to work
+fine with BIOS versions 3944, 4034, and 4134.
+
 References
 ----------
 
