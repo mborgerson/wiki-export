@@ -77,13 +77,19 @@ Remote Debugging and Control Protocol
 
 TODO
 
+See Also
+--------
+
+-   [Xbox Neighborhood](/wiki/Xbox_Neighborhood "wikilink") – An XDK tool that
+    utilizes the XBDM protocols
+
 External Links
 --------------
 
 -   [Yelo
     Neighborhood](https://bitbucket.org/remnantmods/yelo-neighborhood/)
-    – An open-source re-implementation of Xbox Neighborhood written in
-    C\#.
+    – An open-source re-implementation of [Xbox
+    Neighborhood](/wiki/Xbox_Neighborhood "wikilink") written in C\#.
 -   [ViridiX](https://github.com/Ernegien/ViridiX) – An open-source
     collection of Xbox debugging libraries and tools written in C\#.
 

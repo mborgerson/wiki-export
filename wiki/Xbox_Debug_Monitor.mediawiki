@@ -49,7 +49,11 @@ To discover all XDKs on the local network, sends a Type 3 NAP packet with no nam
 
 TODO
 
+==See Also==
+
+* [[Xbox Neighborhood]] – An XDK tool that utilizes the XBDM protocols
+
 ==External Links==
 
-* [https://bitbucket.org/remnantmods/yelo-neighborhood/ Yelo Neighborhood] – An open-source re-implementation of Xbox Neighborhood written in C#.
+* [https://bitbucket.org/remnantmods/yelo-neighborhood/ Yelo Neighborhood] – An open-source re-implementation of [[Xbox Neighborhood]] written in C#.
 * [https://github.com/Ernegien/ViridiX ViridiX] – An open-source collection of Xbox debugging libraries and tools written in C#.
