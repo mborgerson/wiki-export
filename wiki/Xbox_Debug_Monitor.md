@@ -76,3 +76,14 @@ Remote Debugging and Control Protocol
 -------------------------------------
 
 TODO
+
+External Links
+--------------
+
+-   [Yelo
+    Neighborhood](https://bitbucket.org/remnantmods/yelo-neighborhood/)
+    – An open-source re-implementation of Xbox Neighborhood written in
+    C\#.
+-   [ViridiX](https://github.com/Ernegien/ViridiX) – An open-source
+    collection of Xbox debugging libraries and tools written in C\#.
+
