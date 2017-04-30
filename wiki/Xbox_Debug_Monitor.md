@@ -66,14 +66,25 @@ IP address, only that XDK will respond.
 
 ### Console Discovery
 
-To discover all XDKs on the local network, sends a Type 3 NAP packet
-with no name (length 0) to the UDP address 255.255.255.255:731. Each XDK
-will respond with a Type 2 NAP packet containing its name. As with a
-forward lookup, the client may receive multiple replies with the same
-name, but different IP addresses.
+To discover all XDKs on the local network, send a Type 3 NAP packet with
+no name (length 0) to the UDP address 255.255.255.255:731. Each XDK will
+respond with a Type 2 NAP packet containing its name. As with a forward
+lookup, the client may receive multiple replies with the same name, but
+different IP addresses.
 
 Remote Debugging and Control Protocol
 -------------------------------------
+
+The Remote Debugging and Control Protocol (RDCP) is a text-based,
+line-oriented, request-response protocol transmitted over a TCP
+connection on port 731. RDCP resembles protocols like FTP and SMTP,
+making it possible to communicate with XBDM using just a Telnet client.
+
+### Authentication
+
+TODO
+
+### Commands
 
 TODO
 
