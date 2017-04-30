@@ -37,7 +37,7 @@ or 3 (wildcard).
 Name Length  
 This unsigned 8-bit field specifies the length of the Name field and
 should be a value from 0 to 255. For Type 3 packets, this field should
-always be 0. For Type 2 and Type 3 packets, this field should never
+always be 0. For Type 1 and Type 2 packets, this field should never
 be 0.
 
 Name  

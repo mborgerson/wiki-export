@@ -29,7 +29,7 @@ A NAP packet contains 3 fields, the last of which is variable-length. The minimu
 ; Type
 : This unsigned 8-bit field may contain the values 1 (lookup), 2 (reply), or 3 (wildcard).
 ; Name Length
-: This unsigned 8-bit field specifies the length of the Name field and should be a value from 0 to 255. For Type 3 packets, this field should always be 0. For Type 2 and Type 3 packets, this field should never be 0.
+: This unsigned 8-bit field specifies the length of the Name field and should be a value from 0 to 255. For Type 3 packets, this field should always be 0. For Type 1 and Type 2 packets, this field should never be 0.
 ; Name
 : This variable-length field contains the ASCII-encoded debug name for Type 1 and Type 2 packets. The number of bytes in this field is given by the Length field. It should not contain any <code>NUL</code> characters.
 
