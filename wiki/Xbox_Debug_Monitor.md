@@ -31,11 +31,11 @@ The minimum length of a NAP packet is 2 bytes and the maximum is 257.
 Invalid packets are silently dropped by XBDM.
 
 Type  
-This unsigned 16-bit field may contain the values 1 (lookup), 2 (reply),
+This unsigned 8-bit field may contain the values 1 (lookup), 2 (reply),
 or 3 (wildcard).
 
 Name Length  
-This unsigned 16-bit field specifies the length of the Name field and
+This unsigned 8-bit field specifies the length of the Name field and
 should be a value from 0 to 255. For Type 3 packets, this field should
 always be 0. For Type 2 and Type 3 packets, this field should never
 be 0.
