@@ -8,7 +8,7 @@ The **Xbox Debug Monitor** (**XBDM**) is a feature of Xbox Development
 Kits that provides remote debugging, file management, console discovery,
 and other services on TCP/UDP port 731. It is loaded by debug kernels at
 startup from `C:\xbdm.dll` and its configuration is read from
-`C:\xbdm.ini`. XBDM is distinct from KD and uses a different wire
+`E:\xbdm.ini`. XBDM is distinct from KD and uses a different wire
 protocol.
 
 Name Answering Protocol
