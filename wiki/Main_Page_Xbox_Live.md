@@ -7,7 +7,7 @@ layout: wiki
 Xbox Live infrastructure
 ------------------------
 
-Server: macs.xboxlive.com
+Kerberos Authentication Server: macs.xboxlive.com
 
 Heartbeat
 ---------
