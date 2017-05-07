@@ -25,5 +25,4 @@ References and links
 --------------------
 
 -   [<https://xboxlivehacking.blogspot.de/>](https://xboxlivehacking.blogspot.de/)
--   [<https://www.se7ensins.com/forums/threads/a-detailed-explanation-as-to-why-xbox-live-is-down-for-some.1617925/>](https://www.se7ensins.com/forums/threads/a-detailed-explanation-as-to-why-xbox-live-is-down-for-some.1617925/)
 
