@@ -11,3 +11,7 @@ Kerberos Authentication Server: macs.xboxlive.com
         Cluster IP: 167.102.81.132 (167.102.81.132)
         Host IP: 4.89.169.109 (4.89.169.109)
         Signature Data - Unknown (1481589336)
+
+== References and links == 
+* [https://xboxlivehacking.blogspot.de/ https://xboxlivehacking.blogspot.de/]
+* [https://www.se7ensins.com/forums/threads/a-detailed-explanation-as-to-why-xbox-live-is-down-for-some.1617925/ https://www.se7ensins.com/forums/threads/a-detailed-explanation-as-to-why-xbox-live-is-down-for-some.1617925/]
