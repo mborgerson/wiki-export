@@ -16,7 +16,7 @@ Kerberos Authentication Server: macs.xboxlive.com
 | ?
 |-
 |206
-| ?
+| Information about Xbox Version, Title, and Title version
 |}
 
 == Heartbeat ==

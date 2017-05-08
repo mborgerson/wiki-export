@@ -11,11 +11,11 @@ Kerberos Authentication Server: macs.xboxlive.com
 
 ### Kerberos Authentication
 
-| padata-type | description |
-|-------------|-------------|
-| 131         | ?           |
-| 204         | ?           |
-| 206         | ?           |
+| padata-type | description                                              |
+|-------------|----------------------------------------------------------|
+| 131         | ?                                                        |
+| 204         | ?                                                        |
+| 206         | Information about Xbox Version, Title, and Title version |
 
 Heartbeat
 ---------
