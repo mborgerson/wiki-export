@@ -9,6 +9,14 @@ Xbox Live infrastructure
 
 Kerberos Authentication Server: macs.xboxlive.com
 
+### Kerberos Authentication
+
+| padata-type | description |
+|-------------|-------------|
+| 131         | ?           |
+| 204         | ?           |
+| 206         | ?           |
+
 Heartbeat
 ---------
 
