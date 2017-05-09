@@ -53,4 +53,5 @@ References and links
 
 -   [<https://xboxlivehacking.blogspot.de/>](https://xboxlivehacking.blogspot.de/)
 -   [<https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp>](https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp)
+-   [<http://discerning.com/pdfbox/test/input/authentication.pdf>](http://discerning.com/pdfbox/test/input/authentication.pdf)
 
