@@ -149,3 +149,4 @@ Kerberos Authentication Server: macs.xboxlive.com
 * [https://www.google.de/patents/US7803052 Patent: Discovery and distribution of game session information ]
 * [https://www.google.de/patents/US20030229779 Patent: Security gateway for online console-based gaming ]
 * [https://www.google.de/patents/US20030233537 Patent: Presence and notification system for maintaining and communicating information ]
+* [https://www.google.de/patents/US7218739 Patent: Multiple user authentication for online console-based gaming ]

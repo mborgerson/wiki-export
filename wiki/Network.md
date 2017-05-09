@@ -89,4 +89,6 @@ References and links
 -   [Patent: Presence and notification system for maintaining and
     communicating
     information](https://www.google.de/patents/US20030233537)
+-   [Patent: Multiple user authentication for online console-based
+    gaming](https://www.google.de/patents/US7218739)
 
