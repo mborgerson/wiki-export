@@ -75,10 +75,66 @@ different IP addresses.
 Remote Debugging and Control Protocol
 -------------------------------------
 
-The Remote Debugging and Control Protocol (RDCP) is a text-based,
-line-oriented, request-response protocol transmitted over a TCP
-connection on port 731. RDCP resembles protocols like FTP and SMTP,
-making it possible to communicate with XBDM using just a Telnet client.
+The Remote Debugging and Control Protocol (RDCP) is a text-based
+protocol transmitted over a TCP connection on port 731. RDCP resembles
+protocols like FTP and SMTP, making it possible to communicate with XBDM
+using just a Telnet client in many cases.
+
+### Overview
+
+When a connection is established, XBDM sends `201- connected` followed
+by <CR><LF> (that is, a carriage return character followed by a line
+feed character). The RDCP client is then free to send a command followed
+by <CR><LF> or simply <LF>. A command consists of a name and zero or
+more parameters. The format of the parameters is defined by the command,
+but most commands use the form `key=value`. Parameters that contain
+whitespace must be surrounded by double quotes (e.g. “`some`` ``value`”
+or `key=`“`some`` ``value`”).
+
+Upon receipt of a command, XBDM replies with a response line consisting
+of a three-digit status code and message of the form
+`999- message text`<CR><LF>. Note that unlike similar protocols, the `-`
+(dash) is always present in responses and messages cannot span multiple
+lines.
+
+### Status codes
+
+2xx status codes indicate success, while 4xx codes indicate failure.
+Each code has a default message, but some commands use the message field
+to hold whatever data was requested by the client or additional
+information about an error.
+
+#### 2xx Success
+
+200- OK  
+Standard response for successful execution of a command that doesn't
+expect to send or receive any additional data.
+
+201- connected  
+Initial response sent after a connection is established. The client does
+not need to send anything to solicit this response.
+
+202- multiline response follows  
+The response line is followed by one or more additional lines of data
+terminated by a line containing only a `.` (period). The client must
+read all available lines before sending another command.
+
+203- binary response follows  
+The response line is followed by raw binary data, the length of which is
+indicated in some command-specific way. The client must read all
+available data before sending another command.
+
+204- ready for binary data  
+The command is expecting additional binary data from the client. The
+client must satisfy the command's expectation before sending another
+command.
+
+205- dedicated  
+The connection has been moved to a dedicated processing thread.
+
+#### 4xx Failure
+
+TODO
 
 ### Authentication
 
