@@ -9,7 +9,7 @@ Xbox Live infrastructure
 
 Kerberos Authentication Server: macs.xboxlive.com
 
-### Kerberos Authentication
+### Kerberos
 
 | padata-type | description                                              |
 |-------------|----------------------------------------------------------|

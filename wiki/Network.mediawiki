@@ -2,7 +2,7 @@
 
 Kerberos Authentication Server: macs.xboxlive.com
 
-=== Kerberos Authentication ===
+=== Kerberos ===
 {| class="wikitable"
 |+Xbox PA-DATA
 |-
