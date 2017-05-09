@@ -8,6 +8,25 @@ There might also be games which were released for Xbox 360 but not the original 
 | Counter-Strike
 |}
 
+= id Tech 3 =
+
+{| class="wikitable"
+! Title
+|-
+| Return to Castle Wolfenstein
+|-
+| Soldier of Fortune II: Double Helix
+|-
+| Star Wars Jedi Knight II: Jedi Outcast 
+|-
+| Star Wars Jedi Knight: Jedi Academy 
+|-
+| James Bond 007: Everything or Nothing
+|-
+| James Bond 007: Agent Under Fire
+|}
+
+
 = Source Engine =
 
 {| class="wikitable"
@@ -606,6 +625,6 @@ There might also be games which were released for Xbox 360 but not the original 
 | Warfare Build 829
 |}
 
-*Contains information from [https://en.wikipedia.org/wiki/List_of_CryEngine_games here], [https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games here] and [https://en.wikipedia.org/wiki/List_of_RenderWare_games here].
+*Contains information from [https://en.wikipedia.org/wiki/List_of_CryEngine_games here], [https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games here], [https://en.wikipedia.org/wiki/Id_Tech_3 here], and [https://en.wikipedia.org/wiki/List_of_RenderWare_games here].
 
 License: https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License*

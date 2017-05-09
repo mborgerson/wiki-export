@@ -15,6 +15,18 @@ GoldSrc
 |----------------|
 | Counter-Strike |
 
+id Tech 3
+=========
+
+| Title                                  |
+|----------------------------------------|
+| Return to Castle Wolfenstein           |
+| Soldier of Fortune II: Double Helix    |
+| Star Wars Jedi Knight II: Jedi Outcast |
+| Star Wars Jedi Knight: Jedi Academy    |
+| James Bond 007: Everything or Nothing  |
+| James Bond 007: Agent Under Fire       |
+
 Source Engine
 =============
 
@@ -809,8 +821,9 @@ GameCube, OS X</p></td>
 
 -   Contains information from
     [here](https://en.wikipedia.org/wiki/List_of_CryEngine_games),
-    [here](https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games)
-    and [here](https://en.wikipedia.org/wiki/List_of_RenderWare_games).
+    [here](https://en.wikipedia.org/wiki/List_of_Unreal_Engine_games),
+    [here](https://en.wikipedia.org/wiki/Id_Tech_3), and
+    [here](https://en.wikipedia.org/wiki/List_of_RenderWare_games).
 
 License:
 <https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License*>
