@@ -33,7 +33,7 @@ Kerberos Authentication Server: macs.xboxlive.com
 == Xbox Live Functions == 
 
 {| class="wikitable"
-|+XNet* XOnline* Functions
+|+XNet* Functions
 |-
 ! function
 ! description
@@ -53,6 +53,37 @@ Kerberos Authentication Server: macs.xboxlive.com
 |XNetGetTitleXnAddr( &hostAddr )
 |Gets your XNADDR. Used by syslink, and lots of other people.
 |-
+|XNetGetEthernetLinkStatus()
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|}
+
+{| class="wikitable"
+|+XOnline* Functions
+|-
+! function
+! description
+|-
 |XOnlineGetUsers( XBLAccountusers, &numOfXBLiveAccounts )
 |
 |-
@@ -65,19 +96,27 @@ Kerberos Authentication Server: macs.xboxlive.com
 |XOnlineLogon(XONLINE_USER* XBLLoggedOnUsers, DWORD* XBLservices, SERVICE_COUNT, NULL, XONLINETASK_HANDLE &logonHandle)
 |
 |-
-| XOnlineTaskContinue(XONLINETASK_HANDLE logonHandle)
+|XOnlineTaskContinue(XONLINETASK_HANDLE logonHandle)
 |
 |-
-| XOnlineLogonTaskGetResults(XONLINETASK_HANDLE logonHandle)
-|
-|-
-|XNetGetEthernetLinkStatus()
+|XOnlineLogonTaskGetResults(XONLINETASK_HANDLE logonHandle)
 |
 |-
 |XOnlineGetLogonUsers()
 |
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
+|-
+|
+|
 |}
-
 
 == References and links == 
 * [https://xboxlivehacking.blogspot.de/ https://xboxlivehacking.blogspot.de/]

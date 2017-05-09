@@ -32,21 +32,35 @@ Heartbeat
 Xbox Live Functions
 -------------------
 
-| function                                                                                                                    | description                                                  |
-|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| XNetCreateKey(&xnkid, &xnkey)                                                                                               |                                                              |
-| XNetRegisterKey(&xnkid, &xnkey)                                                                                             | Register the session key                                     |
-| XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP )                                                                            | Convert the address to a winsock usable format               |
-| XNetUnregisterKey( &xbc.SessionID )                                                                                         |                                                              |
-| XNetGetTitleXnAddr( &hostAddr )                                                                                             | Gets your XNADDR. Used by syslink, and lots of other people. |
-| XOnlineGetUsers( XBLAccountusers, &numOfXBLiveAccounts )                                                                    |                                                              |
-| XOnlineTaskClose(XONLINETASK\_HANDLE logonHandle)                                                                           |                                                              |
-| XOnlineStartup( XONLINE\_STARTUP\_PARAMS\* )                                                                                |                                                              |
-| XOnlineLogon(XONLINE\_USER\* XBLLoggedOnUsers, DWORD\* XBLservices, SERVICE\_COUNT, NULL, XONLINETASK\_HANDLE &logonHandle) |                                                              |
-| XOnlineTaskContinue(XONLINETASK\_HANDLE logonHandle)                                                                        |                                                              |
-| XOnlineLogonTaskGetResults(XONLINETASK\_HANDLE logonHandle)                                                                 |                                                              |
-| XNetGetEthernetLinkStatus()                                                                                                 |                                                              |
-| XOnlineGetLogonUsers()                                                                                                      |                                                              |
+| function                                         | description                                                  |
+|--------------------------------------------------|--------------------------------------------------------------|
+| XNetCreateKey(&xnkid, &xnkey)                    |                                                              |
+| XNetRegisterKey(&xnkid, &xnkey)                  | Register the session key                                     |
+| XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP ) | Convert the address to a winsock usable format               |
+| XNetUnregisterKey( &xbc.SessionID )              |                                                              |
+| XNetGetTitleXnAddr( &hostAddr )                  | Gets your XNADDR. Used by syslink, and lots of other people. |
+| XNetGetEthernetLinkStatus()                      |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+
+| function                                                                                                                    | description |
+|-----------------------------------------------------------------------------------------------------------------------------|-------------|
+| XOnlineGetUsers( XBLAccountusers, &numOfXBLiveAccounts )                                                                    |             |
+| XOnlineTaskClose(XONLINETASK\_HANDLE logonHandle)                                                                           |             |
+| XOnlineStartup( XONLINE\_STARTUP\_PARAMS\* )                                                                                |             |
+| XOnlineLogon(XONLINE\_USER\* XBLLoggedOnUsers, DWORD\* XBLservices, SERVICE\_COUNT, NULL, XONLINETASK\_HANDLE &logonHandle) |             |
+| XOnlineTaskContinue(XONLINETASK\_HANDLE logonHandle)                                                                        |             |
+| XOnlineLogonTaskGetResults(XONLINETASK\_HANDLE logonHandle)                                                                 |             |
+| XOnlineGetLogonUsers()                                                                                                      |             |
+|                                                                                                                             |             |
+|                                                                                                                             |             |
+|                                                                                                                             |             |
+|                                                                                                                             |             |
 
 References and links
 --------------------
