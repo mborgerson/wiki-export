@@ -29,8 +29,28 @@ Heartbeat
 `       Host IP: 4.89.169.109 (4.89.169.109)`  
 `       Signature Data - Unknown (1481589336)`
 
+Xbox Live Functions
+-------------------
+
+| function                                                                                                                    | description                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| XNetCreateKey(&xnkid, &xnkey)                                                                                               |                                                              |
+| XNetRegisterKey(&xnkid, &xnkey)                                                                                             | Register the session key                                     |
+| XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP )                                                                            | Convert the address to a winsock usable format               |
+| XNetUnregisterKey( &xbc.SessionID )                                                                                         |                                                              |
+| XNetGetTitleXnAddr( &hostAddr )                                                                                             | Gets your XNADDR. Used by syslink, and lots of other people. |
+| XOnlineGetUsers( XBLAccountusers, &numOfXBLiveAccounts )                                                                    |                                                              |
+| XOnlineTaskClose(XONLINETASK\_HANDLE logonHandle)                                                                           |                                                              |
+| XOnlineStartup( XONLINE\_STARTUP\_PARAMS\* )                                                                                |                                                              |
+| XOnlineLogon(XONLINE\_USER\* XBLLoggedOnUsers, DWORD\* XBLservices, SERVICE\_COUNT, NULL, XONLINETASK\_HANDLE &logonHandle) |                                                              |
+| XOnlineTaskContinue(XONLINETASK\_HANDLE logonHandle)                                                                        |                                                              |
+| XOnlineLogonTaskGetResults(XONLINETASK\_HANDLE logonHandle)                                                                 |                                                              |
+| XNetGetEthernetLinkStatus()                                                                                                 |                                                              |
+| XOnlineGetLogonUsers()                                                                                                      |                                                              |
+
 References and links
 --------------------
 
 -   [<https://xboxlivehacking.blogspot.de/>](https://xboxlivehacking.blogspot.de/)
+-   [<https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp>](https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp)
 

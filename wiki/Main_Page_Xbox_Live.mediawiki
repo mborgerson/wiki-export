@@ -30,5 +30,55 @@ Kerberos Authentication Server: macs.xboxlive.com
         Host IP: 4.89.169.109 (4.89.169.109)
         Signature Data - Unknown (1481589336)
 
+== Xbox Live Functions == 
+
+{| class="wikitable"
+|+XNet* XOnline* Functions
+|-
+! function
+! description
+|-
+|XNetCreateKey(&xnkid, &xnkey)
+| 
+|-
+|XNetRegisterKey(&xnkid, &xnkey)
+|Register the session key
+|-
+|XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP )
+|Convert the address to a winsock usable format
+|-
+|XNetUnregisterKey( &xbc.SessionID )
+|
+|-
+|XNetGetTitleXnAddr( &hostAddr )
+|Gets your XNADDR. Used by syslink, and lots of other people.
+|-
+|XOnlineGetUsers( XBLAccountusers, &numOfXBLiveAccounts )
+|
+|-
+|XOnlineTaskClose(XONLINETASK_HANDLE logonHandle)
+|
+|-
+|XOnlineStartup( XONLINE_STARTUP_PARAMS* )
+|
+|-
+|XOnlineLogon(XONLINE_USER* XBLLoggedOnUsers, DWORD* XBLservices, SERVICE_COUNT, NULL, XONLINETASK_HANDLE &logonHandle)
+|
+|-
+| XOnlineTaskContinue(XONLINETASK_HANDLE logonHandle)
+|
+|-
+| XOnlineLogonTaskGetResults(XONLINETASK_HANDLE logonHandle)
+|
+|-
+|XNetGetEthernetLinkStatus()
+|
+|-
+|XOnlineGetLogonUsers()
+|
+|}
+
+
 == References and links == 
 * [https://xboxlivehacking.blogspot.de/ https://xboxlivehacking.blogspot.de/]
+* [https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp]
