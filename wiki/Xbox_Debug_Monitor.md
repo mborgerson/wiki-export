@@ -125,9 +125,9 @@ indicated in some command-specific way. The client must read all
 available data before sending another command.
 
 204- ready for binary data  
-The command is expecting additional binary data from the client. The
-client must satisfy the command's expectation before sending another
-command.
+The command is expecting additional binary data from the client. After
+the client sends the required number of bytes, XBDM will send another
+response line with the final status of the command.
 
 205- dedicated  
 The connection has been moved to a dedicated processing thread.
