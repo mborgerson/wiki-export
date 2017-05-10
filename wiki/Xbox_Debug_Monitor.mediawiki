@@ -62,7 +62,7 @@ Upon receipt of a command, XBDM replies with a response line consisting of a thr
 ====2xx Success====
 
 ; 200- OK
-: Standard response for successful execution of a command that doesn't expect to send or receive any additional data.
+: Standard response for successful execution of a command.
 ; 201- connected
 : Initial response sent after a connection is established. The client does not need to send anything to solicit this response.
 ; 202- multiline response follows

@@ -107,8 +107,7 @@ information about an error.
 #### 2xx Success
 
 200- OK  
-Standard response for successful execution of a command that doesn't
-expect to send or receive any additional data.
+Standard response for successful execution of a command.
 
 201- connected  
 Initial response sent after a connection is established. The client does
