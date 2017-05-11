@@ -176,7 +176,6 @@ From
       Gear5                     = FIELD_MASK(20, 0xF0),
 
     } LEDEnum;
-    }
 
 USB Adapters
 ------------
