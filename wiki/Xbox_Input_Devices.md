@@ -13,7 +13,7 @@ Steering wheels
 Light guns
 ----------
 
-Steel Batallion Controller
+Steel Battalion Controller
 --------------------------
 
 ### USB Device Descriptor
