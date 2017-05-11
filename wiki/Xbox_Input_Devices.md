@@ -16,7 +16,7 @@ Light guns
 Steel Batallion Controller
 --------------------------
 
-### USB Device Scriptor
+### USB Device Descriptor
 
 From
 <http://www.yaronet.com/topics/154490-steel-battalion-controller-homemade#post-15>

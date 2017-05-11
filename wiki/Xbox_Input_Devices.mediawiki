@@ -4,7 +4,7 @@
 
 == Steel Batallion Controller ==
 
-=== USB Device Scriptor ===
+=== USB Device Descriptor ===
 
 From http://www.yaronet.com/topics/154490-steel-battalion-controller-homemade#post-15
 
@@ -47,6 +47,7 @@ iInterface:           0x00
 Endpoint Descriptor:
 bEndpointAddress:     0x82
 Transfer Type:   Interrupt</pre>
+
 === Controller to Xbox ===
 
 <pre>// Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
