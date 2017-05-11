@@ -4,6 +4,25 @@ permalink: wiki/Network/
 layout: wiki
 ---
 
+System Link
+-----------
+
+| function                                         | description                                                  |
+|--------------------------------------------------|--------------------------------------------------------------|
+| XNetCreateKey(&xnkid, &xnkey)                    |                                                              |
+| XNetRegisterKey(&xnkid, &xnkey)                  | Register the session key                                     |
+| XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP ) | Convert the address to a winsock usable format               |
+| XNetUnregisterKey( &xbc.SessionID )              |                                                              |
+| XNetGetTitleXnAddr( &hostAddr )                  | Gets your XNADDR. Used by syslink, and lots of other people. |
+| XNetGetEthernetLinkStatus()                      |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+|                                                  |                                                              |
+
 Xbox Live infrastructure
 ------------------------
 
@@ -31,22 +50,6 @@ Heartbeat
 
 Xbox Live Functions
 -------------------
-
-| function                                         | description                                                  |
-|--------------------------------------------------|--------------------------------------------------------------|
-| XNetCreateKey(&xnkid, &xnkey)                    |                                                              |
-| XNetRegisterKey(&xnkid, &xnkey)                  | Register the session key                                     |
-| XNetXnAddrToInAddr( pxnaddr, pxnkid, &pseudoIP ) | Convert the address to a winsock usable format               |
-| XNetUnregisterKey( &xbc.SessionID )              |                                                              |
-| XNetGetTitleXnAddr( &hostAddr )                  | Gets your XNADDR. Used by syslink, and lots of other people. |
-| XNetGetEthernetLinkStatus()                      |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
-|                                                  |                                                              |
 
 | function                                                                                                                          | description                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
