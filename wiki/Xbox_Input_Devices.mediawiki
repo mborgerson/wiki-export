@@ -2,6 +2,188 @@
 == Steering wheels ==
 == Light guns ==
 
+== Steel Batallion Controller ==
+
+=== USB Device Scriptor ===
+
+From http://www.yaronet.com/topics/154490-steel-battalion-controller-homemade#post-15
+
+<pre>bcdUSB:             0x0110
+bDeviceClass:         0x00
+bDeviceSubClass:      0x00
+bDeviceProtocol:      0x00
+bMaxPacketSize0:      0x08 (8)
+idVendor:           0x0A7B
+idProduct:          0xD000
+bcdDevice:          0x0100
+iManufacturer:        0x00
+iProduct:             0x00
+iSerialNumber:        0x00
+bNumConfigurations:   0x01
+
+ConnectionStatus: DeviceConnected
+Current Config Value: 0x00
+Device Bus Speed:     Full
+Device Address:       0x03
+Open Pipes:              0
+
+Configuration Descriptor:
+wTotalLength:       0x0020
+bNumInterfaces:       0x01
+bConfigurationValue:  0x01
+iConfiguration:       0x00
+bmAttributes:         0x80 (Bus Powered )
+MaxPower:             0xFA (500 Ma)
+
+Interface Descriptor:
+bInterfaceNumber:     0x00
+bAlternateSetting:    0x00
+bNumEndpoints:        0x02
+bInterfaceClass:      0x58
+bInterfaceSubClass:   0x42
+bInterfaceProtocol:   0x00
+iInterface:           0x00
+
+Endpoint Descriptor:
+bEndpointAddress:     0x82
+Transfer Type:   Interrupt</pre>
+=== Controller to Xbox ===
+
+<pre>// Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
+// See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
+
+rawControlData = new Byte[26];
+
+typedef enum {
+
+  RightJoyMainWeapon       = BUTTON_MASK( 2, 0x01),
+  RightJoyFire             = BUTTON_MASK( 2, 0x03), //FIXME: WTF?!
+  RightJoyLockOn           = BUTTON_MASK( 2, 0x04),
+  CockpitHatch             = BUTTON_MASK( 2, 0x10),
+  Ignition                 = BUTTON_MASK( 2, 0x20),
+  Start                    = BUTTON_MASK( 2, 0x40),
+  Eject                    = BUTTON_MASK( 2, 0x08),
+  MultiMonOpenClose        = BUTTON_MASK( 2, 0x80),
+  MultiMonMapZoomInOut     = BUTTON_MASK( 3, 0x01),
+  MultiMonModeSelect       = BUTTON_MASK( 3, 0x02),
+  MultiMonSubMonitor       = BUTTON_MASK( 3, 0x04),
+  MainMonZoomIn            = BUTTON_MASK( 3, 0x08),
+  MainMonZoomOut           = BUTTON_MASK( 3, 0x10),
+  FunctionFSS              = BUTTON_MASK( 3, 0x20),
+  FunctionManipulator      = BUTTON_MASK( 3, 0x40),
+  FunctionLineColorChange  = BUTTON_MASK( 3, 0x80),
+  Washing                  = BUTTON_MASK( 4, 0x01),
+  Extinguisher             = BUTTON_MASK( 4, 0x02),
+  Chaff                    = BUTTON_MASK( 4, 0x04),
+  FunctionTankDetach       = BUTTON_MASK( 4, 0x08),
+  FunctionOverride         = BUTTON_MASK( 4, 0x10),
+  FunctionNightScope       = BUTTON_MASK( 4, 0x20),
+  FunctionF1               = BUTTON_MASK( 4, 0x40),
+  FunctionF2               = BUTTON_MASK( 4, 0x80),
+  FunctionF3               = BUTTON_MASK( 5, 0x01),
+  WeaponConMain            = BUTTON_MASK( 5, 0x02),
+  WeaponConSub             = BUTTON_MASK( 5, 0x04),
+  WeaponConMagazine        = BUTTON_MASK( 5, 0x08),
+  Comm1                    = BUTTON_MASK( 5, 0x10),
+  Comm2                    = BUTTON_MASK( 5, 0x20),
+  Comm3                    = BUTTON_MASK( 5, 0x40),
+  Comm4                    = BUTTON_MASK( 5, 0x80),
+  Comm5                    = BUTTON_MASK( 6, 0x01),
+  LeftJoySightChange       = BUTTON_MASK( 6, 0x02),
+  ToggleFilterControl      = BUTTON_MASK( 6, 0x04),
+  ToggleOxygenSupply       = BUTTON_MASK( 6, 0x08),
+  ToggleFuelFlowRate       = BUTTON_MASK( 6, 0x10),
+  ToggleBuffreMaterial     = BUTTON_MASK( 6, 0x20),
+  ToggleVTLocation         = BUTTON_MASK( 6, 0x40),
+
+  AimingX                  = BUTTON_MASK( 9, 0xFF),  // Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  X Axis value.
+
+  AimingY                  = BUTTON_MASK(11, 0xFF), // Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  Y Axis value.
+
+  RotationLever            = BUTTON_MASK(13, 0xFF), // Corresponds to the &quot;Rotation Lever&quot; joystick on the left.
+
+  SightChangeX             = BUTTON_MASK(15, 0xFF), // Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  X Axis value.
+
+  SightChangeY             = BUTTON_MASK(17, 0xFF) // Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  Y Axis value.
+
+  LeftPedal                = BUTTON_MASK(19, 0xFF), // Corresponds to the left pedal on the pedal block
+
+  MiddlePedal              = BUTTON_MASK(21, 0xFF), // Corresponds to the middle pedal on the pedal block
+
+  RightPedal               = BUTTON_MASK(23, 0xFF), // Corresponds to the right pedal on the pedal block
+  TunerDial                = BUTTON_MASK(24, 0x0F), // Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12.
+                                                    // The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
+  GearLever                = BUTTON_MASK(25, 0xFF), // Corresponds to the gear lever on the left block.
+} ButtonEnum;</pre>
+=== Xbox to Controller ===
+
+<pre>//FIXME: Convert to field masks
+typedef enum {
+  EmergencyEject = 4,
+  CockpitHatch = 5,
+  Ignition = 6,
+  Start = 7,
+  OpenClose = 8,
+  MapZoomInOut = 9,
+  ModeSelect = 10,
+  SubMonitorModeSelect = 11,
+  MainMonitorZoomIn = 12,
+  MainMonitorZoomOut = 13,
+
+  Gear5 = 41,
+  Gear4 = 40,
+  Gear3 = 39,
+  Gear2 = 38,
+  Gear1 = 37,
+  GearN = 36,
+  GearR = 35,
+
+  Comm5 = 33,
+  Comm4 = 32,
+  Comm3 = 31,
+  Comm2 = 30,
+  Comm1 = 29,
+  MagazineChange = 28,
+
+  SubWeaponControl = 27,
+  MainWeaponControl = 26,
+  F3 = 25,
+  F2 = 24,
+  F1 = 23,
+  NightScope = 22,
+  Override = 21,
+  TankDetach = 20,
+  Chaff = 19,
+  Extinguisher = 18,
+  Washing = 17,
+  LineColorChange = 16,
+  Manipulator = 15,
+  ForecastShootingSystem = 14,
+} LEDEnum;
+
+
+// Sets the intensity of the specified LED in the buffer, but gives the option on whether you want
+// to send the buffer to the controller.  This can be useful for updating multiple LED's at the
+// same time, but not waiting for the LED buffer to transfer to the device after each call.
+
+// &lt;param name=&quot;LightId&quot;&gt;A ControllerLEDEnum value that specifies which LED to modify&lt;/param&gt;
+// &lt;param name=&quot;Intensity&quot;&gt;The intensity of the LED, ranging from 0 to 15&lt;/param&gt;
+// &lt;param name=&quot;refreshState&quot;&gt;A boolean value indicating whether to refresh the buffer on the device.&lt;/param&gt;
+public void SetLEDState(ControllerLEDEnum LightId, int Intensity, bool refreshState) {
+  int hexPos = ((int) LightId) % 2;
+  int bytePos = (((int) LightId) - hexPos) / 2;
+  
+  if (Intensity &gt; 0x0f) Intensity = 0x0f;
+  
+  // Erase the byte position, and set the light intensity
+  rawLEDData[bytePos&amp;= (byte) ((hexPos == 1)?0x0F:0xF0);
+  rawLEDData[bytePos+= (byte) (Intensity * ((hexPos == 1)?0x10:0x01));
+  
+  if (refreshState) {
+    RefreshLEDState();
+  }
+}</pre>
+
 
 == USB Adapters ==
 The Xbox input devices are USB devices. As such, you can connect a keyboard to the Xbox, or a gamepad to your PC. In fact, Linux already has drivers for the gamepad. In order to preserve Xbox hardware, please do not cut OEM Xbox cables to make an adapter. Decent adapters can be acquired cheaply (~$10 USD ea. on 2017.04.30).
