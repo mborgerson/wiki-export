@@ -117,73 +117,51 @@ typedef enum {
 } ButtonEnum;</pre>
 === Xbox to Controller ===
 
-<pre>//FIXME: Convert to field masks
+<pre>rawLEDData = new Byte[34];
+
 typedef enum {
-  EmergencyEject = 4,
-  CockpitHatch = 5,
-  Ignition = 6,
-  Start = 7,
-  OpenClose = 8,
-  MapZoomInOut = 9,
-  ModeSelect = 10,
-  SubMonitorModeSelect = 11,
-  MainMonitorZoomIn = 12,
-  MainMonitorZoomOut = 13,
 
-  Gear5 = 41,
-  Gear4 = 40,
-  Gear3 = 39,
-  Gear2 = 38,
-  Gear1 = 37,
-  GearN = 36,
-  GearR = 35,
+  EmergencyEject            = FIELD_MASK(2, 0x0F),
+  CockpitHatch              = FIELD_MASK(2, 0xF0),
+  Ignition                  = FIELD_MASK(3, 0x0F),
+  Start                     = FIELD_MASK(3, 0xF0),
+  OpenClose                 = FIELD_MASK(4, 0x0F),
+  MapZoomInOut              = FIELD_MASK(4, 0xF0),
+  ModeSelect                = FIELD_MASK(5, 0x0F),
+  SubMonitorModeSelect      = FIELD_MASK(5, 0xF0),
+  MainMonitorZoomIn         = FIELD_MASK(6, 0x0F),
+  MainMonitorZoomOut        = FIELD_MASK(6, 0xF0),
+  ForecastShootingSystem    = FIELD_MASK(7, 0x0F),
+  Manipulator               = FIELD_MASK(7, 0xF0),
+  LineColorChange           = FIELD_MASK(8, 0x0F),
+  Washing                   = FIELD_MASK(8, 0xF0),
+  Extinguisher              = FIELD_MASK(9, 0x0F),
+  Chaff                     = FIELD_MASK(9, 0xF0),
+  TankDetach                = FIELD_MASK(10, 0x0F),
+  Override                  = FIELD_MASK(10, 0xF0),
+  NightScope                = FIELD_MASK(11, 0x0F),
+  F1                        = FIELD_MASK(11, 0xF0),
+  F2                        = FIELD_MASK(12, 0x0F),
+  F3                        = FIELD_MASK(12, 0xF0),
+  MainWeaponControl         = FIELD_MASK(13, 0x0F),
+  SubWeaponControl          = FIELD_MASK(13, 0xF0),
+  MagazineChange            = FIELD_MASK(14, 0x0F),
+  Comm1                     = FIELD_MASK(14, 0xF0),
+  Comm2                     = FIELD_MASK(15, 0x0F),
+  Comm3                     = FIELD_MASK(15, 0xF0),
+  Comm4                     = FIELD_MASK(16, 0x0F),
+  Comm5                     = FIELD_MASK(16, 0xF0),
 
-  Comm5 = 33,
-  Comm4 = 32,
-  Comm3 = 31,
-  Comm2 = 30,
-  Comm1 = 29,
-  MagazineChange = 28,
+  GearR                     = FIELD_MASK(17, 0xF0),
+  GearN                     = FIELD_MASK(18, 0x0F),
+  Gear1                     = FIELD_MASK(18, 0xF0),
+  Gear2                     = FIELD_MASK(19, 0x0F),
+  Gear3                     = FIELD_MASK(19, 0xF0),
+  Gear4                     = FIELD_MASK(20, 0x0F),
+  Gear5                     = FIELD_MASK(20, 0xF0),
 
-  SubWeaponControl = 27,
-  MainWeaponControl = 26,
-  F3 = 25,
-  F2 = 24,
-  F1 = 23,
-  NightScope = 22,
-  Override = 21,
-  TankDetach = 20,
-  Chaff = 19,
-  Extinguisher = 18,
-  Washing = 17,
-  LineColorChange = 16,
-  Manipulator = 15,
-  ForecastShootingSystem = 14,
 } LEDEnum;
-
-
-// Sets the intensity of the specified LED in the buffer, but gives the option on whether you want
-// to send the buffer to the controller.  This can be useful for updating multiple LED's at the
-// same time, but not waiting for the LED buffer to transfer to the device after each call.
-
-// &lt;param name=&quot;LightId&quot;&gt;A ControllerLEDEnum value that specifies which LED to modify&lt;/param&gt;
-// &lt;param name=&quot;Intensity&quot;&gt;The intensity of the LED, ranging from 0 to 15&lt;/param&gt;
-// &lt;param name=&quot;refreshState&quot;&gt;A boolean value indicating whether to refresh the buffer on the device.&lt;/param&gt;
-public void SetLEDState(ControllerLEDEnum LightId, int Intensity, bool refreshState) {
-  int hexPos = ((int) LightId) % 2;
-  int bytePos = (((int) LightId) - hexPos) / 2;
-  
-  if (Intensity &gt; 0x0f) Intensity = 0x0f;
-  
-  // Erase the byte position, and set the light intensity
-  rawLEDData[bytePos&amp;= (byte) ((hexPos == 1)?0x0F:0xF0);
-  rawLEDData[bytePos+= (byte) (Intensity * ((hexPos == 1)?0x10:0x01));
-  
-  if (refreshState) {
-    RefreshLEDState();
-  }
 }</pre>
-
 
 == USB Adapters ==
 The Xbox input devices are USB devices. As such, you can connect a keyboard to the Xbox, or a gamepad to your PC. In fact, Linux already has drivers for the gamepad. In order to preserve Xbox hardware, please do not cut OEM Xbox cables to make an adapter. Decent adapters can be acquired cheaply (~$10 USD ea. on 2017.04.30).
