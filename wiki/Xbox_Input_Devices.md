@@ -69,14 +69,15 @@ a list of devices.
 
 | Field          | Bits    | Notes             |
 |----------------|---------|-------------------|
-| DPAD\_UP       | 23      |                   |
-| DPAD\_DOWN     | 22      |                   |
-| DPAD\_LEFT     | 21      |                   |
-| DPAD\_RIGHT    | 20      |                   |
-| START          | 19      |                   |
-| BACK           | 18      |                   |
-| LEFT\_THUMB    | 17      |                   |
 | RIGHT\_THUMB   | 16      |                   |
+| LEFT\_THUMB    | 17      |                   |
+| BACK           | 18      |                   |
+| START          | 19      |                   |
+| DPAD\_RIGHT    | 20      |                   |
+| DPAD\_LEFT     | 21      |                   |
+| DPAD\_DOWN     | 22      |                   |
+| DPAD\_UP       | 23      |                   |
+|                | 24-31   |                   |
 | A              | 32-39   | Button is analog  |
 | B              | 40-47   | Button is analog  |
 | X              | 48-55   | Button is analog  |
