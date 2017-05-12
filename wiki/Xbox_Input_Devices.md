@@ -67,26 +67,28 @@ a list of devices.
 
 20 bytes
 
-    DPAD_UP           = FIELD_MASK(2, 1 << 0)
-    DPAD_DOWN         = FIELD_MASK(2, 1 << 1)
-    DPAD_LEFT         = FIELD_MASK(2, 1 << 2)
-    DPAD_RIGHT        = FIELD_MASK(2, 1 << 3)
-    START             = FIELD_MASK(2, 1 << 4)
-    BACK              = FIELD_MASK(2, 1 << 5)
-    LEFT_THUMB        = FIELD_MASK(2, 1 << 6)
-    RIGHT_THUMB       = FIELD_MASK(2, 1 << 7)
-    A                 = FIELD_MASK(4, 0xFF), // These buttons are analog!
-    B                 = FIELD_MASK(5, 0xFF),
-    X                 = FIELD_MASK(6, 0xFF),
-    Y                 = FIELD_MASK(7, 0xFF),
-    BLACK             = FIELD_MASK(8, 0xFF),
-    WHITE             = FIELD_MASK(9, 0xFF),
-    LEFT_TRIGGER      = FIELD_MASK(10, 0xFF),
-    RIGHT_TRIGGER     = FIELD_MASK(11, 0xFF),
-    sThumbLX          = FIELD_MASK(12, 0xFFFF),
-    sThumbLY          = FIELD_MASK(14, 0xFFFF),
-    sThumbRX          = FIELD_MASK(16, 0xFFFF),
-    sThumbRY          = FIELD_MASK(18, 0xFFFF),
+| Field          | Offset (bits) | Mask (bits)  | Notes             |
+|----------------|---------------|--------------|-------------------|
+| DPAD\_UP       | 8\*2          | 1 &lt;&lt; 0 |                   |
+| DPAD\_DOWN     | 8\*2          | 1 &lt;&lt; 1 |                   |
+| DPAD\_LEFT     | 8\*2          | 1 &lt;&lt; 2 |                   |
+| DPAD\_RIGHT    | 8\*2          | 1 &lt;&lt; 3 |                   |
+| START          | 8\*2          | 1 &lt;&lt; 4 |                   |
+| BACK           | 8\*2          | 1 &lt;&lt; 5 |                   |
+| LEFT\_THUMB    | 8\*2          | 1 &lt;&lt; 6 |                   |
+| RIGHT\_THUMB   | 8\*2          | 1 &lt;&lt; 7 |                   |
+| A              | 8\*4          | 0xFF         | Button is analog  |
+| B              | 8\*5          | 0xFF         | Button is analog  |
+| X              | 8\*6          | 0xFF         | Button is analog  |
+| Y              | 8\*7          | 0xFF         | Button is analog  |
+| BLACK          | 8\*8          | 0xFF         | Button is analog  |
+| WHITE          | 8\*9          | 0xFF         | Button is analog  |
+| LEFT\_TRIGGER  | 8\*10         | 0xFF         | Trigger is analog |
+| RIGHT\_TRIGGER | |8\*11        | 0xFF         | Trigger is analog |
+| sThumbLX       | 8\*12         | 0xFFFF       |                   |
+| sThumbLY       | 8\*14         | 0xFFFF       |                   |
+| sThumbRX       | 8\*16         | 0xFFFF       |                   |
+| sThumbRY       | 8\*18         | 0xFFFF       |                   |
 
 ### Xbox to Controller
 
