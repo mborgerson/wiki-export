@@ -197,7 +197,7 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 
 {| class="wikitable"
 !Field
-!Offset (bytes)
+!Offset (Bytes)
 !Mask
 !Notes
 |-

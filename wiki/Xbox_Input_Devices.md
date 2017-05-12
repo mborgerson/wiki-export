@@ -94,7 +94,7 @@ a list of devices.
 
 6 bytes
 
-| Field                   | Offset (bytes) | Mask   | Notes |
+| Field                   | Offset (Bytes) | Mask   | Notes |
 |-------------------------|----------------|--------|-------|
 | Left actuator strength  | 2              | 0xFFFF |       |
 | Right actuator strength | 4              | 0xFFFF |       |
