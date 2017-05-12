@@ -84,7 +84,6 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 
 20 bytes (160 bits)
 
-
 {| class="wikitable"
 !Field
 !Bits
