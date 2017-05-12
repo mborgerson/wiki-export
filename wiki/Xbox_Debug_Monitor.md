@@ -80,18 +80,17 @@ protocol transmitted over a TCP connection on port 731. RDCP resembles
 protocols like FTP and SMTP, making it possible to communicate with XBDM
 using just a Telnet client in many cases.
 
-### Overview
-
 When a connection is established, XBDM sends `201- connected` followed
 by <CR><LF> (that is, a carriage return character followed by a line
 feed character). The RDCP client is then free to send a command followed
-by <CR><LF> or simply <LF>. A command consists of a name and zero or
-more parameters. The format of the parameters is defined by the command,
-but most commands use the form `key=value`. Parameters that contain
-whitespace must be surrounded by double quotes (e.g. “`some`` ``value`”
-or `key=`“`some`` ``value`”).
+by <CR><LF> or <CR><NUL>. A command consists of a name and zero or more
+parameters separated by whitespace characters. The format of the
+parameters is defined by the command, but most commands use the form
+`key=value`. Parameter values that contain whitespace characters must be
+surrounded by double quotes (e.g. “`some`` ``value`” or
+`key=`“`some`` ``value`”).
 
-Upon receipt of a command, XBDM replies with a response line consisting
+After executing a command, XBDM replies with a response line consisting
 of a three-digit status code and message of the form
 `999- message text`<CR><LF>. Note that unlike similar protocols, the `-`
 (dash) is always present in responses and messages cannot span multiple
@@ -99,10 +98,10 @@ lines.
 
 ### Status codes
 
-2xx status codes indicate success, while 4xx codes indicate failure.
-Each code has a default message, but some commands use the message field
-to hold whatever data was requested by the client or additional
-information about an error.
+In responses, 2xx status codes indicate success and 4xx codes indicate
+failure. Each code has a default message, but some commands use the
+message field to hold whatever data was requested by the client or
+additional information about an error.
 
 #### 2xx Success
 
@@ -126,7 +125,7 @@ available data before sending another command.
 204- ready for binary data  
 The command is expecting additional binary data from the client. After
 the client sends the required number of bytes, XBDM will send another
-response line with the final status of the command.
+response line with the final result of the command.
 
 205- dedicated  
 The connection has been moved to a dedicated processing thread.
