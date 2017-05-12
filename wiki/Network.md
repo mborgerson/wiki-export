@@ -4,6 +4,15 @@ permalink: wiki/Network/
 layout: wiki
 ---
 
+The Xbox contains an Ethernet module and one RJ45 connector.
+Additionally, separate modem and wireless accessories were considered
+when developing the console.
+
+The Xbox has a TCP/IP protocol stack complete with a DNS PPTP, DHCP
+clients.
+
+Port 3074 UDP/TCP is reserved for Xbox communications.
+
 Hardware
 --------
 

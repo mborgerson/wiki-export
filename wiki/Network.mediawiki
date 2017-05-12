@@ -1,3 +1,9 @@
+The Xbox contains an Ethernet module and one RJ45 connector. Additionally, separate modem and wireless accessories were considered when developing the console.
+
+The Xbox has a TCP/IP protocol stack complete with a DNS PPTP, DHCP clients. 
+
+Port 3074 UDP/TCP is reserved for Xbox communications.
+
 == Hardware ==
 
 Integrated in the Nvidia Southbridge MCPX chip which is similar to the nForce chips. The Xbox Linux team used the binary drivers from Nvidia.
