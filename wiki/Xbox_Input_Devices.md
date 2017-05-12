@@ -13,9 +13,8 @@ XIDs are USB devices.
 
 Untested / unverified! Take this with a grain of salt.
 
-|     |                     |                                                 |
-|-----|---------------------|-------------------------------------------------|
 | Pin | Typical cable color | Description                                     |
+|-----|---------------------|-------------------------------------------------|
 | 1   | Green               | USB D-                                          |
 | 2   | White               | USB D+                                          |
 | 3   | Black               | GND                                             |
