@@ -271,6 +271,4 @@ typedef enum {
   Gear2                     = FIELD_MASK(19, 0x0F),
   Gear3                     = FIELD_MASK(19, 0xF0),
   Gear4                     = FIELD_MASK(20, 0x0F),
-  Gear5                     = FIELD_MASK(20, 0xF0),
-
-} LEDEnum;</pre>
+  Gear5                     = FIELD_MASK(20, 0xF0),</pre>

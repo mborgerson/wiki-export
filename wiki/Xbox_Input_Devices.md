@@ -260,5 +260,3 @@ From
       Gear3                     = FIELD_MASK(19, 0xF0),
       Gear4                     = FIELD_MASK(20, 0x0F),
       Gear5                     = FIELD_MASK(20, 0xF0),
-
-    } LEDEnum;
