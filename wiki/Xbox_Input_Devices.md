@@ -4,8 +4,80 @@ permalink: wiki/Xbox_Input_Devices/
 layout: wiki
 ---
 
+XID Overview
+------------
+
+XIDs are USB devices.
+
+### Wiring
+
+Untested / unverified! Take this with a grain of salt.
+
+|     |                     |                                                 |
+|-----|---------------------|-------------------------------------------------|
+| Pin | Typical cable color | Description                                     |
+| 1   | Green               | USB D-                                          |
+| 2   | White               | USB D+                                          |
+| 3   | Black               | GND                                             |
+| 4   | Red                 | VCC                                             |
+| 5   | Yellow              | VBlank signal from video output (for Lightguns) |
+||
+
+### Protocol
+
+#### Controller to Xbox
+
+    typedef struct XIDGamepadReport {
+        uint8_t bReportId;
+        uint8_t bLength;
+        <Data>
+    }
+
+#### Xbox to Controller
+
+    typedef struct XIDGamepadOutputReport {
+        uint8_t report_id; //FIXME: is this correct?
+        uint8_t length;
+        <Data>
+    }
+
 Standard Gamepads
 -----------------
+
+### USB Descriptors
+
+Most standard gamepads share the same USB descriptor. Usually the only
+difference will be the VID / PID. See
+<https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp> for
+a list of devices.
+
+### Controller to Xbox
+
+    DPAD_UP           = FIELD_MASK(0, 1 << 0)
+    DPAD_DOWN         = FIELD_MASK(0, 1 << 1)
+    DPAD_LEFT         = FIELD_MASK(0, 1 << 2)
+    DPAD_RIGHT        = FIELD_MASK(0, 1 << 3)
+    START             = FIELD_MASK(0, 1 << 4)
+    BACK              = FIELD_MASK(0, 1 << 5)
+    LEFT_THUMB        = FIELD_MASK(0, 1 << 6)
+    RIGHT_THUMB       = FIELD_MASK(0, 1 << 7)
+    A                 = FIELD_MASK(2, 0xFF), // These buttons are analog!
+    B                 = FIELD_MASK(3, 0xFF),
+    X                 = FIELD_MASK(4, 0xFF),
+    Y                 = FIELD_MASK(5, 0xFF),
+    BLACK             = FIELD_MASK(6, 0xFF),
+    WHITE             = FIELD_MASK(7, 0xFF),
+    LEFT_TRIGGER      = FIELD_MASK(8, 0xFF),
+    RIGHT_TRIGGER     = FIELD_MASK(9, 0xFF),
+    sThumbLX          = FIELD_MASK(10, 0xFFFF),
+    sThumbLY          = FIELD_MASK(12, 0xFFFF),
+    sThumbRX          = FIELD_MASK(14, 0xFFFF),
+    sThumbRY          = FIELD_MASK(16, 0xFFFF),
+
+### Xbox to Controller
+
+    left_actuator_strength  = FIELD_MASK(0, 0xFFFF),
+    right_actuator_strength = FIELD_MASK(2, 0xFFFF),
 
 Steering wheels
 ---------------
