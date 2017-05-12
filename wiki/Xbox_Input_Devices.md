@@ -65,30 +65,30 @@ a list of devices.
 
 ### Controller to Xbox
 
-20 bytes
+20 bytes (160 bits)
 
-| Field          | Offset (bits) | Mask (bits)  | Notes             |
-|----------------|---------------|--------------|-------------------|
-| DPAD\_UP       | 8\*2          | 1 &lt;&lt; 0 |                   |
-| DPAD\_DOWN     | 8\*2          | 1 &lt;&lt; 1 |                   |
-| DPAD\_LEFT     | 8\*2          | 1 &lt;&lt; 2 |                   |
-| DPAD\_RIGHT    | 8\*2          | 1 &lt;&lt; 3 |                   |
-| START          | 8\*2          | 1 &lt;&lt; 4 |                   |
-| BACK           | 8\*2          | 1 &lt;&lt; 5 |                   |
-| LEFT\_THUMB    | 8\*2          | 1 &lt;&lt; 6 |                   |
-| RIGHT\_THUMB   | 8\*2          | 1 &lt;&lt; 7 |                   |
-| A              | 8\*4          | 0xFF         | Button is analog  |
-| B              | 8\*5          | 0xFF         | Button is analog  |
-| X              | 8\*6          | 0xFF         | Button is analog  |
-| Y              | 8\*7          | 0xFF         | Button is analog  |
-| BLACK          | 8\*8          | 0xFF         | Button is analog  |
-| WHITE          | 8\*9          | 0xFF         | Button is analog  |
-| LEFT\_TRIGGER  | 8\*10         | 0xFF         | Trigger is analog |
-| RIGHT\_TRIGGER | |8\*11        | 0xFF         | Trigger is analog |
-| sThumbLX       | 8\*12         | 0xFFFF       |                   |
-| sThumbLY       | 8\*14         | 0xFFFF       |                   |
-| sThumbRX       | 8\*16         | 0xFFFF       |                   |
-| sThumbRY       | 8\*18         | 0xFFFF       |                   |
+| Field          | Bits    | Notes             |
+|----------------|---------|-------------------|
+| DPAD\_UP       | 23      |                   |
+| DPAD\_DOWN     | 22      |                   |
+| DPAD\_LEFT     | 21      |                   |
+| DPAD\_RIGHT    | 20      |                   |
+| START          | 19      |                   |
+| BACK           | 18      |                   |
+| LEFT\_THUMB    | 17      |                   |
+| RIGHT\_THUMB   | 16      |                   |
+| A              | 32-39   | Button is analog  |
+| B              | 40-47   | Button is analog  |
+| X              | 48-55   | Button is analog  |
+| Y              | 56-63   | Button is analog  |
+| BLACK          | 64-71   | Button is analog  |
+| WHITE          | 72-79   | Button is analog  |
+| LEFT\_TRIGGER  | 80-87   | Trigger is analog |
+| RIGHT\_TRIGGER | 88-95   | Trigger is analog |
+| sThumbLX       | 96-111  |                   |
+| sThumbLY       | 112-127 |                   |
+| sThumbRX       | 128-143 |                   |
+| sThumbRY       | 144-159 |                   |
 
 ### Xbox to Controller
 

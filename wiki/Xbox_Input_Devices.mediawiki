@@ -82,113 +82,92 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 
 === Controller to Xbox ===
 
-20 bytes
+20 bytes (160 bits)
 
 
 {| class="wikitable"
 !Field
-!Offset (bits)
-!Mask (bits)
+!Bits
 !Notes
 |-
 |DPAD_UP
-|8*2
-|1 << 0
+|23
 |
 |-
 |DPAD_DOWN
-|8*2
-|1 << 1
+|22
 |
 |-
 |DPAD_LEFT
-|8*2
-|1 << 2
+|21
 |
 |-
 |DPAD_RIGHT
-|8*2
-|1 << 3
+|20
 |
 |-
 |START
-|8*2
-|1 << 4
+|19
 |
 |-
 |BACK
-|8*2
-|1 << 5
+|18
 |
 |-
 |LEFT_THUMB
-|8*2
-|1 << 6
+|17
 |
 |-
 |RIGHT_THUMB
-|8*2
-|1 << 7
+|16
 |
 |-
 |A
-|8*4
-|0xFF
+|32-39
 |Button is analog
 |-
 |B
-|8*5
-|0xFF
+|40-47
 |Button is analog
 |-
 |X
-|8*6
-|0xFF
+|48-55
 |Button is analog
 |-
 |Y
-|8*7
-|0xFF
+|56-63
 |Button is analog
 |-
 |BLACK
-|8*8
-|0xFF
+|64-71
 |Button is analog
 |-
 |WHITE
-|8*9
-|0xFF
+|72-79
 |Button is analog
 |-
 |LEFT_TRIGGER
-|8*10
-|0xFF
+|80-87
 |Trigger is analog
 |-
 |RIGHT_TRIGGER
-||8*11
-|0xFF
+|88-95
 |Trigger is analog
 |-
 |sThumbLX
-|8*12
-|0xFFFF
+|96-111
 |
 |-
 |sThumbLY
-|8*14
-|0xFFFF
+|112-127
 |
 |-
 |sThumbRX
-|8*16
-|0xFFFF
+|128-143
 |
 |-
 |sThumbRY
-|8*18
-|0xFFFF
+|144-159
 |
 |}
 
