@@ -65,26 +65,28 @@ a list of devices.
 
 ### Controller to Xbox
 
-    DPAD_UP           = FIELD_MASK(0, 1 << 0)
-    DPAD_DOWN         = FIELD_MASK(0, 1 << 1)
-    DPAD_LEFT         = FIELD_MASK(0, 1 << 2)
-    DPAD_RIGHT        = FIELD_MASK(0, 1 << 3)
-    START             = FIELD_MASK(0, 1 << 4)
-    BACK              = FIELD_MASK(0, 1 << 5)
-    LEFT_THUMB        = FIELD_MASK(0, 1 << 6)
-    RIGHT_THUMB       = FIELD_MASK(0, 1 << 7)
-    A                 = FIELD_MASK(2, 0xFF), // These buttons are analog!
-    B                 = FIELD_MASK(3, 0xFF),
-    X                 = FIELD_MASK(4, 0xFF),
-    Y                 = FIELD_MASK(5, 0xFF),
-    BLACK             = FIELD_MASK(6, 0xFF),
-    WHITE             = FIELD_MASK(7, 0xFF),
-    LEFT_TRIGGER      = FIELD_MASK(8, 0xFF),
-    RIGHT_TRIGGER     = FIELD_MASK(9, 0xFF),
-    sThumbLX          = FIELD_MASK(10, 0xFFFF),
-    sThumbLY          = FIELD_MASK(12, 0xFFFF),
-    sThumbRX          = FIELD_MASK(14, 0xFFFF),
-    sThumbRY          = FIELD_MASK(16, 0xFFFF),
+20 bytes
+
+    DPAD_UP           = FIELD_MASK(2, 1 << 0)
+    DPAD_DOWN         = FIELD_MASK(2, 1 << 1)
+    DPAD_LEFT         = FIELD_MASK(2, 1 << 2)
+    DPAD_RIGHT        = FIELD_MASK(2, 1 << 3)
+    START             = FIELD_MASK(2, 1 << 4)
+    BACK              = FIELD_MASK(2, 1 << 5)
+    LEFT_THUMB        = FIELD_MASK(2, 1 << 6)
+    RIGHT_THUMB       = FIELD_MASK(2, 1 << 7)
+    A                 = FIELD_MASK(4, 0xFF), // These buttons are analog!
+    B                 = FIELD_MASK(5, 0xFF),
+    X                 = FIELD_MASK(6, 0xFF),
+    Y                 = FIELD_MASK(7, 0xFF),
+    BLACK             = FIELD_MASK(8, 0xFF),
+    WHITE             = FIELD_MASK(9, 0xFF),
+    LEFT_TRIGGER      = FIELD_MASK(10, 0xFF),
+    RIGHT_TRIGGER     = FIELD_MASK(11, 0xFF),
+    sThumbLX          = FIELD_MASK(12, 0xFFFF),
+    sThumbLY          = FIELD_MASK(14, 0xFFFF),
+    sThumbRX          = FIELD_MASK(16, 0xFFFF),
+    sThumbRY          = FIELD_MASK(18, 0xFFFF),
 
 ### Xbox to Controller
 
