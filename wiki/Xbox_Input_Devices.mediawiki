@@ -278,6 +278,10 @@ Transfer Type:   Interrupt</pre>
 |184-191
 |Corresponds to the right pedal on the pedal block
 |-
+|
+|192-195
+|
+|-
 |TunerDial
 |196-199
 |Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12. The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.

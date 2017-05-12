@@ -167,6 +167,7 @@ From
 | LeftPedal     | 152-159 (Maybe 152-167 ?!) | Corresponds to the left pedal on the pedal block                                                                                                                                        |
 | MiddlePedal   | 168-175 (Maybe 168-192 ?!) | Corresponds to the middle pedal on the pedal block                                                                                                                                      |
 | RightPedal    | 184-191                    | Corresponds to the right pedal on the pedal block                                                                                                                                       |
+|               | 192-195                    |                                                                                                                                                                                         |
 | TunerDial     | 196-199                    | Corresponds to the tuner dial position. The 9 o'clock postion is 0, and the 6 o'clock position is 12. The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise. |
 | GearLever     | 200-207                    | Corresponds to the gear lever on the left block.                                                                                                                                        |
 
