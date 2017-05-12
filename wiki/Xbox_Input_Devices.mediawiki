@@ -507,18 +507,18 @@ Transfer Type:   Interrupt</pre>
 |"Sight Change" analog stick on the "Rotation Lever" joystick.  Y Axis value.
 |-
 |LeftPedal
-|19, maybe 0xFFFF at offset 18?
-|0xFF
+|19
+|0xFF, maybe 0xFFFF at offset 18?
 |
 |-
 |MiddlePedal
-|21, maybe 0xFFFF at offset 20?
-|0xFF
+|21
+|0xFF, maybe 0xFFFF at offset 20?
 |
 |-
 |RightPedal
-|23, maybe 0xFFFF at offset 22?
-|0xFF
+|23
+|0xFF, maybe 0xFFFF at offset 22?
 |
 |-
 |TunerDial
