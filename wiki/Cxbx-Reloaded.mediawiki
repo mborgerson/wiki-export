@@ -1,0 +1,4 @@
+Cxbx-Reloaded is a hybrid LLE / HLE Xbox emulation project started by [[User:SoullessSentinel|SoullessSentinel]] on April 1st, 2016.
+It is based on [[Cxbx]].
+
+Its website is can be found at [http://cxbx-reloaded.co.uk cxbx-reloaded.co.uk].
