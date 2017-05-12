@@ -214,7 +214,7 @@ From
 
 34 bytes
 
-| Field                  | Offset (bytes) | Mask | Notes |
+| Field                  | Offset (Bytes) | Mask | Notes |
 |------------------------|----------------|------|-------|
 | EmergencyEject         | 2              | 0x0F |       |
 | CockpitHatch           | 2              | 0xF0 |       |

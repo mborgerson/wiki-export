@@ -528,7 +528,7 @@ Transfer Type:   Interrupt</pre>
 
 {| class="wikitable"
 !Field
-!Offset (bytes)
+!Offset (Bytes)
 !Mask
 !Notes
 |-
