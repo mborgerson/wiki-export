@@ -45,7 +45,10 @@ Xbox Live
 
 ### Game servers
 
-### Kerberos
+### Authentication servers
+
+Authentication and access to Xbox Live services is controlled using the
+Kerberos protocol with a few proprietary customizations for the Xbox.
 
 Kerberos Authentication Server: macs.xboxlive.com
 

@@ -64,7 +64,9 @@ Integrated in the Nvidia Southbridge MCPX chip which is similar to the nForce ch
 
 === Game servers ===
 
-=== Kerberos ===
+=== Authentication servers ===
+
+Authentication and access to Xbox Live services is controlled using the Kerberos protocol with a few proprietary customizations for the Xbox.
 
 Kerberos Authentication Server: macs.xboxlive.com
 
