@@ -343,41 +343,199 @@ Transfer Type:   Interrupt</pre>
 
 34 bytes
 
-<pre>  EmergencyEject            = FIELD_MASK(2, 0x0F),
-  CockpitHatch              = FIELD_MASK(2, 0xF0),
-  Ignition                  = FIELD_MASK(3, 0x0F),
-  Start                     = FIELD_MASK(3, 0xF0),
-  OpenClose                 = FIELD_MASK(4, 0x0F),
-  MapZoomInOut              = FIELD_MASK(4, 0xF0),
-  ModeSelect                = FIELD_MASK(5, 0x0F),
-  SubMonitorModeSelect      = FIELD_MASK(5, 0xF0),
-  MainMonitorZoomIn         = FIELD_MASK(6, 0x0F),
-  MainMonitorZoomOut        = FIELD_MASK(6, 0xF0),
-  ForecastShootingSystem    = FIELD_MASK(7, 0x0F),
-  Manipulator               = FIELD_MASK(7, 0xF0),
-  LineColorChange           = FIELD_MASK(8, 0x0F),
-  Washing                   = FIELD_MASK(8, 0xF0),
-  Extinguisher              = FIELD_MASK(9, 0x0F),
-  Chaff                     = FIELD_MASK(9, 0xF0),
-  TankDetach                = FIELD_MASK(10, 0x0F),
-  Override                  = FIELD_MASK(10, 0xF0),
-  NightScope                = FIELD_MASK(11, 0x0F),
-  F1                        = FIELD_MASK(11, 0xF0),
-  F2                        = FIELD_MASK(12, 0x0F),
-  F3                        = FIELD_MASK(12, 0xF0),
-  MainWeaponControl         = FIELD_MASK(13, 0x0F),
-  SubWeaponControl          = FIELD_MASK(13, 0xF0),
-  MagazineChange            = FIELD_MASK(14, 0x0F),
-  Comm1                     = FIELD_MASK(14, 0xF0),
-  Comm2                     = FIELD_MASK(15, 0x0F),
-  Comm3                     = FIELD_MASK(15, 0xF0),
-  Comm4                     = FIELD_MASK(16, 0x0F),
-  Comm5                     = FIELD_MASK(16, 0xF0),
-
-  GearR                     = FIELD_MASK(17, 0xF0),
-  GearN                     = FIELD_MASK(18, 0x0F),
-  Gear1                     = FIELD_MASK(18, 0xF0),
-  Gear2                     = FIELD_MASK(19, 0x0F),
-  Gear3                     = FIELD_MASK(19, 0xF0),
-  Gear4                     = FIELD_MASK(20, 0x0F),
-  Gear5                     = FIELD_MASK(20, 0xF0),</pre>
+{| class="wikitable"
+!Field
+!Offset (bytes)
+!Mask
+!Notes
+|-
+|EmergencyEject
+|2
+|0x0F
+|
+|-
+|CockpitHatch
+|2
+|0xF0
+|
+|-
+|Ignition
+|3
+|0x0F
+|
+|-
+|Start
+|3
+|0xF0
+|
+|-
+|OpenClose
+|4
+|0x0F
+|
+|-
+|MapZoomInOut
+|4
+|0xF0
+|
+|-
+|ModeSelect
+|5
+|0x0F
+|
+|-
+|SubMonitorModeSelect
+|5
+|0xF0
+|
+|-
+|MainMonitorZoomIn
+|6
+|0x0F
+|
+|-
+|MainMonitorZoomOut
+|6
+|0xF0
+|
+|-
+|ForecastShootingSystem
+|7
+|0x0F
+|
+|-
+|Manipulator
+|7
+|0xF0
+|
+|-
+|LineColorChange
+|8
+|0x0F
+|
+|-
+|Washing
+|8
+|0xF0
+|
+|-
+|Extinguisher
+|9
+|0x0F
+|
+|-
+|Chaff
+|9
+|0xF0
+|
+|-
+|TankDetach
+|10
+|0x0F
+|
+|-
+|Override
+|10
+|0xF0
+|
+|-
+|NightScope
+|11
+|0x0F
+|
+|-
+|F1
+|11
+|0xF0
+|
+|-
+|F2
+|12
+|0x0F
+|
+|-
+|F3
+|12
+|0xF0
+|
+|-
+|MainWeaponControl
+|13
+|0x0F
+|
+|-
+|SubWeaponControl
+|13
+|0xF0
+|
+|-
+|MagazineChange
+|14
+|0x0F
+|
+|-
+|Comm1
+|14
+|0xF0
+|
+|-
+|Comm2
+|15
+|0x0F
+|
+|-
+|Comm3
+|15
+|0xF0
+|
+|-
+|Comm4
+|16
+|0x0F
+|
+|-
+|Comm5
+|16
+|0xF0
+|
+|-
+|
+|17
+|0x0F
+|
+|-
+|GearR
+|17
+|0xF0
+|
+|-
+|GearN
+|18
+|0x0F
+|
+|-
+|Gear1
+|18
+|0xF0
+|
+|-
+|Gear2
+|19
+|0x0F
+|
+|-
+|Gear3
+|19
+|0xF0
+|
+|-
+|Gear4
+|20
+|0x0F
+|
+|-
+|Gear5
+|20
+|0xF0
+|
+|}
