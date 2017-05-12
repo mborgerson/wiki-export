@@ -1,0 +1,5 @@
+xqemu is a low-level Xbox / Chihiro Emulator started in mid-late 2012 by espes.
+
+== Compatiblity list ==
+
+{{:XQEMU/Compatibility List}}
