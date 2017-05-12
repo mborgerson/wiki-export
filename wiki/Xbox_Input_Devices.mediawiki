@@ -286,6 +286,11 @@ Transfer Type:   Interrupt</pre>
 |0x04
 |
 |-
+|Eject
+|2
+|0x08
+|
+|-
 |CockpitHatch
 |2
 |0x10
@@ -299,11 +304,6 @@ Transfer Type:   Interrupt</pre>
 |Start
 |2
 |0x40
-|
-|-
-|Eject
-|2
-|0x08
 |
 |-
 |MultiMonOpenClose
@@ -466,43 +466,58 @@ Transfer Type:   Interrupt</pre>
 |0x40
 |
 |-
+|
+|6
+|0x80
+|
+|-
+|
+|7
+|0xFF
+|
+|-
+|
+|8
+|0xFF
+|
+|-
 |AimingX
 |9
-|0xFF
+|0xFF, maybe 0xFFFF at offset 8?
 |"Aiming Lever" joystick on the right.  X Axis value.
 |-
 |AimingY
 |11
-|0xFF
+|0xFF, maybe 0xFFFF at offset 10?
 |"Aiming Lever" joystick on the right.  Y Axis value.
 |-
 |RotationLever
 |13
-|0xFF
+|0xFF, maybe 0xFFFF at offset 12?
 |"Rotation Lever" joystick on the left.
 |-
 |SightChangeX
 |15
-|0xFF
+|0xFF, maybe 0xFFFF at offset 14?
 |"Sight Change" analog stick on the "Rotation Lever" joystick.  X Axis value.
 |-
 |SightChangeY
 |17
-|0xFF
+|0xFF, maybe 0xFFFF at offset 16?
 |"Sight Change" analog stick on the "Rotation Lever" joystick.  Y Axis value.
 |-
 |LeftPedal
-|19
+|19, maybe 0xFFFF at offset 18?
 |0xFF
 |
 |-
 |MiddlePedal
-|21
+|21, maybe 0xFFFF at offset 20?
 |0xFF
 |
 |-
 |RightPedal
-|23
+|23, maybe 0xFFFF at offset 22?
 |0xFF
 |
 |-
