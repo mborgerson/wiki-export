@@ -58,7 +58,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = Renderware =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 !width="11%"| Title
 !width="9%"| Year
 !width="15%"| Platform
