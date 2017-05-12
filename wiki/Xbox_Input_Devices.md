@@ -155,6 +155,9 @@ From
 
 ### Controller to Xbox
 
+From
+<http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs>
+
 26 bytes
 
 | Field                   | Offset (Bytes) | Mask                             | Notes                                                                                                                                           |
@@ -214,6 +217,9 @@ From
 | GearLever               | 25             | 0xFF                             | The gear lever on the left block.                                                                                                               |
 
 ### Xbox to Controller
+
+From
+<http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs>
 
 34 bytes
 

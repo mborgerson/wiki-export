@@ -263,6 +263,8 @@ Transfer Type:   Interrupt</pre>
 
 === Controller to Xbox ===
 
+From http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
+
 26 bytes
 
 {| class="wikitable"
@@ -538,6 +540,8 @@ Transfer Type:   Interrupt</pre>
 |}
 
 === Xbox to Controller ===
+
+From http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
 
 34 bytes
 
