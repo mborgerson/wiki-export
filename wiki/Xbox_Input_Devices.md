@@ -93,12 +93,12 @@ a list of devices.
 
 ### Xbox to Controller
 
-6 bytes (48 bits)
+6 bytes
 
-| Field                   | Bits  | Notes |
-|-------------------------|-------|-------|
-| Left actuator strength  | 16-31 |       |
-| Right actuator strength | 32-47 |       |
+| Field                   | Offset (bytes) | Mask   | Notes |
+|-------------------------|----------------|--------|-------|
+| Left actuator strength  | 2              | 0xFFFF |       |
+| Right actuator strength | 4              | 0xFFFF |       |
 
 Steering wheels
 ---------------
