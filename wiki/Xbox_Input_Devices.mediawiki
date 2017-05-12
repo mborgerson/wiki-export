@@ -173,7 +173,7 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 
 === Xbox to Controller ===
 
-6 bytes (48 bit)
+6 bytes (48 bits)
 
 {| class="wikitable"
 !Field

@@ -92,7 +92,7 @@ a list of devices.
 
 ### Xbox to Controller
 
-6 bytes (48 bit)
+6 bytes (48 bits)
 
 | Field                   | Bits  | Notes |
 |-------------------------|-------|-------|
