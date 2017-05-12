@@ -263,101 +263,264 @@ Transfer Type:   Interrupt</pre>
 
 === Controller to Xbox ===
 
-26 bytes (208 bits)
+26 bytes
 
 {| class="wikitable"
 !Field
-!Bits
+!Offset (Bytes)
+!Mask
 !Notes
 |-
+|RightJoyMainWeapon
+|2
+|0x01
+|
+|-
+|RightJoyFire
+|2
+|0x03
+|FIXME: WTF?! Mask might be bad?
+|-
+|RightJoyLockOn
+|2
+|0x04
+|
+|-
+|CockpitHatch
+|2
+|0x10
+|
+|-
+|Ignition
+|2
+|0x20
+|
+|-
+|Start
+|2
+|0x40
+|
+|-
+|Eject
+|2
+|0x08
+|
+|-
+|MultiMonOpenClose
+|2
+|0x80
+|
+|-
+|MultiMonMapZoomInOut
+|3
+|0x01
+|
+|-
+|MultiMonModeSelect
+|3
+|0x02
+|
+|-
+|MultiMonSubMonitor
+|3
+|0x04
+|
+|-
+|MainMonZoomIn
+|3
+|0x08
+|
+|-
+|MainMonZoomOut
+|3
+|0x10
+|
+|-
+|FunctionFSS
+|3
+|0x20
+|
+|-
+|FunctionManipulator
+|3
+|0x40
+|
+|-
+|FunctionLineColorChange
+|3
+|0x80
+|
+|-
+|Washing
+|4
+|0x01
+|
+|-
+|Extinguisher
+|4
+|0x02
+|
+|-
+|Chaff
+|4
+|0x04
+|
+|-
+|FunctionTankDetach
+|4
+|0x08
+|
+|-
+|FunctionOverride
+|4
+|0x10
+|
+|-
+|FunctionNightScope
+|4
+|0x20
+|
+|-
+|FunctionF1
+|4
+|0x40
+|
+|-
+|FunctionF2
+|4
+|0x80
+|
+|-
+|FunctionF3
+|5
+|0x01
+|
+|-
+|WeaponConMain
+|5
+|0x02
+|
+|-
+|WeaponConSub
+|5
+|0x04
+|
+|-
+|WeaponConMagazine
+|5
+|0x08
+|
+|-
+|Comm1
+|5
+|0x10
+|
+|-
+|Comm2
+|5
+|0x20
+|
+|-
+|Comm3
+|5
+|0x40
+|
+|-
+|Comm4
+|5
+|0x80
+|
+|-
+|Comm5
+|6
+|0x01
+|
+|-
+|LeftJoySightChange
+|6
+|0x02
+|
+|-
+|ToggleFilterControl
+|6
+|0x04
+|
+|-
+|ToggleOxygenSupply
+|6
+|0x08
+|
+|-
+|ToggleFuelFlowRate
+|6
+|0x10
+|
+|-
+|ToggleBuffreMaterial
+|6
+|0x20
+|
+|-
+|ToggleVTLocation
+|6
+|0x40
+|
+|-
 |AimingX
-|72-79 (Maybe 72-87 ?!)
-|Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  X Axis value.
+|9
+|0xFF
+|"Aiming Lever" joystick on the right.  X Axis value.
 |-
 |AimingY
-|88-95 (Maybe 88-103 ?!)
-|Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  Y Axis value.
+|11
+|0xFF
+|"Aiming Lever" joystick on the right.  Y Axis value.
 |-
 |RotationLever
-|104-111 (Maybe 104-119 ?!)
-|Corresponds to the &quot;Rotation Lever&quot; joystick on the left.
+|13
+|0xFF
+|"Rotation Lever" joystick on the left.
 |-
 |SightChangeX
-|120-127 (Maybe 120-135 ?!)
-|Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  X Axis value.
+|15
+|0xFF
+|"Sight Change" analog stick on the "Rotation Lever" joystick.  X Axis value.
 |-
 |SightChangeY
-|136-143 (Maybe 136-151 ?!)
-|Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  Y Axis value.
+|17
+|0xFF
+|"Sight Change" analog stick on the "Rotation Lever" joystick.  Y Axis value.
 |-
 |LeftPedal
-|152-159 (Maybe 152-167 ?!)
-|Corresponds to the left pedal on the pedal block
+|19
+|0xFF
+|
 |-
 |MiddlePedal
-|168-175 (Maybe 168-192 ?!)
-|Corresponds to the middle pedal on the pedal block
+|21
+|0xFF
+|
 |-
 |RightPedal
-|184-191
-|Corresponds to the right pedal on the pedal block
-|-
-|
-|192-195
+|23
+|0xFF
 |
 |-
 |TunerDial
-|196-199
-|Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12. The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
+|24
+|0x0F
+|The 9 o'clock postion is 0, and the 6 o'clock position is 12. The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
+|-
+|
+|24
+|0xF0
+|
 |-
 |GearLever
-|200-207
-|Corresponds to the gear lever on the left block.
+|25
+|0xFF
+|The gear lever on the left block.
 |}
-
-<pre>// Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
-// See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
-
-  RightJoyMainWeapon       = BUTTON_MASK( 2, 0x01),
-  RightJoyFire             = BUTTON_MASK( 2, 0x03), //FIXME: WTF?!
-  RightJoyLockOn           = BUTTON_MASK( 2, 0x04),
-  CockpitHatch             = BUTTON_MASK( 2, 0x10),
-  Ignition                 = BUTTON_MASK( 2, 0x20),
-  Start                    = BUTTON_MASK( 2, 0x40),
-  Eject                    = BUTTON_MASK( 2, 0x08),
-  MultiMonOpenClose        = BUTTON_MASK( 2, 0x80),
-  MultiMonMapZoomInOut     = BUTTON_MASK( 3, 0x01),
-  MultiMonModeSelect       = BUTTON_MASK( 3, 0x02),
-  MultiMonSubMonitor       = BUTTON_MASK( 3, 0x04),
-  MainMonZoomIn            = BUTTON_MASK( 3, 0x08),
-  MainMonZoomOut           = BUTTON_MASK( 3, 0x10),
-  FunctionFSS              = BUTTON_MASK( 3, 0x20),
-  FunctionManipulator      = BUTTON_MASK( 3, 0x40),
-  FunctionLineColorChange  = BUTTON_MASK( 3, 0x80),
-  Washing                  = BUTTON_MASK( 4, 0x01),
-  Extinguisher             = BUTTON_MASK( 4, 0x02),
-  Chaff                    = BUTTON_MASK( 4, 0x04),
-  FunctionTankDetach       = BUTTON_MASK( 4, 0x08),
-  FunctionOverride         = BUTTON_MASK( 4, 0x10),
-  FunctionNightScope       = BUTTON_MASK( 4, 0x20),
-  FunctionF1               = BUTTON_MASK( 4, 0x40),
-  FunctionF2               = BUTTON_MASK( 4, 0x80),
-  FunctionF3               = BUTTON_MASK( 5, 0x01),
-  WeaponConMain            = BUTTON_MASK( 5, 0x02),
-  WeaponConSub             = BUTTON_MASK( 5, 0x04),
-  WeaponConMagazine        = BUTTON_MASK( 5, 0x08),
-  Comm1                    = BUTTON_MASK( 5, 0x10),
-  Comm2                    = BUTTON_MASK( 5, 0x20),
-  Comm3                    = BUTTON_MASK( 5, 0x40),
-  Comm4                    = BUTTON_MASK( 5, 0x80),
-  Comm5                    = BUTTON_MASK( 6, 0x01),
-  LeftJoySightChange       = BUTTON_MASK( 6, 0x02),
-  ToggleFilterControl      = BUTTON_MASK( 6, 0x04),
-  ToggleOxygenSupply       = BUTTON_MASK( 6, 0x08),
-  ToggleFuelFlowRate       = BUTTON_MASK( 6, 0x10),
-  ToggleBuffreMaterial     = BUTTON_MASK( 6, 0x20),
-  ToggleVTLocation         = BUTTON_MASK( 6, 0x40),
-</pre>
 
 === Xbox to Controller ===
 
