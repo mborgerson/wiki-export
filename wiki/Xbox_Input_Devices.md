@@ -156,8 +156,6 @@ From
     // Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
     // See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
 
-    typedef enum {
-
       RightJoyMainWeapon       = BUTTON_MASK( 2, 0x01),
       RightJoyFire             = BUTTON_MASK( 2, 0x03), //FIXME: WTF?!
       RightJoyLockOn           = BUTTON_MASK( 2, 0x04),
@@ -216,7 +214,6 @@ From
       TunerDial                = BUTTON_MASK(24, 0x0F), // Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12.
                                                         // The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
       GearLever                = BUTTON_MASK(25, 0xFF), // Corresponds to the gear lever on the left block.
-    } ButtonEnum;
 
 ### Xbox to Controller
 
