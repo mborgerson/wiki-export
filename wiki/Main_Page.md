@@ -55,7 +55,7 @@ Emulation / Emulators
 
 -   [XQEMU](/wiki/XQEMU "wikilink")
 -   [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink")
--   [cxbx](http://www.caustik.com/cxbx/)
+-   [Cxbx](/wiki/Cxbx "wikilink")
 -   [Dxbx](http://dxbx-emu.com)
 -   [Xeon (no known official
     homepage)](http://www.emulator-zone.com/doc.php/xbox/xeon.html)

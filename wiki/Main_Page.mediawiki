@@ -44,7 +44,7 @@ Emulation / Emulators
 
 * [[XQEMU]]
 * [[Cxbx-Reloaded]]
-* [http://www.caustik.com/cxbx/ cxbx]
+* [[Cxbx]]
 * [http://dxbx-emu.com Dxbx]
 * [http://www.emulator-zone.com/doc.php/xbox/xeon.html Xeon (no known official homepage)]
 * [http://ngemu.com/threads/hackbox.146461/ Hackbox]
