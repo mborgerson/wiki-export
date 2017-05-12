@@ -4,6 +4,12 @@ permalink: wiki/Network/
 layout: wiki
 ---
 
+Hardware
+--------
+
+Integrated in the Nvidia Southbridge MCPX chip which is similar to the
+nForce chips. The Xbox Linux team used the binary drivers from Nvidia.
+
 System Link
 -----------
 
@@ -23,12 +29,16 @@ System Link
 |                                                  |                                                              |
 |                                                  |                                                              |
 
-Xbox Live infrastructure
-------------------------
+Xbox Live
+---------
 
-Kerberos Authentication Server: macs.xboxlive.com
+### Matchmaking servers
+
+### Game servers
 
 ### Kerberos
+
+Kerberos Authentication Server: macs.xboxlive.com
 
 | padata-type | description                                              |
 |-------------|----------------------------------------------------------|
@@ -36,20 +46,7 @@ Kerberos Authentication Server: macs.xboxlive.com
 | 204         | ?                                                        |
 | 206         | Information about Xbox Version, Title, and Title version |
 
-Heartbeat
----------
-
-`   Ethernet II, Src: Microsof_f2:00:00 (00:50:f2:f2:00:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)`  
-`   MS Network Load Balancing`  
-`       Signature: Unknown (0x584f4258)`  
-`       Version: 1.1`  
-`       Unique Host ID: 3118682055`  
-`       Cluster IP: 167.102.81.132 (167.102.81.132)`  
-`       Host IP: 4.89.169.109 (4.89.169.109)`  
-`       Signature Data - Unknown (1481589336)`
-
-Xbox Live Functions
--------------------
+### Xbox Live Functions
 
 | function                                                                                                                          | description                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,6 +68,18 @@ Xbox Live Functions
 |                                                                                                                                   |                                                                                                                                                                                                                                                                        |
 |                                                                                                                                   |                                                                                                                                                                                                                                                                        |
 |                                                                                                                                   |                                                                                                                                                                                                                                                                        |
+
+Heartbeat
+---------
+
+`   Ethernet II, Src: Microsof_f2:00:00 (00:50:f2:f2:00:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)`  
+`   MS Network Load Balancing`  
+`       Signature: Unknown (0x584f4258)`  
+`       Version: 1.1`  
+`       Unique Host ID: 3118682055`  
+`       Cluster IP: 167.102.81.132 (167.102.81.132)`  
+`       Host IP: 4.89.169.109 (4.89.169.109)`  
+`       Signature Data - Unknown (1481589336)`
 
 References and links
 --------------------
