@@ -107,8 +107,10 @@ sThumbRY          = FIELD_MASK(18, 0xFFFF),</pre>
 
 === Xbox to Controller ===
 
-<pre>left_actuator_strength  = FIELD_MASK(0, 0xFFFF),
-right_actuator_strength = FIELD_MASK(2, 0xFFFF),</pre>
+6 bytes
+
+<pre>left_actuator_strength  = FIELD_MASK(2, 0xFFFF),
+right_actuator_strength = FIELD_MASK(4, 0xFFFF),</pre>
 
 == Steering wheels ==
 == Light guns ==

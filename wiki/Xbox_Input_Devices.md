@@ -90,8 +90,10 @@ a list of devices.
 
 ### Xbox to Controller
 
-    left_actuator_strength  = FIELD_MASK(0, 0xFFFF),
-    right_actuator_strength = FIELD_MASK(2, 0xFFFF),
+6 bytes
+
+    left_actuator_strength  = FIELD_MASK(2, 0xFFFF),
+    right_actuator_strength = FIELD_MASK(4, 0xFFFF),
 
 Steering wheels
 ---------------
