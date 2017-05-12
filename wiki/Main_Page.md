@@ -57,6 +57,7 @@ Emulation / Emulators
 -   [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink")
 -   [Cxbx](/wiki/Cxbx "wikilink")
 -   [Dxbx](http://dxbx-emu.com)
+-   [Zookeeper](https://github.com/daeken/Zookeeper)
 -   [Xeon (no known official
     homepage)](http://www.emulator-zone.com/doc.php/xbox/xeon.html)
 -   [Hackbox](http://ngemu.com/threads/hackbox.146461/)
@@ -64,6 +65,7 @@ Emulation / Emulators
 -   [MAME/Chihiro](http://mamedev.org/)
 -   [MAME/Xbox](http://mamedev.org/)
 -   [XBVM](https://github.com/monocasa/xbvm)
+-   Official Xbox backwards compatibility in Xbox 360
 
 Find random stuff in [Resources](/wiki/Resources "wikilink")
 

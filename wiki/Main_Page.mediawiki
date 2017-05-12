@@ -46,12 +46,14 @@ Emulation / Emulators
 * [[Cxbx-Reloaded]]
 * [[Cxbx]]
 * [http://dxbx-emu.com Dxbx]
+* [https://github.com/daeken/Zookeeper Zookeeper]
 * [http://www.emulator-zone.com/doc.php/xbox/xeon.html Xeon (no known official homepage)]
 * [http://ngemu.com/threads/hackbox.146461/ Hackbox]
 * [https://github.com/phire/kvmbox kvmbox]
 * [http://mamedev.org/ MAME/Chihiro]
 * [http://mamedev.org/ MAME/Xbox]
 * [https://github.com/monocasa/xbvm XBVM]
+* Official Xbox backwards compatibility in Xbox 360
 
 
 Find random stuff in [[Resources]]
