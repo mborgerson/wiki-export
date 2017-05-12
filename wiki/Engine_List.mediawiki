@@ -2,7 +2,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = GoldSrc =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 ! Title
 |-
 | Counter-Strike
@@ -10,7 +10,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = id Tech 3 =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 ! Title
 |-
 | Return to Castle Wolfenstein
@@ -28,7 +28,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = Source Engine =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 ! Title
 |-
 | Half-Life 2
@@ -36,7 +36,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = CryEngine 1 =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 ! Title
 ! Year
 ! Developer
