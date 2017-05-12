@@ -220,9 +220,7 @@ From
 
 ### Xbox to Controller
 
-    rawLEDData = new Byte[34];
-
-    typedef enum {
+34 bytes
 
       EmergencyEject            = FIELD_MASK(2, 0x0F),
       CockpitHatch              = FIELD_MASK(2, 0xF0),

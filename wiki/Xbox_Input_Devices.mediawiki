@@ -232,11 +232,9 @@ typedef enum {
 
 === Xbox to Controller ===
 
-<pre>rawLEDData = new Byte[34];
+34 bytes
 
-typedef enum {
-
-  EmergencyEject            = FIELD_MASK(2, 0x0F),
+<pre>  EmergencyEject            = FIELD_MASK(2, 0x0F),
   CockpitHatch              = FIELD_MASK(2, 0xF0),
   Ignition                  = FIELD_MASK(3, 0x0F),
   Start                     = FIELD_MASK(3, 0xF0),
