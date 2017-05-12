@@ -4,4 +4,30 @@ The official homepage can be found at [http://xqemu.com xqemu.com]
 
 == Compatiblity list ==
 
+The following list was almost entirely created by [https://www.youtube.com/user/pcmaker2 pcmaker (also known as John Godgames)] around 2015.
+
+
+Meaning of the status fields:
+
+{| class="wikitable"
+!Status
+!Meaning
+|-
+|Nothing
+|Not showing anything due to error
+|-
+|Intro
+|Shows something as Intro / Menu
+|-
+|Ingame
+|Ingame (Graphical bugs)
+|-
+|Playable*
+|Partially playable or expected to be fully playable but not tested completly yet
+|-
+|Playable
+|Partially playable / Fully playable
+|}
+
+
 {{:XQEMU/Compatibility List}}
