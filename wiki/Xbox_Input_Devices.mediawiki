@@ -239,7 +239,53 @@ Transfer Type:   Interrupt</pre>
 
 === Controller to Xbox ===
 
-26 bytes
+26 bytes (208 bits)
+
+{| class="wikitable"
+!Field
+!Bits
+!Notes
+|-
+|AimingX
+|72-79 (Maybe 72-87 ?!)
+|Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  X Axis value.
+|-
+|AimingY
+|88-95 (Maybe 88-103 ?!)
+|Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  Y Axis value.
+|-
+|RotationLever
+|104-111 (Maybe 104-119 ?!)
+|Corresponds to the &quot;Rotation Lever&quot; joystick on the left.
+|-
+|SightChangeX
+|120-127 (Maybe 120-135 ?!)
+|Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  X Axis value.
+|-
+|SightChangeY
+|136-143 (Maybe 136-151 ?!)
+|Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  Y Axis value.
+|-
+|LeftPedal
+|152-159 (Maybe 152-167 ?!)
+|Corresponds to the left pedal on the pedal block
+|-
+|MiddlePedal
+|168-175 (Maybe 168-192 ?!)
+|Corresponds to the middle pedal on the pedal block
+|-
+|RightPedal
+|184-191
+|Corresponds to the right pedal on the pedal block
+|-
+|TunerDial
+|196-199
+|Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12. The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
+|-
+|GearLever
+|200-207
+|Corresponds to the gear lever on the left block.
+|}
 
 <pre>// Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
 // See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
@@ -283,25 +329,6 @@ Transfer Type:   Interrupt</pre>
   ToggleFuelFlowRate       = BUTTON_MASK( 6, 0x10),
   ToggleBuffreMaterial     = BUTTON_MASK( 6, 0x20),
   ToggleVTLocation         = BUTTON_MASK( 6, 0x40),
-
-  AimingX                  = BUTTON_MASK( 9, 0xFF),  // Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  X Axis value.
-
-  AimingY                  = BUTTON_MASK(11, 0xFF), // Corresponds to the &quot;Aiming Lever&quot; joystick on the right.  Y Axis value.
-
-  RotationLever            = BUTTON_MASK(13, 0xFF), // Corresponds to the &quot;Rotation Lever&quot; joystick on the left.
-
-  SightChangeX             = BUTTON_MASK(15, 0xFF), // Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  X Axis value.
-
-  SightChangeY             = BUTTON_MASK(17, 0xFF) // Corresponds to the &quot;Sight Change&quot; analog stick on the &quot;Rotation Lever&quot; joystick.  Y Axis value.
-
-  LeftPedal                = BUTTON_MASK(19, 0xFF), // Corresponds to the left pedal on the pedal block
-
-  MiddlePedal              = BUTTON_MASK(21, 0xFF), // Corresponds to the middle pedal on the pedal block
-
-  RightPedal               = BUTTON_MASK(23, 0xFF), // Corresponds to the right pedal on the pedal block
-  TunerDial                = BUTTON_MASK(24, 0x0F), // Corresponds to the tuner dial position.  The 9 o'clock postion is 0, and the 6 o'clock position is 12.
-                                                    // The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
-  GearLever                = BUTTON_MASK(25, 0xFF), // Corresponds to the gear lever on the left block.
 </pre>
 
 === Xbox to Controller ===
