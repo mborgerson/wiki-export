@@ -27,3 +27,9 @@ Random resources about xbox hacking
 -   [Technical article about the Xbox by
     AnandTech](http://www.anandtech.com/show/853)
 
+About emulation
+
+-   [Discussion about Xbox emulation and technical differences between
+    [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink") and
+    [XQEMU](/wiki/XQEMU "wikilink")](https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/)
+
