@@ -54,7 +54,7 @@ Games
 Emulation / Emulators
 
 -   [XQEMU](/wiki/XQEMU "wikilink")
--   [Cxbx-Reloaded](http://cxbx-reloaded.co.uk)
+-   [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink")
 -   [cxbx](http://www.caustik.com/cxbx/)
 -   [Dxbx](http://dxbx-emu.com)
 -   [Xeon (no known official

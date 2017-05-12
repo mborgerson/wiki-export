@@ -43,7 +43,7 @@ Games
 Emulation / Emulators
 
 * [[XQEMU]]
-* [http://cxbx-reloaded.co.uk Cxbx-Reloaded]
+* [[Cxbx-Reloaded]]
 * [http://www.caustik.com/cxbx/ cxbx]
 * [http://dxbx-emu.com Dxbx]
 * [http://www.emulator-zone.com/doc.php/xbox/xeon.html Xeon (no known official homepage)]
