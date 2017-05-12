@@ -362,7 +362,7 @@ There might also be games which were released for Xbox 360 but not the original 
 
 = Unreal Engine 1 =
 
-{| class="wikitable"
+{| class="wikitable sortable" style="width:100%; font-size:90%;"
 !width="18%"| Release date
 !width="9%"| Title
 !width="9%"| Genre
