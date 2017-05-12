@@ -92,10 +92,12 @@ a list of devices.
 
 ### Xbox to Controller
 
-6 bytes
+6 bytes (48 bit)
 
-    left_actuator_strength  = FIELD_MASK(2, 0xFFFF),
-    right_actuator_strength = FIELD_MASK(4, 0xFFFF),
+| Field                   | Bits  | Notes |
+|-------------------------|-------|-------|
+| Left actuator strength  | 16-31 |       |
+| Right actuator strength | 32-47 |       |
 
 Steering wheels
 ---------------
