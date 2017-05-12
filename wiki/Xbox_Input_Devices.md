@@ -151,10 +151,10 @@ From
 
 ### Controller to Xbox
 
+26 bytes
+
     // Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
     // See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
-
-    rawControlData = new Byte[26];
 
     typedef enum {
 

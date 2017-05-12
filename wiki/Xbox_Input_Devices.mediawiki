@@ -163,10 +163,10 @@ Transfer Type:   Interrupt</pre>
 
 === Controller to Xbox ===
 
+26 bytes
+
 <pre>// Based on http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattalionController.cs
 // See http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/lgpl-3.0.txt
-
-rawControlData = new Byte[26];
 
 typedef enum {
 
@@ -229,6 +229,7 @@ typedef enum {
                                                     // The blank area between the 6 and 9 o'clock positions is 13, 14, and 15 clockwise.
   GearLever                = BUTTON_MASK(25, 0xFF), // Corresponds to the gear lever on the left block.
 } ButtonEnum;</pre>
+
 === Xbox to Controller ===
 
 <pre>rawLEDData = new Byte[34];
