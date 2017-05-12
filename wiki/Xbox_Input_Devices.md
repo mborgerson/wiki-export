@@ -9,6 +9,11 @@ XID Overview
 
 XIDs are USB devices.
 
+The hardware side is USB with a different plug while the software side
+is USB without HID-descriptors. Technicly a XID is a USB-hub for the
+Memory-Units and the XBL Communicator. The logical XID gamepad USB
+device is internally connected to that hub.
+
 ### USB Adapters
 
 The Xbox input devices are USB devices. As such, you can connect a
