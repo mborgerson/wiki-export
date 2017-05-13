@@ -127,14 +127,78 @@ The command is expecting additional binary data from the client. After
 the client sends the required number of bytes, XBDM will send another
 response line with the final result of the command.
 
-205- dedicated  
-The connection has been moved to a dedicated processing thread.
+205- connection dedicated  
+The connection has been moved to a dedicated handler thread (see
+[\#Connection dedication](#Connection_dedication "wikilink")).
 
 #### 4xx Failure
 
+400- unexpected error  
+An internal error occurred that could not be translated to a standard
+error code. The message is typically more descriptive, such as “out of
+memory” or “bad parameter”.
+
+401- max number of connections exceeded  
+The connection could not be established because XBDM is already serving
+the maximum number of clients (4).
+
+402- file not found  
+An operation was attempted on a file that does not exist.
+
+403- no such module  
+An operation was attempted on a module that does not exist.
+
+404- memory not mapped  
+An operation was attempted on a region of memory that is not mapped in
+the page table.
+
+405- no such thread  
+An operation was attempted on a thread that does not exist.
+
+407- unknown command  
+The command is not recognized.
+
+408- not stopped  
+The target thread is not stopped.
+
+409- file must be copied  
+A move operation was attempted on a file that can only be copied.
+
+410- file already exists  
+A file could not be created or moved because one already exists with the
+same name.
+
+411- directory not empty  
+A directory could not be deleted because it still contains files and/or
+directories.
+
+412- filename is invalid  
+The specified file contains invalid characters or is too long.
+
+413- file cannot be created  
+The file cannot be created for some unspecified reason.
+
+414- access denied  
+The file cannot be accessed at the connection's current privilege level
+(see [\#Security](#Security "wikilink")).
+
+415- no room on device  
+The target device has run out of storage space.
+
+416- not debuggable  
+The title is not debuggable.
+
+417- type invalid  
+The performance counter type is invalid.
+
+418- data not available  
+The performance counter data is not available.
+
+### Connection dedication
+
 TODO
 
-### Authentication
+### Security
 
 TODO
 
