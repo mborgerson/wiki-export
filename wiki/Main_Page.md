@@ -65,6 +65,7 @@ Emulation / Emulators
 -   [MAME/Chihiro](http://mamedev.org/)
 -   [MAME/Xbox](http://mamedev.org/)
 -   [XBVM](https://github.com/monocasa/xbvm)
+-   [Xenoborg](http://xenoborg-emu.blogspot.com/)
 -   Official Xbox backwards compatibility in Xbox 360
 
 Find random stuff in [Resources](/wiki/Resources "wikilink")
