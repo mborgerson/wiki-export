@@ -4,10 +4,19 @@ permalink: wiki/BIOS/
 layout: wiki
 ---
 
-The BIOS is either a 1MB or 256KB memory which is loaded to the top 16MB
-of memory (from 0xFF000000). There are a couple of things to understand
-in order for this to make sense. First, the 1MB BIOS is actually 256KB
-of data repeated 4 times. So, if you do:
+The **BIOS** (an acronym for **Basic Input/Output System** and also
+known as the **BIOS ROM** or **Xbox ROM**) is a firmware image that is
+mapped to the top 16MB of the CPU's physical address space
+(0xFF000000-0xFFFFFFFF). Like the standard [PC
+BIOS](https://en.wikipedia.org/wiki/BIOS), it is responsible for
+initializing the Xbox hardware and booting the system. Unlike the PC
+BIOS, however, the Xbox BIOS image also contains the kernel in a
+compressed and encrypted form.
+
+On a standard Xbox, the BIOS image is stored on a 1MB non-volatile TSOP
+ROM chip and connected to the MCPX via the LPC bus. The image is
+actually 256KB, duplicated 4 times to fill the 1MB ROM chip. You can
+verify this by running:
 
     $ split -n 4 xbox.bin 
     $ md5sum xa*
