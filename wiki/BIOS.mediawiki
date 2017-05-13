@@ -41,7 +41,7 @@ Next, some people believed that there was another unknown section between the xc
 
 57 bytes long with the following start positions:
 
-* 3394 - 0xcfa
+* 3394 - 0xcfa (type? maybe 3966?)
 * 4034 - 0xcfa
 * 4134 - 0xcfa
 * 4817 - 0xdb9
