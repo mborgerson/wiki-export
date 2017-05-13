@@ -131,6 +131,12 @@ response line with the final result of the command.
 The connection has been moved to a dedicated handler thread (see
 [\#Connection dedication](#Connection_dedication "wikilink")).
 
+207- fast cap enabled  
+Fast call-attribute profiling has been enabled. This status code is
+defined by XBDM, but does not appear to be used. It may have been a
+planned feature that was never implemented or left over from pre-release
+versions of XBDM.
+
 #### 4xx Failure
 
 400- unexpected error  

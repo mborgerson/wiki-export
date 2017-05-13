@@ -71,6 +71,8 @@ In responses, 2xx status codes indicate success and 4xx codes indicate failure. 
 : The command is expecting additional binary data from the client. After the client sends the required number of bytes, XBDM will send another response line with the final result of the command.
 ; 205- connection dedicated
 : The connection has been moved to a dedicated handler thread (see [[#Connection dedication]]).
+; 207- fast cap enabled
+: Fast call-attribute profiling has been enabled. This status code is defined by XBDM, but does not appear to be used. It may have been a planned feature that was never implemented or left over from pre-release versions of XBDM.
 
 ====4xx Failure====
 
