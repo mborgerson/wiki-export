@@ -17,8 +17,8 @@ You'll notice it is the same file repeated 4 times. That explains how some BIOS 
 
 The BIOS is split into different components. These are largely the same from BIOS to BIOS, but with some differences.
 
-{|
-! Memory Type
+{| class="wikitable"
+!
 ! 3944
 ! 4034
 ! 4134
@@ -28,7 +28,7 @@ The BIOS is split into different components. These are largely the same from BIO
 ! 5713
 ! 5838
 |-
-| Unknown
+! Unknown
 | 0x00000
 | 0x00000
 | 0x00000
@@ -38,7 +38,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 0x00000
 | 0x00000
 |-
-| X-Codes
+! X-Codes
 | 0x00080
 | 0x00080
 | 0x00080
@@ -48,7 +48,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 0x00080
 | 0x00080
 |-
-| Copyright String 
+! Copyright String 
 | 0x00cfa
 | 0x00cfa
 | 0x00cfa
@@ -58,7 +58,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 0x00e59
 | 0x00dcc
 |-
-| Kernel
+! Kernel
 | 
 | 
 | 
@@ -68,7 +68,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 
 | 
 |-
-| Kernel Data Segment
+! Kernel Data Segment
 | 
 | 
 | 
@@ -78,7 +78,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 
 | 
 |-
-| 2BL
+! 2BL
 | 0x039E00
 | 0x039E00
 | 0x039E00
@@ -88,7 +88,7 @@ The BIOS is split into different components. These are largely the same from BIO
 | 
 | 
 |-
-| Decoy Boot Loader
+! Decoy Boot Loader
 | 0x3FE00
 | 0x3FE00
 | 0x3FE00

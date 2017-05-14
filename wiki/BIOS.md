@@ -36,7 +36,7 @@ Components
 The BIOS is split into different components. These are largely the same
 from BIOS to BIOS, but with some differences.
 
-| Memory Type         | 3944     | 4034     | 4134     | 4817    | 5101    | 5530    | 5713    | 5838    |
+|                     | 3944     | 4034     | 4134     | 4817    | 5101    | 5530    | 5713    | 5838    |
 |---------------------|----------|----------|----------|---------|---------|---------|---------|---------|
 | Unknown             | 0x00000  | 0x00000  | 0x00000  | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
 | X-Codes             | 0x00080  | 0x00080  | 0x00080  | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
