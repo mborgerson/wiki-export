@@ -99,9 +99,10 @@ lines.
 ### Status codes
 
 In responses, 2xx status codes indicate success and 4xx codes indicate
-failure. Each code has a default message, but some commands use the
-message field to hold whatever data was requested by the client or
-additional information about an error.
+failure. Most codes have a default message, but some commands leave the
+message field empty while others use the message field to hold whatever
+data was requested by the client or additional information about an
+error.
 
 #### 2xx Success
 
@@ -122,7 +123,7 @@ The response line is followed by raw binary data, the length of which is
 indicated in some command-specific way. The client must read all
 available data before sending another command.
 
-204- ready for binary data  
+204- send binary data  
 The command is expecting additional binary data from the client. After
 the client sends the required number of bytes, XBDM will send another
 response line with the final result of the command.
@@ -130,12 +131,6 @@ response line with the final result of the command.
 205- connection dedicated  
 The connection has been moved to a dedicated handler thread (see
 [\#Connection dedication](#Connection_dedication "wikilink")).
-
-207- fast cap enabled  
-Fast call-attribute profiling has been enabled. This status code is
-defined by XBDM, but does not appear to be used. It may have been a
-planned feature that was never implemented or left over from pre-release
-versions of XBDM.
 
 #### 4xx Failure
 
@@ -160,6 +155,10 @@ the page table.
 
 405- no such thread  
 An operation was attempted on a thread that does not exist.
+
+406-  
+An attempt to set the system time with the `setsystime` command failed.
+This status code is undocumented.
 
 407- unknown command  
 The command is not recognized.
@@ -199,6 +198,18 @@ The performance counter type is invalid.
 
 418- data not available  
 The performance counter data is not available.
+
+420- box not locked  
+The command can only be executed when security is enabled (see
+[\#Security](#Security "wikilink")).
+
+421- key exchange required  
+The client must perform a key exchange with the `keyxchg` command (see
+[\#Security](#Security "wikilink")).
+
+422- dedicated connection required  
+The command can only be executed on a dedicated connection (see
+[\#Connection dedication](#Connection_dedication "wikilink")).
 
 ### Connection dedication
 
