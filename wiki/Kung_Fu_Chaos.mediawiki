@@ -2,7 +2,7 @@
   
 == Fullscreen blit shader ==
   
-<code>
+<pre>
   v0.xy {
     {0,0}
     {0,1}
@@ -126,4 +126,4 @@
   
   #endif
   
-</code>
+</pre>
