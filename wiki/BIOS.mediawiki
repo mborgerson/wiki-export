@@ -72,7 +72,7 @@ This is very similar to the [[MCPX ROM]], only the xcode interpreter is differen
 
 == Known Retail BIOSs ==
 
-* 3394
+* 3944
 * 4034
 * 4134
 * 4817

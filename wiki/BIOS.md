@@ -106,7 +106,7 @@ decryption/hashing algorithms.
 Known Retail BIOSs
 ------------------
 
--   3394
+-   3944
 -   4034
 -   4134
 -   4817
