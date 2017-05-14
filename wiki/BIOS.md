@@ -73,7 +73,7 @@ instructions are considerably larger than those in the 3944 BIOS.
 
 57 bytes long with the following start positions:
 
--   3394 - 0xcfa (type? maybe 3966?)
+-   3394 - 0xcfa
 -   4034 - 0xcfa
 -   4134 - 0xcfa
 -   4817 - 0xdb9
