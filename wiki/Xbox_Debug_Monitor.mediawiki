@@ -59,64 +59,64 @@ In responses, 2xx status codes indicate success and 4xx codes indicate failure. 
 
 ====2xx Success====
 
-; 200- OK
+; <span id="status_200">200- OK</span>
 : Standard response for successful execution of a command.
-; 201- connected
+; <span id="status_201">201- connected</span>
 : Initial response sent after a connection is established. The client does not need to send anything to solicit this response.
-; 202- multiline response follows
+; <span id="status_202">202- multiline response follows</span>
 : The response line is followed by one or more additional lines of data terminated by a line containing only a <code>.</code> (period). The client must read all available lines before sending another command.
-; 203- binary response follows
+; <span id="status_203">203- binary response follows</span>
 : The response line is followed by raw binary data, the length of which is indicated in some command-specific way. The client must read all available data before sending another command.
-; 204- send binary data
+; <span id="status_204">204- send binary data</span>
 : The command is expecting additional binary data from the client. After the client sends the required number of bytes, XBDM will send another response line with the final result of the command.
-; 205- connection dedicated
+; <span id="status_205">205- connection dedicated</span>
 : The connection has been moved to a dedicated handler thread (see [[#Connection dedication]]).
 
 ====4xx Failure====
 
-; 400- unexpected error
+; <span id="status_400">400- unexpected error</span>
 : An internal error occurred that could not be translated to a standard error code. The message is typically more descriptive, such as "out of memory" or "bad parameter".
-; 401- max number of connections exceeded
+; <span id="status_401">401- max number of connections exceeded</span>
 : The connection could not be established because XBDM is already serving the maximum number of clients (4).
-; 402- file not found
+; <span id="status_402">402- file not found</span>
 : An operation was attempted on a file that does not exist.
-; 403- no such module
+; <span id="status_403">403- no such module</span>
 : An operation was attempted on a module that does not exist.
-; 404- memory not mapped
+; <span id="status_404">404- memory not mapped</span>
 : An operation was attempted on a region of memory that is not mapped in the page table.
-; 405- no such thread
+; <span id="status_405">405- no such thread</span>
 : An operation was attempted on a thread that does not exist.
-; 406-
+; <span id="status_406">406-</span>
 : An attempt to set the system time with the <code>setsystime</code> command failed. This status code is undocumented.
-; 407- unknown command
+; <span id="status_407">407- unknown command</span>
 : The command is not recognized.
-; 408- not stopped
+; <span id="status_408">408- not stopped</span>
 : The target thread is not stopped.
-; 409- file must be copied
+; <span id="status_409">409- file must be copied</span>
 : A move operation was attempted on a file that can only be copied.
-; 410- file already exists
+; <span id="status_410">410- file already exists</span>
 : A file could not be created or moved because one already exists with the same name.
-; 411- directory not empty
+; <span id="status_411">411- directory not empty</span>
 : A directory could not be deleted because it still contains files and/or directories.
-; 412- filename is invalid
+; <span id="status_412">412- filename is invalid</span>
 : The specified file contains invalid characters or is too long.
-; 413- file cannot be created
+; <span id="status_413">413- file cannot be created</span>
 : The file cannot be created for some unspecified reason.
-; 414- access denied
+; <span id="status_414">414- access denied</span>
 : The file cannot be accessed at the connection's current privilege level (see [[#Security]]).
-; 415- no room on device
+; <span id="status_415">415- no room on device</span>
 : The target device has run out of storage space.
-; 416- not debuggable
+; <span id="status_416">416- not debuggable</span>
 : The title is not debuggable.
-; 417- type invalid
+; <span id="status_417">417- type invalid</span>
 : The performance counter type is invalid.
-; 418- data not available
+; <span id="status_418">418- data not available</span>
 : The performance counter data is not available.
-; 420- box not locked
+; <span id="status_420">420- box not locked</span>
 : The command can only be executed when security is enabled (see [[#Security]]).
-; 421- key exchange required
+; <span id="status_421">421- key exchange required</span>
 : The client must perform a key exchange with the <code>keyxchg</code> command (see [[#Security]]).
-; 422- dedicated connection required
+; <span id="status_422">422- dedicated connection required</span>
 : The command can only be executed on a dedicated connection (see [[#Connection dedication]]).
 
 ===Connection dedication===
