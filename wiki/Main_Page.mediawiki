@@ -26,7 +26,6 @@ Development
 
 [http://segaretro.org/Sega_Chihiro Chihiro]
 
-* [[Chihiro Pictures]]
 * [[Chihiro-Tools]]
 * [[Chihiro-Launcher]]
 
