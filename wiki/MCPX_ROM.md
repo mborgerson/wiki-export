@@ -76,4 +76,6 @@ References
 
 -   [Deconstructing the Xbox Boot
     ROM](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
+-   [disassemble-mcpx.sh: A bash-script to disassemble/annotate MCPX 1.0
+    dumps](https://github.com/JayFoxRox/xqemu-tools/blob/master/disassemble-mcpx.sh)
 

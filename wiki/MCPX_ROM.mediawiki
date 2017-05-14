@@ -35,3 +35,4 @@ The MCPX turns itself off when there is an error and then jumps to 0x000001FA. T
 == References ==
 
 * [https://mborgerson.com/deconstructing-the-xbox-boot-rom Deconstructing the Xbox Boot ROM]
+* [https://github.com/JayFoxRox/xqemu-tools/blob/master/disassemble-mcpx.sh disassemble-mcpx.sh: A bash-script to disassemble/annotate MCPX 1.0 dumps]
