@@ -123,18 +123,8 @@ Next, some people believed that there was another unknown section between the xc
 
 === Copyright String ===
 
-57 bytes long with the following start positions:
-
-* 3944 - 0xcfa
-* 4034 - 0xcfa
-* 4134 - 0xcfa
-* 4817 - 0xdb9
-* 5101 - 0xe49
-* 5530 - 0xe59
-* 5713 - 0xe59
-* 5838 - 0xdcc
-
-Literally contains the text: "Copyright (c) Microsoft Corporation. All rights reserved.".
+Literally contains the ASCII encoded text: "Copyright (c) Microsoft Corporation. All rights reserved." (57 bytes long).
+See the table above for the start positions.
 
 === Kernel ===
 
