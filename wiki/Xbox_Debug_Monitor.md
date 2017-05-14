@@ -16,9 +16,11 @@ Name Answering Protocol
 
 An Xbox Development Kit (XDK) can be assigned a *debug name* that
 identifies it on the local network. XBDM provides the ability to resolve
-a debug name to an IP address (forward lookup), resolve an IP address to
-a debug name (reverse lookup), and discover all XDKs on the local
-network using a very simple UDP-based protocol.
+a debug name to an IP address ([forward
+lookup](#Forward_Lookup "wikilink")), resolve an IP address to a debug
+name ([reverse lookup](#Reverse_Lookup "wikilink")), and
+[discover](#Console_Discovery "wikilink") all XDKs on the local network
+using a very simple UDP-based protocol.
 
 | *Offsets* | Octet | 0    | 1           |
 |-----------|-------|------|-------------|

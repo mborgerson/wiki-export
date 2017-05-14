@@ -2,7 +2,7 @@ The '''Xbox Debug Monitor''' ('''XBDM''') is a feature of Xbox Development Kits 
 
 ==Name Answering Protocol==
 
-An Xbox Development Kit (XDK) can be assigned a ''debug name'' that identifies it on the local network. XBDM provides the ability to resolve a debug name to an IP address (forward lookup), resolve an IP address to a debug name (reverse lookup), and discover all XDKs on the local network using a very simple UDP-based protocol.
+An Xbox Development Kit (XDK) can be assigned a ''debug name'' that identifies it on the local network. XBDM provides the ability to resolve a debug name to an IP address ([[#Forward Lookup|forward lookup]]), resolve an IP address to a debug name ([[#Reverse Lookup|reverse lookup]]), and [[#Console Discovery|discover]] all XDKs on the local network using a very simple UDP-based protocol.
 
 {|class="wikitable" style="margin: 0 auto; text-align: center;"
 |+Name Answering Protocol Packet
