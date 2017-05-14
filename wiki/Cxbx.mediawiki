@@ -6,7 +6,7 @@ Its official website can be found on [http://www.caustik.com/cxbx/ Caustiks Cxbx
 == CXBX kingofc's dev version ==
 
 The website for this fork can be found at [http://www.caustik.com/kingofc/]
-It focused on partial LLE.
+It focused on partial LLE{{citation needed}}.
 
 == Blueshogun's Cxbx ==
 
