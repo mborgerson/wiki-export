@@ -25,4 +25,10 @@ Meaning of the status fields:
 | Playable\* | Partially playable or expected to be fully playable but not tested completly yet |
 | Playable   | Partially playable / Fully playable                                              |
 
+XQEMU-JFR
+---------
 
+XQEMU-JFR is a now defunct fork of XQEMU by JayFoxRox. Most of the
+changes have since been integrated back into the official version of
+XQEMU. The archived version can be found at
+<https://github.com/JayFoxRox/xqemu-jfr>

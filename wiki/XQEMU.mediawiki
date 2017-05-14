@@ -31,3 +31,10 @@ Meaning of the status fields:
 
 
 {{:XQEMU/Compatibility List}}
+
+
+== XQEMU-JFR ==
+
+XQEMU-JFR is a now defunct fork of XQEMU by JayFoxRox.
+Most of the changes have since been integrated back into the official version of XQEMU.
+The archived version can be found at https://github.com/JayFoxRox/xqemu-jfr
