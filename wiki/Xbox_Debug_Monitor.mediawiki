@@ -115,7 +115,11 @@ In responses, 2xx status codes indicate success and 4xx codes indicate failure. 
 
 ===Connection dedication===
 
-TODO
+'''Connection dedication''' is the process of moving a client connection from the ''global server thread'' to a ''threaded command handler thread'' with the <code>dedicate</code> command.
+
+By default, commands sent to XBDM are processed on the global server thread. Built-in commands and custom command handlers registered with <code>DmRegisterCommandProcessor</code> are run on this thread and may only execute kernel APIs. Commands that need to call CRT or XAPI functions must run in a threaded command handler, registered with <code>DmRegisterCommandProcessorEx</code> or <code>DmRegisterThreadedCommandProcessor</code>.
+
+A client that has not dedicated its connection will receive a <code>422- dedicated connection required</code> response if it tries to execute a threaded command on the global server thread. After dedicating itself to a threaded command handler, the client can no longer send built-in or non-threaded commands until it re-dedicates itself to the global server thread.
 
 ===Security===
 
