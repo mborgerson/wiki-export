@@ -17,6 +17,7 @@ Development
     -   [Memory](/wiki/Memory "wikilink")
     -   [BIOS](/wiki/BIOS "wikilink")
     -   [MCPX](/wiki/MCPX "wikilink") [(ROM)](MCPX_ROM "wikilink")
+-   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [Operating System](/wiki/Operating_System "wikilink")
@@ -66,7 +67,8 @@ Emulation / Emulators
 -   [MAME/Xbox](http://mamedev.org/)
 -   [XBVM](https://github.com/monocasa/xbvm)
 -   [Xenoborg](http://xenoborg-emu.blogspot.com/)
--   Official Xbox backwards compatibility in Xbox 360
+-   [Xbox 360 Backward
+    Compatibility](/wiki/Xbox_360_Backward_Compatibility "wikilink")
 
 Find random stuff in [Resources](/wiki/Resources "wikilink")
 
