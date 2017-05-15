@@ -51,7 +51,7 @@ Games
 -   [Games/Tony Hawk's Pro Skater
     2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
 
-Emulation / Emulators
+[Emulators](/wiki/Emulators "wikilink")
 
 -   [XQEMU](/wiki/XQEMU "wikilink")
 -   [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink")

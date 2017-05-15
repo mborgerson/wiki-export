@@ -40,7 +40,7 @@ Games
 * [[Games/Kung Fu Chaos]]
 * [[Games/Tony Hawk's Pro Skater 2x]]
 
-Emulation / Emulators
+[[Emulators]]
 
 * [[XQEMU]]
 * [[Cxbx-Reloaded]]
