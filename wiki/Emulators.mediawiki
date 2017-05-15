@@ -1,0 +1,219 @@
+This is a list of known Xbox emulation projects
+
+{| class="wikitable"
+!Status
+!Approach
+!Name
+!Links
+!Initiator
+!Platform
+!License
+!Notes
+|-
+|Maintained
+|LLE
+|[[XQEMU]]
+|
+|espes
+|Windows
+|
+|
+|-
+|Maintained
+|LLE/HLE Hybrid
+|[[Cxbx-Reloaded]]
+|
+|SoullessSentinel
+|Windows
+|
+|
+|-
+|Dead
+|HLE
+|[[Cxbx]]
+|
+|Caustik
+|Windows
+|
+|
+|-
+|Dead
+|HLE
+|[http://dxbx-emu.com Dxbx]
+|
+|PatrickVL{{citation needed}}
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/impeachgod/Dirtbox Dirtbox]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://sourceforge.net/p/ironbabel/code/HEAD/tree/trunk/Box/Xbox/ IronBabel]
+|
+|daeken
+|Unknown
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/daeken/Steelbreeze Steelbreeze]
+|
+|daeken
+|Unknown
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/daeken/Zookeeper Zookeeper]
+|
+|daeken
+|Unknown
+|
+|
+|-
+|Unknown
+|Unknown
+|[http://ngemu.com/threads/.154342/ XbeNext]
+|
+|LoveMHz
+|Windows
+|
+|
+|-
+|Dead
+|Unknown
+|[http://ngemu.com/forums/.65/ Xeon]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[http://ngemu.com/threads/.105210/ XProject]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://code.google.com/p/xbem xbem]
+|
+|
+|Windows
+|
+|
+|-
+|Dead
+|LLE/HLE Hybrid
+|[[Hackbox]]
+|
+|JayFoxRox
+|Windows/Linux
+|Private
+|This was originally going to be a commercial emulator (but plans were dropped quickly in favor of preservation). The source code was temporarily public but then made private. The source code is still available to other developers.
+|-
+|Unknown
+|LLE
+|[https://github.com/phire/kvmbox kvmbox]
+|
+|phire
+|Linux
+|
+|
+|-
+|Unknown
+|HLE
+|[https://github.com/Gabriel-Maldonado/XboxHLE XboxHLE]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/bjh83/boombox boombox]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/docbrown/vxb vxb]
+|
+|
+|Windows
+|
+|
+|-
+|Unknown
+|Unknown
+|[https://github.com/quantumdude836/exciplex exciplex]
+|
+|
+|Windows
+|
+|
+|-
+|Maintained
+|LLE with bios HLE
+|[http://mamedev.org/ MAME/Chihiro]
+|
+|MAME Team
+|Windows/Linux/Mac/Others
+|
+|
+|-
+|Unknown
+|LLE with bios HLE
+|[http://mamedev.org/ MAME/Xbox]
+|
+|MAME Team
+|Windows/Linux/Mac/Others
+|
+|Does this exist yet?{{citation needed}}
+|-
+|Dead
+|Unknown
+|[https://github.com/monocasa/xbvm XBVM]
+|
+|
+|Windows
+|
+|
+|-
+|Dead
+|Unknown
+|[http://xenoborg-emu.blogspot.com/ Xenoborg]
+|
+|blueshogun96
+|Windows
+|
+|
+|-
+|Dead
+|Unknown
+|[[Xbox 360 Backward Compatibility]]
+|
+|Microsoft
+|Xbox 360
+|Proprietary
+|
+|}
