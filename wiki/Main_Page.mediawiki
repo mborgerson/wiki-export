@@ -54,7 +54,7 @@ Emulation / Emulators
 * [http://ngemu.com/forums/.65/ Xeon]
 * [http://ngemu.com/threads/.105210/ XProject]
 * [https://code.google.com/p/xbem xbem]
-* [http://ngemu.com/threads/.146461/ Hackbox]
+* [[Hackbox]]
 * [https://github.com/phire/kvmbox kvmbox]
 * [https://github.com/Gabriel-Maldonado/XboxHLE XboxHLE]
 * [https://github.com/bjh83/boombox boombox]
