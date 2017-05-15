@@ -125,7 +125,7 @@ This is a list of known Xbox emulation projects
 |JayFoxRox
 |Windows/Linux
 |Private
-|This was originally going to be a commercial emulator (but plans were dropped quickly in favor of preservation). The source code was temporarily public but then made private. The source code is still available to other developers.
+|This was originally going to be a commercial emulator (but plans were dropped quickly in favor of preservation). The source code was temporarily public but then made private. The source code is still available to a selected group of developers.
 |-
 |Unknown
 |LLE
