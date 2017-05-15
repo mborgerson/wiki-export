@@ -40,31 +40,9 @@ Games
 * [[Games/Kung Fu Chaos]]
 * [[Games/Tony Hawk's Pro Skater 2x]]
 
-[[Emulators]]
+Emulation
 
-* [[XQEMU]]
-* [[Cxbx-Reloaded]]
-* [[Cxbx]]
-* [http://dxbx-emu.com Dxbx]
-* [https://github.com/impeachgod/Dirtbox Dirtbox]
-* [https://sourceforge.net/p/ironbabel/code/HEAD/tree/trunk/Box/Xbox/ IronBabel]
-* [https://github.com/daeken/Steelbreeze Steelbreeze]
-* [https://github.com/daeken/Zookeeper Zookeeper]
-* [http://ngemu.com/threads/.154342/ XbeNext]
-* [http://ngemu.com/forums/.65/ Xeon]
-* [http://ngemu.com/threads/.105210/ XProject]
-* [https://code.google.com/p/xbem xbem]
-* [[Hackbox]]
-* [https://github.com/phire/kvmbox kvmbox]
-* [https://github.com/Gabriel-Maldonado/XboxHLE XboxHLE]
-* [https://github.com/bjh83/boombox boombox]
-* [https://github.com/docbrown/vxb vxb]
-* [https://github.com/quantumdude836/exciplex exciplex]
-* [http://mamedev.org/ MAME/Chihiro]
-* [http://mamedev.org/ MAME/Xbox]
-* [https://github.com/monocasa/xbvm XBVM]
-* [http://xenoborg-emu.blogspot.com/ Xenoborg]
-* [[Xbox 360 Backward Compatibility]]
+* [[Emulators]]
 
 
 Find random stuff in [[Resources]]

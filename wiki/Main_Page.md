@@ -51,32 +51,9 @@ Games
 -   [Games/Tony Hawk's Pro Skater
     2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
 
-[Emulators](/wiki/Emulators "wikilink")
+Emulation
 
--   [XQEMU](/wiki/XQEMU "wikilink")
--   [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink")
--   [Cxbx](/wiki/Cxbx "wikilink")
--   [Dxbx](http://dxbx-emu.com)
--   [Dirtbox](https://github.com/impeachgod/Dirtbox)
--   [IronBabel](https://sourceforge.net/p/ironbabel/code/HEAD/tree/trunk/Box/Xbox/)
--   [Steelbreeze](https://github.com/daeken/Steelbreeze)
--   [Zookeeper](https://github.com/daeken/Zookeeper)
--   [XbeNext](http://ngemu.com/threads/.154342/)
--   [Xeon](http://ngemu.com/forums/.65/)
--   [XProject](http://ngemu.com/threads/.105210/)
--   [xbem](https://code.google.com/p/xbem)
--   [Hackbox](/wiki/Hackbox "wikilink")
--   [kvmbox](https://github.com/phire/kvmbox)
--   [XboxHLE](https://github.com/Gabriel-Maldonado/XboxHLE)
--   [boombox](https://github.com/bjh83/boombox)
--   [vxb](https://github.com/docbrown/vxb)
--   [exciplex](https://github.com/quantumdude836/exciplex)
--   [MAME/Chihiro](http://mamedev.org/)
--   [MAME/Xbox](http://mamedev.org/)
--   [XBVM](https://github.com/monocasa/xbvm)
--   [Xenoborg](http://xenoborg-emu.blogspot.com/)
--   [Xbox 360 Backward
-    Compatibility](/wiki/Xbox_360_Backward_Compatibility "wikilink")
+-   [Emulators](/wiki/Emulators "wikilink")
 
 Find random stuff in [Resources](/wiki/Resources "wikilink")
 
