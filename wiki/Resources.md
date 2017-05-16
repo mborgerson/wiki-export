@@ -15,21 +15,12 @@ Random resources about Xbox hacking
     free](https://www.nostarch.com/xboxfree)
 -   [List of original Xbox DVD
     drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
--   [MCPX ROM
-    Disassembly](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
 -   [Deferred Rendering in
     Shrek](https://sites.google.com/site/richgel99/home)
 -   [Article about Xbox Graphics (before release) from Dr.
     Dobbs](https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics)
 -   [Technical article about the Xbox by
     AnandTech](http://www.anandtech.com/show/853)
-
-About emulation
----------------
-
--   [Discussion about Xbox emulation and technical differences between
-    [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink") and
-    [XQEMU](/wiki/XQEMU "wikilink")](https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/)
 
 History
 -------

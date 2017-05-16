@@ -3,13 +3,9 @@
 * [http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html Bunnies original Xbox page]
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
 * [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]
-* [https://mborgerson.com/deconstructing-the-xbox-boot-rom MCPX ROM Disassembly]
 * [https://sites.google.com/site/richgel99/home Deferred Rendering in Shrek]
 * [https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
 * [http://www.anandtech.com/show/853 Technical article about the Xbox by AnandTech]
-
-== About emulation ==
-* [https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/ Discussion about Xbox emulation and technical differences between [[Cxbx-Reloaded]] and [[XQEMU]]]
 
 == History ==
 * [http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php Designing the Boot Sound for the Original Xbox (Brian Schmidt)]
