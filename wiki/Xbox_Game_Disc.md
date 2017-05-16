@@ -7,6 +7,31 @@ layout: wiki
 Xbox games are shipped on DVDs. They are commonly referred to as Xbox
 Game Discs (XGD).
 
+Dumping
+-------
+
+To dump Xbox Game Discs you need one of the following drives /
+firmwares:
+
+| Drive             | Standard | Firmware                   |
+|-------------------|----------|----------------------------|
+|                   |          | 0800                       |
+| Toshiba SD-M2012C | IDE      | Kreon                      |
+| Samsung SH-D162C  | IDE      | Kreon (October 9th 2007)   |
+| Samsung SH-D162D  | IDE      | Kreon (November 18th 2007) |
+| Toshiba TS-H352C  | IDE      | Kreon                      |
+| Toshiba TS-H352D  | IDE      | Kreon                      |
+| Samsung SH-D163A  | SATA     | Kreon (October 9th 2007)   |
+| Samsung SH-D163B  | SATA     | Kreon (November 18th 2007) |
+| Toshiba TS-H353A  | SATA     |                            |
+| Toshiba TS-H353B  | SATA     |                            |
+
+Please note that the modified firmwares are based on copyrighted
+material and can therefore not be legally shared here.
+
+For current dumping instructions see [the Dumping Guide by the Redump
+Project](http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/).
+
 References and links
 --------------------
 
@@ -15,8 +40,6 @@ References and links
     protocol](https://multimedia.cx/eggs/xbox-sphinx-protocol/)
 -   [Xbox Game Discs preserved by the Redump
     Project](http://redump.org/discs/system/xbox/)
--   [Dumping Guide by the Redump
-    Project](http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/)
 -   [Missing Xbox Game Disc dumps at Redump
     Project](http://wiki.redump.org/index.php?title=Discs_not_yet_dumped#Microsoft_Xbox)
 

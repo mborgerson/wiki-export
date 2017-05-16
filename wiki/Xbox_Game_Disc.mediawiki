@@ -1,8 +1,61 @@
 Xbox games are shipped on DVDs. They are commonly referred to as Xbox Game Discs (XGD).
 
+== Dumping ==
+
+To dump Xbox Game Discs you need one of the following drives / firmwares:
+
+{| class="wikitable"
+!Drive
+!Standard
+!Firmware
+|-
+|{{citation needed}}
+|
+|0800
+|-
+|Toshiba SD-M2012C
+|IDE
+|Kreon{{citation needed}}
+|-
+|Samsung SH-D162C
+|IDE
+|Kreon (October 9th 2007)
+|-
+|Samsung SH-D162D
+|IDE
+|Kreon (November 18th 2007)
+|-
+|Toshiba TS-H352C
+|IDE
+|Kreon{{citation needed}}
+|-
+|Toshiba TS-H352D
+|IDE
+|Kreon{{citation needed}}
+|-
+|Samsung SH-D163A
+|SATA
+|Kreon (October 9th 2007)
+|-
+|Samsung SH-D163B
+|SATA
+|Kreon (November 18th 2007)
+|-
+|Toshiba TS-H353A
+|SATA
+|{{citation needed}}
+|-
+|Toshiba TS-H353B
+|SATA
+|{{citation needed}}
+|}
+
+Please note that the modified firmwares are based on copyrighted material and can therefore not be legally shared here.
+
+For current dumping instructions see [http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/ the Dumping Guide by the Redump Project].
+
 == References and links == 
 * [https://web.archive.org/web/20150616131202/http://dark.ellende.eu/public/360DVDfirmwareRelatedInfo.pdf http://dark.ellende.eu/public/360DVDfirmwareRelatedInfo.pdf]
 * [https://multimedia.cx/eggs/xbox-sphinx-protocol/ Overview of the challenge/response security protocol]
 * [http://redump.org/discs/system/xbox/ Xbox Game Discs preserved by the Redump Project]
-* [http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/ Dumping Guide by the Redump Project]
 * [http://wiki.redump.org/index.php?title=Discs_not_yet_dumped#Microsoft_Xbox Missing Xbox Game Disc dumps at Redump Project]
