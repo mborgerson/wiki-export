@@ -4,7 +4,8 @@ permalink: wiki/Resources/
 layout: wiki
 ---
 
-Random resources about xbox hacking
+Random resources about Xbox hacking
+-----------------------------------
 
 -   [Michael Steils Xbox Presentation from C3 in
     2005](https://events.ccc.de/congress/2005/fahrplan/attachments/591-paper_xbox.pdf)
@@ -14,8 +15,8 @@ Random resources about xbox hacking
     free](https://www.nostarch.com/xboxfree)
 -   [List of original Xbox DVD
     drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
--   [Matt Borgerson about the Xbox
-    bootrom](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
+-   [MCPX ROM
+    Disassembly](https://mborgerson.com/deconstructing-the-xbox-boot-rom)
 -   [Deferred Rendering in
     Shrek](https://sites.google.com/site/richgel99/home)
 -   [Article about Xbox Graphics (before release) from Dr.
@@ -24,8 +25,17 @@ Random resources about xbox hacking
     AnandTech](http://www.anandtech.com/show/853)
 
 About emulation
+---------------
 
 -   [Discussion about Xbox emulation and technical differences between
     [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink") and
     [XQEMU](/wiki/XQEMU "wikilink")](https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/)
+
+History
+-------
+
+-   [Designing the Boot Sound for the Original Xbox (Brian
+    Schmidt)](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php)
+-   [3 Xbox Bosses Share Secrets of the Console's
+    Past](https://www.youtube.com/watch?v=rUODlNffWmU)
 
