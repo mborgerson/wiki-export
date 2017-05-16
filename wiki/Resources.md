@@ -13,8 +13,6 @@ Random resources about Xbox hacking
     page](http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html)
 -   [Bunnies “Hacking the Xbox” e-book for
     free](https://www.nostarch.com/xboxfree)
--   [List of original Xbox DVD
-    drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
 -   [Deferred Rendering in
     Shrek](https://sites.google.com/site/richgel99/home)
 -   [Article about Xbox Graphics (before release) from Dr.

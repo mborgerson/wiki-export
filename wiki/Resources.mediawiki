@@ -2,7 +2,6 @@
 * [https://events.ccc.de/congress/2005/fahrplan/attachments/591-paper_xbox.pdf Michael Steils Xbox Presentation from C3 in 2005]
 * [http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html Bunnies original Xbox page]
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
-* [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]
 * [https://sites.google.com/site/richgel99/home Deferred Rendering in Shrek]
 * [https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
 * [http://www.anandtech.com/show/853 Technical article about the Xbox by AnandTech]
