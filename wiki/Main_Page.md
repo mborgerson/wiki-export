@@ -17,10 +17,10 @@ Development
     -   [Memory](/wiki/Memory "wikilink")
     -   [BIOS](/wiki/BIOS "wikilink")
     -   [MCPX](/wiki/MCPX "wikilink") [(ROM)](MCPX_ROM "wikilink")
-    -   [DVD Drive](/wiki/DVD_Drive "wikilink") [Xbox Game
-        Disc](/wiki/Xbox_Game_Disc "wikilink")
-    -   [USB](/wiki/USB "wikilink") [Xbox Input
-        Devices](/wiki/Xbox_Input_Devices "wikilink")
+    -   [DVD Drive](/wiki/DVD_Drive "wikilink")
+    -   [USB](/wiki/USB "wikilink")
+-   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
+-   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
 -   [Operating System](/wiki/Operating_System "wikilink")
 -   [NV2A](/wiki/NV2A "wikilink")
