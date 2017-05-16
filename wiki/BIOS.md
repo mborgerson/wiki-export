@@ -126,4 +126,6 @@ References
 
 -   [Understanding the Xbox boot
     process](http://hackspot.net/XboxBlog/?p=1)
+-   [Xbox BIOS dat file from Redump
+    Project](http://redump.org/datfile/xbox-bios/)
 

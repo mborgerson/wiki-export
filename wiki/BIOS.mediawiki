@@ -161,3 +161,4 @@ This is very similar to the [[MCPX ROM]], only the xcode interpreter is differen
 == References ==
 
 * [http://hackspot.net/XboxBlog/?p=1 Understanding the Xbox boot process]
+* [http://redump.org/datfile/xbox-bios/ Xbox BIOS dat file from Redump Project]
