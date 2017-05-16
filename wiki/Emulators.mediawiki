@@ -217,3 +217,7 @@ This is a list of known Xbox emulation projects
 |Proprietary
 |
 |}
+
+== References and links == 
+
+* [https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/ Discussion about Xbox emulation and technical differences between [[Cxbx-Reloaded]] and [[XQEMU]]]

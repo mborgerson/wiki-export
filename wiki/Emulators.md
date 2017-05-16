@@ -32,4 +32,10 @@ This is a list of known Xbox emulation projects
 | Dead       | Unknown           | [Xenoborg](http://xenoborg-emu.blogspot.com/)                                   |                                                                 | blueshogun96     | Windows                  |             |                                                                                                                                                                                                                                                                                                                                              |
 | Dead       | Unknown           | [Xbox 360 Backward Compatibility](/wiki/Xbox_360_Backward_Compatibility "wikilink")   |                                                                 | Microsoft        | Xbox 360                 | Proprietary |                                                                                                                                                                                                                                                                                                                                              |
 
+References and links
+--------------------
+
+-   [Discussion about Xbox emulation and technical differences between
+    [Cxbx-Reloaded](/wiki/Cxbx-Reloaded "wikilink") and
+    [XQEMU](/wiki/XQEMU "wikilink")](https://www.reddit.com/r/emulation/comments/6a958p/cxbx_reloaded_xbox_emulator_panzer_dragoon_orta/)
 
