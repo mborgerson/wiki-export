@@ -1,5 +1,9 @@
-The NV2A implements https://www.opengl.org/registry/specs/NV/register_combiners.txt (and https://www.opengl.org/registry/specs/NV/register_combiners2.txt ? )
+The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners.txt NV_register_combiners] (and [https://www.opengl.org/registry/specs/NV/register_combiners2.txt NV_register_combiners2]?)
 
 == Debugging ==
 
 PIX from the Microsoft XDK provides great debugging capabilities.
+
+== References and links ==
+
+* http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf
