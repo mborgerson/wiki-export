@@ -104,18 +104,6 @@ This is very similar to the [MCPX ROM](/wiki/MCPX_ROM "wikilink"), only the
 xcode interpreter is different, and it doesn't include any
 decryption/hashing algorithms.
 
-Known Retail BIOSs
-------------------
-
--   3944
--   4034
--   4134
--   4817
--   5101
--   5530
--   5713
--   5838
-
 See Also
 --------
 
