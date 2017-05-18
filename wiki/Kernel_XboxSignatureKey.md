@@ -7,6 +7,18 @@ layout: wiki
 This is used to find the Xbox Public RSA-2048 Key. This key is used to
 verify the signed XBE executables.
 
+`struct RSA_PUBLIC_KEY`  
+`{`  
+`   char Magic[4];          // `“`RSA1`”  
+`   unsigned int Bloblen;       // 264 (Modulus + Exponent + Modulussize)`  
+`   unsigned char Bitlen[4];    // 2048`  
+`   unsigned int ModulusSize;   // 255 (bytes in the Modulus)`  
+`   unsigned char Exponent[4];`  
+`   unsigned char Modulus[256];     // Bit endian style`  
+`   unsigned char Privatekey[256];  // Private Key -- Big endian style`  
+`};`  
+`struct RSA_PUBLIC_KEY xePublicKeyData;`
+
 XBE signing process
 -------------------
 
@@ -37,3 +49,10 @@ verification fails.
 3. The *digital signature* field from the XBE is decrypted with the
 2048-bit RSA public key and compared to the SHA-1 hash of the XBE
 header. Finally, if the two values match, the game is verified.
+
+References and links
+--------------------
+
+-   [Xbedump
+    source](https://github.com/xqemu/xbedump/blob/master/xboxlib.c)
+
