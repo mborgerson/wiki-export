@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 This is used to find the Xbox Public RSA-2048 Key. This key is used to
-verify the signed [XBE](/wiki/XBE "wikilink") executables.
+verify the signed [Xbe](/wiki/Xbe "wikilink") executables.
 
 `struct RSA_PUBLIC_KEY`  
 `{`  
