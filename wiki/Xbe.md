@@ -11,5 +11,5 @@ developers, and then signed by Microsoft.
 Resources and links
 -------------------
 
--   [1](http://www.caustik.com/cxbx/download/xbe.htm)
+-   [.XBE File Format 1.1](http://www.caustik.com/cxbx/download/xbe.htm)
 
