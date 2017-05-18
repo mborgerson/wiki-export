@@ -7,50 +7,69 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 {| class="wikitable"
 !Drive
 !Standard
-!Firmware
+!Original Firmware download
+!Name of modified Firmware for dumping
 |-
 |{{citation needed}}
+|
 |
 |0800
 |-
 |Toshiba SD-M2012C
 |IDE
+|
 |Kreon{{citation needed}}
 |-
 |Samsung SH-D162C
 |IDE
+|
 |Kreon (October 9th 2007)
 |-
 |Samsung SH-D162D
 |IDE
+|[https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200706281644411972_SH-D162D_SB00.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200811051941150901_SH-D162D_SB01.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200903191825218171_SH-D162D_SB03.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200909281412336931_SH-D162D_SB04.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/]
 |Kreon (November 18th 2007)
 |-
 |Toshiba TS-H352C
 |IDE
+|
 |Kreon{{citation needed}}
 |-
 |Toshiba TS-H352D
 |IDE
+|
 |Kreon{{citation needed}}
 |-
 |Samsung SH-D163A
 |SATA
+|
 |Kreon (October 9th 2007)
 |-
 |Samsung SH-D163B
 |SATA
+|
 |Kreon (November 18th 2007)
 |-
 |Toshiba TS-H353A
 |SATA
+|
 |{{citation needed}}
 |-
 |Toshiba TS-H353B
 |SATA
+|
 |{{citation needed}}
 |}
 
 Please note that the modified firmwares are based on copyrighted material and can therefore not be legally shared here.
+Patch files to patch original firmwares into dumping-firmwares would be appreciated. 
+
+Flashing software:
+
+* TSDNMAC for MacOS
+* [http://web.archive.org/web/20070301000000/http://www.samsungodd.com/KorLib/File/sfdnwin.exe SFDNWIN] for Microsoft Windows 2000 and XP
+* TSDNWIN for Microsoft Windows Vista and 7
+* Dell SFDNDOS and the newer TSDNDOS for Microsoft DOS
 
 For current dumping instructions see [http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/ the Dumping Guide by the Redump Project].
 
