@@ -1,6 +1,6 @@
 This is a list of known Xbox emulation projects
 
-{| class="wikitable"
+{| class="wikitable sortable"
 !Status
 !Approach
 !Name
