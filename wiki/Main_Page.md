@@ -18,6 +18,7 @@ Development
     -   [BIOS](/wiki/BIOS "wikilink")
     -   [MCPX](/wiki/MCPX "wikilink") [(ROM)](MCPX_ROM "wikilink")
     -   [DVD Drive](/wiki/DVD_Drive "wikilink")
+    -   [Hard Drive](/wiki/Hard_Drive "wikilink")
     -   [USB](/wiki/USB "wikilink")
 -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
