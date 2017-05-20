@@ -28,7 +28,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Samsung SH-D162D
 |IDE
 |[https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200706281644411972_SH-D162D_SB00.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200811051941150901_SH-D162D_SB01.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200903191825218171_SH-D162D_SB03.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200909281412336931_SH-D162D_SB04.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/]
-|Kreon (November 18th 2007)
+|Kreon 1.00 (November 18th 2007)
 |-
 |Toshiba TS-H352C
 |IDE
@@ -72,6 +72,66 @@ Flashing software:
 * Dell SFDNDOS and the newer TSDNDOS for Microsoft DOS
 
 For current dumping instructions see [http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/ the Dumping Guide by the Redump Project].
+
+=== Xbox related commands ===
+
+==== Enable Unlock 1 (xtreme) state ====
+
+Supported by: Kreon 1.00
+<pre>FF 08 01 01</pre>
+
+Enable Unlock 1 (xtreme) state' as we already know it from the 360 xtreme modded drives. 
+This command is supported for legacy reasons only. Custom applications should use the new 'Set Lock State' instead.
+
+==== Set Lock State ====
+
+Supported by: Kreon 1.00
+<pre>FF 08 01 11 xx</pre>
+
+* <code>xx=00</code> - Drive locked (no unlock state)
+* <code>xx=01</code> - Unlock State 1 (xtreme) enabled
+* <code>xx=02</code> - Unlock state 2 (wxripper) enabled
+
+==== SS extract command ====
+
+Supported by: Kreon 1.00
+<pre>AD 00 FF 02 FD FF FE 00 08 00 xx C0</pre>
+
+This is the well known  from the xtreme firmware.
+
+==== Get Feature List ====
+
+Supported by: Kreon 1.00
+<pre>FF 08 01 10</pre>
+
+This command will return a list of the additional features supported by the drive.
+All values returned are 16 bit values, and the list is terminated with null (<code>0x0000</code>).
+The two first words of the returned list always reads as <code>0xA55A 0X5AA5</code> in order to guarantee that a reply from a drive not supporting this command correctly isn't mistaken for a feature list.
+
+An example feature list could be: <code>0xA55A, 0x5AA5, 0x0100, 0xF000, 0xF001, 0x0000</code>
+
+This list would indicate that the drive supports XBOX360 Unlock 1, Lock and Error Skip, as it can be seen from the values defined below:
+
+XBOX 360 related features:
+
+* <code>0x0100</code> : The drive supports the unlock 1 state (xtreme)
+* <code>0x0101</code> : The drive supports the unlock 2 state (wxripper)
+* <code>0x0120</code> : The drive can read and decrypt the SS
+* <code>0x0121</code> : The drive has full challenge response functionality
+
+XBOX related features:
+
+* <code>0x0200</code> : The drive supports the unlock 1 state (xtreme)
+* <code>0x0201</code> : The drive supports the unlock 2 state (wxripper)
+* <code>0x0220</code> : The drive can read and decrypt the SS
+* <code>0x0221</code> : The drive has full challenge response functionality
+
+General drive features:
+
+* <code>0xF000</code> : The drive supports the lock (cancel any unlock state) command
+* <code>0xF001</code> : The drive supports error skipping
+
+This is the complete list of defined features at the moment. If you're working on a custom application you might want to contact me in order to get the latest list.
 
 == References and links == 
 * [https://web.archive.org/web/20150616131202/http://dark.ellende.eu/public/360DVDfirmwareRelatedInfo.pdf http://dark.ellende.eu/public/360DVDfirmwareRelatedInfo.pdf]
