@@ -256,4 +256,6 @@ External Links
     Neighborhood](/wiki/Xbox_Neighborhood "wikilink") written in C\#.
 -   [ViridiX](https://github.com/Ernegien/ViridiX) – An open-source
     collection of Xbox debugging libraries and tools written in C\#.
+-   [xbdm-rs](https://github.com/docbrown/xbdm-rs) - An open-source XBDM
+    client written in Rust.
 
