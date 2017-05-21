@@ -12,7 +12,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 !Notes
 |-
 |0x00
-|PS_TEXTUREMODES_NONE
+|PS_TEXTUREMODES_NONE<br>texcoord?{{citation needed}}
 |*
 |*
 |*
@@ -20,7 +20,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x01
-|PS_TEXTUREMODES_PROJECT2D
+|PS_TEXTUREMODES_PROJECT2D<br>tex
 |*
 |*
 |*
@@ -44,7 +44,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x04
-|PS_TEXTUREMODES_PASSTHRU
+|PS_TEXTUREMODES_PASSTHRU<br>texcoord?{{citation needed}}
 |*
 |*
 |*
@@ -52,7 +52,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x05
-|PS_TEXTUREMODES_CLIPPLANE
+|PS_TEXTUREMODES_CLIPPLANE<br>texkill
 |*
 |*
 |*
@@ -60,7 +60,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x06
-|PS_TEXTUREMODES_BUMPENVMAP
+|PS_TEXTUREMODES_BUMPENVMAP<br>texbem
 |
 |*
 |*
@@ -68,7 +68,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x07
-|PS_TEXTUREMODES_BUMPENVMAP_LUM
+|PS_TEXTUREMODES_BUMPENVMAP_LUM<br>texbeml
 |
 |*
 |*
@@ -76,7 +76,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x08
-|PS_TEXTUREMODES_BRDF
+|PS_TEXTUREMODES_BRDF<br>texm3x2tex
 |
 |
 |*
@@ -84,7 +84,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x09
-|PS_TEXTUREMODES_DOT_ST
+|PS_TEXTUREMODES_DOT_ST<br>texm3x2pad?{{citation needed}}
 |
 |
 |*
@@ -92,7 +92,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x0A
-|PS_TEXTUREMODES_DOT_ZW
+|PS_TEXTUREMODES_DOT_ZW<br>texm3x2tex?{{citation needed}}
 |
 |
 |*
@@ -132,7 +132,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x0F
-|PS_TEXTUREMODES_DPNDNT_AR
+|PS_TEXTUREMODES_DPNDNT_AR<br>texreg2ar
 |
 |*
 |*
@@ -140,7 +140,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |
 |-
 |0x10
-|PS_TEXTUREMODES_DPNDNT_GB
+|PS_TEXTUREMODES_DPNDNT_GB<br>texreg2gb
 |
 |*
 |*
@@ -163,6 +163,12 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |*
 |
 |}
+
+Also known from nvidia docs: 
+* texm3x3pad [stage 1, stage 2]
+* texm3x3spec [stage 3]
+* texm3x3vspec [stage 3]
+* texm3x3tex [stage 3]
 
 == Debugging ==
 
