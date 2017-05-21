@@ -17,5 +17,6 @@ PIX from the Microsoft XDK provides great debugging capabilities.
 References and links
 --------------------
 
+-   <http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf>
 -   <http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf>
 
