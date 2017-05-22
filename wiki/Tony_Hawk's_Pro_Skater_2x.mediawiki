@@ -1,3 +1,4 @@
+{{Game}}
 == Demo ==
 
 There was a demo released for ??? on ???.
