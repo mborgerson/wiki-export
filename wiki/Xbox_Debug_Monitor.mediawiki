@@ -165,7 +165,17 @@ TODO
 ====<span id="cmd_getcontext">getcontext</span> (Get thread context)====
 ====<span id="cmd_getd3dstate">getd3dstate</span> (Get Direct3D state)====
 ====<span id="cmd_getextcontext">getextcontext</span> (Get extended thread context)====
+
 ====<span id="cmd_getfile">getfile</span> (Download file)====
+
+{| class="wikitable"
+! 3944-4432
+| width="99%" | <span style="font: 14px monospace">getfile name=</span>
+|-
+! 4532+
+| <span style="font: 14px monospace">getfile name= [offset= size=]</span>
+|}
+
 ====<span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)====
 ====<span id="cmd_getgamma">getgamma</span> (Get gamma table)====
 ====<span id="cmd_getmem">getmem</span> (Read memory)====

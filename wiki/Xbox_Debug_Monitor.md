@@ -304,6 +304,25 @@ version](/wiki/XBDM_commands_by_version "wikilink")*
 
 #### <span id="cmd_getfile">getfile</span> (Download file)
 
+<table>
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>3944-4432</p></th>
+<th><p><span style="font: 14px monospace">getfile name=</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>4532+</p></td>
+<td><p><span style="font: 14px monospace">getfile name= [offset= size=]</span></p></td>
+</tr>
+</tbody>
+</table>
+
 #### <span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)
 
 #### <span id="cmd_getgamma">getgamma</span> (Get gamma table)
