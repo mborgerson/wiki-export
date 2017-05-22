@@ -9,7 +9,8 @@ List of Xbox DVD Drive manufacturers
 * Philips
 * Samsung
 * Hitachi-LG (mainly 1.6?)
-[[File:http://xboxdevwiki.net/images/b/b1/Xbox_drivedetermination.png]]
+
+[[File:Xbox_drivedetermination.png|Xbox DVD Drive determination]]
 
 == References and links == 
 
