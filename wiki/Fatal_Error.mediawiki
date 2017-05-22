@@ -4,7 +4,7 @@ These are the errors which will be displayed
 !Value (2 digit decimal)
 !Meaning
 |-
-|0
+|00
 |No error (used internally to clear error flags from EEPROM)
 |-
 |01

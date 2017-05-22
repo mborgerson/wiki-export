@@ -8,7 +8,7 @@ These are the errors which will be displayed
 
 | Value (2 digit decimal) | Meaning                                                                                                    |
 |-------------------------|------------------------------------------------------------------------------------------------------------|
-| 0                       | No error (used internally to clear error flags from EEPROM)                                                |
+| 00                      | No error (used internally to clear error flags from EEPROM)                                                |
 | 01                      |                                                                                                            |
 | 02                      | EEPROM Checksum failure                                                                                    |
 | 03                      |                                                                                                            |
