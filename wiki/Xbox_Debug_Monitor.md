@@ -82,15 +82,15 @@ protocol transmitted over a TCP connection on port 731. RDCP resembles
 protocols like FTP and SMTP, making it possible to communicate with XBDM
 using just a Telnet client in many cases.
 
-When a connection is established, XBDM sends `201- connected` followed
-by <CR><LF> (that is, a carriage return character followed by a line
-feed character). The RDCP client is then free to send a command followed
-by <CR><LF> or <CR><NUL>. A command consists of a name and zero or more
-parameters separated by whitespace characters. The format of the
-parameters is defined by the command, but most commands use the form
-`key=value`. Parameter values that contain whitespace characters must be
-surrounded by double quotes (e.g. “`some`` ``value`” or
-`key=`“`some`` ``value`”).
+When a connection is established, XBDM sends `201- connected` (or
+`200- connected` in version 3944) followed by <CR><LF> (that is, a
+carriage return character followed by a line feed character). The RDCP
+client is then free to send a command followed by <CR><LF> or <CR><NUL>.
+A command consists of a name and zero or more parameters separated by
+whitespace characters. The format of the parameters is defined by the
+command, but most commands use the form `key=value`. Parameter values
+that contain whitespace characters must be surrounded by double quotes
+(e.g. “`some`` ``value`” or `key=`“`some`` ``value`”).
 
 After executing a command, XBDM replies with a response line consisting
 of a three-digit status code and message of the form
