@@ -22,7 +22,7 @@ These are the errors which will be displayed
 | 11                      | DVD Drive missing                                                                                          |
 | 12                      | Wrong DVD Drive                                                                                            |
 | 13                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 0` (MainMenu) |
-| 14                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 0` (Error)    |
+| 14                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 1` (Error)    |
 | 15                      |                                                                                                            |
 | 16                      | Dashboard settings error                                                                                   |
 | 17                      |                                                                                                            |

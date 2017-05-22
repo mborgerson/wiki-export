@@ -47,7 +47,7 @@ These are the errors which will be displayed
 |Dashboard broken, while [[Kernel/LaunchDataPage]] <code>reason == 0</code> (MainMenu)
 |-
 |14
-|Dashboard broken, while [[Kernel/LaunchDataPage]] <code>reason == 0</code> (Error)
+|Dashboard broken, while [[Kernel/LaunchDataPage]] <code>reason == 1</code> (Error)
 |-
 |15
 |
