@@ -1,7 +1,9 @@
 ---
 title: Sonic Extreme
 permalink: wiki/Sonic_Extreme/
-redirect_to: /wiki/Games/Tech_Deck_Dude_Bare_Knuckle_Grind#Sonic_Extreme/
+layout: wiki
 ---
 
-You should automatically be redirected to [Games/Tech Deck Dude Bare Knuckle Grind#Sonic Extreme](/wiki/Games/Tech_Deck_Dude_Bare_Knuckle_Grind#Sonic_Extreme/)
+1.  REDIRECT [Tech Deck Dude Bare Knuckle Grind\#Sonic
+    Extreme](/wiki/Tech_Deck_Dude_Bare_Knuckle_Grind#Sonic_Extreme "wikilink")
+
