@@ -239,6 +239,61 @@ TODO
 
 ### Commands
 
+|                   | 3944 | 4039 | 4134 | 4242 | 4361 | 4432 | 4531 | 4627 | 4721 | 4831 | 4928 | 5028 | 5120 | 5233 | 5344 | 5455 | 5558 | 5659 | 5788 | 5849 | 5933 |
+|-------------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| altaddr           | ✓    |      |
+| bye               | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    |
+| capcontrol        | ✓    |      |
+| continue          | ✓    |      |
+| debugger          | ✓    |      |
+| deftitle          | ✓    |      |
+| delete            | ✓    |      |
+| dirlist           | ✓    |      |
+| drivefreespace    | ✓    |      |
+| except            | ✓    |      |
+| exceptif          | ✓    |      |
+| flash             | ✓    |      |
+| fmtfat            | ✓    |      |
+| funccall          | ✓    |      |
+| getcontext        | ✓    |      |
+| getextcontext     | ✓    |      |
+| getfile           | ✓    |      |
+| getfileattributes | ✓    |      |
+| getmem            | ✓    |      |
+| go                | ✓    |      |
+| gpucount          | ✓    |      |
+| halt              | ✓    |      |
+| irtsweep          | ✓    |      |
+| isbreak           | ✓    |      |
+| isstopped         | ✓    |      |
+| kd                | ✓    |      |
+| magicboot         | ✓    |      |
+| mkdir             | ✓    |      |
+| modlong           | ✓    |      |
+| modsections       | ✓    |      |
+| modules           | ✓    |      |
+| nostopon          | ✓    |      |
+| notify            | ✓    |      |
+| notifyat          | ✓    |      |
+| pssnap            | ✓    |      |
+| querypc           | ✓    |      |
+| reboot            | ✓    |      |
+| rename            | ✓    |      |
+| resume            | ✓    |      |
+| screenshot        | ✓    |      |
+| sendfile          | ✓    |      |
+| setcontext        | ✓    |      |
+| setfileattributes | ✓    |      |
+| setsystime        | ✓    |      |
+| stopon            | ✓    |      |
+| suspend           | ✓    |      |
+| systime           | ✓    |      |
+| threadinfo        | ✓    |      |
+| threads           | ✓    |      |
+| xbeinfo           | ✓    |      |
+| xtlinfo           | ✓    |      |
+|                   | 3944 | 4039 | 4134 | 4242 | 4361 | 4432 | 4531 | 4627 | 4721 | 4831 | 4928 | 5028 | 5120 | 5233 | 5344 | 5455 | 5558 | 5659 | 5788 | 5849 | 5933 |
+
 TODO
 
 See Also
