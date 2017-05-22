@@ -1,0 +1,2 @@
+HalReturnToFirmware is used to reboot the Xbox.
+The Xbox is also quick-rebooted to launch a new XBE.
