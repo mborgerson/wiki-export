@@ -242,7 +242,193 @@ TODO
 *See also: [XBDM commands by
 version](/wiki/XBDM_commands_by_version "wikilink")*
 
-TODO
+#### <span id="cmd_adminpw">adminpw</span> (Set administrator password)
+
+#### <span id="cmd_altaddr">altaddr</span>
+
+#### <span id="cmd_authuser">authuser</span> (Authenticate user)
+
+#### <span id="cmd_boxid">boxid</span>
+
+#### <span id="cmd_break">break</span>
+
+#### <span id="cmd_bye">bye</span> (Close connection)
+
+#### <span id="cmd_capcontrol">capcontrol</span>/<span id="cmd_capctrl">capctrl</span>
+
+#### <span id="cmd_continue">continue</span>
+
+#### <span id="cmd_crashdump">crashdump</span>
+
+#### <span id="cmd_d3dopcode">d3dopcode</span>
+
+#### <span id="cmd_dbgname">dbgname</span> (Get/set debug name)
+
+#### <span id="cmd_dbgoptions">dbgoptions</span>
+
+#### <span id="cmd_debugger">debugger</span>
+
+#### <span id="cmd_debugmode">debugmode</span>
+
+#### <span id="cmd_dedicate">dedicate</span> (Dedicate connection)
+
+#### <span id="cmd_deftitle">deftitle</span>
+
+#### <span id="cmd_delete">delete</span> (Delete file)
+
+#### <span id="cmd_dirlist">dirlist</span> (List files in directory)
+
+#### <span id="cmd_dmversion">dmversion</span> (Get debug monitor version)
+
+#### <span id="cmd_drivefreespace">drivefreespace</span> (Get free space on drive)
+
+#### <span id="cmd_drivelist">drivelist</span> (List drive letters)
+
+#### <span id="cmd_dvdblk">dvdblk</span> (Read block from DVD)
+
+#### <span id="cmd_dvdperf">dvdperf</span>
+
+#### <span id="cmd_fileeof">fileeof</span>
+
+#### <span id="cmd_flash">flash</span> (Flash BIOS image)
+
+#### <span id="cmd_fmtfat">fmtfat</span> (Format FAT partition)
+
+#### <span id="cmd_funccall">funccall</span>
+
+#### <span id="cmd_getcontext">getcontext</span> (Get thread context)
+
+#### <span id="cmd_getd3dstate">getd3dstate</span> (Get Direct3D state)
+
+#### <span id="cmd_getextcontext">getextcontext</span> (Get extended thread context)
+
+#### <span id="cmd_getfile">getfile</span> (Download file)
+
+#### <span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)
+
+#### <span id="cmd_getgamma">getgamma</span> (Get gamma table)
+
+#### <span id="cmd_getmem">getmem</span> (Read memory)
+
+#### <span id="cmd_getmem2">getmem2</span> (Read memory)
+
+#### <span id="cmd_getpalette">getpalette</span>
+
+#### <span id="cmd_getpid">getpid</span>
+
+#### <span id="cmd_getsum">getsum</span>
+
+#### <span id="cmd_getsurf">getsurf</span>
+
+#### <span id="cmd_getuserpriv">getuserpriv</span> (Get user's privilege level)
+
+#### <span id="cmd_getutildrvinfo">getutildrvinfo</span> (Get utility drive information)
+
+#### <span id="cmd_go">go</span>
+
+#### <span id="cmd_gpucount">gpucount</span> (Toggle GPU counters)
+
+#### <span id="cmd_halt">halt</span>
+
+#### <span id="cmd_irtsweep">irtsweep</span>
+
+#### <span id="cmd_isbreak">isbreak</span>
+
+#### <span id="cmd_isdebugger">isdebugger</span>
+
+#### <span id="cmd_isstopped">isstopped</span>
+
+#### <span id="cmd_kd">kd</span> (Enable/disable kernel debugger)
+
+#### <span id="cmd_keyxchg">keyxchg</span> (Perform key exchange)
+
+#### <span id="cmd_lockmode">lockmode</span>
+
+#### <span id="cmd_lop">lop</span>
+
+#### <span id="cmd_magicboot">magicboot</span>
+
+#### <span id="cmd_memtrack">memtrack</span>
+
+#### <span id="cmd_mkdir">mkdir</span> (Create directory)
+
+#### <span id="cmd_mmglobal">mmglobal</span>
+
+#### <span id="cmd_modlong">modlong</span>
+
+#### <span id="cmd_modsections">modsections</span>
+
+#### <span id="cmd_modules">modules</span>
+
+#### <span id="cmd_nostopon">nostopon</span>
+
+#### <span id="cmd_notify">notify</span>
+
+#### <span id="cmd_notifyat">notifyat</span>
+
+#### <span id="cmd_pbsnap">pbsnap</span>
+
+#### <span id="cmd_pclist">pclist</span> (List performance counters)
+
+#### <span id="cmd_pdbinfo">pdbinfo</span>
+
+#### <span id="cmd_pssnap">pssnap</span>
+
+#### <span id="cmd_querypc">querypc</span> (Query performance counter)
+
+#### <span id="cmd_reboot">reboot</span>
+
+#### <span id="cmd_rename">rename</span> (Rename file)
+
+#### <span id="cmd_resume">resume</span>
+
+#### <span id="cmd_screenshot">screenshot</span> (Take screenshot)
+
+#### <span id="cmd_sendfile">sendfile</span> (Upload file)
+
+#### <span id="cmd_servname">servname</span>
+
+#### <span id="cmd_setconfig">setconfig</span>
+
+#### <span id="cmd_setcontext">setcontext</span> (Set thread context)
+
+#### <span id="cmd_setfileattributes">setfileattributes</span> (Set file attributes)
+
+#### <span id="cmd_setsystime">setsystime</span> (Set system time)
+
+#### <span id="cmd_setuserpriv">setuserpriv</span> (Set user's privilege level)
+
+#### <span id="cmd_signcontent">signcontent</span>
+
+#### <span id="cmd_stop">stop</span>
+
+#### <span id="cmd_stopon">stopon</span>
+
+#### <span id="cmd_suspend">suspend</span>
+
+#### <span id="cmd_sysfileupd">sysfileupd</span> (Update system file)
+
+#### <span id="cmd_systime">systime</span> (Get system time)
+
+#### <span id="cmd_threadinfo">threadinfo</span> (Get thread information)
+
+#### <span id="cmd_threads">threads</span> (List threads)
+
+#### <span id="cmd_title">title</span>
+
+#### <span id="cmd_user">user</span>
+
+#### <span id="cmd_userlist">userlist</span> (List users)
+
+#### <span id="cmd_vssnap">vssnap</span>
+
+#### <span id="cmd_walkmem">walkmem</span>
+
+#### <span id="cmd_writefile">writefile</span>
+
+#### <span id="cmd_xbeinfo">xbeinfo</span>
+
+#### <span id="cmd_xtlinfo">xtlinfo</span>
 
 See Also
 --------
