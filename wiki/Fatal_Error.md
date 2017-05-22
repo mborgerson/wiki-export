@@ -5,6 +5,7 @@ layout: wiki
 ---
 
 These are the errors which will be displayed
+<img src="Fatal_Error_13.png" title="fig:Fatal Error 13 being displayed" alt="Fatal Error 13 being displayed" width="300" />
 
 | Value (2 digit decimal) | Meaning                                                                                                    |
 |-------------------------|------------------------------------------------------------------------------------------------------------|

@@ -1,4 +1,4 @@
-These are the errors which will be displayed 
+These are the errors which will be displayed [[File:Fatal_Error_13.png|300px|thumb|right|Fatal Error 13 being displayed]]
 
 {| class="wikitable"
 !Value (2 digit decimal)
