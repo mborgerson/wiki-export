@@ -241,57 +241,71 @@ TODO
 
 |                   | 3944 | 4039 | 4134 | 4242 | 4361 | 4432 | 4531 | 4627 | 4721 | 4831 | 4928 | 5028 | 5120 | 5233 | 5344 | 5455 | 5558 | 5659 | 5788 | 5849 | 5933 |
 |-------------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
-| altaddr           | ✓    |      |
+| altaddr           | ✓    | ✓    |      |
+| authuser          | ✗    | ✓    |      |
+| break             | ✓    | ✓    |      |
 | bye               | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    |
-| capcontrol        | ✓    |      |
-| continue          | ✓    |      |
-| debugger          | ✓    |      |
-| deftitle          | ✓    |      |
-| delete            | ✓    |      |
-| dirlist           | ✓    |      |
-| drivefreespace    | ✓    |      |
-| except            | ✓    |      |
-| exceptif          | ✓    |      |
-| flash             | ✓    |      |
-| fmtfat            | ✓    |      |
-| funccall          | ✓    |      |
-| getcontext        | ✓    |      |
-| getextcontext     | ✓    |      |
-| getfile           | ✓    |      |
-| getfileattributes | ✓    |      |
-| getmem            | ✓    |      |
-| go                | ✓    |      |
-| gpucount          | ✓    |      |
-| halt              | ✓    |      |
-| irtsweep          | ✓    |      |
-| isbreak           | ✓    |      |
-| isstopped         | ✓    |      |
-| kd                | ✓    |      |
-| magicboot         | ✓    |      |
-| mkdir             | ✓    |      |
-| modlong           | ✓    |      |
-| modsections       | ✓    |      |
-| modules           | ✓    |      |
-| nostopon          | ✓    |      |
-| notify            | ✓    |      |
-| notifyat          | ✓    |      |
-| pssnap            | ✓    |      |
-| querypc           | ✓    |      |
-| reboot            | ✓    |      |
-| rename            | ✓    |      |
-| resume            | ✓    |      |
-| screenshot        | ✓    |      |
-| sendfile          | ✓    |      |
-| setcontext        | ✓    |      |
-| setfileattributes | ✓    |      |
-| setsystime        | ✓    |      |
-| stopon            | ✓    |      |
-| suspend           | ✓    |      |
-| systime           | ✓    |      |
-| threadinfo        | ✓    |      |
-| threads           | ✓    |      |
-| xbeinfo           | ✓    |      |
-| xtlinfo           | ✓    |      |
+| capcontrol        | ✓    | ✓    |      |
+| continue          | ✓    | ✓    |      |
+| dbgname           | ✓    | ✓    |      |
+| debugger          | ✓    | ✓    |      |
+| debugmode         | ✗    | ✓    |      |
+| deftitle          | ✓    | ✓    |      |
+| delete            | ✓    | ✓    |      |
+| dirlist           | ✓    | ✓    |      |
+| drivefreespace    | ✓    | ✓    |      |
+| drivelist         | ✓    | ✓    |      |
+| flash             | ✓    | ✓    |      |
+| fmtfat            | ✓    | ✓    |      |
+| funccall          | ✓    | ✓    |      |
+| getcontext        | ✓    | ✓    |      |
+| getextcontext     | ✓    | ✓    |      |
+| getfile           | ✓    | ✓    |      |
+| getfileattributes | ✓    | ✓    |      |
+| getmem            | ✓    | ✓    |      |
+| getuserpriv       | ✗    | ✓    |      |
+| go                | ✓    | ✓    |      |
+| gpucount          | ✓    | ✓    |      |
+| halt              | ✓    | ✓    |      |
+| irtsweep          | ✓    | ✓    |      |
+| isbreak           | ✓    | ✓    |      |
+| isstopped         | ✓    | ✓    |      |
+| kd                | ✓    | ✓    |      |
+| keyxchg           | ✗    | ✓    |      |
+| lockmode          | ✗    | ✓    |      |
+| magicboot         | ✓    | ✓    |      |
+| mkdir             | ✓    | ✓    |      |
+| modlong           | ✓    | ✓    |      |
+| modsections       | ✓    | ✓    |      |
+| modules           | ✓    | ✓    |      |
+| nostopon          | ✓    | ✓    |      |
+| notify            | ✓    | ✓    |      |
+| notifyat          | ✓    | ✓    |      |
+| pclist            | ✓    | ✓    |      |
+| pssnap            | ✓    | ✓    |      |
+| querypc           | ✓    | ✓    |      |
+| reboot            | ✓    | ✓    |      |
+| rename            | ✓    | ✓    |      |
+| resume            | ✓    | ✓    |      |
+| screenshot        | ✓    | ✓    |      |
+| sendfile          | ✓    | ✓    |      |
+| setconfig         | ✓    | ✓    |      |
+| setcontext        | ✓    | ✓    |      |
+| setfileattributes | ✓    | ✓    |      |
+| setsystime        | ✓    | ✓    |      |
+| setuserpriv       | ✗    | ✓    |      |
+| stop              | ✓    | ✓    |      |
+| stopon            | ✓    | ✓    |      |
+| suspend           | ✓    | ✓    |      |
+| systime           | ✓    | ✓    |      |
+| threadinfo        | ✓    | ✓    |      |
+| threads           | ✓    | ✓    |      |
+| title             | ✓    | ✓    |      |
+| user              | ✗    | ✓    |      |
+| userlist          | ✗    | ✓    |      |
+| vssnap            | ✗    | ✓    |      |
+| xbeinfo           | ✓    | ✓    |      |
+| xtlinfo           | ✓    | ✓    |      |
 |                   | 3944 | 4039 | 4134 | 4242 | 4361 | 4432 | 4531 | 4627 | 4721 | 4831 | 4928 | 5028 | 5120 | 5233 | 5344 | 5455 | 5558 | 5659 | 5788 | 5849 | 5933 |
 
 TODO

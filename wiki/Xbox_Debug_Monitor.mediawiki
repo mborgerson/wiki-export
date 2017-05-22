@@ -161,7 +161,18 @@ TODO
 |-
 | style="font-family: monospace; text-align: left" | altaddr
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | authuser
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | break
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | bye
 | style="background-color: #CEF2E0" | ✓
@@ -188,199 +199,308 @@ TODO
 |-
 | style="font-family: monospace; text-align: left" | capcontrol
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | continue
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | dbgname
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | debugger
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | debugmode
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | deftitle
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | delete
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | dirlist
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | drivefreespace
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
-|-
-| style="font-family: monospace; text-align: left" | except
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| colspan=19 |
 |-
-| style="font-family: monospace; text-align: left" | exceptif
+| style="font-family: monospace; text-align: left" | drivelist
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | flash
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | fmtfat
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | funccall
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | getcontext
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | getextcontext
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | getfile
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | getfileattributes
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | getmem
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | getuserpriv
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | go
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | gpucount
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | halt
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | irtsweep
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | isbreak
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | isstopped
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | kd
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | keyxchg
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | lockmode
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | magicboot
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | mkdir
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | modlong
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | modsections
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | modules
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | nostopon
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | notify
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | notifyat
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | pclist
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | pssnap
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | querypc
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | reboot
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | rename
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | resume
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | screenshot
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | sendfile
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | setconfig
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | setcontext
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | setfileattributes
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | setsystime
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | setuserpriv
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | stop
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | stopon
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | suspend
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | systime
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | threadinfo
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | threads
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | title
+| style="background-color: #CEF2E0" | ✓
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | user
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | userlist
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
+|-
+| style="font-family: monospace; text-align: left" | vssnap
+| style="background-color: #F2CECE" | ✗
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | xbeinfo
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |-
 | style="font-family: monospace; text-align: left" | xtlinfo
 | style="background-color: #CEF2E0" | ✓
-| colspan=20 |
+| style="background-color: #CEF2E0" | ✓
+| colspan=19 |
 |- style="font-size: x-small"
 !
 ! 3944
