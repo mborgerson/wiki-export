@@ -5,9 +5,9 @@ layout: wiki
 ---
 
 This is an unreleased game for the original Xbox. The same engine was to
-be used for [Games/Rocket Power: Zero Gravity
-Zone](/wiki/Games/Rocket_Power:_Zero_Gravity_Zone "wikilink") and [Games/Sonic
-Extreme](/wiki/Games/Sonic_Extreme "wikilink")
+be used for [Rocket Power: Zero Gravity
+Zone](/wiki/Rocket_Power:_Zero_Gravity_Zone "wikilink") and [Sonic
+Extreme](/wiki/Sonic_Extreme "wikilink")
 [1](https://www.youtube.com/watch?v=H6lXV1YNjVA).
 
 4 versions of the game were released as “Digital Playset” for PC
