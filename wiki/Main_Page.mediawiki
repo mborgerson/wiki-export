@@ -32,16 +32,9 @@ Development
 * [[Chihiro-Tools]]
 * [[Chihiro-Launcher]]
 
-Games
+[[:Category:Games|Games]]
 
 * [[Engine List]]
-
-* [[Games/Azurik: Rise of Perathia]]
-* [[Games/Grand Theft Auto 3]]
-* [[Games/Grand Theft Auto Vice City]]
-* [[Games/Grand Theft Auto San Andreas]]
-* [[Games/Kung Fu Chaos]]
-* [[Games/Tony Hawk's Pro Skater 2x]]
 
 Emulation
 

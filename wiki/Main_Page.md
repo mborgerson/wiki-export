@@ -37,22 +37,9 @@ Development
 -   [Chihiro-Tools](/wiki/Chihiro-Tools "wikilink")
 -   [Chihiro-Launcher](/wiki/Chihiro-Launcher "wikilink")
 
-Games
+[Games](/wiki/Category%3AGames "wikilink")
 
 -   [Engine List](/wiki/Engine_List "wikilink")
-
-<!-- -->
-
--   [Games/Azurik: Rise of
-    Perathia](/wiki/Games/Azurik:_Rise_of_Perathia "wikilink")
--   [Games/Grand Theft Auto 3](/wiki/Games/Grand_Theft_Auto_3 "wikilink")
--   [Games/Grand Theft Auto Vice
-    City](/wiki/Games/Grand_Theft_Auto_Vice_City "wikilink")
--   [Games/Grand Theft Auto San
-    Andreas](/wiki/Games/Grand_Theft_Auto_San_Andreas "wikilink")
--   [Games/Kung Fu Chaos](/wiki/Games/Kung_Fu_Chaos "wikilink")
--   [Games/Tony Hawk's Pro Skater
-    2x](/wiki/Games/Tony_Hawk's_Pro_Skater_2x "wikilink")
 
 Emulation
 
