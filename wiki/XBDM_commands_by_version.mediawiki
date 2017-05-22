@@ -1,3 +1,5 @@
+The following table shows the commands available in each version of the [[Xbox Debug Monitor]].
+
 {| class="wikitable" style="margin: 0 auto; text-align: center;"
 |- style="font-size: x-small"
 !

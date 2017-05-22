@@ -4,6 +4,9 @@ permalink: wiki/XBDM_commands_by_version/
 layout: wiki
 ---
 
+The following table shows the commands available in each version of the
+[Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink").
+
 |                   | 3944 | 4039 | 4134 | 4242 | 4361 | 4432 | 4531 | 4627 | 4721 | 4831 | 4928 | 5028 | 5120 | 5233 | 5344 | 5455 | 5558 | 5659 | 5788 | 5849 | 5933 |
 |-------------------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|
 | adminpw           | ✗    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    | ✓    |
