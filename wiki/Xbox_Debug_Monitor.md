@@ -317,7 +317,7 @@ version](/wiki/XBDM_commands_by_version "wikilink")*
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>4532+</p></td>
+<td><p>4531+</p></td>
 <td><p><span style="font: 14px monospace">getfile name= [offset= size=]</span></p></td>
 </tr>
 </tbody>
