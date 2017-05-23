@@ -33,15 +33,50 @@ Security sector range (9 Bytes)
 
 Overall format (2048 Bytes):
 
-| Offset | Field                       | Notes                 |
-|--------|-----------------------------|-----------------------|
-| 0      | Bookversion and Booktype    |                       |
-| 768    | Version of challenge table  |                       |
-| 769    | Number of challenge entries |                       |
-| 770    | Challenge entries           |                       |
-| 1633   | 16 security sector ranges   |                       |
-| 1840   | 16 security sector ranges   | Copy from Offset 1633 |
-||
+<table>
+<thead>
+<tr class="header">
+<th><p>Offset</p></th>
+<th><p>Field</p></th>
+<th><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>0</p></td>
+<td><p>Bookversion and Booktype</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>768</p></td>
+<td><p>Version of challenge table</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>769</p></td>
+<td><p>Number of challenge entries</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>770</p></td>
+<td><p>Challenge entries</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>1633</p></td>
+<td><p>23 security sector ranges</p></td>
+<td><p>Only 16 of which are used.</p></td>
+</tr>
+<tr class="even">
+<td><p>1840</p></td>
+<td><p>23 security sector ranges</p></td>
+<td><p>Only 16 of which are used.<br />
+<em>(Copy from Offset 1633)</em></p></td>
+</tr>
+<tr class="odd">
+</tr>
+</tbody>
+</table>
 
 Note that this information is still incomplete!
 

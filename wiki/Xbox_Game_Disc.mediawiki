@@ -44,9 +44,9 @@ Overall format (2048 Bytes):
 |-
 |770 || Challenge entries ||
 |-
-|1633 || 16 security sector ranges ||
+|1633 || 23 security sector ranges || Only 16 of which are used.
 |-
-|1840 || 16 security sector ranges || Copy from Offset 1633
+|1840 || 23 security sector ranges || Only 16 of which are used. <br> ''(Copy from Offset 1633)''
 |-
 |}
 
