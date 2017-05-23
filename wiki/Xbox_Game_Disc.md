@@ -13,18 +13,79 @@ Dumping
 To dump Xbox Game Discs you need one of the following drives /
 firmwares:
 
-| Drive             | Standard | Original Firmware download                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Name of modified Firmware for dumping |
-|-------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-|                   |          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 0800                                  |
-| Toshiba SD-M2012C | IDE      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon                                 |
-| Samsung SH-D162C  | IDE      | Kreon 0.80 (September 9th 2006)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon 1.00 (October 9th 2007)         |
-| Samsung SH-D162D  | IDE      | \[<https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no>=&fname=200706281644411972\_SH-D162D\_SB00.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/\]\[<https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no>=&fname=200811051941150901\_SH-D162D\_SB01.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/\]\[<https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no>=&fname=200903191825218171\_SH-D162D\_SB03.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/\]\[<https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no>=&fname=200909281412336931\_SH-D162D\_SB04.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/\] | Kreon 1.00 (November 18th 2007)       |
-| Toshiba TS-H352C  | IDE      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon                                 |
-| Toshiba TS-H352D  | IDE      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon                                 |
-| Samsung SH-D163A  | SATA     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon 1.00 (October 9th 2007)         |
-| Samsung SH-D163B  | SATA     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Kreon (November 18th 2007)            |
-| Toshiba TS-H353A  | SATA     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                       |
-| Toshiba TS-H353B  | SATA     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                       |
+<table>
+<thead>
+<tr class="header">
+<th><p>Drive</p></th>
+<th><p>Standard</p></th>
+<th><p>Original Firmware download</p></th>
+<th><p>Name of modified Firmware for dumping</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td><p>0800</p></td>
+</tr>
+<tr class="even">
+<td><p>Toshiba SD-M2012C</p></td>
+<td><p>IDE</p></td>
+<td></td>
+<td><p>Kreon</p></td>
+</tr>
+<tr class="odd">
+<td><p>Samsung SH-D162C</p></td>
+<td><p>IDE</p></td>
+<td></td>
+<td><p>Kreon 0.80 (September 9th 2006)<br />
+Kreon 1.00 (October 9th 2007)</p></td>
+</tr>
+<tr class="even">
+<td><p>Samsung SH-D162D</p></td>
+<td><p>IDE</p></td>
+<td><p>[<a href="https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200706281644411972_SH-D162D_SB00.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/][<a href="https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200811051941150901_SH-D162D_SB01.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/][<a href="https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200903191825218171_SH-D162D_SB03.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/][<a href="https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200909281412336931_SH-D162D_SB04.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/]</p></td>
+<td><p>Kreon 1.00 (November 18th 2007)</p></td>
+</tr>
+<tr class="odd">
+<td><p>Toshiba TS-H352C</p></td>
+<td><p>IDE</p></td>
+<td></td>
+<td><p>Kreon</p></td>
+</tr>
+<tr class="even">
+<td><p>Toshiba TS-H352D</p></td>
+<td><p>IDE</p></td>
+<td></td>
+<td><p>Kreon</p></td>
+</tr>
+<tr class="odd">
+<td><p>Samsung SH-D163A</p></td>
+<td><p>SATA</p></td>
+<td></td>
+<td><p>Kreon 1.00 (October 9th 2007)</p></td>
+</tr>
+<tr class="even">
+<td><p>Samsung SH-D163B</p></td>
+<td><p>SATA</p></td>
+<td></td>
+<td><p>Kreon (November 18th 2007)</p></td>
+</tr>
+<tr class="odd">
+<td><p>Toshiba TS-H353A</p></td>
+<td><p>SATA</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Toshiba TS-H353B</p></td>
+<td><p>SATA</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 Please note that the modified firmwares are based on copyrighted
 material and can therefore not be legally shared here. Patch files to
