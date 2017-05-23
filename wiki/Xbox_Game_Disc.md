@@ -7,8 +7,55 @@ layout: wiki
 Xbox games are shipped on DVDs. They are commonly referred to as Xbox
 Game Discs (XGD).
 
-Dumping
--------
+Dumps
+-----
+
+### Files
+
+#### SS.bin
+
+2048 Bytes
+
+Challenge entry:
+
+| Offset | Field             | Notes |
+|--------|-------------------|-------|
+| 0      | Level             |       |
+| 1      | Challenge id      |       |
+| 2      | Challenge value   |       |
+| 6      | Response modifier |       |
+| 7      | Response value    |       |
+
+Security sector range
+
+| Offset | Field     | Notes |
+|--------|-----------|-------|
+| 3      | Start PSN |       |
+| 6      | End PSN   |       |
+
+Overall format:
+
+| Offset | Field                       | Notes                 |
+|--------|-----------------------------|-----------------------|
+| 0      | Bookversion and Booktype    |                       |
+| 768    | Version of challenge table  |                       |
+| 769    | Number of challenge entries |                       |
+| 770    | Challenge entries           |                       |
+| 1633   | 16 security sector ranges   |                       |
+| 1840   | 16 security sector ranges   | Copy from Offset 1633 |
+||
+
+Note that this information is still incomplete!
+
+#### DMI.bin
+
+2048 Bytes
+
+#### PFI.bin
+
+2048 Bytes
+
+### Dumping
 
 To dump Xbox Game Discs you need one of the following drives /
 firmwares:
