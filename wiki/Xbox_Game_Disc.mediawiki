@@ -23,12 +23,12 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Samsung SH-D162C
 |IDE
 |
-|Kreon 0.60 (July 30th 2006) <br> Kreon 0.80 (September 9th 2006) <br> Kreon 1.00 (October 9th 2007)
+|SB00 Kreon 0.60 (July 30th 2006) <br> SB00 Kreon 0.80 (September 9th 2006) <br> SB01 Kreon 1.00 (October 9th 2007)
 |-
 |Samsung SH-D162D
 |IDE
 |[https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200706281644411972_SH-D162D_SB00.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200811051941150901_SH-D162D_SB01.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200903191825218171_SH-D162D_SB03.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/][https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200909281412336931_SH-D162D_SB04.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/]
-|Kreon 1.00 (November 18th 2007)
+|SB00 Kreon 1.00 (November 18th 2007)
 |-
 |Toshiba TS-H352C
 |IDE
@@ -43,7 +43,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Samsung SH-D163A
 |SATA
 |
-|Kreon 1.00 (October 9th 2007)
+|SB01 Kreon 1.00 (October 9th 2007)
 |-
 |Samsung SH-D163B
 |SATA
