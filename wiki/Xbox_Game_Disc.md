@@ -14,9 +14,7 @@ Dumps
 
 #### SS.bin
 
-2048 Bytes
-
-Challenge entry:
+Challenge entry (11 Bytes):
 
 | Offset | Field             | Notes |
 |--------|-------------------|-------|
@@ -26,14 +24,14 @@ Challenge entry:
 | 6      | Response modifier |       |
 | 7      | Response value    |       |
 
-Security sector range
+Security sector range (9 Bytes)
 
 | Offset | Field     | Notes |
 |--------|-----------|-------|
 | 3      | Start PSN |       |
 | 6      | End PSN   |       |
 
-Overall format:
+Overall format (2048 Bytes):
 
 | Offset | Field                       | Notes                 |
 |--------|-----------------------------|-----------------------|

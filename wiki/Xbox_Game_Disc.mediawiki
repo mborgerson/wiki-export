@@ -5,9 +5,7 @@ Xbox games are shipped on DVDs. They are commonly referred to as Xbox Game Discs
 === Files ===
 ==== SS.bin ====
 
-2048 Bytes
-
-Challenge entry:
+Challenge entry (11 Bytes):
 
 {| class="wikitable"
 ! Offset !! Field !! Notes
@@ -23,7 +21,7 @@ Challenge entry:
 |7 || Response value ||
 |}
 
-Security sector range
+Security sector range (9 Bytes)
 
 {| class="wikitable"
 ! Offset !! Field !! Notes
@@ -33,7 +31,7 @@ Security sector range
 |6 || End PSN ||
 |}
 
-Overall format:
+Overall format (2048 Bytes):
 
 {| class="wikitable"
 ! Offset !! Field !! Notes
