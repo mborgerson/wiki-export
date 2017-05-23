@@ -1,1 +1,2 @@
+{{Game}}
 The game source code has been released under the GPLv2: https://github.com/grayj/Jedi-Outcast
