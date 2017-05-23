@@ -48,7 +48,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Samsung SH-D163B
 |SATA
 |
-|Kreon (November 18th 2007)
+|Kreon 1.00 (November 18th 2007)
 |-
 |Toshiba TS-H353A
 |SATA

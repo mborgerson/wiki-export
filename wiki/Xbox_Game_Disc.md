@@ -71,7 +71,7 @@ Kreon 1.00 (October 9th 2007)</p></td>
 <td><p>Samsung SH-D163B</p></td>
 <td><p>SATA</p></td>
 <td></td>
-<td><p>Kreon (November 18th 2007)</p></td>
+<td><p>Kreon 1.00 (November 18th 2007)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Toshiba TS-H353A</p></td>
