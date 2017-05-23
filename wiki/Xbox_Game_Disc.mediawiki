@@ -23,7 +23,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Samsung SH-D162C
 |IDE
 |
-|Kreon 0.60 July 30th 2006) <br> Kreon 0.80 (September 9th 2006) <br> Kreon 1.00 (October 9th 2007)
+|Kreon 0.60 (July 30th 2006) <br> Kreon 0.80 (September 9th 2006) <br> Kreon 1.00 (October 9th 2007)
 |-
 |Samsung SH-D162D
 |IDE

@@ -39,7 +39,7 @@ firmwares:
 <td><p>Samsung SH-D162C</p></td>
 <td><p>IDE</p></td>
 <td></td>
-<td><p>Kreon 0.60 July 30th 2006)<br />
+<td><p>Kreon 0.60 (July 30th 2006)<br />
 Kreon 0.80 (September 9th 2006)<br />
 Kreon 1.00 (October 9th 2007)</p></td>
 </tr>
