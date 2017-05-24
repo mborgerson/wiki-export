@@ -12,7 +12,19 @@ Dumps
 
 ### Files
 
-#### SS.bin
+#### Disc Manufacturing Information (DMI.bin)
+
+2048 Bytes
+
+READ DVD STRUCTURE with format 0x04
+
+#### Physical Format Information (PFI.bin)
+
+2048 Bytes Read from the Lead-In.
+
+READ DVD STRUCTURE with format 0x00
+
+#### Security Sectors (SS.bin)
 
 Challenge entry (11 Bytes):
 
@@ -45,79 +57,53 @@ Overall format (2048 Bytes):
 <tbody>
 <tr class="odd">
 <td><p>0</p></td>
-<td><p>u4, u4</p></td>
-<td><p>Bookversion and Booktype</p></td>
-<td></td>
+<td><p>PFI</p></td>
+<td><p>Physical Format Information</p></td>
+<td><p>PFI for the actual data, unknown size</p></td>
 </tr>
 <tr class="even">
-<td><p>4</p></td>
-<td><p>u32</p></td>
-<td><p>Some PSN?</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>8</p></td>
-<td><p>u32</p></td>
-<td><p>Some PSN?</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>12</p></td>
-<td><p>u32</p></td>
-<td><p>Some PSN?</p></td>
-<td></td>
-</tr>
-<tr class="odd">
 <td><p>720</p></td>
 <td><p>u32</p></td>
 <td><p>Unknown</p></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>768</p></td>
 <td><p>u8</p></td>
 <td><p>Version of challenge table</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>769</p></td>
 <td><p>u8</p></td>
 <td><p>Number of challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>770</p></td>
 <td><p>Challenge entry[]</p></td>
 <td><p>Challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>1633</p></td>
 <td><p>Security sector range[23]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>1840</p></td>
 <td><p>Security sector range[23]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.<br />
 <em>(Copy from Offset 1633)</em></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 </tr>
 </tbody>
 </table>
 
 Note that this information is still incomplete!
-
-#### DMI.bin
-
-2048 Bytes
-
-#### PFI.bin
-
-2048 Bytes
 
 ### Dumping
 
