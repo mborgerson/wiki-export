@@ -66,131 +66,131 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | HE || Tru Blu Entertainment division of Home Entertainment Suppliers
 |-
-| HP || 
+| HP || Hip games
 |-
-| HU || 
+| HU || Hudson Soft
 |-
-| IA || 
+| IA || Mad Catz Interactive, Inc. [[http:\\phx.corporate-ir.net/phoenix.zhtml?c=69024&p=irol-newsArticle&ID=839612 press release]]
 |-
-| IF || 
+| IF || Idea Factory
 |-
 | IG || Infogrames
 |-
-| IL || 
+| IL || [[Interlex Corporation]]
 |-
 | IM || imagine Media
 |-
-| IO || 
+| IO || Ignition entertainment
 |-
-| IP || 
+| IP || Interplay Entertainment
 |-
-| IX || 
+| IX || InXile Entertainment {{citation needed}}
 |-
-| JA || 
+| JA || Jaleco
 |-
-| JW || 
+| JW || JoWooD
 |-
-| KB || 
+| KB || Kemco {{citation needed}}
 |-
-| KI || 
+| KI || Kids Station Inc. {{citation needed}}
 |-
 | KN || Konami
 |-
-| KO || 
+| KO || KOEI
 |-
-| KU || 
+| KU || Kobi and/or GAE, Inc. (formerly Global A Entertainment){{citation needed}}
 |-
 | LA || LucasArts
 |-
-| LS || 
+| LS || Black Bean Games (publishing arm of Leader S.p.A.)
 |-
-| MD || 
+| MD || Metro3D, Inc.
 |-
-| ME || 
+| ME || Medix
 |-
 | MI || Microïds
 |-
-| MJ || 
+| MJ || Majesco Entertainment
 |-
-| MM || 
+| MM || Myelin Media
 |-
-| MP || 
+| MP || MediaQuest {{citation needed}}
 |-
 | MS || Microsoft Game Studios
 |-
 | MW || Midway Games
 |-
-| MX || 
+| MX || Empire Interactive {{citation needed}}
 |-
-| NK || 
+| NK || NewKidCo
 |-
-| NL || 
+| NL || NovaLogic
 |-
-| NM || 
+| NM || Namco
 |-
-| OX || 
+| OX || Oxygen Interactive
 |-
-| PC || 
+| PC || Playlogic Entertainment
 |-
-| PL || 
+| PL || Deep Silver {{citation needed}}
 |-
-| RA || 
+| RA || Rage
 |-
-| SA || 
+| SA || Sammy
 |-
 | SC || SCi Games
 |-
 | SE || SEGA
 |-
-| SN || 
+| SN || SNK
 |-
-| SS || 
+| SS || Simon & Schuster, Inc.
 |-
-| SU || 
+| SU || Success Corporation
 |-
-| SW || 
+| SW || Swing! Deutschland
 |-
-| TA || 
+| TA || Takara
 |-
-| TC || 
+| TC || Tecmo
 |-
-| TD || 
+| TD || The 3DO Company (or just 3DO)
 |-
-| TK || 
+| TK || Takuyo
 |-
 | TM || TDK Mediactive
 |-
-| TQ || 
+| TQ || THQ
 |-
-| TS || 
+| TS || Titus Interactive
 |-
 | TT || Take-Two Interactive Software
 |-
 | US || Ubisoft
 |-
-| VC || 
+| VC || Victor Interactive Software
 |-
-| VN || 
+| VN || Vivendi Universal (just took Interplays publishing rights) {{citation needed}}
 |-
 | VU || 
 |-
-| VV || Vivendi Universal Games
+| VV || Vivendi Universal Games {{citation needed}}
 |-
 | WE || Wanadoo Edition
 |-
-| WR || 
+| WR || Warner Bros. Interactive Entertainment {{citation needed}}
 |-
-| XI || 
+| XI || XPEC Entertainment and Idea Factory 
 |-
-| XK || 
+| XK || (Xbox kiosk disk?) {{citation needed}}
 |-
-| XL || 
+| XL || (Xbox special bundled or live demo disk?) {{citation needed}}
 |-
-| XM || 
+| XM || Evolved Games (Probably not, game "Malice") {{citation needed}}
 |-
-| XP || 
+| XP || XPEC Entertainment
 |-
-| YB || 
+| YB || YBM Sisa (South-Korea)
 |-
 | ZD || Zushi Games, formerly Zoo Digital Publishing
 |}
