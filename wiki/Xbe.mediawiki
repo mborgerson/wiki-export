@@ -36,35 +36,35 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | CC || Capcom
 |-
-| CK || 
+| CK || Kemco Corporation {{citation needed}}
 |-
 | CM || Codemasters
 |-
 | CV || Crave Entertainment
 |-
-| DC || 
+| DC || DreamCatcher Interactive
 |-
-| DX || 
+| DX || Davilex
 |-
 | EA || Electronic Arts (EA)
 |-
-| EC || 
+| EC || Encore inc
 |-
 | EL || Enlight Software
 |-
-| EM || 
+| EM || Empire Interactive
 |-
 | ES || Eidos Interactive
 |-
-| FI || 
+| FI || Fox Interactive
 |-
 | FS || From Software
 |-
-| GE || 
+| GE || Genki Co., Ltd
 |-
-| GV || 
+| GV || Groove Games
 |-
-| HE || 
+| HE || Tru Blu Entertainment division of Home Entertainment Suppliers
 |-
 | HP || 
 |-

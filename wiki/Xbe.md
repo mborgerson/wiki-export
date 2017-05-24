@@ -13,101 +13,101 @@ developers, and then signed by Microsoft.
 A title ID is usually 2 ASCII letters for the publisher, followed by a
 u16 integer game number (Above 2000 for non-original Xbox games)
 
-| Publisher ID | Name                                         |
-|--------------|----------------------------------------------|
-| AC           | Acclaim Entertainment                        |
-| AH           | ARUSH Entertainment                          |
-| AQ           | Aqua System                                  |
-| AT           | Atlus                                        |
-| AV           | Activision                                   |
-| AY           | Aspyr Media, Inc.                            |
-| BA           | Bandai                                       |
-| BM           | BAM! Entertainment                           |
-| BR           | Broccoli Co., Ltd.                           |
-| BS           | Bethesda Softworks                           |
-| BU           | Bunkasha Co Ltd                              |
-| BV           | Buena Vista Games                            |
-| BW           | BBC Multimedia                               |
-| CC           | Capcom                                       |
-| CK           |                                              |
-| CM           | Codemasters                                  |
-| CV           | Crave Entertainment                          |
-| DC           |                                              |
-| DX           |                                              |
-| EA           | Electronic Arts (EA)                         |
-| EC           |                                              |
-| EL           | Enlight Software                             |
-| EM           |                                              |
-| ES           | Eidos Interactive                            |
-| FI           |                                              |
-| FS           | From Software                                |
-| GE           |                                              |
-| GV           |                                              |
-| HE           |                                              |
-| HP           |                                              |
-| HU           |                                              |
-| IA           |                                              |
-| IF           |                                              |
-| IG           | Infogrames                                   |
-| IL           |                                              |
-| IM           |                                              |
-| IO           |                                              |
-| IP           |                                              |
-| IX           |                                              |
-| JA           |                                              |
-| JW           |                                              |
-| KB           |                                              |
-| KI           |                                              |
-| KN           | Konami                                       |
-| KO           |                                              |
-| KU           |                                              |
-| LA           | LucasArts                                    |
-| LS           |                                              |
-| MD           |                                              |
-| ME           |                                              |
-| MI           | Microïds                                     |
-| MJ           |                                              |
-| MM           |                                              |
-| MP           |                                              |
-| MS           | Microsoft Game Studios                       |
-| MW           | Midway Games                                 |
-| MX           |                                              |
-| NK           |                                              |
-| NL           |                                              |
-| NM           |                                              |
-| OX           |                                              |
-| PC           |                                              |
-| PL           |                                              |
-| RA           |                                              |
-| SA           |                                              |
-| SC           |                                              |
-| SE           | SEGA                                         |
-| SN           |                                              |
-| SS           |                                              |
-| SU           |                                              |
-| SW           |                                              |
-| TA           |                                              |
-| TC           |                                              |
-| TD           |                                              |
-| TK           |                                              |
-| TM           | TDK Mediactive                               |
-| TQ           |                                              |
-| TS           |                                              |
-| TT           | Take-Two Interactive Software                |
-| US           | Ubisoft                                      |
-| VC           |                                              |
-| VN           |                                              |
-| VU           |                                              |
-| VV           | Vivendi Universal Games                      |
-| WE           |                                              |
-| WR           |                                              |
-| XI           |                                              |
-| XK           |                                              |
-| XL           |                                              |
-| XM           |                                              |
-| XP           |                                              |
-| YB           |                                              |
-| ZD           | Zushi Games, formerly Zoo Digital Publishing |
+| Publisher ID | Name                                                           |
+|--------------|----------------------------------------------------------------|
+| AC           | Acclaim Entertainment                                          |
+| AH           | ARUSH Entertainment                                            |
+| AQ           | Aqua System                                                    |
+| AT           | Atlus                                                          |
+| AV           | Activision                                                     |
+| AY           | Aspyr Media, Inc.                                              |
+| BA           | Bandai                                                         |
+| BM           | BAM! Entertainment                                             |
+| BR           | Broccoli Co., Ltd.                                             |
+| BS           | Bethesda Softworks                                             |
+| BU           | Bunkasha Co Ltd                                                |
+| BV           | Buena Vista Games                                              |
+| BW           | BBC Multimedia                                                 |
+| CC           | Capcom                                                         |
+| CK           | Kemco Corporation                                              |
+| CM           | Codemasters                                                    |
+| CV           | Crave Entertainment                                            |
+| DC           | DreamCatcher Interactive                                       |
+| DX           | Davilex                                                        |
+| EA           | Electronic Arts (EA)                                           |
+| EC           | Encore inc                                                     |
+| EL           | Enlight Software                                               |
+| EM           | Empire Interactive                                             |
+| ES           | Eidos Interactive                                              |
+| FI           | Fox Interactive                                                |
+| FS           | From Software                                                  |
+| GE           | Genki Co., Ltd                                                 |
+| GV           | Groove Games                                                   |
+| HE           | Tru Blu Entertainment division of Home Entertainment Suppliers |
+| HP           |                                                                |
+| HU           |                                                                |
+| IA           |                                                                |
+| IF           |                                                                |
+| IG           | Infogrames                                                     |
+| IL           |                                                                |
+| IM           |                                                                |
+| IO           |                                                                |
+| IP           |                                                                |
+| IX           |                                                                |
+| JA           |                                                                |
+| JW           |                                                                |
+| KB           |                                                                |
+| KI           |                                                                |
+| KN           | Konami                                                         |
+| KO           |                                                                |
+| KU           |                                                                |
+| LA           | LucasArts                                                      |
+| LS           |                                                                |
+| MD           |                                                                |
+| ME           |                                                                |
+| MI           | Microïds                                                       |
+| MJ           |                                                                |
+| MM           |                                                                |
+| MP           |                                                                |
+| MS           | Microsoft Game Studios                                         |
+| MW           | Midway Games                                                   |
+| MX           |                                                                |
+| NK           |                                                                |
+| NL           |                                                                |
+| NM           |                                                                |
+| OX           |                                                                |
+| PC           |                                                                |
+| PL           |                                                                |
+| RA           |                                                                |
+| SA           |                                                                |
+| SC           |                                                                |
+| SE           | SEGA                                                           |
+| SN           |                                                                |
+| SS           |                                                                |
+| SU           |                                                                |
+| SW           |                                                                |
+| TA           |                                                                |
+| TC           |                                                                |
+| TD           |                                                                |
+| TK           |                                                                |
+| TM           | TDK Mediactive                                                 |
+| TQ           |                                                                |
+| TS           |                                                                |
+| TT           | Take-Two Interactive Software                                  |
+| US           | Ubisoft                                                        |
+| VC           |                                                                |
+| VN           |                                                                |
+| VU           |                                                                |
+| VV           | Vivendi Universal Games                                        |
+| WE           |                                                                |
+| WR           |                                                                |
+| XI           |                                                                |
+| XK           |                                                                |
+| XL           |                                                                |
+| XM           |                                                                |
+| XP           |                                                                |
+| YB           |                                                                |
+| ZD           | Zushi Games, formerly Zoo Digital Publishing                   |
 
 The title ID seems to double the information from the [Xbox Game
 Disc](/wiki/Xbox_Game_Disc "wikilink") mastering code etched into the ring or
