@@ -116,20 +116,19 @@ here which suggests that it will always be below 1000.
 
 **Examples**:
 
-FIFA 2003:
+[FIFA Soccer 2003](/wiki/FIFA_Soccer_2003 "wikilink"):
 
 -   DMI and mastering code: EA02302E (Meaning: publisher EA, game number
-    Zushi Games, formerly Zoo Digital Publishing023, version 02, region
-    Europe)
+    023, version 02, region Europe)
 -   Title ID:
 
-Halo (1.02):
+[Halo: Combat Evolved](/wiki/Halo:_Combat_Evolved "wikilink"):
 
 -   DMI and mastering code: MS00402A (Meaning: publisher Microsoft, game
     number 004, version 02, region America)
 -   Title ID: 4D530004 \[MS-004\]
 
-Halo (1.04):
+[Halo: Combat Evolved](/wiki/Halo:_Combat_Evolved "wikilink"):
 
 -   DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game
     number 004, version 04, region Europe)

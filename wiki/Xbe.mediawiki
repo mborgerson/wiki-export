@@ -200,15 +200,15 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 
 '''Examples''':
 
-FIFA 2003:
-* DMI and mastering code: EA02302E (Meaning: publisher EA, game number Zushi Games, formerly Zoo Digital Publishing023, version 02, region Europe)
+[[FIFA Soccer 2003]]:
+* DMI and mastering code: EA02302E (Meaning: publisher EA, game number 023, version 02, region Europe)
 * Title ID: 
 
-Halo (1.02):
+[[Halo: Combat Evolved]]:
 * DMI and mastering code: MS00402A (Meaning: publisher Microsoft, game number 004, version 02, region America)
 * Title ID: 4D530004 [MS-004]
 
-Halo (1.04):
+[[Halo: Combat Evolved]]:
 * DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game number 004, version 04, region Europe)
 * Title ID: 4D530004 [MS-004]
 
