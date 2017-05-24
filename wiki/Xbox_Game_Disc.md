@@ -34,8 +34,8 @@ An inner porition with Xbox logo:
 -   3 times “XBOX” text with “X Logo” in the background on each side
 -   1 time “XBOX” text with blank background
 -   3 times “XBOX” text with “X Logo” in the background on each side
--   Different blank background without text / logos (opposite of the
-    “XBOX” text without logo)
+-   Another tiny pattern with Xbox logo and some markings (opposite of
+    the “XBOX” text without logo)
 
 Dumps
 -----
