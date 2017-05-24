@@ -8,6 +8,41 @@ XBE files (XBox Executable) are the main files that are executed in the
 Xbox System. In official games, these files are created by game
 developers, and then signed by Microsoft.
 
+### Title ID
+
+A title ID is usually 2 ASCII letters for the publisher, followed by a
+u16 integer (Above 2000 for non-original Xbox games)
+
+| Publisher ID | Name      |
+|--------------|-----------|
+| MS           | Microsoft |
+| EA           | EA        |
+
+The title ID seems to double the information from the [Xbox Game
+Disc](/wiki/Xbox_Game_Disc "wikilink") mastering code etched into the ring or
+readable from the DMI. It is expressed in 3 decimal digits here which
+suggests that the title ID integer will always be below 1000.
+
+**Examples**:
+
+FIFA 2003:
+
+-   DMI and mastering code: EA02302E (Meaning: publisher EA, game number
+    023, version 02, region Europe)
+-   Title ID:
+
+Halo (1.02):
+
+-   DMI and mastering code: MS00402A (Meaning: publisher Microsoft, game
+    number 004, version 02, region America)
+-   Title ID: 4D530004 \[MS-004\]
+
+Halo (1.04):
+
+-   DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game
+    number 004, version 04, region Europe)
+-   Title ID: 4D530004 \[MS-004\]
+
 Resources and links
 -------------------
 
