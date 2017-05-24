@@ -50,7 +50,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | IF           |                                                                |
 | IG           | Infogrames                                                     |
 | IL           |                                                                |
-| IM           |                                                                |
+| IM           | imagine Media                                                  |
 | IO           |                                                                |
 | IP           |                                                                |
 | IX           |                                                                |
