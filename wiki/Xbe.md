@@ -16,7 +16,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | Publisher ID | Name                          |
 |--------------|-------------------------------|
 | AC           | Acclaim Entertainment         |
-| AH           |                               |
+| AH           | ARUSH Entertainment           |
 | AQ           |                               |
 | AT           |                               |
 | AV           | Activision                    |
