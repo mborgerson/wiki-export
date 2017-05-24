@@ -86,13 +86,16 @@ Complete format (2048 Bytes):
 |-
 |1503 || Unknown1 || || Unknown
 |-
+! colspan="4" | End of data readable by a stock Xbox drive (1632 Bytes)
+|-
+|1632 || u8 || Number of security sector ranges ||
+|-
 |1633 || Security sector range[23] || Security sector ranges || Only 16 of which are used.
 |-
 |1840 || Security sector range[23] || Security sector ranges || Only 16 of which are used. <br> ''(Copy from Offset 1633)''
-|-
 |}
 
-Note that this information is still incomplete!
+All other fields are assumed to be zero!
 
 === Dumping ===
 

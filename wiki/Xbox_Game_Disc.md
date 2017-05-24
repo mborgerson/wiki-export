@@ -121,6 +121,15 @@ Complete format (2048 Bytes):
 <td><p>Unknown</p></td>
 </tr>
 <tr class="even">
+<td><p>End of data readable by a stock Xbox drive (1632 Bytes)</p></td>
+</tr>
+<tr class="odd">
+<td><p>1632</p></td>
+<td><p>u8</p></td>
+<td><p>Number of security sector ranges</p></td>
+<td></td>
+</tr>
+<tr class="even">
 <td><p>1633</p></td>
 <td><p>Security sector range[23]</p></td>
 <td><p>Security sector ranges</p></td>
@@ -133,12 +142,10 @@ Complete format (2048 Bytes):
 <td><p>Only 16 of which are used.<br />
 <em>(Copy from Offset 1633)</em></p></td>
 </tr>
-<tr class="even">
-</tr>
 </tbody>
 </table>
 
-Note that this information is still incomplete!
+All other fields are assumed to be zero!
 
 ### Dumping
 
