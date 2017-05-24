@@ -61,7 +61,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | KN           |                                              |
 | KO           |                                              |
 | KU           |                                              |
-| LA           | Lukas Arts                                   |
+| LA           | Lucas Arts                                   |
 | LS           |                                              |
 | MD           |                                              |
 | ME           |                                              |
@@ -81,7 +81,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | RA           |                                              |
 | SA           |                                              |
 | SC           |                                              |
-| SE           | Sega                                         |
+| SE           | SEGA                                         |
 | SN           |                                              |
 | SS           |                                              |
 | SU           |                                              |
