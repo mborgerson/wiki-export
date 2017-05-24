@@ -17,18 +17,18 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 |--------------|----------------------------------------------|
 | AC           | Acclaim Entertainment                        |
 | AH           | ARUSH Entertainment                          |
-| AQ           |                                              |
-| AT           |                                              |
+| AQ           | Aqua System                                  |
+| AT           | Atlus                                        |
 | AV           | Activision                                   |
-| AY           |                                              |
-| BA           |                                              |
+| AY           | Aspyr Media, Inc.                            |
+| BA           | Bandai                                       |
 | BM           | BAM! Entertainment                           |
-| BR           |                                              |
+| BR           | Broccoli Co., Ltd.                           |
 | BS           | Bethesda Softworks                           |
-| BU           |                                              |
-| BV           |                                              |
+| BU           | Bunkasha Co Ltd                              |
+| BV           | Buena Vista Games                            |
 | BW           | BBC Multimedia                               |
-| CC           |                                              |
+| CC           | Capcom                                       |
 | CK           |                                              |
 | CM           | Codemasters                                  |
 | CV           | Crave Entertainment                          |
