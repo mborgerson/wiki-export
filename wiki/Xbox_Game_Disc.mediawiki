@@ -1,5 +1,25 @@
 Xbox games are shipped on DVDs. They are commonly referred to as Xbox Game Discs (XGD).
 
+== Visible information on ring ==
+
+'''The DVD inner ring usually contains:'''
+
+An outer portion with labels:
+* Outer ring Layer 1
+** Code 39 Barcode of the the Mastering Code (*EA02302E L1*)
+** Text for Mastering code ("EA02302E L1 02 0MM", where "02" is a smaller font and slightly higher than the previous baseline, followed by "0MM" on the original baseline)
+** Mastering SID Code ("IFPI L126")
+* Inner ring for Layer 0
+** Code 39 Barcode of the the Mastering Code (*EA02302E L0*)
+** Text for Mastering code ("EA02302E L0 06", where "06" is a smaller font and slightly higher than the previous baseline)
+** Mastering SID Code ("IFPI L126")
+
+An inner porition with Xbox logo:
+* 3 times "XBOX" text with "X Logo" in the background on each side
+* 1 time "XBOX" text with blank background
+* 3 times "XBOX" text with "X Logo" in the background on each side
+* Different blank background without text / logos (opposite of the "XBOX" text without logo)
+
 == Dumps ==
 
 === Files ===
