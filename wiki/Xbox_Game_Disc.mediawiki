@@ -82,13 +82,9 @@ Complete format (2048 Bytes):
 |-
 |1083 || u8[16] || || Unknown
 |-
-|1183 || u64 || || Another timestamp? (similar to 1055)
+|1183 || Unknown1 || || Unknown
 |-
-|1191 || u32 || || Unknown
-|-
-|1210 || Unknown1 || || Unknown
-|-
-|1530 || Unknown1 || || Unknown
+|1503 || Unknown1 || || Unknown
 |-
 |1633 || Security sector range[23] || Security sector ranges || Only 16 of which are used.
 |-

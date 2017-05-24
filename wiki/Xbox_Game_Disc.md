@@ -110,24 +110,12 @@ Complete format (2048 Bytes):
 </tr>
 <tr class="even">
 <td><p>1183</p></td>
-<td><p>u64</p></td>
-<td></td>
-<td><p>Another timestamp? (similar to 1055)</p></td>
-</tr>
-<tr class="odd">
-<td><p>1191</p></td>
-<td><p>u32</p></td>
-<td></td>
-<td><p>Unknown</p></td>
-</tr>
-<tr class="even">
-<td><p>1210</p></td>
 <td><p>Unknown1</p></td>
 <td></td>
 <td><p>Unknown</p></td>
 </tr>
 <tr class="odd">
-<td><p>1530</p></td>
+<td><p>1503</p></td>
 <td><p>Unknown1</p></td>
 <td></td>
 <td><p>Unknown</p></td>
