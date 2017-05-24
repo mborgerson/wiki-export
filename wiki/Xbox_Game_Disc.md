@@ -28,13 +28,13 @@ READ DVD STRUCTURE with format 0x00
 
 Challenge entry (11 Bytes):
 
-| Offset | Type | Field             | Notes |
-|--------|------|-------------------|-------|
-| 0      | u8   | Level             |       |
-| 1      | u8   | Challenge id      |       |
-| 2      | u32  | Challenge value   |       |
-| 6      | u8   | Response modifier |       |
-| 7      | u32  | Response value    |       |
+| Offset | Type | Field             | Notes                                                                           |
+|--------|------|-------------------|---------------------------------------------------------------------------------|
+| 0      | u8   | Valid             | Always 1 if the challenge is valid, else the challenge is ignored               |
+| 1      | u8   | Challenge id      |                                                                                 |
+| 2      | u32  | Challenge value   |                                                                                 |
+| 6      | u8   | Response modifier | multimedia.cx says this might be a Response id. However, it's always 0 anyway?! |
+| 7      | u32  | Response value    |                                                                                 |
 
 Security sector range (9 Bytes)
 
@@ -82,18 +82,18 @@ Complete format (2048 Bytes):
 <td><p>768</p></td>
 <td><p>u8</p></td>
 <td><p>Version of challenge table</p></td>
-<td></td>
+<td><p>Always 1</p></td>
 </tr>
 <tr class="even">
 <td><p>769</p></td>
 <td><p>u8</p></td>
 <td><p>Number of challenge entries</p></td>
-<td></td>
+<td><p>Always 23</p></td>
 </tr>
 <tr class="odd">
 <td><p>770</p></td>
 <td><p>Challenge entry[]</p></td>
-<td><p>Challenge entries</p></td>
+<td><p>Encrypted challenge entries</p></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ Complete format (2048 Bytes):
 <td><p>1183</p></td>
 <td><p>Unknown1</p></td>
 <td></td>
-<td><p>Unknown</p></td>
+<td><p>Unknown, 44 bytes SHA-1 hash are generated here to be used as RC4 key to decrypt challenge entries</p></td>
 </tr>
 <tr class="odd">
 <td><p>1503</p></td>
@@ -127,17 +127,17 @@ Complete format (2048 Bytes):
 <td><p>1632</p></td>
 <td><p>u8</p></td>
 <td><p>Number of security sector ranges</p></td>
-<td></td>
+<td><p>Always 23</p></td>
 </tr>
 <tr class="even">
 <td><p>1633</p></td>
-<td><p>Security sector range[23]</p></td>
+<td><p>Security sector range[]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.</p></td>
 </tr>
 <tr class="odd">
 <td><p>1840</p></td>
-<td><p>Security sector range[23]</p></td>
+<td><p>Security sector range[]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.<br />
 <em>(Copy from Offset 1633)</em></p></td>
@@ -146,6 +146,20 @@ Complete format (2048 Bytes):
 </table>
 
 All other fields are assumed to be zero!
+
+##### Decryption of challenge entries
+
+Starting at offset 1183, a 44 byte SHA-1 hash is generated. The
+resulting hash - the first part of it, to be exact - is fed as the key
+into RC4 decryption. The output of SHA-1 contains 160 bits of
+information. 160 / 8 = 20 bytes of information. To express this as a
+printable hex digest requires 40 characters. The SHA-1 hash is converted
+to a hex digest and then the first 7 of the characters are fed into the
+RC4 initialization function as the key. Then, the RC4 decrypter does its
+work on the 253 Bytes of the challenge entries (Offset 770).
+
+There'll only be a handful of valid entries in the challenge entries.
+However there'll be at least 2.
 
 ### Dumping
 
