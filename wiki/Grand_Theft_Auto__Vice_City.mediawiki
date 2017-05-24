@@ -1,0 +1,5 @@
+{{Game}}
+See https://github.com/aap/skygfx_vc for a re-implementation of the Xbox graphics features for PC.
+
+This game was originally planned to be an add-on for [[Grand Theft Auto III]]. The games still share the same engine.
+Information on the [[Grand Theft Auto III]] article might also be relevant to this game.
