@@ -12,6 +12,8 @@ Visible information on ring
 
 **The DVD inner ring usually contains:**
 
+(The examples are from a German [FIFA 2003](/wiki/FIFA_2003 "wikilink") disc)
+
 An outer portion with labels:
 
 -   Outer ring Layer 1
