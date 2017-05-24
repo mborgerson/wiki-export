@@ -38,6 +38,12 @@ Overall format (2048 Bytes):
 |-
 |0 || u4, u4|| Bookversion and Booktype ||
 |-
+|4 || u32 || Some PSN? ||
+|-
+|8 || u32 || Some PSN? ||
+|-
+|12 || u32 || Some PSN? ||
+|-
 |720 || u32 || Unknown ||
 |-
 |768 || u8 || Version of challenge table ||

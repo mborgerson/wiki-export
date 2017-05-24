@@ -50,43 +50,61 @@ Overall format (2048 Bytes):
 <td></td>
 </tr>
 <tr class="even">
+<td><p>4</p></td>
+<td><p>u32</p></td>
+<td><p>Some PSN?</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>8</p></td>
+<td><p>u32</p></td>
+<td><p>Some PSN?</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>12</p></td>
+<td><p>u32</p></td>
+<td><p>Some PSN?</p></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td><p>720</p></td>
 <td><p>u32</p></td>
 <td><p>Unknown</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>768</p></td>
 <td><p>u8</p></td>
 <td><p>Version of challenge table</p></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>769</p></td>
 <td><p>u8</p></td>
 <td><p>Number of challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>770</p></td>
 <td><p>Challenge entry[]</p></td>
 <td><p>Challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>1633</p></td>
 <td><p>Security sector range[23]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>1840</p></td>
 <td><p>Security sector range[23]</p></td>
 <td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.<br />
 <em>(Copy from Offset 1633)</em></p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 </tr>
 </tbody>
 </table>
