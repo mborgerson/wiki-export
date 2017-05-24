@@ -16,20 +16,20 @@ Dumps
 
 Challenge entry (11 Bytes):
 
-| Offset | Field             | Notes |
-|--------|-------------------|-------|
-| 0      | Level             |       |
-| 1      | Challenge id      |       |
-| 2      | Challenge value   |       |
-| 6      | Response modifier |       |
-| 7      | Response value    |       |
+| Offset | Type | Field             | Notes |
+|--------|------|-------------------|-------|
+| 0      | u8   | Level             |       |
+| 1      | u8   | Challenge id      |       |
+| 2      | u32  | Challenge value   |       |
+| 6      | u8   | Response modifier |       |
+| 7      | u32  | Response value    |       |
 
 Security sector range (9 Bytes)
 
-| Offset | Field     | Notes |
-|--------|-----------|-------|
-| 3      | Start PSN |       |
-| 6      | End PSN   |       |
+| Offset | Type | Field     | Notes |
+|--------|------|-----------|-------|
+| 3      | u24  | Start PSN |       |
+| 6      | u24  | End PSN   |       |
 
 Overall format (2048 Bytes):
 
@@ -37,6 +37,7 @@ Overall format (2048 Bytes):
 <thead>
 <tr class="header">
 <th><p>Offset</p></th>
+<th><p>Type</p></th>
 <th><p>Field</p></th>
 <th><p>Notes</p></th>
 </tr>
@@ -44,36 +45,48 @@ Overall format (2048 Bytes):
 <tbody>
 <tr class="odd">
 <td><p>0</p></td>
+<td><p>u4, u4</p></td>
 <td><p>Bookversion and Booktype</p></td>
 <td></td>
 </tr>
 <tr class="even">
+<td><p>720</p></td>
+<td><p>u32</p></td>
+<td><p>Unknown</p></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td><p>768</p></td>
+<td><p>u8</p></td>
 <td><p>Version of challenge table</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>769</p></td>
+<td><p>u8</p></td>
 <td><p>Number of challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>770</p></td>
+<td><p>Challenge entry[]</p></td>
 <td><p>Challenge entries</p></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>1633</p></td>
-<td><p>23 security sector ranges</p></td>
+<td><p>Security sector range[23]</p></td>
+<td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>1840</p></td>
-<td><p>23 security sector ranges</p></td>
+<td><p>Security sector range[23]</p></td>
+<td><p>Security sector ranges</p></td>
 <td><p>Only 16 of which are used.<br />
 <em>(Copy from Offset 1633)</em></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 </tr>
 </tbody>
 </table>

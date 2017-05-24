@@ -8,45 +8,47 @@ Xbox games are shipped on DVDs. They are commonly referred to as Xbox Game Discs
 Challenge entry (11 Bytes):
 
 {| class="wikitable"
-! Offset !! Field !! Notes
+! Offset !! Type !! Field !! Notes
 |-
-|0 || Level ||
+|0 || u8 || Level ||
 |-
-|1 || Challenge id ||
+|1 || u8 || Challenge id ||
 |-
-|2 || Challenge value ||
+|2 || u32 || Challenge value ||
 |-
-|6 || Response modifier ||
+|6 || u8 || Response modifier ||
 |-
-|7 || Response value ||
+|7 || u32 || Response value ||
 |}
 
 Security sector range (9 Bytes)
 
 {| class="wikitable"
-! Offset !! Field !! Notes
+! Offset !! Type !! Field !! Notes
 |-
-|3 || Start PSN ||
+|3 || u24 || Start PSN ||
 |-
-|6 || End PSN ||
+|6 || u24 || End PSN ||
 |}
 
 Overall format (2048 Bytes):
 
 {| class="wikitable"
-! Offset !! Field !! Notes
+! Offset !! Type !! Field !! Notes
 |-
-|0 || Bookversion and Booktype ||
+|0 || u4, u4|| Bookversion and Booktype ||
 |-
-|768 || Version of challenge table ||
+|720 || u32 || Unknown ||
 |-
-|769 || Number of challenge entries ||
+|768 || u8 || Version of challenge table ||
 |-
-|770 || Challenge entries ||
+|769 || u8 || Number of challenge entries ||
 |-
-|1633 || 23 security sector ranges || Only 16 of which are used.
+|770 || Challenge entry[] || Challenge entries ||
 |-
-|1840 || 23 security sector ranges || Only 16 of which are used. <br> ''(Copy from Offset 1633)''
+|1633 || Security sector range[23] || Security sector ranges || Only 16 of which are used.
+|-
+|1840 || Security sector range[23] || Security sector ranges || Only 16 of which are used. <br> ''(Copy from Offset 1633)''
 |-
 |}
 
