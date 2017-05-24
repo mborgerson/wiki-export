@@ -80,7 +80,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | PL           |                                                                |
 | RA           |                                                                |
 | SA           |                                                                |
-| SC           |                                                                |
+| SC           | SCi Games                                                      |
 | SE           | SEGA                                                           |
 | SN           |                                                                |
 | SS           |                                                                |
@@ -99,7 +99,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | VN           |                                                                |
 | VU           |                                                                |
 | VV           | Vivendi Universal Games                                        |
-| WE           |                                                                |
+| WE           | Wanadoo Edition                                                |
 | WR           |                                                                |
 | XI           |                                                                |
 | XK           |                                                                |
