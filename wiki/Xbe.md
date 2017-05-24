@@ -27,10 +27,10 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | BS           | Bethesda Softworks                           |
 | BU           |                                              |
 | BV           |                                              |
-| BW           |                                              |
+| BW           | BBC Multimedia                               |
 | CC           |                                              |
 | CK           |                                              |
-| CM           |                                              |
+| CM           | Codemasters                                  |
 | CV           | Crave Entertainment                          |
 | DC           |                                              |
 | DX           |                                              |
@@ -48,7 +48,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | HU           |                                              |
 | IA           |                                              |
 | IF           |                                              |
-| IG           |                                              |
+| IG           | Infogrames                                   |
 | IL           |                                              |
 | IM           |                                              |
 | IO           |                                              |
@@ -58,14 +58,14 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | JW           |                                              |
 | KB           |                                              |
 | KI           |                                              |
-| KN           |                                              |
+| KN           | Konami                                       |
 | KO           |                                              |
 | KU           |                                              |
-| LA           | Lucas Arts                                   |
+| LA           | LucasArts                                    |
 | LS           |                                              |
 | MD           |                                              |
 | ME           |                                              |
-| MI           |                                              |
+| MI           | Microïds                                     |
 | MJ           |                                              |
 | MM           |                                              |
 | MP           |                                              |
@@ -98,7 +98,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | VC           |                                              |
 | VN           |                                              |
 | VU           |                                              |
-| VV           |                                              |
+| VV           | Vivendi Universal Games                      |
 | WE           |                                              |
 | WR           |                                              |
 | XI           |                                              |
