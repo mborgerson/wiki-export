@@ -21,8 +21,6 @@ Random resources about Xbox hacking
 History
 -------
 
--   [Designing the Boot Sound for the Original Xbox (Brian
-    Schmidt)](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php)
 -   [3 Xbox Bosses Share Secrets of the Console's
     Past](https://www.youtube.com/watch?v=rUODlNffWmU)
 
