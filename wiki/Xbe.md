@@ -13,10 +13,101 @@ developers, and then signed by Microsoft.
 A title ID is usually 2 ASCII letters for the publisher, followed by a
 u16 integer game number (Above 2000 for non-original Xbox games)
 
-| Publisher ID | Name      |
-|--------------|-----------|
-| MS           | Microsoft |
-| EA           | EA        |
+| Publisher ID | Name                          |
+|--------------|-------------------------------|
+| AC           | Acclaim Entertainment         |
+| AH           |                               |
+| AQ           |                               |
+| AT           |                               |
+| AV           | Activision                    |
+| AY           |                               |
+| BA           |                               |
+| BM           |                               |
+| BR           |                               |
+| BS           | Bethesda Softworks            |
+| BU           |                               |
+| BV           |                               |
+| BW           |                               |
+| CC           |                               |
+| CK           |                               |
+| CM           |                               |
+| CV           | Crave Entertainment           |
+| DC           |                               |
+| DX           |                               |
+| EA           | Electronic Arts (EA)          |
+| EC           |                               |
+| EL           |                               |
+| EM           |                               |
+| ES           |                               |
+| FI           |                               |
+| FS           |                               |
+| GE           |                               |
+| GV           |                               |
+| HE           |                               |
+| HP           |                               |
+| HU           |                               |
+| IA           |                               |
+| IF           |                               |
+| IG           |                               |
+| IL           |                               |
+| IM           |                               |
+| IO           |                               |
+| IP           |                               |
+| IX           |                               |
+| JA           |                               |
+| JW           |                               |
+| KB           |                               |
+| KI           |                               |
+| KN           |                               |
+| KO           |                               |
+| KU           |                               |
+| LA           |                               |
+| LS           |                               |
+| MD           |                               |
+| ME           |                               |
+| MI           |                               |
+| MJ           |                               |
+| MM           |                               |
+| MP           |                               |
+| MS           | Microsoft Game Studios        |
+| MW           | Midway Games                  |
+| MX           |                               |
+| NK           |                               |
+| NL           |                               |
+| NM           |                               |
+| OX           |                               |
+| PC           |                               |
+| PL           |                               |
+| RA           |                               |
+| SA           |                               |
+| SC           |                               |
+| SE           |                               |
+| SN           |                               |
+| SS           |                               |
+| SU           |                               |
+| SW           |                               |
+| TA           |                               |
+| TC           |                               |
+| TD           |                               |
+| TK           |                               |
+| TM           |                               |
+| TQ           |                               |
+| TS           |                               |
+| TT           | Take-Two Interactive Software |
+| US           | Ubisoft                       |
+| VC           |                               |
+| VN           |                               |
+| VU           |                               |
+| VV           |                               |
+| WE           |                               |
+| WR           |                               |
+| XI           |                               |
+| XK           |                               |
+| XL           |                               |
+| XM           |                               |
+| XP           |                               |
+| YB           |                               |
+| ZD           |                               |
 
 The title ID seems to double the information from the [Xbox Game
 Disc](/wiki/Xbox_Game_Disc "wikilink") mastering code etched into the ring or
