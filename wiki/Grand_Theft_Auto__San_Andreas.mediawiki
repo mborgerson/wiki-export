@@ -3,6 +3,9 @@ See https://github.com/aap/skygfx for a re-implementation of the Xbox graphics f
 
 This game shares some technical aspects with [[Grand Theft Auto III]] and [[Grand Theft Auto: Vice City]].
 
+At least some parts of the games source code have been leaked into the public.
+The source code was illegally offered for sale in the past.
+
 == Reverse engineering by aap ==
 
 aap has reverse engineered a lot for skygfx.

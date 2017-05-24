@@ -11,6 +11,9 @@ This game shares some technical aspects with [Grand Theft Auto
 III](/wiki/Grand_Theft_Auto_III "wikilink") and [Grand Theft Auto: Vice
 City](/wiki/Grand_Theft_Auto:_Vice_City "wikilink").
 
+At least some parts of the games source code have been leaked into the
+public. The source code was illegally offered for sale in the past.
+
 Reverse engineering by aap
 --------------------------
 
