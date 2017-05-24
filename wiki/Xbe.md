@@ -36,11 +36,11 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | DX           |                                              |
 | EA           | Electronic Arts (EA)                         |
 | EC           |                                              |
-| EL           |                                              |
+| EL           | Enlight Software                             |
 | EM           |                                              |
-| ES           |                                              |
+| ES           | Eidos Interactive                            |
 | FI           |                                              |
-| FS           |                                              |
+| FS           | From Software                                |
 | GE           |                                              |
 | GV           |                                              |
 | HE           |                                              |
@@ -61,7 +61,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | KN           |                                              |
 | KO           |                                              |
 | KU           |                                              |
-| LA           |                                              |
+| LA           | Lukas Arts                                   |
 | LS           |                                              |
 | MD           |                                              |
 | ME           |                                              |
@@ -81,7 +81,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | RA           |                                              |
 | SA           |                                              |
 | SC           |                                              |
-| SE           |                                              |
+| SE           | Sega                                         |
 | SN           |                                              |
 | SS           |                                              |
 | SU           |                                              |
@@ -90,7 +90,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | TC           |                                              |
 | TD           |                                              |
 | TK           |                                              |
-| TM           |                                              |
+| TM           | TDK Mediactive                               |
 | TQ           |                                              |
 | TS           |                                              |
 | TT           | Take-Two Interactive Software                |
