@@ -28,4 +28,5 @@ References and links
 
 -   [List of original Xbox DVD
     drives](http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html)
+-   <https://multimedia.cx/eggs/interfacing-to-an-xbox-optical-drive/>
 

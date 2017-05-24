@@ -15,3 +15,4 @@ List of Xbox DVD Drive manufacturers
 == References and links == 
 
 * [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]
+* https://multimedia.cx/eggs/interfacing-to-an-xbox-optical-drive/
