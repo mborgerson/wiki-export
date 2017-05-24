@@ -3,7 +3,7 @@ XBE files (XBox Executable) are the main files that are executed in the Xbox Sys
 
 === Title ID ===
 
-A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integer (Above 2000 for non-original Xbox games)
+A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integer game number (Above 2000 for non-original Xbox games)
 
 {| class=wikitable
 ! Publisher ID !! Name
@@ -14,7 +14,7 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |}
 
 The title ID seems to double the information from the [[Xbox Game Disc]] mastering code etched into the ring or readable from the DMI.
-It is expressed in 3 decimal digits here which suggests that the title ID integer will always be below 1000.
+The game number is expressed in 3 decimal digits here which suggests that it will always be below 1000.
 
 '''Examples''':
 

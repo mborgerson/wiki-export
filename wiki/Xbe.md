@@ -11,7 +11,7 @@ developers, and then signed by Microsoft.
 ### Title ID
 
 A title ID is usually 2 ASCII letters for the publisher, followed by a
-u16 integer (Above 2000 for non-original Xbox games)
+u16 integer game number (Above 2000 for non-original Xbox games)
 
 | Publisher ID | Name      |
 |--------------|-----------|
@@ -20,8 +20,8 @@ u16 integer (Above 2000 for non-original Xbox games)
 
 The title ID seems to double the information from the [Xbox Game
 Disc](/wiki/Xbox_Game_Disc "wikilink") mastering code etched into the ring or
-readable from the DMI. It is expressed in 3 decimal digits here which
-suggests that the title ID integer will always be below 1000.
+readable from the DMI. The game number is expressed in 3 decimal digits
+here which suggests that it will always be below 1000.
 
 **Examples**:
 
