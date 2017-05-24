@@ -45,7 +45,25 @@ Security sector range (9 Bytes)
 |6 || u24 || End PSN ||
 |}
 
-Overall format (2048 Bytes):
+Unknown1 (320 Bytes)
+
+{| class="wikitable"
+! Offset !! Type !! Field !! Notes
+|-
+|0 || u64 || || Yet another timestamp?! (Similar to 1183 in complete format)
+|-
+|8 || u32 || || Unknown
+|-
+|27 || u8 || || Unknown
+|-
+|28 || u8[16] || || Unknown
+|-
+|44 || u8[20] || || Unknown
+|-
+|64 || u8[256] || || Unknown
+|}
+
+Complete format (2048 Bytes):
 
 {| class="wikitable"
 ! Offset !! Type !! Field !! Notes
@@ -59,6 +77,18 @@ Overall format (2048 Bytes):
 |769 || u8 || Number of challenge entries ||
 |-
 |770 || Challenge entry[] || Challenge entries ||
+|-
+|1055 || u64 || || Some large number timestamp?
+|-
+|1083 || u8[16] || || Unknown
+|-
+|1183 || u64 || || Another timestamp? (similar to 1055)
+|-
+|1191 || u32 || || Unknown
+|-
+|1210 || Unknown1 || || Unknown
+|-
+|1530 || Unknown1 || || Unknown
 |-
 |1633 || Security sector range[23] || Security sector ranges || Only 16 of which are used.
 |-

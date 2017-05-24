@@ -43,7 +43,18 @@ Security sector range (9 Bytes)
 | 3      | u24  | Start PSN |       |
 | 6      | u24  | End PSN   |       |
 
-Overall format (2048 Bytes):
+Unknown1 (320 Bytes)
+
+| Offset | Type      | Field | Notes                                                        |
+|--------|-----------|-------|--------------------------------------------------------------|
+| 0      | u64       |       | Yet another timestamp?! (Similar to 1183 in complete format) |
+| 8      | u32       |       | Unknown                                                      |
+| 27     | u8        |       | Unknown                                                      |
+| 28     | u8\[16\]  |       | Unknown                                                      |
+| 44     | u8\[20\]  |       | Unknown                                                      |
+| 64     | u8\[256\] |       | Unknown                                                      |
+
+Complete format (2048 Bytes):
 
 <table>
 <thead>
@@ -84,6 +95,42 @@ Overall format (2048 Bytes):
 <td><p>Challenge entry[]</p></td>
 <td><p>Challenge entries</p></td>
 <td></td>
+</tr>
+<tr class="even">
+<td><p>1055</p></td>
+<td><p>u64</p></td>
+<td></td>
+<td><p>Some large number timestamp?</p></td>
+</tr>
+<tr class="odd">
+<td><p>1083</p></td>
+<td><p>u8[16]</p></td>
+<td></td>
+<td><p>Unknown</p></td>
+</tr>
+<tr class="even">
+<td><p>1183</p></td>
+<td><p>u64</p></td>
+<td></td>
+<td><p>Another timestamp? (similar to 1055)</p></td>
+</tr>
+<tr class="odd">
+<td><p>1191</p></td>
+<td><p>u32</p></td>
+<td></td>
+<td><p>Unknown</p></td>
+</tr>
+<tr class="even">
+<td><p>1210</p></td>
+<td><p>Unknown1</p></td>
+<td></td>
+<td><p>Unknown</p></td>
+</tr>
+<tr class="odd">
+<td><p>1530</p></td>
+<td><p>Unknown1</p></td>
+<td></td>
+<td><p>Unknown</p></td>
 </tr>
 <tr class="even">
 <td><p>1633</p></td>
