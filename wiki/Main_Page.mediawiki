@@ -1,52 +1,50 @@
 {{:Main Page/Header}}
 
-Development
-
-* [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
-* [[OpenXDK]]
-* [[Microsoft XDK]]
-
-[[Xbox]]
-
+== Hardware ==
 * [[Hardware revisions]]
-** [[CPU|CPU (Custom Pentium 3 733 MHz)]]
-** [[Memory]]
-** [[BIOS]]
-** [[MCPX]] [[MCPX ROM|(ROM)]]
-** [[DVD Drive]]
-** [[Hard Drive]]
-** [[USB]]
-** [[EEPROM]]
+* [[CPU|CPU (Custom Pentium 3 733 MHz)]]
+* [[Memory]]
+* [[MCPX]]
+* [[DVD Drive]]
+* [[Hard Drive]]
+* [[USB]]
+* [[EEPROM]]
 * [[Xbox Game Disc]]
 * [[Xbox Input Devices]]
-* [[Xbox Debug Monitor]]
-* [[Operating System]]
 * [[NV2A]]
 ** [[NV2A/Vertex attributes]]
 ** [[NV2A/Fixed Function Pipeline]]
 ** [[NV2A/Vertex Shader]]
 ** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Surface Formats]]
+* [[NVNet]]
+* [http://segaretro.org/Sega_Chihiro Chihiro]
 
-[http://segaretro.org/Sega_Chihiro Chihiro]
+== Firmware/Kernel ==
+* [[MCPX ROM]]
+* [[BIOS]]
+* [[Kernel]]
 
+== Development Kits and Tools ==
+* [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
+* [[OpenXDK]]
+* [[Microsoft XDK]]
 * [[Chihiro-Tools]]
+* [[Xbox Debug Monitor]]
 * [[Chihiro-Launcher]]
 
-[[:Category:Games|Games]]
-
+== Games ==
+* [[:Category:Games|Games]]
 * [[Engine List]]
 
-Emulation
-
+== Emulation ==
 * [[Emulators]]
 
-{{:Main Page/Xbox Live}}
-
-Find random stuff in [[Resources]]
+== Other ==
+* [[Network]]
+* Find random stuff in [[Resources]]
 
 == Getting started ==
-
 * [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Configuration_settings Configuration settings list]
 * [https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:FAQ MediaWiki FAQ]
 * [https://lists.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]
