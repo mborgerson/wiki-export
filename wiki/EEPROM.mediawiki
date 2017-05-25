@@ -1,5 +1,5 @@
 The EEPROM of the Xbox is connected via I²C and located on address 0x54.
-The EEPROM is 256 bytes and stores the settings of the Xbox.
+The EEPROM is 256 bytes and stores the settings and other information about the Xbox.
 
 == Contents ==
 
