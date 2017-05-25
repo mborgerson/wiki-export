@@ -1,4 +1,8 @@
-The purpose of the MCPX ROM is to setup the GPT table, enter 32 bit mode, Enable caching, decrypt the second bootloader (2BL) and then transfer control over to it. It has a fair few things to do, so also contains an interpreter to read instructions from the BIOS (known as xcodes). There are two known versions of the MCPX ROM, 1.0 and 1.1. 1.0 was found in the 1.0 Xbox and used an RC4 algorithm to decrypt the 2BL. After Microsoft found this out, they changed the algorithm to a TEA algorithm. The code on the chips is largely the same, but for those two differences.
+The purpose of the MCPX ROM is to setup the GPT table, enter 32 bit mode, Enable caching, decrypt the second bootloader (2BL) and then transfer control over to it. It has a fair few things to do, so also contains an interpreter to read instructions from the BIOS (known as xcodes). There are two known versions of the MCPX ROM, 1.0 and 1.1.
+
+1.0 was found in the 1.0 Xbox and used an RC4 algorithm to decrypt the 2BL.
+For 1.1 Microsoft switched to a TEA algorithm.
+The code on the chips is largely the same, but for those two differences{{citation needed}}.
 
 == Dumping the MCPX ROM ==
 
