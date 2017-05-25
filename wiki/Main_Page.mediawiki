@@ -17,13 +17,13 @@
 ** [[NV2A/Vertex Shader]]
 ** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Surface Formats]]
-* [[NVNet]]
+* [[NVNet|Network Controller (NVNet)]]
 * [http://segaretro.org/Sega_Chihiro Chihiro]
 
 == Firmware/Kernel ==
 * [[MCPX ROM]]
-* [[BIOS]]
-* [[Kernel]]
+* [[BIOS]] / [[Kernel]]
+* [[FATX]] (Filesystem)
 
 == Development Kits and Tools ==
 * [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]

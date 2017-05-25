@@ -24,15 +24,15 @@ Hardware
     -   [NV2A/Vertex Shader](/wiki/NV2A/Vertex_Shader "wikilink")
     -   [NV2A/Pixel Combiner](/wiki/NV2A/Pixel_Combiner "wikilink")
     -   [NV2A/Surface Formats](/wiki/NV2A/Surface_Formats "wikilink")
--   [NVNet](/wiki/NVNet "wikilink")
+-   [Network Controller (NVNet)](/wiki/NVNet "wikilink")
 -   [Chihiro](http://segaretro.org/Sega_Chihiro)
 
 Firmware/Kernel
 ---------------
 
 -   [MCPX ROM](/wiki/MCPX_ROM "wikilink")
--   [BIOS](/wiki/BIOS "wikilink")
--   [Kernel](/wiki/Kernel "wikilink")
+-   [BIOS](/wiki/BIOS "wikilink") / [Kernel](Kernel "wikilink")
+-   [FATX](/wiki/FATX "wikilink") (Filesystem)
 
 Development Kits and Tools
 --------------------------
