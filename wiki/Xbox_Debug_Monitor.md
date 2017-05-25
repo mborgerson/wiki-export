@@ -244,6 +244,19 @@ version](/wiki/XBDM_commands_by_version "wikilink")*
 
 #### <span id="cmd_adminpw">adminpw</span> (Set administrator password)
 
+| 4039+ | `adminpw none` | MANAGE |
+|-------|----------------|--------|
+
+Clear the administrator password.
+
+| 4039+ | `adminpw passwd=QWORD` | MANAGE |
+|-------|------------------------|--------|
+
+Set the administrator password to the value of the `passwd` parameter.
+Note that `passwd` is a 64-bit integer instead of a string. The details
+of the conversion from a string password to a 64-bit integer are
+currently unknown.
+
 #### <span id="cmd_altaddr">altaddr</span>
 
 #### <span id="cmd_authuser">authuser</span> (Authenticate user)

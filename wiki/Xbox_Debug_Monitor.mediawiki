@@ -136,6 +136,23 @@ TODO
 ''See also: [[XBDM commands by version]]''
 
 ====<span id="cmd_adminpw">adminpw</span> (Set administrator password)====
+
+{| class="wikitable"
+! 4039+
+| <code>adminpw none</code>
+| MANAGE
+|}
+
+Clear the administrator password.
+
+{| class="wikitable"
+! 4039+
+| <code>adminpw passwd=QWORD</code>
+| MANAGE
+|}
+
+Set the administrator password to the value of the <code>passwd</code> parameter. Note that <code>passwd</code> is a 64-bit integer instead of a string. The details of the conversion from a string password to a 64-bit integer are currently unknown.
+
 ====<span id="cmd_altaddr">altaddr</span>====
 ====<span id="cmd_authuser">authuser</span> (Authenticate user)====
 ====<span id="cmd_boxid">boxid</span>====
