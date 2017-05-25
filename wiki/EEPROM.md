@@ -66,12 +66,14 @@ dashboard to dump the EEPROM to a file and download it over FTP.
 ### Hardware Method
 
 If you cannot dump the EEPROM using software, you can dump it using
-hardware. You have several options: use an [I2C/SPI USB host
-adapter](https://www.totalphase.com/products/aardvark-i2cspi/), build an
+hardware. You have several options: use an I2C host adapter (see
+[here](http://dangerousprototypes.com/blog/bus-pirate-manual/) or
+[here](https://www.totalphase.com/products/aardvark-i2cspi/)), build an
 [I2C-Serial cable](https://www.youtube.com/watch?v=UcK6nKyKGVQ), or use
-a device like a RaspberryPi which has an I2C interface already. Connect
+a device like a RaspberryPi which has an I2C interface. Connect
 SDA/SCL/ground to the LPC pinout on the board. See
 [here](https://github.com/grimdoomer/PiPROM) for pinout information.
+Then use the corresponding software to read/write the EEPROM.
 
 Further Reading
 ---------------

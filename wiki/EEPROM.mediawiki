@@ -153,7 +153,8 @@ Note: Info in above table comes from XKUtils [https://svn.exotica.org.uk:8443/xb
 This is the easiest way to dump an Xbox EEPROM. Use your alternative dashboard to dump the EEPROM to a file and download it over FTP.
 
 === Hardware Method ===
-If you cannot dump the EEPROM using software, you can dump it using hardware. You have several options: use an [https://www.totalphase.com/products/aardvark-i2cspi/ I2C/SPI USB host adapter], build an [https://www.youtube.com/watch?v=UcK6nKyKGVQ I2C-Serial cable], or use a device like a RaspberryPi which has an I2C interface already. Connect SDA/SCL/ground to the LPC pinout on the board. See [https://github.com/grimdoomer/PiPROM here] for pinout information. 
+If you cannot dump the EEPROM using software, you can dump it using hardware. You have several options: use an I2C host adapter (see [http://dangerousprototypes.com/blog/bus-pirate-manual/ here]
+or [https://www.totalphase.com/products/aardvark-i2cspi/ here]), build an [https://www.youtube.com/watch?v=UcK6nKyKGVQ I2C-Serial cable], or use a device like a RaspberryPi which has an I2C interface. Connect SDA/SCL/ground to the LPC pinout on the board. See [https://github.com/grimdoomer/PiPROM here] for pinout information. Then use the corresponding software to read/write the EEPROM.
 
 == Further Reading ==
 
