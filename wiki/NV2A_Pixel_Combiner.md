@@ -7,7 +7,28 @@ layout: wiki
 The NV2A implements
 [NV\_register\_combiners](https://www.opengl.org/registry/specs/NV/register_combiners.txt)
 (and
-[NV\_register\_combiners2](https://www.opengl.org/registry/specs/NV/register_combiners2.txt)?)
+[NV\_register\_combiners2](https://www.opengl.org/registry/specs/NV/register_combiners2.txt)?).
+Texturing modes are from:
+<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt>
+<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt>
+<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt>
+
+Data types
+----------
+
+NV\_texture\_shader suggests that: *“The 8-bit and 16-bit signed
+fixed-point types are used for signed internal texture formats, while
+the 9-bit signed fixed-point type is used for register combiners
+computations.”* Here is a table from the GL extension:
+
+| floating-point | 8-bit fixed-point | 9-bit fixed-point | 16 bit fixed-point |
+|----------------|-------------------|-------------------|--------------------|
+| 1.0            | n/a               | 255               | n/a                |
+| 0.99996...     | n/a               | n/a               | 32767              |
+| 0.99218...     | 127               | n/a               | n/a                |
+| 0.0            | 0                 | 0                 | 0                  |
+| -1.0           | -128              | -255              | -32768             |
+| -1.00392...    | n/a               | -256              | n/a                |
 
 Texturing modes
 ---------------
