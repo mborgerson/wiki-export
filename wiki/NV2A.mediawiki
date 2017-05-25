@@ -1,1 +1,22 @@
 The northbridge of the chipset, and is the GPU
+
+== GPU ==
+
+The GPU is part of the NV20 family (Kelvin)[https://nouveau.freedesktop.org/wiki/CodeNames/]:
+
+{| class="wikitable"
+! Code name !! Official Name
+|-
+|NV20 || GeForce3 (Ti)<br>Quadro DCC
+|-
+|NV25 || GeForce4 Ti 4200, Ti 4400, Ti 4600<br>Quadro4 700 XGL, 750 XGL, 900 XGL
+|-
+|NV28 || GeForce4 Ti 4200-8X, Ti 4800 (SE), 4200 Go<br>Quadro4 780 XGL, 980 XGL
+|-
+|NV2A || Xbox GPU 
+|}
+
+== Notes ==
+
+* [https://web-beta.archive.org/web/20030207073141/http://developer.nvidia.com:80/view.asp?IO=nv30_emulation NV30 information and emulator]
+** [http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf Backup of nv30specs: List of implemented GL extensions for NV10-NV30]
