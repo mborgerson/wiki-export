@@ -35,14 +35,13 @@ An inner porition with Xbox logo:
 -   1 time “XBOX” text with blank background
 -   3 times “XBOX” text with “X Logo” in the background on each side
 -   Another tiny pattern segmented into 7 portions in alternating
-    position,
+    position,(opposite of the “XBOX” text without logo)
     -   4 times a Xbox logo
     -   2 times the word “genuine”
-    -   and in the middel the word ASPnnnn where n is a number (opposite
-        of the “XBOX” text without logo)
+    -   and in the middel the word ASPnnnn where n is a number
 
-![Detail of the DVD hologram, reflecting the ASP5080 by the flash of the
-camera. found on a demodisk
+''' ASP code ''' ![Detail of the DVD hologram, reflecting the ASP5080 by
+the flash of the camera. found on a demodisk
 (IM00113E-IM)](Asp_demodisk.jpg "fig:Detail of the DVD hologram, reflecting the ASP5080 by the flash of the camera. found on a demodisk (IM00113E-IM)")
 The following table lists known ASPnnnn numbers found on Xbox dvd disks,
 they are also on 360 disks but we dont list those in this wiki. The
