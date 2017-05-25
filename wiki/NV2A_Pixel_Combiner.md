@@ -20,7 +20,7 @@ fixed-point types are used for signed internal texture formats, while
 the 9-bit signed fixed-point type is used for register combiners
 computations.”* Here is a table from the GL extension:
 
-| floating-point | 8-bit fixed-point | 9-bit fixed-point | 16 bit fixed-point |
+| floating-point | 8-bit fixed-point | 9-bit fixed-point | 16-bit fixed-point |
 |----------------|-------------------|-------------------|--------------------|
 | 1.0            | n/a               | 255               | n/a                |
 | 0.99996...     | n/a               | n/a               | 32767              |
@@ -28,6 +28,19 @@ computations.”* Here is a table from the GL extension:
 | 0.0            | 0                 | 0                 | 0                  |
 | -1.0           | -128              | -255              | -32768             |
 | -1.00392...    | n/a               | -256              | n/a                |
+
+This means:
+
+-   8-bit fixed-point: \[-128, 127\] → \[-128/128, 127/128\] → \[-1.0,
+    0.99218...\]
+-   9-bit fixed-point: \[-256, 255\] → \[-256/255, 255/255\] →
+    \[-1.00392..., 1.0\]
+-   16-bit fixed-point: \[-32768, 32767\] → \[-32768/32768,
+    32767/32768\] → \[-1.0, 0.99996...\]
+
+It is not known if the NV2A really implements these 3 datatypes. It is
+also not yet known how exactly conversion or negation of these types
+would work.
 
 Texturing modes
 ---------------
