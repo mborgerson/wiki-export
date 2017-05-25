@@ -31,18 +31,10 @@ Texturing modes
 <td><p>PS_TEXTUREMODES_NONE<br />
 texcoord?</p></td>
 <td><p>NONE</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -50,54 +42,30 @@ texcoord?</p></td>
 <td><p>PS_TEXTUREMODES_PROJECT2D<br />
 tex</p></td>
 <td><p>TEXTURE_2D</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p>0x02</p></td>
 <td><p>PS_TEXTUREMODES_PROJECT3D</p></td>
 <td><p>TEXTURE_3D</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p>0x03</p></td>
 <td><p>PS_TEXTUREMODES_CUBEMAP</p></td>
 <td><p>TEXTURE_CUBE_MAP_ARB</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -105,18 +73,10 @@ tex</p></td>
 <td><p>PS_TEXTUREMODES_PASSTHRU<br />
 texcoord?</p></td>
 <td><p>PASS_THROUGH_NV</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -124,18 +84,10 @@ texcoord?</p></td>
 <td><p>PS_TEXTUREMODES_CLIPPLANE<br />
 texkill</p></td>
 <td><p>CULL_FRAGMENT_NV</p></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -144,15 +96,9 @@ texkill</p></td>
 texbem</p></td>
 <td><p>OFFSET_TEXTURE_2D_NV</p></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -161,15 +107,9 @@ texbem</p></td>
 texbeml</p></td>
 <td><p>OFFSET_TEXTURE_2D_SCALE_NV</p></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -179,12 +119,8 @@ texm3x2tex</p></td>
 <td></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -194,12 +130,8 @@ texm3x2pad?</p></td>
 <td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -209,12 +141,8 @@ texm3x2tex?</p></td>
 <td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -223,9 +151,7 @@ texm3x2tex?</p></td>
 <td><p>DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -236,9 +162,7 @@ texm3x2tex?</p></td>
 <td></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -248,9 +172,7 @@ texm3x2tex?</p></td>
 <td></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -260,9 +182,7 @@ texm3x2tex?</p></td>
 <td></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -271,15 +191,9 @@ texm3x2tex?</p></td>
 texreg2ar</p></td>
 <td><p>DEPENDENT_AR_TEXTURE_2D_NV</p></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -288,15 +202,9 @@ texreg2ar</p></td>
 texreg2gb</p></td>
 <td><p>DEPENDENT_GB_TEXTURE_2D_NV</p></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -304,12 +212,8 @@ texreg2gb</p></td>
 <td><p>PS_TEXTUREMODES_DOTPRODUCT</p></td>
 <td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -320,9 +224,7 @@ texreg2gb</p></td>
 <td></td>
 <td></td>
 <td></td>
-<td><ul>
-<li></li>
-</ul></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
