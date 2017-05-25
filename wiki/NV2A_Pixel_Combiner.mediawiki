@@ -181,7 +181,7 @@ The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners
 |{{no}}
 |{{no}}
 |{{yes}}
-|{{no}}
+|
 |}
 
 Also known from nvidia docs:
