@@ -55,15 +55,15 @@ Contents
 Note: Info in above table comes from XKUtils
 [XKEEPROM.h](https://svn.exotica.org.uk:8443/xbmc4xbox/tags/3.5.3/xbmc/xbox/XKEEPROM.h).
 
-How to Dump Your EEPROM
------------------------
+Reading/Writing the EEPROM
+--------------------------
 
-### Software Dump
+### Software Method
 
 This is the easiest way to dump an Xbox EEPROM. Use your alternative
 dashboard to dump the EEPROM to a file and download it over FTP.
 
-### Hardware Dump
+### Hardware Method
 
 If you cannot dump the EEPROM using software, you can dump it using
 hardware. You have several options: use an [I2C/SPI USB host
