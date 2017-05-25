@@ -17,6 +17,7 @@ Texturing modes
 <tr class="header">
 <th><p>ID</p></th>
 <th><p>Name</p></th>
+<th><p>GL Name</p></th>
 <th><p>Stage 1</p></th>
 <th><p>Stage 2</p></th>
 <th><p>Stage 3</p></th>
@@ -29,6 +30,7 @@ Texturing modes
 <td><p>0x00</p></td>
 <td><p>PS_TEXTUREMODES_NONE<br />
 texcoord?</p></td>
+<td><p>NONE</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -47,6 +49,7 @@ texcoord?</p></td>
 <td><p>0x01</p></td>
 <td><p>PS_TEXTUREMODES_PROJECT2D<br />
 tex</p></td>
+<td><p>TEXTURE_2D</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -64,6 +67,7 @@ tex</p></td>
 <tr class="odd">
 <td><p>0x02</p></td>
 <td><p>PS_TEXTUREMODES_PROJECT3D</p></td>
+<td><p>TEXTURE_3D</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -81,6 +85,7 @@ tex</p></td>
 <tr class="even">
 <td><p>0x03</p></td>
 <td><p>PS_TEXTUREMODES_CUBEMAP</p></td>
+<td><p>TEXTURE_CUBE_MAP_ARB</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -99,6 +104,7 @@ tex</p></td>
 <td><p>0x04</p></td>
 <td><p>PS_TEXTUREMODES_PASSTHRU<br />
 texcoord?</p></td>
+<td><p>PASS_THROUGH_NV</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -117,6 +123,7 @@ texcoord?</p></td>
 <td><p>0x05</p></td>
 <td><p>PS_TEXTUREMODES_CLIPPLANE<br />
 texkill</p></td>
+<td><p>CULL_FRAGMENT_NV</p></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -135,6 +142,7 @@ texkill</p></td>
 <td><p>0x06</p></td>
 <td><p>PS_TEXTUREMODES_BUMPENVMAP<br />
 texbem</p></td>
+<td><p>OFFSET_TEXTURE_2D_NV</p></td>
 <td></td>
 <td><ul>
 <li></li>
@@ -151,6 +159,7 @@ texbem</p></td>
 <td><p>0x07</p></td>
 <td><p>PS_TEXTUREMODES_BUMPENVMAP_LUM<br />
 texbeml</p></td>
+<td><p>OFFSET_TEXTURE_2D_SCALE_NV</p></td>
 <td></td>
 <td><ul>
 <li></li>
@@ -169,6 +178,7 @@ texbeml</p></td>
 texm3x2tex</p></td>
 <td></td>
 <td></td>
+<td></td>
 <td><ul>
 <li></li>
 </ul></td>
@@ -181,6 +191,7 @@ texm3x2tex</p></td>
 <td><p>0x09</p></td>
 <td><p>PS_TEXTUREMODES_DOT_ST<br />
 texm3x2pad?</p></td>
+<td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
 <td></td>
 <td><ul>
@@ -195,6 +206,7 @@ texm3x2pad?</p></td>
 <td><p>0x0A</p></td>
 <td><p>PS_TEXTUREMODES_DOT_ZW<br />
 texm3x2tex?</p></td>
+<td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
 <td></td>
 <td><ul>
@@ -208,6 +220,7 @@ texm3x2tex?</p></td>
 <tr class="even">
 <td><p>0x0B</p></td>
 <td><p>PS_TEXTUREMODES_DOT_RFLCT_DIFF</p></td>
+<td><p>DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
 <td><ul>
@@ -219,6 +232,7 @@ texm3x2tex?</p></td>
 <tr class="odd">
 <td><p>0x0C</p></td>
 <td><p>PS_TEXTUREMODES_DOT_RFLCT_SPEC</p></td>
+<td><p>DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -230,6 +244,7 @@ texm3x2tex?</p></td>
 <tr class="even">
 <td><p>0x0D</p></td>
 <td><p>PS_TEXTUREMODES_DOT_STR_3D</p></td>
+<td><p>DOT_PRODUCT_TEXTURE_3D_NV</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -241,6 +256,7 @@ texm3x2tex?</p></td>
 <tr class="odd">
 <td><p>0x0E</p></td>
 <td><p>PS_TEXTUREMODES_DOT_STR_CUBE</p></td>
+<td><p>DOT_PRODUCT_REFLECT_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -253,6 +269,7 @@ texm3x2tex?</p></td>
 <td><p>0x0F</p></td>
 <td><p>PS_TEXTUREMODES_DPNDNT_AR<br />
 texreg2ar</p></td>
+<td><p>DEPENDENT_AR_TEXTURE_2D_NV</p></td>
 <td></td>
 <td><ul>
 <li></li>
@@ -269,6 +286,7 @@ texreg2ar</p></td>
 <td><p>0x10</p></td>
 <td><p>PS_TEXTUREMODES_DPNDNT_GB<br />
 texreg2gb</p></td>
+<td><p>DEPENDENT_GB_TEXTURE_2D_NV</p></td>
 <td></td>
 <td><ul>
 <li></li>
@@ -284,6 +302,7 @@ texreg2gb</p></td>
 <tr class="even">
 <td><p>0x11</p></td>
 <td><p>PS_TEXTUREMODES_DOTPRODUCT</p></td>
+<td><p>DOT_PRODUCT_NV</p></td>
 <td></td>
 <td><ul>
 <li></li>
@@ -297,6 +316,7 @@ texreg2gb</p></td>
 <tr class="odd">
 <td><p>0x12</p></td>
 <td><p>PS_TEXTUREMODES_DOT_RFLCT_SPEC_CONST</p></td>
+<td><p>DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
 <td></td>
