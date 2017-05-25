@@ -20,6 +20,7 @@ Development
     -   [DVD Drive](/wiki/DVD_Drive "wikilink")
     -   [Hard Drive](/wiki/Hard_Drive "wikilink")
     -   [USB](/wiki/USB "wikilink")
+    -   [EEPROM](/wiki/EEPROM "wikilink")
 -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")

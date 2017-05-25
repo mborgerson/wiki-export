@@ -16,6 +16,7 @@ Development
 ** [[DVD Drive]]
 ** [[Hard Drive]]
 ** [[USB]]
+** [[EEPROM]]
 * [[Xbox Game Disc]]
 * [[Xbox Input Devices]]
 * [[Xbox Debug Monitor]]
