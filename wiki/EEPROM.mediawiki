@@ -2,6 +2,18 @@ The Xbox EEPROM is a 256 byte non-volatile storage device which contains device-
 
 The Chihiro EEPROM key is <code>7B 35 A8 B7 27 ED 43 7A A0 BA FB 8F A4 38 61 80</code>
 
+== Chip Models ==
+
+{| class="wikitable"
+! Xbox Model
+! Manufacturer
+! Model
+|-
+| 1.4 (Others?)
+| Catalyst
+| CAT24WC02J
+|}
+
 == Contents ==
 
 {| class="wikitable"

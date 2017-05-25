@@ -11,6 +11,13 @@ address 0x54.
 The Chihiro EEPROM key is
 `7B 35 A8 B7 27 ED 43 7A A0 BA FB 8F A4 38 61 80`
 
+Chip Models
+-----------
+
+| Xbox Model    | Manufacturer | Model      |
+|---------------|--------------|------------|
+| 1.4 (Others?) | Catalyst     | CAT24WC02J |
+
 Contents
 --------
 
