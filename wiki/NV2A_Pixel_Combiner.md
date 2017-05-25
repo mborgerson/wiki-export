@@ -4,14 +4,13 @@ permalink: wiki/NV2A/Pixel_Combiner/
 layout: wiki
 ---
 
-The NV2A implements
-[NV\_register\_combiners](https://www.opengl.org/registry/specs/NV/register_combiners.txt)
-(and
-[NV\_register\_combiners2](https://www.opengl.org/registry/specs/NV/register_combiners2.txt)?).
-Texturing modes are from:
-<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt>
-<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt>
-<https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt>
+The NV2A implements at least parts of the following OpenGL extensions:
+
+-   [NV\_texture\_shader](https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt)
+-   [NV\_texture\_shader2](https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt)
+-   [NV\_texture\_shader3](https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt)
+-   [NV\_register\_combiners](https://www.opengl.org/registry/specs/NV/register_combiners.txt)
+-   [NV\_register\_combiners2](https://www.opengl.org/registry/specs/NV/register_combiners2.txt)
 
 Data types
 ----------

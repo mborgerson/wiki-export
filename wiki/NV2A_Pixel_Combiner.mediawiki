@@ -1,8 +1,11 @@
-The NV2A implements [https://www.opengl.org/registry/specs/NV/register_combiners.txt NV_register_combiners] (and [https://www.opengl.org/registry/specs/NV/register_combiners2.txt NV_register_combiners2]?).
-Texturing modes are from:
-https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt
-https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt
-https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt
+The NV2A implements at least parts of the following OpenGL extensions:
+
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt NV_texture_shader]
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt NV_texture_shader2]
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt NV_texture_shader3]{{citation needed}}
+* [https://www.opengl.org/registry/specs/NV/register_combiners.txt NV_register_combiners]
+* [https://www.opengl.org/registry/specs/NV/register_combiners2.txt NV_register_combiners2]
+
 
 == Data types ==
 
