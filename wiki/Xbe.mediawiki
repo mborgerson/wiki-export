@@ -18,17 +18,17 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | AV || Activision
 |-
-| AY || Aspyr Media, Inc.
+| AY || Aspyr Media
 |-
 | BA || Bandai
 |-
 | BM || BAM! Entertainment
 |-
-| BR || Broccoli Co., Ltd.
+| BR || Broccoli Co.
 |-
 | BS || Bethesda Softworks
 |-
-| BU || Bunkasha Co Ltd
+| BU || Bunkasha Co.
 |-
 | BV || Buena Vista Games
 |-
@@ -60,17 +60,17 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | FS || From Software
 |-
-| GE || Genki Co., Ltd
+| GE || Genki Co.
 |-
 | GV || Groove Games
 |-
-| HE || Tru Blu Entertainment division of Home Entertainment Suppliers
+| HE || Tru Blu (Entertainment division of Home Entertainment Suppliers)
 |-
 | HP || Hip games
 |-
 | HU || Hudson Soft
 |-
-| IA || Mad Catz Interactive, Inc. [[http:\\phx.corporate-ir.net/phoenix.zhtml?c=69024&p=irol-newsArticle&ID=839612 press release]]
+| IA || Mad Catz Interactive
 |-
 | IF || Idea Factory
 |-
@@ -78,9 +78,9 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | IL || [[Interlex Corporation]]
 |-
-| IM || imagine Media 
+| IM || Imagine Media
 |-
-| IO || Ignition entertainment
+| IO || Ignition Entertainment
 |-
 | IP || Interplay Entertainment
 |-
@@ -90,7 +90,7 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | JW || JoWooD
 |-
-| KB || Kemco {{citation needed|reason=CK is also Kemco, is this a diferent subsidairy or country based? Just want to be sure its Kemco|date=May 2017}}}}
+| KB || Kemco {{citation needed|reason=CK is also Kemco, is this a diferent subsidairy or country based? Just want to be sure its Kemco|date=May 2017}}
 |-
 | KI || Kids Station Inc. {{citation needed|reason=Games info page was in japanese, I dont read japanese. but this seemed very logicaly the publisher, can a japanese reader confirm?|date=May 2017}}
 |-
@@ -98,13 +98,13 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | KO || KOEI
 |-
-| KU || Kobi and/or GAE, Inc. (formerly Global A Entertainment){{citation needed|reason=What name did the publisher use at the time of release?|date=May 2017}}
+| KU || Kobi and/or GAE (formerly Global A Entertainment){{citation needed|reason=What name did the publisher use at the time of release?|date=May 2017}}
 |-
 | LA || LucasArts
 |-
 | LS || Black Bean Games (publishing arm of Leader S.p.A.)
 |-
-| MD || Metro3D, Inc.
+| MD || Metro3D
 |-
 | ME || Medix
 |-
@@ -132,7 +132,7 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | PC || Playlogic Entertainment
 |-
-| PL || Deep Silver {{citation needed|reason=Who published this, also, TitleID doesnt seem to match any potencial publisher name|date=May 2017}}
+| PL || Phantagram Co., Ltd.
 |-
 | RA || Rage
 |-
@@ -144,7 +144,7 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | SN || SNK
 |-
-| SS || Simon & Schuster, Inc.
+| SS || Simon & Schuster
 |-
 | SU || Success Corporation
 |-
@@ -182,17 +182,17 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | XI || XPEC Entertainment and Idea Factory 
 |-
-| XK || (Xbox kiosk disk?) {{citation needed}}
+| XK || ''Xbox kiosk disk?'' {{citation needed}}
 |-
-| XL || (Xbox special bundled or live demo disk?) {{citation needed}}
+| XL || ''Xbox special bundled or live demo disk?'' {{citation needed}}
 |-
-| XM || Evolved Games (Probably not, game "Malice") {{citation needed}}
+| XM || Evolved Games {{citation needed|reason=Probably not, game "Malice"|date=May 2017}}
 |-
 | XP || XPEC Entertainment
 |-
 | YB || YBM Sisa (South-Korea)
 |-
-| ZD || Zushi Games, formerly Zoo Digital Publishing
+| ZD || Zushi Games (formerly Zoo Digital Publishing)
 |}
 
 The title ID seems to double the information from the [[Xbox Game Disc]] mastering code etched into the ring or readable from the DMI.
