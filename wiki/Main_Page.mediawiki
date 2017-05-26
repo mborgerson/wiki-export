@@ -9,6 +9,7 @@
 * [[Hard Drive]]
 * [[USB]]
 * [[EEPROM]]
+* [[SMC]]
 * [[Xbox Game Disc]]
 * [[Xbox Input Devices]]
 * [[NV2A]]

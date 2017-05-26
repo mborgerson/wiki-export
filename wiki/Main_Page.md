@@ -15,6 +15,7 @@ Hardware
 -   [Hard Drive](/wiki/Hard_Drive "wikilink")
 -   [USB](/wiki/USB "wikilink")
 -   [EEPROM](/wiki/EEPROM "wikilink")
+-   [SMC](/wiki/SMC "wikilink")
 -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [NV2A](/wiki/NV2A "wikilink")
