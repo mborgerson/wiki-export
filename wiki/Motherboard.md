@@ -4,4 +4,4 @@ permalink: wiki/Motherboard/
 layout: wiki
 ---
 
-![Xbox-Motherboard-BR](Xbox-Motherboard-BR.jpg "Xbox-Motherboard-BR")
+<img src="Xbox-Motherboard-BR.jpg" title="Xbox Motherboard" alt="Xbox Motherboard" width="400" />
