@@ -15,7 +15,7 @@
 * [[USB]]
 * [[EEPROM]]
 * [[SMC]]
-* [[Video encoder]]
+* [[Video Encoder]]
 * [[Xbox Game Disc]]
 * [[Xbox Input Devices]]
 * [[NV2A]]
