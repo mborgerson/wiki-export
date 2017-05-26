@@ -4,4 +4,4 @@ permalink: wiki/Motherboard/
 layout: wiki
 ---
 
-![](800px-Xbox-Motherboard-BR.jpg "800px-Xbox-Motherboard-BR.jpg")
+![Xbox-Motherboard-BR](Xbox-Motherboard-BR.jpg "Xbox-Motherboard-BR")
