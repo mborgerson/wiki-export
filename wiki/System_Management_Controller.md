@@ -10,6 +10,8 @@ includes rebooting the system, returning the connected kind of video
 cable, the DVD tray state, controlling the fan, LED control and sensing
 temperature.
 
+It is connected via I²C and located on address 0x10.
+
 Revisions
 ---------
 
