@@ -85,12 +85,8 @@ using just a Telnet client in many cases.
 When a connection is established, XBDM sends `201- connected` (or
 `200- connected` in version 3944) followed by <CR><LF> (that is, a
 carriage return character followed by a line feed character). The RDCP
-client is then free to send a command followed by <CR><LF> or <CR><NUL>.
-A command consists of a name and zero or more parameters separated by
-whitespace characters. The format of the parameters is defined by the
-command, but most commands use the form `key=value`. Parameter values
-that contain whitespace characters must be surrounded by double quotes
-(e.g. “`some`` ``value`” or `key=`“`some`` ``value`”).
+client is then free to send a [command](#Commands "wikilink") followed
+by <CR><LF> or <CR><NUL>.
 
 After executing a command, XBDM replies with a response line consisting
 of a three-digit status code and message of the form
@@ -159,8 +155,9 @@ the page table.
 An operation was attempted on a thread that does not exist.
 
 <span id="status_406">406-</span>  
-An attempt to set the system time with the `setsystime` command failed.
-This status code is undocumented.
+An attempt to set the system time with the
+[`setsystime`](#cmd_setsystime "wikilink") command failed. This status
+code is undocumented.
 
 <span id="status_407">407- unknown command</span>  
 The command is not recognized.
@@ -206,7 +203,8 @@ The command can only be executed when security is enabled (see
 [\#Security](#Security "wikilink")).
 
 <span id="status_421">421- key exchange required</span>  
-The client must perform a key exchange with the `keyxchg` command (see
+The client must perform a key exchange with the
+[`keyxchg`](#cmd_keyxchg "wikilink") command (see
 [\#Security](#Security "wikilink")).
 
 <span id="status_422">422- dedicated connection required</span>  
@@ -241,6 +239,20 @@ TODO
 
 *See also: [XBDM commands by
 version](/wiki/XBDM_commands_by_version "wikilink")*
+
+A command consists of a name and zero or more parameters separated by
+whitespace characters. The format of the parameters is defined by the
+command, but most commands use the form `key=value`. Parameter values
+that contain whitespace characters must be surrounded by double quotes
+(e.g. “`some`` ``value`” or `key=`“`some`` ``value`”).
+
+In the command descriptions below, the following data types are used:
+
+| Type   | Description                                                                                             |
+|--------|---------------------------------------------------------------------------------------------------------|
+| DWORD  | A 32-bit integer in hexadecimal format (e.g. `0x1234ABCD`).                                             |
+| QWORD  | A 64-bit integer in hexadecimal format, but prefixed with 0q instead of 0x (e.g. `0q0123456789ABCDEF`). |
+| STRING | An ASCII-encoded string, optionally surrounded by double quotes.                                        |
 
 #### <span id="cmd_adminpw">adminpw</span> (Set administrator password)
 
@@ -317,24 +329,15 @@ currently unknown.
 
 #### <span id="cmd_getfile">getfile</span> (Download file)
 
-<table>
-<colgroup>
-<col width="1%" />
-<col width="99%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>3944-4432</p></th>
-<th><p><span style="font: 14px monospace">getfile name=</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>4531+</p></td>
-<td><p><span style="font: 14px monospace">getfile name= [offset= size=]</span></p></td>
-</tr>
-</tbody>
-</table>
+| 3944+ | `getfile name=STRING` |
+|-------|-----------------------|
+
+Retrieve the entire contents of the named file.
+
+| 4531+ | `getfile name=STRING offset=DWORD size=DWORD` |
+|-------|-----------------------------------------------|
+
+Retrieve `size` bytes starting at `offset` from the named file.
 
 #### <span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)
 
