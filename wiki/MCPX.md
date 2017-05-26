@@ -6,7 +6,6 @@ layout: wiki
 
 The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It
 contains the sound processors (there are 4 of them) and also the USB,
-PCI, IDE, etc, controllers (please remove this disclaimer if I'm right,
-or fix it if I'm wrong.)
+PCI, IDE, etc, controllers.
 
 The MCPX is also the home to the secret [MCPX ROM](/wiki/MCPX_ROM "wikilink").
