@@ -5,7 +5,7 @@
 * [[Chihiro]]
 * [[Xbox]]
 
-* [[Hardware revisions]]
+* [[Hardware Revisions]]
 * [[Motherboard]]
 * [[CPU|CPU (Custom Pentium 3 733 MHz)]]
 * [[Memory]]

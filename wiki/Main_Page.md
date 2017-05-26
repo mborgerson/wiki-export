@@ -12,7 +12,7 @@ Hardware
 
 <!-- -->
 
--   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
+-   [Hardware Revisions](/wiki/Hardware_Revisions "wikilink")
 -   [Motherboard](/wiki/Motherboard "wikilink")
 -   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
 -   [Memory](/wiki/Memory "wikilink")
