@@ -5,7 +5,7 @@
 * [[Chihiro]]
 * [[Xbox]]
 
-* [[Hardware Revisions]]
+* [[Hardware revisions]]
 * [[Motherboard]]
 * [[CPU|CPU (Custom Pentium 3 733 MHz)]]
 * [[Memory]]
@@ -15,7 +15,7 @@
 * [[USB]]
 * [[EEPROM]]
 * [[SMC]]
-* [[Video Encoder]]
+* [[Video encoder]]
 * [[Xbox Game Disc]]
 * [[Xbox Input Devices]]
 * [[NV2A]]

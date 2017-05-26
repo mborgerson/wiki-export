@@ -12,7 +12,7 @@ Hardware
 
 <!-- -->
 
--   [Hardware Revisions](/wiki/Hardware_Revisions "wikilink")
+-   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
 -   [Motherboard](/wiki/Motherboard "wikilink")
 -   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
 -   [Memory](/wiki/Memory "wikilink")
@@ -22,7 +22,7 @@ Hardware
 -   [USB](/wiki/USB "wikilink")
 -   [EEPROM](/wiki/EEPROM "wikilink")
 -   [SMC](/wiki/SMC "wikilink")
--   [Video Encoder](/wiki/Video_Encoder "wikilink")
+-   [Video encoder](/wiki/Video_encoder "wikilink")
 -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
 -   [NV2A](/wiki/NV2A "wikilink")
