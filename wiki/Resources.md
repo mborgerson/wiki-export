@@ -23,6 +23,6 @@ History
 
 -   [3 Xbox Bosses Share Secrets of the Console's Past
     (Video)](https://www.youtube.com/watch?v=rUODlNffWmU)
--   \[<https://www.youtube.com/watch?v=iWQb7LGH71s> Xbox Assembly Line
-    Tour (Video)
+-   [Xbox Assembly Line Tour
+    (Video)](https://www.youtube.com/watch?v=iWQb7LGH71s)
 
