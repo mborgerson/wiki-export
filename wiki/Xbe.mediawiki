@@ -202,7 +202,7 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 
 [[FIFA Soccer 2003]]:
 * DMI and mastering code: EA02302E (Meaning: publisher EA, game number 023, version 02, region Europe)
-* Title ID: 
+* Title ID: {{FIXME}}
 
 [[Halo: Combat Evolved]]:
 * DMI and mastering code: MS00402A (Meaning: publisher Microsoft, game number 004, version 02, region America)
