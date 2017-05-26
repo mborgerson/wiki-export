@@ -22,10 +22,12 @@
 * [[NVNet|Network Controller (NVNet)]]
 * [http://segaretro.org/Sega_Chihiro Chihiro]
 
-== Firmware/Kernel ==
+== System Software ==
 * [[MCPX ROM]]
 * [[BIOS]] / [[Kernel]]
 * [[FATX]] (Filesystem)
+* [[Dashboard]]
+* [[Exploits]]
 
 == Development Kits and Tools ==
 * [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]

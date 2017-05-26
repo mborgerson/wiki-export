@@ -29,12 +29,14 @@ Hardware
 -   [Network Controller (NVNet)](/wiki/NVNet "wikilink")
 -   [Chihiro](http://segaretro.org/Sega_Chihiro)
 
-Firmware/Kernel
+System Software
 ---------------
 
 -   [MCPX ROM](/wiki/MCPX_ROM "wikilink")
 -   [BIOS](/wiki/BIOS "wikilink") / [Kernel](Kernel "wikilink")
 -   [FATX](/wiki/FATX "wikilink") (Filesystem)
+-   [Dashboard](/wiki/Dashboard "wikilink")
+-   [Exploits](/wiki/Exploits "wikilink")
 
 Development Kits and Tools
 --------------------------
