@@ -14,6 +14,7 @@ Hardware
 
 -   [Hardware Revisions](/wiki/Hardware_Revisions "wikilink")
 -   [Motherboard](/wiki/Motherboard "wikilink")
+-   [Power Supply](/wiki/Power_Supply "wikilink")
 -   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
 -   [Memory](/wiki/Memory "wikilink")
 -   [MCPX](/wiki/MCPX "wikilink")

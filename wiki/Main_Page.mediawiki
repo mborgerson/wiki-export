@@ -7,6 +7,7 @@
 
 * [[Hardware Revisions]]
 * [[Motherboard]]
+* [[Power Supply]]
 * [[CPU|CPU (Custom Pentium 3 733 MHz)]]
 * [[Memory]]
 * [[MCPX]]
