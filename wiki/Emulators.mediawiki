@@ -15,12 +15,12 @@ This is a list of known Xbox emulation projects
 |[[XQEMU]]
 |
 |espes
-|Windows
+|Windows/Linux/Mac/Others	
 |
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 |-
 |Maintained
-|LLE/HLE Hybrid
+|HLE
 |[[Cxbx-Reloaded]]
 |
 |SoullessSentinel
@@ -173,7 +173,7 @@ This is a list of known Xbox emulation projects
 |
 |-
 |Maintained
-|LLE with MCPX ROM HLE
+|LLE
 |[http://mamedev.org/ MAME/Chihiro]
 |
 |MAME Team
@@ -182,7 +182,7 @@ This is a list of known Xbox emulation projects
 |
 |-
 |Unknown
-|LLE with MCPX ROM HLE
+|LLE
 |[http://mamedev.org/ MAME/Xbox]
 |
 |MAME Team
@@ -200,7 +200,7 @@ This is a list of known Xbox emulation projects
 |
 |-
 |Dead
-|LLE/HLE Hybrid
+|
 |[http://xenoborg-emu.blogspot.com/ Xenoborg]
 |
 |blueshogun96
