@@ -36,7 +36,7 @@
 * [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
 * [[OpenXDK]]
 * [[Microsoft XDK]]
-* [[Xbox Debug Monitor]]
+** [[Xbox Debug Monitor]]
 
 == Games ==
 * [[:Category:Games|Games]]
