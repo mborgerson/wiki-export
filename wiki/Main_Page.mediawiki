@@ -1,6 +1,10 @@
 {{:Main Page/Header}}
 
 == Hardware ==
+
+* [[Chihiro]]
+* [[Xbox]]
+
 * [[Hardware revisions]]
 * [[CPU|CPU (Custom Pentium 3 733 MHz)]]
 * [[Memory]]
@@ -20,7 +24,6 @@
 ** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Surface Formats]]
 * [[NVNet|Network Controller (NVNet)]]
-* [http://segaretro.org/Sega_Chihiro Chihiro]
 
 == System Software ==
 * [[MCPX ROM]]
@@ -33,9 +36,7 @@
 * [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
 * [[OpenXDK]]
 * [[Microsoft XDK]]
-* [[Chihiro-Tools]]
 * [[Xbox Debug Monitor]]
-* [[Chihiro-Launcher]]
 
 == Games ==
 * [[:Category:Games|Games]]

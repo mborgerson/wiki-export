@@ -7,6 +7,11 @@ layout: wiki
 Hardware
 --------
 
+-   [Chihiro](/wiki/Chihiro "wikilink")
+-   [Xbox](/wiki/Xbox "wikilink")
+
+<!-- -->
+
 -   [Hardware revisions](/wiki/Hardware_revisions "wikilink")
 -   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
 -   [Memory](/wiki/Memory "wikilink")
@@ -27,7 +32,6 @@ Hardware
     -   [NV2A/Pixel Combiner](/wiki/NV2A/Pixel_Combiner "wikilink")
     -   [NV2A/Surface Formats](/wiki/NV2A/Surface_Formats "wikilink")
 -   [Network Controller (NVNet)](/wiki/NVNet "wikilink")
--   [Chihiro](http://segaretro.org/Sega_Chihiro)
 
 System Software
 ---------------
@@ -44,9 +48,7 @@ Development Kits and Tools
 -   [NXDK (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
 -   [OpenXDK](/wiki/OpenXDK "wikilink")
 -   [Microsoft XDK](/wiki/Microsoft_XDK "wikilink")
--   [Chihiro-Tools](/wiki/Chihiro-Tools "wikilink")
 -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
--   [Chihiro-Launcher](/wiki/Chihiro-Launcher "wikilink")
 
 Games
 -----
