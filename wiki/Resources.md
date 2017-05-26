@@ -21,6 +21,8 @@ Random resources about Xbox hacking
 History
 -------
 
--   [3 Xbox Bosses Share Secrets of the Console's
-    Past](https://www.youtube.com/watch?v=rUODlNffWmU)
+-   [3 Xbox Bosses Share Secrets of the Console's Past
+    (Video)](https://www.youtube.com/watch?v=rUODlNffWmU)
+-   \[<https://www.youtube.com/watch?v=iWQb7LGH71s> Xbox Assembly Line
+    Tour (Video)
 
