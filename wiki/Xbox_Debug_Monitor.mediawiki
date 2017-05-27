@@ -269,6 +269,5 @@ Retrieve <code>size</code> bytes starting at <code>offset</code> from the named 
 
 ==External Links==
 
-* [https://bitbucket.org/remnantmods/yelo-neighborhood/ Yelo Neighborhood] – An open-source re-implementation of [[Xbox Neighborhood]] written in C#.
 * [https://github.com/Ernegien/ViridiX ViridiX] – An open-source collection of Xbox debugging libraries and tools written in C#.
 * [https://github.com/docbrown/xbdm-rs xbdm-rs] - An open-source XBDM client written in Rust.
