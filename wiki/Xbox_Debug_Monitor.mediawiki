@@ -151,19 +151,11 @@ In the command descriptions below, the following data types are used:
 
 ====<span id="cmd_adminpw">adminpw</span> (Set administrator password)====
 
-{| class="wikitable"
-! 4039+
-| <code>adminpw none</code>
-| MANAGE
-|}
+{{XBDM command|version=4039+|text=adminpw none|privs=manage}}
 
 Clear the administrator password.
 
-{| class="wikitable"
-! 4039+
-| <code>adminpw passwd=QWORD</code>
-| MANAGE
-|}
+{{XBDM command|version=4039+|text=adminpw passwd=QWORD|privs=manage}}
 
 Set the administrator password to the value of the <code>passwd</code> parameter. Note that <code>passwd</code> is a 64-bit integer instead of a string. The details of the conversion from a string password to a 64-bit integer are currently unknown.
 
@@ -199,17 +191,11 @@ Set the administrator password to the value of the <code>passwd</code> parameter
 
 ====<span id="cmd_getfile">getfile</span> (Download file)====
 
-{| class="wikitable"
-! 3944+
-| <code>getfile name=STRING</code>
-|}
+{{XBDM command|text=getfile name=STRING}}
 
 Retrieve the entire contents of the named file.
 
-{| class="wikitable"
-! 4531+
-| <code>getfile name=STRING offset=DWORD size=DWORD</code>
-|}
+{{XBDM command|text=getfile name=STRING offset=DWORD size=DWORD}}
 
 Retrieve <code>size</code> bytes starting at <code>offset</code> from the named file.
 

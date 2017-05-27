@@ -256,13 +256,7 @@ In the command descriptions below, the following data types are used:
 
 #### <span id="cmd_adminpw">adminpw</span> (Set administrator password)
 
-| 4039+ | `adminpw none` | MANAGE |
-|-------|----------------|--------|
-
 Clear the administrator password.
-
-| 4039+ | `adminpw passwd=QWORD` | MANAGE |
-|-------|------------------------|--------|
 
 Set the administrator password to the value of the `passwd` parameter.
 Note that `passwd` is a 64-bit integer instead of a string. The details
@@ -329,13 +323,7 @@ currently unknown.
 
 #### <span id="cmd_getfile">getfile</span> (Download file)
 
-| 3944+ | `getfile name=STRING` |
-|-------|-----------------------|
-
 Retrieve the entire contents of the named file.
-
-| 4531+ | `getfile name=STRING offset=DWORD size=DWORD` |
-|-------|-----------------------------------------------|
 
 Retrieve `size` bytes starting at `offset` from the named file.
 
