@@ -39,6 +39,7 @@
 * [[OpenXDK]]
 * [[Microsoft XDK]]
 ** [[Xbox Debug Monitor]]
+** [[Xbox Neighborhood]]
 
 == Games ==
 * [[:Category:Games|Games]]

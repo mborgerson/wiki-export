@@ -51,6 +51,7 @@ Development Kits and Tools
 -   [OpenXDK](/wiki/OpenXDK "wikilink")
 -   [Microsoft XDK](/wiki/Microsoft_XDK "wikilink")
     -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
+    -   [Xbox Neighborhood](/wiki/Xbox_Neighborhood "wikilink")
 
 Games
 -----
