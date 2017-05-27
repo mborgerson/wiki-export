@@ -3,6 +3,7 @@ This is a list of known Xbox emulation projects
 {| class="wikitable sortable"
 !Status
 !Approach
+!Chihiro
 !Name
 !Links
 !Initiator
@@ -12,6 +13,7 @@ This is a list of known Xbox emulation projects
 |-
 |Maintained
 |LLE
+|{{Yes}}
 |[[XQEMU]]
 |
 |espes
@@ -21,6 +23,7 @@ This is a list of known Xbox emulation projects
 |-
 |Maintained
 |HLE
+|{{No}}
 |[[Cxbx-Reloaded]]
 |
 |SoullessSentinel
@@ -30,6 +33,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |HLE
+|{{No}}
 |[[Cxbx]]
 |
 |Caustik
@@ -39,6 +43,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |HLE
+|{{No}}
 |Dxbx
 |[http://dxbx-emu.com][https://github.com/PatrickvL/Dxbx/]
 |ShadowTj
@@ -48,6 +53,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[https://github.com/impeachgod/Dirtbox Dirtbox]
 |
 |
@@ -57,6 +63,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |HLE
+|{{No}}
 |[https://sourceforge.net/p/ironbabel/code/HEAD/tree/trunk/Box/Xbox/ IronBabel]
 |
 |daeken
@@ -66,6 +73,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |HLE
+|{{No}}
 |[https://github.com/daeken/Steelbreeze Steelbreeze]
 |
 |daeken
@@ -75,6 +83,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |LLE/HLE Hybrid
+|{{No}}
 |[https://github.com/daeken/Zookeeper Zookeeper]
 |
 |daeken
@@ -84,6 +93,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[http://ngemu.com/threads/.154342/ XbeNext]
 |
 |LoveMHz
@@ -93,6 +103,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |HLE
+|{{No}}
 |[http://ngemu.com/forums/.65/ Xeon]
 |
 |
@@ -102,6 +113,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[http://ngemu.com/threads/.105210/ XProject]
 |
 |
@@ -111,6 +123,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[https://code.google.com/p/xbem xbem]
 |
 |
@@ -120,6 +133,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |LLE/HLE Hybrid
+|{{Yes}}
 |Hackbox
 |
 |JayFoxRox
@@ -129,6 +143,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |LLE
+|{{No}}
 |[https://github.com/phire/kvmbox kvmbox]
 |
 |phire
@@ -138,6 +153,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |HLE
+|{{No}}
 |[https://github.com/Gabriel-Maldonado/XboxHLE XboxHLE]
 |
 |
@@ -147,6 +163,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[https://github.com/bjh83/boombox boombox]
 |
 |
@@ -156,6 +173,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[https://github.com/docbrown/vxb vxb]
 |
 |
@@ -165,6 +183,7 @@ This is a list of known Xbox emulation projects
 |-
 |Unknown
 |Unknown
+|{{No}}
 |[https://github.com/quantumdude836/exciplex exciplex]
 |
 |
@@ -174,24 +193,17 @@ This is a list of known Xbox emulation projects
 |-
 |Maintained
 |LLE
-|[http://mamedev.org/ MAME/Chihiro]
+|{{Yes}}
+|[http://mamedev.org/ MAME]
 |
 |MAME Team
 |Windows/Linux/Mac/Others
 |
-|
-|-
-|Unknown
-|LLE
-|[http://mamedev.org/ MAME/Xbox]
-|
-|MAME Team
-|Windows/Linux/Mac/Others
-|
-|Does this exist yet?{{citation needed}}
+|Focus seems to be on Chihiro emulation. Does Xbox (non-Chihiro) emulation exist yet?{{citation needed}}
 |-
 |Dead
 |Unknown
+|{{No}}
 |[https://github.com/monocasa/xbvm XBVM]
 |
 |
@@ -201,6 +213,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |
+|{{No}}
 |[http://xenoborg-emu.blogspot.com/ Xenoborg]
 |
 |blueshogun96
@@ -210,6 +223,7 @@ This is a list of known Xbox emulation projects
 |-
 |Dead
 |Unknown
+|{{No}}
 |[[Xbox 360 Backward Compatibility]]
 |
 |Microsoft
