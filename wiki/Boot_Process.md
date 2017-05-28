@@ -177,8 +177,8 @@ Certain parts are still missing
 
 ### MTRR Setup
 
-The MTRR (Memory Type Range Register) will be setup (using `wrmsr`) in
-the following way:
+First, the cache is disabled. Then, the MTRR (Memory Type Range
+Register) will be setup (using `wrmsr`) in the following way:
 
 | MTRR (ecx)            | High value (edx)           | Low value (eax) | Notes                   |
 |-----------------------|----------------------------|-----------------|-------------------------|
@@ -191,6 +191,8 @@ the following way:
 | colspan = “3” | ...   |
 | 0x20F                 | 0x00000000                 | 0x00000000      |
 | 0x2FF                 | 0x00000000                 | 0x00000800      |                         |
+
+Once the MTRR have been written, the cache is enabled.
 
 ### GDT setup
 

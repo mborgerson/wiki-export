@@ -168,7 +168,8 @@ Certain parts are still missing
 
 === MTRR Setup ===
 
-The MTRR (Memory Type Range Register) will be setup (using <code>wrmsr</code>) in the following way:
+First, the cache is disabled.{{FIXME}}
+Then, the MTRR (Memory Type Range Register) will be setup (using <code>wrmsr</code>) in the following way:
 
 {| class="wikitable"
 ! MTRR (ecx) !! High value (edx) !! Low value (eax) !! Notes
@@ -191,6 +192,8 @@ The MTRR (Memory Type Range Register) will be setup (using <code>wrmsr</code>) i
 |-
 |0x2FF || 0x00000000 || 0x00000800 ||
 |}
+
+Once the MTRR have been written, the cache is enabled.{{FIXME}}
 
 === GDT setup ===
 
