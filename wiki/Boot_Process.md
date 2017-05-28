@@ -207,8 +207,7 @@ Now the 2BL will set up the segment registers and stack:
 | fs       | 0x0000     |              |
 | gs       | 0x0000     |              |
 
-Self-copy
----------
+### Self-copy
 
 Now the 2BL copies itself from 0x00900000 to memory address 0x00400000.
 
