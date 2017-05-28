@@ -196,22 +196,83 @@ Once the MTRR have been written, the cache is enabled.
 
 ### Register setup
 
-Now the BIOS will set up the segment registers and stack:
+Now the 2BL will set up the segment registers and stack:
 
 | Register | Value      | Notes        |
 |----------|------------|--------------|
 | ds       | 0x0010     | Data segment |
 | es       | 0x0010     |
 | ss       | 0x0010     |
-| esp      | 0x80400000 |              |
+| esp      | 0x00400000 |              |
 | fs       | 0x0000     |              |
 | gs       | 0x0000     |              |
 
-### GDT setup
+Self-copy
+---------
+
+Now the 2BL copies itself from 0x00900000 to memory address 0x00400000.
 
 ### Paging
 
-### Kernel decryption
+Now a PDE is prepared at address 0x0000F000:
+
+| Offset in PDE | Value | Notes |
+|---------------|-------|-------|
+||
+
+Once the PDE is set up, it is activated by enabling the PG and WP bits
+in CR0. Additionally, the same `or` instruction is used to enable the NE
+bit in cr0.
+
+esp is now also reloaded to point at the higher mapping. It will be set
+to 0x80400000 (absolute value, independent of previous esp value).
+
+### Disabling of the MCPX ROM
+
+### SMC Watchdog handling
+
+### Memory cleanup
+
+Writes 0xCC repeatedly from to .
+
+### Weird stuff 1
+
+### Weird stuff 2
+
+### Weird stuff 3
+
+### Loading the kernel
+
+#### Kernel-copy
+
+The Kernel is now copied into RAM.
+
+#### Kernel decryption
+
+The Kernel is decrypted in-place. The 2BL will copy the kernel
+decrytpion key (16 bytes) from offset 32 of an array of 3 keys:
+
+| Offset | Use             |
+|--------|-----------------|
+| 0      | EEPROM key      |
+| 16     | Certificate key |
+| 32     | Kernel key      |
+
+#### Kernel decompression
+
+The Kernel is decompressed directly to 0x80010000 where it will reside
+until a full system shutdown.
+
+### Running the kernel
+
+The xboxkrnl.exe header at 0x8001000 is checked. If it is invalid, . If
+it is valid, the kernel entry point is looked up from the PE optional
+header. The hardcoded image base of 0x8001000 is added to the entry
+point. The entry-point is now being called. Argumnts are passed on the
+stack, from right to left. The first argument is a commandline string
+loaded from memory address 0x80400000. It is an empty string for retail
+BIOS. A pointer to the previously mentioned array of 3 keys is passed as
+the second argument.
 
 Kernel
 ------
