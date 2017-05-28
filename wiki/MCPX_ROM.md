@@ -25,8 +25,9 @@ execution has started, the Xbox executes the following codes:
     out dx,eax
 
 This turns off the MCPX ROM, making it invisible to anything trying to
-read it. See [MCPX ROM Dumping](/wiki/MCPX_ROM_Dumping "wikilink") for more
-details.
+read it.
+
+See [MCPX exploits](/wiki/Exploits#MCPX "wikilink") for more details.
 
 MCPX Common
 -----------

@@ -14,7 +14,9 @@ mov dx,0xcf8
 out dx,eax
 </pre>
 
-This turns off the MCPX ROM, making it invisible to anything trying to read it. See [[MCPX ROM Dumping]] for more details.
+This turns off the MCPX ROM, making it invisible to anything trying to read it.
+
+See [[Exploits#MCPX|MCPX exploits]] for more details.
 
 == MCPX Common ==
 
