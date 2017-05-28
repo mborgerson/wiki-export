@@ -273,13 +273,6 @@ texm3x2pad</p></td>
 </tbody>
 </table>
 
-Also known from nvidia docs:
-
--   texm3x3pad \[stage 1, stage 2\]
--   texm3x3spec \[stage 3\]
--   texm3x3vspec \[stage 3\]
--   texm3x3tex \[stage 3\]
-
 Debugging
 ---------
 

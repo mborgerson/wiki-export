@@ -241,12 +241,6 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |}
 
-Also known from nvidia docs:
-* texm3x3pad [stage 1, stage 2]
-* texm3x3spec [stage 3]
-* texm3x3vspec [stage 3]
-* texm3x3tex [stage 3]
-
 == Debugging ==
 
 PIX from the Microsoft XDK provides great debugging capabilities.
