@@ -342,31 +342,46 @@ Now paging is activated by enabling the PG and WP bits in CR0.
 Additionally, the same `or` instruction is used to enable the NE bit in
 cr0.
 
-esp is now also reloaded to point at the higher mapping. It will be set
-to 0x80400000 (absolute value, independent of previous esp value).
+### 2BL main
 
-### Disabling of the MCPX ROM
+esp is now also reloaded to point at the relocated address. It will be
+set to 0x80400000 (absolute value, independent of previous esp value).
+The 2BL will now `call` into the relocated 2BL code somewhere near
+0x00400000.
 
-### SMC Watchdog handling
+#### Disabling of the MCPX ROM
 
-### Memory cleanup
+#### SMC handling
 
-Fills memory with 0xCC from 0x80090000 to 0x80095FFF. These are the 24
-kiB where the 2BL was stored previously.
+The [SMC](/wiki/SMC "wikilink") has a watchdog functionality which must be
+turned off. This is done by querying the SMC registers 0x1C - 0x1F. If
+all of them are 0x00 the 2BL will shutdown the system. If this is not
+the case, the bootloader calculates the watchdog challenge response and
+sends it to SMC registers 0x20 and 0x21.
 
-### Weird stuff 1
+Additionally, the 2BL will set SMC register 0x01 to 0 (which resets the
+cursor position for reading the SMC revision information).
 
-### Weird stuff 2
+#### Weird stuff 0
 
-### Weird stuff 3
+#### Memory cleanup
 
-### Loading the kernel
+The 2BL fills memory with 0xCC from 0x80090000 to 0x80095FFF. These are
+the 24 kiB where the 2BL was stored previously.
 
-#### Kernel-copy
+#### Weird stuff 1
+
+#### Weird stuff 2
+
+#### Weird stuff 3
+
+#### Loading the kernel
+
+##### Kernel-copy
 
 The Kernel is now copied into RAM.
 
-#### Kernel decryption
+##### Kernel decryption
 
 The 2BL will copy the kernel decrytpion key (16 bytes) from offset 32 of
 an array of 3 keys:
@@ -379,12 +394,12 @@ an array of 3 keys:
 
 The Kernel is then decrypted in-place using RC4.
 
-#### Kernel decompression
+##### Kernel decompression
 
 The Kernel is decompressed directly to 0x80010000 where it will reside
 until a full system shutdown.
 
-### Running the kernel
+#### Running the kernel
 
 The xboxkrnl.exe header at 0x8001000 is checked. If it is invalid, . If
 it is valid, the kernel entry point is looked up from the PE optional
