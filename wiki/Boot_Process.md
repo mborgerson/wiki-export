@@ -122,12 +122,12 @@ Preparing for decryption. This gets the key from memory location
 #### Stage 3
 
 Perform the decryption. The MCPX reads the 2BL from 0xFFFF9E00 and
-decrypts it to 0x90000. It is 24K in size.
+decrypts it to 0x00090000. It is 24KiB in size.
 
     void decrypt() {
-        uint32_t stack_pointer = 0x8f000;
+        uint32_t stack_pointer = 0x0008F000;
         uint32_t encrypted = 0xFFFF9E00;
-        uint32_t decrypted = 0x90000;
+        uint32_t decrypted = 0x00090000;
 
         uint8_t a, b, j, i = 0;
 
