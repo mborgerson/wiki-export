@@ -209,7 +209,8 @@ Now the 2BL will set up the segment registers and stack:
 
 ### Self-copy
 
-Now the 2BL copies itself from 0x00900000 to memory address 0x00400000.
+Now the 2BL copies itself (24 kiB) from 0x00900000 to memory address
+0x00400000.
 
 ### Paging
 
