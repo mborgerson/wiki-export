@@ -4,12 +4,16 @@ permalink: wiki/Boot_Process/
 layout: wiki
 ---
 
-If we wish to HLE the MCPX, then there are certain things that can be
-ignored, for example, getting the CPU to 32 bit protected mode and
-enabling caching.
+Overview
+--------
 
-Xcodes
-------
+MCPX
+----
+
+Certain things are still missing, for example, getting the CPU to 32 bit
+protected mode and enabling caching.
+
+### Xcodes
 
 The xcode interpreter is common through both versions of the MCPX ROM.
 The high level interpretation of the MCPX ROM might look like this:
@@ -78,12 +82,11 @@ The high level interpretation of the MCPX ROM might look like this:
         }
     }
 
-RC4 Decryption of the 2BL
--------------------------
+### RC4 Decryption of the 2BL
 
 Decryption of the 2BL seems to happen in 4 stages.
 
-### Stage 1
+#### Stage 1
 
 Initialising the working space. The MCPX ROM seems to just write 1, 2,
 3, 4.... 253, 254, 255 in memory addresses 0x8f000 to 0x850FF. This
@@ -97,7 +100,7 @@ might look something like:
         }
     }
 
-### Stage 2
+#### Stage 2
 
 Preparing for decryption. This gets the key from memory location
 0xFFFFFFA5 and starts preparing and environment for decryption of the
@@ -116,7 +119,7 @@ Preparing for decryption. This gets the key from memory location
         }
     }
 
-### Stage 3
+#### Stage 3
 
 Perform the decryption. The MCPX reads the 2BL from 0xFFFF9E00 and
 decrypts it to 0x90000. It is 24K in size.
@@ -147,7 +150,7 @@ decrypts it to 0x90000. It is 24K in size.
         }
     }
 
-### Stage 4
+#### Stage 4
 
 Verification. Finally the MCPX reads a string from the un-encrypted 2BL
 and compares it to a magic number. If it matches, all was successful,
@@ -167,9 +170,29 @@ and we jump to the start of the 2BL to start decrypting the kernel.
 The RC4 algorithm was included as part of MCPX 1.0 and seems to work
 fine with BIOS versions 3944, 4034, and 4134.
 
+2BL
+---
+
+Certain parts are still missing
+
+### GDT setup
+
+### Paging
+
+### Kernel decryption
+
+Kernel
+------
+
+### Startup animation
+
+### Kernel Re-initialization
+
 References
 ----------
 
+-   [Understanding the Xbox boot
+    process](http://hackspot.net/XboxBlog/?p=1)
 -   [Deconstructing the Boot
     ROM](https://mborgerson.com/deconstructing-the-xbox-boot-rom) (I
     cannot express enough just how helpful this page is)
