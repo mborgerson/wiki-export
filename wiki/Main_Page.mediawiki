@@ -30,6 +30,7 @@
 == System Software ==
 * [[MCPX ROM]]
 * [[BIOS]] / [[Kernel]]
+** [[Boot Process]]
 * [[FATX]] (Filesystem)
 * [[Dashboard]]
 * [[Exploits]]
