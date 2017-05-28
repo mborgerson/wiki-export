@@ -15,9 +15,10 @@ compressed and encrypted form.
 
 On a standard Xbox, the BIOS image is stored on a 1MB non-volatile
 <abbr title="Thin Small Outline Package">TSOP</abbr> ROM chip and
-connected to the MCPX via the <abbr title="Low Pin Count">LPC</abbr>
-bus. The image is actually 256KB, duplicated 4 times to fill the 1MB ROM
-chip. You can verify this by running:
+connected to the [MCPX](/wiki/MCPX "wikilink") via the
+<abbr title="Low Pin Count">LPC</abbr> bus. The image is actually 256KB,
+duplicated 4 times to fill the 1MB ROM chip. You can verify this by
+running:
 
     $ split -n 4 xbox.bin 
     $ md5sum xa*
