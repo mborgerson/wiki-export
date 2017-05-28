@@ -227,7 +227,7 @@ Now a PDE is prepared at address 0x8000F000:
 <tr class="odd">
 <td><p>0x000</p></td>
 <td><p>0x000000E3</p></td>
-<td><p>Identity mapping of first 256MiB: 0x00000000 and 0x80000000 will both map to physical page 0<br />
+<td><p>Identity maps the first 256MiB of RAM: 0x00000000 and 0x80000000 will both map to physical page 0<br />
 <br />
 0xE3: Flags:<br />
 * 0x80: 4 MiB page<br />
@@ -293,7 +293,7 @@ Now a PDE is prepared at address 0x8000F000:
 <tr class="even">
 <td><p>0xFFC</p></td>
 <td><p>0xFFC000E3</p></td>
-<td><p>Maps the upper portion of the Flash (4 MiB page) to address 0xC0000000<br />
+<td><p>Identity maps the upper portion of the Flash (4 MiB page) to address 0xFFC00000<br />
 <br />
 0xE3: Flags:<br />
 * 0x80: 4 MiB page<br />

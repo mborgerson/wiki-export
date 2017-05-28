@@ -231,7 +231,7 @@ Now a PDE is prepared at address 0x8000F000:
 {| class="wikitable"
 ! Offset in PDE !! Value !! Notes
 |-
-|0x000 || 0x000000E3 || rowspan="7" | Identity mapping of first 256MiB: 0x00000000 and 0x80000000 will both map to physical page 0 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
+|0x000 || 0x000000E3 || rowspan="7" | Identity maps the first 256MiB of RAM: 0x00000000 and 0x80000000 will both map to physical page 0 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
 |-
 |0x800 || 0x000000E3
 |-
@@ -257,7 +257,7 @@ Now a PDE is prepared at address 0x8000F000:
 |-
 |0xC00 || 0x0000F063 || Maps the PDE (4 kiB page) to address 0xC0000000 <br><br> 0x63: Flags: <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
 |-
-|0xFFC || 0xFFC000E3 || Maps the upper portion of the Flash (4 MiB page) to address 0xC0000000 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
+|0xFFC || 0xFFC000E3 || Identity maps the upper portion of the Flash (4 MiB page) to address 0xFFC00000 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
 |-
 |0xFD0 || 0xFD0000FB || rowspan="4" | Maps 16 MiB for the GPU control registers <br><br> 0xFB: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x10: Cache disabled <br> * 0x08: Write-Through caching <br> * 0x02: Read/Write <br> * 0x01: Present
 |-
