@@ -245,7 +245,7 @@ Now a PDE is prepared at address 0x8000F000:
 |-
 |0x0FC || 0x0FC000E3
 |-
-|0x900 || 0x00000000 || rowspan="5" | Clearing the rest of the pages
+|0x900 || 0x00000000 || rowspan="5" | Unmapping the rest of the pages
 |-
 |0x100 || 0x00000000
 |-

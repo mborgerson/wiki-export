@@ -262,7 +262,7 @@ Now a PDE is prepared at address 0x8000F000:
 <tr class="even">
 <td><p>0x900</p></td>
 <td><p>0x00000000</p></td>
-<td><p>Clearing the rest of the pages</p></td>
+<td><p>Unmapping the rest of the pages</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x100</p></td>
