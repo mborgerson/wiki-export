@@ -285,7 +285,7 @@ esp is now also reloaded to point at the higher mapping. It will be set to 0x804
 
 === Memory cleanup ===
 
-Writes 0xCC repeatedly from {{FIXME}} to {{FIXME}}.
+Writes 0xCC repeatedly from 0x80090000 to 0x80095FFF. These are the 24 kiB where the 2BL was stored previously.
 
 === Weird stuff 1{{FIXME}} ===
 

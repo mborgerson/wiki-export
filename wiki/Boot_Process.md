@@ -350,7 +350,8 @@ to 0x80400000 (absolute value, independent of previous esp value).
 
 ### Memory cleanup
 
-Writes 0xCC repeatedly from to .
+Writes 0xCC repeatedly from 0x80090000 to 0x80095FFF. These are the 24
+kiB where the 2BL was stored previously.
 
 ### Weird stuff 1
 
