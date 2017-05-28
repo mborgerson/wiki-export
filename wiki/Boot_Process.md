@@ -214,7 +214,7 @@ Now the 2BL copies itself (24 kiB) from 0x00900000 to memory address
 
 ### Paging
 
-Now a PDE is prepared at address 0x8000F000:
+Now a PDE is prepared at address 0x0000F000:
 
 <table>
 <thead>
