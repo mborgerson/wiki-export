@@ -249,14 +249,16 @@ The Kernel is now copied into RAM.
 
 #### Kernel decryption
 
-The Kernel is decrypted in-place. The 2BL will copy the kernel
-decrytpion key (16 bytes) from offset 32 of an array of 3 keys:
+The 2BL will copy the kernel decrytpion key (16 bytes) from offset 32 of
+an array of 3 keys:
 
 | Offset | Use             |
 |--------|-----------------|
 | 0      | EEPROM key      |
 | 16     | Certificate key |
 | 32     | Kernel key      |
+
+The Kernel is then decrypted in-place using RC4.
 
 #### Kernel decompression
 

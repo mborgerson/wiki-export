@@ -259,7 +259,6 @@ The Kernel is now copied into RAM.
 
 ==== Kernel decryption ====
 
-The Kernel is decrypted in-place.
 The 2BL will copy the kernel decrytpion key (16 bytes) from offset 32 of an array of 3 keys:
 
 {| class="wikitable"
@@ -271,6 +270,8 @@ The 2BL will copy the kernel decrytpion key (16 bytes) from offset 32 of an arra
 |-
 | 32 || Kernel key
 |}
+
+The Kernel is then decrypted in-place using RC4.
 
 ==== Kernel decompression ====
 
