@@ -42,6 +42,7 @@ It is also not yet known how exactly conversion or negation of these types would
 {|class="wikitable"
 !ID
 !Name
+!D3D name
 !GL Name
 !Stage 1
 !Stage 2
@@ -50,7 +51,8 @@ It is also not yet known how exactly conversion or negation of these types would
 !Notes
 |-
 |0x00
-|PS_TEXTUREMODES_NONE<br>texcoord?{{citation needed}}
+|PS_TEXTUREMODES_NONE
+|
 |NONE
 |{{yes}}
 |{{yes}}
@@ -59,7 +61,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x01
-|PS_TEXTUREMODES_PROJECT2D<br>tex
+|PS_TEXTUREMODES_PROJECT2D
+|tex
 |TEXTURE_2D
 |{{yes}}
 |{{yes}}
@@ -69,6 +72,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x02
 |PS_TEXTUREMODES_PROJECT3D
+|tex
 |TEXTURE_3D
 |{{yes}}
 |{{yes}}
@@ -78,6 +82,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x03
 |PS_TEXTUREMODES_CUBEMAP
+|tex
 |TEXTURE_CUBE_MAP_ARB
 |{{yes}}
 |{{yes}}
@@ -86,7 +91,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x04
-|PS_TEXTUREMODES_PASSTHRU<br>texcoord?{{citation needed}}
+|PS_TEXTUREMODES_PASSTHRU
+|texcoord
 |PASS_THROUGH_NV
 |{{yes}}
 |{{yes}}
@@ -95,7 +101,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x05
-|PS_TEXTUREMODES_CLIPPLANE<br>texkill
+|PS_TEXTUREMODES_CLIPPLANE
+|texkill
 |CULL_FRAGMENT_NV
 |{{yes}}
 |{{yes}}
@@ -104,7 +111,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x06
-|PS_TEXTUREMODES_BUMPENVMAP<br>texbem
+|PS_TEXTUREMODES_BUMPENVMAP
+|texbem
 |OFFSET_TEXTURE_2D_NV
 |{{no}}
 |{{yes}}
@@ -113,7 +121,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x07
-|PS_TEXTUREMODES_BUMPENVMAP_LUM<br>texbeml
+|PS_TEXTUREMODES_BUMPENVMAP_LUM
+|texbeml
 |OFFSET_TEXTURE_2D_SCALE_NV
 |{{no}}
 |{{yes}}
@@ -122,7 +131,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x08
-|PS_TEXTUREMODES_BRDF<br>texm3x2tex
+|PS_TEXTUREMODES_BRDF
+|texbrdf
 |
 |{{no}}
 |{{no}}
@@ -131,7 +141,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x09
-|PS_TEXTUREMODES_DOT_ST<br>texm3x2pad?{{citation needed}}
+|PS_TEXTUREMODES_DOT_ST
+|texm3x2tex?{{citation needed}}
 |DOT_PRODUCT_NV{{citation needed}}
 |{{no}}
 |{{no}}
@@ -140,7 +151,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x0A
-|PS_TEXTUREMODES_DOT_ZW<br>texm3x2tex?{{citation needed}}
+|PS_TEXTUREMODES_DOT_ZW
+|texm3x2tex?{{citation needed}}
 |DOT_PRODUCT_NV{{citation needed}}
 |{{no}}
 |{{no}}
@@ -150,6 +162,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0B
 |PS_TEXTUREMODES_DOT_RFLCT_DIFF
+|texm3x3diff
 |DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV{{citation needed}}
 |{{no}}
 |{{no}}
@@ -159,6 +172,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0C
 |PS_TEXTUREMODES_DOT_RFLCT_SPEC
+|texm3x3spec
 |DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV{{citation needed}}
 |{{no}}
 |{{no}}
@@ -168,6 +182,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0D
 |PS_TEXTUREMODES_DOT_STR_3D
+|texm3x3tex
 |DOT_PRODUCT_TEXTURE_3D_NV
 |{{no}}
 |{{no}}
@@ -177,6 +192,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0E
 |PS_TEXTUREMODES_DOT_STR_CUBE
+|texm3x3vspec
 |DOT_PRODUCT_REFLECT_CUBE_MAP_NV
 |{{no}}
 |{{no}}
@@ -185,7 +201,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x0F
-|PS_TEXTUREMODES_DPNDNT_AR<br>texreg2ar
+|PS_TEXTUREMODES_DPNDNT_AR
+|texreg2ar
 |DEPENDENT_AR_TEXTURE_2D_NV
 |{{no}}
 |{{yes}}
@@ -194,7 +211,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |-
 |0x10
-|PS_TEXTUREMODES_DPNDNT_GB<br>texreg2gb
+|PS_TEXTUREMODES_DPNDNT_GB
+|texreg2gb
 |DEPENDENT_GB_TEXTURE_2D_NV
 |{{no}}
 |{{yes}}
@@ -204,6 +222,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x11
 |PS_TEXTUREMODES_DOTPRODUCT
+|texm3x3pad<br>texm3x2pad
 |DOT_PRODUCT_NV
 |{{no}}
 |{{yes}}
@@ -213,6 +232,7 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x12
 |PS_TEXTUREMODES_DOT_RFLCT_SPEC_CONST
+|texm3x3spec
 |DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV
 |{{no}}
 |{{no}}
