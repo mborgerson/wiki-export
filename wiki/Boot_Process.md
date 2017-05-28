@@ -279,12 +279,67 @@ Now a PDE is prepared at address 0x8000F000:
 <td><p>0x7FC</p></td>
 <td><p>0x00000000</p></td>
 </tr>
+<tr class="odd">
+<td><p>0xC00</p></td>
+<td><p>0x0000F063</p></td>
+<td><p>Maps the PDE (4 kiB page) to address 0xC0000000<br />
+<br />
+0x63: Flags:<br />
+* 0x40: Marked as previously written (Dirty)<br />
+* 0x20: Marked as previously accessed<br />
+* 0x02: Read/Write<br />
+* 0x01: Present</p></td>
+</tr>
+<tr class="even">
+<td><p>0xFFC</p></td>
+<td><p>0xFFC000E3</p></td>
+<td><p>Maps the upper portion of the Flash (4 MiB page) to address 0xC0000000<br />
+<br />
+0xE3: Flags:<br />
+* 0x80: 4 MiB page<br />
+* 0x40: Marked as previously written (Dirty)<br />
+* 0x20: Marked as previously accessed<br />
+* 0x02: Read/Write<br />
+* 0x01: Present</p></td>
+</tr>
+<tr class="odd">
+<td><p>0xFD0</p></td>
+<td><p>0xFD0000FB</p></td>
+<td><p>Maps 16 MiB for the GPU control registers<br />
+<br />
+0xFB: Flags:<br />
+* 0x80: 4 MiB page<br />
+* 0x40: Marked as previously written (Dirty)<br />
+* 0x20: Marked as previously accessed<br />
+* 0x10: Cache disabled<br />
+* 0x08: Write-Through caching<br />
+* 0x02: Read/Write<br />
+* 0x01: Present</p></td>
+</tr>
+<tr class="even">
+<td><p>0xFD4</p></td>
+<td><p>0xFD4000FB</p></td>
+</tr>
+<tr class="odd">
+<td><p>0xFD8</p></td>
+<td><p>0xFD8000FB</p></td>
+</tr>
+<tr class="even">
+<td><p>0xFDC</p></td>
+<td><p>0xFDC000FB</p></td>
+</tr>
 </tbody>
 </table>
 
-Once the PDE is set up, it is activated by enabling the PG and WP bits
-in CR0. Additionally, the same `or` instruction is used to enable the NE
-bit in cr0.
+After setting up the PDE, the PAT is set up using `wrmsr`:
+
+CR4 is touched
+
+CR3 is touched
+
+Now paging is activated by enabling the PG and WP bits in CR0.
+Additionally, the same `or` instruction is used to enable the NE bit in
+cr0.
 
 esp is now also reloaded to point at the higher mapping. It will be set
 to 0x80400000 (absolute value, independent of previous esp value).
