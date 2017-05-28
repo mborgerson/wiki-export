@@ -195,6 +195,31 @@ Then, the MTRR (Memory Type Range Register) will be setup (using <code>wrmsr</co
 
 Once the MTRR have been written, the cache is enabled.{{FIXME}}
 
+=== Register setup ===
+
+Now the BIOS will set up the segment registers{{FIXME|reason=why?!}} and stack:
+
+{| class="wikitable"
+! Register !! Value !! Notes
+|-
+|ds || 0x0010 || rowspan="3" | Data segment{{citation needed}}
+
+|-
+|es || 0x0010
+
+|-
+|ss || 0x0010
+
+|-
+|esp || 0x80400000 ||
+
+|-
+|fs || 0x0000 ||
+
+|-
+|gs || 0x0000 ||
+|}
+
 === GDT setup ===
 
 === Paging ===

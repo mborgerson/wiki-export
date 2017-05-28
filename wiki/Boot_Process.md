@@ -194,6 +194,19 @@ Register) will be setup (using `wrmsr`) in the following way:
 
 Once the MTRR have been written, the cache is enabled.
 
+### Register setup
+
+Now the BIOS will set up the segment registers and stack:
+
+| Register | Value      | Notes        |
+|----------|------------|--------------|
+| ds       | 0x0010     | Data segment |
+| es       | 0x0010     |
+| ss       | 0x0010     |
+| esp      | 0x80400000 |              |
+| fs       | 0x0000     |              |
+| gs       | 0x0000     |              |
+
 ### GDT setup
 
 ### Paging
