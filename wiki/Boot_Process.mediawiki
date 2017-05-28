@@ -226,11 +226,34 @@ Now the 2BL copies itself from 0x00900000 to memory address 0x00400000.
 
 === Paging ===
 
-Now a PDE is prepared at address 0x0000F000{{FIXME}}:
+Now a PDE is prepared at address 0x8000F000{{FIXME}}:
 
 {| class="wikitable"
 ! Offset in PDE !! Value !! Notes
 |-
+|0x000 || 0x000000E3 || rowspan="7" | Identity mapping of first 256MiB: 0x00000000 and 0x80000000 will both map to physical page 0 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
+|-
+|0x800 || 0x000000E3
+|-
+|0x004 || 0x004000E3
+|-
+|0x804 || 0x004000E3
+|-
+| colspan="2" | ...
+|-
+|0x8FC || 0x0FC000E3
+|-
+|0x0FC || 0x0FC000E3
+|-
+|0x900 || 0x00000000 || rowspan="5" | Clearing the rest of the pages
+|-
+|0x100 || 0x00000000
+|-
+| colspan="2" | ...
+|-
+|0xFFC || 0x00000000
+|-
+|0x7FC || 0x00000000
 |}
 
 Once the PDE is set up, it is activated by enabling the PG and WP bits in CR0.

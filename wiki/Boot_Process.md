@@ -213,11 +213,74 @@ Now the 2BL copies itself from 0x00900000 to memory address 0x00400000.
 
 ### Paging
 
-Now a PDE is prepared at address 0x0000F000:
+Now a PDE is prepared at address 0x8000F000:
 
-| Offset in PDE | Value | Notes |
-|---------------|-------|-------|
-||
+<table>
+<thead>
+<tr class="header">
+<th><p>Offset in PDE</p></th>
+<th><p>Value</p></th>
+<th><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>0x000</p></td>
+<td><p>0x000000E3</p></td>
+<td><p>Identity mapping of first 256MiB: 0x00000000 and 0x80000000 will both map to physical page 0<br />
+<br />
+0xE3: Flags:<br />
+* 0x80: 4 MiB page<br />
+* 0x40: Marked as previously written (Dirty)<br />
+* 0x20: Marked as previously accessed<br />
+* 0x02: Read/Write<br />
+* 0x01: Present</p></td>
+</tr>
+<tr class="even">
+<td><p>0x800</p></td>
+<td><p>0x000000E3</p></td>
+</tr>
+<tr class="odd">
+<td><p>0x004</p></td>
+<td><p>0x004000E3</p></td>
+</tr>
+<tr class="even">
+<td><p>0x804</p></td>
+<td><p>0x004000E3</p></td>
+</tr>
+<tr class="odd">
+<td><p>...</p></td>
+</tr>
+<tr class="even">
+<td><p>0x8FC</p></td>
+<td><p>0x0FC000E3</p></td>
+</tr>
+<tr class="odd">
+<td><p>0x0FC</p></td>
+<td><p>0x0FC000E3</p></td>
+</tr>
+<tr class="even">
+<td><p>0x900</p></td>
+<td><p>0x00000000</p></td>
+<td><p>Clearing the rest of the pages</p></td>
+</tr>
+<tr class="odd">
+<td><p>0x100</p></td>
+<td><p>0x00000000</p></td>
+</tr>
+<tr class="even">
+<td><p>...</p></td>
+</tr>
+<tr class="odd">
+<td><p>0xFFC</p></td>
+<td><p>0x00000000</p></td>
+</tr>
+<tr class="even">
+<td><p>0x7FC</p></td>
+<td><p>0x00000000</p></td>
+</tr>
+</tbody>
+</table>
 
 Once the PDE is set up, it is activated by enabling the PG and WP bits
 in CR0. Additionally, the same `or` instruction is used to enable the NE
