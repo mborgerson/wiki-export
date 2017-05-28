@@ -175,6 +175,23 @@ fine with BIOS versions 3944, 4034, and 4134.
 
 Certain parts are still missing
 
+### MTRR Setup
+
+The MTRR (Memory Type Range Register) will be setup (using `wrmsr`) in
+the following way:
+
+| MTRR (ecx)            | High value (edx)           | Low value (eax) | Notes                   |
+|-----------------------|----------------------------|-----------------|-------------------------|
+| 0x200                 | 0x00000000                 | 0x00000006      |                         |
+| rowspan = “2” | 0x201 | rowspan = “2” | 0x0000000F | 0xFC000800      | *(For 64 MiB RAM BIOS)* |
+| 0xF8000800            | (*For 128 MiB RAM BIOS*)   |
+| 0x202                 | 0x00000000                 | 0xFFF80005      |                         |
+| 0x203                 | 0x0000000F                 | 0xFFF80800      |                         |
+| 0x204                 | 0x00000000                 | 0x00000000      | Clear all unused MTRR   |
+| colspan = “3” | ...   |
+| 0x20F                 | 0x00000000                 | 0x00000000      |
+| 0x2FF                 | 0x00000000                 | 0x00000800      |                         |
+
 ### GDT setup
 
 ### Paging
