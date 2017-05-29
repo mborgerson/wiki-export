@@ -4,6 +4,72 @@ permalink: wiki/Kernel/
 layout: wiki
 ---
 
+The Xbox kernel is called xboxkrnl.exe. It is closely related to the
+Windows NT [ntoskrnl.exe](/wiki/Wikipedia:Ntoskrnl.exe "wikilink"). It's image
+base address is always 0x80010000.
+
+Header modifications
+--------------------
+
+xboxkrnl.exe is a mostly standard exe file. However, the MS-DOS header
+was patched to contain Xbox specific data in the reserved 20 byte block
+starting at offset 40:
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Offset</p></th>
+<th><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>40</p></td>
+<td><p>Size of uninitialized portion of the .data section</p></td>
+</tr>
+<tr class="even">
+<td><p>44</p></td>
+<td><p>Size of initialized portion of the .data section</p></td>
+</tr>
+<tr class="odd">
+<td><p>48</p></td>
+<td><p>Memory address of initialized portion of the .data section (usually in <a href="Flash" class="uri" title="wikilink">Flash</a>).<br />
+Used to re-initialize the data section pointed to by the next field.<br />
+Note that the pointer might be invalid during normal execution as the Flash might not be mapped at all times.</p></td>
+</tr>
+<tr class="even">
+<td><p>52</p></td>
+<td><p>Memory address where the .data section is stored (usually the same as in the section header + image base).</p></td>
+</tr>
+</tbody>
+</table>
+
+Sections
+--------
+
+All sections are identity mapped (meaning file offsets and offsets in
+RAM match). This is because the kernel is not loaded through a
+traditional PE / exe loader, but just unpacked into memory.
+
+### .text
+
+The .text section contains the kernel exports.
+
+### .data
+
+The .data section stores initialized and uninitialized data. A copy of
+the initialized portion of this section is usually stored in the
+[BIOS](/wiki/BIOS "wikilink").
+
+### STICKY
+
+### IDEXPRDT
+
+### INIT
+
+This section is always the last one. It contains the entrypoint of the
+kernel. Later kernels will discard this section after initialization.
+
 Kernel exports
 --------------
 
