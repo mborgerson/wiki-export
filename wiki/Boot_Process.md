@@ -23,8 +23,8 @@ the Microsoft logo is shown below the Xbox logo and the executable is
 started. If an error occurs (no/wrong hard disk, wrong signature, ...),
 the boot loader shows an error screen and halts.
 
-MCPX
-----
+MCPX ROM
+--------
 
 Certain things are still missing, for example, getting the CPU to 32 bit
 protected mode and enabling caching.

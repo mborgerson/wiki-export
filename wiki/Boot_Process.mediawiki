@@ -4,7 +4,7 @@ The Xbox has a 256 KB ROM containing the startup animation and sound, as well as
 
 When the Xbox is turned on, the software in ROM is decompressed into RAM, and the kernel initializes the hardware. Because there are no audio or video drivers in the kernel, the startup code plays the animation and sound by accessing the registers of the hardware directly. As soon as the Xbox logo is on the display, the kernel unlocks the hard disk and checks whether there is a valid game medium in the DVD drive. If not, the file xboxdash.xbe gets loaded from partition #3. In either case, the Microsoft logo is shown below the Xbox logo and the executable is started. If an error occurs (no/wrong hard disk, wrong signature, ...), the boot loader shows an error screen and halts.
 
-== MCPX ==
+== MCPX ROM ==
 
 Certain things are still missing, for example, getting the CPU to 32 bit protected mode and enabling caching.{{FIXME}}
 
