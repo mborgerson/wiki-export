@@ -372,10 +372,8 @@ the 24 kiB where the 2BL was stored previously.
 #### Setup RAM timing
 
 Not described yet, this is complicated. This got a lot more complicated
-when Microsoft started using Hynix RAM instead of Samsung RAM sometime
-after [Hardware Revision 1.6](/wiki/Hardware_Revisions#1.6 "wikilink") was
-already out. These Xboxes with non-Samsung RAM are sometimes referred to
-as 1.6b by the modding community.
+when Microsoft started using different RAM sometime after [Hardware
+Revision 1.6](/wiki/Hardware_Revisions#1.6 "wikilink") was already out.
 
 #### Weird stuff 2
 
