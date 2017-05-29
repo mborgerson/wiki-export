@@ -1,0 +1,338 @@
+Retrieved from [http://www.xbox-linux.org/wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO]
+
+
+== Differences ==
+ 
+The Xbox hardware consists of standard components, like a Pentium III Celeron CPU, an nForce chipset and IDE DVD and hard disk drives. Still there are a few differences, some of which would make an unmodified operating system crash.
+
+ 
+=== Chipset ===
+ 
+The Xbox chipset is basically an nVidia nForce 420, but with a GeForce "NV2A" integrated (instead of a GeForce2 MX), and with an Intel instead of an AMD CPU. Here is the output of "lspci" on a PC nForce:
+
+ 
+<pre>00:00.0 Host bridge: nVidia Corporation nForce CPU bridge (rev b2)
+00:00.1 RAM memory: nVidia Corporation nForce 220/420 Memory Controller (rev b2)
+00:00.2 RAM memory: nVidia Corporation nForce 220/420 Memory Controller (rev b2)
+00:00.3 RAM memory: nVidia Corporation nForce 420 Memory Controller (DDR) (rev b2)
+00:01.0 ISA bridge: nVidia Corporation nForce ISA Bridge (rev c3)
+00:01.1 SMBus: nVidia Corporation nForce PCI System Management (rev c1)
+00:02.0 USB Controller: nVidia Corporation nForce USB Controller (rev c3)
+00:03.0 USB Controller: nVidia Corporation nForce USB Controller (rev c3)
+00:04.0 Ethernet controller: nVidia Corporation nForce Ethernet Controller (rev d2)
+00:05.0 Multimedia audio controller: nVidia Corporation: Unknown device 01b0 (rev c2)
+00:06.0 Multimedia audio controller: nVidia Corporation nForce Audio (rev c2)
+00:08.0 PCI bridge: nVidia Corporation nForce PCI-to-PCI bridge (rev c2)
+00:09.0 IDE interface: nVidia Corporation nForce IDE (rev c3)
+00:1e.0 PCI bridge: nVidia Corporation nForce AGP to PCI Bridge (rev b2)
+02:00.0 VGA compatible controller: nVidia Corporation NVCrush11 [GeForce2 MX Integrated Graphics] (rev b1)
+
+</pre>
+ 
+On the Xbox, the output looks like this:
+
+ 
+<pre>00:00.0 Host bridge: nVidia Corporation: Unknown device 02a5 (rev a1)
+00:00.3 RAM memory: nVidia Corporation: Unknown device 02a6 (rev a1)
+00:01.0 ISA bridge: nVidia Corporation nForce ISA Bridge (rev d4)
+00:01.1 SMBus: nVidia Corporation nForce PCI System Management (rev d1)
+00:02.0 USB Controller: nVidia Corporation nForce USB Controller (rev d4)
+00:03.0 USB Controller: nVidia Corporation nForce USB Controller (rev d4)
+00:04.0 Ethernet controller: nVidia Corporation nForce Ethernet Controller (rev d2)
+00:05.0 Multimedia audio controller: nVidia Corporation: Unknown device 01b0 (rev d2)
+00:06.0 Multimedia audio controller: nVidia Corporation nForce Audio (rev d2)
+00:06.1 Modem: nVidia Corporation Intel 537 [nForce MC97 Modem] (rev d1)
+00:08.0 PCI bridge: nVidia Corporation nForce PCI-to-PCI bridge (rev d2)
+00:09.0 IDE interface: nVidia Corporation nForce IDE (rev d4)
+00:1e.0 PCI bridge: nVidia Corporation nForce AGP to PCI Bridge (rev a1)
+01:00.0 VGA compatible controller: nVidia Corporation: Unknown device 02a0 (rev a1)
+
+</pre>
+ 
+PCI bus 0 is almost identical, except for the Xbox only having a single memory controller. Bus 1 on the PC contains all PCI cards. Since the Xbox does not support PCI cards, the AGP bus on the Xbox is bus 1 instead of bus 2.
+
+ 
+==== PCI Enumeration Bug ====
+ 
+These two differences between the PC and the Xbox version of the nForce chipset have introduced three bugs into the chipset that all have to do with PCI enumeration:
+
+ 
+* The nonexistent memory controllers at 0:0.1 and 0:0.2 are completely broken: If you try to probe them, i.e. read out their PCI IDs, the Xbox freezes.
+* There are ghost devices on bus 1, after the video controller (1:0.0). You get garbage if you try to probe them.
+* The same is true for the complete bus 2.
+ 
+So if your operating system scans the PCI bus in order to find out what drivers need to be loaded for the PCI devices, do not touch 0:0.1 and 0:0.2. The easiest fix would be to start the PCI enumeration with 0:1.0, as the first few devices need no driver anyway, but the following code, taken from the Xbox Linux kernel, handles this better and also hides the ghost devices:
+
+ 
+<pre>if (mach_pci_is_blacklisted(bus, PCI_SLOT(devfn), PCI_FUNC(devfn)))
+    return -EINVAL;
+
+static inline int mach_pci_is_blacklisted(int bus, int dev, int fn)
+{
+    if(machine_is_xbox) {
+        return (bus &gt; 1) || ((bus != 0) &amp;&amp; ((dev != 0) || (fn != 0))) ||
+            (!bus &amp;&amp; !dev &amp;&amp; ((fn == 1) || (fn == 2)));
+    }
+}
+
+</pre>
+ 
+Note that some operating systems (or even some applications) repeat the PCI enumeration later: On Unix systems, the XFree86/X.org X Window servers for example do that, but this can be deactivated using a configuration parameter (or of course patched in the source code).
+
+ 
+==== No Keyboard Controller ====
+ 
+The Xbox is a legacy free PC, so it does not contain a so-called "Super-I/O Chip" which includes old ISA hardware such as
+
+ 
+* serial port
+* parallell port
+* floppy disk controller
+* keyboard controller
+ 
+In general, this should be no problem for any operating system; there is just one thing: Many operating systems (such as Linux up some 2.4.x version) assume that every PC has a keyboard controller (although this is not true for many embedded x86 as well as Itanium systems), and therefore statically allocate interrupt line 1 for the keyboard controller.
+
+
+The problem is that the original Xbox hardware initialization code (as well as Cromwell) put the first USB controller on interrupt 1, so if the operating system already has it allocated, the first USB controller will not work. On a 1.0 Xbox this means that no USB devices (including, ironically, a keyboard) will work, while on later boxes this only affects two of the four connectors.
+
+
+So make sure that your operating system checks for a keyboard controller and allocates no interrupt if it does not exist. The following code, taken from the Linux kernel, shows how to check for a keyboard controller:
+
+ 
+<pre>#define kbd_read_input() inb(KBD_DATA_REG)
+#define kbd_read_status() inb(KBD_STATUS_REG)
+
+if (kbd_read_status() == 0xff &amp;&amp; kbd_read_input() == 0xff)
+    kbd_exists = 0;
+
+</pre>
+ 
+==== Timer Frequency ====
+ 
+The system timer inside the "8254 PIT" unit of the chipset on a PC has a base frequency of 1.193182 MHz. The number of task switches, the system clock and all timing for multimedia is usually based on the interrupts generated by the PIT unit. For some unknown reason, this base frequency is 1.125000 MHz on the Xbox, which is about 6% lower. If your operating system does not handle this difference, multimedia plays at the wrong speed and the system clock (if you have a software clock and do not use the hardware clock) will be incorrect quite quickly.
+
+
+So all you have to do is to search for the constant of 1193182 (sometimes it is 1193180) and replace it with code like this:
+
+ 
+<pre>timer_base = machine_is_xbox? 1125000 : 1193182;
+
+</pre>
+ 
+In case your operating system defines this as a constant, you have to change it into a variable and make sure it is assigned early enough. In this case, it should be a good idea to assign it as soon as you detect whether the machine is an Xbox.
+
+ 
+==== Reboot and Poweroff ====
+ 
+The Xbox chipset has no ACPI capabilities, so it is not possible to shut it down using the ACPI protocol. It is also not possible to reset the Xbox like a PC, because it lacks the keyboard controller which usually includes this feature. Both these functions are handled by the "System Management Controller" SMC (also called the "PIC"), which is a device on the SMBus.
+
+
+In order to communicate with a device on the SMBus, you need a driver for the Xbox SMBus controller, which is AMD754 compatible. Linux for example includes this driver. But there is no need to statically include a complete bus driver just for this simple function: The SMBus on the Xbox is simple enough to be controlled with just two small C functions. The following code is all you need:
+
+ 
+<pre>#define XBOX_SMB_IO_BASE       0xC000
+#define XBOX_SMB_GLOBAL_ENABLE  (0x2 + XBOX_SMB_IO_BASE)
+#define XBOX_SMB_HOST_ADDRESS  (0x4 + XBOX_SMB_IO_BASE)
+#define XBOX_SMB_HOST_DATA     (0x6 + XBOX_SMB_IO_BASE)
+#define XBOX_SMB_HOST_COMMAND  (0x8 + XBOX_SMB_IO_BASE)
+
+#define XBOX_PIC_ADDRESS        0x10
+
+#define SMC_CMD_POWER           0x02
+#define SMC_SUBCMD_POWER_RESET      0x01
+#define SMC_SUBCMD_POWER_CYCLE      0x40
+#define SMC_SUBCMD_POWER_OFF        0x80
+
+static void xbox_pic_cmd(u8 command)
+{
+    outw_p(((XBOX_PIC_ADDRESS) &lt;&lt; 1), XBOX_SMB_HOST_ADDRESS);
+    outb_p(SMC_CMD_POWER, XBOX_SMB_HOST_COMMAND);
+    outw_p(command, XBOX_SMB_HOST_DATA);
+    outw_p(inw(XBOX_SMB_IO_BASE), XBOX_SMB_IO_BASE);
+    outb_p(0x0a, XBOX_SMB_GLOBAL_ENABLE);
+}
+
+void xbox_power_reset(char * __unused)
+{
+    xbox_pic_cmd(SMC_SUBCMD_POWER_RESET);
+}
+
+void xbox_power_cycle(char * __unused)
+{
+    xbox_pic_cmd(SMC_SUBCMD_POWER_CYCLE);
+}
+
+void xbox_power_off(void)
+{
+    xbox_pic_cmd(SMC_SUBCMD_POWER_OFF);
+}
+
+</pre>
+ 
+''xbox_power_reset'' just resets the system while ''xbox_power_cycle'' turns it off and turns it back on after half a second. Please note that the above SMBus code lacks error detection and should not be used in the general case.
+
+ 
+=== DVD Driver ===
+ 
+Although the DVD drives in the Xbox are basically standard IDE drives, there are some differences, some due to protection issues, and some because of bugs in their firmwares.
+
+ 
+==== Reset on Eject ====
+ 
+On the PlayStation, it was possible to trick the console into loading copies by inserting an original, having the CD checked and quickly replacing it with a copy. The designers of the Xbox made this trick impossible by having an additional security chip, the SMC, which resets the system if the user presses the eject button or even tries to manually eject the tray.
+
+
+But the system does not ''always'' reset in this case. In the Xbox Dashboard, for example, it is possible to open the tray. Every time the user presses the eject button or the tray opens (for example if the drive ejects on request of software), the PIC sends an EXTSMI# interrupt to the CPU. If the software running on the CPU handles this interrupt and sends back a message to the PIC, then the system will not be reset.
+
+
+The code in [[arch/i386/mach-xbox/reset-on-eject.c]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/arch/i386/mach-xbox/reset-on-eject.c?rev=1.2&amp;view=auto'') in the Xbox Linux kernel handles this. Again, you need SMBus code to talk to the SMC.
+
+ 
+==== DVD Drive Bugs ====
+ 
+Microsoft uses several different DVD drives in the Xbox, some of which have its compatibility problems:
+
+           
+{| border="1"
+|-
+| '''drive string''' 
+| '''problems''' 
+|-
+| "THOMSON-DVD"
+
+| pretends it cannot play audio or dvds; does not understand the ATAPI eject command
+
+|-
+| "PHILIPS XBOX DVD DRIVE"
+
+| does not understand the ATAPI eject command
+
+|-
+| "PHILIPS J5 3235C"
+
+| pretends it cannot play audio or dvds
+
+|-
+| "SAMSUNG DVD-ROM SDG-605B"
+
+| no issues
+
+|} 
+In addition, none of these drives respect door locking when the user presses the eject button.
+
+
+So if you do nothing, some drives won't respond to software eject commands, and some will refuse to play DVD or audio content, because the player software thinks the drive cannot do it. If you want to support all these DVD drives completely, you have to add some code to the ATAPI CD/DVD driver code in your operating system, which probably already includes some tests for other devices, because many CD/DVD drives report incorrect capabilities. The table above includes the exact string identifiers for these Xbox DVD drives, so you can easily check for them.
+
+
+If the drive does not understand the ATAPI eject command (as well as the load command), you have to issue an eject command to the SMC. The file [[include/linux/xbox.h]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/include/linux/xbox.h?rev=1.1&amp;view=auto'') includes the code you will need. The following two lines are taken from this file:
+
+ 
+<pre>#define Xbox_tray_load() Xbox_SMC_write(SMC_CMD_EJECT, SMC_SUBCMD_EJECT_LOAD);
+#define Xbox_tray_eject() Xbox_SMC_write(SMC_CMD_EJECT, SMC_SUBCMD_EJECT_EJECT);
+
+</pre>
+ 
+Please note that having an Xbox DVD drive installed does not necessarily mean that we are running on an Xbox. It is possible (although impractical, because of the incompatible power connectors) to use them in a standard PC. So if the drive does not understand the ATAPI eject command, and we are not running on an Xbox, there is no way to eject the tray, as the drive does not even have its own eject button - and you should of course not send SMC commands on the PC.
+
+
+The Linux implementation of this behaviour can be found in [[drivers/ide/ide-cd.c]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/drivers/ide/ide-cd.c?rev=1.13&amp;view=auto''). When detecting the drives, the driver notes in the drive's kernel structure whether it is an Xbox drive and whether it can eject, and corrects the incorrect capabilities. As the physical eject button, which is connected to the SMC, does not respect whether the tray is supposed to be locked, the driver simulates this in software.
+
+
+Locking/unlocking the door:
+
+ 
+<pre>if (xbox_drive &amp;&amp; machine_is_xbox) {
+   simulated_lock = lock;
+}
+
+</pre>
+ 
+Ejecting/loading:
+
+ 
+<pre>if (machine_is_xbox &amp;&amp; xbox_drive &amp;&amp; cannot_eject) {
+   if (load) {
+       Xbox_tray_load();
+   } else {
+       simulated_lock = 0;
+       Xbox_tray_eject();
+   }
+   return;
+}
+
+</pre>
+ 
+The reset-on-eject driver, which catches eject button presses, should then also respect the flag "simulated_lock" and not open the door if it is locked in software.
+
+
+Please also note that although certain capability flags of the Xbox drives are correct, software can still have a problem with them. An example on Unix is cdparanoia: If a CD drive has a headphone, then it assumes it must support playing audio CDs. This is logical. But cdparanoia assumes that if a drive has no headphone jack, it does not support audio CDs, but this is not true. All Xbox DVD drives can rip audio CDs, although they all have no headphone jack (and correctly report that).
+
+ 
+=== Video Driver ===
+ 
+Fully supporting the Xbox video hardware could mean a lot of work (or at least a lot of copying from the Xbox kernel). But there is no need to implement a complete video driver. Both bootloaders provided by the Xbox Linux project set up a 640x480 screen (32 bit colour, RGBX), which is useful for many setups. This linear framebuffer lies at the top of memory (around 60 MB) and can be used by your operating system without ever touching any video registers. This just works like the VESA modes supported by most operating systems, which get set up by the boot loader (using BIOS functions) and never get switched afterwards. Have a look at the bootloader section to learn how to find out where this framebuffer is located.
+
+
+If you want full support, you can reuse driver code for nVidia video hardware, as the Xbox video hardware is fully nVidia compatible. The problem is just that the Xbox does not have a VGA RAMDAC, but a PAL/NTSC video encoder (which is connected through the SMBus), so you always need to make sure when you set up a new mode that the video encoder is also correctly set up, or else you will get garbage on the screen.
+
+
+Unfortunately, there is one of three incompatible video encoders in every Xbox: The first Xboxes used Connexant chips (1.0 to 1.3), later ones used Focus components (1.4 and 1.5), and 1.6 Xboxes include an integrated Xcalibur unit. That is why you might have to copy a lot of code from the Xbox Linux kernel and have others with different Xboxes test your code. You can find all this code in [[drivers/video/xbox/*]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/drivers/video/xbox/'').
+
+ 
+=== Hard Disk ===
+ 
+The Xbox includes a standard 8 or 10 GB hard disk. For security reasons (the user should be unable to just connect it to a PC) they are locked with an ATA password, but as the firmware already unlocks it, you should not have to care about this, unless you send ATA reset commands to the drive - which you should avoid.
+
+
+Nevertheless, you might want your operating system to coexist with the Xbox system software, then you have to respect the existing partitioning and install it (probably as an image file) onto an existing partition.
+
+ 
+==== Xbox Partitioning ====
+ 
+The Xbox uses an implicit partitioning scheme, which is described in the articles [[Xbox Partitioning and Filesystem Details]] and [[Xbox Hard Disk Partitioning]]. In order to detect whether the hard drive is Xbox-partitioned, you have to check for the "BRFR" magic value, which must always be present. If this is too little evidence for you, you can also check for the "FATX" header in the "System Files" (C:) partition, but you should not assume any more FATX headers.
+
+
+You should also create a sixth partition for the space between 8 GB and 137 GB, and a seventh partition for the space above 137 GB in order to be compatible with patched Xbox kernels that work with larger hard disks.
+
+
+You might want to consider allowing two partitioning systems active at the same time: Xbox partitioning, which defines (at least) the lowermost 8 GB, and standard PC partitioning using a PC partition table (the first sector on the hard disk is unused). Therefore, in Xbox Linux, the Xbox partitions are assigned the numbers 50 to 56, while the Pc partitions start with 1.
+
+
+In Xbox Linux, this code is located in [[fs/partitions/check.c]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/fs/partitions/check.c?rev=1.9&amp;view=auto'') and [[fs/partitions/xbox.c xbox.c]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/fs/partitions/xbox.c?rev=1.7&amp;view=auto'').
+
+ 
+==== FATX filesystem ====
+ 
+On the hard disk, the Xbox exclusively uses the FATX filesystem, which is a simplified version of FAT16/FAT32. The articles [[Xbox Partitioning and Filesystem Details]] and [[Differences between Xbox FATX and MS-DOS FAT]] explain FATX in detail.
+
+ 
+=== Peripherals ===
+ 
+==== Xbox Gamepad ====
+ 
+The Xbox gamepad is a USB device with a proprietary protocol, which you can find in the Xbox Linux kernel in [[drivers/usb/input/xpad.c]] (''http://cvs.sourceforge.net/viewcvs.py/xbox-linux/kernel-2.6/drivers/usb/input/xpad.c?rev=1.5&amp;view=auto''). You might want to add emulation for mouse and/or keyboard as well.
+
+ 
+==== Remote Control ====
+ 
+The remote control is similar to the gamepad. Keyboard and mouse emulation may make sense for it as well.
+
+
+&lt;! --==== Xbox Live Headset ==== --&gt;
+
+ 
+=== Other System Components ===
+ 
+==== USB ====
+ 
+The Xbox has a standard OHCI host controller, which your operating system hopefully supports out of the box.
+
+ 
+==== Ethernet ====
+ 
+The Ethernet controller of the Xbox is an nForce "nvnet". The Linux driver [[forcedeth]] (''http://www.hailfinger.org/carldani/linux/patches/forcedeth/'') supports it completely.
+
+ 
+=== Sensors ===
+ 
+There are two temperature sensors on the Xbox (CPU and system). Standard Linux drivers support them. You can control the system fan using the SMC. See the Xbox Linux "tools" source code for details.
