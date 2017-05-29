@@ -4,6 +4,9 @@ permalink: wiki/Xbox_Hard_Disk_Technical_Details/
 layout: wiki
 ---
 
+Retrieved from
+[1](http://www.xbox-linux.org/wiki/Xbox_Hard_Disk_Technical_Details)
+
 by Michael Steil (original version: 1 May 2002, updated 26 September
 2002)
 
@@ -160,6 +163,3 @@ Western Digital (8 GB)
 
     Timing buffered disk reads:  64 MB in  6.58 seconds =  9.73 MB/sec
     Timing buffer-cache reads:   128 MB in  3.28 seconds = 39.02 MB/sec
-
-Retrieved from
-[1](http://www.xbox-linux.org/wiki/Xbox_Hard_Disk_Technical_Details)
