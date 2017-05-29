@@ -369,7 +369,13 @@ cursor position for reading the SMC revision information).
 The 2BL fills memory with 0xCC from 0x80090000 to 0x80095FFF. These are
 the 24 kiB where the 2BL was stored previously.
 
-#### Weird stuff 1
+#### Setup RAM timing
+
+Not described yet, this is complicated. This got a lot more complicated
+when Microsoft started using Hynix RAM instead of Samsung RAM sometime
+after [Hardware Revision 1.6](/wiki/Hardware_Revisions#1.6 "wikilink") was
+already out. These Xboxes with non-Samsung RAM are sometimes referred to
+as 1.6b by the modding community.
 
 #### Weird stuff 2
 
