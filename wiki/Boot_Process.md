@@ -383,7 +383,7 @@ The Kernel is now copied into RAM.
 
 ##### Kernel decryption
 
-The 2BL will copy the kernel decrytpion key (16 bytes) from offset 32 of
+The 2BL will copy the kernel decryption key (16 bytes) from offset 32 of
 an array of 3 keys:
 
 | Offset | Use             |
