@@ -63,6 +63,8 @@ the initialized portion of this section is usually stored in the
 
 ### STICKY
 
+Stores variables which must be preserved across a quick-reboot.
+
 ### IDEXPRDT
 
 A Physical Region Descriptor Table (PRDT) for the IDE bus. This section
