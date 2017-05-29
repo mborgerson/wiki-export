@@ -43,7 +43,12 @@ Xbox Live
 
 Xbox Live is an online multiplayer gaming and digital media delivery
 service created and operated by Microsoft. It was first made available
-to the Xbox system in November 2002. \[Wikipedia\]
+to the Xbox system in November 2002.
+([Wikipedia](https://en.wikipedia.org/wiki/Xbox_Live)) Xbox Live support
+for the original Xbox ended in April 15, 2010.
+
+The Xbox Live architecture consists of authentication servers,
+matchmaking servers, and game servers.
 
 ### Matchmaking servers
 
