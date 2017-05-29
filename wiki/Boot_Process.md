@@ -373,6 +373,22 @@ the 24 kiB where the 2BL was stored previously.
 
 #### Weird stuff 2
 
+This does some PCI config, use unknown.
+
+    out32(0xCF8, 0x80000854);
+    out32(0xCFC, in32(0xCFC) | 0x88000000);
+
+    out32(0xCF8, 0x80000064);
+    out32(0xCFC, in32(0xCFC) | 0x88000000);
+
+    out32(0xCF8, 0x8000006C);
+    uint32_t tmp = in32(0xCFC);
+    out32(0xCFC, tmp & 0xFFFFFFFE);
+    out32(0xCFC, tmp);
+
+    out32(0xCF8, 0x80000080);
+    out32(0xCFC, 0x00000100);
+
 #### Weird stuff 3
 
 #### Loading the kernel
