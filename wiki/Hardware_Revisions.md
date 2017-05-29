@@ -67,6 +67,11 @@ Same as 1.4, except:
 -   BIOS no longer flashable
 -   Removed data and power lines from LPC port
 -   Xcalibur video chip
+-   Xyclops chip
+
+Microsoft later switched to lower quality Hynix RAM. These Xboxes with
+non-Samsung RAM are sometimes referred to as 1.6b by the modding
+community.
 
 Identifying
 -----------
