@@ -284,6 +284,11 @@ The 2BL will now <code>call</code> into the relocated 2BL code somewhere near 0x
 
 ==== Disabling of the MCPX ROM ====
 
+<pre>
+out32(0xCF8, 0x80000880);
+out8(0xCFC, 0x02);
+</pre>
+
 ==== SMC handling ====
 
 The [[SMC]] has a watchdog functionality which must be turned off.

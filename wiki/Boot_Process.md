@@ -351,6 +351,9 @@ The 2BL will now `call` into the relocated 2BL code somewhere near
 
 #### Disabling of the MCPX ROM
 
+    out32(0xCF8, 0x80000880);
+    out8(0xCFC, 0x02);
+
 #### SMC handling
 
 The [SMC](/wiki/SMC "wikilink") has a watchdog functionality which must be
