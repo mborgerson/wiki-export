@@ -293,7 +293,12 @@ If this is not the case, the bootloader calculates the watchdog challenge respon
 
 Additionally, the 2BL will set SMC register 0x01 to 0 (which resets the cursor position for reading the SMC revision information).
 
-==== Weird stuff 0{{FIXME}} ====
+==== Enable IDE and NIC ====
+
+<pre>
+out32(0xCF8, 0x8000088C);
+out32(0xCFC, 0x40000000);
+</pre>
 
 ==== Memory cleanup ====
 

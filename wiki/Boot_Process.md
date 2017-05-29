@@ -362,7 +362,10 @@ sends it to SMC registers 0x20 and 0x21.
 Additionally, the 2BL will set SMC register 0x01 to 0 (which resets the
 cursor position for reading the SMC revision information).
 
-#### Weird stuff 0
+#### Enable IDE and NIC
+
+    out32(0xCF8, 0x8000088C);
+    out32(0xCFC, 0x40000000);
 
 #### Memory cleanup
 
