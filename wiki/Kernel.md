@@ -53,7 +53,14 @@ traditional PE / exe loader, but just unpacked into memory.
 
 ### .text
 
-The .text section contains the kernel exports.
+The .text section contains all x86 subroutines to be executed by the
+processor.
+
+### .rdata
+
+The .rdata section contains the kernel thunk table. The ordinals in the
+table are to be resolved to the kernel's actual calling routine, when
+loaded.
 
 ### .data
 
