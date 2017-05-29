@@ -41,6 +41,10 @@ System Link
 Xbox Live
 ---------
 
+Xbox Live is an online multiplayer gaming and digital media delivery
+service created and operated by Microsoft. It was first made available
+to the Xbox system in November 2002. \[Wikipedia\]
+
 ### Matchmaking servers
 
 ### Game servers
