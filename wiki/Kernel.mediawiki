@@ -1,5 +1,5 @@
 The Xbox kernel is called xboxkrnl.exe. It is closely related to the Windows NT [[Wikipedia:Ntoskrnl.exe|ntoskrnl.exe]].
-It's image base address is always 0x80010000.
+Its image base address is always 0x80010000.
 
 == Header modifications ==
 
