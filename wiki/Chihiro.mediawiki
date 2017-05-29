@@ -1,5 +1,6 @@
 == Also see ==
 
+* [https://github.com/mamedev/mame/blob/master/src/mame/drivers/chihiro.cpp Chihiro MAME driver]
 * [http://segaretro.org/Sega_Chihiro Chihiro information at Sega Retro]
 * [https://github.com/JayFoxRox/Chihiro-Tools Set of tools to extract MAME Chihiro dumps]
 * [https://github.com/JayFoxRox/Chihiro-Launcher A tool to load some Chihiro games on the original Xbox]

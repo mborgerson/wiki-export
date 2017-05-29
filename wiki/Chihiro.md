@@ -7,6 +7,8 @@ layout: wiki
 Also see
 --------
 
+-   [Chihiro MAME
+    driver](https://github.com/mamedev/mame/blob/master/src/mame/drivers/chihiro.cpp)
 -   [Chihiro information at Sega
     Retro](http://segaretro.org/Sega_Chihiro)
 -   [Set of tools to extract MAME Chihiro
