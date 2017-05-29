@@ -82,6 +82,93 @@ SDA/SCL/ground to the LPC pinout on the board. See
 [here](https://github.com/grimdoomer/PiPROM) for pinout information.
 Then use the corresponding software to read/write the EEPROM.
 
+The HMAC HDD Key
+----------------
+
+The HMAC HDD Key is generated out of the first 48 bytes. This section
+has been identified clearly.
+
+The Region Code
+---------------
+
+This DWORD is encrypted. It corresponds to the region code in the XBE
+header:
+
+|            |                     |
+|------------|---------------------|
+| 1          | North America       |
+| 2          | Japan               |
+| 4          | Europe/Australia    |
+| 0x80000000 | Manufacturing plant |
+
+The Serial Number
+-----------------
+
+         1166356 20903
+         ||    | |||||__
+         ||    | ||||___ factory number
+         ||    | |||____
+         ||    | ||_____ week of year (starting Mondays)
+         ||    | |______ last digit of year
+         ||    |________
+         ||_____________ number of Xbox within week and factory
+         |______________ production line within factory 
+       
+
+The MAC address
+---------------
+
+This is the MAC address of the Ethernet hardware, which has been [issued
+by the
+IEEE](https://web.archive.org/web/20100617020733/http://standards.ieee.org/regauth/oui/oui_public.txt).
+
+DVD Region
+----------
+
+This DWORD corresponds to the region code for playback of DVD movies:
+
+|      |          |
+|------|----------|
+| 0x00 | None     |
+| 0x01 | Region 1 |
+| ...  | ...      |
+| 0x06 | Region 6 |
+
+Checksum Algorithm
+------------------
+
+Checksum2 and Checksum3 values can be calculated by running the
+following code snippet over the area the checksum covers:
+
+     /* The EepromCRC algorithm was obtained from the XKUtils 0.2 source released by
+      * TeamAssembly under the GNU GPL.
+      * Specifically, from XKCRC.cpp
+      *
+      * Rewritten to ANSI C by David Pye (dmp@davidmpye.dyndns.org)
+      *
+      * Thanks! */
+     void EepromCRC(unsigned char *crc, unsigned char *data, long dataLen) {
+             unsigned char* CRC_Data = (unsigned char *)malloc(dataLen+4);
+             int pos=0;
+             memset(crc,0x00,4);
+     
+             memset(CRC_Data,0x00, dataLen+4);
+             //Circle shift input data one byte right
+             memcpy(CRC_Data + 0x01 , data, dataLen-1);
+             memcpy(CRC_Data, data + dataLen-1, 0x01);
+     
+             for (pos=0; pos&lt;4; ++pos) {
+                     unsigned short CRCPosVal = 0xFFFF;
+                     unsigned long l;
+                     for (l=pos; l&lt;dataLen; l+=4) {
+                             CRCPosVal -= *(unsigned short*)(&amp;CRC_Data[l]);
+                     }
+                     CRCPosVal &amp;= 0xFF00;
+                     crc[pos] = (unsigned char) (CRCPosVal &gt;&gt; 8);
+             }
+             free(CRC_Data);
+     }
+
 Further Reading
 ---------------
 
