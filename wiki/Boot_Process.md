@@ -395,6 +395,14 @@ This does some PCI config, use unknown.
 
 #### Weird stuff 3
 
+    out32(0xCF8, 0x80000808);
+    uint8_t mcpx_revision = in8(0xCFC);    
+
+    if (mcpx_revision >= 0xD1) {
+      out32(0xCF8, 0x800008C8);
+      out32(0xCFC, 0x00008F00);
+    }
+
 #### Loading the kernel
 
 ##### Kernel-copy

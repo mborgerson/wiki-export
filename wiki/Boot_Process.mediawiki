@@ -324,7 +324,19 @@ out32(0xCF8, 0x80000080);
 out32(0xCFC, 0x00000100);
 </pre>
 
-==== Weird stuff 3{{FIXME}} ====
+==== Weird stuff 3 ====
+
+{{FIXME|reason=Why?}}
+
+<pre>
+out32(0xCF8, 0x80000808);
+uint8_t mcpx_revision = in8(0xCFC);    
+
+if (mcpx_revision >= 0xD1) {
+  out32(0xCF8, 0x800008C8);
+  out32(0xCFC, 0x00008F00);
+}
+</pre>
 
 ==== Loading the kernel ====
 ===== Kernel-copy =====
