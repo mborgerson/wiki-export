@@ -33,6 +33,9 @@ A copy of the initialized portion of this section is usually stored in the [[BIO
 
 === STICKY ===
 === IDEXPRDT ===
+
+A Physical Region Descriptor Table (PRDT) for the IDE bus. This section serves as a memory allocation only, it does not have to be initialized when loading the kernel{{citation needed}}.
+
 === INIT ===
 
 This section is always the last one. It contains the entrypoint of the kernel.

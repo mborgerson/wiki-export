@@ -65,6 +65,10 @@ the initialized portion of this section is usually stored in the
 
 ### IDEXPRDT
 
+A Physical Region Descriptor Table (PRDT) for the IDE bus. This section
+serves as a memory allocation only, it does not have to be initialized
+when loading the kernel.
+
 ### INIT
 
 This section is always the last one. It contains the entrypoint of the
