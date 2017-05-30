@@ -1,7 +1,1 @@
-=== .text ===
-
-The .text section contains all x86 subroutines to be executed by the [[CPU|processor]].
-
-=== .rdata ===
-
-The .rdata section contains the [[Kernel|kernel thunk table]]. The ordinals in the table are to be resolved to the kernel's actual calling routine, when loaded.
+#REDIRECT [[Xbe]]
