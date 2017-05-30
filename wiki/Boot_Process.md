@@ -167,7 +167,7 @@ is then used to decrypt the 2BL from 0xFFFF9E00, storing the decrypted
         decrypted[pos] = encrypted[pos] ^ s[ s[i] + s[j] ];
     }
 
-#### Stage 3: Verification
+#### Stage 3: Signature Verification
 
 Now that the Second-Stage Bootloader has been loaded, a quick
 sanity-check is performed: a “magic” signature is verified. If the
@@ -175,12 +175,11 @@ signature doesn’t match, control goes to the error handler. If the
 signature does match, the code will jump to the 2bl entry point, which
 is given by the first dword of the decrypted 2bl.
 
-    if (get_memory_dword(0x95FE4) == MAGIC_NUMBER) {
-        eip = get_memory_dword(0x900000);
-    } else {
-        // Else, things have gone wrong
-        eip = 0xFFFFFF94;
-    }
+    mov  eax, [0x95fe4]
+    cmp  eax, MAGIC_NUMBER
+    jne  0xffffff94 ; If signature check failed, jump to error handler
+    mov  eax, [0x90000]
+    jmp  eax        ; Jump to 2BL entry point
 
 ### Notes
 
