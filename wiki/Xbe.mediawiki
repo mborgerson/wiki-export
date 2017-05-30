@@ -212,5 +212,15 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 * DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game number 004, version 04, region Europe)
 * Title ID: 4D530004 [MS-004]
 
+=== Sections ===
+
+=== .text ===
+
+The .text section contains all x86 subroutines to be executed by the [[CPU|processor]].
+
+=== .rdata ===
+
+The .rdata section contains the [[Kernel|kernel thunk table]]. The ordinals in the table are to be resolved to the kernel's actual calling routine, when loaded.
+
 == Resources and links ==
 * [http://www.caustik.com/cxbx/download/xbe.htm .XBE File Format 1.1]

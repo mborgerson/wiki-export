@@ -134,6 +134,19 @@ here which suggests that it will always be below 1000.
     number 004, version 04, region Europe)
 -   Title ID: 4D530004 \[MS-004\]
 
+### Sections
+
+### .text
+
+The .text section contains all x86 subroutines to be executed by the
+[processor](/wiki/CPU "wikilink").
+
+### .rdata
+
+The .rdata section contains the [kernel thunk table](/wiki/Kernel "wikilink").
+The ordinals in the table are to be resolved to the kernel's actual
+calling routine, when loaded.
+
 Resources and links
 -------------------
 
