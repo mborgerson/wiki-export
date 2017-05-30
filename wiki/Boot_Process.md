@@ -490,9 +490,67 @@ the second argument.
 Kernel
 ------
 
-### Startup animation
+### Initialization
 
-### Kernel Re-initialization
+#### Stage 1 (Cold-boot only)
+
+The entry point to the kernel will first parse the arguments. At the
+end, the kernel will call the initialization routine for what we'll
+refer to as: Stage 2a.
+
+#### Stage 2 (Cold-boot only)
+
+The kernel initialization will only happen once on a cold-boot. It will
+not happen for reboots.
+
+-   ebp is set to 0x00000000
+-   esp is modified
+-   GDT is prepared and loaded
+-   cs and ds are reloaded
+-   fs is set
+-   TSS is loaded
+-   cr3 is moved to 3 tasks
+-   The CPU microcode is updated
+
+After this comes Stage 3 initialization which will also be repeated on
+kernel re-initialization.
+
+#### Stage 3
+
+This is code which is duplicated in INIT and .text sections.
+
+-   In the INIT section it directly follows the Stage 2 initialization.
+-   In the .text section it follows the Kernel re-initialization code
+    mentioned below.
+
+This code does the following:
+
+-   IDT is prepared and loaded
+-   
+
+### Re-initialization
+
+On reboots, initialization Stage 1 and 2 are not in memory anymore (as
+the INIT section has been discarded), and can't be run anymore. Instead,
+a seperate function replaces their functionality and then jumps directly
+to Stage 3 initalization.
+
+This code is the partial kernel reinitialization, which will be ran on
+reboots using
+[Kernel/HalReturnToFirmware](/wiki/Kernel/HalReturnToFirmware "wikilink").
+
+-   ebp is set to 0x00000000
+-   esp is modified
+-   Some memory stuff in a seperate function
+-   The .data section from [Flash](/wiki/Flash "wikilink") is loaded and
+    replaces the running .data
+-   The byte infront of KeSystemTime is set to 0x01, indicating the
+    system comes from a reboot.
+
+After this has completed, [\#Stage 3](#Stage_3 "wikilink") of the kernel
+initialization will take over.
+
+### Startup animation
 
 References
 ----------
