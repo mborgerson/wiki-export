@@ -550,6 +550,19 @@ reboots using
 After this has completed, [\#Stage 3](#Stage_3 "wikilink") of the kernel
 initialization will take over.
 
+#### Skipped initialization
+
+When rebooting, certain parts are still initialized and assumed to be
+working:
+
+-   Anything already done by Stage 1 and Stage 2
+-   Video mode setup (boot animation is not played again)
+-   Some IDE stuff
+-   Some SMC stuff
+-   Memory allocator initialization
+-   Kernel debugger (Super-I/O) initialization (This still seems to be
+    in memory?!)
+
 ### Startup animation
 
 References

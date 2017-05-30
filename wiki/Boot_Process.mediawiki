@@ -452,6 +452,17 @@ This code is the partial kernel reinitialization, which will be ran on reboots u
 
 After this has completed, [[#Stage 3]] of the kernel initialization will take over.
 
+==== Skipped initialization ====
+
+When rebooting, certain parts are still initialized and assumed to be working:
+
+* Anything already done by Stage 1 and Stage 2
+* Video mode setup (boot animation is not played again)
+* Some IDE stuff{{FIXME}}
+* Some SMC stuff{{FIXME}}
+* Memory allocator initialization{{FIXME}}
+* Kernel debugger (Super-I/O) initialization{{FIXME}} (This still seems to be in memory?!){{citation needed}}
+
 === Startup animation ===
 
 == References ==
