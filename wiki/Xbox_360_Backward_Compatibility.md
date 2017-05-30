@@ -12,7 +12,7 @@ which is a modified version of [xboxkrnl.exe](/wiki/Kernel "wikilink").
 
 ### Modifications to xboxkrnl.exe
 
-The IDEXPDTR section has been dropped, additionally the extra data from
+The IDEXPRDT section has been dropped, additionally the extra data from
 the MS-DOS header is gone.
 
 #### Guest to host communication

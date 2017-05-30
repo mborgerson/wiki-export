@@ -4,7 +4,7 @@ The emulator binary is called xefu.xex. The first resource is xb1krnl which is a
 
 === Modifications to xboxkrnl.exe ===
 
-The IDEXPDTR section has been dropped, additionally the extra data from the MS-DOS header is gone.
+The IDEXPRDT section has been dropped, additionally the extra data from the MS-DOS header is gone.
 
 ==== Guest to host communication ====
 
