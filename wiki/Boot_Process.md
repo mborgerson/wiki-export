@@ -555,9 +555,10 @@ initialization will take over.
 When rebooting, certain parts are still initialized and assumed to be
 working:
 
-(This list is currently in no particular order)
+(This list is currently in no particular order and incomplete)
 
 -   Anything already done by Stage 1 and Stage 2
+-   PCI device setup
 -   EEPROM decryption
 -   Check for AV-Pack
 -   Video mode setup (boot animation is not played again)
