@@ -38,21 +38,21 @@ symantec](https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pd
 (Page 5, Left-hand-side) the patterns `0F 3F x1 x2` and `0F C7 C8 y1 y2`
 are used for communication with the host.
 
-| x1   | x2   | Notes                                                   |
-|------|------|---------------------------------------------------------|
-| 0x04 | 0x20 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x21 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x22 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x23 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x24 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x35 | Seems to use eax (address) as parameter?                |
-| 0x04 | 0x50 | Seems to use eax (address) as parameter?                |
-| 0x06 | 0x00 | Seems to use eax (address) and ecx (size) as parameter? |
-| 0x06 | 0x26 |                                                         |
-| 0x06 | 0x27 |                                                         |
-| 0x06 | 0x28 |                                                         |
-| 0x06 | 0x29 |                                                         |
-| 0x06 | 0x0B |                                                         |
+| x1   | x2   | Notes                                                                                                                           |
+|------|------|---------------------------------------------------------------------------------------------------------------------------------|
+| 0x04 | 0x20 | Seems to use eax (address) as parameter? eax points to a zero terminated list of pointers into the kernel memory \[7 elements\] |
+| 0x04 | 0x21 | Seems to use eax (address) as parameter? " \[4 elements\]                                                                       |
+| 0x04 | 0x22 | Seems to use eax (address) as parameter? Seems to be some call to that address?!                                                |
+| 0x04 | 0x23 | Seems to use eax (address) as parameter?                                                                                        |
+| 0x04 | 0x24 | Seems to use eax (address) as parameter?                                                                                        |
+| 0x04 | 0x35 | Seems to use eax (address) as parameter?                                                                                        |
+| 0x04 | 0x50 | Seems to use eax (address) as parameter? " \[3 elements\]                                                                       |
+| 0x06 | 0x00 | Seems to use eax (address) and ecx (size) as parameter?                                                                         |
+| 0x06 | 0x26 |                                                                                                                                 |
+| 0x06 | 0x27 |                                                                                                                                 |
+| 0x06 | 0x28 |                                                                                                                                 |
+| 0x06 | 0x29 |                                                                                                                                 |
+| 0x06 | 0x0B |                                                                                                                                 |
 
 References and links
 --------------------

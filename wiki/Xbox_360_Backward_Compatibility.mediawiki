@@ -31,11 +31,11 @@ According to [https://www.symantec.com/avcenter/reference/Virtual_Machine_Threat
 {| class="wikitable"
 ! x1 !! x2 !! Notes
 |-
-| 0x04 || 0x20 || Seems to use eax (address) as parameter?
+| 0x04 || 0x20 || Seems to use eax (address) as parameter? eax points to a zero terminated list of pointers into the kernel memory [7 elements]
 |-
-| 0x04 || 0x21 || Seems to use eax (address) as parameter?
+| 0x04 || 0x21 || Seems to use eax (address) as parameter? " [4 elements]
 |-
-| 0x04 || 0x22 || Seems to use eax (address) as parameter?
+| 0x04 || 0x22 || Seems to use eax (address) as parameter? Seems to be some call to that address?!
 |-
 | 0x04 || 0x23 || Seems to use eax (address) as parameter?
 |-
@@ -43,7 +43,7 @@ According to [https://www.symantec.com/avcenter/reference/Virtual_Machine_Threat
 |-
 | 0x04 || 0x35 || Seems to use eax (address) as parameter?
 |-
-| 0x04 || 0x50 || Seems to use eax (address) as parameter?
+| 0x04 || 0x50 || Seems to use eax (address) as parameter? " [3 elements]
 |-
 | 0x06 || 0x00 || Seems to use eax (address) and ecx (size) as parameter?
 |-
@@ -57,7 +57,6 @@ According to [https://www.symantec.com/avcenter/reference/Virtual_Machine_Threat
 |-
 | 0x06 || 0x0B ||
 |}
-
 
 == References and links ==
 * [http://support.xbox.com/en-US/legacy-devices/original-console/play-original-games Official compatibility list by Microsoft]
