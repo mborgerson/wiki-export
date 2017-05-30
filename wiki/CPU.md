@@ -13,8 +13,10 @@ more CPUs.
 References
 ----------
 
--   [Intel® 64 and IA-32 Architectures Software Developer
-    Manuals](https://software.intel.com/en-us/articles/intel-sdm)
-    (Sorry, I can't find just the documentation for the Pentium 3. Enjoy
-    4600+ pages, half of which is irrelevant!)
+-   [Mobile Intel® Celeron® Processor (0.18μ) in BGA2 and Micro-PGA2
+    Packages](http://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/28365403.pdf)
+    (This datasheet is for the mobile version Coppermine with 256kB L2
+    cache. It does not contain the Xbox Coppermine-128 with 128kB L2
+    cache at 733MHz (S-Spec SL5SN). No such datasheet exists. Both
+    differences are pin compatible.
 
