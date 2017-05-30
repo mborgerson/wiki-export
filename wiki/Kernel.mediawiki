@@ -1943,7 +1943,3 @@ Later kernels{{FIXME|reason=Which revision?}} will discard this section after in
 |stdcall
 |Devkits only!
 |}
-
-== See Also ==
-
-[[Hard Drive Files]]
