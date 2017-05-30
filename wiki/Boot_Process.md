@@ -7,10 +7,10 @@ layout: wiki
 Overview
 --------
 
-The Xbox has a 256 KB ROM containing the startup animation and sound, as
-well as the Xbox kernel, which contains a stripped down version of the
-Windows 2000 (NT 5.0) microkernel, the HAL, filesystems, as well as HD
-and DVD drivers.
+The Xbox has a 256 kiB ROM containing the startup animation and sound,
+as well as the Xbox kernel, which contains a stripped down version of
+the Windows 2000 (NT 5.0) microkernel, the HAL, filesystems, as well as
+HDD and DVD drivers.
 
 When the Xbox is turned on, the software in ROM is decompressed into
 RAM, and the kernel initializes the hardware. Because there are no audio
@@ -18,10 +18,34 @@ or video drivers in the kernel, the startup code plays the animation and
 sound by accessing the registers of the hardware directly. As soon as
 the Xbox logo is on the display, the kernel unlocks the hard disk and
 checks whether there is a valid game medium in the DVD drive. If not,
-the file xboxdash.xbe gets loaded from partition \#3. In either case,
-the Microsoft logo is shown below the Xbox logo and the executable is
-started. If an error occurs (no/wrong hard disk, wrong signature, ...),
-the boot loader shows an error screen and halts.
+the file xboxdash.xbe gets loaded from partition \#3 (Typically the
+[Dashboard](/wiki/Dashboard "wikilink")). In either case, the Microsoft logo
+is shown below the Xbox logo and the executable is started. If an error
+occurs (no/wrong hard disk, wrong signature, ...), the boot loader shows
+a [Fatal Error](/wiki/Fatal_Error "wikilink") screen and halts.
+
+### Chain of trust
+
+The Xbox uses a chain of trust during the boot process:
+
+-   The MCPX ROM contains a key to decrypt the 2BL.
+-   The 2BL is run. The MCPX ROM is hidden at this point. The 2BL
+    decryption key is . The 2BL contains a kernel decryption key.
+-   Once the kernel is decrypted and initialized, the INIT section is
+    discarded. The kernel decryption key is overwritten with 0x00.
+-   The kernel only runs signed [XBE](/wiki/XBE "wikilink") files from allowed
+    media.
+
+There are also a handful of assumptions:
+
+-   The CPU will start execution in the MCPX ROM.
+-   The MCPX ROM can not be read or modified.
+-   The decrpyted 2BL or Kernel can not be read entirely.
+-   All parts of the software following the MCPX are not-attackable and
+    signed.
+
+See [Exploits](/wiki/Exploits "wikilink") for possible options to break the
+chain of trust.
 
 MCPX ROM
 --------
