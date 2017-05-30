@@ -456,7 +456,11 @@ After this has completed, [[#Stage 3]] of the kernel initialization will take ov
 
 When rebooting, certain parts are still initialized and assumed to be working:
 
+(This list is currently in no particular order)
+
 * Anything already done by Stage 1 and Stage 2
+* EEPROM decryption{{FIXME}}
+* Check for AV-Pack{{FIXME}}
 * Video mode setup (boot animation is not played again)
 * Some IDE stuff{{FIXME}}
 * Some SMC stuff{{FIXME}}
