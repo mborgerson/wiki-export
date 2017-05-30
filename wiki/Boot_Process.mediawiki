@@ -9,8 +9,8 @@ When the Xbox is turned on, the software in ROM is decompressed into RAM, and th
 The Xbox uses a chain of trust during the boot process:
 
 * The MCPX ROM contains a key to decrypt the 2BL.
-* The 2BL is run. The MCPX ROM is hidden at this point. The 2BL decryption key is {{FIXME|reason=What happens to this?}}. The 2BL contains a kernel decryption key.
-* Once the kernel is decrypted and initialized, the INIT section is discarded. The kernel decryption key is overwritten with 0x00.
+* The 2BL is run. The MCPX ROM is hidden at this point. The 2BL decryption key is (overwritten with 0x00-Bytes){{FIXME|reason=Does this actually happen?}}. The 2BL contains a kernel decryption key.
+* Once the kernel is decrypted and initialized, the INIT section is discarded. The kernel decryption key is overwritten with 0x00-Bytes.
 * The kernel only runs signed [[XBE]] files from allowed media.
 
 There are also a handful of assumptions:

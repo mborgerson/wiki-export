@@ -30,9 +30,10 @@ The Xbox uses a chain of trust during the boot process:
 
 -   The MCPX ROM contains a key to decrypt the 2BL.
 -   The 2BL is run. The MCPX ROM is hidden at this point. The 2BL
-    decryption key is . The 2BL contains a kernel decryption key.
+    decryption key is (overwritten with 0x00-Bytes). The 2BL contains a
+    kernel decryption key.
 -   Once the kernel is decrypted and initialized, the INIT section is
-    discarded. The kernel decryption key is overwritten with 0x00.
+    discarded. The kernel decryption key is overwritten with 0x00-Bytes.
 -   The kernel only runs signed [XBE](/wiki/XBE "wikilink") files from allowed
     media.
 
