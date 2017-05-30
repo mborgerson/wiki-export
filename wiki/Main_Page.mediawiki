@@ -33,6 +33,7 @@
 * [[MCPX ROM]]
 * [[BIOS]] / [[Kernel]]
 ** [[Boot Process]]
+** [[XBE]] (Executable file format)
 * [[FATX]] (Filesystem)
 * [[Dashboard]]
 * [[Exploits]]

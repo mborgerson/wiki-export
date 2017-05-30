@@ -43,6 +43,7 @@ System Software
 -   [MCPX ROM](/wiki/MCPX_ROM "wikilink")
 -   [BIOS](/wiki/BIOS "wikilink") / [Kernel](Kernel "wikilink")
     -   [Boot Process](/wiki/Boot_Process "wikilink")
+    -   [XBE](/wiki/XBE "wikilink") (Executable file format)
 -   [FATX](/wiki/FATX "wikilink") (Filesystem)
 -   [Dashboard](/wiki/Dashboard "wikilink")
 -   [Exploits](/wiki/Exploits "wikilink")
