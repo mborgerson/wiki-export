@@ -1,5 +1,64 @@
 Xbox 360 Backward Compatibility is Microsofts original Xbox emulator for the Xbox 360.
 
+The emulator binary is called xefu.xex. The first resource is xb1krnl which is a modified version of [[Kernel|xboxkrnl.exe]].
+
+=== Modifications to xboxkrnl.exe ===
+
+The IDEXPDTR section has been dropped, additionally the extra data from the MS-DOS header is gone.
+
+==== Guest to host communication ====
+
+The entrypoint of the kernel looks like:
+
+<pre>
+80030878:	56                   	push   %esi
+80030879:	57                   	push   %edi
+8003087a:	8d 05 4c ac 02 80    	lea    0x8002ac4c,%eax
+80030880:	0f 3f                	(bad)  
+80030882:	04 20
+80030884:	8d 05 6c ac 02 80    	lea    0x8002ac6c,%eax
+8003088a:	0f 3f                	(bad)  
+8003088c:	04 20
+8003088e:	8d 05 8c ac 02 80    	lea    0x8002ac8c,%eax
+80030894:	0f 3f                	(bad)  
+80030896:	04 21
+80030898:	8d 05 70 94 01 80    	lea    0x80019470,%eax
+...
+</pre>
+
+According to [[https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf this document by symantec]] (Page 5, Left-hand-side) the patterns <code>0F 3F x1 x2</code> and <code>0F C7 C8 y1 y2</code> are used for communication with the host.
+
+{| class="wikitable"
+! x1 !! x2 !! Notes
+|-
+| 0x04 || 0x20 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x21 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x22 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x23 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x24 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x35 || Seems to use eax (address) as parameter?
+|-
+| 0x04 || 0x50 || Seems to use eax (address) as parameter?
+|-
+| 0x06 || 0x00 || Seems to use eax (address) and ecx (size) as parameter?
+|-
+| 0x06 || 0x26 ||
+|-
+| 0x06 || 0x27 ||
+|-
+| 0x06 || 0x28 ||
+|-
+| 0x06 || 0x29 ||
+|-
+| 0x06 || 0x0B ||
+|}
+
+
 == References and links ==
 * [http://support.xbox.com/en-US/legacy-devices/original-console/play-original-games Official compatibility list by Microsoft]
 * [http://michaelbrundage.com/project/xbox-360-emulator/ Michael Brundages page about the original Xbox emulator in the Xbox 360]

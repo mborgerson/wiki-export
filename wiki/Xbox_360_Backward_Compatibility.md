@@ -7,6 +7,55 @@ layout: wiki
 Xbox 360 Backward Compatibility is Microsofts original Xbox emulator for
 the Xbox 360.
 
+The emulator binary is called xefu.xex. The first resource is xb1krnl
+which is a modified version of [xboxkrnl.exe](/wiki/Kernel "wikilink").
+
+### Modifications to xboxkrnl.exe
+
+The IDEXPDTR section has been dropped, additionally the extra data from
+the MS-DOS header is gone.
+
+#### Guest to host communication
+
+The entrypoint of the kernel looks like:
+
+    80030878:   56                      push   %esi
+    80030879:   57                      push   %edi
+    8003087a:   8d 05 4c ac 02 80       lea    0x8002ac4c,%eax
+    80030880:   0f 3f                   (bad)  
+    80030882:   04 20
+    80030884:   8d 05 6c ac 02 80       lea    0x8002ac6c,%eax
+    8003088a:   0f 3f                   (bad)  
+    8003088c:   04 20
+    8003088e:   8d 05 8c ac 02 80       lea    0x8002ac8c,%eax
+    80030894:   0f 3f                   (bad)  
+    80030896:   04 21
+    80030898:   8d 05 70 94 01 80       lea    0x80019470,%eax
+    ...
+
+According to
+[https://www.symantec.com/avcenter/reference/Virtual\_Machine\_Threats.pdf
+this document by
+symantec](https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf_this_document_by_symantec "wikilink")
+(Page 5, Left-hand-side) the patterns `0F 3F x1 x2` and `0F C7 C8 y1 y2`
+are used for communication with the host.
+
+| x1   | x2   | Notes                                                   |
+|------|------|---------------------------------------------------------|
+| 0x04 | 0x20 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x21 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x22 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x23 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x24 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x35 | Seems to use eax (address) as parameter?                |
+| 0x04 | 0x50 | Seems to use eax (address) as parameter?                |
+| 0x06 | 0x00 | Seems to use eax (address) and ecx (size) as parameter? |
+| 0x06 | 0x26 |                                                         |
+| 0x06 | 0x27 |                                                         |
+| 0x06 | 0x28 |                                                         |
+| 0x06 | 0x29 |                                                         |
+| 0x06 | 0x0B |                                                         |
+
 References and links
 --------------------
 
