@@ -45,17 +45,49 @@ According to [https://www.symantec.com/avcenter/reference/Virtual_Machine_Threat
 |-
 | 0x04 || 0x50 || Seems to use eax (address) as parameter? " [3 elements]
 |-
-| 0x06 || 0x00 || Seems to use eax (address) and ecx (size) as parameter?
+| colspan="3" | Cleaner list starts here {{FIXME}}
 |-
-| 0x06 || 0x26 ||
+| 0x04 || 0x20 || 
 |-
-| 0x06 || 0x27 ||
+| 0x04 || 0x20 || 
 |-
-| 0x06 || 0x28 ||
+| 0x04 || 0x21 || 
 |-
-| 0x06 || 0x29 ||
+| 0x04 || 0x22 || 
 |-
-| 0x06 || 0x0B ||
+| 0x04 || 0x23 || 
+|-
+| 0x04 || 0x24 || 
+|-
+| 0x04 || 0x35 || 
+|-
+| 0x04 || 0x50 || 
+|-
+| 0x06 || 0x00 || Seems to use eax (address) and ecx (size) as parameter? Memory is 0x00 filled before. location is 0x8002b420, size would be 0x3000
+|-
+| 0x06 || 0x02 || 
+|-
+| 0x06 || 0x20 || Some call or callback registration to the address pointed to by eax
+|-
+| 0x06 || 0x21 || 
+|-
+| 0x06 || 0x22 || 
+|-
+| 0x06 || 0x23 || Some call or callback registration to the address pointed to by eax
+|-
+| 0x06 || 0x24 || 
+|-
+| 0x06 || 0x25 || 
+|-
+| 0x06 || 0x26 || 
+|-
+| 0x06 || 0x27 || 
+|-
+| 0x06 || 0x28 || 
+|-
+| 0x06 || 0x29 || 
+|-
+| 0x06 || 0x40 ||
 |}
 
 == References and links ==
