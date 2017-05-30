@@ -214,11 +214,11 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 
 === Sections ===
 
-=== .text ===
+==== .text ====
 
 The .text section contains all x86 subroutines to be executed by the [[CPU|processor]].
 
-=== .rdata ===
+==== .rdata ====
 
 The .rdata section contains the [[Kernel|kernel thunk table]]. The ordinals in the table are to be resolved to the kernel's actual calling routine, when loaded.
 
