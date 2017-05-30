@@ -26,7 +26,7 @@ The entrypoint of the kernel looks like:
 ...
 </pre>
 
-According to [[https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf this document by symantec]] (Page 5, Left-hand-side) the patterns <code>0F 3F x1 x2</code> and <code>0F C7 C8 y1 y2</code> are used for communication with the host.
+According to [https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf this document by symantec] (Page 5, Left-hand-side) the patterns <code>0F 3F x1 x2</code> and <code>0F C7 C8 y1 y2</code> are used for communication with the host.
 
 {| class="wikitable"
 ! x1 !! x2 !! Notes

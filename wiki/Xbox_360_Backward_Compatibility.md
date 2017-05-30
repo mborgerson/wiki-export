@@ -33,10 +33,8 @@ The entrypoint of the kernel looks like:
     80030898:   8d 05 70 94 01 80       lea    0x80019470,%eax
     ...
 
-According to
-[https://www.symantec.com/avcenter/reference/Virtual\_Machine\_Threats.pdf
-this document by
-symantec](https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf_this_document_by_symantec "wikilink")
+According to [this document by
+symantec](https://www.symantec.com/avcenter/reference/Virtual_Machine_Threats.pdf)
 (Page 5, Left-hand-side) the patterns `0F 3F x1 x2` and `0F C7 C8 y1 y2`
 are used for communication with the host.
 
