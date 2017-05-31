@@ -4,9 +4,6 @@ permalink: wiki/The_Hidden_Boot_Code_of_the_Xbox/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox)
-
 or **“How to fit three bugs in 512 bytes of security code”**
 
 by [Michael

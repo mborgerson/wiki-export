@@ -1,5 +1,4 @@
-
-Retrieved from [https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox]
+{{retrieved|https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox|ours=MCPX ROM}}
 
 or '''"How to fit three bugs in 512 bytes of security code"'''
 
