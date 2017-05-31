@@ -9,6 +9,9 @@ Random resources about Xbox hacking
 
 -   [Michael Steils Xbox Presentation from C3 in
     2005](https://events.ccc.de/congress/2005/fahrplan/attachments/591-paper_xbox.pdf)
+-   <https://media.ccc.de/v/19C3-399-xbox-linux>
+-   <https://media.ccc.de/v/22C3-559-en-xbox_hacking>
+-   <https://www.youtube.com/watch?v=6fOjGLCctEY>
 -   [Bunnies original Xbox
     page](http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html)
 -   [Bunnies “Hacking the Xbox” e-book for

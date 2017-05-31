@@ -1,5 +1,8 @@
 == Random resources about Xbox hacking ==
 * [https://events.ccc.de/congress/2005/fahrplan/attachments/591-paper_xbox.pdf Michael Steils Xbox Presentation from C3 in 2005]
+* https://media.ccc.de/v/19C3-399-xbox-linux
+* https://media.ccc.de/v/22C3-559-en-xbox_hacking
+* https://www.youtube.com/watch?v=6fOjGLCctEY
 * [http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html Bunnies original Xbox page]
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
 * [https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
