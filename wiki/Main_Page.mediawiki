@@ -52,6 +52,7 @@
 == Emulation ==
 * [[Emulators]]
 ** [[XQEMU]]
+** [[Xbox 360 Backward Compatibility]]
 
 == Other ==
 * [[Network]]

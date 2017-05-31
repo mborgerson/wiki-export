@@ -68,6 +68,8 @@ Emulation
 
 -   [Emulators](/wiki/Emulators "wikilink")
     -   [XQEMU](/wiki/XQEMU "wikilink")
+    -   [Xbox 360 Backward
+        Compatibility](/wiki/Xbox_360_Backward_Compatibility "wikilink")
 
 Other
 -----
