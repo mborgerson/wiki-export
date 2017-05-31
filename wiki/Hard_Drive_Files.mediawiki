@@ -256,11 +256,9 @@ C
 
 Here are the differences for this dashboard
 
-<pre>
-C
-    xboxdashdata.185a6100
-    xodash
-        update.xbe      2260992 78ad0f3f0cb83010728e00457a778121
-        xonlinedash.xbe 2617344 01dd6c8aa72b473ba1523c73c6527d86
-    xboxdash.xbe   1961984 1fa397b44ec78965ef955539fd8f4fbd
-</pre>
+* {{fs-drive|C:}}
+** {{fs-folder|xboxdashdata.185a6100}}
+** {{fs-folder|xodash}}
+*** {{fs-file|update.xbe|size=2260992|hash=78ad0f3f0cb83010728e00457a778121}}
+*** {{fs-file|xonlinedash.xbe|size=2617344|hash=01dd6c8aa72b473ba1523c73c6527d86}}
+** {{fs-file|xboxdash.xbe|size=1961984|hash=1fa397b44ec78965ef955539fd8f4fbd}}
