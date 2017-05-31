@@ -1,4 +1,4 @@
-Retrieved from [https://web.archive.org/web/20100617022549/http://www.xbox-linux.org/wiki/PIC]
+{{retrieved|https://web.archive.org/web/20100617022549/http://www.xbox-linux.org/wiki/PIC|ours=SMC}}
 
 by ''Georg Lukas, Michael Steil, Jeff Mears'', 26 June 2002
 

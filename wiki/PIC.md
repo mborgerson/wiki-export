@@ -4,9 +4,6 @@ permalink: wiki/PIC/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617022549/http://www.xbox-linux.org/wiki/PIC)
-
 by *Georg Lukas, Michael Steil, Jeff Mears*, 26 June 2002
 
 Little is known about how to program the PIC. Basically, the PIC is an
@@ -236,4 +233,4 @@ all on these machines.
 
 <hr />
 (original version:
-[2](https://web.archive.org/web/20100617022549/http://www.xbox-linux.org/docs/smc.html))
+[1](https://web.archive.org/web/20100617022549/http://www.xbox-linux.org/docs/smc.html))
