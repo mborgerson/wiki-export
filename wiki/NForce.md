@@ -4,8 +4,6 @@ permalink: wiki/NForce/
 layout: wiki
 ---
 
-Retrieved from [1](http://www.xbox-linux.org/wiki/NForce)
-
 This documents collects information about the Xbox chipset and its
 sibling, the nVidia nForce chipset, as well as further relatives.
 
@@ -30,14 +28,14 @@ So these are the four possible combinations:
 | IGP-64  | nForce 220 | nForce 220D |
 | IGP-128 | nForce 420 | nForce 420D |
 
-[2](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2001/05/31/nvidia_crush_chipset_named_nforce/)
-[3](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2001/06/01/nvidia_crush_is_called_nforce/)
+[1](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2001/05/31/nvidia_crush_chipset_named_nforce/)
+[2](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2001/06/01/nvidia_crush_is_called_nforce/)
 
 The VGA controller inside the IGP is a “GeForce2 MX Integrated Graphics”
 (PCI ID:10de/01a0). Its internal name is NV1A.
 
-[4](https://web.archive.org/web/20100617023830/http://pciids.sourceforge.net/iii/?i=10de)
-[5](https://web.archive.org/web/20100617023830/http://www.nvitalia.com/articoli/editoriali/produzione_nvidia_2001.htm)
+[3](https://web.archive.org/web/20100617023830/http://pciids.sourceforge.net/iii/?i=10de)
+[4](https://web.archive.org/web/20100617023830/http://www.nvitalia.com/articoli/editoriali/produzione_nvidia_2001.htm)
 
 Although IGP-64 and IGP-128 are different and their respective chipsets
 have different codenames (Crush11 and Crush12, see below), there seems
@@ -58,8 +56,8 @@ Crush
 Crush18 is the nForce2. The “11” probably derives from “NV11”, the
 internal name of the GeForce2 MX.
 
-[6](https://web.archive.org/web/20100617023830/http://users.erols.com/chare/chipsets.htm)
-[7](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2000/11/17/nvidias_super_secret_crush_spec/)
+[5](https://web.archive.org/web/20100617023830/http://users.erols.com/chare/chipsets.htm)
+[6](https://web.archive.org/web/20100617023830/http://www.theregister.co.uk/2000/11/17/nvidias_super_secret_crush_spec/)
 
 nForce & Xbox
 -------------
@@ -68,10 +66,10 @@ The Xbox has an IGP-128 that uses an NV2A video core (PCI ID:10de/02a5),
 which is between the GeForce3 (NV20) and the GeForce4 (NV25). The
 Southbridge is called “MCP-X” and lacks the PCI card bus (PCI bus \#1).
 
-[8](https://web.archive.org/web/20100617023830/http://www.digit-life.com/articles/nvidianforce/)
-[9](https://web.archive.org/web/20100617023830/http://www.anandtech.com/showdoc.html?i=1484)
-[10](https://web.archive.org/web/20100617023830/http://www.anandtech.com/cpuchipsets/showdoc.aspx?i=1535)
-[11](https://web.archive.org/web/20100617023830/http://www.anandtech.com/systems/showdoc.aspx?i=1561&p=3)
+[7](https://web.archive.org/web/20100617023830/http://www.digit-life.com/articles/nvidianforce/)
+[8](https://web.archive.org/web/20100617023830/http://www.anandtech.com/showdoc.html?i=1484)
+[9](https://web.archive.org/web/20100617023830/http://www.anandtech.com/cpuchipsets/showdoc.aspx?i=1535)
+[10](https://web.archive.org/web/20100617023830/http://www.anandtech.com/systems/showdoc.aspx?i=1561&p=3)
 
 AMD Heritage
 ------------
@@ -98,22 +96,22 @@ Evidence:
 -   The AMD and nForce AMD IDE controllers are fully compatible. (Linux
     kernel: “AMD 755/756/766/8111 and nVidia
     nForce/2/2s/3/3s/CK804/MCP04 IDE driver for Linux.”
-    [12](https://web.archive.org/web/20100617023830/http://lxr.linux.no/source/drivers/ide/pci/amd74xx.c))
+    [11](https://web.archive.org/web/20100617023830/http://lxr.linux.no/source/drivers/ide/pci/amd74xx.c))
 -   The I2C/SMBus controller on the nForce is fully AMD-756/766/68
     compatible.
-    [13](https://web.archive.org/web/20100617023830/http://lxr.linux.no/source/drivers/i2c/busses/i2c-amd756.c)
+    [12](https://web.archive.org/web/20100617023830/http://lxr.linux.no/source/drivers/i2c/busses/i2c-amd756.c)
 -   The audio controller is i810 compatible - as is the audio controller
     of the AMD-768 and the AMD-8111.
 -   The nForce and AMD-768 modems are compatible.
 -   At least one register (“VGA\_en”) in the nForce PCI-to-AGP bridge is
     compatible with the AMD chipset (AMD-761, 24081.pdf, page 136).
 -   The nForce uses HyperTransport.
--   [14](https://web.archive.org/web/20100617023830/http://www.uwsg.iu.edu/hypermail/linux/kernel/0307.3/0922.html),
-    [15](https://web.archive.org/web/20100617023830/http://www.uwsg.iu.edu/hypermail/linux/kernel/0301.3/0305.html)
+-   [13](https://web.archive.org/web/20100617023830/http://www.uwsg.iu.edu/hypermail/linux/kernel/0307.3/0922.html),
+    [14](https://web.archive.org/web/20100617023830/http://www.uwsg.iu.edu/hypermail/linux/kernel/0301.3/0305.html)
 -   *“One man's guess, the silicon is not a major factor. Because the
     nForce and 760 MP have a similar pin count, they are going to be
     cost comparable.”*
-    [16](https://web.archive.org/web/20100617023830/http://overclockers.com/articles446/)
+    [15](https://web.archive.org/web/20100617023830/http://overclockers.com/articles446/)
 
 |            |             |             |
 |------------|-------------|-------------|
@@ -133,4 +131,4 @@ The nForce chipset might be based on the AMD-760 chipset.
 More Links
 ----------
 
-[17](https://web.archive.org/web/20100617023830/http://www.duxcw.com/digest/guides/mb_chip/nforce/print.htm)
+[16](https://web.archive.org/web/20100617023830/http://www.duxcw.com/digest/guides/mb_chip/nforce/print.htm)

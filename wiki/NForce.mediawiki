@@ -1,4 +1,4 @@
-Retrieved from [http://www.xbox-linux.org/wiki/NForce]
+{{retrieved|http://www.xbox-linux.org/wiki/NForce}}
 
 
 This documents collects information about the Xbox chipset and its sibling, the nVidia nForce chipset, as well as further relatives.
