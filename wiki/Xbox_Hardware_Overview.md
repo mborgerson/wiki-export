@@ -4,9 +4,6 @@ permalink: wiki/Xbox_Hardware_Overview/
 layout: wiki
 ---
 
-Retrieved from
-[1](http://www.xbox-linux.org/wiki/Xbox_Hardware_Overview)
-
 The Xbox is a standard PC, based on standard components, but extended
 with a some security solutions. This document gives an overview of the
 components the Xbox is made of.
