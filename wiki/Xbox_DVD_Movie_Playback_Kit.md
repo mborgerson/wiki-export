@@ -4,8 +4,6 @@ permalink: wiki/Xbox_DVD_Movie_Playback_Kit/
 layout: wiki
 ---
 
-Retrieved from [1](http://www.xbox-linux.org/wiki/DVD-IR_Internals)
-
 by *Rob Reilink*, 3 Mar 2003
 
 Introduction
