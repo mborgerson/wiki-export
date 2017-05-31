@@ -36,25 +36,13 @@ Structure Layout
 Here's a typical layout of a the savegame folders, shown with Splinter
 Cell and Xbox Dashboard Music.
 
-    +-E:
-      +-TDATA
-      | +-5553000c
-      | | +-audiovideo.par
-      | | +-contentimage.xbx
-      | +-fffe0000
-      |   +-music
-      |     +-ST.DB
-      +-UDATA
-        +-5553000c
-          +-8E6AA806E588
-          | +-GMMAN_Profile.sg1
-          | +-GMMAN_Profile.sg2
-          | +-GMMAN_Profile.sg3
-          | +-Profile.inf
-          | +-SaveMeta.xbx
-          +-SaveImage.xbx
-          +-TitleImage.xbx
-          +-TitleMeta.xbx
+-   -   -   -   -   
+
+        -   -   -   
+
+    -   -   -   -   -   -   -   -   
+
+            -   -   -   
 
 As you can see, in the top level there are two folders, TDATA and UDATA.
 Under each of those folders are folders named according to the game's ID

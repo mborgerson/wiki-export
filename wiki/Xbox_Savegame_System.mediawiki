@@ -23,25 +23,25 @@ Saves are nested individually inside the game's folder, which are nested inside 
 
 Here's a typical layout of a the savegame folders, shown with Splinter Cell and Xbox Dashboard Music.
 
-<pre>+-E:
-  +-TDATA
-  | +-5553000c
-  | | +-audiovideo.par
-  | | +-contentimage.xbx
-  | +-fffe0000
-  |   +-music
-  |     +-ST.DB
-  +-UDATA
-    +-5553000c
-      +-8E6AA806E588
-      | +-GMMAN_Profile.sg1
-      | +-GMMAN_Profile.sg2
-      | +-GMMAN_Profile.sg3
-      | +-Profile.inf
-      | +-SaveMeta.xbx
-      +-SaveImage.xbx
-      +-TitleImage.xbx
-      +-TitleMeta.xbx</pre>
+*{{fs-drive|E:}}
+**{{fs-folder|TDATA}}
+***{{fs-folder|5553000c}}
+****{{fs-file|audiovideo.par}}
+****{{fs-file|contentimage.xbx}}
+***{{fs-folder|fffe0000}}
+****{{fs-folder|music}}
+*****{{fs-file|ST.DB}}
+**{{fs-folder|UDATA}}
+***{{fs-folder|5553000c}}
+****{{fs-folder|8E6AA806E588}}
+*****{{fs-file|GMMAN_Profile.sg1}}
+*****{{fs-file|GMMAN_Profile.sg2}}
+*****{{fs-file|GMMAN_Profile.sg3}}
+*****{{fs-file|Profile.inf}}
+*****{{fs-file|SaveMeta.xbx}}
+****{{fs-file|SaveImage.xbx}}
+****{{fs-file|TitleImage.xbx}}
+****{{fs-file|TitleMeta.xbx}}
 
 As you can see, in the top level there are two folders, TDATA and UDATA. Under each of those folders are folders named according to the game's ID (for example, Splinter Cell's ID is 5553000c). They are in both TDATA and UDATA folders.
 
@@ -137,7 +137,6 @@ The TDATA folder is similar in structure to the UDATA folder. However, it is use
 ====contentimage.xbx====
 
 Contentimage.xbx is used in the same way as SaveImage.xbx, except that it is used specifically to indicate downloaded contents.
-
 
 ==Special Case of Xbox Dashboard==
 
