@@ -39,7 +39,7 @@
 * [[Exploits]]
 
 == Development Kits and Tools ==
-* [https://github.com/xqemu/nxdk NXDK (New Xbox Development Kit)]
+* [https://github.com/xqemu/nxdk nxdk (New Xbox Development Kit)]
 * [[OpenXDK]]
 * [[Microsoft XDK]]
 ** [[Xbox Debug Monitor]]
