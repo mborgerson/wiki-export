@@ -4,9 +4,6 @@ permalink: wiki/Xbox_Manufacturing_Process/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617013616/http://www.xbox-linux.org/wiki/Xbox_Manufacturing_Process)
-
 by *Michael Steil*
 
 There are many different Xboxes. Although they all look the same (except
@@ -146,14 +143,14 @@ the EEPROM whenever they replaced the drive.
 
 <img src="https://web.archive.org/web/20100617013616im_/http://www.xbox-linux.org/pic/repairdvd.jpg" alt="repairdvd.jpg" />
 <img src="https://web.archive.org/web/20100617013616im_/http://www.xbox-linux.org/pic/xboxqc.jpg" alt="xboxqc.jpg" />
-[2](https://web.archive.org/web/20100617013616/http://www.amcham.hu/BusinessHungary/16-01/articles/16-01_26.asp)
+[1](https://web.archive.org/web/20100617013616/http://www.amcham.hu/BusinessHungary/16-01/articles/16-01_26.asp)
 
 Further Reading
 ---------------
 
 -   [Xbox Manufacturing Process
     Pictures](https://web.archive.org/web/20100617013616/http://www.xbox-linux.org/wiki/Xbox_Manufacturing_Process_Pictures)
--   [3](https://web.archive.org/web/20100617013616/http://www.ifm.eng.cam.ac.uk/ctm/idm/cases/xbox.html)
+-   [2](https://web.archive.org/web/20100617013616/http://www.ifm.eng.cam.ac.uk/ctm/idm/cases/xbox.html)
     Innovation and Design Management case study
 -   O'Brien, J. [The making of the
     Xbox](https://web.archive.org/web/20100617013616/http://www.wired.com/wired/archive/9.11/flex_pr.html),
