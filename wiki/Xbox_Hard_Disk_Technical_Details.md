@@ -4,9 +4,6 @@ permalink: wiki/Xbox_Hard_Disk_Technical_Details/
 layout: wiki
 ---
 
-Retrieved from
-[1](http://www.xbox-linux.org/wiki/Xbox_Hard_Disk_Technical_Details)
-
 by Michael Steil (original version: 1 May 2002, updated 26 September
 2002)
 

@@ -1,4 +1,4 @@
-Retrieved from [http://www.xbox-linux.org/wiki/Xbox_Hard_Disk_Technical_Details]
+{{retrieved|http://www.xbox-linux.org/wiki/Xbox_Hard_Disk_Technical_Details|ours=Hard Drive}}
 
 
 by Michael Steil (original version: 1 May 2002, updated 26 September 2002)
