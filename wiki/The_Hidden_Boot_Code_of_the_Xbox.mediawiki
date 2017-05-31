@@ -1,0 +1,310 @@
+
+Retrieved from [https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox]
+
+or '''"How to fit three bugs in 512 bytes of security code"'''
+
+by [https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/User:Michael_Steil Michael Steil]
+
+Note: This article is partially incomplete. It is superseded by the more detailed article [https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox 17 Mistakes Microsoft Made in the Xbox Security System]
+
+In order to lock out both copied games as well as homebrew software, including the GNU/Linux operating system, Microsoft built a chain of trust on the Xbox reaching from the hardware to the execution of game code, in order to avoid the infiltration of code that has not been authorized by Microsoft. The link between hardware and software in this chain of trust is the hidden "MCPX" boot ROM. The principles, the implementations and the security vulnerabilities of this 512 bytes ROM will be discussed in this article.
+
+<div class="center">'''Missing image'''<br />''Chain_Of_Trust.png'' <br />Image:Chain Of Trust.png<br /><br /> </div>
+
+In short: The memory limitations in the hidden ROM made the system vulnerable in principle. A terribly wrong design and three bugs in the implementation opened three independent backdoors.
+
+
+
+== Why a Hidden ROM is Needed ==
+
+The Xbox is an IBM PC, i.e. it has an x86 CPU. When the machine is turned on, it starts execution 16 bytes from the top of its address space, at the address FFFF_FFF0 (F000:FFF0 in 8086 segment:offset notation). On an IBM PC, the upper 64 KB (or more) of the address space are occupied by the BIOS ROM, so the CPU starts execution in this ROM.
+
+The Xbox, having an external (reprogrammable) 1 MB Flash ROM chip (models since 2003 have only 256 KB), would normally start running code there as well, since this megabyte is also mapped into the uppermost area of the address space. But this would make it too easy for someone who wants to either replace the ROM image with a self-written one or patch it to break the chain of trust ("modchips"). If the ROM image could be fully accessed, it would be easy to reverse-engineer the code; encryption and obfuscation would only slow down the hacking process a bit.
+
+A common idea to make the code inaccessible is not to put it into an external chip, but integrate it into one of the other chips. Then there is no standard way to extract the data, and none to replace the chip with one with different contents. But this way, it is a lot more expensive, both the design of a chip that includes both ROM and additional logic, and updating the ROM in a new version of the Xbox if there is a flaw in the ROM.
+
+A good compromise is to store only a small amount of code in one of the other chips, and store the bulk of it in the external Flash chip. This small ROM can not be extracted easily, and it cannot be changed or replaced. The code in there just has to make sure that an attacker can neither understand nor successfully patch the bulk of the code he has access to, which is stored in Flash ROM.
+
+Microsoft decided to go this way, and they stored 512 bytes of code in the Xbox' Southbridge, the MCPX (Media and Communications Processor for Xbox), which is manufactured by nVidia. This code is supposed to be mapped into the uppermost 512 bytes of the address space, overriding the Flash ROM at this position, so that the CPU starts execution there. It includes x86 code for a decryption function with a secret key that makes the CPU decipher (parts of the) "unsafe" code in the Flash ROM into RAM and run it. Without knowing the key, it is practically impossible to understand or even patch the encrypted code in Flash ROM.
+
+
+== The Code in the Hidden ROM ==
+
+ROM in a multifunction IC is expensive, therefore it has to be small. Microsoft decided it to be only 512 bytes. Microsoft's implementation of the RC4 decryption algorithm fits well in about 150 bytes, so, at first inspection, this should be no problem.
+
+
+=== The 512 Bytes problem ===
+
+But it is. When the CPU starts up, we cannot simply start decrypting data from flash ROM into RAM. We have to
+
+
+* initialize the CPU (32 bit mode, caching, segmenting)
+* initialize the chipset and RAM so that the machine is in a stable state
+
+While the CPU initialization can be done in less than 150 bytes, the initialization of the chipset and RAM, if done completely, will require more than 1000 bytes of assembly code. Even at a minimum, Microsoft probably did not see a way to fit all this into these 512 bytes.
+
+Therefore it was decided to store some initialization tables in Flash ROM. The Southbridge was modified to read these tables even before the CPU starts running, and to pass these values to the Northbridge and Southbridge components. These tables are fetched from the very beginning of Flash ROM (FFF0_0000) and are 52 bytes long.
+
+But these tables are not enough for full hardware initialization. Tables are just not powerful enough - for memory initialization, memory stability tests have to be made. Putting some x86 code to do this into Flash ROM would pervert the security system, because a hacker could then easily put his own code there.
+
+
+=== The Xcodes ===
+
+Microsoft decided to create a simple virtual machine that was well-suited for running hardware initialization code, but not much else. They created a tiny interpreter that understands 12 statements, but is not supposed to be powerful enough to take over the machine. As it is secure, this bytecode, called Xcode by the hackers that discovered it, can then be stored in Flash ROM. So the hidden ROM initializes the CPU, interprets the Xcodes stored in Flash ROM to set up the machine and then decrypts and runs x86 code from Flash ROM.
+
+The Xcodes start at FFF0_0080 (at 128 bytes) in Flash ROM. As the Flash can be easily updated in newer revisions of the Xbox, their size needn't be constant; they are typically about 3000 bytes in size, which is about 330 statements.
+
+An Xcode consists of an 8 bit statement, always followed by two 32 bit operands. The virtual machine has a 32 bit accumulator. The following table summarizes possible instructions; all other codes are treated as NOP:
+
+
+{| class="wikitable"
+|-
+|  0x02
+|  PEEK
+|  ACC&nbsp;:= MEM[OP1]
+|-
+|  0x03
+|  POKE
+|  MEM[OP1]&nbsp;:= OP2
+|-
+|  0x04
+|  POKEPCI
+|  PCICONF[OP1]	:= OP2
+|-
+|  0x05
+|  PEEKPCI
+|  ACC&nbsp;:= PCICONF[OP1]
+|-
+|  0x06
+|  AND/OR
+|  ACC&nbsp;:= (ACC &amp; OP1) 	OP2
+|-
+|  0x07
+|  (prefix)
+|  execute the instruction code in OP1 with OP1&nbsp;:= OP2, OP2&nbsp;:= ACC
+|-
+|  0x08
+|  BNE
+|  IF ACC = OP1	THEN PC	:= PC +	OP2
+|-
+|  0x09
+|  BRA
+|  PC&nbsp;:= PC + OP2
+|-
+|  0x10
+|  AND/OR ACC2
+|  ''(unused/defunct)'' ACC2&nbsp;:= (ACC2 &amp; OP1)  OP2
+|-
+|  0x11
+|  OUTB
+|  PORT[OP1]&nbsp;:=	OP2
+|-
+|  0x12
+|  INB
+|  ACC&nbsp;:= PORT(OP1)
+|-
+|  0xEE
+|  END
+|}
+
+So the interpreter, rewritten in C, looks roughly like this:
+
+<pre>struct {
+    char opcode;
+    int op1;
+    int op2;
+} *p;
+int acc;
+
+p = 0xFFF00080;
+
+while(1) {
+    switch(p-&gt;opcode) {
+        case 2:
+            acc = *((int*)p-&gt;op1);
+            break;
+        case 3:
+            *((int*)p-&gt;op1) = p-&gt;op2;
+            break;
+        case 4:
+            outl(p-&gt;op1, 0x0CF8);
+            outl(p-&gt;op2, 0x0CFC);
+            break;
+        case 5:
+            ...
+        case 0xEE:
+            goto end;
+    }
+    p++;
+}
+end:
+</pre>
+
+PEEK and POKE read from and write constants to main memory. OUTB and INB do the same with 8 bit I/O ports. (I/O ports are another address space, 16 bit wide, next to the 32 bit memory address space. While most other CPU architectures control hardware by accessing their registers as if they were memory, the Intel architecture can access some older components through specialized in/out assembly instructions.) POKEPCI and PEEKPCI access the PCI configuration area, by sending the PCI config address to 32 bit I/O port 0xCF8 and accessing the value at 32 bit I/O port 0xCFC. (On PCI-equipped computers, every PCI device has at least 64 bytes of PCI config registers. On a PC, the BIOS or a Plug-and-Play operating system communicates through these registers to find out what resources (memory, I/O ports, interrupts) a device needs and then maps these resources. The I/O ports 0xCF8/0xCFC are the communication mechanism for the PCI config space on PCs.)
+
+The AND/OR instruction can do a 32 bit AND or OR or both at the same time with the accumulator. BNE branches if the accumulator is equal to a constant, BRA branches always. The prefix 0x07 can be used to execute any of the other statements with the accumulator as the second operand. This way, "POKE addr, ACC", "POKEPCI addr, ACC", "BNE PC+ACC", "BRA PC+ACC" and "OUT addr, ACC" are possible. The code 0x07 is handled by the interpreter, and uses a second accumulator, but this code is never used by the Xcodes. The code 0xEE ends the interpreter and makes the hidden ROM go on with the RC4 decryption.
+
+
+=== RC4 decryption, validity check and panic code ===
+
+After the Xcodes have completed the hardware setup, the machine is in a stable state, so that it is possible to decrypt parts of the Flash ROM directly into RAM and run it there. As mentioned earlier, the RC4 code including the key is about 150 bytes in size. The Xcode interpreter is about 175 bytes, and CPU init about 145 bytes. This leaves only about 40 bytes for a check whether decryption was successful and halt the machine otherwise.
+
+This seems not to have been enough space for Microsoft's engineers to implement a small checksum routine, so they only checked for one 32 bit constant (0x7854794A) at the end of the decrypted data in RAM (0x0009_5FE4). If this is successful, the CPU jumps to 0x9_0000 in RAM, where the new code has been written. This code, the "second bootloader" ("2bl") is about 25 KB in size. It continues initializing the hardware and decompresses the kernel from Flash ROM.
+
+If the decrypted value is not correct, the CPU is supposed to halt. Simply using the "hlt" opcode would mean that the machine would remain turned on and idle with the hidden ROM visible in the address space. A hacker could then use some hardware attached to the chipset that extracts the data from ROM from a running machine. The designers therefore decided to always turn off the hidden ROM as soon as possible in both branches, when decryption was successful (then it is turned off as one of the first instructions in the "2bl" code), and if it wasn't.
+
+But making the CPU crash and turning off the ROM it is running in is a challenge. If we halt the CPU, we cannot turn off the ROM afterwards. If we turn off the ROM, we turn off the code that gets run and we cannot halt the CPU - even worse, the CPU would continue fetching its opcodes from the underlying Flash ROM as soon as the hidden ROM is deactivated.
+
+Microsoft's developers came up with a very interesting trick: They led execution to the absolute top of the address space, and as the very last instruction, they turn off the hidden ROM. Then the instruction pointer is supposed to overflow from FFFF_FFFF to 0000_0000 and an exception is supposed to be generated which in turn is supposed to halt the CPU because no exception handler is registered.
+
+<div class="center"><img src="https://web.archive.org/web/20100617012156im_/http://www.xbox-linux.org/pic/memorymap.png" alt="memorymap.png" /></div>
+
+== Security Issues ==
+
+This system looks pretty secure. If we don't know what's going on, it is a lot of work to find out that there is a hidden boot ROM (but it's easy to prove because the Xbox still boots if you overwrite the upper 512 bytes of Flash ROM since they never get used). If we don't have access to the boot ROM, we cannot decrypt and thus cannot understand the code in Flash ROM. Because we don't know how to reencrypt, we cannot patch the code in Flash.
+
+
+=== The Importance of the Secret Key ===
+
+But what happens if someone finds out the hidden 512 bytes? [https://web.archive.org/web/20100617012156/http://www.xenatera.com/bunnie/proj/anatak/xboxmod.html Bunnie] did, Christmas 2001. He tapped the bus between the Southbridge (where the secret MCPX code is stored) and the Northbridge (the CPU's memory interface) where all secret data gets transmitted. The compromise to store the secret ROM in the MCPX instead of the CPU, so that data would travel over a bus, finally broke the system. Knowing the algorithm and the secret key, he could easily disassemble the whole code in Flash ROM, and he could have even patched and reencrypted the code - the decryption code won't notice the difference, as the Flash ROM is not hashed: Only a single 32 bit value is checked. Modchip makers, who used similar tricks to get hold of the hidden ROM, used this knowledge to create patched versions of the Flash ROM image and distributed them on boards that, soldered to the Xbox motherboard, overrode the onboard Flash ROM.
+
+
+=== Security Measures in the Hidden ROM ===
+
+So as soon as the encryption algorithm and the key are known, everything is possible? Not quite. In order to create a working Flash ROM image, you have to use Microsoft's secret key, which is considered illegal under certain jurisdictions. So for a completely legal replacement Flash ROM image that takes over the machine to be free to run any homebrew software or alternative operating systems, a complete security analysis had to be made.
+
+Since the hidden code depends in some way on external data, stored in Flash ROM, which can be quite easily changed by the user, it may be attackable through certain data stored there. Microsoft understood this danger and added some precautions so that the Xcodes could not be abused - supposedly - in case the secret ROM was known.
+
+
+==== PEEK ====
+
+The Xcode language is powerful enough to easily read and write memory, the PCI configuration space as well as I/O ports. The user could easily add Xcodes that read the hidden MCPX ROM and send the data to some I/O ports, e.g. the I2C bus. Therefore all memory reads are limited to the lower 256 MB:
+
+<pre>    and ebx, 0FFFFFFFh &nbsp;; clear	upper 4 bits
+    mov edi, [ebx]      &nbsp;; read from memory location op1 into di
+    jmp next_instruction
+</pre>
+
+==== POKEPCI ====
+
+Turning off the hidden ROM is done by the following statements:
+
+<pre>    mov eax, 80000880h
+    mov dx, 0CF8h
+    out dx, eax
+    add dl, 4
+    mov al, 2
+    out dx, al
+</pre>
+
+This code sets bit #1 in the PCI config space, device 0:1:0, register offset 0x80 (coded in 0x80000880).
+
+Using the POKEPCI instruction, it would be possible to disable the hidden ROM prematurely, so that the underlying Flash ROM, which is normally overlapped by the secret ROM, would be visible, and CPU would continue running there, where the hacker could simly store his code:
+
+<pre>    POKEPCI 0x80000880, 2
+</pre>
+
+Therefore the interpreter always clears bit 1 if the Xcode wants to write to 0x80000880:
+
+<pre>    cmp ebx, 80000880h        &nbsp;; ISA Bridge, MCPX disable?
+    jnz short not_mcpx_disable&nbsp;; no
+    and ecx, not 2            &nbsp;; clear	bit 1
+not_mcpx_disable:
+    mov eax, ebx
+    mov dx, 0CF8h
+    out dx, eax               &nbsp;; PCI configuration address
+    add dl, 4
+    mov eax, ecx
+    out dx, eax               &nbsp;; PCI configuration data
+    jmp short next_instruction
+</pre>
+
+==== Halt ====
+
+As described earlier, if the hidden ROM detects that decryption was unsuccessful, it halts the CPU and turns off the hidden ROM by turning it off as the very last statement in the CPU's address space, causing an address overflow exception and thus a CPU halt in the very next cycle. This is supposed to make it impossible for a hacker to extract the hidden ROM contents, because the hidden ROM is always turned off very quickly, even if the machine does not boot correctly.
+
+<pre>    mov eax, ds:95FE4h
+    cmp eax, 7854794Ah
+    jnz short bad_checkcode
+    mov eax, ds:90000h
+    jmp eax                 &nbsp;; jump to decrypted second bootloader in RAM
+bad_checkcode:
+    mov eax, 80000880h	     &nbsp;; prepare MCPX ROM disable
+    mov dx, 0CF8h
+    out dx, eax
+    jmp far ptr 8:0FFFFFFFAh&nbsp;; jump to end of ROM, wraparound
+[...]
+FFFA:&nbsp;; this is address FFFFFFFA
+    add	dl, 4
+    mov	al, 2
+    out	dx, al
+; ------ this is address 00000000 ------
+</pre>
+
+=== Security Flaws in the Hidden ROM ===
+
+While these three security precautions that have just been described are indeed vital, two of them are faulty. The POKEPCI check is incorrectly implemented, and the somewhat clever "Halt" trick, which was supposed to lock out hardware sniffers, opened a software backdoor.
+
+
+==== The Visor Trick ====
+
+The roll over of the instruction pointer from FFFF_FFFF to 0000_0000 is supposed to generate an exception. Since no exception handlers are installed, this is supposed to halt the machine. But in reality, no exception is generated. Execution just happily continues at 0000_0000 - in RAM! Apparently the i386 CPU family throws no exception in this case, Microsoft's engineers only assumed it or misread the documentation and never tested it.
+
+By adding Xcodes to write a jump to some Flash ROM address, like FFF0_0000, into memory at location 0, and causing the decryption check to fail by just not including the 32 bit check value into the Flash ROM, one's own code will be run right after the RC4 decryption:
+
+<pre>    POKE 0x00000000, 0x001000B8&nbsp;; store "mov eax, 0xFF001000; jmp eax"
+    POKE 0x00000004, 0x90E0FFFF&nbsp;; at 0x00000000 in memory
+    END
+   &nbsp;; now we can place our code at 0x1000 in Flash
+</pre>
+
+==== The MIST Trick ====
+
+POKEPCI's check for 0x80000880, the address of the configuration register to turn off the hidden ROM, is incorrect. The Southbridge, which decodes the 32 bit value into "bus", "device", "function" and "register" and sends the funcion and register numbers to the specific device on the specific bus, simply ignores the unused bits of that 32 bit value, so 0x88000880 or 0xF0000880 behave exactly the same as 0x80000880 - but POKEPCI's check does not detect them. So this check even gives the attacker a hint how to circumvent it.
+
+By adding the statement POKEPCI 0x88000880, 2 to the Xcodes, the interpreter will turn off the hidden ROM - where it is running itself! As soon as the CPU cache has run empty, execution will continue somewhere between FFFF_FE00 and FFFF_FFFF in Flash ROM. You can simply fill everything with NOPs and add a JMP to your own code at the very top.
+
+
+==== More Attacks? ====
+
+Since two methods to circumvent the Xbox hidden ROM security without touching any crypto both work equally well, there has been little need for further research, but there might very well be more than two security issues in these 512 bytes. There are two more approaches for attacks that we do not want to disclose yet, as Microsoft may still offer updated Xboxes in the future.
+
+
+== Microsoft's Fixes ==
+
+In August 2002, Microsoft started manufacturing V1.1 Xboxes, which had been improved in many ways. In concerns of security, the hidden ROM and the MCPX' PCI config behavior had been updated (the MCPX revision is "C3" instead of "B2"): They now squeezed a TEA hash into the 512 bytes, replacing the old 32 bit test. The "2bl" code now couldn't be altered easily. And they changed the RC4 secret key.
+
+But although they had the possibility to patch their design, Microsoft again failed to make the Xbox secure this time:
+
+
+* They left both the MIST backdoor and the Visor backdoor wide open.
+* The TEA hash has been a bad choice. If they had even read Schneier's "Applied Cryptography" (''the'' book on crypto), they would have known that TEA is insecure if used as a hash. This can be easily exploited so that 2bl changes remain undetected, leading to the third bug in the second implementation.
+
+It is pretty obvious that the changes had been made in reaction to Bunnie's hack, who retrieved the secret key for the RC4 decryption, and before the Visor or MIST bugs had been found.
+
+In May 2004, Microsoft started shipping Xboxes that had the ROM image, the video encoder and the security chip (SMC) integrated into a single package, so that it was no longer possible to overwrite the firmware. The secret ROM in the MCPX was still the same though. But as of November 2005, it is still possible to attach a replacement ROM to the LPC bus ("modchip") of new Xboxes, as the verification weakness is still there.
+
+
+== Microsoft's Strategy ==
+
+Microsoft's engineers first seem to have thought that the secret key would never be revealed: security by obscurity. This explains why the decrypted code did not get hashed. Once the secret key was known, anyone could decrypt, patch and reencrypt the flash contents.
+
+So when the secret key had been extracted, Microsoft understood that it could be done again with another key very easily, so they added a hash function over the decrypted code. If the new secret key was to be found out again, attackers should at least not have had the possibility to change the code. Changing the key introduced no security, but was easy to do and at least required attackers to repeat the ROM extraction process.
+
+
+== Conclusion ==
+
+The design of the first MCPX was very wrong, and the implementation was catastrophic. The design of the second version was a lot better, but the implementation was not.
+
+Without the various security holes (Visor and MIST bugs as well as possibly more) and with a working hash function, the system would have been pretty secure. Encrypting the ROM contents with a secret key, i.e. security by obscurity, simply does not work if the key travels over a bus that can be sniffed.
+
+So with the first version of the MCPX, Microsoft was too naive and apparently did not understand basic security concepts. After they had learnt their lesson, they designed a pretty good system with the second version of the MCPX - but the implementation still contained at least three security holes (Visor, MIST, TEA). They were too fast releasing a new version of the MCPX, spending a lot of money in trashing tons of already manufactured MCPX chips and manufacturing updated ones, apparently without any further code audit which should have revealed the security holes.
+
+512 bytes is a very small amount of code (it fits on a single sheet of paper!), compared to the megabytes of code contained in software like Windows, Internet Explorer or Internet Information Server. Three bugs within these 512 bytes compromised the security completely - a bunch of hackers found them within days after first looking at the code. Why hasn't Microsoft Corp. been able to do the same? Why?
+
+==Links==
+
+* [https://web.archive.org/web/20100617012156/http://www.xbox-linux.org/ The Xbox Linux Project]
+* [https://web.archive.org/web/20100617012156/http://hackingthexbox.com/ Hacking the Xbox]
+* [https://web.archive.org/web/20100617012156/http://www.xenatera.com/bunnie/proj/anatak/xboxmod.html bunnie's adventures hacking the Xbox]
+* [https://web.archive.org/web/20100617012156/http://web.archive.org/web/20021208233956/http://65.108.63.67/visor/ visor's aXventure]
