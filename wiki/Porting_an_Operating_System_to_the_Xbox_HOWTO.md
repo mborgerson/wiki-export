@@ -4,9 +4,6 @@ permalink: wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO/
 layout: wiki
 ---
 
-Retrieved from
-[1](http://www.xbox-linux.org/wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO)
-
 Differences
 -----------
 

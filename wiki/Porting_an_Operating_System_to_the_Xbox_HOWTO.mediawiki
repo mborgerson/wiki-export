@@ -1,4 +1,4 @@
-Retrieved from [http://www.xbox-linux.org/wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO]
+{{retrieved|http://www.xbox-linux.org/wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO}}
 
 
 == Differences ==
