@@ -4,9 +4,6 @@ permalink: wiki/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617003620/http://www.xbox-linux.org/wiki/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System)
-
 by [Michael
 Steil](https://web.archive.org/web/20100617003620/http://www.xbox-linux.org/wiki/User:Michael_Steil)
 
