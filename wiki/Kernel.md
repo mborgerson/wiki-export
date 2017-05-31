@@ -74,7 +74,13 @@ when loading the kernel.
 ### INIT
 
 This section is always the last one. It contains the entrypoint of the
-kernel. Later kernels will discard this section after initialization.
+kernel. This does all the cold-boot process initialization for the
+kernel, [listed
+here](http://xboxdevwiki.net/Boot_Process#Initialization "wikilink").
+Later kernels will discard this section after initialization. INIT also
+contains the [Boot Animation](/wiki/Boot_Animation "wikilink"), so once the
+kernel has finished booting it can't do a full hardware
+re-initialization or play the boot animation anymore.
 
 Kernel exports
 --------------
