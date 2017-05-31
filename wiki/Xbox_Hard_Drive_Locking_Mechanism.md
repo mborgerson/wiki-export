@@ -4,9 +4,6 @@ permalink: wiki/Xbox_Hard_Drive_Locking_Mechanism/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617023052/http://www.xbox-linux.org/wiki/Xbox_Hard_Drive_Locking_Mechanism)
-
 by *SpeedBump* (original version: 13 August 2002)
 
 The hard drive in the MS Xbox(tm) is a standard ide drive, which
