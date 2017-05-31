@@ -42,7 +42,7 @@ A Physical Region Descriptor Table (PRDT) for the IDE bus. This section serves a
 === INIT ===
 
 This section is always the last one. It contains the entrypoint of the kernel.
-This does all the cold-boot process initialization for the kernel, [[Boot_Process#Initialization|listed here]].
+This does all the cold-boot kernel initialization as described [[Boot_Process#Initialization|here]].
 Later kernels{{FIXME|reason=Which revision? right now it appears that *ALL* kernels will discard this}} will discard this section after initialization.
 INIT also contains the [[Boot Animation]], so once the kernel has finished booting it can't do a full hardware re-initialization or play the boot animation anymore.
 
