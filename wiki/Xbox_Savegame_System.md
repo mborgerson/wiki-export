@@ -4,9 +4,6 @@ permalink: wiki/Xbox_Savegame_System/
 layout: wiki
 ---
 
-Retrieved from
-[1](https://web.archive.org/web/20100617021545/http://www.xbox-linux.org/wiki/Xbox_Savegame_System)
-
 The Xbox savegame management system is a simple organizational system
 that allows users to manage their saved games, downloaded contents from
 Xbox LIVE, and copy savegames to memory units.
