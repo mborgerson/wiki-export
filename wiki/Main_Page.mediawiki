@@ -51,6 +51,7 @@
 
 == Emulation ==
 * [[Emulators]]
+** [[XQEMU]]
 
 == Other ==
 * [[Network]]

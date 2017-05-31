@@ -67,6 +67,7 @@ Emulation
 ---------
 
 -   [Emulators](/wiki/Emulators "wikilink")
+    -   [XQEMU](/wiki/XQEMU "wikilink")
 
 Other
 -----
