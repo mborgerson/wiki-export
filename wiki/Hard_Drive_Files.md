@@ -250,12 +250,9 @@ dashboard version, but I have 2 slightly different versions of files:
 
 Here are the differences for this dashboard
 
-    C
-        xboxdashdata.185ead00
-        xodash
-            update.xbe      2260992 bc99ef8730158ba1bf3f1c9c84520661
-            xonlinedash.xbe 2617344 8149654a030d813bcc02a24f39fd3ce9
-        xboxdash.xbe   1961984 08d3a6f99184679aa13008d6397bacce
+-   -   -   -   -   
+
+    -   
 
 185a6100
 --------
