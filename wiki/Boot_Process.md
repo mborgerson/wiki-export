@@ -60,7 +60,6 @@ The xcode interpreter is common through both versions of the MCPX ROM.
 The high level interpretation of the MCPX ROM might look like this:
 
     void xcode_interpreter() {
-        int run_xcodes = 1;
 
         register uint32_t pc;        // stored in ESI register
         register uint8_t  opcode;    // stored in AL register
