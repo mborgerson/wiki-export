@@ -94,7 +94,7 @@ void xcode_interpreter() {
 
 === MCPX 1.0: RC4 Decryption of the 2BL ===
 
-Version 1.0 of the ROM uses RC4 to decrypt the 2BL.
+Version 1.0 of the ROM uses RC4 to decrypt the 2BL.{{FIXME|reason=MCPX 1.1 still uses RC4 afaik, TEA is only used for hashing.. which it is no good at ;) }}
 
 ==== Stage 1: Key Scheduling ====
 
