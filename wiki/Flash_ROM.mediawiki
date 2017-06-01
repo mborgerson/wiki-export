@@ -1,2 +1,3 @@
-The Flash is a 1MiB non-volatile <abbr title="Thin Small Outline Package">TSOP</abbr> ROM chip and connected to the [[MCPX]] via the <abbr title="Low Pin Count">LPC</abbr> bus.
-It usually stores the [[BIOS]].
+The Flash is a 256 kiB or 1 MiB non-volatile <abbr title="Thin Small Outline Package">TSOP</abbr> ROM chip and connected to the [[MCPX]] via the <abbr title="Low Pin Count">LPC</abbr> bus.
+
+For the content of the Microsoft Flash image see [[BIOS]].
