@@ -46,19 +46,18 @@ from BIOS to BIOS, but with some differences.
 | 5713 | 0x00000 | 0x00080 | 0x00e59          |        |                     |         | 0x3FE00           |
 | 5838 | 0x00000 | 0x00080 | 0x00dcc          |        |                     |         | 0x3FE00           |
 
+For information how these sections are used, see [Boot
+Process](/wiki/Boot_Process "wikilink").
+
 ### Unknown
 
 From 0x00000000 - 0x000000079
 
 Not sure what this does. Some people think it might be involved with
-initialising the [MCPX ROM](/wiki/MCPX_ROM "wikilink"), but I don't know. The
-Reset Vector on the Pentium 3 would mean that this wasn't called before
-the MCPX ROM, but I'm guessing there are people out there who know a lot
-more about it than me.
+initialising the [MCPX](/wiki/MCPX "wikilink"). The Reset Vector on the
+Pentium 3 would mean that this wasn't called before the MCPX ROM.
 
 ### xcodes
-
-From 0x00000080 - Copyright string
 
 These are the xcode operations run by the MCPX interpreter. The first
 couple of lines appear to be nonsense (they don't execute any
@@ -82,20 +81,7 @@ instructions are considerably larger than those in the 3944 BIOS.
 ### Copyright String
 
 Literally contains the ASCII encoded text: “Copyright (c) Microsoft
-Corporation. All rights reserved.” (57 bytes long). See the table above
-for the start positions.
-
-### Kernel
-
-Still need to analyse
-
-### Kernel Data Segment
-
-Still need to analyse
-
-### 2BL
-
-Still need to analyse
+Corporation. All rights reserved.” (57 bytes long).
 
 ### Decoy bootloader
 
