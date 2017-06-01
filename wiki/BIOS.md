@@ -35,16 +35,15 @@ Components
 The BIOS is split into different components. These are largely the same
 from BIOS to BIOS, but with some differences.
 
-|      | Unknown | X-Codes | Copyright String | Kernel | Kernel Data Segment | 2BL     | Decoy Boot Loader |
-|------|---------|---------|------------------|--------|---------------------|---------|-------------------|
-| 3944 | 0x00000 | 0x00080 | 0x00cfa          |        |                     | 0x39E00 | 0x3FE00           |
-| 4034 | 0x00000 | 0x00080 | 0x00cfa          |        |                     | 0x39E00 | 0x3FE00           |
-| 4134 | 0x00000 | 0x00080 | 0x00cfa          |        |                     | 0x39E00 | 0x3FE00           |
-| 4817 | 0x00000 | 0x00080 | 0x00db9          |        |                     |         | 0x3FE00           |
-| 5101 | 0x00000 | 0x00080 | 0x00e49          |        |                     |         | 0x3FE00           |
-| 5530 | 0x00000 | 0x00080 | 0x00e59          |        |                     |         | 0x3FE00           |
-| 5713 | 0x00000 | 0x00080 | 0x00e59          |        |                     |         | 0x3FE00           |
-| 5838 | 0x00000 | 0x00080 | 0x00dcc          |        |                     |         | 0x3FE00           |
+|                     | 3944     | 4034     | 4134     | 4817    | 5101    | 5530    | 5713    | 5838    |
+|---------------------|----------|----------|----------|---------|---------|---------|---------|---------|
+| Unknown             | 0x00000  | 0x00000  | 0x00000  | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
+| X-Codes             | 0x00080  | 0x00080  | 0x00080  | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
+| Copyright String    | 0x00cfa  | 0x00cfa  | 0x00cfa  | 0x00db9 | 0x00e49 | 0x00e59 | 0x00e59 | 0x00dcc |
+| Kernel              |          |          |          |         |         |         |         |         |
+| Kernel Data Segment |          |          |          |         |         |         |         |         |
+| 2BL                 | 0x039E00 | 0x039E00 | 0x039E00 |         |         |         |         |         |
+| Decoy Boot Loader   | 0x3FE00  | 0x3FE00  | 0x3FE00  | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
 
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").
