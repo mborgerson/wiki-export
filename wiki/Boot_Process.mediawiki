@@ -33,17 +33,13 @@ The xcode interpreter is common through both versions of the MCPX ROM. The high 
 <pre>
 void xcode_interpreter() {
 
-    register uint32_t pc;        // stored in ESI register
-    register uint8_t  opcode;    // stored in AL register
-    register uint32_t operand_1; // stored in EBC register
-    register uint32_t operand_2; // stored in ECX register
-    register uint32_t result;    // stored in EDI register
-    register uint32_t scratch;   // stored in EBP register
-
     // values are implied as x86 is just starting up
-    operand_1 = 0;
-    operand_2 = 0;
-    scratch = 0;
+    register uint32_t pc        = 0; // stored in ESI register
+    register uint8_t  opcode    = 0; // stored in AL register
+    register uint32_t operand_1 = 0; // stored in EBC register
+    register uint32_t operand_2 = 0; // stored in ECX register
+    register uint32_t result    = 0; // stored in EDI register
+    register uint32_t scratch   = 0; // stored in EBP register
 
     // explicitly set startup point
     pc = 0xFF000080;
