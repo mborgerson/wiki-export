@@ -88,54 +88,40 @@ The high level interpretation of the MCPX ROM might look like this:
                 operand_2 = result;
             }
 
-            switch (opcode) {
-                case 0x02:
-                    result = get_memory_dword(operand_1 & 0x0fffffff);
-                    break;
-                case 0x03:
-                    set_memory_dword(operand_1) = operand_2;
-                    break;
-                case 0x06:
-                    result = (result & operand_1) | operand_2;
-                    break;
-                case 0x04:
-                    if (operand_1 == 0x80000880) {
-                        operand_2 &= 0xfffffffd;
-                    }
-                    outl(operand_1, 0xcf8);
-                    outl(operand_2, 0xcfc);
-                    break;
-                case 0x05:
-                    outl(operand_1, 0xcf8);
-                    result = inl(0xcfc);
-                    break;
-                case 0x08:
-                    if (result != operand_1) {
-                        pc += operand_2;
-                    }
-                    break;
-                case 0x09:
+            if (opcode == 0x02) {
+                result = get_memory_dword(operand_1 & 0x0fffffff);
+            } else if (opcode == 0x03) {
+                set_memory_dword(operand_1) = operand_2;
+            } else if (opcode == 0x06) {
+                result = (result & operand_1) | operand_2;
+            } else if (opcode == 0x04) {
+                if (operand_1 == 0x80000880) {
+                    operand_2 &= 0xfffffffd;
+                }
+                outl(operand_1, 0xcf8);
+                outl(operand_2, 0xcfc);
+            } else if (opcode == 0x05) {
+                outl(operand_1, 0xcf8);
+                result = inl(0xcfc);
+            } else if (opcode == 0x08) {
+                if (result != operand_1) {
                     pc += operand_2;
-                    break;
-                case 0x10:
-                    scratch = (scratch & operand_1) | operand_2;
-                    result = scratch;
-                    break;
-                case 0x11:
-                    outb(operand_2, operand_1);
-                    break;
-                case 0x12:
-                    result = inb(operand_1);
-                    break;
-                case 0xee:
-                    goto stop_xcodes;
-                default:
-                    break;
+                }
+            } else if (opcode == 0x09) {
+                pc += operand_2;
+            } else if (opcode == 0x10) {
+                scratch = (scratch & operand_1) | operand_2;
+                result = scratch;
+            } else if (opcode == 0x11) {
+                outb(operand_2, operand_1);
+            } else if (opcode == 0x12) {
+                result = inb(operand_1);
+            } else if (opcode == 0xee) {
+                break;
             }
 
             pc += 9;
         }
-        stop_xcodes:
     }
 
 ### MCPX 1.0: RC4 Decryption of the 2BL
