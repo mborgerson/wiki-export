@@ -35,15 +35,15 @@ Components
 The BIOS is split into different components. These are largely the same
 from BIOS to BIOS, but with some differences.
 
-|                     | 3944     | 4034     | 4134     | 4817    | 5101    | 5530    | 5713    | 5838    |
-|---------------------|----------|----------|----------|---------|---------|---------|---------|---------|
-| Unknown             | 0x00000  | 0x00000  | 0x00000  | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
-| X-Codes             | 0x00080  | 0x00080  | 0x00080  | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
-| Copyright String    | 0x00cfa  | 0x00cfa  | 0x00cfa  | 0x00db9 | 0x00e49 | 0x00e59 | 0x00e59 | 0x00dcc |
-| Kernel              |          |          |          |         |         |         |         |         |
-| Kernel Data Segment |          |          |          |         |         |         |         |         |
-| 2BL                 | 0x039E00 | 0x039E00 | 0x039E00 |         |         |         |         |         |
-| Decoy Boot Loader   | 0x3FE00  | 0x3FE00  | 0x3FE00  | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
+|                     | 3944    | 4034    | 4134    | 4817    | 5101    | 5530    | 5713    | 5838    |
+|---------------------|---------|---------|---------|---------|---------|---------|---------|---------|
+| Unknown             | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
+| X-Codes             | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
+| Copyright String    | 0x00CFA | 0x00CFA | 0x00CFA | 0x00DB9 | 0x00E49 | 0x00E59 | 0x00E59 | 0x00DCC |
+| Kernel              |         |         |         |         |         |         |         |         |
+| Kernel Data Segment |         |         |         |         |         |         |         |         |
+| 2BL                 | 0x39E00 | 0x39E00 | 0x39E00 |         |         |         |         |         |
+| Decoy Boot Loader   | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
 
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").
@@ -62,11 +62,11 @@ These are the xcode operations run by the MCPX interpreter. The first
 couple of lines appear to be nonsense (they don't execute any
 functionality), but then the first actual codes that I have found are:
 
-The xcodes in the BIOS versions 3944, 4034, 4134 all start with: 04 10
-08 00 80 01 80 00 00
+The xcodes in the BIOS versions 3944, 4034, 4134 all start with:
+`04 10 08 00 80 01 80 00 00`
 
 The xcodes in the BIOS versions 4817, 5101, 5530, 5713, 5838 all start
-with: 04 84 08 00 80 01 80 00 00
+with: `04 84 08 00 80 01 80 00 00`
 
 This leads me to believe that the first three BIOS versions that I have
 are compatible with the 1.0 MCPX, and the rest are compatible with the
@@ -79,8 +79,9 @@ instructions are considerably larger than those in the 3944 BIOS.
 
 ### Copyright String
 
-Literally contains the ASCII encoded text: “Copyright (c) Microsoft
-Corporation. All rights reserved.” (57 bytes long).
+Literally contains the ASCII encoded text:
+“`Copyright (c) Microsoft Corporation. All rights reserved.`” (57 bytes
+long).
 
 ### Decoy bootloader
 
