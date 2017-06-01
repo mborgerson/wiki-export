@@ -9,5 +9,5 @@ The Flash is a 256 kiB or 1 MiB non-volatile
 connected to the [MCPX](/wiki/MCPX "wikilink") via the
 <abbr title="Low Pin Count">LPC</abbr> bus.
 
-For the content of the Microsoft Flash image see
+For the content of the Microsoft flash images see
 [BIOS](/wiki/BIOS "wikilink").
