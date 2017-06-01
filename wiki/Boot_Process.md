@@ -61,12 +61,26 @@ The high level interpretation of the MCPX ROM might look like this:
 
     void xcode_interpreter() {
         int run_xcodes = 1;
-        uint32_t eip = 0xff000080; // Not really EIP. This is just a pointer to the next xcode
-        uint32_t result, scratch = 0;
-        while (run_xcodes) {
-            opcode    = get_memory_byte(eip);
-            operand_1 = get_memory_dword(eip+1);
-            operand_2 = get_memory_dword(eip+5);
+
+        register uint32_t pc;        // stored in ESI register
+        register uint8_t  opcode;    // stored in AL register
+        register uint32_t operand_1; // stored in EBC register
+        register uint32_t operand_2; // stored in ECX register
+        register uint32_t result;    // stored in EDI register
+        register uint32_t scratch;   // stored in EBP register
+
+        // values are implied as x86 is just starting up
+        operand_1 = 0;
+        operand_2 = 0;
+        scratch = 0;
+
+        // explicitly set startup point
+        pc = 0xFF000080;
+
+        while (1) {
+            opcode    = get_memory_byte(pc);
+            operand_1 = get_memory_dword(pc+1);
+            operand_2 = get_memory_dword(pc+5);
 
             if (opcode == 0x07) {
                 opcode    = operand_1;
@@ -97,11 +111,11 @@ The high level interpretation of the MCPX ROM might look like this:
                     break;
                 case 0x08:
                     if (result != operand_1) {
-                        eip += operand_2;
+                        pc += operand_2;
                     }
                     break;
                 case 0x09:
-                    eip += operand_2;
+                    pc += operand_2;
                     break;
                 case 0x10:
                     scratch = (scratch & operand_1) | operand_2;
@@ -114,13 +128,14 @@ The high level interpretation of the MCPX ROM might look like this:
                     result = inb(operand_1);
                     break;
                 case 0xee:
-                    run_xcodes = 0;
+                    goto stop_xcodes;
                 default:
                     break;
             }
 
-            eip += 9;
+            pc += 9;
         }
+        stop_xcodes:
     }
 
 ### MCPX 1.0: RC4 Decryption of the 2BL
