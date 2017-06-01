@@ -10,15 +10,15 @@ games took advantage of it. The debug Xbox and the Chihiro both
 contained 128MB Memory.
 
 The memory was shared between the CPU and GPU. On the retail Xbox, the
-[BIOS](/wiki/BIOS "wikilink") and [MCPX ROM](MCPX_ROM "wikilink") are also
+[BIOS](/wiki/BIOS "wikilink") and [MCPX ROM](/wiki/MCPX_ROM "wikilink") are also
 mapped to memory at the top 16MB and the top 512bytes respectively. On
 Debug Xboxs and Chihiro, only the BIOS is mapped.
 
-| Memory Type | Retail Xbox Range       | Debug/Chihiro Range     |
-|-------------|-------------------------|-------------------------|
-| Main Memory | 0x00000000 - 0x04000000 | 0x00000000 - 0x08000000 |
-| BIOS        | 0xFF000000 - 0xFFFFFFFF | 0xFF000000 - 0xFFFFFFFF |
-| MCPX        | 0xFFFFFE00 - 0xFFFFFFFF | N/A                     |
+| Memory Type                     | Retail Xbox Range       | Debug/Chihiro Range     |
+|---------------------------------|-------------------------|-------------------------|
+| Main Memory                     | 0x00000000 - 0x04000000 | 0x00000000 - 0x08000000 |
+| [Flash](/wiki/Flash "wikilink")       | 0xFF000000 - 0xFFFFFFFF | 0xFF000000 - 0xFFFFFFFF |
+| [MCPX ROM](/wiki/MCPX_ROM "wikilink") | 0xFFFFFE00 - 0xFFFFFFFF | N/A                     |
 
 Code for emulating the memory might consist of:
 

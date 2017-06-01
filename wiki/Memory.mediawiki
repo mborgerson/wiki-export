@@ -11,11 +11,11 @@ The memory was shared between the CPU and GPU. On the retail Xbox, the [[BIOS]] 
 |0x00000000 - 0x04000000
 |0x00000000 - 0x08000000
 |-
-|BIOS
+|[[Flash]]
 |0xFF000000 - 0xFFFFFFFF
 |0xFF000000 - 0xFFFFFFFF
 |-
-|MCPX
+|[[MCPX ROM]]
 |0xFFFFFE00 - 0xFFFFFFFF
 |N/A
 |}
