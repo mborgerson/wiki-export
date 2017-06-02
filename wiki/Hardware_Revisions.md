@@ -64,10 +64,10 @@ Production was halted and 1.4 was produced again.
 Same as 1.4, except:
 
 -   Made in China or Taiwan
--   BIOS no longer flashable
 -   Removed data and power lines from LPC port
 -   Xcalibur video chip
--   Xyclops chip
+-   Xyclops chip (includes ROM instead of flash = BIOS no longer
+    flashable)
 
 Microsoft later switched to lower quality Hynix RAM. These Xboxes with
 non-Samsung RAM are sometimes referred to as 1.6b by the modding
@@ -92,11 +92,13 @@ of your Xbox.
 
 The serial number looks like this:
 
-LNNNNNN TWWFF
+LNNNNNN YWWFF
 
-L is the production line NNNNNN is the number produced that week Y is
-the last digit of the production year WW is the number of the week FF is
-the factory code
+-   L is the production line
+-   NNNNNN is the number produced that week
+-   Y is the last digit of the production year
+-   WW is the number of the week
+-   FF is the factory code
 
 Note, this table contradicts the previous table.
 
@@ -119,6 +121,8 @@ Note, this table contradicts the previous table.
 | LNNNNNN 32WFF | 1.3        |
 | LNNNNNN 33WFF | 1.4 or 1.5 |
 | LNNNNNN 42WFF | 1.6        |
+
+### Video encoder
 
 | Video Chip | Revision           |
 |------------|--------------------|

@@ -1,4 +1,4 @@
-There are 7 Xbox revisions
+There are 7{{citation needed|reason=What about debug kits? mcpx revisions? RAM changes? .. should we even try to count?}} Xbox revisions
 
 == 1.0 ==
 
@@ -44,10 +44,9 @@ Same as 1.4. Possibly never existed, but will otherwise be very rare. Production
 
 Same as 1.4, except:
 * Made in China or Taiwan
-* BIOS no longer flashable
 * Removed data and power lines from LPC port
 * Xcalibur video chip
-* Xyclops chip
+* Xyclops chip (includes ROM instead of flash = BIOS no longer flashable)
 
 Microsoft later switched to lower quality Hynix RAM.
 These Xboxes with non-Samsung RAM are sometimes referred to as 1.6b by the modding community.
@@ -58,7 +57,7 @@ While not definitive, here are some ways to help identify the revision of your X
 
 === Manufacturing Details ===
 
-{|
+{| class="wikitable"
 ! scope="col" | Date Range
 ! scope="col" | Revision
 ! scope="col" | Location
@@ -76,17 +75,17 @@ While not definitive, here are some ways to help identify the revision of your X
 
 The serial number looks like this:
 
-LNNNNNN TWWFF
+LNNNNNN YWWFF
 
-L is the production line
-NNNNNN is the number produced that week
-Y is the last digit of the production year
-WW is the number of the week
-FF is the factory code
+* L is the production line
+* NNNNNN is the number produced that week
+* Y is the last digit of the production year
+* WW is the number of the week
+* FF is the factory code
 
 Note, this table contradicts the previous table.
 
-{|
+{| class="wikitable"
 ! scope="col" | Factory
 ! scope="col" | Location
 ! scope="col" | Revision
@@ -100,7 +99,7 @@ Note, this table contradicts the previous table.
 | 06 || Taiwan || 1.2 or later
 |}
 
-{|
+{| class="wikitable"
 ! scope="col" | Serial Number
 ! scope="col" | Revision
 |-
@@ -125,7 +124,9 @@ Note, this table contradicts the previous table.
 | LNNNNNN 42WFF || 1.6
 |}
 
-{|
+=== Video encoder ===
+
+{| class="wikitable"
 ! scope="col" | Video Chip
 ! scope="col" | Revision
 |-
@@ -138,7 +139,7 @@ Note, this table contradicts the previous table.
 
 === BIOS Version ===
 
-{|
+{| class="wikitable"
 ! scope="col" | Kernel Version
 ! scope="col" | Revision
 |-
