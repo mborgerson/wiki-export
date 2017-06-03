@@ -29,7 +29,7 @@ Steps to activate Soundtrack Easter Egg:
 5.  Enter the name of your soundtrack exactly as follows:
     &lt;<Eggsßox>&gt; including the less than, beta, and greater than
     symbols.
-6.  After you have entered the title, select “Done”. The “Thank You”
+6.  After you have entered the title, select “Done”. A “Thank You”
     message starts which is followed by a scrolling list of the Xbox
     Team members.
 
