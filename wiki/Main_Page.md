@@ -35,6 +35,8 @@ Hardware
 -   [Hard Drive](/wiki/Hard_Drive "wikilink")
 -   [USB](/wiki/USB "wikilink")
     -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
+    -   [Xbox Memory Unit](/wiki/Xbox_Memory_Unit "wikilink")
+    -   [Xbox Live Communicator](/wiki/Xbox_Live_Communicator "wikilink")
     -   [DVD-IR Internals](/wiki/DVD-IR_Internals "wikilink")
 -   [Power Supply](/wiki/Power_Supply "wikilink")
 

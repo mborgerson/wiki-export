@@ -27,6 +27,8 @@
 * [[Hard Drive]]
 * [[USB]]
 ** [[Xbox Input Devices]]
+** [[Xbox Memory Unit]]
+** [[Xbox Live Communicator]] <!-- Maybe rename this to microphones later? -->
 ** [[DVD-IR Internals]]
 * [[Power Supply]]
 
