@@ -19,18 +19,17 @@ Info button on the DVD Playback Kit remote.
 
 Stored in settings\_adoc.xip (which is actually an XBE file)
 
+Steps to activate Soundtrack Easter Egg:
+
 1.  Insert an audio CD and let it begin to play.
-2.  Stop the disk and step back in order to “Copy” selected tracks of
-    the CD to the hard drive.
+2.  Stop the disk and step back (press B) in order to “Copy” selected
+    tracks of the CD to the hard drive.
 3.  When the track list comes up, “Select All” and continue.
 4.  Choose “New Soundtrack” as the destination for your selection.
-5.  Now you will enter the name of your soundtrack. You must enter the
-    name exactly as:
-
-&lt;<Eggsßox>&gt; Including the less than, beta, and greater than
-symbols.
-
-1.  After you have entered the title, select “Done”. The “Thank You”
+5.  Enter the name of your soundtrack exactly as follows:
+    &lt;<Eggsßox>&gt; including the less than, beta, and greater than
+    symbols.
+6.  After you have entered the title, select “Done”. The “Thank You”
     message starts which is followed by a scrolling list of the Xbox
     Team members.
 
