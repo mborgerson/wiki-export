@@ -9,6 +9,15 @@ Press "Y" then "X" while playing audio CDs or soundtracks stored on the HDD to d
 
 Stored in settings_adoc.xip (which is actually an XBE file)
 
+# Insert an audio CD and let it begin to play. 
+# Stop the disk and step back in order to "Copy" selected tracks of the CD to the hard drive. 
+# When the track list comes up, "Select All" and continue. 
+# Choose "New Soundtrack" as the destination for your selection. 
+# Now you will enter the name of your soundtrack. You must enter the name exactly as: 
+<<Eggsßox>>
+Including the less than, beta, and greater than symbols. 
+# After you have entered the title, select "Done".  The "Thank You" message starts which is followed by a scrolling list of the Xbox Team members.
+
 == See Also ==
 
 [[Hard Drive Files]]
