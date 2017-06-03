@@ -27,6 +27,7 @@
 * [[Hard Drive]]
 * [[USB]]
 ** [[Xbox Input Devices]]
+** [[DVD-IR Internals]]
 * [[Power Supply]]
 
 == System Software ==
