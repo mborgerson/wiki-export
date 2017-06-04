@@ -72,7 +72,7 @@ to the end -- the Xbox reboots.
 
 ### Parental Control Bypass
 
-If parental Control is enabled and the password set has been forgotten,
+If Parental Control is enabled and the password set has been forgotten,
 all is not lost. Use the following sequence:
 
 1.  X, Y, Left trigger, X
