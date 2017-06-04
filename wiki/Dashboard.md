@@ -70,6 +70,16 @@ Stored in settings\_adoc.xip (which is actually an XBE file)
 If you press a button on the controller or let the message play through
 to the end -- the Xbox reboots.
 
+### Parental Control Bypass
+
+If parental Control is enabled and the password set has been forgotten,
+all is not lost. Use the following sequence:
+
+1.  X, Y, Left trigger, X
+
+SET PASS CODE, MOVIES and GAMES level can now be modified and the pass
+code removed if so desired.
+
 See Also
 --------
 

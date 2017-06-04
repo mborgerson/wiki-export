@@ -37,6 +37,12 @@ Stored in settings_adoc.xip (which is actually an XBE file)
 # After you have entered the title, select "Done".  A "Thank You" message starts which is followed by a scrolling list of the Xbox Team members.
 If you press a button on the controller or let the message play through to the end -- the Xbox reboots.
 
+=== Parental Control Bypass ===
+
+If parental Control is enabled and the password set has been forgotten, all is not lost.  Use the following sequence:
+# X, Y, Left trigger, X
+SET PASS CODE, MOVIES and GAMES level can now be modified and the pass code removed if so desired.
+
 == See Also ==
 
 [[Hard Drive Files]]
