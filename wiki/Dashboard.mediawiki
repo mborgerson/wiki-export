@@ -33,6 +33,7 @@ Stored in settings_adoc.xip (which is actually an XBE file)
 # Choose "New Soundtrack" as the destination for your selection. 
 # Enter the name of your soundtrack exactly as follows: <<Eggs&beta;ox>> including the less than, beta, and greater than symbols. 
 # After you have entered the title, select "Done".  A "Thank You" message starts which is followed by a scrolling list of the Xbox Team members.
+If you press a button on the controller or let the message play through to the end -- the Xbox reboots.
 
 == See Also ==
 

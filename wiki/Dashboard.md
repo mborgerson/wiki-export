@@ -63,6 +63,9 @@ Stored in settings\_adoc.xip (which is actually an XBE file)
     message starts which is followed by a scrolling list of the Xbox
     Team members.
 
+If you press a button on the controller or let the message play through
+to the end -- the Xbox reboots.
+
 See Also
 --------
 
