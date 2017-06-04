@@ -31,7 +31,7 @@ Fullscreen Visualization Part 2:
 
 1.  Start playing a song using either the Xbox controller or playback
     kit remote.
-2.  Press “Y” then “X” on the controller or “Info” on the remote to get
+2.  Press “Y” then “X” on the controller or “INFO” on the remote to get
     the full screen visualization.
 3.  Here's the part that requires the DVD Playback Kit remote. Press
     “STOP” or “PAUSE” (you cannot use the controller to stop the music
