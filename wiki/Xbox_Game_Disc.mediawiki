@@ -118,10 +118,6 @@ Unknown1 (320 Bytes)
 |27 || u8 || || Unknown
 |-
 |28 || u8[16] || || Unknown
-|-
-|44 || u8[20] || SHA-1 hash || Hash until here (of the complete format)
-|-
-|64 || u8[256] || Signature || For hash in previous field
 |}
 
 Complete format (2048 Bytes):
@@ -143,9 +139,17 @@ Complete format (2048 Bytes):
 |-
 |1083 || u8[16] || || Unknown
 |-
-|1183 || Unknown1 || || Unknown, the 44 first bytes of this structure are SHA-1 hashed, to generate a RC4 key to decrypt challenge entries
+|1183 || Unknown1 || || Unknown, this structure is SHA-1 hashed, to generate a RC4 key to decrypt challenge entries
 |-
-|1503 || Unknown1 || || Unknown, hash at offset 44 not confirmed for this Unknown1 struct
+|1227 || u8[20] || SHA-1 hash A || Hash until here (of the complete format)
+|-
+|1247 || u8[256] || Signature A || For hash in previous field
+|-
+|1503 || Unknown1 || || Unknown
+|-
+|1547 || u8[20] || SHA-1 hash B || Hash until here (of the complete format)
+|-
+|1567 || u8[64] || Signature B || For hash in previous field (note that this is somewhat shorter than the other signature?!)
 |-
 ! colspan="4" | End of data readable by a stock Xbox drive (1632 Bytes)
 |-

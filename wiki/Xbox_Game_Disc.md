@@ -97,14 +97,12 @@ Security sector range (9 Bytes)
 
 Unknown1 (320 Bytes)
 
-| Offset | Type      | Field      | Notes                                                        |
-|--------|-----------|------------|--------------------------------------------------------------|
-| 0      | u64       |            | Yet another timestamp?! (Similar to 1183 in complete format) |
-| 8      | u32       |            | Unknown                                                      |
-| 27     | u8        |            | Unknown                                                      |
-| 28     | u8\[16\]  |            | Unknown                                                      |
-| 44     | u8\[20\]  | SHA-1 hash | Hash until here (of the complete format)                     |
-| 64     | u8\[256\] | Signature  | For hash in previous field                                   |
+| Offset | Type     | Field | Notes                                                        |
+|--------|----------|-------|--------------------------------------------------------------|
+| 0      | u64      |       | Yet another timestamp?! (Similar to 1183 in complete format) |
+| 8      | u32      |       | Unknown                                                      |
+| 27     | u8       |       | Unknown                                                      |
+| 28     | u8\[16\] |       | Unknown                                                      |
 
 Complete format (2048 Bytes):
 
@@ -164,13 +162,37 @@ Complete format (2048 Bytes):
 <td><p>1183</p></td>
 <td><p>Unknown1</p></td>
 <td></td>
-<td><p>Unknown, the 44 first bytes of this structure are SHA-1 hashed, to generate a RC4 key to decrypt challenge entries</p></td>
+<td><p>Unknown, this structure is SHA-1 hashed, to generate a RC4 key to decrypt challenge entries</p></td>
+</tr>
+<tr class="odd">
+<td><p>1227</p></td>
+<td><p>u8[20]</p></td>
+<td><p>SHA-1 hash A</p></td>
+<td><p>Hash until here (of the complete format)</p></td>
+</tr>
+<tr class="even">
+<td><p>1247</p></td>
+<td><p>u8[256]</p></td>
+<td><p>Signature A</p></td>
+<td><p>For hash in previous field</p></td>
 </tr>
 <tr class="odd">
 <td><p>1503</p></td>
 <td><p>Unknown1</p></td>
 <td></td>
-<td><p>Unknown, hash at offset 44 not confirmed for this Unknown1 struct</p></td>
+<td><p>Unknown</p></td>
+</tr>
+<tr class="even">
+<td><p>1547</p></td>
+<td><p>u8[20]</p></td>
+<td><p>SHA-1 hash B</p></td>
+<td><p>Hash until here (of the complete format)</p></td>
+</tr>
+<tr class="odd">
+<td><p>1567</p></td>
+<td><p>u8[64]</p></td>
+<td><p>Signature B</p></td>
+<td><p>For hash in previous field (note that this is somewhat shorter than the other signature?!)</p></td>
 </tr>
 <tr class="even">
 <td><p>End of data readable by a stock Xbox drive (1632 Bytes)</p></td>
