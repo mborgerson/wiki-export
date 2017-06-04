@@ -106,7 +106,7 @@ Security sector range (9 Bytes)
 |6 || u24 || End PSN ||
 |}
 
-Unknown1 (320 Bytes)
+Unknown1 (44 Bytes)
 
 {| class="wikitable"
 ! Offset !! Type !! Field !! Notes
