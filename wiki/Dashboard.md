@@ -45,6 +45,10 @@ Fullscreen Visualization Part 2:
     random changing solid color burst which fades to the swirling
     starfield.
 
+Not quite true about needing the remote control, if playing a CD while
+full screen visualization is displayed, press the eject button on the
+front of the Xbox console.
+
 ### Soundtrack name Easter-Egg (“&lt;<Eggs&beta;ox>&gt;”)
 
 Stored in settings\_adoc.xip (which is actually an XBE file)

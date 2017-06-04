@@ -22,6 +22,8 @@ Fullscreen Visualization Part 2:
 #Press "Y" then "X" on the controller or "INFO" on the remote to get the full screen visualization.
 #Here's the part that requires the DVD Playback Kit remote.  Press "STOP" or "PAUSE" (you cannot use the controller to stop the music to see it as doing so goes back to the Music Playback menu with the small visualization area).  Once the music visualization pattern dies down, a full-screen swirling starfield pattern appears.  After some time passes, the screen will be filled with a changing burst of solid color where you can make out the wireframe spinning globe seen encompassing the main dashboard background.  The burst of color fades to black leaving the swirling starfield. The cycle repeats with a random changing solid color burst which fades to the swirling starfield.
 
+Not quite true about needing the remote control, if playing a CD while full screen visualization is displayed, press the eject button on the front of the Xbox console.
+
 === Soundtrack name Easter-Egg ("<<Eggs&beta;ox>>") ===
 
 Stored in settings_adoc.xip (which is actually an XBE file)
