@@ -9,6 +9,14 @@ Hidden features
 
 ### Hotkey to switch to HD modes
 
+Latest Xbox Dashboard (5960) force 480p display mode:
+
+Press and hold Left trigger, right trigger, and both analog stick
+buttons.
+
+The normally displayed 480i dashboard will switch to 480p output while
+using the Xbox High Definition AV Pack or cable.
+
 ### Music visualization in fullscreen
 
 Press “Y” then “X” while playing audio CDs or soundtracks stored on the
