@@ -25,6 +25,25 @@ Press “Y” then “X” while playing audio CDs or soundtracks stored on the
 HDD to display full-screen geiss-like music visualization. Or, press
 Info button on the DVD Playback Kit remote.
 
+But, wait there's more (only visible with DVD Playback Kit and Remote).
+
+Fullscreen Visualization Part 2:
+
+1.  Start playing a song using either the Xbox controller or playback
+    kit remote.
+2.  Press “Y” then “X” on the controller or “Info” on the remote to get
+    the full screen visualization.
+3.  Here's the part that requires the DVD Playback Kit remote. Press
+    “STOP” or “PAUSE” (you cannot use the controller to stop the music
+    to see it as doing so goes back to the Music Playback menu with the
+    small visualization area). Once the music visualization pattern dies
+    down a full-screen swirling starfield pattern appears. After some
+    time passes, the screen will be filled with a changing burst of
+    solid color where you can make out the wireframe spinning globe seen
+    encompassing the main dashboard background. The burst of color fades
+    to black leaving the swirling starfield the cycle repeats with a
+    different random solid bursts of color.
+
 ### Soundtrack name Easter-Egg (“&lt;<Eggs&beta;ox>&gt;”)
 
 Stored in settings\_adoc.xip (which is actually an XBE file)
