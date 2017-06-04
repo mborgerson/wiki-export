@@ -75,7 +75,7 @@ to the end -- the Xbox reboots.
 If Parental Control is enabled and the password set has been forgotten,
 all is not lost. Use the following sequence:
 
-1.  X, Y, Left trigger, X
+-   X, Y, Left trigger, X
 
 SET PASS CODE, MOVIES and GAMES level can now be modified and the pass
 code removed if so desired.

@@ -40,7 +40,7 @@ If you press a button on the controller or let the message play through to the e
 === Parental Control Bypass ===
 
 If Parental Control is enabled and the password set has been forgotten, all is not lost.  Use the following sequence:
-# X, Y, Left trigger, X
+* X, Y, Left trigger, X
 SET PASS CODE, MOVIES and GAMES level can now be modified and the pass code removed if so desired.
 
 == See Also ==
