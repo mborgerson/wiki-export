@@ -17,6 +17,8 @@ buttons.
 The normally displayed 480i dashboard will switch to 480p output while
 using the Xbox High Definition AV Pack or cable.
 
+Repeat button combo to toogle between 480i and 480p.
+
 ### Music visualization in fullscreen
 
 Press “Y” then “X” while playing audio CDs or soundtracks stored on the
