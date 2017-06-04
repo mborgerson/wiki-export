@@ -41,8 +41,9 @@ Fullscreen Visualization Part 2:
     time passes, the screen will be filled with a changing burst of
     solid color where you can make out the wireframe spinning globe seen
     encompassing the main dashboard background. The burst of color fades
-    to black leaving the swirling starfield the cycle repeats with a
-    different random solid bursts of color.
+    to black leaving the swirling starfield. The cycle repeats with a
+    random changing solid color burst which fades to the swirling
+    starfield.
 
 ### Soundtrack name Easter-Egg (“&lt;<Eggs&beta;ox>&gt;”)
 
