@@ -80,6 +80,9 @@ all is not lost. Use the following sequence:
 SET PASS CODE, MOVIES and GAMES level can now be modified and the pass
 code removed if so desired.
 
+With SET PASS CODE selected, press “A” twice to be prompted, “Do you
+wish to delete the current pass code?”. Select Yes or No.
+
 See Also
 --------
 
