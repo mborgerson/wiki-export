@@ -37,7 +37,7 @@ Fullscreen Visualization Part 2:
     “STOP” or “PAUSE” (you cannot use the controller to stop the music
     to see it as doing so goes back to the Music Playback menu with the
     small visualization area). Once the music visualization pattern dies
-    down a full-screen swirling starfield pattern appears. After some
+    down, a full-screen swirling starfield pattern appears. After some
     time passes, the screen will be filled with a changing burst of
     solid color where you can make out the wireframe spinning globe seen
     encompassing the main dashboard background. The burst of color fades
