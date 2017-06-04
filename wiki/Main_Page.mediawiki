@@ -7,7 +7,7 @@
 
 * [[Hardware Revisions]]
 * [[Motherboard]]
-* [[CPU|CPU (Custom Pentium 3 733 MHz)]]
+* [[CPU]]
 * [[NV2A]]
 ** [[NV2A/Vertex attributes]]
 ** [[NV2A/Fixed Function Pipeline]]

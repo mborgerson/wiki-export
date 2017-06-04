@@ -14,7 +14,7 @@ Hardware
 
 -   [Hardware Revisions](/wiki/Hardware_Revisions "wikilink")
 -   [Motherboard](/wiki/Motherboard "wikilink")
--   [CPU (Custom Pentium 3 733 MHz)](/wiki/CPU "wikilink")
+-   [CPU](/wiki/CPU "wikilink")
 -   [NV2A](/wiki/NV2A "wikilink")
     -   [NV2A/Vertex attributes](/wiki/NV2A/Vertex_attributes "wikilink")
     -   [NV2A/Fixed Function
