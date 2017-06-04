@@ -119,9 +119,9 @@ Unknown1 (320 Bytes)
 |-
 |28 || u8[16] || || Unknown
 |-
-|44 || u8[20] || || Unknown
+|44 || u8[20] || SHA-1 hash || Hash until here (of the complete format)
 |-
-|64 || u8[256] || || Unknown
+|64 || u8[256] || Signature || For hash in previous field
 |}
 
 Complete format (2048 Bytes):
@@ -143,9 +143,9 @@ Complete format (2048 Bytes):
 |-
 |1083 || u8[16] || || Unknown
 |-
-|1183 || Unknown1 || || Unknown, 44 bytes SHA-1 hash are generated here to be used as RC4 key to decrypt challenge entries
+|1183 || Unknown1 || || Unknown, the 44 first bytes of this structure are SHA-1 hashed, to generate a RC4 key to decrypt challenge entries
 |-
-|1503 || Unknown1 || || Unknown
+|1503 || Unknown1 || || Unknown, hash at offset 44 not confirmed for this Unknown1 struct
 |-
 ! colspan="4" | End of data readable by a stock Xbox drive (1632 Bytes)
 |-
