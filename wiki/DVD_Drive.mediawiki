@@ -12,6 +12,57 @@ List of Xbox DVD Drive manufacturers
 
 [[File:Xbox_drivedetermination.png|Xbox DVD Drive determination]]
 
+== Extra commands / modifications ==
+
+=== IDENTIFY ===
+
+{{FIXME|reason=Move data from http://xboxdevwiki.net/Porting_an_Operating_System_to_the_Xbox_HOWTO#DVD_Driver}}
+
+=== READ DVD STRUCTURE ===
+
+{{FIXME|reason=Describe how SS is accessed}}
+
+=== MODE SENSE and MODE SELECT ===
+
+Page 0x3E is used for security. Accessed through ''MODE SELECT 10'' and ''MODE SENSE 10''.
+{{FIXME|reason=Describe the format in detail}}
+
+{| class="wikitable"
+!Offset || Field || Type || Notes
+|-
+| 0 || Mode page || u8 ||
+|-
+| 1 || Length || u8 || Excluding this and the field before. Should always be 18
+|-
+| 2 || Partition select || u8 || 0x00 = Video partition <br> 0x01 = Xbox partition
+|-
+| 3 || Unknown || u8 || If this is not 1, the kernel will reject this as an XGD (but still allow normal access?!{{citation needed}})
+|-
+| 4 || Authenticated || u8 || 0x00 = Not authenticated <br> 0x01 = Already authenticated
+|-
+| 5 || Booktype (0xF0) and Bookversion (0x0F) || u8 || Booktype 0xD is used for Xbox games. This must match info from the SS.
+|-
+| 6 || Unknown || u8 || ?
+|-
+| 7 || Challenge id || u8 ||
+|-
+| 8 || Challenge value || u32 ||
+|-
+| 12 || Response value || u32 ||
+|-
+| 16 || Unknown || u8 || Unused?
+|-
+| 17 || Unknown || u8 || Unused?
+|-
+| 18 || Unknown || u8 || Unused?
+|-
+| 19 || Unknown || u8 || Unused?
+|}
+
+== DVD authentication ==
+
+{{FIXME|reason=part of the [[Kernel]], so maybe document this elsewhere?}}
+
 == References and links == 
 
 * [http://web.archive.org/web/20151026074806/http://home.comcast.net/~admiral_powerslave/dvddrives.html List of original Xbox DVD drives]

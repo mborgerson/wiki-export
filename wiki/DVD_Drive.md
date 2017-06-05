@@ -23,6 +23,120 @@ List of Xbox DVD Drive manufacturers
 ![Xbox DVD Drive
 determination](Xbox_drivedetermination.png "Xbox DVD Drive determination")
 
+Extra commands / modifications
+------------------------------
+
+### IDENTIFY
+
+### READ DVD STRUCTURE
+
+### MODE SENSE and MODE SELECT
+
+Page 0x3E is used for security. Accessed through *MODE SELECT 10* and
+*MODE SENSE 10*.
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Offset</p></th>
+<th><p>Field</p></th>
+<th><p>Type</p></th>
+<th><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>0</p></td>
+<td><p>Mode page</p></td>
+<td><p>u8</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>1</p></td>
+<td><p>Length</p></td>
+<td><p>u8</p></td>
+<td><p>Excluding this and the field before. Should always be 18</p></td>
+</tr>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>Partition select</p></td>
+<td><p>u8</p></td>
+<td><p>0x00 = Video partition<br />
+0x01 = Xbox partition</p></td>
+</tr>
+<tr class="even">
+<td><p>3</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>If this is not 1, the kernel will reject this as an XGD (but still allow normal access?!)</p></td>
+</tr>
+<tr class="odd">
+<td><p>4</p></td>
+<td><p>Authenticated</p></td>
+<td><p>u8</p></td>
+<td><p>0x00 = Not authenticated<br />
+0x01 = Already authenticated</p></td>
+</tr>
+<tr class="even">
+<td><p>5</p></td>
+<td><p>Booktype (0xF0) and Bookversion (0x0F)</p></td>
+<td><p>u8</p></td>
+<td><p>Booktype 0xD is used for Xbox games. This must match info from the SS.</p></td>
+</tr>
+<tr class="odd">
+<td><p>6</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="even">
+<td><p>7</p></td>
+<td><p>Challenge id</p></td>
+<td><p>u8</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>8</p></td>
+<td><p>Challenge value</p></td>
+<td><p>u32</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>12</p></td>
+<td><p>Response value</p></td>
+<td><p>u32</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>16</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>Unused?</p></td>
+</tr>
+<tr class="even">
+<td><p>17</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>Unused?</p></td>
+</tr>
+<tr class="odd">
+<td><p>18</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>Unused?</p></td>
+</tr>
+<tr class="even">
+<td><p>19</p></td>
+<td><p>Unknown</p></td>
+<td><p>u8</p></td>
+<td><p>Unused?</p></td>
+</tr>
+</tbody>
+</table>
+
+DVD authentication
+------------------
+
 References and links
 --------------------
 
