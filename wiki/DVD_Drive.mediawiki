@@ -34,11 +34,11 @@ Page 0x3E is used for security. Accessed through ''MODE SELECT 10'' and ''MODE S
 |-
 | 1 || Length || u8 || Excluding this and the field before. Should always be 18
 |-
-| 2 || Partition select || u8 || 0x00 = Video partition <br> 0x01 = Xbox partition
+| 2 || Partition select || u8 || 0x00 = Video partition <br> 0x01 = Xbox partition <br><br> This will be set to 0x01 by the kernel when the last challenge was verified. This is done by sending the same challenge again, the challenge id / value is not reset.
 |-
 | 3 || Unknown || u8 || If this is not 1, the kernel will reject this as an XGD (but still allow normal access?!{{citation needed}})
 |-
-| 4 || Authenticated || u8 || 0x00 = Not authenticated <br> 0x01 = Already authenticated
+| 4 || Authenticated || u8 || 0x00 = Not authenticated <br> 0x01 = Already authenticated or authentication in progress <br><br> This will be set to 0x01 by the kernel when the first challenge is send.
 |-
 | 5 || Booktype (0xF0) and Bookversion (0x0F) || u8 || Booktype 0xD is used for Xbox games. This must match info from the SS.
 |-

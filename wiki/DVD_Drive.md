@@ -62,7 +62,9 @@ Page 0x3E is used for security. Accessed through *MODE SELECT 10* and
 <td><p>Partition select</p></td>
 <td><p>u8</p></td>
 <td><p>0x00 = Video partition<br />
-0x01 = Xbox partition</p></td>
+0x01 = Xbox partition<br />
+<br />
+This will be set to 0x01 by the kernel when the last challenge was verified. This is done by sending the same challenge again, the challenge id / value is not reset.</p></td>
 </tr>
 <tr class="even">
 <td><p>3</p></td>
@@ -75,7 +77,9 @@ Page 0x3E is used for security. Accessed through *MODE SELECT 10* and
 <td><p>Authenticated</p></td>
 <td><p>u8</p></td>
 <td><p>0x00 = Not authenticated<br />
-0x01 = Already authenticated</p></td>
+0x01 = Already authenticated or authentication in progress<br />
+<br />
+This will be set to 0x01 by the kernel when the first challenge is send.</p></td>
 </tr>
 <tr class="even">
 <td><p>5</p></td>
