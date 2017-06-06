@@ -34,3 +34,47 @@ Shader:
 
 -   ?
 
+### PAK
+
+This is an old, untested and incomplete tool to look at the header of a
+PAK file.
+
+    #include <stdint.h>
+    #include <stdio.h>
+    #include <inttypes.h>
+
+    static FILE* f = NULL;
+
+    void chunk() {
+      char magic[4];
+      fread(magic, 1, 4, f);
+      uint32_t unk1;
+      fread(&unk1, 1, 4, f);
+      uint32_t unk2;
+      fread(&unk2, 1, 4, f);
+      uint32_t offset;
+      fread(&offset, 1, 4, f);
+      char* endMagic = "END\0";
+      char* indxMagic = "INDX";
+      char* wmshMagic = "WMSH";
+      char* textMagic = "TEXT"; // 32 byte payload?
+      char* vbMagic = "VB\0\0";
+      printf("magic: '%.4s'\n", magic);
+      printf("unk1: 0x%08" PRIX32 "\n", unk1);
+      printf("unk2: 0x%08" PRIX32 "\n", unk2);
+      printf("offset: %" PRIu32 " bytes\n", offset);
+      if (!feof(f)) {
+        chunk();
+      }
+    }
+
+    int main(int argc, char* argv[]) {
+      f = fopen(argv[1], "rb");
+      if (f == NULL) {
+        return 1;
+      }
+    //  fseek(f, 16, SEEK_SET);
+      chunk();
+      fclose(f);
+      return 0;
+    }
