@@ -92,9 +92,10 @@ void xcode_interpreter() {
 }
 </pre>
 
-=== MCPX 1.0: RC4 Decryption of the 2BL ===
+=== RC4 Decryption of the 2BL (MCPX 1.0 only) ===
 
-Version 1.0 of the ROM uses RC4 to decrypt the 2BL.{{FIXME|reason=MCPX 1.1 still uses RC4 afaik, TEA is only used for hashing.. which it is no good at ;) }}
+Version 1.0 of the ROM uses RC4 to decrypt the 2BL.
+The RC4 algorithm was included as part of MCPX 1.0 and seems to work fine with BIOS versions 3944, 4034, and 4134.
 
 ==== Stage 1: Key Scheduling ====
 
@@ -170,17 +171,18 @@ mov  eax, [0x90000]
 jmp  eax        ; Jump to 2BL entry point
 </pre>
 
-=== Notes ===
-
-The RC4 algorithm was included as part of MCPX 1.0 and seems to work fine with BIOS versions 3944, 4034, and 4134.
-
-=== MCPX 1.1: TEA Decryption of the 2BL ===
+=== TEA Decryption of the FBL (MCPX 1.1 only) ===
 
 {{FIXME}}
 
+== FBL (MCPX 1.1 only) ==
+
+The Flash Boot Loader was added in MCPX 1.1, it connects the MCPX ROM and the 2BL.{{FIXME}}
+It is not part of the MCPX ROM, but part of the flash.
+
 == 2BL ==
 
-Certain parts are still missing
+{{FIXME|reason=Certain parts are still missing.}}
 
 === MTRR Setup ===
 

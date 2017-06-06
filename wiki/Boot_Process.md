@@ -119,9 +119,11 @@ The high level interpretation of the MCPX ROM might look like this:
         }
     }
 
-### MCPX 1.0: RC4 Decryption of the 2BL
+### RC4 Decryption of the 2BL (MCPX 1.0 only)
 
-Version 1.0 of the ROM uses RC4 to decrypt the 2BL.
+Version 1.0 of the ROM uses RC4 to decrypt the 2BL. The RC4 algorithm
+was included as part of MCPX 1.0 and seems to work fine with BIOS
+versions 3944, 4034, and 4134.
 
 #### Stage 1: Key Scheduling
 
@@ -202,17 +204,16 @@ is given by the first dword of the decrypted 2bl.
     mov  eax, [0x90000]
     jmp  eax        ; Jump to 2BL entry point
 
-### Notes
+### TEA Decryption of the FBL (MCPX 1.1 only)
 
-The RC4 algorithm was included as part of MCPX 1.0 and seems to work
-fine with BIOS versions 3944, 4034, and 4134.
+FBL (MCPX 1.1 only)
+-------------------
 
-### MCPX 1.1: TEA Decryption of the 2BL
+The Flash Boot Loader was added in MCPX 1.1, it connects the MCPX ROM
+and the 2BL. It is not part of the MCPX ROM, but part of the flash.
 
 2BL
 ---
-
-Certain parts are still missing
 
 ### MTRR Setup
 
