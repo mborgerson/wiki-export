@@ -208,7 +208,7 @@ Power not connected, pedals not connected, not in Tuning mode:
       Self Powered
       Remote Wakeup Enabled
 
-#### Steering wheel and Pedals
+#### Steering wheel (and Pedals)
 
 Always connected to port 1 of the internal HUB
 

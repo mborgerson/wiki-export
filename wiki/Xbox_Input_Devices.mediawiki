@@ -322,7 +322,7 @@ Device Status:     0x0003
   Remote Wakeup Enabled
 </pre>
 
-==== Steering wheel and Pedals ====
+==== Steering wheel (and Pedals) ====
 
 Always connected to port 1 of the internal HUB
 
