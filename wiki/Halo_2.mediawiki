@@ -2,13 +2,15 @@
 
 == Map File Format (Iron_Forge whitepaper) ==
 
-Halo 2 .map file format whitepaper originally by Iron_Forge.
+Retrieved from [http://old.halomods.com old.halomods.com].
 
-Created: 11/21/2004, 12:13:00, Iron_Forge.
+Halo 2 .map file format whitepaper originally by Iron_Forge.
 
 Filename: H2WhitePaper.doc
 
-Retrieved from [http://old.halomods.com old.halomods.com].
+Created: 11/21/2004, 12:13:00, Iron_Forge.
+
+Revision: 0.9b
 
 === 1 - General Information ===
 
