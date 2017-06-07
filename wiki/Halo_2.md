@@ -72,11 +72,22 @@ increased by the secondary magic value
 #### 2.1 - Map Layout
 
 The Halo 2 map files can be broken up into the following sections:
-header, sound raw data, model raw data, bsp model raw data, model
-animation raw data, bsp structure, script references, file names,
-unicode strings raw data, other, texture raw data, object index, index
-padding, object meta information, and finally the cache where
-applicable.
+
+-   header
+-   sound raw data
+-   model raw data
+-   bsp model raw data
+-   model animation raw data
+-   bsp structure
+-   script references
+-   file names
+-   unicode strings raw data
+-   other
+-   texture raw data
+-   object index
+-   index padding
+-   object meta information
+-   the cache (where applicable)
 
 #### 2.2 - Processing
 
