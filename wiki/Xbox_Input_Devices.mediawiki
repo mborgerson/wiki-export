@@ -391,6 +391,14 @@ Device Status:     0x0000
 
 == Light guns ==
 
+=== EMS Topgun II ===
+
+''This is a non-licensed / unofficial Xbox accessory.''
+
+==== USB Descriptors ====
+
+{{FIXME}}
+
 == Steel Battalion Controller ==
 
 === USB Descriptors ===

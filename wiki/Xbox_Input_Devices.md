@@ -276,6 +276,12 @@ Always connected to port 1 of the internal HUB
 Light guns
 ----------
 
+### EMS Topgun II
+
+*This is a non-licensed / unofficial Xbox accessory.*
+
+#### USB Descriptors
+
 Steel Battalion Controller
 --------------------------
 
