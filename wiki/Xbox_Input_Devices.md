@@ -107,6 +107,166 @@ a list of devices.
 Steering wheels
 ---------------
 
+### MadCatz Wheel
+
+### Fanatec Speedster 3 ForceShock
+
+#### Internal HUB
+
+Power not connected, pedals not connected, not in Tuning mode:
+
+    Device Descriptor:
+      bLength                18
+      bDescriptorType         1
+      bcdUSB               1.10
+      bDeviceClass            9 Hub
+      bDeviceSubClass         0 
+      bDeviceProtocol         0 Full speed (or root) hub
+      bMaxPacketSize0         8
+      idVendor           0x3767 
+      idProduct          0x0102 
+      bcdDevice            0.01
+      iManufacturer           0 
+      iProduct                1 End
+      iSerial                 0 
+      bNumConfigurations      1
+      Configuration Descriptor:
+        bLength                 9
+        bDescriptorType         2
+        wTotalLength           25
+        bNumInterfaces          1
+        bConfigurationValue     1
+        iConfiguration          0 
+        bmAttributes         0xa0
+          (Bus Powered)
+          Remote Wakeup
+        MaxPower               64mA
+        Interface Descriptor:
+          bLength                 9
+          bDescriptorType         4
+          bInterfaceNumber        0
+          bAlternateSetting       0
+          bNumEndpoints           1
+          bInterfaceClass         9 Hub
+          bInterfaceSubClass      0 
+          bInterfaceProtocol      0 Full speed (or root) hub
+          iInterface              0 
+          Endpoint Descriptor:
+            bLength                 7
+            bDescriptorType         5
+            bEndpointAddress     0x81  EP 1 IN
+            bmAttributes            3
+              Transfer Type            Interrupt
+              Synch Type               None
+              Usage Type               Data
+            wMaxPacketSize     0x0001  1x 1 bytes
+            bInterval             255
+    Hub Descriptor:
+      bLength               9
+      bDescriptorType      41
+      nNbrPorts             3
+      wHubCharacteristic 0x000d
+        Per-port power switching
+        Compound device
+        Per-port overcurrent protection
+      bPwrOn2PwrGood       50 * 2 milli seconds
+      bHubContrCurrent     64 milli Ampere
+      DeviceRemovable    0x02
+      PortPwrCtrlMask    0xff
+     Hub Port Status:
+       Port 1: 0000.0103 power enable connect
+       Port 2: 0000.0100 power
+       Port 3: 0000.0100 power
+    can't get debug descriptor: Resource temporarily unavailable
+    Device Status:     0x0003
+      Self Powered
+      Remote Wakeup Enabled
+
+Note that the cable going to the pedals is \*not\* a USB port despite
+using the Xbox controller breakout plug. A another Xbox controller
+connected to the cable coming out of the steering wheel (intended for
+the pedals) will not be recognized. Likewise, plugging the pedals to a
+PC / Xbox won't provide a USB / XID (it is detected as garbage):
+
+    new full-speed USB device number 14 using xhci_hcd
+    device descriptor read/64, error -71
+    device descriptor read/64, error -71
+    new full-speed USB device number 15 using xhci_hcd
+    device descriptor read/64, error -71
+    device descriptor read/64, error -71
+    new full-speed USB device number 16 using xhci_hcd
+    Device not responding to setup address.
+    Device not responding to setup address.
+    device not accepting address 16, error -71
+    new full-speed USB device number 17 using xhci_hcd
+    Device not responding to setup address.
+    Device not responding to setup address.
+    device not accepting address 17, error -71
+    unable to enumerate USB device
+
+#### Steering wheel and Pedals
+
+Always connected to port 1 of the internal HUB
+
+    Device Descriptor:
+      bLength                18
+      bDescriptorType         1
+      bcdUSB               1.10
+      bDeviceClass            0 
+      bDeviceSubClass         0 
+      bDeviceProtocol         0 
+      bMaxPacketSize0         8
+      idVendor           0x3767 
+      idProduct          0x0101 
+      bcdDevice            2.80
+      iManufacturer           0 
+      iProduct                0 
+      iSerial                 0 
+      bNumConfigurations      1
+      Configuration Descriptor:
+        bLength                 9
+        bDescriptorType         2
+        wTotalLength           32
+        bNumInterfaces          1
+        bConfigurationValue     1
+        iConfiguration          0 
+        bmAttributes         0x80
+          (Bus Powered)
+        MaxPower              100mA
+        Interface Descriptor:
+          bLength                 9
+          bDescriptorType         4
+          bInterfaceNumber        0
+          bAlternateSetting       0
+          bNumEndpoints           2
+          bInterfaceClass        88 Xbox
+          bInterfaceSubClass     66 Controller
+          bInterfaceProtocol      0 
+          iInterface              0 
+          Endpoint Descriptor:
+            bLength                 7
+            bDescriptorType         5
+            bEndpointAddress     0x82  EP 2 IN
+            bmAttributes            3
+              Transfer Type            Interrupt
+              Synch Type               None
+              Usage Type               Data
+            wMaxPacketSize     0x0020  1x 32 bytes
+            bInterval               4
+          Endpoint Descriptor:
+            bLength                 7
+            bDescriptorType         5
+            bEndpointAddress     0x02  EP 2 OUT
+            bmAttributes            3
+              Transfer Type            Interrupt
+              Synch Type               None
+              Usage Type               Data
+            wMaxPacketSize     0x0020  1x 32 bytes
+            bInterval               4
+    can't get debug descriptor: Resource temporarily unavailable
+    Device Status:     0x0000
+      (Bus Powered)
+
 Light guns
 ----------
 
