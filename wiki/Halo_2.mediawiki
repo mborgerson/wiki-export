@@ -24,21 +24,14 @@ Many things are not contained within this document, for the simple reason of I d
 
 ==== 1.2 - Glossary ====
 
-'''dword''' – 4 bytes of data (double word)
-
-'''word''' – 2 bytes of data
-
-'''primary magic''' – A value used to increase offsets, allowing large areas of data to be moved without modifying the offsets contained within it.
-
-'''secondary magic''' – A value used to increase offsets, allowing large areas of data to be moved without modifying the offsets contained within it, primarily used for meta.
-
-'''pure offset''' – A value which represents an offset in the file that has not been modified in any way
-
-'''raw offset''' – A pure offset whose 2 most significant bits represent the file the offset references
-
-'''primary magic offset''' – A pure offset whose value has been increased by the primary magic value
-
-'''secondary magic offset''' – A pure offset whose value has been increased by the secondary magic value
+* '''dword''' – 4 bytes of data (double word)
+* '''word''' – 2 bytes of data
+* '''primary magic''' – A value used to increase offsets, allowing large areas of data to be moved without modifying the offsets contained within it.
+* '''secondary magic''' – A value used to increase offsets, allowing large areas of data to be moved without modifying the offsets contained within it, primarily used for meta.
+* '''pure offset''' – A value which represents an offset in the file that has not been modified in any way
+* '''raw offset''' – A pure offset whose 2 most significant bits represent the file the offset references
+* '''primary magic offset''' – A pure offset whose value has been increased by the primary magic value
+* '''secondary magic offset''' – A pure offset whose value has been increased by the secondary magic value
 
 === 2 - Map Information ===
 
