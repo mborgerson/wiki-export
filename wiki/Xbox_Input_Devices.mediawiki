@@ -326,6 +326,8 @@ Device Status:     0x0003
 
 Always connected to port 1 of the internal HUB
 
+===== USB Descriptors =====
+
 <pre>
 Device Descriptor:
   bLength                18

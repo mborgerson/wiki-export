@@ -212,6 +212,8 @@ Power not connected, pedals not connected, not in Tuning mode:
 
 Always connected to port 1 of the internal HUB
 
+##### USB Descriptors
+
     Device Descriptor:
       bLength                18
       bDescriptorType         1
