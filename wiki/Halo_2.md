@@ -1,0 +1,665 @@
+---
+title: Halo 2
+permalink: wiki/Halo_2/
+layout: wiki
+---
+
+Map File Format (Iron\_Forge whitepaper)
+----------------------------------------
+
+Halo 2 .map file format whitepaper originally by Iron\_Forge.
+
+Created: 11/21/2004, 12:13:00, Iron\_Forge.
+
+Filename: H2WhitePaper.doc
+
+Retrieved from [old.halomods.com](http://old.halomods.com).
+
+### 1 - General Information
+
+#### 1.1 - Introduction
+
+Greetings. My name is Iron\_Forge, and I have been working on and off
+with Halo map files of one type or another for a little over a year now.
+I have remained active in all areas of map formatting of Halo 1 for the
+xbox as well as the pc. Odds are if you have used an application for
+Halo 1, I have had a hand in it, or the information that led to its
+conception.
+
+I have been working on the Halo 2 map format since its release, and this
+document serves as a collection of the information I have compiled with
+the help of good friends MonoxideC and ViperNeo. Applying my experience
+from Halo 1 and other projects, I am one of a handful of people who
+could be considered experts on the map file formats. Using this
+document, I hope to pass this on to you.
+
+Many things are not contained within this document, for the simple
+reason of I did not figure out how they work (the BSP is a good
+example.) That’s not to say these things are still unknown. ViperNeo had
+the BSP information completed the same time we were working on models
+together, due to the strong similarity between them.
+
+#### 1.2 - Glossary
+
+**dword** – 4 bytes of data (double word)
+
+**word** – 2 bytes of data
+
+**primary magic** – A value used to increase offsets, allowing large
+areas of data to be moved without modifying the offsets contained within
+it.
+
+**secondary magic** – A value used to increase offsets, allowing large
+areas of data to be moved without modifying the offsets contained within
+it, primarily used for meta.
+
+**pure offset** – A value which represents an offset in the file that
+has not been modified in any way
+
+**raw offset** – A pure offset whose 2 most significant bits represent
+the file the offset references
+
+**primary magic offset** – A pure offset whose value has been increased
+by the primary magic value
+
+**secondary magic offset** – A pure offset whose value has been
+increased by the secondary magic value
+
+### 2 - Map Information
+
+#### 2.1 - Map Layout
+
+The Halo 2 map files can be broken up into the following sections:
+header, sound raw data, model raw data, bsp model raw data, model
+animation raw data, bsp structure, script references, file names,
+unicode strings raw data, other, texture raw data, object index, index
+padding, object meta information, and finally the cache where
+applicable.
+
+#### 2.2 - Processing
+
+When Halo 2 is loaded, it will create cache files (copying the original
+files to the hard drive of the xbox). The shared and single player
+shared map files are exceptions to this rule, most likely to lower the
+load times of the game starting, and each map being processed. If your
+installation has valid bink video files, these will be played during
+load times, otherwise a progress text will appear on the screen showing
+the percentage copied.
+
+All loaded files are signed (see section on encryptomatic signature),
+and should a loading map fail, the engine will retry the copy twice more
+before giving a “dirty disk” error, or a “map failed to load” error,
+depending on the map.
+
+Upon loading a map, only the required resources are placed in memory. As
+objects appear on screen, the data for them is streamed from the shared
+files, replacing the very low copy kept in memory with a much richer and
+more detailed counterparts. This process allows even multiplayer maps to
+have access to several hundred megabytes of information, while remaining
+within the limitations of the xbox hardware.
+
+#### 2.3 - Map Header
+
+The map header1 is 2048 bytes just as previous versions of Halo. The
+version tag is now 8. The index offset is a pure offset pointing to the
+index header, followed by the meta start, which when added to the index
+offset will point to the beginning of the meta area. Map origin will
+define the path (and file) the cache was created from, and as such is
+only defined in the cache files.
+
+##### 2.3.1 - File Table
+
+The file table contains full paths for each object in relative order
+(first filename is for the first object.) The strings are standard
+ASCII, with a null termination and no padding is used regardless of
+where the string terminates.
+
+The file table index contains unsigned integers defining the offset
+which each string begins, also relative. This allows the file table to
+be read as a single block of characters, and each object to be issued a
+pointer to the beginning of its string.
+
+##### 2.3.2 - Encryptomatic Signature
+
+The encryptomatic signature is created by xoring every dword after the
+header together. It is my belief that this value has the single purpose
+of validating maps copied correctly, and was not used to “thwart” would
+be modders.
+
+##### 2.3.3 - Script References
+
+Script references link some object to a specific event. The string table
+defining these references is in the same format as the file table,
+including an index. They can often be found following dependencies such
+as effect dependencies. This would link that effect to be triggered by a
+given event, such as a button being pressed, or an item being picked up.
+The reference themselves consist of a pair of words, the first being the
+index to the string in the table, the second being the length of the
+script reference string.
+
+#### 2.4 - Index Header
+
+The first value in the index header remains the constant used to
+calculate magic. The object index offset here is a primary magic offset,
+and points to the object index.
+
+##### 2.4.1 - Tag List
+
+Directly following the index header is the tag list. This list contains
+all used tags in the map file, and defines their object hierarchy. This
+allows the engine to know for example, that all vehicles are a sub class
+of the unit class, which is a sub class of the object class. I believe
+the wildcard tags are used as a way of using the primary tag without its
+parents, though this is just speculation.
+
+##### 2.4.2 - Object Index
+
+The object index is a recursively-constructed collection defining all
+objects in the map. The objects identifier is defined here, which is
+used to reference the object from all other areas of the map file. The
+identifier is composed of two short values, each are incremented equally
+throughout the index. The meta offset is a secondary magic offset which
+points to the beginning of the objects meta.
+
+##### 2.4.3 - Primary and Secondary Magic
+
+The magic values are used to allow moving large blocks of data without
+having to modify the data itself. Using a magic value applied to all
+offsets, after moving the data x bytes, the magic only needs to be
+increased or decreased 8 to correct all offsets, rather than each offset
+needing re-calculation. Primary magic is still calculated by magic
+constant - (index header offset) + sizeof(index header)). Secondary
+magic, which is now used instead of primary magic for meta related
+offsets, is primary magic + sizeof(BSP). Since we cannot obtain the size
+of the BSP object without using secondary magic (it is located in the
+scenery tag), we use the known offset of the meta start and the
+secondary magic offset of the first object to calculate this value.
+
+### 3 - Objects
+
+#### 3.1 - Raw Offsets
+
+Raw offsets in Halo 2 have no magic applied to them. However, they can
+reference the current map file, or the three shared files. To do this,
+it reserves the two most significant (highest) bits to define the
+referencing file. These are defined as: 002 being local file, 012 being
+mainmenu.map, 102 being shared.map, and 112 being
+single\_player\_shared.map.
+
+When referencing a raw offset, one should first determine the file being
+referenced, remove those two bits from the offset value (and with
+0x3FFFFFFF), and then seek to that offset in the correct file to find
+the referenced data. Given the size of the shared files, it is possible
+that the third most significant bit is also reserved for sharing new
+downloadable content in the future, but this would just be speculation.
+
+#### 3.2 - Unicode Strings
+
+Unicode strings are built to allow for up to nine languages. The globals
+object defines where each language block is located, and its related
+information (size, string count, etc.) as needed. Each unicode string
+object then contains two shorts per language, the first defining the
+offset (as a string count) in the language block that the unicode object
+begins, and the second defining how many strings are in the object.
+
+This method allows the multiplayer maps to be identical for every
+version and region of Halo 2. The engine can simply detect you xbox
+language settings, and supply the correct string(s) form the language
+block.
+
+#### 3.3 - Bitmaps & Textures
+
+Bitmap objects are collections of the textures in Halo 2, and their
+layout is rather straightforward. Each texture is allowed up to six
+levels of detail. Each level of detail is identical to its predecessors
+first mipmap. So if the first quality level were 256x256, the following
+would be 128x128. Each level of detail however still contains its own
+entire set of mipmaps. I suspect this goes further towards Halo 2’s
+efficient use of memory management.
+
+Each bitmap object may also contain several images, usually used where
+options between similar sets of images are needed (such as multiple
+level images in the main menu.) These will be represented by the bitm
+struct reflexive. Each bitmap may be extracted as if it were its own
+object.
+
+Referencing the source to HME/HMT, we can find the different image
+formats for the different image objects. In addition to these types,
+0x11 and 0x12 are both single channel images (you may extract them as A8
+if using the common DDS), and are used for bump maps, and light maps
+(respectively.)
+
+Many images are still swizzled (a technique for faster memory copies),
+and this information may also be referenced from the HME/HMT sources.
+
+#### 3.4 - Sounds
+
+Sounds were probably the most enjoyable piece of Halo 2 to work on. They
+entwine with an “ugh!” object named “I’ve got a lovely bunch of
+coconuts”, a song done by the amazing comedic group Monty Python. I
+cannot help but believe this system was done as an easter egg designed
+just for me as “the curious modder”. To Bungie, I thank you (unless of
+course this was designed to keep us from removing sounds, in which case
+I sincerely apologize.)
+
+In each sound meta, there is an index and chunk count that references a
+block in the fifth reflexive in the coconuts object. This block has
+another index and chunk count, referencing the sixth reflexive in the
+coconuts object. These chunks reference “option” sounds, such as several
+different sound choices for entering a vehicle.
+
+Each item in the sixth block contains another index and chunk count,
+this time referencing the ninth reflexive in the coconuts object. The
+ninth reflexive contains the size and raw offset for each piece of the
+sound.
+
+Sounds in Halo 2 are xbox adpcm or WMA, depending on the type byte. The
+WMA sounds can be assembled completely from the raw data pieces. The
+xbox adpcm pieces require the header be written.
+
+If the type byte is 1, then the sound is an adpcm, mono, and 22050kbps
+sound file. Type 2 is also adpcm, stereo, and 44100kbps sound file. Type
+3 is a WMA sound file. There is more to the sound formatting than this,
+however this was mare than enough for me to extract all the sounds.
+
+#### 3.5 - Models
+
+Models in Halo 2 use a compressed format based on a bounding box. This
+bounding box can be found in the first reflexive of the model meta.
+Using its constraints for each value relevant to the models, the
+uncompressed value can be found using the formula (((shortValue + 32768)
+/ 65535) \* (maxValue – minValue)) + minValue.
+
+The model raw data block now contains a header, footer, and several
+resource chunks. The header contains information regarding how many
+chunks are in each resource block, allowing you to determine which block
+contains the information needed (for example, if a given block has 0
+chunks, then it will not have a corresponding resource block). The
+important resource blocks are the mesh information block (containing
+mesh information), the indices block (containing the indices for the
+triangle strip), the vertices block (containing at minimum 3 shorts
+defining the x, y, and z of the vertices), the UV map (containing the
+compressed UV points.), and the bone map.
+
+The third dword (as an unsigned integer) in each mesh information block
+defines how many indices are in that mesh. The indices are placed in
+order, so each meshes indices can be found after its predecessor in the
+indices resource block.
+
+The vertices are stored with several sized blocks within their resource
+block, however the x, y, and z points are still represented by the first
+3 shorts respectively. The size of each vertex block can be determined
+by the type bytes in the model meta. Each short must then be
+decompressed using the above-mentioned formula and their own constraint
+value, min x and max x for x, and so on.
+
+If the given vertex type has more than 6 bytes, it is followed by the
+bone references and weights of this vertex. Both are one byte in length,
+and the bone references are sorted. Therefore if a bone with a value of
+0 is read in any position other than the first, this bone reference
+should be discarded, as should all that follow. Following the bone
+references are their weights, which are also one byte in length, and can
+be considered compressed. The weights are a value between 0 an 1 once
+uncompressed, thus a byte with a weight of 128 will have a weight of 0.5
+(or 50% deformation based on this bone.) The exception to this is the 8
+byte vertices, where the two bytes following are both bones. If both are
+set, they each have a weight of 0.5, and if only one is set it is given
+full weight.
+
+The UV’s are slightly more complicated. They are compressed in the same
+fashion as the vertices. However, while UV’s must always remain between
+0 and 1, their constraints are not governed by the same limits. The
+resulting uncompressed values can be fixed through “looping” them. If
+the value is 1.3, the resulting value would be 0.3, and given the value
+-0.3, the resulting value would be 0.7. The easiest way to accomplish
+this is to mod the resulting value by 1, and then if the value is
+negative, subtract it from 1.
+
+Since the bones have to act over several different pieces, each raw
+model block has a bone map, relating the bone byte to the correct bone
+id. This is a byte array, so if a vertex references bone 0, then
+boneMap\[0\] will provide the correct bone id.
+
+Back to the meta, the sixth reflexive in the model meta defines the bone
+hierarchy of the model. When parent, child, or sibling is none, the
+value will be set to 0xFFFF. These chunks are the bones which are mapped
+to from the raw data. The name is a script reference, and defines what
+the bone is called.
+
+The second reflexive defines all the level of details (LOD) for the
+model pieces. The name is again a script reference defining what this
+particular LOD is called. This is followed by a reflexive. This
+reflexive is for all the different options for the particular LOD (for
+example: base, default, damaged, etc.) Each of these reflexives consist
+of another script reference name, defining what this option is referred
+to as, followed by a series of 5 shorts. These shorts refer to the piece
+of the model which makes up one of the 5 LODs for this option. The last
+short (following the 5 LODs), defines the piece of the model which has
+the highest LOD (this should be equal to the 5th LOD value.) If a model
+only has 3 LODs, the first three LOD values will be the same, defining
+one piece to be used for all three levels.
+
+The seventh reflexive in the model meta defines a series of locations
+defining everything from where lights and other effects are located on a
+model, to where the characters place their hands while using the model.
+These are set by a script reference to link the point to, and the points
+location data.
+
+#### 3.6 - Other Tags
+
+For the most part, objects are quite similar to their Halo 1
+counterparts. Usually there has been some general compacting of the data
+(the tags have been cleaned up, unused values removed), or a reflexive
+added here and there. Notable exceptions that I haven’t written about
+here (as lack of time and motivation kept me away) are the model
+animations, which now have large blocks of raw data.
+
+### 4 - In Closing
+
+#### 4.1 - Conclusion
+
+In closing, I would like to say that not all the information enclosed
+here is guaranteed to be accurate. It is composed of my findings, and
+how I interpreted them at the time. Much of the structs are incomplete,
+as I tend to not write down things I figure out while seeking other
+answers, and I tried to only include solid information, instead of all
+my random notes.
+
+The information contained within these pages should be enough to get any
+one started, and take them to the point of being able to obtain any of
+the above items, and replace them with their own creations.
+
+I would like to thank all of you who read this far (and bothered reading
+this), and to you all, happy modding.
+
+#### 4.2 - Acknowledgements
+
+I would also once again like to thank MonoxideC and ViperNeo for their
+help in this. While they may remain modest, both were invaluable in
+explaining things I didn’t fully understand, bouncing ideas off, and
+just helping out anyway they could. The community is better for having
+them, and I better for knowing them.
+
+### 5 - Appendix I - Structures
+
+    struct mapHeader {
+      char[4] head;
+      int version;
+      int filesize;
+      int zero;
+      int indexOffset;
+      int metaStart;
+      dword[2] unknown;
+      char[32] mapOrigin;
+      byte[224]unknown;
+      char[32] build;
+      byte[20] unknown;
+      int unknown;
+      int offsetToStrangeFileStrings;
+      int unknown;
+      int offsetToSomething;
+      int scriptReferenceCount;
+      int sizeOfScriptReference;
+      int offsetToScriptReferenceIndex;
+      int offsetToScriptReferenceStrings;
+      byte[36] unknown;
+      char[32] mapName;
+      int zero;
+      char[32] scenarioPath;
+      byte[224] zero;
+      int unknown;
+      int fileCount;
+      int fileTableOffset;
+      int fileTableSize;
+      int filesIndex;
+      int signature;
+      byte[1320] zero;
+      char[4] foot;
+    }
+
+    struct indexHeader {
+      int primaryMagicConstantMagic;
+      int tagListCount;
+      int objectIndexOffset;
+      int scenarioID;
+      int tagIDStart;
+      int unknown;
+      int objectCount;
+      char[4] tags;
+    }
+
+    struct tagListEntry {
+      char[4] objectClass;
+      char[4] parentClass;
+      char[4] grandparentClass;
+    }
+    struct objectEntry {
+      char[4] tag;
+      int ID;
+      int offset;
+      int metaSize;
+    }
+
+    struct unicMeta {
+      uint[4] zero;
+      short lang1Offset;
+      short lang1Count;
+      short lang2Offset;
+      short lang2Count;
+      short lang3Offset;
+      short lang3Count;
+      short lang4Offset;
+      short lang4Count;
+      short lang5Offset;
+      short lang5Count;
+      short lang6Offset;
+      short lang6Count;
+      short lang7Offset;
+      short lang7Count;
+      short lang8Offset;
+      short lang8Count;
+      short lang9Offset;
+      short lang9Count;
+    }
+
+    struct bitmMeta {
+      byte[68] data;
+      struct image {
+        char[4] bitm;
+        ushort width;
+        ushort height;
+        ushort depth;
+        ushort type;
+        ushort format;
+        ushort flags;
+        ushort regPointX;
+        ushort regPointY;
+        ushort mipMapCount;
+        ushort pixelOffset;
+        uint zero;
+        uint[6] offset;
+        uint[6] size;
+        uint identifier;
+        byte[36] unknown;
+      }
+    }
+
+    struct sndMeta {
+      dword unknown;
+      byte format;
+      byte[3] unknown;
+      short index;
+      byte chunkCount;
+      byte unknown;
+      dword[2] unknown;
+    }
+
+    struct ughMeta {
+      struct {}
+      struct {}
+      struct {
+        scriptRef sound;
+      }
+      struct {}
+      struct soundOptions {
+        dword[2] unknown;
+        short index;
+        short chunkCount;
+      }
+      struct soundPieces {
+        dword[3] unknown;
+        short index;
+        short chunkCount;
+      }
+      struct {}
+      struct {}
+      struct rawSound {
+        uint rawOffset;
+        uint size;
+        uint eff;
+      }
+      struct {}
+      struct {}
+    }
+
+    struct modeMeta {
+      scriptRef modelName;
+      dword val2;
+      dword val3;
+      dword zero;
+      dword zero;
+      struct boundingBox
+      {
+        float minX;
+        float maxX;
+        float minY;
+        float maxY;
+        float minZ;
+        float maxZ;
+        float minU;
+        float maxU;
+        float minV;
+        float maxV;
+        dword:4 zero;
+      }
+      struct LODs
+      {
+        scriptRef modelPiece;
+        word sval1; // FFFF
+        word sval2; // 0000
+        struct ref2.1
+        {
+          scriptRef modelType;
+          word LODPiece1;
+          word LODPiece2;
+          word LODPiece3;
+          word LODPiece4;
+          word LODPiece5;
+          word LODPieceHigh;
+        }
+      }
+      struct pieces
+      {
+        dword unknown;
+        ushort vertCount;
+        ushort unknown;
+        byte[12] val1;
+        ushort type;
+        ushort unkown;
+        dword val;
+        dword[2] zero;
+        dword[3] val;
+        dword[2] zero;
+        uint rawOffset;
+        uint size;
+        uint headerSize;
+        dword val4;
+        struct rsrc
+        {
+          word val;
+          word val;
+          word val;
+          word val;
+          uint size;
+          uint offset;
+        }
+        dword identifier;
+        dword val5;
+        dword eff;
+      }
+      struct ref4
+      {
+        dword zero;
+      }
+      struct ref5
+      {
+        dword val1;
+        dword:2 zero;
+      }
+      dword[3] zero;
+      struct bones
+      {
+        scriptRef boneName
+        ushort parent;
+        ushort firstChild;
+        ushort nextSibling;
+        word val1;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float;
+        float distanceFromParent;
+      }
+      dword[2] zero;
+      struct points
+      {
+        scriptRef pointName;
+        struct points
+        {
+          short; // 0xFFFF
+          short;
+          float[7] val;
+          dword zero;
+        }
+      }
+      struct shaders
+      {
+        dependancy shad;
+        dependancy shad;
+        dword:4 zero;
+      }
+      dword[7] zero;
+    }
+
+    struct modelHeader {
+      char[4] blkh;
+      uint size;
+      uint informationChunks;
+      uint zero;
+      uint unkChunks;
+      uint zero;
+      uint unk2Chunks;
+      uint[3] zero;
+      uint indicesChunks;
+      uint[5] zero;
+      uint unk3Chunks;
+      uint[10] zero;
+      uint boneChunks;
+      uint[2] zero;
+    } 
