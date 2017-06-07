@@ -111,7 +111,33 @@ Steering wheels
 
 ### Fanatec Speedster 3 ForceShock
 
+#### Pedals
+
+The Pedals are *not* a USB device.
+
+Note that the cable going to the pedals is also *not* a USB port despite
+using the Xbox controller breakaway plug. Likewise, plugging the pedals
+to a PC / Xbox won't provide a USB / XID (it is detected as garbage):
+
+    new full-speed USB device number 14 using xhci_hcd
+    device descriptor read/64, error -71
+    device descriptor read/64, error -71
+    new full-speed USB device number 15 using xhci_hcd
+    device descriptor read/64, error -71
+    device descriptor read/64, error -71
+    new full-speed USB device number 16 using xhci_hcd
+    Device not responding to setup address.
+    Device not responding to setup address.
+    device not accepting address 16, error -71
+    new full-speed USB device number 17 using xhci_hcd
+    Device not responding to setup address.
+    Device not responding to setup address.
+    device not accepting address 17, error -71
+    unable to enumerate USB device
+
 #### Internal HUB
+
+##### USB Descriptors
 
 Power not connected, pedals not connected, not in Tuning mode:
 
@@ -181,28 +207,6 @@ Power not connected, pedals not connected, not in Tuning mode:
     Device Status:     0x0003
       Self Powered
       Remote Wakeup Enabled
-
-Note that the cable going to the pedals is \*not\* a USB port despite
-using the Xbox controller breakout plug. A another Xbox controller
-connected to the cable coming out of the steering wheel (intended for
-the pedals) will not be recognized. Likewise, plugging the pedals to a
-PC / Xbox won't provide a USB / XID (it is detected as garbage):
-
-    new full-speed USB device number 14 using xhci_hcd
-    device descriptor read/64, error -71
-    device descriptor read/64, error -71
-    new full-speed USB device number 15 using xhci_hcd
-    device descriptor read/64, error -71
-    device descriptor read/64, error -71
-    new full-speed USB device number 16 using xhci_hcd
-    Device not responding to setup address.
-    Device not responding to setup address.
-    device not accepting address 16, error -71
-    new full-speed USB device number 17 using xhci_hcd
-    Device not responding to setup address.
-    Device not responding to setup address.
-    device not accepting address 17, error -71
-    unable to enumerate USB device
 
 #### Steering wheel and Pedals
 
