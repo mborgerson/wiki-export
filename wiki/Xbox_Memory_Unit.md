@@ -6,6 +6,18 @@ layout: wiki
 
 The memory units are typically formatted with [FATX](/wiki/FATX "wikilink").
 
+    VID:0x045e PID:0x0280 Microsoft Corp. Xbox Memory Unit (8MB)
+
+thirdparty USB sticks
+---------------------
+
+Some unlicensed Memory Units where made.
+
+| Product name                        | VID    | PID    | Notes                     |
+|-------------------------------------|--------|--------|---------------------------|
+| ThrustMaster, Inc.                  | 0x044f | 0x0f0c | Green logo “Trustmaster”  |
+| Weltrend Semiconductor XBOX Xploder | 0x040b | 0x6520 | Green sticker “Gamesaves” |
+
 Compatible USB sticks
 ---------------------
 
