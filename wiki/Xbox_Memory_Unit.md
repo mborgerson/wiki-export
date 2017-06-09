@@ -11,8 +11,8 @@ The memory units are typically formatted with [FATX](/wiki/FATX "wikilink").
 | Microsoft Corp. Xbox Memory Unit (8MB) | 0x045e | 0x0280 | Official one                           |
 | ThrustMaster, Inc.                     | 0x044f | 0x0f0c | Green logo Xbox and white "Trustmaster |
 
-thirdparty USB sticks
----------------------
+Unlicensed Xbox Memory Units
+----------------------------
 
 Some unlicensed Memory Units where made.
 

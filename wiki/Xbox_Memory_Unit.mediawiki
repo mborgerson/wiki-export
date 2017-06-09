@@ -9,7 +9,7 @@ The memory units are typically formatted with [[FATX]].
 |}
 
 
-== thirdparty USB sticks ==
+== Unlicensed Xbox Memory Units ==
 Some unlicensed Memory Units where made. 
 
 {| class="wikitable"
