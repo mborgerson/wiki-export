@@ -13,10 +13,9 @@ thirdparty USB sticks
 
 Some unlicensed Memory Units where made.
 
-| Product name                        | VID    | PID    | Notes                                   |
-|-------------------------------------|--------|--------|-----------------------------------------|
-| ThrustMaster, Inc.                  | 0x044f | 0x0f0c | Green logo Xbox and white “Trustmaster” |
-| Weltrend Semiconductor XBOX Xploder | 0x040b | 0x6520 | Green sticker “Gamesaves”               |
+| Product name                        | VID    | PID    | Notes                     |
+|-------------------------------------|--------|--------|---------------------------|
+| Weltrend Semiconductor XBOX Xploder | 0x040b | 0x6520 | Green sticker “Gamesaves” |
 
 Compatible USB sticks
 ---------------------
