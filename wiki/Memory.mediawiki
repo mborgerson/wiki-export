@@ -11,9 +11,26 @@ The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash]]
 |0x00000000 - 0x04000000
 |0x00000000 - 0x08000000
 |-
+|[[GPU|GPU (NV2A) Registers]]
+|colspan="2"|0xFD000000 - 0xFE000000
+|-
+|APU Registers
+|colspan="2"|0xFE800000 - 0xFE880000
+|-
+|ACI (AC97) Registers
+|colspan="2"|0xFEC00000 - 0xFEC01000
+|-
+|USB 0 Registers
+|colspan="2"|0xFED00000 - 0xFED01000
+|-
+|USB 1 Registers
+|colspan="2"|0xFED08000 - 0xFED09000
+|-
+|NIC (NVNet) Registers
+|colspan="2"|0xFEF00000 - 0xFEF00400
+|-
 |[[Flash]]
-|0xFF000000 - 0xFFFFFFFF
-|0xFF000000 - 0xFFFFFFFF
+|colspan="2"|0xFF000000 - 0xFFFFFFFF
 |-
 |[[MCPX ROM]]
 |0xFFFFFE00 - 0xFFFFFFFF

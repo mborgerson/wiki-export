@@ -15,11 +15,17 @@ mapped to memory at the top 16 MiB and the top 512 Bytes respectively.
 On Debug Xboxs and Chihiro, only the Flash is mapped as they don't
 contain an MCPX ROM.
 
-| Memory Type                     | Retail Xbox Range       | Debug/Chihiro Range     |
-|---------------------------------|-------------------------|-------------------------|
-| Main Memory                     | 0x00000000 - 0x04000000 | 0x00000000 - 0x08000000 |
-| [Flash](/wiki/Flash "wikilink")       | 0xFF000000 - 0xFFFFFFFF | 0xFF000000 - 0xFFFFFFFF |
-| [MCPX ROM](/wiki/MCPX_ROM "wikilink") | 0xFFFFFE00 - 0xFFFFFFFF | N/A                     |
+| Memory Type                            | Retail Xbox Range       | Debug/Chihiro Range     |
+|----------------------------------------|-------------------------|-------------------------|
+| Main Memory                            | 0x00000000 - 0x04000000 | 0x00000000 - 0x08000000 |
+| [GPU (NV2A) Registers](/wiki/GPU "wikilink") | 0xFD000000 - 0xFE000000 |
+| APU Registers                          | 0xFE800000 - 0xFE880000 |
+| ACI (AC97) Registers                   | 0xFEC00000 - 0xFEC01000 |
+| USB 0 Registers                        | 0xFED00000 - 0xFED01000 |
+| USB 1 Registers                        | 0xFED08000 - 0xFED09000 |
+| NIC (NVNet) Registers                  | 0xFEF00000 - 0xFEF00400 |
+| [Flash](/wiki/Flash "wikilink")              | 0xFF000000 - 0xFFFFFFFF |
+| [MCPX ROM](/wiki/MCPX_ROM "wikilink")        | 0xFFFFFE00 - 0xFFFFFFFF | N/A                     |
 
 Code for emulating the memory might consist of:
 
