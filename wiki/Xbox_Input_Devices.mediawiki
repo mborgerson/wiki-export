@@ -214,6 +214,9 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 |
 |}
 
+The Microsoft Controller S will not react to packets which don't have a value of 6 in the <code>length</code> field of the header.
+The Fanatec Speedster 3 ForceShock will still react to those. Further testing is necessary with other gamepads.
+
 == Steering wheels ==
 
 === MadCatz Wheel ===
