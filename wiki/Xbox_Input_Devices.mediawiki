@@ -393,11 +393,113 @@ Device Status:     0x0000
 
 === EMS Topgun II ===
 
-''This is a non-licensed / unofficial Xbox accessory.''
+''This is an unlicensed / unofficial Xbox accessory.''
+
+The website for this product can be found at http://www.hkems.com/product/xbox/EMSTopGun2.htm
+
+The gun presents itself as a standard Xbox gamepad. It uses a different USB descriptor for Xbox (X) and the other mode (P).
+There is no internal hub in this device.
+
+{| class="wikitable"
+! EMS TopGun II !! Xbox Gamepad !! Notes
+|-
+| Stick || Directional Pad ||
+|-
+| Trigger || A || rowspan="4" | Digital only, either 0 or 255
+|-
+| Grip || B
+|-
+| A || X
+|-
+| B || Y
+|-
+| START || Start ||
+|-
+| SE/BA || Back ||
+|-
+| Aim Left / Right || Negative / Positive on left thumbstick X axis || rowspan="2" | Absolute position using the full stick range
+|-
+| Aim Up / Down || Positive / Negative on left thumbstick Y axis
+|}
+
+There is no right thumbstick, thumbstick presses, black/white button or trigger buttons (All of those read constant zeros).
+
+===== Turbo Mode =====
+
+* Turbo mode 0 keeps A pressed  while trigger is held
+* Turbo mode 1 toggles A rapidly while trigger is held
+* Turbo mode 2 toggles A rapidly and once in a while B while trigger is held
+
+===== Force Feedback =====
+
+The upper part of the gun is moveable and should push back to simulate recoil (possibly hurting your thumb while you are using the stick).
+I could not get the force feedback working, but I'm sure I've had it working in the past on PC.{{citation needed}}
 
 ==== USB Descriptors ====
 
-{{FIXME}}
+This is the descriptor in the Xbox mode (X).
+
+<pre>
+Bus 003 Device 016: ID 0b9a:016b  
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0        64
+  idVendor           0x0b9a 
+  idProduct          0x016b 
+  bcdDevice            4.57
+  iManufacturer           1 EMS̖E
+  iProduct                2 EMS TopGun
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           32
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0 
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              100mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass        88 Xbox
+      bInterfaceSubClass     66 Controller
+      bInterfaceProtocol      0 
+      iInterface              0 
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               4
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0040  1x 64 bytes
+        bInterval               8
+can't get debug descriptor: Resource temporarily unavailable
+Device Status:     0x0000
+  (Bus Powered)
+</pre>
 
 == Steel Battalion Controller ==
 
