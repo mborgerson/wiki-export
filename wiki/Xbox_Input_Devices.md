@@ -276,7 +276,7 @@ Always connected to port 1 of the internal HUB
 Light guns
 ----------
 
-### EMS Topgun II
+### EMS TopGun II
 
 *This is an unlicensed / unofficial Xbox accessory.*
 

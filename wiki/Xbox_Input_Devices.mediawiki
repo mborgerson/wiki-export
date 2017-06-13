@@ -391,7 +391,7 @@ Device Status:     0x0000
 
 == Light guns ==
 
-=== EMS Topgun II ===
+=== EMS TopGun II ===
 
 ''This is an unlicensed / unofficial Xbox accessory.''
 
