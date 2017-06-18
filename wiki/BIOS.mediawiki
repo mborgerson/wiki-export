@@ -39,6 +39,12 @@ The BIOS is split into different components. These are largely the same from BIO
 ! 2BL                 
 | 0x39E00 || 0x39E00 || 0x39E00 ||         ||         ||         ||         ||         
 |-
+! FBL (Start & Entry point)
+|         ||         ||         || 0x3D400 || 0x3D400 || 0x3D400 || 0x3D400 || 0x3D400
+|-
+! FBL (End, exclusive)
+|         ||         ||         || 0x3FC80 || 0x3FC80 || 0x3FC80 || 0x3FC80 || 0x3FC80
+|-
 ! Decoy Boot Loader   
 | 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00
 |}
@@ -63,7 +69,7 @@ The xcodes in the BIOS versions 4817, 5101, 5530, 5713, 5838 all start with:
 
 This leads me to believe that the first three BIOS versions that I have are compatible with the 1.0 MCPX, and the rest are compatible with the 1.1 MCPX.
 
-Next, some people believed that there was another unknown section between the xcodes and the copyright string. As far as I can tell, that section was to allow the xcode instruction set to expand, as the 5838 instructions are considerably larger than those in the 3944 BIOS.
+Next, some people believed that there was another unknown section between the xcodes and the copyright string. As far as I can tell, that section was to allow the xcode instruction set to expand, as the 5838 BIOS has considerably more xcodes than the 3944 BIOS.
 
 === Copyright String ===
 

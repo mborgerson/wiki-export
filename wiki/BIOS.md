@@ -35,15 +35,17 @@ Components
 The BIOS is split into different components. These are largely the same
 from BIOS to BIOS, but with some differences.
 
-|                     | 3944    | 4034    | 4134    | 4817    | 5101    | 5530    | 5713    | 5838    |
-|---------------------|---------|---------|---------|---------|---------|---------|---------|---------|
-| Unknown             | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
-| X-Codes             | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
-| Copyright String    | 0x00CFA | 0x00CFA | 0x00CFA | 0x00DB9 | 0x00E49 | 0x00E59 | 0x00E59 | 0x00DCC |
-| Kernel              |         |         |         |         |         |         |         |         |
-| Kernel Data Segment |         |         |         |         |         |         |         |         |
-| 2BL                 | 0x39E00 | 0x39E00 | 0x39E00 |         |         |         |         |         |
-| Decoy Boot Loader   | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
+|                           | 3944    | 4034    | 4134    | 4817    | 5101    | 5530    | 5713    | 5838    |
+|---------------------------|---------|---------|---------|---------|---------|---------|---------|---------|
+| Unknown                   | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
+| X-Codes                   | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
+| Copyright String          | 0x00CFA | 0x00CFA | 0x00CFA | 0x00DB9 | 0x00E49 | 0x00E59 | 0x00E59 | 0x00DCC |
+| Kernel                    |         |         |         |         |         |         |         |         |
+| Kernel Data Segment       |         |         |         |         |         |         |         |         |
+| 2BL                       | 0x39E00 | 0x39E00 | 0x39E00 |         |         |         |         |         |
+| FBL (Start & Entry point) |         |         |         | 0x3D400 | 0x3D400 | 0x3D400 | 0x3D400 | 0x3D400 |
+| FBL (End, exclusive)      |         |         |         | 0x3FC80 | 0x3FC80 | 0x3FC80 | 0x3FC80 | 0x3FC80 |
+| Decoy Boot Loader         | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
 
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").
@@ -75,7 +77,7 @@ are compatible with the 1.0 MCPX, and the rest are compatible with the
 Next, some people believed that there was another unknown section
 between the xcodes and the copyright string. As far as I can tell, that
 section was to allow the xcode instruction set to expand, as the 5838
-instructions are considerably larger than those in the 3944 BIOS.
+BIOS has considerably more xcodes than the 3944 BIOS.
 
 ### Copyright String
 
