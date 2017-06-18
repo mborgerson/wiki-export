@@ -78,7 +78,7 @@ DMI (2048 Bytes):
 |-
 |4 || u32? || Unknown || Always zero?
 |-
-|8 || ascii_char[8] || Mastering Code || Example: EA02302E <br> Also see [Xbe#Title_ID]
+|8 || ascii_char[8] || Mastering Code || Example: EA02302E <br> Also see [[Xbe#Title_ID]]
 |-
 |16 || u64 || || Some timestamp?
 |-

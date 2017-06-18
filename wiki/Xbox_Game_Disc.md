@@ -97,7 +97,7 @@ DMI (2048 Bytes):
 <td><p>ascii_char[8]</p></td>
 <td><p>Mastering Code</p></td>
 <td><p>Example: EA02302E<br />
-Also see [Xbe#Title_ID]</p></td>
+Also see <a href="Xbe#Title_ID" class="uri" title="wikilink">Xbe#Title_ID</a></p></td>
 </tr>
 <tr class="even">
 <td><p>16</p></td>
