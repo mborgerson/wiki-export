@@ -35,17 +35,113 @@ Components
 The BIOS is split into different components. These are largely the same
 from BIOS to BIOS, but with some differences.
 
-|                           | 3944    | 4034    | 4134    | 4817    | 5101    | 5530    | 5713    | 5838    |
-|---------------------------|---------|---------|---------|---------|---------|---------|---------|---------|
-| Unknown                   | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 | 0x00000 |
-| X-Codes                   | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 | 0x00080 |
-| Copyright String          | 0x00CFA | 0x00CFA | 0x00CFA | 0x00DB9 | 0x00E49 | 0x00E59 | 0x00E59 | 0x00DCC |
-| Kernel                    |         |         |         |         |         |         |         |         |
-| Kernel Data Segment       |         |         |         |         |         |         |         |         |
-| 2BL                       | 0x39E00 | 0x39E00 | 0x39E00 |         |         |         |         |         |
-| FBL (Start & Entry point) |         |         |         | 0x3D400 | 0x3D400 | 0x3D400 | 0x3D400 | 0x3D400 |
-| FBL (End, exclusive)      |         |         |         | 0x3FC80 | 0x3FC80 | 0x3FC80 | 0x3FC80 | 0x3FC80 |
-| Decoy Boot Loader         | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 | 0x3FE00 |
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><p>3944</p></th>
+<th><p>4034</p></th>
+<th><p>4134</p></th>
+<th><p>4817</p></th>
+<th><p>5101</p></th>
+<th><p>5530</p></th>
+<th><p>5713</p></th>
+<th><p>5838</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Unknown</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+<td><p>0x00000</p></td>
+</tr>
+<tr class="even">
+<td><p>X-Codes</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+<td><p>0x00080</p></td>
+</tr>
+<tr class="odd">
+<td><p>Copyright String</p></td>
+<td><p>0x00CFA</p></td>
+<td><p>0x00CFA</p></td>
+<td><p>0x00CFA</p></td>
+<td><p>0x00DB9</p></td>
+<td><p>0x00E49</p></td>
+<td><p>0x00E59</p></td>
+<td><p>0x00E59</p></td>
+<td><p>0x00DCC</p></td>
+</tr>
+<tr class="even">
+<td><p>Kernel</p></td>
+<td><p>0x0619C</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Kernel Data Segment</p></td>
+<td><p>0x3944C</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>2BL<br />
+<em>Always 0x6000 bytes</em></p></td>
+<td><p>0x39E00</p></td>
+<td><p>0x39E00</p></td>
+<td><p>0x39E00</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>FBL<br />
+<em>Always 0x2880 bytes</em></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>0x3D400</p></td>
+<td><p>0x3D400</p></td>
+<td><p>0x3D400</p></td>
+<td><p>0x3D400</p></td>
+<td><p>0x3D400</p></td>
+</tr>
+<tr class="even">
+<td><p>Decoy Boot Loader</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+<td><p>0x3FE00</p></td>
+</tr>
+</tbody>
+</table>
 
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").

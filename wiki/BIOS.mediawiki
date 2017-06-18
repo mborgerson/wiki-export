@@ -30,20 +30,17 @@ The BIOS is split into different components. These are largely the same from BIO
 ! Copyright String    
 | 0x00CFA || 0x00CFA || 0x00CFA || 0x00DB9 || 0x00E49 || 0x00E59 || 0x00E59 || 0x00DCC
 |-
-! Kernel              
-|         ||         ||         ||         ||         ||         ||         ||         
+! Kernel
+| 0x0619C ||         ||         ||         ||         ||         ||         ||         
 |-
-! Kernel Data Segment 
-|         ||         ||         ||         ||         ||         ||         ||          
+! Kernel Data Segment
+| 0x3944C ||         ||         ||         ||         ||         ||         ||          
 |-
-! 2BL                 
+! 2BL <br> ''Always 0x6000 bytes''                
 | 0x39E00 || 0x39E00 || 0x39E00 ||         ||         ||         ||         ||         
 |-
-! FBL (Start & Entry point)
+! FBL <br> ''Always 0x2880 bytes''
 |         ||         ||         || 0x3D400 || 0x3D400 || 0x3D400 || 0x3D400 || 0x3D400
-|-
-! FBL (End, exclusive)
-|         ||         ||         || 0x3FC80 || 0x3FC80 || 0x3FC80 || 0x3FC80 || 0x3FC80
 |-
 ! Decoy Boot Loader   
 | 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00 || 0x3FE00
