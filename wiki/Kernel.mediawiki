@@ -132,8 +132,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ExEventObjectType]]
 |16
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ExFreePool]]
 |17
@@ -162,8 +162,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ExMutantObjectType]]
 |22
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ExQueryPoolBlockSize]]
 |23
@@ -202,13 +202,13 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ExSemaphoreObjectType]]
 |30
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ExTimerObjectType]]
 |31
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ExfInterlockedInsertHeadList]]
 |32
@@ -252,18 +252,18 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/HalDiskCachePartitionCount]]
 |40
-|stdcall
-|Variable?
+|
+|Variable: ULONG
 |-
 |[[Kernel/HalDiskModelNumber]]
 |41
-|stdcall
-|Variable?
+|
+|Variable: STRING
 |-
 |[[Kernel/HalDiskSerialNumber]]
 |42
-|stdcall
-|Variable?
+|
+|Variable: STRING
 |-
 |[[Kernel/HalEnableSystemInterrupt]]
 |43
@@ -372,8 +372,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/IoCompletionObjectType]]
 |64
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/IoCreateDevice]]
 |65
@@ -402,13 +402,13 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/IoDeviceObjectType]]
 |70
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/IoFileObjectType]]
 |71
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/IoFreeIrp]]
 |72
@@ -492,13 +492,13 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/KdDebuggerEnabled]]
 |88
-|stdcall
-|Variable?
+|
+|Variable: BOOLEAN
 |-
 |[[Kernel/KdDebuggerNotPresent]]
 |89
-|stdcall
-|Variable?
+|
+|Variable: BOOLEAN
 |-
 |[[Kernel/IoDismountVolume]]
 |90
@@ -562,8 +562,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/MmGlobalData]]
 |102
-|stdcall
-|Variable?
+|
+|Variable: MMGLOBALDATA
 |-
 |[[Kernel/KeGetCurrentIrql]]
 |103
@@ -652,8 +652,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/KeInterruptTime]]
 |120
-|stdcall
-|Variable?
+|
+|Variable: KSYSTEM_TIME
 |-
 |[[Kernel/KeIsExecutingDpc]]
 |121
@@ -822,8 +822,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/KeSystemTime]]
 |154
-|stdcall
-|Variable?
+|
+|Variable: KSYSTEM_TIME
 |-
 |[[Kernel/KeTestAlertThread]]
 |155
@@ -832,13 +832,13 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/KeTickCount]]
 |156
-|stdcall
-|Variable?
+|
+|Variable: ULONG
 |-
 |[[Kernel/KeTimeIncrement]]
 |157
-|stdcall
-|Variable?
+|
+|Variable: ULONG
 |-
 |[[Kernel/KeWaitForMultipleObjects]]
 |158
@@ -862,8 +862,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/KiBugCheckData]]
 |162
-|stdcall
-|Variable?
+|
+|Variable: ULONG_PTR[5]
 |-
 |[[Kernel/KiUnlockDispatcherDatabase]]
 |163
@@ -872,8 +872,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/LaunchDataPage]]
 |164
-|stdcall
-|Variable?
+|
+|Variable: PLAUNCH_DATA_PAGE
 |-
 |[[Kernel/MmAllocateContiguousMemory]]
 |165
@@ -1252,8 +1252,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ObDirectoryObjectType]]
 |240
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ObInsertObject]]
 |241
@@ -1277,8 +1277,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ObpObjectHandleTable]]
 |245
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_HANDLE_TABLE
 |-
 |[[Kernel/ObReferenceObjectByHandle]]
 |246
@@ -1297,8 +1297,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/ObSymbolicLinkObjectType]]
 |249
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/ObfDereferenceObject]]
 |250
@@ -1347,8 +1347,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/PsThreadObjectType]]
 |259
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_TYPE
 |-
 |[[Kernel/RtlAnsiStringToUnicodeString]]
 |260
@@ -1657,33 +1657,33 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/XboxEEPROMKey]]
 |321
-|stdcall
-|Variable?
+|
+|Variable: XBOX_KEY_DATA
 |-
 |[[Kernel/XboxHardwareInfo]]
 |322
-|stdcall
-|Variable?
+|
+|Variable: XBOX_HARDWARE_INFO
 |-
 |[[Kernel/XboxHDKey]]
 |323
-|stdcall
-|Variable?
+|
+|Variable: XBOX_KEY_DATA
 |-
 |[[Kernel/XboxKrnlVersion]]
 |324
-|stdcall
-|Variable?
+|
+|Variable: XBOX_KRNL_VERSION
 |-
 |[[Kernel/XboxSignatureKey]]
 |325
-|stdcall
-|Variable?
+|
+|Variable: XBOX_KEY_DATA
 |-
 |[[Kernel/XeImageFileName]]
 |326
-|stdcall
-|Variable?
+|
+|Variable: OBJECT_STRING
 |-
 |[[Kernel/XeLoadSection]]
 |327
@@ -1822,23 +1822,23 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/XboxAlternateSignatureKeys]]
 |354
-|stdcall
-|Variable?
+|
+|Variable: XBOX_KEY_DATA[XBEIMAGE_ALTERNATE_TITLE_ID_COUNT]
 |-
 |[[Kernel/XePublicKeyData]]
 |355
-|stdcall
-|Variable?
+|
+|Variable: UCHAR[XC_PUBLIC_KEYDATA_SIZE]
 |-
 |[[Kernel/HalBootSMCVideoMode]]
 |356
-|stdcall
-|Variable?
+|
+|Variable: ULONG
 |-
 |[[Kernel/IdexChannelObject]]
 |357
-|stdcall
-|Variable?
+|
+|Variable: IDE_CHANNEL_OBJECT
 |-
 |[[Kernel/HalIsResetOrShutdownPending]]
 |358
