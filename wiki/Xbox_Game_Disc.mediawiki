@@ -67,9 +67,23 @@ It is rumoured it might be a version string of some sorts slowly raising in xbox
 
 ==== Disc Manufacturing Information (DMI.bin) ====
 
-2048 Bytes
-
 READ DVD STRUCTURE with format 0x04
+
+DMI (2048 Bytes):
+
+{| class="wikitable"
+! Offset !! Type !! Field !! Notes
+|-
+|0 || u32? || Unknown || Always 1?
+|-
+|4 || u32? || Unknown || Always zero?
+|-
+|8 || ascii_char[8] || Mastering Code || Example: EA02302E <br> Also see [Xbe#Title_ID]
+|-
+|16 || u64 || || Some timestamp?
+|-
+|24 || u32? || Unknown || Always 2?
+|}
 
 ==== Physical Format Information (PFI.bin) ====
 

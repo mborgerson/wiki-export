@@ -66,9 +66,53 @@ Dumps
 
 #### Disc Manufacturing Information (DMI.bin)
 
-2048 Bytes
-
 READ DVD STRUCTURE with format 0x04
+
+DMI (2048 Bytes):
+
+<table>
+<thead>
+<tr class="header">
+<th><p>Offset</p></th>
+<th><p>Type</p></th>
+<th><p>Field</p></th>
+<th><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>0</p></td>
+<td><p>u32?</p></td>
+<td><p>Unknown</p></td>
+<td><p>Always 1?</p></td>
+</tr>
+<tr class="even">
+<td><p>4</p></td>
+<td><p>u32?</p></td>
+<td><p>Unknown</p></td>
+<td><p>Always zero?</p></td>
+</tr>
+<tr class="odd">
+<td><p>8</p></td>
+<td><p>ascii_char[8]</p></td>
+<td><p>Mastering Code</p></td>
+<td><p>Example: EA02302E<br />
+Also see [Xbe#Title_ID]</p></td>
+</tr>
+<tr class="even">
+<td><p>16</p></td>
+<td><p>u64</p></td>
+<td></td>
+<td><p>Some timestamp?</p></td>
+</tr>
+<tr class="odd">
+<td><p>24</p></td>
+<td><p>u32?</p></td>
+<td><p>Unknown</p></td>
+<td><p>Always 2?</p></td>
+</tr>
+</tbody>
+</table>
 
 #### Physical Format Information (PFI.bin)
 
