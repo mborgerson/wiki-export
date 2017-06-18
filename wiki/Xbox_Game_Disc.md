@@ -285,14 +285,9 @@ All other fields are assumed to be zero!
 
 ##### Decryption of challenge entries
 
-Starting at offset 1183, a 44 byte SHA-1 hash is generated. The
-resulting hash - the first part of it, to be exact - is fed as the key
-into RC4 decryption. The output of SHA-1 contains 160 bits of
-information. 160 / 8 = 20 bytes of information. To express this as a
-printable hex digest requires 40 characters. The SHA-1 hash is converted
-to a hex digest and then the first 7 of the characters are fed into the
-RC4 initialization function as the key. Then, the RC4 decrypter does its
-work on the 253 Bytes of the challenge entries (Offset 770).
+Starting at offset 1183, a 44 byte SHA-1 hash is generated. The first 7
+byte of the resulting hash are used as the key in RC4 decryption. The
+253 Bytes of the challenge entries (Offset 770) will be decrypted.
 
 There'll only be a handful of valid entries in the challenge entries.
 However there'll be at least 2.
