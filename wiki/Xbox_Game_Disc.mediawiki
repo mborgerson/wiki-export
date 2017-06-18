@@ -87,10 +87,37 @@ DMI (2048 Bytes):
 
 ==== Physical Format Information (PFI.bin) ====
 
-2048 Bytes
+READ DVD STRUCTURE with format 0x00
+
 Read from the Lead-In.
 
-READ DVD STRUCTURE with format 0x00
+PFI (2048 Bytes):
+
+{| class="wikitable"
+! Offset !! Type !! Field !! Notes
+|-
+|0 || u8 || <code>booktype << 4 <nowiki>|</nowiki> part_version</code> || 4 bit each
+|-
+|1 || u8 || <code>disc_size << 4 <nowiki>|</nowiki> maximum_rate</code> || 4 bit each
+|-
+|2 || u8 || <code>number_of_layers << 5 <nowiki>|</nowiki> track_path << 4 <nowiki>|</nowiki> layer_type</code> || 1 bit padding, 2 bit, 1 bit, 4 bit
+|-
+|3 || u8 || <code>linear_density << 4 <nowiki>|</nowiki> track_density</code> || 4 bit each
+|-
+|4 || u8 || || Always zero
+|-
+|5 || u24 || Starting Physical Sector Number of Data Area ||
+|-
+|8 || u8 || || Always zero
+|-
+|9 || u24 || End Physical Sector Number of Data Area ||
+|-
+|12 || u8 || || Always zero
+|-
+|13 || u24 || End Sector Number in Layer 0 || Always 0x2033AF for original Xbox discs
+|}
+
+From [ftp://ftp.avc-pioneer.com/Mtfuji_5/Proposal/Jan01/RDVDSTRC.pdf] (page 4)
 
 ==== Security Sectors (SS.bin) ====
 

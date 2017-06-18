@@ -116,9 +116,27 @@ Also see [Xbe#Title_ID]</p></td>
 
 #### Physical Format Information (PFI.bin)
 
-2048 Bytes Read from the Lead-In.
-
 READ DVD STRUCTURE with format 0x00
+
+Read from the Lead-In.
+
+PFI (2048 Bytes):
+
+| Offset | Type | Field                                                  | Notes                                   |
+|--------|------|--------------------------------------------------------|-----------------------------------------|
+| 0      | u8   | `booktype << 4 | part_version`                         | 4 bit each                              |
+| 1      | u8   | `disc_size << 4 | maximum_rate`                        | 4 bit each                              |
+| 2      | u8   | `number_of_layers << 5 | track_path << 4 | layer_type` | 1 bit padding, 2 bit, 1 bit, 4 bit      |
+| 3      | u8   | `linear_density << 4 | track_density`                  | 4 bit each                              |
+| 4      | u8   |                                                        | Always zero                             |
+| 5      | u24  | Starting Physical Sector Number of Data Area           |                                         |
+| 8      | u8   |                                                        | Always zero                             |
+| 9      | u24  | End Physical Sector Number of Data Area                |                                         |
+| 12     | u8   |                                                        | Always zero                             |
+| 13     | u24  | End Sector Number in Layer 0                           | Always 0x2033AF for original Xbox discs |
+
+From [1](ftp://ftp.avc-pioneer.com/Mtfuji_5/Proposal/Jan01/RDVDSTRC.pdf)
+(page 4)
 
 #### Security Sectors (SS.bin)
 
