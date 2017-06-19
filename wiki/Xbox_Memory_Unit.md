@@ -31,4 +31,11 @@ are compatible, so the following table gives a list of known devices:
 |--------------|-----|-----|-------|
 ||
 
+References
+----------
+
+-   [Thrustmaster XBOX Memory Unit images by
+    DarkGabz](http://imgur.com/a/8QmDA)
+-   [3 XBOX memory units images by
+    CodeAsm](http://imgur.com/gallery/M0PZ6)
 

@@ -27,3 +27,7 @@ However, not all devices are compatible, so the following table gives a list of 
 ! Product name !! VID !! PID !! Notes
 |-
 |}
+== References ==
+
+* [http://imgur.com/a/8QmDA Thrustmaster XBOX Memory Unit images by DarkGabz]
+* [http://imgur.com/gallery/M0PZ6 3 XBOX memory units images by CodeAsm]
