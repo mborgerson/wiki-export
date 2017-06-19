@@ -438,7 +438,7 @@ Kernel exports
 | [Kernel/XcCryptService](/wiki/Kernel/XcCryptService "wikilink")                                           | 350     | stdcall            |                                                                    |
 | [Kernel/XcUpdateCrypto](/wiki/Kernel/XcUpdateCrypto "wikilink")                                           | 351     | stdcall            |                                                                    |
 | [Kernel/RtlRip](/wiki/Kernel/RtlRip "wikilink")                                                           | 352     | stdcall            |                                                                    |
-| [Kernel/XboxLANKey](/wiki/Kernel/XboxLANKey "wikilink")                                                   | 353     | stdcall            |                                                                    |
+| [Kernel/XboxLANKey](/wiki/Kernel/XboxLANKey "wikilink")                                                   | 353     |                    | Variable: XBOX\_KEY\_DATA                                          |
 | [Kernel/XboxAlternateSignatureKeys](/wiki/Kernel/XboxAlternateSignatureKeys "wikilink")                   | 354     |                    | Variable: XBOX\_KEY\_DATA\[XBEIMAGE\_ALTERNATE\_TITLE\_ID\_COUNT\] |
 | [Kernel/XePublicKeyData](/wiki/Kernel/XePublicKeyData "wikilink")                                         | 355     |                    | Variable: UCHAR\[XC\_PUBLIC\_KEYDATA\_SIZE\]                       |
 | [Kernel/HalBootSMCVideoMode](/wiki/Kernel/HalBootSMCVideoMode "wikilink")                                 | 356     |                    | Variable: ULONG                                                    |

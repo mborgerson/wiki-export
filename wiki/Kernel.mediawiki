@@ -1817,8 +1817,8 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 |[[Kernel/XboxLANKey]]
 |353
-|stdcall
 |
+|Variable: XBOX_KEY_DATA
 |-
 |[[Kernel/XboxAlternateSignatureKeys]]
 |354
