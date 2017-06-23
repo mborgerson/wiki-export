@@ -66,7 +66,7 @@ The Xbox has an IGP-128 that uses an NV2A video core (PCI ID:10de/02a5), which i
 
 == AMD Heritage ==
 
-There is the following rumour, which is could not fully verify yet:
+There is the following rumour, which is not fully verified yet:
 
 
 * Microsoft wanted AMD to make the CPU and the chipset for the Xbox, and nVidia to make the video hardware.
@@ -116,7 +116,6 @@ Evidence:
 [https://web.archive.org/web/20100617023830/http://www.amd.com/us-en/Processors/TechnicalResources/0,,30_182_873_4296,00.html AMD-760™ MPX Chipset Tech Docs]
 <br />
 The nForce chipset might be based on the AMD-760 chipset.
-
 
 == More Links ==
 

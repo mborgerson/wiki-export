@@ -74,7 +74,7 @@ Southbridge is called “MCP-X” and lacks the PCI card bus (PCI bus \#1).
 AMD Heritage
 ------------
 
-There is the following rumour, which is could not fully verify yet:
+There is the following rumour, which is not fully verified yet:
 
 -   Microsoft wanted AMD to make the CPU and the chipset for the Xbox,
     and nVidia to make the video hardware.
