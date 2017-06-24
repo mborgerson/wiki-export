@@ -4,6 +4,8 @@ permalink: wiki/APU/
 layout: wiki
 ---
 
+The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Engine).
+
 -   SGE = Scatter Gather Entry
 -   PRD = ? (Same thing as SGE?!)
 
@@ -25,6 +27,11 @@ Voice Processor (VP)
 ### Voice structure
 
 This is 0x80 bytes
+
+#### Pitch calculation
+
+    p = 4096 * log2(f / 48000)
+    f = pow2(p / 4096) * 48000
 
 Related
 -------
