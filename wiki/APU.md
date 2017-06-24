@@ -4,7 +4,7 @@ permalink: wiki/APU/
 layout: wiki
 ---
 
-The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Engine).
+The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
 
 -   SGE = Scatter Gather Entry
 -   PRD = Physical Resource Descriptor (Same thing as SGE?!)
