@@ -20,7 +20,7 @@ Encode Processor (EP)
 ---------------------
 
 -   EPS = EP Scratch (?)
--   EPF = EP Frames (?)
+-   EPF = EP FIFO
 
 Voice Processor (VP)
 --------------------
