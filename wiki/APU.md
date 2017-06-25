@@ -14,7 +14,7 @@ Global Processor (GP)
 ---------------------
 
 -   GPS = GP Scratch (?)
--   GPF = GP Frames (?)
+-   GPF = GP FIFO
 
 Encode Processor (EP)
 ---------------------
