@@ -6,17 +6,28 @@ layout: wiki
 
 The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
 
+-   SSL = Stream Segment List
 -   SGE = Scatter Gather Entry
 -   PRD = Physical Resource Descriptor (Same thing as SGE?!)
 
 Global Processor (GP)
 ---------------------
 
+-   GPS = GP Scratch (?)
+-   GPF = GP Frames (?)
+
 Encode Processor (EP)
 ---------------------
 
+-   EPS = EP Scratch (?)
+-   EPF = EP Frames (?)
+
 Voice Processor (VP)
 --------------------
+
+-   VPV = VP Voices
+-   VPSGE = VP SGEs
+-   VPSSL = VP SSLs
 
 ### Voice lists
 
