@@ -18,7 +18,7 @@ Per-voice settings:
 
 There are 32 bins which these voices will be mixed into.
 
-=== Memory sections ===
+=== Related APU memory ===
 
 * VPV = VP Voices
 * VPHT = VP HRTF Target
