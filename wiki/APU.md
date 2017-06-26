@@ -63,6 +63,12 @@ Global Processor (GP)
 The GP runs all enabled sound effects on the voice bins. DirectSound
 allows to load custom DSP code for these effects.
 
+GP seems to run at 160 MHz
+
+### Memory map
+
+### Related APU memory
+
 -   GPS = GP Scratch (?)
 -   GPF = GP FIFO
 
