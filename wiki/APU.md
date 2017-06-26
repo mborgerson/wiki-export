@@ -13,6 +13,9 @@ The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
 Global Processor (GP)
 ---------------------
 
+The GP runs all enabled sound effects on the voice bins. DirectSound
+allows to load custom DSP code for these effects.
+
 -   GPS = GP Scratch (?)
 -   GPF = GP FIFO
 
