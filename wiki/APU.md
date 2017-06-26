@@ -10,24 +10,6 @@ The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
 -   SGE = Scatter Gather Entry
 -   PRD = Physical Resource Descriptor (Same thing as SGE?!)
 
-Global Processor (GP)
----------------------
-
-The GP runs all enabled sound effects on the voice bins. DirectSound
-allows to load custom DSP code for these effects.
-
--   GPS = GP Scratch (?)
--   GPF = GP FIFO
-
-Encode Processor (EP)
----------------------
-
-The EP encodes the final AC3 stream for SPDIF. It is not used during the
-[Boot Animation](/wiki/Boot_Animation "wikilink").
-
--   EPS = EP Scratch (?)
--   EPF = EP FIFO
-
 Voice Processor (VP)
 --------------------
 
@@ -74,6 +56,24 @@ unsigned frequency in Hz (*f*) using the following formulas:
 
     p = 4096 * log2(f / 48000)
     f = pow2(p / 4096) * 48000
+
+Global Processor (GP)
+---------------------
+
+The GP runs all enabled sound effects on the voice bins. DirectSound
+allows to load custom DSP code for these effects.
+
+-   GPS = GP Scratch (?)
+-   GPF = GP FIFO
+
+Encode Processor (EP)
+---------------------
+
+The EP encodes the final AC3 stream for SPDIF. It is not used during the
+[Boot Animation](/wiki/Boot_Animation "wikilink").
+
+-   EPS = EP Scratch (?)
+-   EPF = EP FIFO
 
 Related
 -------
