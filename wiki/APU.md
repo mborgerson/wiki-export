@@ -18,13 +18,15 @@ those can be 3D.
 
 Per-voice settings:
 
+-   Input type (8bit, 16bit, 24bit, ADPCM)
 -   [Head-related transfer
     function](wikipedia:Head-related_transfer_function "wikilink")
+    (HRTF)
 -   [Low-frequency
-    oscillation](wikipedia:Low-frequency_oscillation "wikilink")
+    oscillation](wikipedia:Low-frequency_oscillation "wikilink") (LFO)
 -   Pitch
--   Input type (8bit, 16bit, 24bit, ADPCM)
--   Volume envelope
+-   2x Pitch (?) envelope
+-   2x LFO (?) envelope
 -   8 target bins, each with a custom volume for this voice
 
 There are 32 bins which these voices will be mixed into.

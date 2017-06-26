@@ -9,11 +9,12 @@ The [[MCPX]] contains an APU (Audio Processing Unit).
 A powerful voice processor. There can be up to 256 voices{{citation needed}} and 64{{citation needed}} of those can be 3D.
 
 Per-voice settings:
-* [[wikipedia:Head-related transfer function|Head-related transfer function]]
-* [[wikipedia:Low-frequency oscillation|Low-frequency oscillation]]
-* Pitch
 * Input type (8bit, 16bit, 24bit, ADPCM)
-* Volume envelope
+* [[wikipedia:Head-related transfer function|Head-related transfer function]] (HRTF)
+* [[wikipedia:Low-frequency oscillation|Low-frequency oscillation]] (LFO)
+* Pitch
+* 2x Pitch (?) envelope
+* 2x LFO (?) envelope
 * 8 target bins, each with a custom volume for this voice
 
 There are 32 bins which these voices will be mixed into.
