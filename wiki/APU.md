@@ -25,21 +25,46 @@ Encode Processor (EP)
 Voice Processor (VP)
 --------------------
 
+A powerful voice processor. There can be up to 256 voices and 64 of
+those can be 3D.
+
+Per-voice settings:
+
+-   [Head-related transfer
+    function](wikipedia:Head-related_transfer_function "wikilink")
+-   [Low-frequency
+    oscillation](wikipedia:Low-frequency_oscillation "wikilink")
+-   Pitch
+-   Input type (8bit, 16bit, 24bit, ADPCM)
+-   Volume envelope
+-   8 target bins, each with a custom volume for this voice
+
+There are 32 bins which these voices will be mixed into.
+
+### Memory sections
+
 -   VPV = VP Voices
+-   VPHT = VP HRTF Target
+-   VPHC = VP HRTF Current
 -   VPSGE = VP SGEs
 -   VPSSL = VP SSLs
 
 ### Voice lists
 
+The voices are kept in a single-linked list. There are 3 voice lists:
+
 -   2D
 -   3D
--   MP
+-   MP (Multipass?)
 
 ### Voice structure
 
 This is 0x80 bytes
 
 #### Pitch calculation
+
+The 16 bit signed pitch value (*p*) can be converted to and from a
+unsigned frequency in Hz (*f*) using the following formulas:
 
     p = 4096 * log2(f / 48000)
     f = pow2(p / 4096) * 48000
