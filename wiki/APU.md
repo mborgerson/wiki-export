@@ -78,6 +78,10 @@ Encode Processor (EP)
 The EP encodes the final AC3 stream for SPDIF. It is not used during the
 [Boot Animation](/wiki/Boot_Animation "wikilink").
 
+### Memory map
+
+### Related APU memory
+
 -   EPS = EP Scratch (?)
 -   EPF = EP FIFO
 

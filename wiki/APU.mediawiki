@@ -65,6 +65,10 @@ GP seems to run at 160 MHz
 The EP encodes the final AC3 stream for SPDIF. {{FIXME|reason=It might do more than just that; what does it do in analog mode for example?}}
 It is not used during the [[Boot Animation]].
 
+=== Memory map ===
+
+=== Related APU memory ===
+
 * EPS = EP Scratch (?)
 * EPF = EP FIFO
 
