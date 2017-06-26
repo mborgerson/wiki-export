@@ -19,6 +19,9 @@ Global Processor (GP)
 Encode Processor (EP)
 ---------------------
 
+The EP encodes the final AC3 stream for SPDIF. It is not used during the
+[Boot Animation](/wiki/Boot_Animation "wikilink").
+
 -   EPS = EP Scratch (?)
 -   EPF = EP FIFO
 
