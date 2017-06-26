@@ -109,6 +109,22 @@ that MIXBUF data is available. It then goes through a filter chain. At
 the end of the chain, the GP DSP will verify that the execution didn't
 take longer than the frame duration.
 
+The GP will then issue 6 DMA requests to output the processed frames to
+a ringbuffer in scratch space. The frameformat will be the same format
+as the GP MIXBUF format (also 0x20 words per channel). Each ringbuffer
+is 0x200 words and therefore holds the last 16 frames. Therefore, the
+ringbuffer region is 6 \* 0x800 Bytes = 0x3000 Bytes in physical memory.
+
+The order of the channels in the ringbuffer is (also DMA order):
+
+-   Front Left
+-   Center
+-   Front Right
+-   Rear Left
+-   Rear Right
+-   [Low-frequency effects](/wiki/Wikipedia:Low-frequency_effects "wikilink")
+    (LFE)
+
 The final audio data is encoded to AC3 in the EP and written to the EP
 scratch memory. It is then send to the ACI using EP FIFO channels 0
 (PCM) and 1 (SPDIF).

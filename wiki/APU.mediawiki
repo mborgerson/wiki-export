@@ -95,11 +95,25 @@ DirectSound allows to load custom GP DSP code for filter / effects.
 The GP waits for the frame interrupt which signals that MIXBUF data is available. It then goes through a filter chain.
 At the end of the chain, the GP DSP will verify that the execution didn't take longer than the frame duration.
 
+The GP will then issue 6 DMA requests to output the processed frames to a ringbuffer in scratch space.
+The frameformat will be the same format as the GP MIXBUF format (also 0x20 words per channel).
+Each ringbuffer is 0x200 words and therefore holds the last 16 frames.
+Therefore, the ringbuffer region is 6 * 0x800 Bytes = 0x3000 Bytes in physical memory.
+
+The order of the channels in the ringbuffer is (also DMA order):
+
+* Front Left
+* Center{{citation needed}}
+* Front Right
+* Rear Left{{citation needed}}
+* Rear Right{{citation needed}}
+* [[Wikipedia:Low-frequency effects|Low-frequency effects]] (LFE){{citation needed}}
+
+{{FIXME|reason=How does this data get into the EP?}}
+
 The final audio data is encoded to AC3 in the EP{{citation needed}} and written to the EP scratch memory.
 {{FIXME|reason=When does this happen and what happens to stereo? headphones? mono?}}
 It is then send to the ACI using EP FIFO channels 0 (PCM) and 1 (SPDIF){{citation needed}}.
-
-
 
 == Related ==
 
