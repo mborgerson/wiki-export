@@ -125,9 +125,10 @@ The order of the channels in the ringbuffer is (also DMA order):
 -   [Low-frequency effects](/wiki/Wikipedia:Low-frequency_effects "wikilink")
     (LFE)
 
-The final audio data is encoded to AC3 in the EP and written to the EP
-scratch memory. It is then send to the ACI using EP FIFO channels 0
-(PCM) and 1 (SPDIF).
+The EP maps the same data to its own scratch space. It is assumed that
+it will DMA this region to its own internal memory. The EP then AC3
+encodes the audio data and writes it to the EP FIFO memory. The data is
+then send to the ACI AC97 using EP FIFO channels 0 (PCM) and 1 (SPDIF).
 
 Related
 -------
