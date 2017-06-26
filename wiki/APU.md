@@ -59,13 +59,24 @@ unsigned frequency in Hz (*f*) using the following formulas:
     p = 4096 * log2(f / 48000)
     f = pow2(p / 4096) * 48000
 
+### Operation
+
+Voices are stored in VPV. Input data (from the CPU) is loaded using
+VPSGE. Voices are then processed and written to the GP MIXBUF.
+
 Global Processor (GP)
 ---------------------
 
-The GP runs all enabled sound effects on the voice bins. DirectSound
-allows to load custom DSP code for these effects.
+The GP runs all enabled sound effects on the voice bins.
 
 The GP DSP seems to run at 160 MHz
+
+### MIXBUF
+
+The MIXBUF is a 0x400 word (24-Bit, stored as 32-Bit) section. It is
+split into 32 \* 0x20 words. Each 0x20 word block represents one of the
+32 voice bins of the VP. The 0x20 words are 24-Bit PCM mono samples to
+be played back at 48kHz. The duration of each frame is hence 0.ms.
 
 ### Memory map
 
@@ -86,6 +97,21 @@ The EP encodes the final AC3 stream for SPDIF. It is not used during the
 
 -   EPS = EP Scratch (?)
 -   EPF = EP FIFO
+
+Usage in DirectSound
+--------------------
+
+*This topic deserves it's own article*
+
+The bins are used DirectSound allows to load custom GP DSP code for
+filter / effects. The GP waits for the frame interrupt which signals
+that MIXBUF data is available. It then goes through a filter chain. At
+the end of the chain, the GP DSP will verify that the execution didn't
+take longer than the frame duration.
+
+The final audio data is encoded to AC3 in the EP and written to the EP
+scratch memory. It is then send to the ACI using EP FIFO channels 0
+(PCM) and 1 (SPDIF).
 
 Related
 -------
