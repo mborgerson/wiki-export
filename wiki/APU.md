@@ -134,8 +134,8 @@ then send to the ACI AC97 using EP FIFO channels 0 (PCM) and 1 (SPDIF).
 
 During the [Boot Animation](/wiki/Boot_Animation "wikilink") a different
 version of DirectSound is used. The EP is disabled in this case. The
-data is then send to the ACI AC97 using GP FIFO channel 0 (PCM). There
-is no AC3 / SPDIF during the boot animation.
+data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
+AC3 / SPDIF during the boot animation.
 
 Related
 -------
