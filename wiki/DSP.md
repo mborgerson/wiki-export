@@ -12,4 +12,39 @@ datasheet can be found at
 <http://www.nxp.com/docs/en/data-sheet/DSP56362.pdf> (Also see
 “Documentation” section in said datasheet for the related documentation)
 
-According to espes, the DMA stuff is different.
+DMA
+---
+
+*This section is very incomplete and not much was tested on hardware
+either*
+
+Sample formats:
+
+-   0x0 = 8 bit
+-   0x1 = 16 bit
+-   0x2 = 24 bit in MSB
+-   0x3 = 32 bit
+-   0x4
+-   0x5
+-   0x6 = 24 bit in LSB (also endianess switched?)
+-   0x7
+
+Buffers:
+
+-   0x0 = FIFO0
+-   0x1 = FIFO1
+-   0x2 = FIFO2
+-   0x3 = FIFO3
+-   0x4
+-   0x5
+-   0x6
+-   0x7
+-   0x8
+-   0x9
+-   0xA
+-   0xB
+-   0xC
+-   0xD
+-   0xE = Circular
+-   0xF
+
