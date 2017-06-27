@@ -27,7 +27,6 @@ AC97 is only used to receive buffers from the [APU](/wiki/APU "wikilink").
 Related links
 -------------
 
--   [https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/aci.py
-    Script to inspect ACI registers and AC97 input
-    buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/aci.py_Script_to_inspect_ACI_registers_and_AC97_input_buffers "wikilink")
+-   [Script to inspect ACI registers and AC97 input
+    buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/aci.py)
 
