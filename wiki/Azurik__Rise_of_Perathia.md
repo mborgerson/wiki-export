@@ -12,7 +12,7 @@ This game depends on correct GPU rounding. If an emulator suffers from
 issues with non-exact rounding in the shaders which do the skinning /
 skeletal animation the character models will be very broken.
 
-![](http://i.imgur.com/tpmLpjP.png "http://i.imgur.com/tpmLpjP.png")
+![](Azurik--Rise-of-Perathia--bugged.png "Azurik--Rise-of-Perathia--bugged.png")
 
 IIRC Code is like:
 
