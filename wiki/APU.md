@@ -135,7 +135,8 @@ then send to the ACI AC97 using EP FIFO channels 0 (PCM) and 1 (SPDIF).
 During the [Boot Animation](/wiki/Boot_Animation "wikilink") a different
 version of DirectSound is used. The EP is disabled in this case. The
 data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
-AC3 / SPDIF during the boot animation.
+AC3 / SPDIF during the boot
+animation[1](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
 
 Related
 -------
