@@ -126,4 +126,4 @@ There is no AC3 / SPDIF during the boot animation{{citation needed|reason=Link t
 * [[ACI]]
 * [[DSP]]
 * [[Xbox ADPCM]]
-* [https://github.com/JayFoxRox/xbox-tools/blob/5e114f24e4a83bd626f31674e024f439f3709d19/python-scripts/dsp.py Script to inspect APU registers and voice buffers (See master revision for updates)]
+* [https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/apu.py Script to inspect APU registers and voice buffers]

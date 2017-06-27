@@ -143,7 +143,6 @@ Related
 -   [ACI](/wiki/ACI "wikilink")
 -   [DSP](/wiki/DSP "wikilink")
 -   [Xbox ADPCM](/wiki/Xbox_ADPCM "wikilink")
--   [Script to inspect APU registers and voice buffers (See master
-    revision for
-    updates)](https://github.com/JayFoxRox/xbox-tools/blob/5e114f24e4a83bd626f31674e024f439f3709d19/python-scripts/dsp.py)
+-   [Script to inspect APU registers and voice
+    buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/apu.py)
 
