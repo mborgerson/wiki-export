@@ -117,13 +117,13 @@ ringbuffer region is 6 \* 0x800 Bytes = 0x3000 Bytes in physical memory.
 
 The order of the channels in the ringbuffer is (also DMA order):
 
--   Front Left
--   Center
--   Front Right
--   Rear Left
--   Rear Right
--   [Low-frequency effects](/wiki/Wikipedia:Low-frequency_effects "wikilink")
-    (LFE)
+-   0: Front Left
+-   1: Center
+-   2: Front Right
+-   3: Rear Left
+-   4: Rear Right
+-   5: [Low-frequency
+    effects](/wiki/Wikipedia:Low-frequency_effects "wikilink") (LFE)
 
 The EP maps the same data to its own scratch space. It is assumed that
 it will DMA this region to its own internal memory. The EP then AC3

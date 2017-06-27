@@ -102,12 +102,12 @@ Therefore, the ringbuffer region is 6 * 0x800 Bytes = 0x3000 Bytes in physical m
 
 The order of the channels in the ringbuffer is (also DMA order):
 
-* Front Left
-* Center{{citation needed}}
-* Front Right
-* Rear Left{{citation needed}}
-* Rear Right{{citation needed}}
-* [[Wikipedia:Low-frequency effects|Low-frequency effects]] (LFE){{citation needed}}
+* 0: Front Left
+* 1: Center{{citation needed}}
+* 2: Front Right
+* 3: Rear Left{{citation needed}}
+* 4: Rear Right{{citation needed}}
+* 5: [[Wikipedia:Low-frequency effects|Low-frequency effects]] (LFE){{citation needed}}
 
 The EP maps the same data to its own scratch space. It is assumed that it will DMA this region to its own internal memory.
 The EP then AC3 encodes the audio data{{citation needed}} and writes it to the EP FIFO memory{{FIXME|How does this happen? DMA?}}.
