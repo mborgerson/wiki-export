@@ -137,13 +137,21 @@ In the following tables, the following notation is used:
 Same as IMA ADPCM
 
 {| class="wikitable" style="text-align: right;"
-!     ||    +0 ||    +1 ||    +2 ||    +3 ||    +4 ||    +5 ||    +6 ||    +7
+!
+! {{no-select}} |  +0
+! {{no-select}} |  +1
+! {{no-select}} |  +2
+! {{no-select}} |  +3
+! {{no-select}} |  +4
+! {{no-select}} |  +5
+! {{no-select}} |  +6
+! {{no-select}} |  +7
 |-
-! 0
-| -1 || -1 || -1 || -1 || 2 || 4 || 6 || 8 
+! {{no-select}} | 0
+| -1{{hc}} || -1{{hc}} || -1{{hc}} || -1{{hc}} || 2{{hc}} || 4{{hc}} || 6{{hc}} || 8{{hc}}
 |-
-! 8
-| -1 || -1 || -1 || -1 || 2 || 4 || 6 || 8 
+! {{no-select}} | 8
+| -1{{hc}} || -1{{hc}} || -1 {{hc}} || -1{{hc}} || 2{{hc}} || 4{{hc}} || 6{{hc}} || 8
 |}
 
 === Step-Table ===
