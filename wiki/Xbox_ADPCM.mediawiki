@@ -50,8 +50,8 @@ In the following tables, the following notation is used:
 | colspan="2" | B32 || colspan="2" | B33 || colspan="2" | B34 || colspan="2" | B35
 |-
 ! Meaning
-| style="background-color:SkyBlue;" | colspan="4" | P = S0
-| style="background-color:SkyBlue;" | colspan="2" | SI
+| style="background-color:SkyBlue;" colspan="4" | P = S0
+| style="background-color:SkyBlue;" colspan="2" | SI
 | colspan="2" | 
 | style="background-color:SkyBlue;" |  S2 ||  S1 ||  S4 ||  S3 ||  S6 ||  S5 ||  S8 ||  S7
 | style="background-color:SkyBlue;" | S10 ||  S9 || S12 || S11 || S14 || S13 || S16 || S15
