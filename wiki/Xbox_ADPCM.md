@@ -52,6 +52,8 @@ In the following tables, the following notation is used:
         </div>
         Red: Right
 
+-   All indices start at 0
+
 #### Mono
 
 | 32-bit word | W0     | W1  | W2  | ... | W7  | W8  |
