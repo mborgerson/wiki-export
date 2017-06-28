@@ -59,11 +59,12 @@ links.
 Related links
 -------------
 
--   [Sample files by
-    FFmpeg](http://samples.ffmpeg.org/game-formats/xbox-adpcm-wav/)
--   [Explanation of IMA ADPCM
+-   [Explanation of IMA ADPCM block
     encoding](https://wiki.multimedia.cx/index.php/IMA_ADPCM)
+-   [Explanation of IMA ADPCM WAV
+    header](https://wiki.multimedia.cx/index.php/Microsoft_IMA_ADPCM)
 -   [Tool to decode Xbox ADPCM
     files](https://github.com/JayFoxRox/xbox-tools/tree/master/adpcm-decoder)
--   [1](https://wiki.multimedia.cx/index.php/Microsoft_IMA_ADPCM)
+-   [Sample files by
+    FFmpeg](http://samples.ffmpeg.org/game-formats/xbox-adpcm-wav/)
 
