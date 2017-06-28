@@ -11,9 +11,11 @@ Standard IMA ADPCM WAV files would use format code 0x0011, whereas Xbox
 ADPCM files use format code 0x0069. Despite this format-code difference
 the file formats (including header and data) are otherwise the same.
 
-However, all Xbox ADPCM files seem to use 64 samples per block. Because
-of that, all Xbox ADPCM files will have a block alignment of 36 (Mono)
-or 72 (Stereo).
+All Xbox ADPCM files seem to use 64 samples per block. This value is
+also stored in the 'fmt ' extra-data which is always 2 bytes, containing
+the Bytes `0x40, 0x00` (64 as unsigned 16-bit integer). Because of that,
+all Xbox ADPCM files will have a block alignment of 36 (Mono) or 72
+(Stereo).
 
 Aside from this there are no known differences to IMA ADPCM. This is
 probably because the [APU](/wiki/APU "wikilink") VP will decode ADPCM in
@@ -58,4 +60,7 @@ Related links
     FFmpeg](http://samples.ffmpeg.org/game-formats/xbox-adpcm-wav/)
 -   [Explanation of IMA ADPCM
     encoding](https://wiki.multimedia.cx/index.php/IMA_ADPCM)
+-   [Tool to decode Xbox ADPCM
+    files](https://github.com/JayFoxRox/xbox-tools/tree/master/adpcm-decoder)
+-   [1](https://wiki.multimedia.cx/index.php/Microsoft_IMA_ADPCM)
 
