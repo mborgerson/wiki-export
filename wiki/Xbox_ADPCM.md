@@ -4,8 +4,9 @@ permalink: wiki/Xbox_ADPCM/
 layout: wiki
 ---
 
-Xbox used it's own WAV file format to encode ADPCM data. This format is
-often called Xbox ADPCM.
+Xbox used it's own WAV file format to encode data using
+[ADPCM](/wiki/Wikipedia:Adaptive_differential_pulse-code_modulation "wikilink").
+This format is often called Xbox ADPCM.
 
 Standard IMA ADPCM WAV files would use format code 0x0011, whereas Xbox
 ADPCM files use format-code 0x0069.
