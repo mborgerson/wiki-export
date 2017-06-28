@@ -39,14 +39,12 @@ In the following tables, the following notation is used:
 | colspan="8" | W1
 | colspan="8" | W2
 | rowspan="3" | ...
-| colspan="8" | W7
 | colspan="8" | W8
 |-
 ! Byte        
 | colspan="2" | B0 || colspan="2" | B1 || colspan="2" | B2 || colspan="2" | B3
 | colspan="2" | B4 || colspan="2" | B5 || colspan="2" | B6 || colspan="2" | B7
 | colspan="2" | B8 || colspan="2" | B9 || colspan="2" | B10 || colspan="2" | B11
-| colspan="2" | B28 || colspan="2" | B29 || colspan="2" | B30 || colspan="2" | B31
 | colspan="2" | B32 || colspan="2" | B33 || colspan="2" | B34 || colspan="2" | B35
 |-
 ! Meaning
@@ -61,10 +59,6 @@ In the following tables, the following notation is used:
 | style="background-color:SkyBlue;" | S12 || style="background-color:SkyBlue;" | S11
 | style="background-color:SkyBlue;" | S14 || style="background-color:SkyBlue;" | S13
 | style="background-color:SkyBlue;" | S16 || style="background-color:SkyBlue;" | S15
-| style="background-color:SkyBlue;" | S50 || style="background-color:SkyBlue;" | S49
-| style="background-color:SkyBlue;" | S52 || style="background-color:SkyBlue;" | S51
-| style="background-color:SkyBlue;" | S54 || style="background-color:SkyBlue;" | S53
-| style="background-color:SkyBlue;" | S56 || style="background-color:SkyBlue;" | S55
 | style="background-color:SkyBlue;" | S58 || style="background-color:SkyBlue;" | S57
 | style="background-color:SkyBlue;" | S60 || style="background-color:SkyBlue;" | S59
 | style="background-color:SkyBlue;" | S62 || style="background-color:SkyBlue;" | S61

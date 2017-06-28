@@ -55,10 +55,10 @@ In the following tables, the following notation is used:
 
 #### Mono
 
-| 32-bit word | W0     | W1  | W2  | ... | W7  | W8  |
-|-------------|--------|-----|-----|-----|-----|-----|
-| Byte        | B0     | B1  | B2  | B3  | B4  | B5  |
-| Meaning     | P = S0 | SI  |     | S2  | S1  | S4  |
+| 32-bit word | W0     | W1  | W2  | ... | W8  |
+|-------------|--------|-----|-----|-----|-----|
+| Byte        | B0     | B1  | B2  | B3  | B4  |
+| Meaning     | P = S0 | SI  |     | S2  | S1  |
 
 #### Stereo
 
