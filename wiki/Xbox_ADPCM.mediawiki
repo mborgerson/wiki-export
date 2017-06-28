@@ -158,6 +158,8 @@ Same as IMA ADPCM
 
 Same as IMA ADPCM
 
+{{FIXME|reason=Use no-select and hc macros}}
+
 {| class="wikitable" style="text-align: right;"
 !     ||    +0 ||    +1 ||    +2 ||    +3 ||    +4 ||    +5 ||    +6 ||    +7 ||    +8 ||    +9
 |-
