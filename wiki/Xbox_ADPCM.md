@@ -62,10 +62,10 @@ In the following tables, the following notation is used:
 
 #### Stereo
 
-| 32-bit word | W0     | W1  | W2  | W3     | W4  |
-|-------------|--------|-----|-----|--------|-----|
-| Byte        | B0     | B1  | B2  | B3     | B4  |
-| Meaning     | P = S0 | SI  |     | P = S0 | SI  |
+| 32-bit word | W0     | W1  | W2  | W3     |
+|-------------|--------|-----|-----|--------|
+| Byte        | B0     | B1  | B2  | B3     |
+| Meaning     | P = S0 | SI  |     | P = S0 |
 
 ...
 

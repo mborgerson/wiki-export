@@ -81,14 +81,12 @@ In the following tables, the following notation is used:
 | colspan="8" | W1
 | colspan="8" | W2
 | colspan="8" | W3
-| colspan="8" | W4
 |-
 ! Byte        
 | colspan="2" | B0 || colspan="2" | B1 || colspan="2" | B2 || colspan="2" | B3
 | colspan="2" | B4 || colspan="2" | B5 || colspan="2" | B6 || colspan="2" | B7
 | colspan="2" | B8 || colspan="2" | B9 || colspan="2" | B10 || colspan="2" | B11
 | colspan="2" | B12 || colspan="2" | B13 || colspan="2" | B14 || colspan="2" | B15
-| colspan="2" | B16 || colspan="2" | B17 || colspan="2" | B18 || colspan="2" | B19
 |-
 ! Meaning
 | style="background-color:White;"  colspan="4" | P = S0
@@ -105,11 +103,6 @@ In the following tables, the following notation is used:
 | style="background-color:Tomato;" |  S4 || style="background-color:Tomato;" |  S3
 | style="background-color:Tomato;" |  S6 || style="background-color:Tomato;" |  S5
 | style="background-color:Tomato;" |  S8 || style="background-color:Tomato;" |  S7
-
-| style="background-color:White;" | S10 || style="background-color:White;" |  S9
-| style="background-color:White;" | S12 || style="background-color:White;" | S11
-| style="background-color:White;" | S14 || style="background-color:White;" | S13
-| style="background-color:White;" | S16 || style="background-color:White;" | S15
 |}
 ...
 {| class="wikitable" style="font-size:90%; text-align:center;"
