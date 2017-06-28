@@ -4,7 +4,7 @@ Standard IMA ADPCM WAV files would use format code 0x0011, whereas Xbox ADPCM fi
 
 There are always 1 (Mono) or 2 (Stereo) channels{{citation needed|reason=Hardware doesn't allow playing anything else probably}}.
 
-All Xbox ADPCM files seem to store 64 input samples per block.
+All Xbox ADPCM files seem to store 64 ADPCM input nibbles per block.
 This value is also stored in the 'fmt ' extra-data which is always 2 bytes, containing the Bytes <code>0x40, 0x00</code> (64 as unsigned 16-bit integer).
 Because of that, all Xbox ADPCM files will have a block alignment of 36 (Mono) or 72 (Stereo) Bytes.
 As the decoder-setup in every block contains a predictor for each channel, there will be 65 samples / channel output per block (65:36 compression ratio = 44.6% compression).

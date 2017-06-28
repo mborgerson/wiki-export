@@ -12,13 +12,14 @@ ADPCM files use format-code 0x0069.
 
 There are always 1 (Mono) or 2 (Stereo) channels.
 
-All Xbox ADPCM files seem to store 64 input samples per block. This
-value is also stored in the 'fmt ' extra-data which is always 2 bytes,
-containing the Bytes `0x40, 0x00` (64 as unsigned 16-bit integer).
-Because of that, all Xbox ADPCM files will have a block alignment of 36
-(Mono) or 72 (Stereo) Bytes. As the decoder-setup in every block
-contains a predictor for each channel, there will be 65 samples /
-channel output per block (65:36 compression ratio = 44.6% compression).
+All Xbox ADPCM files seem to store 64 ADPCM input nibbles per block.
+This value is also stored in the 'fmt ' extra-data which is always 2
+bytes, containing the Bytes `0x40, 0x00` (64 as unsigned 16-bit
+integer). Because of that, all Xbox ADPCM files will have a block
+alignment of 36 (Mono) or 72 (Stereo) Bytes. As the decoder-setup in
+every block contains a predictor for each channel, there will be 65
+samples / channel output per block (65:36 compression ratio = 44.6%
+compression).
 
 Aside from what was mentioned, there are no known differences to IMA
 ADPCM. This is probably because the [APU](/wiki/APU "wikilink") VP will decode
