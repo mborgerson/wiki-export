@@ -88,8 +88,7 @@ be played back at 48kHz. The duration of each frame is hence 0.ms.
 Encode Processor (EP)
 ---------------------
 
-The EP encodes the final AC3 stream for SPDIF. It is not used during the
-[Boot Animation](/wiki/Boot_Animation "wikilink").
+The EP is a DSP to encode the audio signal.
 
 ### Memory map
 
