@@ -26,7 +26,7 @@ In the following tables, the following notation is used:
 * S# denotes a sample
 * Background color denotes the channel:
 ** <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:SkyBlue"></div> Blue: Left = Right
-** <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Snow;"></div> White: Left
+** <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:White;"></div> White: Left
 ** <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Tomato"></div> Red: Right
 
 ==== Mono ====

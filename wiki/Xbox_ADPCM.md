@@ -44,7 +44,7 @@ In the following tables, the following notation is used:
         </div>
         Blue: Left = Right
 
-    -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Snow;">
+    -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:White;">
         </div>
         White: Left
 
