@@ -8,8 +8,7 @@ Xbox used it's own WAV file format to encode ADPCM data. This format is
 often called Xbox ADPCM.
 
 Standard IMA ADPCM WAV files would use format code 0x0011, whereas Xbox
-ADPCM files use format code 0x0069. Despite this format-code difference
-the file formats (including header and data) are otherwise the same.
+ADPCM files use format-code 0x0069.
 
 All Xbox ADPCM files seem to use 64 samples per block. This value is
 also stored in the 'fmt ' extra-data which is always 2 bytes, containing
@@ -20,7 +19,9 @@ all Xbox ADPCM files will have a block alignment of 36 (Mono) or 72
 Aside from this there are no known differences to IMA ADPCM. This is
 probably because the [APU](/wiki/APU "wikilink") VP will decode ADPCM in
 hardware. Microsoft probably had little control over the APU ADPCM
-implementation and had to stay compatible to standard ADPCM.
+implementation and had to stay compatible to standard ADPCM. Players
+supporting IMA ADPCM also support Xbox ADPCM. However, they might reject
+files due to the different format-code.
 
 ### Index-Table
 
