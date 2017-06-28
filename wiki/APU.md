@@ -102,11 +102,11 @@ Usage in DirectSound
 
 *This topic deserves it's own article*
 
-The bins are used DirectSound allows to load custom GP DSP code for
-filter / effects. The GP waits for the frame interrupt which signals
-that MIXBUF data is available. It then goes through a filter chain. At
-the end of the chain, the GP DSP will verify that the execution didn't
-take longer than the frame duration.
+The bins are used DirectSound allows to load custom GP DSP code for a
+filter / effects chain. The GP waits for the frame interrupt which
+signals that MIXBUF data is available. It then goes through the filter
+chain. At the end of the chain, the GP DSP will verify that the
+execution didn't take longer than the frame duration.
 
 The GP will then issue 6 DMA requests to output the processed frames to
 a ringbuffer in scratch space. The frameformat will be the same format
@@ -128,6 +128,8 @@ The EP maps the same data to its own scratch space. It is assumed that
 it will DMA this region to its own internal memory. The EP then AC3
 encodes the audio data and writes it to the EP FIFO memory. The data is
 then send to the ACI AC97 using EP FIFO channels 0 (PCM) and 1 (SPDIF).
+The EP code is loaded by DirectSound. The EP is not programmable using
+DirectSound.
 
 ### Modifications for Boot Animation
 
