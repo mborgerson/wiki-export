@@ -61,6 +61,18 @@ In the following tables, the following notation is used:
 
 #### Stereo
 
+| 32-bit word | W0     | W1  | W2  | W3     | W4  |
+|-------------|--------|-----|-----|--------|-----|
+| Byte        | B0     | B1  | B2  | B3     | B4  |
+| Meaning     | P = S0 | SI  |     | P = S0 | SI  |
+
+...
+
+| 32-bit word | W14 | W15 | W16 | W17 |
+|-------------|-----|-----|-----|-----|
+| Byte        | B56 | B57 | B58 | B59 |
+| Meaning     | S50 | S49 | S52 | S51 |
+
 ### Index-Table
 
 Same as IMA ADPCM
