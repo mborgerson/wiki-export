@@ -56,10 +56,44 @@ In the following tables, the following notation is used:
 
 #### Mono
 
-| 32-bit word | W0     | W1  | W2  | ... | W8  |
-|-------------|--------|-----|-----|-----|-----|
-| Byte        | B0     | B1  | B2  | B3  | B4  |
-| Meaning     | P = S0 | SI  |     | S2  | S1  |
+<table>
+<colgroup>
+<col width="-30%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="50%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>32-bit word</p></th>
+<th><p>W0</p></th>
+<th><p>W1</p></th>
+<th><p>W2</p></th>
+<th><p>...</p></th>
+<th><p>W8</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Byte</p></td>
+<td><p>B0</p></td>
+<td><p>B1</p></td>
+<td><p>B2</p></td>
+<td><p>B3</p></td>
+<td><p>B4</p></td>
+</tr>
+<tr class="even">
+<td><p>Meaning</p></td>
+<td><p>P = S0</p></td>
+<td><p>SI</p></td>
+<td></td>
+<td><p>S2</p></td>
+<td><p>S1</p></td>
+</tr>
+</tbody>
+</table>
 
 #### Stereo
 

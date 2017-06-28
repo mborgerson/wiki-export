@@ -35,11 +35,11 @@ In the following tables, the following notation is used:
 {{FIXME|reason=Fix cell width}}
 {| class="wikitable" style="font-size:90%; text-align:center;"
 ! 32-bit word
-| colspan="8" | W0
-| colspan="8" | W1
-| colspan="8" | W2
-| rowspan="3" | ...
-| colspan="8" | W8
+| colspan="8" width="20%" | W0
+| colspan="8" width="20%" | W1
+| colspan="8" width="20%" | W2
+| rowspan="3" width="5%" | ...
+| colspan="8" width="20%" | W8
 |-
 ! Byte        
 | colspan="2" | B0 || colspan="2" | B1 || colspan="2" | B2 || colspan="2" | B3
@@ -50,7 +50,7 @@ In the following tables, the following notation is used:
 ! Meaning
 | style="background-color:SkyBlue;" colspan="4" | P = S0
 | style="background-color:SkyBlue;" colspan="2" | SI
-| colspan="2" | 
+| colspan="2" |
 | style="background-color:SkyBlue;" |  S2 || style="background-color:SkyBlue;" |  S1 
 | style="background-color:SkyBlue;" |  S4 || style="background-color:SkyBlue;" |  S3
 | style="background-color:SkyBlue;" |  S6 || style="background-color:SkyBlue;" |  S5
