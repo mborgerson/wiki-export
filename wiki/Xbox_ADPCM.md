@@ -34,6 +34,7 @@ Same as IMA ADPCM
 
 In the following tables, the following notation is used:
 
+-   All indices start at 0
 -   W\# denotes a 32-bit word
 -   B\# denotes a Byte (8-bit)
 -   P denotes the ADPCM predictor for the block
@@ -51,8 +52,6 @@ In the following tables, the following notation is used:
     -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Tomato">
         </div>
         Red: Right
-
--   All indices start at 0
 
 #### Mono
 
