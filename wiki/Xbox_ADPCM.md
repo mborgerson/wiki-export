@@ -10,13 +10,15 @@ often called Xbox ADPCM.
 Standard IMA ADPCM WAV files would use format code 0x0011, whereas Xbox
 ADPCM files use format-code 0x0069.
 
+There are always 1 (Mono) or 2 (Stereo) channels.
+
 All Xbox ADPCM files seem to store 64 input samples per block. This
 value is also stored in the 'fmt ' extra-data which is always 2 bytes,
 containing the Bytes `0x40, 0x00` (64 as unsigned 16-bit integer).
 Because of that, all Xbox ADPCM files will have a block alignment of 36
-(Mono) or 72 (Stereo). As the decoder-setup in every block contains a
-predictor for each channel, there will be 65 output samples per block
-(65:36 compression ratio = 44.6% compression).
+(Mono) or 72 (Stereo) Bytes. As the decoder-setup in every block
+contains a predictor for each channel, there will be 65 samples /
+channel output per block (65:36 compression ratio = 44.6% compression).
 
 Aside from what was mentioned, there are no known differences to IMA
 ADPCM. This is probably because the [APU](/wiki/APU "wikilink") VP will decode
@@ -24,6 +26,39 @@ ADPCM in hardware. Microsoft probably had little control over the APU
 ADPCM implementation and had to stay compatible to standard ADPCM.
 Players supporting IMA ADPCM also support Xbox ADPCM. However, they
 might reject files due to the different format-code.
+
+### Block format
+
+Same as IMA ADPCM
+
+In the following tables, the following notation is used:
+
+-   W\# denotes a 32-bit word
+-   B\# denotes a Byte (8-bit)
+-   P denotes the ADPCM predictor for the block
+-   SI denotes the Step-Index for the block
+-   S\# denotes a sample
+-   Background color denotes the channel:
+    -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:SkyBlue">
+        </div>
+        Blue: Left = Right
+
+    -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Snow;">
+        </div>
+        White: Left
+
+    -   <div style="display: inline-block; width:10px; height:10px; border:1px solid black; background-color:Tomato">
+        </div>
+        Red: Right
+
+#### Mono
+
+| 32-bit word | W0     | W1  | W2  | ... | W7  | W8  |
+|-------------|--------|-----|-----|-----|-----|-----|
+| Byte        | B0     | B1  | B2  | B3  | B4  | B5  |
+| Meaning     | P = S0 | SI  |     | S2  | S1  | S4  |
+
+#### Stereo
 
 ### Index-Table
 
