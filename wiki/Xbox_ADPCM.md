@@ -59,10 +59,10 @@ links.
 Related links
 -------------
 
--   [Explanation of IMA ADPCM block
-    encoding](https://wiki.multimedia.cx/index.php/IMA_ADPCM)
+-   [Explanation of IMA ADPCM
+    algorithms](https://wiki.multimedia.cx/index.php/IMA_ADPCM)
 -   [Explanation of IMA ADPCM WAV
-    header](https://wiki.multimedia.cx/index.php/Microsoft_IMA_ADPCM)
+    storage](https://wiki.multimedia.cx/index.php/Microsoft_IMA_ADPCM)
 -   [Tool to decode Xbox ADPCM
     files](https://github.com/JayFoxRox/xbox-tools/tree/master/adpcm-decoder)
 -   [Sample files by
