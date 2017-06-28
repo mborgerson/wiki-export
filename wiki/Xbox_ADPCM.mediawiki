@@ -32,7 +32,6 @@ In the following tables, the following notation is used:
 ==== Mono ====
 
 {{FIXME|reason=Fix cell width}}
-{{FIXME|reason=Fix cell colors, can we somehow set the scope for background color?}}
 {| class="wikitable" style="font-size:90%; text-align:center;"
 ! 32-bit word
 | colspan="8" | W0
@@ -53,10 +52,22 @@ In the following tables, the following notation is used:
 | style="background-color:SkyBlue;" colspan="4" | P = S0
 | style="background-color:SkyBlue;" colspan="2" | SI
 | colspan="2" | 
-| style="background-color:SkyBlue;" |  S2 ||  S1 ||  S4 ||  S3 ||  S6 ||  S5 ||  S8 ||  S7
-| style="background-color:SkyBlue;" | S10 ||  S9 || S12 || S11 || S14 || S13 || S16 || S15
-| style="background-color:SkyBlue;" | S50 || S49 || S52 || S51 || S54 || S53 || S56 || S55
-| style="background-color:SkyBlue;" | S58 || S57 || S60 || S59 || S62 || S61 || S64 || S63
+| style="background-color:SkyBlue;" |  S2 || style="background-color:SkyBlue;" |  S1 
+| style="background-color:SkyBlue;" |  S4 || style="background-color:SkyBlue;" |  S3
+| style="background-color:SkyBlue;" |  S6 || style="background-color:SkyBlue;" |  S5
+| style="background-color:SkyBlue;" |  S8 || style="background-color:SkyBlue;" |  S7
+| style="background-color:SkyBlue;" | S10 || style="background-color:SkyBlue;" |  S9
+| style="background-color:SkyBlue;" | S12 || style="background-color:SkyBlue;" | S11
+| style="background-color:SkyBlue;" | S14 || style="background-color:SkyBlue;" | S13
+| style="background-color:SkyBlue;" | S16 || style="background-color:SkyBlue;" | S15
+| style="background-color:SkyBlue;" | S50 || style="background-color:SkyBlue;" | S49
+| style="background-color:SkyBlue;" | S52 || style="background-color:SkyBlue;" | S51
+| style="background-color:SkyBlue;" | S54 || style="background-color:SkyBlue;" | S53
+| style="background-color:SkyBlue;" | S56 || style="background-color:SkyBlue;" | S55
+| style="background-color:SkyBlue;" | S58 || style="background-color:SkyBlue;" | S57
+| style="background-color:SkyBlue;" | S60 || style="background-color:SkyBlue;" | S59
+| style="background-color:SkyBlue;" | S62 || style="background-color:SkyBlue;" | S61
+| style="background-color:SkyBlue;" | S64 || style="background-color:SkyBlue;" | S63
 |}
 
 ==== Stereo ====
