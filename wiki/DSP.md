@@ -51,6 +51,6 @@ Buffers:
 Related links
 -------------
 
--   [A56, open-source assembler for the 56000
+-   [A56, open-source assembler for the similar 56000
     architecture](http://www.zdomain.com/a56.html)
 
