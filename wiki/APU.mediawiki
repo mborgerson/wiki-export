@@ -4,6 +4,8 @@ The [[MCPX]] contains an APU (Audio Processing Unit).
 * SGE = Scatter Gather Entry
 * PRD = Physical Resource Descriptor (Same thing as SGE?!)
 
+== Frontend Engine (FE) ==
+
 == Voice Processor (VP) ==
 
 A powerful voice processor. There can be up to 256 voices{{citation needed}} and 64{{citation needed}} of those can be 3D.
