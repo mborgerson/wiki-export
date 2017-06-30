@@ -33,6 +33,20 @@ Per-voice settings:
 ` * Volume Envelope`  
 ` * Pitch / Cutoff Envelope`
 
+-   Optionally one of the following filters modes:
+
+` * For 2D Mono:`  
+`   * DLS2 Low-Pass`  
+`   * Parametric Equalizer`  
+`   * DLS2 Low-Pass + Parametric Equalizer`  
+` * For 2D Stereo:`  
+`   * DLS2 Low-Pass`  
+`   * Parametric Equalizer`  
+` * For 3D:`  
+`   * DLS2 Low-Pass + I3DL2 Reverb`  
+`   * Parametric Equalizer + I3DL2 Reverb`  
+`   * I3DL2 Reverb`
+
 -   8 target bins, each with a custom volume for this voice
 
 There are 32 bins which these voices will be mixed into.
@@ -83,6 +97,16 @@ unsigned frequency in Hz (*f*) using the following formulas:
 
 Voices are stored in VPV. Input data (from the CPU) is loaded using
 VPSGE. Voices are then processed and written to the GP MIXBUF.
+
+Related notes
+-------------
+
+-   [Something about Parametric
+    Equalizers](https://de.mathworks.com/help/audio/examples/parametric-equalizer-design.html)
+-   [Mentions I3DL2
+    Reverb](https://github.com/kcat/openal-soft/blob/master/Alc/effects/reverb.c)
+-   [DLS2 low-pass filter with resonance and dynamic filter cutoff
+    frequency](https://www.midi.org/specifications/item/dls-level-2-specification)
 
 Global Processor (GP)
 ---------------------
