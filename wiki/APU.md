@@ -27,9 +27,12 @@ Per-voice settings:
     (HRTF)
 -   [Low-frequency
     oscillation](wikipedia:Low-frequency_oscillation "wikilink") (LFO)
--   Pitch
--   2x Pitch (?) envelope
--   2x LFO (?) envelope
+-   Pitch (~187.5 Hz to ~12285920.7 Hz)
+-   2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
+
+` * Volume Envelope`  
+` * Pitch / Cutoff Envelope`
+
 -   8 target bins, each with a custom volume for this voice
 
 There are 32 bins which these voices will be mixed into.
@@ -53,6 +56,20 @@ The voices are kept in a single-linked list. There are 3 voice lists:
 ### Voice structure
 
 This is 0x80 bytes
+
+### Envelopes
+
+-   Delay = Time where envelope stays at 0% until attack
+-   Attack = Rate at which the envelope goes from 0 to 100%
+-   Hold = Time the envelope stays at 100%
+-   Decay = Rate at which the envelope goes from 100% to sustain level
+-   Sustain = Level at which the envelope stays while the voice is being
+    played
+-   Release = Rate at which the envelope goes from current level to 0%
+
+#### Volume Envelope
+
+#### Pitch / Cutoff Envelope
 
 #### Pitch calculation
 
