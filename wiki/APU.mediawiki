@@ -89,12 +89,6 @@ Voices are stored in VPV.
 Input data (from the CPU) is loaded using VPSGE.
 Voices are then processed and written to the GP MIXBUF.
 
-== Related notes ==
-
-* [https://de.mathworks.com/help/audio/examples/parametric-equalizer-design.html Something about Parametric Equalizers]
-* [https://github.com/kcat/openal-soft/blob/master/Alc/effects/reverb.c Mentions I3DL2 Reverb]
-* [https://www.midi.org/specifications/item/dls-level-2-specification DLS2 low-pass filter with resonance and dynamic filter cutoff frequency]
-
 == Global Processor (GP) ==
 
 The GP is a DSP to do programmable audio processing on the voice bins.
