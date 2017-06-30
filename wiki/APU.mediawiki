@@ -42,6 +42,16 @@ The voices are kept in a single-linked list. There are 3 voice lists:
 
 This is 0x80 bytes
 
+==== Pitch calculation ====
+
+The 16 bit signed pitch value (''p'') can be converted to and from a unsigned frequency in Hz (''f'') using the following formulas:
+
+<pre>
+p = 4096 * log2(f / 48000)
+f = pow2(p / 4096) * 48000
+</pre>
+
+
 === Envelopes ===
 
 * Delay = Time where envelope stays at 0% until attack
@@ -60,15 +70,6 @@ This is 0x80 bytes
 ==== Pitch / Cutoff Envelope ====
 
 {{FIXME|reason=Research}}
-
-==== Pitch calculation ====
-
-The 16 bit signed pitch value (''p'') can be converted to and from a unsigned frequency in Hz (''f'') using the following formulas:
-
-<pre>
-p = 4096 * log2(f / 48000)
-f = pow2(p / 4096) * 48000
-</pre>
 
 === Operation ===
 
