@@ -169,12 +169,19 @@ data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
 AC3 / SPDIF during the boot
 animation[1](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
 
-Related
--------
+Related notes
+-------------
 
 -   [ACI](/wiki/ACI "wikilink")
 -   [DSP](/wiki/DSP "wikilink")
 -   [Xbox ADPCM](/wiki/Xbox_ADPCM "wikilink")
--   [Script to inspect APU registers and voice
-    buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/apu.py)
+-   [Scripts to inspect APU registers and voice
+    buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/)
+-   Filter information
+    -   [Something about Parametric
+        Equalizers](https://de.mathworks.com/help/audio/examples/parametric-equalizer-design.html)
+    -   [Mentions I3DL2
+        Reverb](https://github.com/kcat/openal-soft/blob/master/Alc/effects/reverb.c)
+    -   [DLS2 low-pass filter with resonance and dynamic filter cutoff
+        frequency](https://www.midi.org/specifications/item/dls-level-2-specification)
 
