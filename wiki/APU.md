@@ -28,9 +28,6 @@ Per-voice settings:
 -   [Low-frequency
     oscillation](wikipedia:Low-frequency_oscillation "wikilink") (LFO)
 -   Pitch (~187.5 Hz to ~12285920.7 Hz)
--   2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
-    -   Volume Envelope
-    -   Pitch / Cutoff Envelope
 -   Optionally one of the following filters modes:
     -   For 2D Mono:
         -   DLS2 Low-Pass
@@ -43,6 +40,9 @@ Per-voice settings:
         -   DLS2 Low-Pass + I3DL2 Reverb
         -   Parametric Equalizer + I3DL2 Reverb
         -   I3DL2 Reverb
+-   2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
+    -   Volume Envelope
+    -   Pitch / DLS2 Low-Pass Cutoff Envelope
 -   8 target bins, each with a custom volume for this voice
 
 There are 32 bins which these voices will be mixed into.
