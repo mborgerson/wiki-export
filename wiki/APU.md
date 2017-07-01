@@ -41,7 +41,7 @@ Per-voice settings:
         -   Parametric Equalizer + I3DL2 Reverb
         -   I3DL2 Reverb
 -   2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
-    -   Volume Envelope
+    -   Amplitude Envelope
     -   Pitch / DLS2 Low-Pass Cutoff Envelope
 -   8 target bins, each with a custom volume for this voice
 
@@ -116,8 +116,9 @@ The maximum length of an envelope section is therefore 4095 \* 10. ms =
 As the envelope counter runs at a fixed clock speed, it is independent
 of the voice pitch and duration.
 
-If the Volume Envelope hits the zero level during release, DirectSound
-already deletes the voice, regardless of the Filter Envelope.
+If the Amplitude Envelope hits the zero level during release,
+DirectSound already deletes the voice, regardless of the Filter
+Envelope.
 
 The sustain level can be changed during playback. Also the attack
 register can be changed to a lower value while the counter is counting
@@ -130,11 +131,11 @@ value is zero while counting, there won't be any audio output during the
 attack phase. This indicates that the COUNT register is used to
 calculate the actual value from the current rates.
 
-#### Volume Envelope
+#### Amplitude Envelope
 
-The volume envelope is mixed with the volume during mixing. The volume
-registers are not modified. It is not yet known how many bits of the
-envelope state are used.
+The amplitude envelope is mixed with the volume during mixing. The
+volume registers are not modified. It is not yet known how many bits of
+the envelope state are used.
 
 #### Filter Envelope
 
