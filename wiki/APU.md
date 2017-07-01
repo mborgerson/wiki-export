@@ -77,13 +77,27 @@ unsigned frequency in Hz (*f*) using the following formulas:
 
 ### Envelopes
 
--   Delay = Time where envelope stays at 0% until attack
--   Attack = Rate at which the envelope goes from 0 to 100%
--   Hold = Time the envelope stays at 100%
--   Decay = Rate at which the envelope goes from 100% to sustain level
--   Sustain = Level at which the envelope stays while the voice is being
-    played
--   Release = Rate at which the envelope goes from current level to 0%
+There are seperate sections of the envelopes, 2 registers (CUR and
+COUNT) per envelope keeps track of this:
+
+-   0: Off = Envelope is not used
+-   1: Delay = Time where envelope stays at 0% until attack
+    -   COUNT register counts down.
+-   2: Attack = Rate at which the envelope goes from 0 to 100%
+    -   COUNT register counts up.
+-   3: Hold = Time the envelope stays at 100%
+    -   COUNT register counts down.
+-   4: Decay = Rate at which the envelope goes from 100% to 0%
+    -   COUNT register counts down.
+    -   When sustain level is reached the decay section is over
+-   5: Sustain = Level at which the envelope stays while the voice is
+    being played
+    -   COUNT register is 0
+-   6: Release = Rate at which the envelope goes from current level to
+    0%
+    -   Can start at any time
+    -   COUNT register counts down
+-   7: Force Release = Unknown still
 
 #### Volume Envelope
 
