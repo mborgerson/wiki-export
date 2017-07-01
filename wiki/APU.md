@@ -133,6 +133,10 @@ value is zero while counting, there won't be any audio output during the
 attack phase. This indicates that the COUNT register is used to
 calculate the actual value from the current rates.
 
+The initial state of each envelope can be controlled by the
+NV1BA0\_PIO\_VOICE\_ON command. It can either be: DISABLE, DELAY, ATTACK
+or HOLD.
+
 #### Amplitude Envelope
 
 The amplitude envelope is mixed with the volume during mixing. The
