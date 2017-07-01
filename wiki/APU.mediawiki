@@ -93,6 +93,8 @@ The 12-bit values of the envelope sections are given in units of 0.{{overline|6}
 This can also be written as 512 / (48000 Hz) = 10.{{overline|6}} ms.
 The maximum length of an envelope section is therefore 4095 * 10.{{overline|6}} ms = 43.68 seconds.
 
+As the envelope counter runs at a fixed clock speed, it is independent of the voice pitch and duration.
+
 {{FIXME|reason=Add units and graphics}}
 
 ==== Volume Envelope ====

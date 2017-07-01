@@ -109,6 +109,9 @@ The 12-bit values of the envelope sections are given in units of 0. ms
 The maximum length of an envelope section is therefore 4095 \* 10. ms =
 43.68 seconds.
 
+As the envelope counter runs at a fixed clock speed, it is independent
+of the voice pitch and duration.
+
 #### Volume Envelope
 
 #### Pitch / Cutoff Envelope
