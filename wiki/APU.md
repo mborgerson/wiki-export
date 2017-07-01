@@ -151,10 +151,28 @@ It is not yet known how many bits of the envelope state are used.
 
 #### DLS2
 
+Formulas from DirectSound
+
+    FreqToHardwareCoeff(frequency): # Input in Hz
+      if (frequency < 30) { return 0x8000 }
+      if (frequency > 8000) { return 0x0000 }
+      FC = 2 * sin(PI * frequency / 48000)
+      octaves = 4096 * log2(FC)
+      return octaves & 0xFFFF
+    hardware_coefficient[0] = FreqToHardwareCoeff(frequency)
+
+    dBToHardwareCoeff(resonance): # Input in dB
+      resonance = min(resonance, 22.5)
+      Q = pow(10, -0.05 * resonance)
+      return min(0xFFFF)
+    hardware_coefficient[1] = dBToHardwareCoeff(resonance_in_db)
+
+Stuff from the DLS2 spec:
+
 There are 2 coeffiecents per channel:
 
--   F\_c: Cutoff frequency
--   r: Resonance
+-   F\_c (Cutoff frequency)
+-   resonance
 
 From Page 8 of “DLS 2.2 Version
 1.0”[2](https://www.midi.org/specifications/item/dls-level-2-specification)
