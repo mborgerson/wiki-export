@@ -82,7 +82,7 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 ** COUNT register is 0
 * 6: Release = Rate at which the envelope goes from current level to 0%
 ** Can start at any time{{FIXME|reason=the voice state PERSIST has to do with this. Voice is released using NV1BA0_PIO_VOICE_RELEASE ?}}
-** COUNT register counts down{{FIXME|reason=What happens when it reaches 0? DirectSound seems to turn off voice - or is the hw doing that?}}
+** COUNT register counts down{{FIXME|reason=What happens when it reaches 0? DirectSound seems to turn off voice - or is the hw doing that?}}{{FIXME|reason=At which COUNT does this start, at which level does this end? Where would an amplitude be stored?}}
 * 7: Force Release = Unknown still{{FIXME}}
 
 All durations are described using unsigned 12-bit times/rates. The level of sustain is stored unsigned in 8-bit.
