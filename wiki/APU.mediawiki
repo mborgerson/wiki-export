@@ -12,6 +12,7 @@ A powerful voice processor. There can be up to 256 voices [www.gamasutra.com/blo
 
 Per-voice settings:
 * Input type (8bit, 16bit, 24bit, ADPCM)
+* 8 target bins, each with controllable volume for this voice
 * [[wikipedia:Head-related transfer function|Head-related transfer function]] (HRTF)
 * [[wikipedia:Low-frequency oscillation|Low-frequency oscillation]] (LFO)
 * Pitch (~187.5 Hz to ~12285920.7 Hz)
@@ -30,7 +31,10 @@ Per-voice settings:
 * 2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
 ** Amplitude Envelope
 ** Pitch / DLS2 Low-Pass Cutoff Envelope
-* 8 target bins, each with a custom volume for this voice
+* Tracking of certain parameters
+** Volume
+** LFO parameters
+** DLS2 Low-Pass parameters?{{FIXME|reason=Not 100% sure, also not sure if this also works for the other filters}}
 
 There are 32 bins which these voices will be mixed into.
 
@@ -63,6 +67,13 @@ p = 4096 * log2(f / 48000)
 f = pow2(p / 4096) * 48000
 </pre>
 
+=== LFO ===
+
+=== Tracking ===
+
+Some of the parameters of the VP can be controlled by setting timing parameters.
+New values will then be slowly be adapted over time.
+{{FIXME}}
 
 === Envelopes ===
 

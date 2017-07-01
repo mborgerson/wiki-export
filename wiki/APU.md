@@ -24,6 +24,7 @@ can be 3D.
 Per-voice settings:
 
 -   Input type (8bit, 16bit, 24bit, ADPCM)
+-   8 target bins, each with controllable volume for this voice
 -   [Head-related transfer
     function](wikipedia:Head-related_transfer_function "wikilink")
     (HRTF)
@@ -45,7 +46,10 @@ Per-voice settings:
 -   2 Envelopes (DAHDSR: Delay, Attack, Hold, Decay, Sustain, Release)
     -   Amplitude Envelope
     -   Pitch / DLS2 Low-Pass Cutoff Envelope
--   8 target bins, each with a custom volume for this voice
+-   Tracking of certain parameters
+    -   Volume
+    -   LFO parameters
+    -   DLS2 Low-Pass parameters?
 
 There are 32 bins which these voices will be mixed into.
 
@@ -76,6 +80,13 @@ unsigned frequency in Hz (*f*) using the following formulas:
 
     p = 4096 * log2(f / 48000)
     f = pow2(p / 4096) * 48000
+
+### LFO
+
+### Tracking
+
+Some of the parameters of the VP can be controlled by setting timing
+parameters. New values will then be slowly be adapted over time.
 
 ### Envelopes
 
