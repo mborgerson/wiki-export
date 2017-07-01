@@ -16,8 +16,10 @@ Frontend Engine (FE)
 Voice Processor (VP)
 --------------------
 
-A powerful voice processor. There can be up to 256 voices and 64 of
-those can be 3D.
+A powerful voice processor. There can be up to 256
+voices[1](https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml)
+and 64[2](http://www.nvidia.com/object/IO_20010530_6177.html) of those
+can be 3D.
 
 Per-voice settings:
 
@@ -105,7 +107,7 @@ unsigned 16-bit.
 
 The 12-bit times/rates are multiplied by 16 when loading them into the
 16-bit COUNT register. The COUNT register counts at 1500
-Hz[1](https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867).
+Hz[3](https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867).
 A unit in the COUNT register is therefore 0. ms.
 
 The 12-bit values of the envelope sections are given in units of 0. ms
@@ -175,7 +177,7 @@ There are 2 coeffiecents per channel:
 -   resonance
 
 From Page 8 of “DLS 2.2 Version
-1.0”[2](https://www.midi.org/specifications/item/dls-level-2-specification)
+1.0”[4](https://www.midi.org/specifications/item/dls-level-2-specification)
 
 -   b\_1 = -2 \* r \* cos(θ)
 -   b\_2 = r \* r
@@ -266,7 +268,7 @@ During the [Boot Animation](/wiki/Boot_Animation "wikilink") a different
 version of DirectSound is used. The EP is disabled in this case. The
 data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
 AC3 / SPDIF during the boot
-animation[3](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
+animation[5](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
 
 Related notes
 -------------
