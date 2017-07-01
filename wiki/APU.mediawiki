@@ -85,6 +85,14 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 ** COUNT register counts down{{FIXME|reason=What happens when it reaches 0? DirectSound seems to turn off voice - or is the hw doing that?}}
 * 7: Force Release = Unknown still
 
+The 12-bit times/rates are multiplied by 16 when loading them into the 16-bit COUNT register.
+The COUNT register counts at 1500 Hz{{citation needed|reason=Derived from the following formulas, but probably correct as 48000/3 = 1500 = good clock divider}}.
+A unit in the COUNT register is therefore 0.{{overline|6}} ms.
+
+The 12-bit values of the envelope sections are given in units of 0.{{overline|6}} ms * 16 = 10.{{overline|6}} ms.
+This can also be written as 512 / (48000 Hz) = 10.{{overline|6}} ms.
+The maximum length of an envelope section is therefore 4095 * 10.{{overline|6}} ms = 43.68 seconds.
+
 {{FIXME|reason=Add units and graphics}}
 
 ==== Volume Envelope ====

@@ -99,6 +99,15 @@ COUNT) per envelope keeps track of this:
     -   COUNT register counts down
 -   7: Force Release = Unknown still
 
+The 12-bit times/rates are multiplied by 16 when loading them into the
+16-bit COUNT register. The COUNT register counts at 1500 Hz. A unit in
+the COUNT register is therefore 0. ms.
+
+The 12-bit values of the envelope sections are given in units of 0. ms
+\* 16 = 10. ms. This can also be written as 512 / (48000 Hz) = 10. ms.
+The maximum length of an envelope section is therefore 4095 \* 10. ms =
+43.68 seconds.
+
 #### Volume Envelope
 
 #### Pitch / Cutoff Envelope
