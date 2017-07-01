@@ -100,8 +100,9 @@ COUNT) per envelope keeps track of this:
 -   7: Force Release = Unknown still
 
 The 12-bit times/rates are multiplied by 16 when loading them into the
-16-bit COUNT register. The COUNT register counts at 1500 Hz. A unit in
-the COUNT register is therefore 0. ms.
+16-bit COUNT register. The COUNT register counts at 1500
+Hz[1](https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867).
+A unit in the COUNT register is therefore 0. ms.
 
 The 12-bit values of the envelope sections are given in units of 0. ms
 \* 16 = 10. ms. This can also be written as 512 / (48000 Hz) = 10. ms.
@@ -190,7 +191,7 @@ During the [Boot Animation](/wiki/Boot_Animation "wikilink") a different
 version of DirectSound is used. The EP is disabled in this case. The
 data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
 AC3 / SPDIF during the boot
-animation[1](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
+animation[2](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
 
 Related notes
 -------------

@@ -86,7 +86,7 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 * 7: Force Release = Unknown still{{FIXME}}
 
 The 12-bit times/rates are multiplied by 16 when loading them into the 16-bit COUNT register.
-The COUNT register counts at 1500 Hz{{citation needed|reason=Derived from the following formulas, but probably correct as 48000/32 = 1500 = good clock divider}}.
+The COUNT register counts at 1500 Hz[https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867].
 A unit in the COUNT register is therefore 0.{{overline|6}} ms.
 
 The 12-bit values of the envelope sections are given in units of 0.{{overline|6}} ms * 16 = 10.{{overline|6}} ms.
