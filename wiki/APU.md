@@ -114,7 +114,19 @@ of the voice pitch and duration.
 
 #### Volume Envelope
 
+The volume envelope is mixed with the volume during mixing. The volume
+registers are not modified. It is not yet known how many bits of the
+envelope state are used.
+
 #### Pitch / Cutoff Envelope
+
+The pitch scale is multiplied with the current envelope state and added
+to the current pitch during mixing. The pitch registers are not
+modified.
+
+    f = 2^((signed_pitch+signed_pitch_mod*32*envelope_state_float)/4096)*48000 # envelope_state_float: [0, 1]
+
+It is not yet known how many bits of the envelope state are used.
 
 ### Operation
 

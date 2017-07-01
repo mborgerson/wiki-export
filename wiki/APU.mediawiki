@@ -99,11 +99,21 @@ As the envelope counter runs at a fixed clock speed, it is independent of the vo
 
 ==== Volume Envelope ====
 
-{{FIXME|reason=Research}}
+The volume envelope is mixed with the volume during mixing. The volume registers are not modified.
+{{FIXME|reason=Is it multiplied on? Is it added? subtracted?}}
+It is not yet known how many bits of the envelope state are used.
 
 ==== Pitch / Cutoff Envelope ====
 
 {{FIXME|reason=Research}}
+
+The pitch scale is multiplied with the current envelope state and added to the current pitch during mixing. The pitch registers are not modified.
+
+<pre>
+f = 2^((signed_pitch+signed_pitch_mod*32*envelope_state_float)/4096)*48000 # envelope_state_float: [0, 1]
+</pre>
+
+It is not yet known how many bits of the envelope state are used.
 
 === Operation ===
 
