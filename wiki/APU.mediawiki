@@ -125,6 +125,29 @@ f = 2^((signed_pitch+signed_pitch_mod*32*envelope_state_float)/4096)*48000 # env
 
 It is not yet known how many bits of the envelope state are used.
 
+=== Filters ===
+
+==== DLS2 ====
+
+{{FIXME|reason=Untested. Most info comes from Merry of Citra}}
+
+There are 2 coeffiecents per channel:
+
+* F_c: Cutoff frequency
+* r: Resonance
+
+From Page 8 of "DLS 2.2 Version 1.0"[https://www.midi.org/specifications/item/dls-level-2-specification]
+
+* b_1 = -2 * r * cos(θ)
+* b_2 = r * r
+* K =  g * (1 + b_1 + b_2)
+
+<pre>
+y[i] = K * x[i] - b_1 * y[i-1] - b_2 * y[i-2]
+</pre>
+
+Where y[i-2] and y[i-1] are the last two frames of the output and x[i] the current input.
+
 === Operation ===
 
 Voices are stored in VPV.

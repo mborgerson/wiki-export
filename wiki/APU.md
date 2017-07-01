@@ -147,6 +147,29 @@ modified.
 
 It is not yet known how many bits of the envelope state are used.
 
+### Filters
+
+#### DLS2
+
+There are 2 coeffiecents per channel:
+
+-   F\_c: Cutoff frequency
+-   r: Resonance
+
+From Page 8 of “DLS 2.2 Version
+1.0”[2](https://www.midi.org/specifications/item/dls-level-2-specification)
+
+-   b\_1 = -2 \* r \* cos(θ)
+-   b\_2 = r \* r
+-   K = g \* (1 + b\_1 + b\_2)
+
+<!-- -->
+
+    y[i] = K * x[i] - b_1 * y[i-1] - b_2 * y[i-2]
+
+Where y\[i-2\] and y\[i-1\] are the last two frames of the output and
+x\[i\] the current input.
+
 ### Operation
 
 Voices are stored in VPV. Input data (from the CPU) is loaded using
@@ -225,7 +248,7 @@ During the [Boot Animation](/wiki/Boot_Animation "wikilink") a different
 version of DirectSound is used. The EP is disabled in this case. The
 data is send to the ACI AC97 using GP FIFO channel 0 (PCM). There is no
 AC3 / SPDIF during the boot
-animation[2](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
+animation[3](http://www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php).
 
 Related notes
 -------------
