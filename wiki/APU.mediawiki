@@ -8,7 +8,7 @@ The [[MCPX]] contains an APU (Audio Processing Unit).
 
 == Voice Processor (VP) ==
 
-A powerful voice processor. There can be up to 256 voices[https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml] and 64[http://www.nvidia.com/object/IO_20010530_6177.html] of those can be 3D.
+A powerful voice processor. There can be up to 256 voices [www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing_the_Boot_Sound_for_the_Original_Xbox.php][https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml] and 64[http://www.nvidia.com/object/IO_20010530_6177.html] of those can be 3D.
 
 Per-voice settings:
 * Input type (8bit, 16bit, 24bit, ADPCM)

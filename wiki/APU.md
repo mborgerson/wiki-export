@@ -16,8 +16,8 @@ Frontend Engine (FE)
 Voice Processor (VP)
 --------------------
 
-A powerful voice processor. There can be up to 256
-voices[1](https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml)
+A powerful voice processor. There can be up to 256 voices
+\[www.gamasutra.com/blogs/BrianSchmidt/20111117/90625/Designing\_the\_Boot\_Sound\_for\_the\_Original\_Xbox.php\][1](https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml)
 and 64[2](http://www.nvidia.com/object/IO_20010530_6177.html) of those
 can be 3D.
 
