@@ -85,6 +85,9 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 ** COUNT register counts down{{FIXME|reason=What happens when it reaches 0? DirectSound seems to turn off voice - or is the hw doing that?}}
 * 7: Force Release = Unknown still{{FIXME}}
 
+All durations are described using unsigned 12-bit times/rates. The level of sustain is stored unsigned in 8-bit.
+The COUNT register is stored in unsigned 16-bit.
+
 The 12-bit times/rates are multiplied by 16 when loading them into the 16-bit COUNT register.
 The COUNT register counts at 1500 Hz[https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867].
 A unit in the COUNT register is therefore 0.{{overline|6}} ms.
@@ -95,7 +98,14 @@ The maximum length of an envelope section is therefore 4095 * 10.{{overline|6}} 
 
 As the envelope counter runs at a fixed clock speed, it is independent of the voice pitch and duration.
 
-{{FIXME|reason=Add units and graphics}}
+
+If the Volume Envelope hits the zero level during release, DirectSound{{FIXME|reason=Is this a hardware thing? I guess it makes sense..}} already deletes the voice, regardless of the Filter Envelope.
+
+
+The sustain level can be changed during playback.
+Also the attack register can be changed to a lower value while the counter is counting up, however, if the COUNTER does not compare equal to the set value, it will keep counting, even after an overflow. It will not leave the attack phase and keep counting until it sees value COUNTER / 16 in the attack register. If the attack register is set to a higher value while counting, the volume is going down again.
+Also, if the attack register value is zero while counting, there won't be any audio output during the attack phase.
+This indicates that the COUNT register is used to calculate the actual value from the current rates.
 
 ==== Volume Envelope ====
 
@@ -103,7 +113,7 @@ The volume envelope is mixed with the volume during mixing. The volume registers
 {{FIXME|reason=Is it multiplied on? Is it added? subtracted?}}
 It is not yet known how many bits of the envelope state are used.
 
-==== Pitch / Cutoff Envelope ====
+==== Filter Envelope ====
 
 {{FIXME|reason=Research}}
 

@@ -99,6 +99,10 @@ COUNT) per envelope keeps track of this:
     -   COUNT register counts down
 -   7: Force Release = Unknown still
 
+All durations are described using unsigned 12-bit times/rates. The level
+of sustain is stored unsigned in 8-bit. The COUNT register is stored in
+unsigned 16-bit.
+
 The 12-bit times/rates are multiplied by 16 when loading them into the
 16-bit COUNT register. The COUNT register counts at 1500
 Hz[1](https://docs.google.com/spreadsheets/d/11jxeJ9aey_TVkyiMmmd6SKuow4j4GR9E9fRZ6HXc2WU/edit#gid=396423867).
@@ -112,13 +116,27 @@ The maximum length of an envelope section is therefore 4095 \* 10. ms =
 As the envelope counter runs at a fixed clock speed, it is independent
 of the voice pitch and duration.
 
+If the Volume Envelope hits the zero level during release, DirectSound
+already deletes the voice, regardless of the Filter Envelope.
+
+The sustain level can be changed during playback. Also the attack
+register can be changed to a lower value while the counter is counting
+up, however, if the COUNTER does not compare equal to the set value, it
+will keep counting, even after an overflow. It will not leave the attack
+phase and keep counting until it sees value COUNTER / 16 in the attack
+register. If the attack register is set to a higher value while
+counting, the volume is going down again. Also, if the attack register
+value is zero while counting, there won't be any audio output during the
+attack phase. This indicates that the COUNT register is used to
+calculate the actual value from the current rates.
+
 #### Volume Envelope
 
 The volume envelope is mixed with the volume during mixing. The volume
 registers are not modified. It is not yet known how many bits of the
 envelope state are used.
 
-#### Pitch / Cutoff Envelope
+#### Filter Envelope
 
 The pitch scale is multiplied with the current envelope state and added
 to the current pitch during mixing. The pitch registers are not
