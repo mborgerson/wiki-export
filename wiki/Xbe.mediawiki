@@ -14,6 +14,8 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 |-
 | AQ || Aqua System
 |-
+| AS || ASK
+|-
 | AT || Atlus
 |-
 | AV || Activision
@@ -21,6 +23,8 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 | AY || Aspyr Media
 |-
 | BA || Bandai
+|-
+| BL || Black Box
 |-
 | BM || BAM! Entertainment
 |-
@@ -33,6 +37,8 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 | BV || Buena Vista Games
 |-
 | BW || BBC Multimedia
+|-
+| BZ || Blitz Games
 |-
 | CC || Capcom
 |-
@@ -69,6 +75,8 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 | HP || Hip games
 |-
 | HU || Hudson Soft
+|-
+| HW || Highwaystar
 |-
 | IA || Mad Catz Interactive
 |-
@@ -189,6 +197,8 @@ A title ID is usually 2 ASCII letters for the publisher, followed by a u16 integ
 | XM || Evolved Games {{citation needed|reason=Probably not, game "Malice"|date=May 2017}}
 |-
 | XP || XPEC Entertainment
+|-
+| XR ||
 |-
 | YB || YBM Sisa (South-Korea)
 |-

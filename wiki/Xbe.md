@@ -18,16 +18,19 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | AC           | Acclaim Entertainment                                            |
 | AH           | ARUSH Entertainment                                              |
 | AQ           | Aqua System                                                      |
+| AS           | ASK                                                              |
 | AT           | Atlus                                                            |
 | AV           | Activision                                                       |
 | AY           | Aspyr Media                                                      |
 | BA           | Bandai                                                           |
+| BL           | Black Box                                                        |
 | BM           | BAM! Entertainment                                               |
 | BR           | Broccoli Co.                                                     |
 | BS           | Bethesda Softworks                                               |
 | BU           | Bunkasha Co.                                                     |
 | BV           | Buena Vista Games                                                |
 | BW           | BBC Multimedia                                                   |
+| BZ           | Blitz Games                                                      |
 | CC           | Capcom                                                           |
 | CK           | Kemco Corporation                                                |
 | CM           | Codemasters                                                      |
@@ -46,6 +49,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | HE           | Tru Blu (Entertainment division of Home Entertainment Suppliers) |
 | HP           | Hip games                                                        |
 | HU           | Hudson Soft                                                      |
+| HW           | Highwaystar                                                      |
 | IA           | Mad Catz Interactive                                             |
 | IF           | Idea Factory                                                     |
 | IG           | Infogrames                                                       |
@@ -106,6 +110,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | XL           | *Xbox special bundled or live demo disk?*                        |
 | XM           | Evolved Games                                                    |
 | XP           | XPEC Entertainment                                               |
+| XR           |                                                                  |
 | YB           | YBM Sisa (South-Korea)                                           |
 | ZD           | Zushi Games (formerly Zoo Digital Publishing)                    |
 
