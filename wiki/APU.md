@@ -91,25 +91,38 @@ parameters. New values will then be slowly be adapted over time.
 ### Envelopes
 
 There are seperate sections of the envelopes, 2 registers (CUR and
-COUNT) per envelope keeps track of this:
+COUNT) per envelope keeps track of this and control the envelopes level
+(LVL):
 
 -   0: Off = Envelope is not used
 -   1: Delay = Time where envelope stays at 0% until attack
     -   COUNT register counts down.
 -   2: Attack = Rate at which the envelope goes from 0 to 100%
     -   COUNT register counts up.
+    -   LVL seems to be linear.
 -   3: Hold = Time the envelope stays at 100%
     -   COUNT register counts down.
 -   4: Decay = Rate at which the envelope goes from 100% to 0%
     -   COUNT register counts down.
     -   When sustain level is reached the decay section is over
+    -   The LVL is not linear, it's a curve which drops steep at first
+        and then slowly becomes level
 -   5: Sustain = Level at which the envelope stays while the voice is
     being played
     -   COUNT register is 0
+    -   LVL is continously updated to sustain level
 -   6: Release = Rate at which the envelope goes from current level to
     0%
     -   Can start at any time
+    -   COUNT register starts at the full releaserate, regardless of the
+        current sustain level
     -   COUNT register counts down
+    -   LVL is not updated during this phase (it will keep it's previous
+        value)
+    -   The actual output level is probably determined like:
+        `max(COUNT - LVL, 0)`
+    -   COUNT will keep counting until 0 even after the output level has
+        hit 0
 -   7: Force Release = Unknown still
 
 All durations are described using unsigned 12-bit times/rates. The level
@@ -129,9 +142,8 @@ The maximum length of an envelope section is therefore 4095 \* 10. ms =
 As the envelope counter runs at a fixed clock speed, it is independent
 of the voice pitch and duration.
 
-If the Amplitude Envelope hits the zero level during release,
-DirectSound already deletes the voice, regardless of the Filter
-Envelope.
+If the Amplitude Envelope COUNT hits 0 during release, DirectSound
+already deletes the voice, regardless of the Filter Envelope.
 
 The sustain level can be changed during playback. Also the attack
 register can be changed to a lower value while the counter is counting
