@@ -90,10 +90,11 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 * 4: Decay = Rate at which the envelope goes from 100% to 0%
 ** COUNT register counts down.
 ** When sustain level is reached the decay section is over
-** The LVL is not linear, it's a curve which drops steep at first and then slowly becomes level
+** The LVL is not linear, it's a curve which drops steep at first and then slowly becomes level[https://docs.google.com/spreadsheets/d/1fNsfkvBfnlRQ9XplNnTgmh8jBaWJ56bvh2AVWn8B_k0/edit?usp=sharing]
 ** Writes to the LVL register are ignored
 ** Writes to count (any value?) impact the LVL
 ** If the COUNT is larger than the decayrate the envelope will switch to the sustain state
+** If the COUNT results in a smaller output level than the sustainlevel the envelope will switch to the sustain state
 * 5: Sustain = Level at which the envelope stays while the voice is being played
 ** COUNT register writes are ignored, it will stay at 0
 ** LVL register writes are ignored, it will stay at the current sustain level
