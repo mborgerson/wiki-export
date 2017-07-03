@@ -30,7 +30,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | BU           | Bunkasha Co.                                                     |
 | BV           | Buena Vista Games                                                |
 | BW           | BBC Multimedia                                                   |
-| BZ           | Blitz Games                                                      |
+| BZ           | Blizzard                                                         |
 | CC           | Capcom                                                           |
 | CK           | Kemco Corporation                                                |
 | CM           | Codemasters                                                      |
