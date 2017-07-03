@@ -110,7 +110,7 @@ u16 integer game number (Above 2000 for non-original Xbox games)
 | XL           | *Xbox special bundled or live demo disk?*                        |
 | XM           | Evolved Games                                                    |
 | XP           | XPEC Entertainment                                               |
-| XR           |                                                                  |
+| XR           | Panorama                                                         |
 | YB           | YBM Sisa (South-Korea)                                           |
 | ZD           | Zushi Games (formerly Zoo Digital Publishing)                    |
 
