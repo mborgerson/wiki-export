@@ -8,6 +8,9 @@ The official XDK (Xbox Development Kit) was only released to licensed developers
 ! 3424
 | April 2001 XDK and SDK (03.01.01 - New for April XDK release)
 |-
+! 3521
+| May XDK 2001
+|-
 ! 3911
 | August XDK 2001 (( Final Hardware Recovery) (build on WIN2000 5. 2134/2195 ? 5.1.2258.400)(*)
 |-
@@ -48,7 +51,7 @@ The official XDK (Xbox Development Kit) was only released to licensed developers
 | March 2002 XDK
 |-
 ! 4400
-| Barnabas XDK - rare
+| rare
 |-
 ! 4432
 | April 2002 XDK
@@ -99,7 +102,7 @@ The official XDK (Xbox Development Kit) was only released to licensed developers
 | .16
 |-
 ! 5933
-| uncertain number - Dxbx code mentions 5911
+| uncertain number - Dxbx code mentions 5911 (wich seemed incorrect)
 |-
 ! 5960
 | last official dashboard

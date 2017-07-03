@@ -13,6 +13,7 @@ List of known versions
 | Version | Comments                                                                                       |
 |---------|------------------------------------------------------------------------------------------------|
 | 3424    | April 2001 XDK and SDK (03.01.01 - New for April XDK release)                                  |
+| 3521    | May XDK 2001                                                                                   |
 | 3911    | August XDK 2001 (( Final Hardware Recovery) (build on WIN2000 5. 2134/2195 ? 5.1.2258.400)(\*) |
 | 3925    | Retail? XDK(\*)                                                                                |
 | 3936    | (\*)                                                                                           |
@@ -26,7 +27,7 @@ List of known versions
 | 4134    | December 2001 XDK (\*)                                                                         |
 | 4242    | February 2002 XDK (\*)                                                                         |
 | 4361    | March 2002 XDK                                                                                 |
-| 4400    | Barnabas XDK - rare                                                                            |
+| 4400    | rare                                                                                           |
 | 4432    | April 2002 XDK                                                                                 |
 | 4531    | May 2002 XDK                                                                                   |
 | 4627    | June 2002 XDK                                                                                  |
@@ -43,7 +44,7 @@ List of known versions
 | 5788    | November 2003 XDK                                                                              |
 | 5849    | December 2003 XDK                                                                              |
 | 5849    | .16                                                                                            |
-| 5933    | uncertain number - Dxbx code mentions 5911                                                     |
+| 5933    | uncertain number - Dxbx code mentions 5911 (wich seemed incorrect)                             |
 | 5960    | last official dashboard                                                                        |
 
 (\*) : Earlier XDK's contained libraries with different versions
