@@ -107,10 +107,15 @@ COUNT) per envelope keeps track of this and control the envelopes level
     -   When sustain level is reached the decay section is over
     -   The LVL is not linear, it's a curve which drops steep at first
         and then slowly becomes level
+    -   Writes to the LVL register are ignored
+    -   Writes to count (any value?) impact the LVL
+    -   If the COUNT is larger than the decayrate the envelope will
+        switch to the sustain state
 -   5: Sustain = Level at which the envelope stays while the voice is
     being played
-    -   COUNT register is 0
-    -   LVL is continously updated to sustain level
+    -   COUNT register writes are ignored, it will stay at 0
+    -   LVL register writes are ignored, it will stay at the current
+        sustain level
 -   6: Release = Rate at which the envelope goes from current level to
     0%
     -   Can start at any time
@@ -119,6 +124,9 @@ COUNT) per envelope keeps track of this and control the envelopes level
     -   COUNT register counts down
     -   LVL is not updated during this phase (it will keep it's previous
         value)
+    -   Writes to LVL have an impact on the output volume
+    -   If the COUNT register is higher than the releaserate, the output
+        will be silent and LVL will drop to zero
     -   The actual output level is probably determined like:
         `max(COUNT - LVL, 0)`
     -   COUNT will keep counting until 0 even after the output level has
