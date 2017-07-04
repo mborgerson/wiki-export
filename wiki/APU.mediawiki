@@ -89,9 +89,9 @@ There are seperate segments of the envelopes, 2 registers (CUR and COUNT) per en
 ** COUNT register counts down from HOLDTIME.
 * 4: Decay = Rate at which the envelope goes from 100% to 0%
 ** COUNT register counts down from DECAYRATE.
-** The best approximation I could come up with so far is: <code>255*pow(0.99988799,(DECAYRATE*16-COUNT)*4096/DECAYRATE)</code>.
-** When the output level reaches the sustain level the decay section is over (In my example above, this happens when the output level is less than 0.2 away from the sustain level; so if sustain is 0, the voice would switch to the sustain segment when a value below 0.2 is reached)
 ** The LVL is not linear, it's a curve which drops steep at first and then slowly becomes level[https://docs.google.com/spreadsheets/d/1fNsfkvBfnlRQ9XplNnTgmh8jBaWJ56bvh2AVWn8B_k0/edit?usp=sharing]
+** The best approximation I could come up with so far is: <code>255*pow(0.99988799,(DECAYRATE*16-COUNT)*4096/DECAYRATE)</code>.
+** When the output level (not LVL!) reaches the sustain level the decay section is over (In my example above, this happens when the output level is less than 0.2 away from the sustain level; so if sustain is 0, the voice would switch to the sustain segment when a value below 0.2 is reached)
 ** Writes to the LVL register are ignored
 ** Writes to count (any value?) impact the LVL
 ** If the COUNT is larger than the decayrate the envelope will switch to the sustain state
