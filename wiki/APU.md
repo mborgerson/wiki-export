@@ -96,14 +96,14 @@ COUNT) per envelope keeps track of this and control the envelopes level
 
 -   0: Off = Envelope is not used
 -   1: Delay = Time where envelope stays at 0% until attack
-    -   COUNT register counts down.
+    -   COUNT register counts down from DELAYTIME.
 -   2: Attack = Rate at which the envelope goes from 0 to 100%
-    -   COUNT register counts up.
+    -   COUNT register counts up to ATTACKRATE.
     -   LVL seems to be linear.
 -   3: Hold = Time the envelope stays at 100%
-    -   COUNT register counts down.
+    -   COUNT register counts down from HOLDTIME.
 -   4: Decay = Rate at which the envelope goes from 100% to 0%
-    -   COUNT register counts down.
+    -   COUNT register counts down from DECAYRATE.
     -   When sustain level is reached the decay section is over
     -   The LVL is not linear, it's a curve which drops steep at first
         and then slowly becomes
@@ -122,8 +122,8 @@ COUNT) per envelope keeps track of this and control the envelopes level
 -   6: Release = Rate at which the envelope goes from current level to
     0%
     -   Can start at any time
-    -   COUNT register starts at the full releaserate, regardless of the
-        current sustain level
+    -   COUNT register starts at RELEASERATE, regardless of the current
+        sustain level
     -   COUNT register counts down
     -   LVL is not updated during this phase (it will keep it's previous
         value)
@@ -131,10 +131,15 @@ COUNT) per envelope keeps track of this and control the envelopes level
     -   If the COUNT register is higher than the releaserate, the output
         will be silent and LVL will drop to zero
     -   The actual output level is probably determined like:
-        `max(COUNT - LVL, 0)`
+        `int(COUNT * LVL / (RELEASERATE * 16))`
     -   COUNT will keep counting until 0 even after the output level has
         hit 0
 -   7: Force Release = Unknown still
+    -   Seems to happen during invalid conditions? Happened to me when
+        modifying ebo during playback
+    -   LVL and COUNT seem to be ignored during this? Output level seems
+        to stay at 100% ? (I only got repeating 32 samples during this
+        and the whole Xbox crashed shortly after)
 
 All durations are described using unsigned 12-bit times/rates. The level
 of sustain is stored unsigned in 8-bit. The COUNT register is stored in
