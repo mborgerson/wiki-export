@@ -314,6 +314,10 @@ Related notes
 -   [ACI](/wiki/ACI "wikilink")
 -   [DSP](/wiki/DSP "wikilink")
 -   [Xbox ADPCM](/wiki/Xbox_ADPCM "wikilink")
+-   [Information at NVIDIAs
+    website](http://www.nvidia.com/object/apu.html)
+-   [“Technical Brief: NVIDIA nForce MCP Audio Processing Unit” by
+    NVIDIA](http://www.nvidia.com/attach/9004)
 -   [Scripts to inspect APU registers and voice
     buffers](https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/)
 -   Filter information

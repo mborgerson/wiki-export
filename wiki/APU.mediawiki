@@ -271,6 +271,8 @@ There is no AC3 / SPDIF during the boot animation[http://www.gamasutra.com/blogs
 * [[ACI]]
 * [[DSP]]
 * [[Xbox ADPCM]]
+* [http://www.nvidia.com/object/apu.html Information at NVIDIAs website]
+* [http://www.nvidia.com/attach/9004 "Technical Brief: NVIDIA nForce MCP Audio Processing Unit" by NVIDIA]
 * [https://github.com/JayFoxRox/xbox-tools/blob/master/python-scripts/ Scripts to inspect APU registers and voice buffers]
 * Filter information
 ** [https://de.mathworks.com/help/audio/examples/parametric-equalizer-design.html Something about Parametric Equalizers]
