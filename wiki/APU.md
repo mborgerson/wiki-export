@@ -90,7 +90,7 @@ parameters. New values will then be slowly be adapted over time.
 
 ### Envelopes
 
-There are seperate sections of the envelopes, 2 registers (CUR and
+There are seperate segments of the envelopes, 2 registers (CUR and
 COUNT) per envelope keeps track of this and control the envelopes level
 (LVL):
 
@@ -104,7 +104,13 @@ COUNT) per envelope keeps track of this and control the envelopes level
     -   COUNT register counts down from HOLDTIME.
 -   4: Decay = Rate at which the envelope goes from 100% to 0%
     -   COUNT register counts down from DECAYRATE.
-    -   When sustain level is reached the decay section is over
+    -   The best approximation I could come up with so far is:
+        `255*pow(0.99988799,(DECAYRATE*16-COUNT)*4096/DECAYRATE)`.
+    -   When the output level reaches the sustain level the decay
+        section is over (In my example above, this happens when the
+        output level is less than 0.2 away from the sustain level; so if
+        sustain is 0, the voice would switch to the sustain segment when
+        a value below 0.2 is reached)
     -   The LVL is not linear, it's a curve which drops steep at first
         and then slowly becomes
         level[4](https://docs.google.com/spreadsheets/d/1fNsfkvBfnlRQ9XplNnTgmh8jBaWJ56bvh2AVWn8B_k0/edit?usp=sharing)
