@@ -109,7 +109,7 @@ There are seperate sections of the envelopes, 2 registers (CUR and COUNT) per en
 ** COUNT will keep counting until 0 even after the output level has hit 0
 * 7: Force Release = Unknown still{{FIXME}}
 ** Seems to happen during invalid conditions? Happened to me when modifying ebo during playback{{citation needed|reason=Need to find out why this happens}}
-** LVL and COUNT seem to be ignored during this? Output level seems to stay at 100% ? (I only got repeating 32 samples during this and the whole Xbox crashed shortly after)
+** LVL and COUNT seem to be ignored during this, but writes go through? Output level seems to stay at 100% ? (I only got repeating 32 samples during this and the whole Xbox crashed shortly after)
 
 All durations are described using unsigned 12-bit times/rates. The level of sustain is stored unsigned in 8-bit.
 The COUNT register is stored in unsigned 16-bit.

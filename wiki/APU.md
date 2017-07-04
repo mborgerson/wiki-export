@@ -137,9 +137,10 @@ COUNT) per envelope keeps track of this and control the envelopes level
 -   7: Force Release = Unknown still
     -   Seems to happen during invalid conditions? Happened to me when
         modifying ebo during playback
-    -   LVL and COUNT seem to be ignored during this? Output level seems
-        to stay at 100% ? (I only got repeating 32 samples during this
-        and the whole Xbox crashed shortly after)
+    -   LVL and COUNT seem to be ignored during this, but writes go
+        through? Output level seems to stay at 100% ? (I only got
+        repeating 32 samples during this and the whole Xbox crashed
+        shortly after)
 
 All durations are described using unsigned 12-bit times/rates. The level
 of sustain is stored unsigned in 8-bit. The COUNT register is stored in
