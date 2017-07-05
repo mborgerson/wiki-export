@@ -56,7 +56,7 @@ MCPX 1.1
 
 Because of the flaws of the previous method, Microsoft changed the way
 the 2BL was decrypted. Microsoft implemented a TEA algorithm to create a
-hash of the FBL and if that was correct, it would jump to 0xffffd400.
+hash of the FBL and if that was correct, it would jump to 0xFFFFD400.
 This isn't in Memory, but rather in the BIOS. Otherwise it would error.
 
 Error Handling
