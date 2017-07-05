@@ -24,7 +24,7 @@ As mentioned, the MCPX chips are largely the same. When the Xbox is powered on, 
 
 == MCPX 1.0 ==
 
-The 1.0 ROM runs an RC4 algorithm to decrypt the BL2 from flash (starting at 0xFFFF9E00) and load the unencrypted 2BL to memory (0x90000). It checks the signature of the decrypted 2BL and if it is correct, starts executing code at 0x90000. Otherwise it errors.
+The 1.0 ROM runs an RC4 algorithm to decrypt the 2BL from flash (starting at 0xFFFF9E00) and load the unencrypted 2BL to memory (0x90000). It checks the signature of the decrypted 2BL and if it is correct, starts executing code at 0x90000. Otherwise it errors.
 
 == MCPX 1.1 ==
 
