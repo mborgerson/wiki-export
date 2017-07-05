@@ -50,7 +50,7 @@ For information how these sections are used, see [[Boot Process]].
 
 === Unknown ===
 
-From 0x00000000 - 0x00000007F
+From 0x00000000 - 0x0000007F
 
 Not sure what this does. Some people think it might be involved with initialising the [[MCPX]]{{citation needed}}. The Reset Vector on the Pentium 3 would mean that this wasn't called before the MCPX ROM{{citation needed}}.
 

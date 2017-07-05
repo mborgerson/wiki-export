@@ -148,7 +148,7 @@ Process](/wiki/Boot_Process "wikilink").
 
 ### Unknown
 
-From 0x00000000 - 0x00000007F
+From 0x00000000 - 0x0000007F
 
 Not sure what this does. Some people think it might be involved with
 initialising the [MCPX](/wiki/MCPX "wikilink"). The Reset Vector on the
