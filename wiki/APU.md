@@ -310,7 +310,7 @@ it will DMA this region to its own internal memory. The EP then AC3
 encodes the audio data and writes it to the EP FIFO memory. The data is
 then send to the ACI AC97 using EP FIFO channels 0 (PCM) and 1 (SPDIF).
 The EP code is loaded by DirectSound. The EP is not programmable using
-DirectSound.
+DirectSound APIs.
 
 ### Modifications for Boot Animation
 
