@@ -85,11 +85,11 @@ This is a list of known Xbox emulation projects
 |LLE/HLE Hybrid
 |{{No}}
 |[https://github.com/daeken/Zookeeper Zookeeper]
-|
+|[https://www.reddit.com/r/EmuDev/comments/4isyvu/project_zookeeper_a_new_xbox_emulator/]
 |daeken
-|Unknown
+|Mac
 |
-|
+|Using Apple's Hypervisor.framework to run a custom kernel (NightBeliever in the repo) and then running Xbox code from there
 |-
 |Unknown
 |Unknown
