@@ -202,11 +202,11 @@ This is a list of known Xbox emulation projects
 |Focus seems to be on Chihiro emulation. Does Xbox (non-Chihiro) emulation exist yet?{{citation needed}}
 |-
 |Dead
-|Unknown
+|LLE
 |{{No}}
 |[https://github.com/monocasa/xbvm XBVM]
 |
-|
+|monocasa
 |Windows
 |
 |
