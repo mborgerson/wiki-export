@@ -166,5 +166,6 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 Related links
 -------------
 
-- [Code which appears to implement bit-accurate emulation of some
-instructions](https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c)
+-   [Code which appears to implement bit-accurate emulation of some
+    instructions](https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c)
+
