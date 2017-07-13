@@ -400,4 +400,4 @@ Each slot consists of 16 bytes, we consider those as 4 seperate little-endian DW
 
 == Related links ==
 
-- [https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c Code which appears to implement bit-accurate emulation of some instructions{{FIXME|reason=Unconfirmed, needs testing}}]
+- [https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c Code which appears to implement bit-accurate emulation of some instructions]{{FIXME|reason=Unconfirmed, needs testing}}
