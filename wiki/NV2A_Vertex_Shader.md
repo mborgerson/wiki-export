@@ -163,4 +163,8 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 | 12    | SGE     |
 | 13    | ARL     |
 
+Related links
+-------------
 
+- [Code which appears to implement bit-accurate emulation of some
+instructions](https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c)
