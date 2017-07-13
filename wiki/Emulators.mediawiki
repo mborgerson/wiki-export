@@ -11,7 +11,7 @@ This is a list of known Xbox emulation projects
 !License
 !Notes
 |-
-|Maintained
+|{{Maintained}}
 |LLE
 |{{Yes}}
 |[[XQEMU]]
@@ -21,7 +21,7 @@ This is a list of known Xbox emulation projects
 |
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 |-
-|Maintained
+|{{Maintained}}
 |HLE
 |{{No}}
 |[[Cxbx-Reloaded]]
@@ -31,7 +31,7 @@ This is a list of known Xbox emulation projects
 |
 |At the time of writing Cxbx-Reloaded is almost purely HLE. LLE GPU emulation is planned, but currently not implemented.
 |-
-|Dead
+|{{Dead}}
 |HLE
 |{{No}}
 |[[Cxbx]]
@@ -41,7 +41,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Dead
+|{{Dead}}
 |HLE
 |{{No}}
 |Dxbx
@@ -51,7 +51,7 @@ This is a list of known Xbox emulation projects
 |
 |The project was started on March 23rd 2008. It is an improved port of Cxbx to the Delphi programming language.
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[https://github.com/impeachgod/Dirtbox Dirtbox]
@@ -61,7 +61,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |HLE
 |{{No}}
 |[https://sourceforge.net/p/ironbabel/code/HEAD/tree/trunk/Box/Xbox/ IronBabel]
@@ -71,7 +71,7 @@ This is a list of known Xbox emulation projects
 |
 |This seems to have been a generic portability framework
 |-
-|Unknown
+|{{Unknown}}
 |HLE
 |{{No}}
 |[https://github.com/daeken/Steelbreeze Steelbreeze]
@@ -81,7 +81,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |LLE/HLE Hybrid
 |{{No}}
 |[https://github.com/daeken/Zookeeper Zookeeper]
@@ -91,7 +91,7 @@ This is a list of known Xbox emulation projects
 |
 |Using Apple's Hypervisor.framework to run a custom kernel (NightBeliever in the repo) and then running Xbox code from there
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[http://ngemu.com/threads/.154342/ XbeNext]
@@ -101,7 +101,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Dead
+|{{Dead}}
 |HLE
 |{{No}}
 |[http://ngemu.com/forums/.65/ Xeon]
@@ -111,7 +111,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[http://ngemu.com/threads/.105210/ XProject]
@@ -121,7 +121,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[https://code.google.com/p/xbem xbem]
@@ -131,7 +131,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Dead
+|{{Dead}}
 |LLE/HLE Hybrid
 |{{Yes}}
 |Hackbox
@@ -141,7 +141,7 @@ This is a list of known Xbox emulation projects
 |Private
 |This was originally going to be a commercial emulator (but plans were dropped quickly in favor of preservation). The source code was temporarily public but then made private. The source code is still available to a selected group of developers. Hackbox was designed from scratch but re-used code from Cxbx for HLE routine detection.
 |-
-|Unknown
+|{{Unknown}}
 |LLE
 |{{No}}
 |[https://github.com/phire/kvmbox kvmbox]
@@ -151,7 +151,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |HLE
 |{{No}}
 |[https://github.com/Gabriel-Maldonado/XboxHLE XboxHLE]
@@ -161,7 +161,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[https://github.com/bjh83/boombox boombox]
@@ -171,7 +171,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[https://github.com/docbrown/vxb vxb]
@@ -181,7 +181,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Unknown
+|{{Unknown}}
 |Unknown
 |{{No}}
 |[https://github.com/quantumdude836/exciplex exciplex]
@@ -191,7 +191,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Maintained
+|{{Maintained}}
 |LLE
 |{{Yes}}
 |[http://mamedev.org/ MAME]
@@ -201,7 +201,7 @@ This is a list of known Xbox emulation projects
 |
 |Focus seems to be on Chihiro emulation. Does Xbox (non-Chihiro) emulation exist yet?{{citation needed}}
 |-
-|Dead
+|{{Dead}}
 |LLE
 |{{No}}
 |[https://github.com/monocasa/xbvm XBVM]
@@ -211,7 +211,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Dead
+|{{Dead}}
 |
 |{{No}}
 |[http://xenoborg-emu.blogspot.com/ Xenoborg]
@@ -221,7 +221,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|Dead
+|{{Dead}}
 |LLE/HLE Hybrid
 |{{No}}
 |[[Xbox 360 Backward Compatibility]]
@@ -231,7 +231,7 @@ This is a list of known Xbox emulation projects
 |Proprietary
 |
 |-
-|Maintained
+|{{Maintained}}
 |LLE/HLE Hybrid{{citation needed}}
 |{{No}}
 |[[Xbox One Backward Compatibility]]
