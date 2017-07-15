@@ -50,16 +50,16 @@ Below is a table which lists all known officially AV cables released by
 Microsoft and their respective signal. The constants used in the
 av-prefixed Kernel-functions are also listed.
 
-| 19  | 18  | 17  | Official Microsoft product name        | Signal             | 24  | 22  | 11  | 9   | Kernel av-Constant     |
-|-----|-----|-----|----------------------------------------|--------------------|-----|-----|-----|-----|------------------------|
-| 0   | 0   | 0   | Advanced SCART Cable                   | SCART (15 kHz RGB) | V   | R   | G   | B   | AV\_PACK\_SCART = 3    |
-| 0   | 0   | 1   | High Definition AV Pack                | Component          | -   | Pr  | Y   | Pb  | AV\_PACK\_HDTV = 4     |
-| 0   | 1   | 0   | *Not officially available / supported* | VGA (31 kHz RGB)   | -   | R   | G   | B   | AV\_PACK\_VGA = 5      |
-| 0   | 1   | 1   | RF Adapter                             | NTSC Mono          | V   | C   | Y   | -   | AV\_PACK\_RFU = 2      |
-| 1   | 0   | 0   | Advanced AV Pack                       | PAL Stereo         | V   | C   | Y   | -   | AV\_PACK\_SVIDEO = 6   |
-| 1   | 0   | 1   | *Not officially available / supported* | PAL/Secam Mono     | V   | C   | Y   | -   | AV\_PACK\_NONE = 0     |
-| 1   | 1   | 0   | Standard AV Cable                      | NTSC Stereo        | V   | C   | Y   | -   | AV\_PACK\_STANDARD = 1 |
-| 1   | 1   | 1   | *No cable connected*                   | -                  | -   | -   | -   | -   | AV\_PACK\_NONE = 0     |
+| 19  | 18  | 17  | SMC Constant | Official Microsoft product name        | Signal             | 24  | 22  | 11  | 9   | Kernel av-Constant     |
+|-----|-----|-----|--------------|----------------------------------------|--------------------|-----|-----|-----|-----|------------------------|
+| 0   | 0   | 0   | 0            | Advanced SCART Cable                   | SCART (15 kHz RGB) | V   | R   | G   | B   | AV\_PACK\_SCART = 3    |
+| 0   | 0   | 1   | 1            | High Definition AV Pack                | Component          | -   | Pr  | Y   | Pb  | AV\_PACK\_HDTV = 4     |
+| 0   | 1   | 0   | 2            | *Not officially available / supported* | VGA (31 kHz RGB)   | -   | R   | G   | B   | AV\_PACK\_VGA = 5      |
+| 0   | 1   | 1   | 3            | RF Adapter                             | NTSC Mono          | V   | C   | Y   | -   | AV\_PACK\_RFU = 2      |
+| 1   | 0   | 0   | 4            | Advanced AV Pack                       | PAL Stereo         | V   | C   | Y   | -   | AV\_PACK\_SVIDEO = 6   |
+| 1   | 0   | 1   | 5            | *Not officially available / supported* | PAL/Secam Mono     | V   | C   | Y   | -   | AV\_PACK\_NONE = 0     |
+| 1   | 1   | 0   | 6            | Standard AV Cable                      | NTSC Stereo        | V   | C   | Y   | -   | AV\_PACK\_STANDARD = 1 |
+| 1   | 1   | 1   | 7            | *No cable connected*                   | -                  | -   | -   | -   | -   | AV\_PACK\_NONE = 0     |
 
 A signal value of 0 means connection to ground (Pins 7, 6, 5), whereas a
 value of 1 means an open-connection
