@@ -66,7 +66,7 @@ value of 1 means an open-connection
 
 The region only identifies which territory the cable was originally
 available / intended for. The kernel still might support other
-video-standards (PAL / NTSC / SECAM) using the same cable.
+video-standards (NTSC / PAL / SECAM) using the same cable.
 
 Related links
 -------------
