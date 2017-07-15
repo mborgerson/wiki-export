@@ -10,7 +10,7 @@ layout: wiki
 -   <http://www.shawnhargreaves.com/motogp/>
 -   [Blog with many MotoGP posts, most from
     2008-2010.](https://blogs.msdn.microsoft.com/shawnhar/) Posts marked
-    explicitly as MotoGP (there are others too about MotoGP too):
+    explicitly as MotoGP (there are others about MotoGP too):
     -   <https://blogs.msdn.microsoft.com/shawnhar/2009/12/30/motogp-ai-coordinate-systems/>
     -   <https://blogs.msdn.microsoft.com/shawnhar/2009/06/05/motogp-lod-selection/>
     -   <https://blogs.msdn.microsoft.com/shawnhar/2009/06/04/motogp-mind-the-gap/>

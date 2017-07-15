@@ -3,7 +3,7 @@
 
 * http://www.gamasutra.com/view/feature/2987/tool_postmortem_climax_brightons_.php
 * http://www.shawnhargreaves.com/motogp/
-* [https://blogs.msdn.microsoft.com/shawnhar/ Blog with many MotoGP posts, most from 2008-2010.] Posts marked explicitly as MotoGP (there are others too about MotoGP too):
+* [https://blogs.msdn.microsoft.com/shawnhar/ Blog with many MotoGP posts, most from 2008-2010.] Posts marked explicitly as MotoGP (there are others about MotoGP too):
 ** https://blogs.msdn.microsoft.com/shawnhar/2009/12/30/motogp-ai-coordinate-systems/
 ** https://blogs.msdn.microsoft.com/shawnhar/2009/06/05/motogp-lod-selection/
 ** https://blogs.msdn.microsoft.com/shawnhar/2009/06/04/motogp-mind-the-gap/
