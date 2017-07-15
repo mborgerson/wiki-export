@@ -64,6 +64,10 @@ av-prefixed Kernel-functions are also listed.
 A signal value of 0 means connection to ground (Pins 7, 6, 5), whereas a
 value of 1 means an open-connection
 
+The region only identifies which territory the cable was originally
+available / intended for. The kernel still might support other
+video-standards (PAL / NTSC / SECAM) using the same cable.
+
 Related links
 -------------
 
