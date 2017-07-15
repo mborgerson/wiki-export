@@ -22,6 +22,7 @@
 * [[EEPROM]]
 * [[SMC]]
 * [[Video Encoder]]
+** [[AV Cables]]
 * [[NVNet|Network Controller (NVNet)]]
 * [[DVD Drive]]
 ** [[Xbox Game Disc]]
