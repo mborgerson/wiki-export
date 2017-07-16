@@ -1,0 +1,38 @@
+---
+title: Patents
+permalink: wiki/Patents/
+layout: wiki
+---
+
+Here a list of patents that might be related to the NV2A GPU for the
+original Xbox:
+
+-   Filed 1997-11-25 by nVidia:
+    <https://www.google.com/patents/US6697063> “Rendering pipeline”
+-   Filed 1998-12-23 by Microsoft:
+    <https://www.google.com/patents/US6417858> “Processor for geometry
+    transformations and lighting calculations”
+-   Filed 1999-12-06 by nVidia:
+    <https://www.google.com/patents/US6198488> “Transform, lighting and
+    rasterization system embodied on a single semiconductor platform”
+-   Filed 1999-12-06 by nVidia:
+    <https://www.google.com/patents/US6573900> “Method, apparatus and
+    article of manufacture for a sequencer in a transform/lighting
+    module capable of processing multiple independent execution threads”
+-   Filed 1999-12-06 by nVidia:
+    <https://www.google.com/patents/US6765575> “Clip-less rasterization
+    using line equation-based traversal”
+-   Filed 1999-12-06 by nVidia:
+    <https://www.google.com/patents/US6650325> “Method, apparatus and
+    article of manufacture for boustrophedonic rasterization”
+-   Filed 2000-12-05 by nVidia:
+    <https://www.google.com/patents/US6690372> “System, method and
+    article of manufacture for shadow mapping”
+-   Filed 2001-06-19 by nVidia:
+    <https://www.google.com/patents/US6870540> “System, method and
+    computer program product for a programmable pixel processing model
+    with instruction set”
+-   Filed 2002-06-07 by Microsoft:
+    <https://www.google.com/patents/US6907522> "Use of hashing in a
+    secure boot loader " (mentions the NV2A directly)
+
