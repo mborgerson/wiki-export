@@ -1,0 +1,11 @@
+The Super I/O board is a feature of [[Development Kits]]. The board is build around a SMSC LPC47M157 chip. A datasheet for a close relative can be found at http://datasheet.seekic.com/PdfFile/LPC/LPC47M140NC_SMSC_SMSC_Corporation.pdf
+The board provides the following ports:
+
+* {{FIXME|reason=someone should add this}}
+
+
+[http://codeasm.com/xbox/images/dvt4/SL734874.JPG Picture of the board]{{FIXME|reason=Contact codeasm, he said he'll search for the non-watermarked pic and put it under a good license}}
+
+== Related links ==
+
+* [https://github.com/espes/xqemu/blob/xbox/hw/xbox/lpc47m157.c Super I/O emulation in XQEMU]
