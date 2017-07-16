@@ -4,7 +4,7 @@ permalink: wiki/Hardware_Revisions/
 layout: wiki
 ---
 
-There are 7 Xbox revisions
+There are 7retail Xbox revisions
 
 1.0
 ---
