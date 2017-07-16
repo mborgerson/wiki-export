@@ -4,15 +4,15 @@ permalink: wiki/Power_Supply/
 layout: wiki
 ---
 
-It's either a delta electronics power supply or foxlink
+It's either a Foxlink or Delta Electronics power supply.
 
 On a 1.0 xbox supply, there seems to be 2 types for the US 120V and EU
 240V market.
 
 The marks are on the PCB with a check next to them:
 
--   DPSN-96-AP-1 should be the EU 240V one
--   DPSN-96-AP is the US 120V one
+-   Delta Electronics DPSN-96-AP-1 should be the EU 240V one
+-   Delta Electronics DPSN-96-AP is the US 120V one
 
 There is a link J11 under CR1 (right side of the coil under it) that
 might make the difference between 120V and 240V. It also seems that the
