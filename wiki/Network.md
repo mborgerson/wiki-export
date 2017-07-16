@@ -109,19 +109,19 @@ References and links
 -   [<https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp>](https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp)
 -   [<http://discerning.com/pdfbox/test/input/authentication.pdf>](http://discerning.com/pdfbox/test/input/authentication.pdf)
 -   [Patent: Managing access to
-    content](https://www.google.de/patents/US20040009815)
+    content](https://www.google.com/patents/US20040009815)
 -   [Patent: Network architecture for secure communications between two
     console-based gaming
-    systems](https://www.google.de/patents/US20030093669)
+    systems](https://www.google.com/patents/US20030093669)
 -   [Patent: Architecture for manufacturing authenticatable gaming
-    systems](https://www.google.de/patents/US20030093668)
+    systems](https://www.google.com/patents/US20030093668)
 -   [Patent: Discovery and distribution of game session
-    information](https://www.google.de/patents/US7803052)
+    information](https://www.google.com/patents/US7803052)
 -   [Patent: Security gateway for online console-based
-    gaming](https://www.google.de/patents/US20030229779)
+    gaming](https://www.google.com/patents/US20030229779)
 -   [Patent: Presence and notification system for maintaining and
     communicating
-    information](https://www.google.de/patents/US20030233537)
+    information](https://www.google.com/patents/US20030233537)
 -   [Patent: Multiple user authentication for online console-based
-    gaming](https://www.google.de/patents/US7218739)
+    gaming](https://www.google.com/patents/US7218739)
 
