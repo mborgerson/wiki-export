@@ -4,6 +4,10 @@ permalink: wiki/Boot_Process/
 layout: wiki
 ---
 
+This article describes the boot sequence of the Xbox. A large portion of
+it is patended in [Patent “US 6,907,522
+B2”](https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6907522.pdf)
+
 Overview
 --------
 

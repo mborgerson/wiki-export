@@ -1,3 +1,6 @@
+This article describes the boot sequence of the Xbox.
+A large portion of it is patended in [https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6907522.pdf Patent "US 6,907,522 B2"]
+
 == Overview ==
 
 The Xbox has a 256 kiB ROM containing the startup animation and sound, as well as the Xbox kernel, which contains a stripped down version of the Windows 2000 (NT 5.0) microkernel, the HAL, filesystems, as well as HDD and DVD drivers.
