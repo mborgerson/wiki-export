@@ -42,6 +42,12 @@ Hardware
     -   [DVD-IR Internals](/wiki/DVD-IR_Internals "wikilink")
 -   [Power Supply](/wiki/Power_Supply "wikilink")
 
+<!-- -->
+
+-   [Development Kits](/wiki/Development_Kits "wikilink")
+    -   [Super I/O](/wiki/Super_I/O "wikilink")
+    -   [DVD Emulator](/wiki/DVD_Emulator "wikilink")
+
 System Software
 ---------------
 
