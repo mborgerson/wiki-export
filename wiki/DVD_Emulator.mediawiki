@@ -1,0 +1,5 @@
+The DVD emulator is a feature of [[Development Kits]].
+
+{{FIXME|reason=Describe the purpose}}
+
+[http://codeasm.com/xbox/images/dvt4/SL734877.JPG Picture]{{FIXME|reason=Contact codeasm about more pics / without watermarks}}
