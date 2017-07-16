@@ -1,14 +1,15 @@
-The Super I/O board is a feature of [[Development Kits]]. The board is build around a SMSC LPC47M157 chip. A datasheet for a close relative can be found at http://datasheet.seekic.com/PdfFile/LPC/LPC47M140NC_SMSC_SMSC_Corporation.pdf (a working link seems to be: http://pdf-file.ic37.com/pdf1/SMSC/LPC47M140_datasheet_138298/225601/LPC47M140_datasheet.pdf)
+The Super I/O board is a feature of [[Development Kits]]. The board is build around a SMSC LPC47M157 chip. A datasheet for a close relative can be found at http://pdf-file.ic37.com/pdf1/SMSC/LPC47M140_datasheet_138298/225601/LPC47M140_datasheet.pdf
 
 The board provides the following ports:
-* RS232 (used for [[Kernel Debug | Kernel debugging]], not the same as [[Xbox Debug Monitor]])
+* RS232 (used for [[Kernel Debug | Kernel debugging]], not to be confused with [[Xbox Debug Monitor]])
 
 unpopulated ports or functions are:
-* PS2 mouse and keyboard{{citation needed}}
+* PS/2 Mouse port{{citation needed}}
+* PS/2 Keyboard port{{citation needed}}
 * something MCPX (SMBus?){{citation needed}}
 * Temp something (SMBus?){{citation needed}}
 * Post code (SMBus?){{citation needed}}
-* Flashrom bios (like modchips, replaces onboard kernel?){{citation needed}}
+* Flash-ROM / BIOS (like modchips, replaces onboard kernel?){{citation needed}}
 
 [http://codeasm.com/xbox/images/dvt4/SL734874.JPG Picture of the board]{{FIXME|reason=Contact codeasm, he said he'll search for the non-watermarked pic and put it under a good license}}
 
