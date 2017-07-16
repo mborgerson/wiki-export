@@ -6,25 +6,25 @@ layout: wiki
 
 Here a list of patents that might be related to the original Xbox:
 
--   Filed 1997-11-25 by nVidia:
+-   Filed 1997-11-25 by Nvidia:
     <https://www.google.com/patents/US6697063> “Rendering pipeline”
 -   Filed 1998-12-23 by Microsoft:
     <https://www.google.com/patents/US6417858> “Processor for geometry
     transformations and lighting calculations”
--   Filed 1999-12-06 by nVidia:
+-   Filed 1999-12-06 by Nvidia:
     <https://www.google.com/patents/US6198488> “Transform, lighting and
     rasterization system embodied on a single semiconductor platform”
--   Filed 1999-12-06 by nVidia:
+-   Filed 1999-12-06 by Nvidia:
     <https://www.google.com/patents/US6573900> “Method, apparatus and
     article of manufacture for a sequencer in a transform/lighting
     module capable of processing multiple independent execution threads”
--   Filed 1999-12-06 by nVidia:
+-   Filed 1999-12-06 by Nvidia:
     <https://www.google.com/patents/US6765575> “Clip-less rasterization
     using line equation-based traversal”
--   Filed 1999-12-06 by nVidia:
+-   Filed 1999-12-06 by Nvidia:
     <https://www.google.com/patents/US6650325> “Method, apparatus and
     article of manufacture for boustrophedonic rasterization”
--   Filed 2000-12-05 by nVidia:
+-   Filed 2000-12-05 by Nvidia:
     <https://www.google.com/patents/US6690372> “System, method and
     article of manufacture for shadow mapping”
 -   Filed 2001-01-11 by Microsoft:
@@ -33,14 +33,41 @@ Here a list of patents that might be related to the original Xbox:
 -   Filed 2001-01-11 by Microsoft:
     <https://www.google.com/patents/USD451513> “Computer input device”
     (describes the original Xbox controller, a.k.a. : “the Duke”)
--   Filed 2001-06-19 by nVidia:
+-   Filed 2001-06-19 by Nvidia:
     <https://www.google.com/patents/US6870540> “System, method and
     computer program product for a programmable pixel processing model
     with instruction set”
 -   Filed 2002-06-07 by Microsoft:
     <https://www.google.com/patents/US6907522> “Use of hashing in a
-    secure boot loader” (mentions the NV2A directly)
+    secure boot loader” (mentions “NV2A”)
+-   Filed 2005-01-04 by Nvidia:
+    <https://www.google.com/patents/US7916149> “Block linear memory
+    ordering of texture data”
 -   Filed 2005-01-07 by Microsoft:
     <https://www.google.com/patents/US7676840> “Use of hashing in a
     secure boot loader” (a continuation of patent US6907522)
+-   Filed 2005-05-17 by Nvidia:
+    <https://www.google.com/patents/US7793029> "Translation device
+    apparatus for configuring printed circuit board connectors "
+    (describes coupling two PCI Express connectors, possibly for the
+    secondary Chihiro board, mentions “Xbox”)
+
+<https://www.google.com/patents/US8641525> Possibly unrelated :
+
+-   Filed 1989-12-29 by Dolby Laboratories:
+    <https://www.google.com/patents/US5109417> “Low bit rate transform
+    coder, decoder, and encoder/decoder for high-quality audio”
+-   Filed 2008-01-15 by Microsoft:
+    <https://www.google.nl/patents/US8607324> “Untrusted gaming system
+    access to online gaming service” (describes part of Xbox online)
+-   Filed 2011-06-17 by Microsoft:
+    <https://www.google.com/patents/US8641525> “Controller for video
+    game console” (one of the 51 patents comprising the Xbox One
+    controller)
+-   Filed 2011-09-07 by Microsoft:
+    <https://www.google.nl/patents/US8597125> “System and method for
+    configuring game data about players”
+-   Filed 2012-01-13 by Microsoft:
+    <https://www.google.nl/patents/US8602897> “Extended and editable
+    gamer profile”
 
