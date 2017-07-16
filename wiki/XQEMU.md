@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 xqemu is a low-level Xbox / Chihiro Emulator started in mid-late 2012 by
-espes.
+espes[1](https://github.com/espes/xqemu/commit/d823f5802e7c4c84163aea8b4d924044951c705e).
 
 The official homepage can be found at [xqemu.com](http://xqemu.com)
 
