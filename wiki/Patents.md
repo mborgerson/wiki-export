@@ -52,22 +52,22 @@ Here a list of patents that might be related to the original Xbox:
     (describes coupling two PCI Express connectors, possibly for the
     secondary Chihiro board, mentions “Xbox”)
 
-<https://www.google.com/patents/US8641525> Possibly unrelated :
+Possibly unrelated :
 
 -   Filed 1989-12-29 by Dolby Laboratories:
     <https://www.google.com/patents/US5109417> “Low bit rate transform
     coder, decoder, and encoder/decoder for high-quality audio”
 -   Filed 2008-01-15 by Microsoft:
-    <https://www.google.nl/patents/US8607324> “Untrusted gaming system
+    <https://www.google.com/patents/US8607324> “Untrusted gaming system
     access to online gaming service” (describes part of Xbox online)
 -   Filed 2011-06-17 by Microsoft:
     <https://www.google.com/patents/US8641525> “Controller for video
     game console” (one of the 51 patents comprising the Xbox One
     controller)
 -   Filed 2011-09-07 by Microsoft:
-    <https://www.google.nl/patents/US8597125> “System and method for
+    <https://www.google.com/patents/US8597125> “System and method for
     configuring game data about players”
 -   Filed 2012-01-13 by Microsoft:
-    <https://www.google.nl/patents/US8602897> “Extended and editable
+    <https://www.google.com/patents/US8602897> “Extended and editable
     gamer profile”
 
