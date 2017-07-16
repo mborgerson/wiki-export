@@ -53,6 +53,7 @@
 * [[Microsoft XDK]]
 ** [[Xbox Debug Monitor]]
 ** [[Xbox Neighborhood]]
+** [[Kernel_Debug| Xbox Kernel Debugging]]
 
 == Games ==
 * [[:Category:Games|Games]]
