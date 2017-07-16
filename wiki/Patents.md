@@ -4,8 +4,7 @@ permalink: wiki/Patents/
 layout: wiki
 ---
 
-Here a list of patents that might be related to the NV2A GPU for the
-original Xbox:
+Here a list of patents that might be related to the original Xbox:
 
 -   Filed 1997-11-25 by nVidia:
     <https://www.google.com/patents/US6697063> “Rendering pipeline”
@@ -28,11 +27,20 @@ original Xbox:
 -   Filed 2000-12-05 by nVidia:
     <https://www.google.com/patents/US6690372> “System, method and
     article of manufacture for shadow mapping”
+-   Filed 2001-01-11 by Microsoft:
+    <https://www.google.com/patents/USD452282> “Portion of an electronic
+    housing”
+-   Filed 2001-01-11 by Microsoft:
+    <https://www.google.com/patents/USD451513> “Computer input device”
+    (describes the original Xbox controller, a.k.a. : “the Duke”)
 -   Filed 2001-06-19 by nVidia:
     <https://www.google.com/patents/US6870540> “System, method and
     computer program product for a programmable pixel processing model
     with instruction set”
 -   Filed 2002-06-07 by Microsoft:
-    <https://www.google.com/patents/US6907522> "Use of hashing in a
-    secure boot loader " (mentions the NV2A directly)
+    <https://www.google.com/patents/US6907522> “Use of hashing in a
+    secure boot loader” (mentions the NV2A directly)
+-   Filed 2005-01-07 by Microsoft:
+    <https://www.google.com/patents/US7676840> “Use of hashing in a
+    secure boot loader” (a continuation of patent US6907522)
 
