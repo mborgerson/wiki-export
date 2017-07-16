@@ -1,4 +1,4 @@
-It's a delta electronics power{{citation needed}}
+It's either a delta electronics power supply or foxlink{{citation needed}}
 
 On a 1.0 xbox supply, there seems to be 2 types for the US 120V and EU 240V market.
 The marks are on the PCB with a check next to them 
