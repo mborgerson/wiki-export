@@ -1,0 +1,59 @@
+---
+title: Power Supply
+permalink: wiki/Power_Supply/
+layout: wiki
+---
+
+It's a delta electronics power
+
+Connector pinout
+----------------
+
+### Xbox 1.0 and 1.1
+
+| Pin    | Usage       |
+|--------|-------------|
+| Pin 1  | +12V        |
+| Pin 2  | +5V         |
+| Pin 3  | +5V         |
+| Pin 4  | +5V         |
+| Pin 5  | +3.3V       |
+| Pin 6  | +3V Standby |
+| Pin 7  | GND         |
+| Pin 8  | GND         |
+| Pin 9  | GND         |
+| Pin 10 | GND         |
+| Pin 11 | POWON       |
+| Pin 12 | POWOK       |
+
+### Xbox 1.2 and later
+
+| Pin    | Usage       |
+|--------|-------------|
+| Pin 1  | +5V         |
+| Pin 2  | +5V         |
+| Pin 3  | +5V         |
+| Pin 4  | None        |
+| Pin 5  | GND         |
+| Pin 6  | None        |
+| Pin 7  | +3.3V       |
+| Pin 8  | None        |
+| Pin 9  | GND         |
+| Pin 10 | POWOK       |
+| Pin 11 | +12V        |
+| Pin 12 | None        |
+| Pin 13 | +5V         |
+| Pin 14 | GND         |
+| Pin 15 | +3V Standby |
+| Pin 16 | GND         |
+| Pin 17 | None        |
+| Pin 18 | +3.3V       |
+| Pin 19 | GND         |
+| Pin 20 | POWON       |
+
+Related links
+-------------
+
+-   [Describes how to turn an ATX Power-Supply to Xbox
+    PSU](http://brandonw.net/consoles/xbox/)
+
