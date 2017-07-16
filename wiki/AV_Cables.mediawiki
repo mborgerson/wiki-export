@@ -88,8 +88,8 @@ The constants used in the av-prefixed Kernel-functions are also listed.
 |  1 ||  0 ||  0 ||       4      || NTSC        || [https://web.archive.org/web/20040319001247/http://www.xbox.com:80/en-us/hardware/advancedavpack.htm Advanced AV Pack]
 | S-Video Stereo            ||  V ||  C ||  Y ||  - || AV_PACK_SVIDEO   = 6
 |-
-|  1 ||  0 ||  1 ||       5      || PAL / SECAM || ''Not officially available / supported''
-| RF Mono                   ||  V ||  C ||  Y ||  - || AV_PACK_NONE     = 0
+|  1 ||  0 ||  1 ||       5      || -           || ''Not officially available / supported''
+| Unknown Mono              ||  V ||  C ||  Y ||  - || AV_PACK_NONE     = 0
 |-
 |  1 ||  1 ||  0 ||       6      || PAL         || [https://web.archive.org/web/20040216130745/http://www.xbox.com:80/en-gb/hardware/avcable.htm Standard AV Cable]
 | Composite Stereo          ||  V ||  C ||  Y ||  - || AV_PACK_STANDARD = 1
