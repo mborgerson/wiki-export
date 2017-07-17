@@ -40,6 +40,9 @@ Here a list of patents that might be related to the original Xbox:
 -   Filed 2002-06-07 by Microsoft:
     <https://www.google.com/patents/US6907522> “Use of hashing in a
     secure boot loader” (mentions “NV2A”)
+-   Filed 2003-08-21 by Friendtech:
+    <https://www.google.com/patents/US20050282621> “CPU upgrading
+    adapter for a Microsoft XboxTM game machine”
 -   Filed 2005-01-04 by Nvidia:
     <https://www.google.com/patents/US7916149> “Block linear memory
     ordering of texture data”
