@@ -52,7 +52,7 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |-
 !Name
 !Ordinal
-!Calling Convention
+!x86 Calling Convention
 !Notes
 |-
 |[[Kernel/AvGetSavedDataAddress]]
