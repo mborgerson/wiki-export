@@ -84,6 +84,9 @@ actual [GFI](https://simple.wikipedia.org/wiki/GFCI) (Ground Fault
 Circuit Interupter). a online form would then be used to determine wich
 type of cable you recieve by means of serial number.
 
+An more in detail video of whats inside an european (UK) “AFCI”
+[2](https://www.youtube.com/watch?v=C0wQikAO-yA)
+
 ### Samsung “TUSCANY”
 
 Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main
