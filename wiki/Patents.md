@@ -31,8 +31,22 @@ Here a list of patents that might be related to the original Xbox:
     <https://www.google.com/patents/USD452282> “Portion of an electronic
     housing”
 -   Filed 2001-01-11 by Microsoft:
+    <https://www.google.com/patents/USD452534> “Portion of an electronic
+    housing” (not a dupe, its the top X shape in detail)
+-   Filed 2001-01-11 by Microsoft:
     <https://www.google.com/patents/USD451513> “Computer input device”
     (describes the original Xbox controller, a.k.a. : “the Duke”)
+-   Filed 2003-05-09 by Microsoft:
+    <https://www.google.com/patents/US8493326> “Controller with
+    removably attachable text input device” (an early keypad, later
+    revered to by the 360 keypad patent)
+-   Filed 2003-05-09 by Micorsoft:
+    <https://www.google.com/patents/US7116311> "Embedded text input "
+    (reffered to by the 360 chatpad)
+-   Filed 2006-07-03 by Micorsoft:
+    <https://www.google.com/patents/US7804484> "Embedded text input "
+    (probably a corrected version of US7116311, reffered to by the 360
+    chatpad)
 -   Filed 2001-06-19 by Nvidia:
     <https://www.google.com/patents/US6870540> “System, method and
     computer program product for a programmable pixel processing model
@@ -76,4 +90,8 @@ Possibly unrelated :
 -   Filed 2012-01-13 by Microsoft:
     <https://www.google.com/patents/US8602897> “Extended and editable
     gamer profile”
+-   Filed 2007-12-07 by Microsoft:
+    <https://www.google.com/patents/US8487876> "Ergonomic hand-held text
+    input device " (The xbox 360 chatpad, wich mentions the OG textpad
+    US8493326 and US7116311 ;) )
 
