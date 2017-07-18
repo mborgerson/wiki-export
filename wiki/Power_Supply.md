@@ -72,7 +72,7 @@ actual [GFI](https://simple.wikipedia.org/wiki/GFCI) (Ground Fault
 Circuit Interupter). a online form would then be used to determine wich
 type of cable you recieve by means of serial number.
 
-### Samsung "TUSCANNY
+### Samsung “TUSCANy”
 
 Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main
 transformer is, wich also has the detail label on it)
