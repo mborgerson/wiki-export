@@ -60,13 +60,25 @@ The rated output currents are also noted on the sticker
 
 #### power cord recall
 
-According to an older Xbox-scene article, Foxlink powersupplies tend to
-have a bad powerplug connector on the back and where installed in 1.0
-and 1.1 xboxes.{citation needed}{citation needed}. Microsoft tried to
-resolve this by offering free replacement powercords and advising to
-trow out the old ones. [More to the power cord replacement than meets
-the
+Microsoft started an powercord recall, or more like a replacement
+program
+[xbox.com](https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm)for
+what apeared to be Foxlink powersupplies having a bad powerplug
+connector on the back of the console and where installed in 1.0 and 1.1
+xboxes.{citation needed}.
+
+**`Does`` ``my`` ``console`` ``require`` ``a`` ``replacement`` ``cord?`**  
+`If it was manufactured before October 23, 2003, your console requires a replacement cord (except for consoles purchased in Continental Europe, where consoles manufactured prior to January 13, 2004 require a replacement cord). Consoles manufactured after October 23, 2003 (after January 13, 2004 for consoles purchased in Continental Europe) do not require replacement cords because design improvements to the cord and console already protect against the problems that are addressed by the replacement cords.`
+
+source: [Xbox powercord recall program
+faq](https://web.archive.org/web/20050223041403/http://replacements.webprogram.com:80/en-us/faqs.asp#Q-7)
+
+Microsoft tried to resolve this by offering free replacement powercords
+and advising to trow out the old ones. [More to the power cord
+replacement than meets the
 eye?](https://web.archive.org/web/20120722175134/http://www.xbox-scene.com/xbox1data/sep/EEpAEAylAluZlwSlOJ.php).
+The old page describing how to order has been archived here:
+[1](https://web.archive.org/web/20050223060900/http://replacements.webprogram.com:80/en-us/programoverview.asp)
 One would either recieve a thicker but very similiar powercord or an
 actual [GFI](https://simple.wikipedia.org/wiki/GFCI) (Ground Fault
 Circuit Interupter). a online form would then be used to determine wich
