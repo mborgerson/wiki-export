@@ -100,8 +100,6 @@ Connector pinout
 
 ### Xbox 1.0 and 1.1
 
-TUSCANY
-
 | Pin    | Usage       |
 |--------|-------------|
 | Pin 1  | +12V        |
