@@ -54,6 +54,9 @@ Here a list of patents that might be related to the original Xbox:
     apparatus for configuring printed circuit board connectors "
     (describes coupling two PCI Express connectors, possibly for the
     secondary Chihiro board, mentions “Xbox”)
+-   Filed 2001-04-30 by Microsoft:
+    <https://www.google.com/patents/US20020160654> “Breakaway cable
+    connector” (filed by Microsofts attorneys)
 
 Possibly unrelated :
 

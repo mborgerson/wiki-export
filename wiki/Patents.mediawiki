@@ -15,6 +15,7 @@ Here a list of patents that might be related to the original Xbox:
 * Filed 2005-01-04 by Nvidia: https://www.google.com/patents/US7916149 "Block linear memory ordering of texture data"
 * Filed 2005-01-07 by Microsoft: https://www.google.com/patents/US7676840 "Use of hashing in a secure boot loader" (a continuation of patent US6907522)
 * Filed 2005-05-17 by Nvidia: https://www.google.com/patents/US7793029 "Translation device apparatus for configuring printed circuit board connectors " (describes coupling two PCI Express connectors, possibly for the secondary Chihiro board, mentions "Xbox")
+* Filed 2001-04-30 by Microsoft: https://www.google.com/patents/US20020160654 "Breakaway cable connector" (filed by Microsofts attorneys)
 
 Possibly unrelated :
 * Filed 1989-12-29 by Dolby Laboratories: https://www.google.com/patents/US5109417 "Low bit rate transform coder, decoder, and encoder/decoder for high-quality audio"
