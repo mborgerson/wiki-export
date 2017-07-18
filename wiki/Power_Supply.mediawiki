@@ -44,7 +44,7 @@ The rated output currents are also noted on the sticker
 ==== power cord recall ====
 According to an older Xbox-scene article, Foxlink powersupplies tend to have a bad powerplug connector on the back and where installed in 1.0 and 1.1 xboxes.{citation needed}{citation needed}. Microsoft tried to resolve this by offering free replacement powercords and advising to trow out the old ones. [https://web.archive.org/web/20120722175134/http://www.xbox-scene.com/xbox1data/sep/EEpAEAylAluZlwSlOJ.php More to the power cord replacement than meets the eye?]. One would either recieve a thicker but very similiar powercord or an actual [https://simple.wikipedia.org/wiki/GFCI GFI] (Ground Fault Circuit Interupter). a online form would then be used to determine wich type of cable you recieve by means of serial number. {{FIXME|reason=I cant seem to find a source for these details yet, but I personaly requested 2, 1 for my own xbox (a 1.4, with a confirmed Delta. never replaced it.) and recieved a normal cable (EU). A friends xbox was older, 1.1/1.2?) and we got a european fusebox brick for his. looks like the UK one, but with the Benelux plug. It was all for free in Europe I remember the part number on my normal cable to be different (higher) for the newer one... ill check if I have it in the original box still}}
 
-=== Samsung "TUSCANy"===
+=== Samsung "TUSCANY"===
 Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transformer is, wich also has the detail label on it)
 {{FIXME|reason=There are TUSCANY powersuplies in some 1.6 xboxes?}}
 * PSCD101301A
