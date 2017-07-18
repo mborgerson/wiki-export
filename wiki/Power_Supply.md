@@ -4,10 +4,19 @@ permalink: wiki/Power_Supply/
 layout: wiki
 ---
 
-It's either a Foxlink or Delta Electronics power supply.
+It's either a Foxlink or Delta Electronics power supply for most xboxes.
+Some are rumoured to be shipped with a Minebea brand and 1.6 xboxes are
+found with a “tuscany” made probably by Samsung.
 
 On a 1.0 xbox supply, there seems to be 2 types for the US 120V and EU
 240V market.
+
+The standby voltage powers the [SMC](/wiki/SMC "wikilink") which handles
+turning on and off the system. The Xbox supply needs a voltage (3V3?) on
+it's power-on line to leave the standby mode. This results in the other
+voltages being supplied.
+
+### Delta Electronics
 
 The marks are on the PCB with a check next to them:
 
@@ -27,15 +36,59 @@ The rated output currents are also noted on the PCB
 -   5V 13.2A
 -   12V 1.2A
 
-The standby voltage powers the [SMC](/wiki/SMC "wikilink") which handles
-turning on and off the system. The Xbox supply needs a voltage (3V3?) on
-it's power-on line to leave the standby mode. This results in the other
-voltages being supplied.
+### Foxlink Technology LTD
+
+On the lower heatsink, there is a sticker with the following markings
+and versions:
+
+-   MODEL: FTPS-0001 REV:B {citation needed} (120V)
+-   MODEL: FTPS-0002 REV:B (from a 2002 PAL (240V))
+-   MODEL: FTPS-0002 REV:H (from a 2003 PAL (240V))
+-   MODEL: FTPS-0002 REV:G {citation needed} (240V)
+-   MODEL: FTPS-0007 REV:B {citation needed} (120V) (are these after the
+    powercord recall?)
+-   MODEL: FTPS-0007 REV:D {citation needed} (120V) (are these after the
+    powercord recall?)
+
+The rated output currents are also noted on the sticker
+
+-   96W Max output power
+-   3V3 Standby 0.045A
+-   3V3 4.8A
+-   5V 13.2A
+-   12V 1.2A
+
+#### power cord recall
+
+According to an older Xbox-scene article, Foxlink powersupplies tend to
+have a bad powerplug connector on the back and where installed in 1.0
+and 1.1 xboxes.{citation needed}{citation needed}. Microsoft tried to
+resolve this by offering free replacement powercords and advising to
+trow out the old ones. [More to the power cord replacement than meets
+the
+eye?](https://web.archive.org/web/20120722175134/http://www.xbox-scene.com/xbox1data/sep/EEpAEAylAluZlwSlOJ.php).
+One would either recieve a thicker but very similiar powercord or an
+actual [GFI](https://simple.wikipedia.org/wiki/GFCI) (Ground Fault
+Circuit Interupter). a online form would then be used to determine wich
+type of cable you recieve by means of serial number.
+
+### Samsung "TUSCANNY
+
+Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main
+transformer is, wich also has the detail label on it)
+
+-   PSCD101301A
+
+### Minebea
+
+-   MS001A096EMJ
 
 Connector pinout
 ----------------
 
 ### Xbox 1.0 and 1.1
+
+TUSCANY
 
 | Pin    | Usage       |
 |--------|-------------|
