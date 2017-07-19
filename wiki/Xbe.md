@@ -152,6 +152,16 @@ The .rdata section contains the [kernel thunk table](/wiki/Kernel "wikilink").
 The ordinals in the table are to be resolved to the kernel's actual
 calling routine, when loaded.
 
+Xbox Alpha executable format
+----------------------------
+
+Currently no emulator tries to read Alpha executables and no public
+known tools can read them. Commonly they warn you that the Xbe magic
+isnt correct. This is due to the first few bytes in the retail
+executables read 'XBEH" while the Alpha executables only read 'XE'. The
+format is rumoured to look more like the windows PE structure. {citation
+needed}
+
 Resources and links
 -------------------
 
