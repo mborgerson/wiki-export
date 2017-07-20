@@ -155,12 +155,11 @@ calling routine, when loaded.
 Xbox Alpha executable format
 ----------------------------
 
-Currently no emulator tries to read Alpha executables and no public
-known tools can read them. Commonly they warn you that the Xbe magic
-isnt correct. This is due to the first few bytes in the retail
-executables read 'XBEH" while the Alpha executables only read 'XE'. The
-format is rumoured to look more like the windows PE structure. {citation
-needed}
+Binaries from early Xbox development (Alpha units), are using a
+different binary format. There are no known public tools that can read
+them. Known differences include that the first bytes of the file are
+'XE' instead the 'XBEH' from the final XBE format. The format is rumored
+to be more like the Windows PE format.
 
 Resources and links
 -------------------
