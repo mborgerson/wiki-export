@@ -19,8 +19,8 @@ bytes, containing the Bytes `0x40, 0x00` (64 as unsigned 16-bit
 integer). Because of that, all Xbox ADPCM files will have a block
 alignment of 36 (Mono) or 72 (Stereo) Bytes. As the decoder-setup in
 every block contains a predictor for each channel, there will be 65
-samples / channel output per block (65:36 compression ratio = 44.6%
-compression).
+samples / channel output per block (130:36 compression ratio = 72.3%
+compressed).
 
 Aside from what was mentioned, there are no known differences to IMA
 ADPCM. This is probably because the [APU](/wiki/APU "wikilink") VP will decode
