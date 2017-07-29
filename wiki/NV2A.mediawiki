@@ -19,4 +19,4 @@ The GPU is part of the NV20 family (Kelvin)[https://nouveau.freedesktop.org/wiki
 == Notes ==
 
 * [https://web-beta.archive.org/web/20030207073141/http://developer.nvidia.com:80/view.asp?IO=nv30_emulation NV30 information and emulator]
-** [http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf Backup of nv30specs: List of implemented GL extensions for NV10-NV30]
+** [https://web.archive.org/web/20070105072020/http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf Backup of nv30specs: List of implemented GL extensions for NV10-NV30]

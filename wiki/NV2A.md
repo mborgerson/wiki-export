@@ -48,5 +48,5 @@ Notes
 -   [NV30 information and
     emulator](https://web-beta.archive.org/web/20030207073141/http://developer.nvidia.com:80/view.asp?IO=nv30_emulation)
     -   [Backup of nv30specs: List of implemented GL extensions for
-        NV10-NV30](http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf)
+        NV10-NV30](https://web.archive.org/web/20070105072020/http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf)
 
