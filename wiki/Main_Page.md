@@ -87,5 +87,6 @@ Other
 -----
 
 -   [Network](/wiki/Network "wikilink")
+-   [Patents](/wiki/Patents "wikilink")
 -   Find random stuff in [Resources](/wiki/Resources "wikilink")
 

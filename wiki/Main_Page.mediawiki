@@ -66,4 +66,5 @@
 
 == Other ==
 * [[Network]]
+* [[Patents]]
 * Find random stuff in [[Resources]]
