@@ -46,7 +46,8 @@ Here a list of patents that might be related to the original Xbox:
 -   Filed 2006-07-03 by Micorsoft:
     <https://www.google.com/patents/US7804484> "Embedded text input "
     (probably a corrected version of US7116311, reffered to by the 360
-    chatpad)
+    chatpad, a picture of the “Baretta” chatpad,
+    <https://assemblergames.com/threads/xbox-chatpad-unreleased.54523/>
 -   Filed 2001-06-19 by Nvidia:
     <https://www.google.com/patents/US6870540> “System, method and
     computer program product for a programmable pixel processing model
