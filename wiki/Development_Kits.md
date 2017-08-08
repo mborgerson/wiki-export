@@ -95,7 +95,7 @@ network card is missing, insert a GD82559 based intel network card FCC:
 EJMNPDALBANY (worked for me)
 
 \[XNET\] NicExecuteActionCmdAndWait failed!WRN\[XNET\] EnetInitialize failed 0x801f0001  
-Network on wrong pci lane or no screen
+Network on wrong pci lane or no screen connected (VGA or S-video)
 
 -   Tested Slot 1 as good (real close to the GPU, would not recommend)
 -   Tested Slot 2 as not good
