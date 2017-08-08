@@ -68,6 +68,36 @@ VC820 sports any USB or Sound, it will not be used, the listed hardware
 boards are used instead, regardless of other hardware. (drivers arent in
 the kernel).
 
+#### Posible solutions on fixing a (franken) alpha
+
+**`IDEX:`` ``hard`` ``disk`` ``not`` ``configured`` ``(status=51).`**  
+`HDD too small`
+
+**`IDEX:`` ``hard`` ``disk`` ``not`` ``configured`` ``(status=ff).`**` `  
+`HDD on the wrong bus, put on primairy channel.`  
+`(maybe wrong place on the cable itself)`
+
+**`IDEX:`` ``hard`` ``disk`` ``not`` ``found`` ``(status=7f).`**  
+`HDD not connected`
+
+**`MP:`` ``No`` ``video`` ``output`` ``because`` ``you`` ``are`` ``using`` ``an`` ``older`` ``video`` ``card.`**  
+`Well, insert a Geforce3 card (NV20 based)`
+
+**`WRN[XNET]:`` ``EnetInitialize`` ``failed:`` ``0x801f0001`**  
+`Logo loads, with a halt when the sparkly bit is on the B of Xbox.`  
+`The network card is missing, insert a GD82559 based intel network card`  
+`FCC: EJMNPDALBANY (worked for me)`
+
+`'''[XNET]: NicExecuteActionCmdAndWait failed! `  
+`WRN[XNET]: EnetInitialize failed: 0x801f0001'''`  
+`Network on wrong pci lane or no screen`  
+`* Tested Slot 1 as good (real close to the GPU, would not recommend)`  
+`* Tested Slot 2 as not good`  
+`* Tested Slot 3 as not good (*** Assertion failed: hwres.ResourceData.Address[0].Type == CmResourceTypeMemory`  
+`* Tested Slot 4 as good`  
+`* Tested Slot 5 as not good`  
+`These might be wrong for official alphas or only for my particular motherboard`
+
 Debug
 -----
 
