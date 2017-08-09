@@ -24,7 +24,7 @@ acquired cheaply (~$10 USD ea. on 2017.04.30).
 
 | Port (From) | Plug (To) | Link                                                   |
 |-------------|-----------|--------------------------------------------------------|
-| Xbox        | USB-A     | [Amazon](https://www.amazon.com/gp/product/B0169BOTDC) |
+| Xbox        | USB-A     | [Amazon](https://www.amazon.com/gp/product/B000RT2868) |
 | USB-A       | Xbox      | [Amazon](https://www.amazon.com/gp/product/B00F52LQHO) |
 
 ### Wiring

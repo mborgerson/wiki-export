@@ -17,13 +17,12 @@ The Xbox input devices are USB devices. As such, you can connect a keyboard to t
 |-
 | Xbox
 | USB-A
-| [https://www.amazon.com/gp/product/B0169BOTDC Amazon]
+| [https://www.amazon.com/gp/product/B000RT2868 Amazon]
 |-
 | USB-A
 | Xbox
 | [https://www.amazon.com/gp/product/B00F52LQHO Amazon]
 |}
-
 
 === Wiring ===
 
