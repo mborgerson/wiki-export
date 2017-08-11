@@ -29,7 +29,15 @@ Alpha
 -----
 
 Contructed using “off the shelf” hardware, probably before retail
-release from Intel. consisting of:
+release from Intel. The alpha hardware allowed kernel debuging to be
+done over one of the rs232 ports and standard WinDBG software can make
+these messages and control work. This allows of carefull debugging of
+the running kernel and diagnose occuring faults or errors. At early boot
+of the recovery software an network ip adress is attempted to setup
+probbaly for another way of diagnosing and remote control using the
+availeble software like later xdk software.
+
+The Alpha is build with the following parts or software:
 
 ### Alpha I
 
