@@ -130,7 +130,13 @@ DVT3/DVT4
 
 Harddisk is said to be locked by default with a 16size byte 0x00 key,
 but allowing to run with an unlocked harddrive of any size(larger then
-20GB for minimal OS). All functions a debug with the addition of:
+20GB for minimal OS).DVT3 seems to have the back USB port to be
+uncovered and a slightly more glossy or shinier jewel on the top of the
+case. According to some sources, the DVT3 cannot be updated to further
+kernels/dashboards than 3911, the lowest/oldest being 3823.1(Borman said
+this?)
+
+All functions a debug with the addition of:
 
 -   [ DVD emulation](/wiki/DVD_Emulator "wikilink")
 -   [ Kernel\_Debug](/wiki/Kernel_Debugging "wikilink") over a dedicated [ IO
