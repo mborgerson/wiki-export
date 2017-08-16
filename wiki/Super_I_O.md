@@ -6,8 +6,8 @@ layout: wiki
 
 The Super I/O board is a feature of [Development
 Kits](/wiki/Development_Kits "wikilink"). The board is build around a SMSC
-LPC47M157 chip. A datasheet for a close relative can be found at
-<http://pdf-file.ic37.com/pdf1/SMSC/LPC47M140_datasheet_138298/225601/LPC47M140_datasheet.pdf>
+LPC47M157 chip
+([Datasheet](https://drive.google.com/uc?export=download&id=0BxOesalXbGtOanoxenlqQUh6Y0k))
 
 The board provides the following ports:
 
