@@ -62,8 +62,85 @@ Maybe someday it will look better, but for now here are the listings of wich pin
 ! Note
 |-
 |U1 pin 18 
-|C17(up) and GND
+|C17(up) and ?
+|(not finished)
+|-
+|U1 pin 6,7 
+|C17(down) and GND
+|Both U1 pins yes)
+|-
+
+|}
+
+
+{| class="wikitable"
+!| Pin
+! to pin
+! Note
+|-
+|J9 pin 1 
 |
+|(not finished)
+|-
+|J9 pin 2
+|GND
+|
+|-
+|J9 pin 3 
+|
+|(not finished)
+|-
+|J9 pin 4 
+|NC
+|no pin
+|-
+|J9 pin 5 
+|
+|RST(not finished)
+|-
+|J9 pin 6
+|C12(e),C13(S),C15(S),U3 p11.
+|5V(not finished)
+|-
+|J9 pin 7 
+|
+|LAD3(not finished)
+|-
+|J9 pin 8
+|
+|LAD2(not finished)
+|-
+|J9 pin 9 
+|3.3V
+|(not finished)
+|-
+|J9 pin 10 
+|
+|LAD1(not finished)
+|-
+|J9 pin 11
+|
+|LAD0(not finished)
+|-
+|J9 pin 12 
+|GND
+|
+|-
+|J9 pin 13 
+|
+|SCL(not finished)
+|-
+|J9 pin 14 
+|
+|SDA(not finished)
+|-
+|J9 pin 15 
+|3.3V
+|(not finished)
+|-
+|J9 pin 16 
+|
+|(not finished)
 |}
 
 == Related links ==
