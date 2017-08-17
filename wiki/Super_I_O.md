@@ -30,7 +30,7 @@ Schematic
 ---------
 
 Its a four layer board, layers 2 and 3 are filled on the entire board,
-probablu ground and power planes. north, or up in the next tables is up
+probably ground and power planes. north, or up in the next tables is up
 as written the layer numbers and silkscreen common direction. The
 folowing main parts are populated on the board:
 
@@ -45,33 +45,44 @@ folowing main parts are populated on the board:
 | 7       | C10,C12,C13,C16,C17,C36,C37                                          | Bigger, probably NOT all the same caps              |
 | 17      | C1,C2,C9,C15,C1?(8?),C21,C22,C23,C24,C25,C26,C28,C31,C32,C33,C34,C35 | Smaller, also, asuming not all the same             |
 
-Maybe someday it will look better, but for now here are the listings of
-wich pin goes where:
+The connections in the following tables are checked with the continuity
+test on a VOM(Multimeter). but for now here are the listings of wich pin
+goes where:
+
+### U1 SMsC LPC ic
 
 | | Pin      | to pin            | Note              |
 |------------|-------------------|-------------------|
 | U1 pin 18  | C17(up) and ?     | (not finished)    |
 | U1 pin 6,7 | C17(down) and GND | Both U1 pins yes) |
-||
+| U1 p24     | J9 pin 3          | LFrame            |
+| U1 p29     | J9 pin 1          | LClk              |
+| U1 p30     | J9 pin 16         | (unkown function) |
+| U1 P84     | U3 ???            | RX                |
+| U1 P85     | U3 ???            | TX                |
 
-| | Pin     | to pin                       | Note               |
-|-----------|------------------------------|--------------------|
-| J9 pin 1  |                              | (not finished)     |
-| J9 pin 2  | GND                          |                    |
-| J9 pin 3  |                              | (not finished)     |
-| J9 pin 4  | NC                           | no pin             |
-| J9 pin 5  |                              | RST(not finished)  |
-| J9 pin 6  | C12(e),C13(S),C15(S),U3 p11. | 5V(not finished)   |
-| J9 pin 7  |                              | LAD3(not finished) |
-| J9 pin 8  |                              | LAD2(not finished) |
-| J9 pin 9  | 3.3V                         | (not finished)     |
-| J9 pin 10 |                              | LAD1(not finished) |
-| J9 pin 11 |                              | LAD0(not finished) |
-| J9 pin 12 | GND                          |                    |
-| J9 pin 13 |                              | SCL(not finished)  |
-| J9 pin 14 |                              | SDA(not finished)  |
-| J9 pin 15 | 3.3V                         | (not finished)     |
-| J9 pin 16 |                              | (not finished)     |
+### J9 LPC header
+
+Not finished
+
+| | Pin     | to pin                       | Note              |
+|-----------|------------------------------|-------------------|
+| J9 pin 1  | U1 p29                       |                   |
+| J9 pin 2  | GND                          |                   |
+| J9 pin 3  | U1 p24                       | LFrame            |
+| J9 pin 4  | NC                           | no pin            |
+| J9 pin 5  |                              | RST               |
+| J9 pin 6  | C12(e),C13(S),C15(S),U3 p11. | 5V                |
+| J9 pin 7  |                              | LAD3              |
+| J9 pin 8  |                              | LAD2              |
+| J9 pin 9  | 3.3V                         |                   |
+| J9 pin 10 |                              | LAD1              |
+| J9 pin 11 |                              | LAD0              |
+| J9 pin 12 | GND                          |                   |
+| J9 pin 13 | U1 p104                      | SCL               |
+| J9 pin 14 | U1 p103                      | SDA               |
+| J9 pin 15 | 3.3V                         |                   |
+| J9 pin 16 | U1 p30                       | (unkown function) |
 
 Related links
 -------------
