@@ -19,3 +19,10 @@ was stored on. For development it wasnt the fastest way to get an
 executable to the xbox, and for homebrew its pretty useless.
 
 [Picture](http://codeasm.com/xbox/images/dvt4/SL734877.JPG)
+
+Resources
+---------
+
+-   [Images (CC0 License) by Codeasm with detailed shots of the DVD
+    emulation board](http://imgur.com/a/vJi9E)
+
