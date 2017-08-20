@@ -39,7 +39,8 @@ Hardware
     -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
     -   [Xbox Memory Unit](/wiki/Xbox_Memory_Unit "wikilink")
     -   [Xbox Live Communicator](/wiki/Xbox_Live_Communicator "wikilink")
-    -   [DVD-IR Internals](/wiki/DVD-IR_Internals "wikilink")
+    -   [Xbox DVD Movie Playback
+        Kit](/wiki/Xbox_DVD_Movie_Playback_Kit "wikilink")
 -   [Power Supply](/wiki/Power_Supply "wikilink")
 
 <!-- -->
