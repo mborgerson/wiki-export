@@ -4,35 +4,24 @@ permalink: wiki/Xbox_DVD_Movie_Playback_Kit/
 layout: wiki
 ---
 
-by *Rob Reilink*, 3 Mar 2003
-
 Introduction
 ------------
 
-The DVD-IR remote receiver is a part of the DVD kit which allows you to
-view DVDs on your Xbox. It comes together with a remote controller.
-Although it may seem just a simple microcontroller device with a
-receiver module, there is something more inside which could make it even
-more interesting.
+The DVD Movie Playback Kit contains 2 parts: A remote and a dongle for
+the Xbox.
 
-Pictures
---------
+Remote Control
+--------------
 
-Ok, let's start with the pictures from the internals:
+Dongle
+------
 
-**Missing image**  
-*Dvdirfront.jpg*  
-Image:Dvdirfront.jpg  
-  
-**Missing image**  
-*Dvdirback.jpg*  
-Image:Dvdirback.jpg  
-  
+The dongle contains a ROM with an XBE which provides some functions for
+the DVD playback application. However, the XBE is not standalone.
+Additionally the Dongle contains an IR receiver to receive commands from
+the Remote control
 
-IC's
-----
-
-So, what is inside and what does it do?
+### Components
 
 -   U1 92163
     [STMicroelectronics](https://web.archive.org/web/20100617020513/http://www.st.com/)
@@ -85,14 +74,17 @@ This 20-pin standard logic IC is an octal D-flipflop, which splits the
 databus from the 92163 to 8 adress bits. This technique is very well
 known from the 8051 and other microcontrollers.
 
-Hacking!
---------
+### Hacking
 
 As the dashboard presumably downloads the code from the ROM into the
 memory of the Xbox, this could be a hardware hack requiring no hardware
-modifications. It should be noted though, that the ROM is probably
-scrambled. Also, the microcontroller could encrypt the data even more.
-As the mask ROM is not a proprietary device, it is known not to contain
-any encryption hardware. On the other hand is it quite reasonable to
-assume Microsoft also signed this piece of code, and the dashboard might
-refuse to run it if it is not signed.
+modifications. The XBE loader for the DVD image is different from the
+usual XBE loader. However, the XBE is still signed and checked for
+security.
+
+References
+----------
+
+-   [Tool to dump DVD Dongle
+    ROM](https://github.com/JayFoxRox/xbox-tools/tree/master/dump-dvd-kit)
+
