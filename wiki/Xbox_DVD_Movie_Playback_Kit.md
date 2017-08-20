@@ -21,6 +21,14 @@ the DVD playback application. However, the XBE is not standalone.
 Additionally the Dongle contains an IR receiver to receive commands from
 the Remote control
 
+### Known versions
+
+| Part No.  | Manufactured in | Version | DVD Region | ROM SHA1                                 |
+|-----------|-----------------|---------|------------|------------------------------------------|
+| X08-25402 | Indonesia       | 1.1     | 2          | 70d4b5f8e073b05610fba9e9617d7356196b61ff |
+
+### USB Protocol
+
 ### Components
 
 -   U1 92163

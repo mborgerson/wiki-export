@@ -9,6 +9,18 @@ The DVD Movie Playback Kit contains 2 parts: A remote and a dongle for the Xbox.
 The dongle contains a ROM with an XBE which provides some functions for the DVD playback application. However, the XBE is not standalone.
 Additionally the Dongle contains an IR receiver to receive commands from the Remote control
 
+=== Known versions ===
+
+{| class="wikitable"
+! Part No.  !! Manufactured in !! Version !! DVD Region !! ROM SHA1
+|-
+| X08-25402 || Indonesia       || 1.1     || 2          || 70d4b5f8e073b05610fba9e9617d7356196b61ff
+|}
+
+=== USB Protocol ===
+
+{{FIXME|reason=Partially documented in JayFoxRox/xbox-tools on github}}
+
 === Components ===
 
 * U1 92163 [https://web.archive.org/web/20100617020513/http://www.st.com/ STMicroelectronics] &lt;[https://web.archive.org/web/20100617020513/http://www.st.com/stonline/books/pdf/docs/5521.pdf Datasheet]&gt;
