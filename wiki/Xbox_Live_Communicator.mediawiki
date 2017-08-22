@@ -1,4 +1,5 @@
-The Xbox Live Communicator is the headset which is used for Xbox Live.
+The Xbox Live Communicator is the headset which is used for Xbox Live.  
+[[File:Xbox_Live_Communicator.png|thumb|200px|Headset / Xbox Live Communicator]]
 
 == Protocol ==
 
