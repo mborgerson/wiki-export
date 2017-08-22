@@ -1,0 +1,6 @@
+xtf is a font file format used in the [[Dashboard]].
+It became famous for being [[Exploits#Font hacks|exploited]].
+
+=== File format ===
+
+{{FIXME}}
