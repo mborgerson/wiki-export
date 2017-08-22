@@ -1030,5 +1030,5 @@ From http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattali
 |
 |}
 
-=== Related links ===
+== Related links ==
 [https://github.com/xqemu/xqemu/blob/xbox/hw/xbox/xid.c XID emulation in XQEMU]
