@@ -544,4 +544,7 @@ From
 | Gear4                  | 20             | 0x0F |       |
 | Gear5                  | 20             | 0xF0 |       |
 
+### Related links
 
+[XID emulation in
+XQEMU](https://github.com/xqemu/xqemu/blob/xbox/hw/xbox/xid.c)
