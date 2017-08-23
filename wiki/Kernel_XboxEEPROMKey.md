@@ -16,3 +16,6 @@ the key is not re-initialized, this means running the first
 non-manufacturing XBE (such as a game or
 [Dashboard](/wiki/Dashboard "wikilink")), will make the key unretrievable
 until a reboot.
+
+The Chihiro EEPROM key is
+`7B 35 A8 B7 27 ED 43 7A A0 BA FB 8F A4 38 61 80`

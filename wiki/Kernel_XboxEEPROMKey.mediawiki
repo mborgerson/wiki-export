@@ -5,3 +5,5 @@ It is only initialized on cold-boot.
 
 If an XBE is loaded which is not allowed to run in the manufacturing region, the Microsoft Kernels will set the EEPROM key to all zeros.
 As the key is not re-initialized, this means running the first non-manufacturing XBE (such as a game or [[Dashboard]]{{FIXME|reason=confirm the dash is not running in manufacturing}}), will make the key unretrievable until a reboot.
+
+The Chihiro EEPROM key is <code>7B 35 A8 B7 27 ED 43 7A A0 BA FB 8F A4 38 61 80</code>
