@@ -6,10 +6,8 @@ layout: wiki
 
 The Xbox EEPROM is a 256 byte non-volatile storage device which contains
 device-specific information. It is connected via I²C and located on
-address 0x54.
-
-The Chihiro EEPROM key is
-`7B 35 A8 B7 27 ED 43 7A A0 BA FB 8F A4 38 61 80`
+address 0x54. Parts of the EEPROM are encrypted using
+[Kernel/XboxEEPROMKey](/wiki/Kernel/XboxEEPROMKey "wikilink").
 
 Chip Models
 -----------
