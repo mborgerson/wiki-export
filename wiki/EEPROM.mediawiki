@@ -237,7 +237,7 @@ This DWORD is encrypted. It corresponds to the region code in the XBE header:
 | style="text-align: center;" | \
 | style="text-align: center;" | \
 | style="text-align: center;" | _
-| Factory Number
+| Factory Number (02=Mexico, 03=Hungary, 05=China, 06=Taiwan)
 |-
 | style="text-align: center;" | |
 | style="text-align: center;" | 
