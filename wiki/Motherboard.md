@@ -9,7 +9,8 @@ layout: wiki
 Mainboard
 ---------
 
-The following table is based on a Xbox 1.0 retail board
+The following table is based on a Xbox 1.0 retail board and credits go
+to PiXEL8
 
 | | Device | Loc. | Part Number              | Manufacture                | Description                                                   |
 |----------|------|--------------------------|----------------------------|---------------------------------------------------------------|
@@ -36,7 +37,7 @@ The following table is based on a Xbox 1.0 retail board
 | U7D1     | D-7  | M29F080A                 | ST Microelectronics        | 8 MBit (1MB X8, Uniform block) single supply flash memory     |
 | U7P1     | P-7  | <empty>                  | <n/a>                      | <n/a>                                                         |
 
-Only the 1.0 and 1.2(?) had a USB daugtherboard
+Only the 1.0 and 1.1 had a USB daugtherboard
 
 | | Device | Part Number | Manufacture       | Description                                           |
 |----------|-------------|-------------------|-------------------------------------------------------|
