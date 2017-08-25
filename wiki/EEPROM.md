@@ -103,14 +103,13 @@ The Serial Number
 -----------------
 
          1166356 20903
-         |\____/ |||||   
-         |     |   |||||   
-         |     |   |||||___ factory number (2 digits - 02 = Mexico, 03=Hungary, 05=China, 06=Taiwan)
-         |     |   |||
-         |     |   |||____ week of year (starting Mondays) (2 digits)
-         |     |   |______ last digit of year
-         |     |
-         |     |_____________ number of Xbox within week and factory
+         ||    | |||||__
+         ||    | ||||___ factory number
+         ||    | |||____
+         ||    | ||_____ week of year (starting Mondays)
+         ||    | |______ last digit of year
+         ||    |________
+         ||_____________ number of Xbox within week and factory
          |______________ production line within factory 
        
 
