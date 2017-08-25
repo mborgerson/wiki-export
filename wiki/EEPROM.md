@@ -25,14 +25,14 @@ Contents
 | 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                      |
 | 0x1C  | 0x2B | RC4 Encrypted HDD key                                                            |
 | 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)          |
-| 0x30  | 0x33 | Checksum of next 44 bytes                                                        |
+| 0x30  | 0x33 | Checksum2 - Checksum of next 44 bytes                                            |
 | 0x34  | 0x3F | Xbox serial number                                                               |
 | 0x40  | 0x45 | Ethernet MAC address                                                             |
 | 0x46  | 0x47 | Unknown Padding ?                                                                |
 | 0x48  | 0x57 | Online Key ?                                                                     |
 | 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC, 0x00400200 = NTSC-J, 0x00800300 = PAL  |
 | 0x5C  | 0x5F | Unknown Padding ?                                                                |
-| 0x60  | 0x63 | other Checksum of next                                                           |
+| 0x60  | 0x63 | Checksum3 - Checksum of the next 156 bytes                                       |
 | 0x64  | 0x67 | Zone Bias?                                                                       |
 | 0x68  | 0x6B | Standard timezone                                                                |
 | 0x6C  | 0x6F | Daylight timezone                                                                |

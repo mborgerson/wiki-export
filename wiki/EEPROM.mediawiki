@@ -36,7 +36,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x30
 | 0x33
-| Checksum of next 44 bytes
+| Checksum2 - Checksum of next 44 bytes
 |-
 | 0x34
 | 0x3F
@@ -64,7 +64,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x60
 | 0x63
-| other Checksum of next
+| Checksum3 - Checksum of the next 156 bytes 
 |-
 | 0x64
 | 0x67
