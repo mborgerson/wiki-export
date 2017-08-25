@@ -142,7 +142,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 | 0xB7
 | XBOX Live Subnet Mask..
 |-
-| 0xA8
+| 0xB8
 | 0xBB
 | Other XBLive settings ?
 |-

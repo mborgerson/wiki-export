@@ -52,7 +52,7 @@ Contents
 | 0xAC  | 0xAF | XBOX Live DNS Server..                                                  |
 | 0xB0  | 0xB3 | XBOX Live Gateway Address..                                             |
 | 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                 |
-| 0xA8  | 0xBB | Other XBLive settings ?                                                 |
+| 0xB8  | 0xBB | Other XBLive settings ?                                                 |
 | 0xBC  | 0xBF | DVD Playback Kit Zone                                                   |
 | 0xC0  | 0xFF | Unknown Codes / History ?                                               |
 ||
