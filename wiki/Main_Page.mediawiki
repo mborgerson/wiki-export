@@ -15,7 +15,7 @@
 ** [[NV2A/Pixel Combiner]]
 ** [[NV2A/Surface Formats]]
 * [[Memory]]
-* [[Flash]]
+* [[Flash ROM]]
 * [[MCPX]]
 ** [[APU]]
 ** [[ACI]]

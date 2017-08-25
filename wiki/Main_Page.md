@@ -23,7 +23,7 @@ Hardware
     -   [NV2A/Pixel Combiner](/wiki/NV2A/Pixel_Combiner "wikilink")
     -   [NV2A/Surface Formats](/wiki/NV2A/Surface_Formats "wikilink")
 -   [Memory](/wiki/Memory "wikilink")
--   [Flash](/wiki/Flash "wikilink")
+-   [Flash ROM](/wiki/Flash_ROM "wikilink")
 -   [MCPX](/wiki/MCPX "wikilink")
     -   [APU](/wiki/APU "wikilink")
     -   [ACI](/wiki/ACI "wikilink")
