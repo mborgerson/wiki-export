@@ -74,7 +74,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 | 0x6B
 | Standard timezone
 |-
-| 0x5C
+| 0x6C
 | 0x6F
 | Daylight timezone
 |-

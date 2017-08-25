@@ -35,7 +35,7 @@ Contents
 | 0x60  | 0x63 | other Checksum of next                                                  |
 | 0x64  | 0x67 | Zone Bias?                                                              |
 | 0x68  | 0x6B | Standard timezone                                                       |
-| 0x5C  | 0x6F | Daylight timezone                                                       |
+| 0x6C  | 0x6F | Daylight timezone                                                       |
 | 0x70  | 0x77 | Unknown Padding ?                                                       |
 | 0x78  | 0x7B | 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                  |
 | 0x7C  | 0x7F | 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                  |
