@@ -188,8 +188,7 @@ Southbridge don't seem to be connected.
 NV2A GeForce3 Integrated GPU
 ----------------------------
 
-The Xbox graphics hardware is VGA compatible and very similar to
-existing nVidia graphics cards.
+See [GPU](/wiki/GPU "wikilink")
 
 Further Information
 ===================

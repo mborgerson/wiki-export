@@ -171,9 +171,7 @@ used by the Xbox system software. It is probably there, because the nForce has a
 
 == NV2A GeForce3 Integrated GPU ==
 
-The Xbox graphics hardware is VGA compatible and very similar to
-existing nVidia graphics cards.
-
+See [[GPU]]
 
 = Further Information =
 
