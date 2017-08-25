@@ -112,8 +112,7 @@ are the same on both versions, i.e. they have the same DevID.
 
 == Intel Pentium III CPU ==
 
-The CPU is a standard Pentium III Coppermine mobile at 733 MHz.  This CPU has been found to be a modified Pentium III, as it has many of the features a Celeron lacks.  Therefore, it can be classified as a Pentium III with a smaller cache. (Regular has 256kb or more, XBox has 128kb)
-
+See [[CPU]]
 
 == Flash ROM ==
 
