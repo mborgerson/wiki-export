@@ -26,7 +26,7 @@ Contents
 | 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                             |
 | 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)                                           |
 | 0x30  | 0x33 | Checksum2 - Checksum of next 44 bytes                                                                             |
-| 0x34  | 0x3F | Xbox serial number                                                                                                |
+| 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                          |
 | 0x40  | 0x45 | Ethernet MAC address                                                                                              |
 | 0x46  | 0x47 | Unknown Padding ?                                                                                                 |
 | 0x48  | 0x57 | Online Key ?                                                                                                      |
@@ -34,13 +34,13 @@ Contents
 | 0x5C  | 0x5F | Unknown Padding ?                                                                                                 |
 | 0x60  | 0x63 | Checksum3 - Checksum of the next 156 bytes                                                                        |
 | 0x64  | 0x67 | Zone Bias - Offset in \# minutes from GMT (0x0000168 = 360 = 6hr for GMT-06 Central) subtract value from GMT time |
-| 0x68  | 0x6B | Standard timezone                                                                                                 |
-| 0x6C  | 0x6F | Daylight timezone                                                                                                 |
+| 0x68  | 0x6B | Standard timezone - NULL terminated length 3 string (e.g., CST\\0)                                                |
+| 0x6C  | 0x6F | Daylight timezone - NULL terminated length 3 string (e.g., CDT\\0)                                                |
 | 0x70  | 0x77 | Unknown Padding ?                                                                                                 |
 | 0x78  | 0x7B | if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time             |
 | 0x7C  | 0x7F | if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time     |
 | 0x80  | 0x87 | Unknown Padding ?                                                                                                 |
-| 0x88  | 0x8B | Standard Timezone Bias ?                                                                                          |
+| 0x88  | 0x8B | Standard Timezone Bias ? (0x00000000)                                                                             |
 | 0x8C  | 0x8F | Daylight Savings Time Bias; if DST = Yes, 0xFFFFFFC4 (-60); if DST = No, 0x00000000 (0).                          |
 | 0x90  | 0x93 | Language ID                                                                                                       |
 | 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A=Normal, 0xB0=Widescreen and 0xB4=Letterbox                                  |
