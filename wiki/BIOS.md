@@ -6,16 +6,17 @@ layout: wiki
 
 The **BIOS** (an acronym for **Basic Input/Output System** and also
 known as the **BIOS ROM** or **Xbox ROM**) is a firmware image that is
-mapped to the top 16MiB of the CPU's physical address space
-(0xFF000000-0xFFFFFFFF). Like the standard [PC
+mapped to the top 16MiB of the CPU's physical address space (0xFF000000
+- 0xFFFFFFFF). Like the standard [PC
 BIOS](https://en.wikipedia.org/wiki/BIOS), it is responsible for
 initializing the Xbox hardware and booting the system. Unlike the PC
 BIOS, however, the Xbox BIOS image also contains the kernel in a
 compressed and encrypted form.
 
-On a standard Xbox, the BIOS image is stored in the
-[Flash](/wiki/Flash "wikilink"). The BIOS image is actually 256KiB, duplicated
-4 times to fill the 1MiB ROM chip. You can verify this by running:
+On a standard Xbox, the BIOS image is stored in the [Flash
+ROM](/wiki/Flash_ROM "wikilink"). The BIOS image is actually 256 kiB,
+duplicated 4 times to fill the 1 MiB ROM chip. You can verify this by
+running:
 
     $ split -n 4 xbox.bin 
     $ md5sum xa*
@@ -25,9 +26,9 @@ On a standard Xbox, the BIOS image is stored in the
     542c62cb976a4993c8c5027dff9638ce  xad
 
 You'll notice it is the same file repeated 4 times. That explains how
-some BIOS chips are 1MB and some are 256KiB. The next thing is that the
-BIOS is repeated from 0xFF000000 until it fills the rest of memory. In
-other words, that 256KiB of data is repeated 64 times.
+some BIOS chips are 1 MiB and some are 256 kiB. The next thing is that
+the BIOS is repeated from 0xFF000000 until it fills the rest of memory.
+In other words, that 256 kiB of data is repeated 64 times.
 
 Components
 ----------
