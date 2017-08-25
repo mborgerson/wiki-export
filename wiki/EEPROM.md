@@ -19,42 +19,42 @@ Chip Models
 Contents
 --------
 
-| Start | End  | Notes                                                                           |
-|-------|------|---------------------------------------------------------------------------------|
-| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                 |
-| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                     |
-| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                           |
-| 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)         |
-| 0x30  | 0x33 | Checksum of next 44 bytes                                                       |
-| 0x34  | 0x3F | Xbox serial number                                                              |
-| 0x40  | 0x45 | Ethernet MAC address                                                            |
-| 0x46  | 0x47 | Unknown Padding ?                                                               |
-| 0x48  | 0x57 | Online Key ?                                                                    |
-| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC, 0x00400200 = NTSC-J, 0x00800300 = PAL |
-| 0x5C  | 0x5F | Unknown Padding ?                                                               |
-| 0x60  | 0x63 | other Checksum of next                                                          |
-| 0x64  | 0x67 | Zone Bias?                                                                      |
-| 0x68  | 0x6B | Standard timezone                                                               |
-| 0x6C  | 0x6F | Daylight timezone                                                               |
-| 0x70  | 0x77 | Unknown Padding ?                                                               |
-| 0x78  | 0x7B | 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                          |
-| 0x7C  | 0x7F | 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                          |
-| 0x80  | 0x87 | Unknown Padding ?                                                               |
-| 0x88  | 0x8B | Standard Bias?                                                                  |
-| 0x8C  | 0x8F | Daylight Bias?                                                                  |
-| 0x90  | 0x93 | Language ID                                                                     |
-| 0x94  | 0x97 | Video Settings                                                                  |
-| 0x98  | 0x9B | Audio Settings                                                                  |
-| 0x9C  | 0x9F | 0=MAX rating                                                                    |
-| 0xA0  | 0xA3 | 7=X, 8=Y, B=LTrigger, C=RTrigger                                                |
-| 0xA4  | 0xA7 | 0=Max rating                                                                    |
-| 0xA8  | 0xAB | XBOX Live IP Address..                                                          |
-| 0xAC  | 0xAF | XBOX Live DNS Server..                                                          |
-| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                     |
-| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                         |
-| 0xB8  | 0xBB | Other XBLive settings ?                                                         |
-| 0xBC  | 0xBF | DVD Playback Kit Zone                                                           |
-| 0xC0  | 0xFF | Unknown Codes / History ?                                                       |
+| Start | End  | Notes                                                                            |
+|-------|------|----------------------------------------------------------------------------------|
+| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                  |
+| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                      |
+| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                            |
+| 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)          |
+| 0x30  | 0x33 | Checksum of next 44 bytes                                                        |
+| 0x34  | 0x3F | Xbox serial number                                                               |
+| 0x40  | 0x45 | Ethernet MAC address                                                             |
+| 0x46  | 0x47 | Unknown Padding ?                                                                |
+| 0x48  | 0x57 | Online Key ?                                                                     |
+| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC, 0x00400200 = NTSC-J, 0x00800300 = PAL  |
+| 0x5C  | 0x5F | Unknown Padding ?                                                                |
+| 0x60  | 0x63 | other Checksum of next                                                           |
+| 0x64  | 0x67 | Zone Bias?                                                                       |
+| 0x68  | 0x6B | Standard timezone                                                                |
+| 0x6C  | 0x6F | Daylight timezone                                                                |
+| 0x70  | 0x77 | Unknown Padding ?                                                                |
+| 0x78  | 0x7B | 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                           |
+| 0x7C  | 0x7F | 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                           |
+| 0x80  | 0x87 | Unknown Padding ?                                                                |
+| 0x88  | 0x8B | Standard Bias?                                                                   |
+| 0x8C  | 0x8F | Daylight Bias?                                                                   |
+| 0x90  | 0x93 | Language ID                                                                      |
+| 0x94  | 0x97 | Video Settings                                                                   |
+| 0x98  | 0x9B | Audio Settings                                                                   |
+| 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                            |
+| 0xA0  | 0xA3 | Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger |
+| 0xA4  | 0xA7 | Parental Control Movies (0=Max rating)                                           |
+| 0xA8  | 0xAB | XBOX Live IP Address..                                                           |
+| 0xAC  | 0xAF | XBOX Live DNS Server..                                                           |
+| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                      |
+| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                          |
+| 0xB8  | 0xBB | Other XBLive settings ?                                                          |
+| 0xBC  | 0xBF | DVD Playback Kit Zone                                                            |
+| 0xC0  | 0xFF | Unknown Codes / History ?                                                        |
 ||
 
 Note: Info in above table comes from XKUtils

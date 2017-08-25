@@ -116,15 +116,15 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x9C
 | 0x9F
-| 0=MAX rating
+| Parental Control Games (0=MAX rating)
 |-
 | 0xA0
 | 0xA3
-| 7=X, 8=Y, B=LTrigger, C=RTrigger
+| Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger
 |-
 | 0xA4
 | 0xA7
-| 0=Max rating
+| Parental Control Movies (0=Max rating)
 |-
 | 0xA8
 | 0xAB
