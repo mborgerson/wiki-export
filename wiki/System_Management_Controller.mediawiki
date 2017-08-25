@@ -1,5 +1,9 @@
 The System Management Controller (SMC) is a PIC16LC63A-04/SO microcontroller which handles a variety of tasks on the Xbox.
 This includes rebooting the system, returning the connected kind of video cable, the DVD tray state, controlling the fan, LED control and sensing temperature.
+It is also the hardware which is connected to the Power and Eject buttons.
+The PIC is running at 20 MHz with its own ROM, RAM and I/O lines.
+
+The PIC is always running, even if the Xbox is turned off. When the power cable is unplugged, it gets its energy from a capacitor for some hours. 
 
 It is connected via I²C and located on address 0x10.
 
