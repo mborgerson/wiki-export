@@ -10,10 +10,10 @@ games took advantage of it. The debug Xbox and the Chihiro both
 contained 128MB Memory.
 
 The memory was shared between the CPU and GPU. On the retail Xbox, the
-[Flash](/wiki/Flash "wikilink") and [MCPX ROM](/wiki/MCPX_ROM "wikilink") are also
-mapped to memory at the top 16 MiB and the top 512 Bytes respectively.
-On Debug Xboxs and Chihiro, only the Flash is mapped as they don't
-contain an MCPX ROM.
+[Flash ROM](/wiki/Flash_ROM "wikilink") and [MCPX ROM](/wiki/MCPX_ROM "wikilink")
+are also mapped to memory at the top 16 MiB and the top 512 Bytes
+respectively. On Debug Xboxs and Chihiro, only the Flash is mapped as
+they don't contain an MCPX ROM.
 
 | Memory Type                            | Retail Xbox Range       | Debug/Chihiro Range     |
 |----------------------------------------|-------------------------|-------------------------|
