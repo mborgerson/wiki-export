@@ -9,5 +9,8 @@ The Flash is a 256 kiB or 1 MiB non-volatile
 connected to the [MCPX](/wiki/MCPX "wikilink") via the
 <abbr title="Low Pin Count">LPC</abbr> bus.
 
+The Flash ROM is mapped at 0xFFF00000 (if the ROM is 1 MiB; 0xFFFC0000,
+if the ROM is 256 kiB) into the but the Xbox kernel.
+
 For the content of the Microsoft flash images see
 [BIOS](/wiki/BIOS "wikilink").
