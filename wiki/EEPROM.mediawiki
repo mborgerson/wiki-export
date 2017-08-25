@@ -108,7 +108,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x94
 | 0x97
-| Video Settings
+| Video Settings Offset 0x96 value 0x4A=Normal, 0xB0=Widescreen and 0xB4=Letterbox
 |-
 | 0x98
 | 0x9B

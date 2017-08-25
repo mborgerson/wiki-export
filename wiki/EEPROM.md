@@ -43,7 +43,7 @@ Contents
 | 0x88  | 0x8B | Standard Timezone Bias - Offset in \# minutes from GMT                                                        |
 | 0x8C  | 0x8F | Daylight Savings Time Bias; if DST = Yes, 0xFFFFFFC4 (-60); if DST = No, 0x00000000 (0).                      |
 | 0x90  | 0x93 | Language ID                                                                                                   |
-| 0x94  | 0x97 | Video Settings                                                                                                |
+| 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A=Normal, 0xB0=Widescreen and 0xB4=Letterbox                              |
 | 0x98  | 0x9B | Audio Settings                                                                                                |
 | 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                                                         |
 | 0xA0  | 0xA3 | Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger                              |
