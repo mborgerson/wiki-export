@@ -84,11 +84,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x78
 | 0x7B
-| 10-05-00-02 (Month-Day-DayOfWeek-Hour)
+| if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time
 |-
 | 0x7C
 | 0x7F
-| 04-01-00-02 (Month-Day-DayOfWeek-Hour)
+| if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time
 |-
 | 0x80
 | 0x87
@@ -96,11 +96,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x88
 | 0x8B
-| Standard Bias?
+| Standard Timezone Bias - Offset in # minutes from GMT
 |-
 | 0x8C
 | 0x8F
-| Daylight Bias?
+| Daylight Savings Time Bias; if DST = Yes, 0xFFFFFFC4 (-60); if DST = No, 0x00000000 (0).
 |-
 | 0x90
 | 0x93
