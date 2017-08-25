@@ -152,18 +152,8 @@ compatible.
 PIC16LC
 -------
 
-The PIC16LC is a small 8 bit processor running at 20 MHz with its own
-ROM, RAM and I/O lines. It controls:
-
--   Power button
--   Eject button
--   Power/error LED
--   DVD tray status (through extra pins to DVD drive)
--   Video cable type (3 pins)
-
-The PIC is always running, even if the Xbox is turned off. When the
-power cable is unplugged, it gets its energy from a capacitor for some
-hours.
+See [System Management
+Controller](/wiki/System_Management_Controller "wikilink")
 
 Video Encoder
 -------------
