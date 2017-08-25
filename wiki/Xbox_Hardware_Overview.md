@@ -179,8 +179,7 @@ measurement.
 Serial EEPROM
 -------------
 
-The Serial EEPROM holds some settings, such as time zone, language, IP
-address etc., as well as the hard disk key and the Xbox serial number.
+See [EEPROM](/wiki/EEPROM "wikilink")
 
 OHCI USB Controller, IDE Controller
 -----------------------------------
