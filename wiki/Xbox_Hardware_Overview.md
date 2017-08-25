@@ -125,8 +125,7 @@ III with a smaller cache. (Regular has 256kb or more, XBox has 128kb)
 Flash ROM
 ---------
 
-The Flash ROM is mapped at 0xFFF00000 (if the ROM is 1 MB; 0xFFFC0000,
-if the ROM is 256 KB) into the but the Xbox kernel.
+See [Flash ROM](/wiki/Flash_ROM "wikilink")
 
 PCI bus, Host Bridge, ISA Bridge, AGP Host to PCI Bridge, Memory Controller
 ---------------------------------------------------------------------------

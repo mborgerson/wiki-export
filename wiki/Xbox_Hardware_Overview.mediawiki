@@ -117,8 +117,7 @@ The CPU is a standard Pentium III Coppermine mobile at 733 MHz.  This CPU has be
 
 == Flash ROM ==
 
-The Flash ROM is mapped at 0xFFF00000 (if the ROM is 1 MB; 0xFFFC0000, if the ROM is 256 KB) into the  but the Xbox kernel.
-
+See [[Flash ROM]]
 
 == PCI bus, Host Bridge, ISA Bridge, AGP Host to PCI Bridge, Memory Controller ==
 
