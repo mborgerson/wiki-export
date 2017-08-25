@@ -268,6 +268,7 @@ Checksum2 and Checksum3 values can be calculated by running the following code s
 
 == Further Reading ==
 
+* [https://web.archive.org/web/20040604013125/http://console-dev.com:80/eeprom.htm Information about EEPROM contents]
 * [https://github.com/grimdoomer/PiPROM Read/Write an original Xbox EEPROM chip with a Raspberry Pi]
 * [https://www.youtube.com/watch?v=UcK6nKyKGVQ How To Make Xbox EEPROM Reader / Write (Video)]
 * [https://www.youtube.com/watch?v=uzrljlHDr9w How To Extract Xbox EEPROM Easy (Video)]

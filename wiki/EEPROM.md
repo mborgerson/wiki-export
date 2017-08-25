@@ -170,6 +170,8 @@ following code snippet over the area the checksum covers:
 Further Reading
 ---------------
 
+-   [Information about EEPROM
+    contents](https://web.archive.org/web/20040604013125/http://console-dev.com:80/eeprom.htm)
 -   [Read/Write an original Xbox EEPROM chip with a Raspberry
     Pi](https://github.com/grimdoomer/PiPROM)
 -   [How To Make Xbox EEPROM Reader / Write
