@@ -72,11 +72,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x68
 | 0x6B
-| Standard timezone - 4 character Standard TZ name; NULL fill remainder if shorter (e.g., CST\0, ACST)
+| Standard Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CST\0, ACST)
 |-
 | 0x6C
 | 0x6F
-| Daylight timezone - 4 character Daylight TZ name; NULL fill remainder if shorter (e.g., CDT\0, ACDT)
+| Daylight Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CDT\0, ACDT)
 |-
 | 0x70
 | 0x77
