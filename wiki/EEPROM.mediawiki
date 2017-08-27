@@ -56,7 +56,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x58
 | 0x5B
-|  **Video Standard 0x00400100 = NTSC, 0x00400200 = NTSC-J,  0x00800300 = PAL
+|  **Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J,  0x00800300 = PAL
 |-
 | 0x5C
 | 0x5F
@@ -64,7 +64,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x60
 | 0x63
-| Checksum3 - Checksum of the next 156 bytes 
+| Checksum3 - Checksum of the next 92 bytes (0x64-0xBF)
 |-
 | 0x64
 | 0x67
@@ -96,11 +96,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x88
 | 0x8B
-| Standard Timezone Bias ? (0x00000000)
+| Standard Timezone Bias = if DST=No, 0 (0x00000000)  minute time adjust
 |-
 | 0x8C
 | 0x8F
-| Daylight Savings Time Bias; if DST = Yes, 0xFFFFFFC4 (-60); if DST = No, 0x00000000 (0).
+| Daylight Savings Time Bias; if DST=Yes, -60 (0xFFFFFFC4) minute  time adjust
 |-
 | 0x90
 | 0x93
@@ -108,7 +108,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x94
 | 0x97
-| Video Settings Offset 0x96 value 0x4A=Normal, 0xB0=Widescreen and 0xB4=Letterbox
+| Video Settings Offset 0x96 value 0x4A? see 10 too = Normal, 0xB0=Widescreen and 0xB4=Letterbox
 |-
 | 0x98
 | 0x9B
@@ -152,7 +152,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0xC0
 | 0xFF
-| Unknown Codes / History ?
+| Unknown Codes / History ? do not change any values in this region 
 |-
 |}
 

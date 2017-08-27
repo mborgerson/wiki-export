@@ -30,9 +30,9 @@ Contents
 | 0x40  | 0x45 | Ethernet MAC address                                                                                              |
 | 0x46  | 0x47 | Unknown Padding ?                                                                                                 |
 | 0x48  | 0x57 | Online Key ?                                                                                                      |
-| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC, 0x00400200 = NTSC-J, 0x00800300 = PAL                                   |
+| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J, 0x00800300 = PAL                                 |
 | 0x5C  | 0x5F | Unknown Padding ?                                                                                                 |
-| 0x60  | 0x63 | Checksum3 - Checksum of the next 156 bytes                                                                        |
+| 0x60  | 0x63 | Checksum3 - Checksum of the next 92 bytes (0x64-0xBF)                                                             |
 | 0x64  | 0x67 | Zone Bias - Offset in \# minutes from GMT (0x0000168 = 360 = 6hr for GMT-06 Central) subtract value from GMT time |
 | 0x68  | 0x6B | Standard timezone - NULL terminated length 3 string (e.g., CST\\0)                                                |
 | 0x6C  | 0x6F | Daylight timezone - NULL terminated length 3 string (e.g., CDT\\0)                                                |
@@ -40,10 +40,10 @@ Contents
 | 0x78  | 0x7B | if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time             |
 | 0x7C  | 0x7F | if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time     |
 | 0x80  | 0x87 | Unknown Padding ?                                                                                                 |
-| 0x88  | 0x8B | Standard Timezone Bias ? (0x00000000)                                                                             |
-| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST = Yes, 0xFFFFFFC4 (-60); if DST = No, 0x00000000 (0).                          |
+| 0x88  | 0x8B | Standard Timezone Bias = if DST=No, 0 (0x00000000) minute time adjust                                             |
+| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST=Yes, -60 (0xFFFFFFC4) minute time adjust                                       |
 | 0x90  | 0x93 | Language ID                                                                                                       |
-| 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A=Normal, 0xB0=Widescreen and 0xB4=Letterbox                                  |
+| 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A? see 10 too = Normal, 0xB0=Widescreen and 0xB4=Letterbox                    |
 | 0x98  | 0x9B | Audio Settings                                                                                                    |
 | 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                                                             |
 | 0xA0  | 0xA3 | Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger                                  |
@@ -54,7 +54,7 @@ Contents
 | 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                                                           |
 | 0xB8  | 0xBB | Other XBLive settings ?                                                                                           |
 | 0xBC  | 0xBF | DVD Playback Kit Zone                                                                                             |
-| 0xC0  | 0xFF | Unknown Codes / History ?                                                                                         |
+| 0xC0  | 0xFF | Unknown Codes / History ? do not change any values in this region                                                 |
 ||
 
 Note: Info in above table comes from XKUtils
