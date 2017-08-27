@@ -96,7 +96,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x88
 | 0x8B
-| Standard Timezone Bias = if DST=No, 0 (0x00000000)  minute time adjust
+| Standard Timezone Bias; if DST=No, 0 (0x00000000)  minute time adjust
 |-
 | 0x8C
 | 0x8F

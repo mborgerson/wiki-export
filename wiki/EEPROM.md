@@ -40,7 +40,7 @@ Contents
 | 0x78  | 0x7B | if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time             |
 | 0x7C  | 0x7F | if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time     |
 | 0x80  | 0x87 | Unknown Padding ?                                                                                                 |
-| 0x88  | 0x8B | Standard Timezone Bias = if DST=No, 0 (0x00000000) minute time adjust                                             |
+| 0x88  | 0x8B | Standard Timezone Bias; if DST=No, 0 (0x00000000) minute time adjust                                              |
 | 0x8C  | 0x8F | Daylight Savings Time Bias; if DST=Yes, -60 (0xFFFFFFC4) minute time adjust                                       |
 | 0x90  | 0x93 | Language ID                                                                                                       |
 | 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A? see 10 too = Normal, 0xB0=Widescreen and 0xB4=Letterbox                    |
