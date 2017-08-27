@@ -68,15 +68,15 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x64
 | 0x67
-| Zone Bias - Offset in # minutes from GMT (0x0000168 = 360 = 6hr for GMT-06 Central) subtract value from GMT time
+| Zone Bias - Offset in # minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x0000168)
 |-
 | 0x68
 | 0x6B
-| Standard timezone - NULL terminated length 3 string (e.g., CST\0)
+| Standard timezone - 4 character Standard TZ name; NULL fill remainder if shorter (e.g., CST\0, ACST)
 |-
 | 0x6C
 | 0x6F
-| Daylight timezone - NULL terminated length 3 string (e.g., CDT\0)
+| Daylight timezone - 4 character Daylight TZ name; NULL fill remainder if shorter (e.g., CDT\0, ACDT)
 |-
 | 0x70
 | 0x77
@@ -84,11 +84,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x78
 | 0x7B
-| if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time
+| Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour)
 |-
 | 0x7C
 | 0x7F
-| if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time
+| Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour)
 |-
 | 0x80
 | 0x87
@@ -96,11 +96,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x88
 | 0x8B
-| Standard Timezone Bias; if DST=No, 0 (0x00000000)  minute time adjust
+| Standard Timezone Bias; if not DST, 0 (0x00000000)  minute time adjust
 |-
 | 0x8C
 | 0x8F
-| Daylight Savings Time Bias; if DST=Yes, -60 (0xFFFFFFC4) minute  time adjust
+| Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute  time adjust
 |-
 | 0x90
 | 0x93
@@ -108,7 +108,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x94
 | 0x97
-| Video Settings Offset 0x96 value 0x4A? see 10 too = Normal, 0xB0=Widescreen and 0xB4=Letterbox
+| Video Settings; Offset 0x96, 0x??=Normal, 0xB0=Widescreen and 0xB4=Letterbox
 |-
 | 0x98
 | 0x9B
@@ -120,7 +120,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0xA0
 | 0xA3
-| Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger
+| Parental Control Passcode; 4 button sequence (0x07=X, 0x08=Y, 0x0B=LTrigger, 0x0C=RTrigger) (0 = disabled)
 |-
 | 0xA4
 | 0xA7

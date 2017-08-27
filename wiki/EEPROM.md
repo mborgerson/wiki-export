@@ -19,42 +19,42 @@ Chip Models
 Contents
 --------
 
-| Start | End  | Notes                                                                                                             |
-|-------|------|-------------------------------------------------------------------------------------------------------------------|
-| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                                                   |
-| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                                                       |
-| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                             |
-| 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)                                           |
-| 0x30  | 0x33 | Checksum2 - Checksum of next 44 bytes                                                                             |
-| 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                          |
-| 0x40  | 0x45 | Ethernet MAC address                                                                                              |
-| 0x46  | 0x47 | Unknown Padding ?                                                                                                 |
-| 0x48  | 0x57 | Online Key ?                                                                                                      |
-| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J, 0x00800300 = PAL                                 |
-| 0x5C  | 0x5F | Unknown Padding ?                                                                                                 |
-| 0x60  | 0x63 | Checksum3 - Checksum of the next 92 bytes (0x64-0xBF)                                                             |
-| 0x64  | 0x67 | Zone Bias - Offset in \# minutes from GMT (0x0000168 = 360 = 6hr for GMT-06 Central) subtract value from GMT time |
-| 0x68  | 0x6B | Standard timezone - NULL terminated length 3 string (e.g., CST\\0)                                                |
-| 0x6C  | 0x6F | Daylight timezone - NULL terminated length 3 string (e.g., CDT\\0)                                                |
-| 0x70  | 0x77 | Unknown Padding ?                                                                                                 |
-| 0x78  | 0x7B | if DST=Yes, Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time             |
-| 0x7C  | 0x7F | if DST=Yes, Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour); otherwise do not change time     |
-| 0x80  | 0x87 | Unknown Padding ?                                                                                                 |
-| 0x88  | 0x8B | Standard Timezone Bias; if DST=No, 0 (0x00000000) minute time adjust                                              |
-| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST=Yes, -60 (0xFFFFFFC4) minute time adjust                                       |
-| 0x90  | 0x93 | Language ID                                                                                                       |
-| 0x94  | 0x97 | Video Settings Offset 0x96 value 0x4A? see 10 too = Normal, 0xB0=Widescreen and 0xB4=Letterbox                    |
-| 0x98  | 0x9B | Audio Settings                                                                                                    |
-| 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                                                             |
-| 0xA0  | 0xA3 | Parental Control Passcode - 4 button sequence - 7=X, 8=Y, B=LTrigger, C=RTrigger                                  |
-| 0xA4  | 0xA7 | Parental Control Movies (0=Max rating)                                                                            |
-| 0xA8  | 0xAB | XBOX Live IP Address..                                                                                            |
-| 0xAC  | 0xAF | XBOX Live DNS Server..                                                                                            |
-| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                                                       |
-| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                                                           |
-| 0xB8  | 0xBB | Other XBLive settings ?                                                                                           |
-| 0xBC  | 0xBF | DVD Playback Kit Zone                                                                                             |
-| 0xC0  | 0xFF | Unknown Codes / History ? do not change any values in this region                                                 |
+| Start | End  | Notes                                                                                                           |
+|-------|------|-----------------------------------------------------------------------------------------------------------------|
+| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                                                 |
+| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                                                     |
+| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                           |
+| 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)                                         |
+| 0x30  | 0x33 | Checksum2 - Checksum of next 44 bytes                                                                           |
+| 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                        |
+| 0x40  | 0x45 | Ethernet MAC address                                                                                            |
+| 0x46  | 0x47 | Unknown Padding ?                                                                                               |
+| 0x48  | 0x57 | Online Key ?                                                                                                    |
+| 0x58  | 0x5B | -   -   Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J, 0x00800300 = PAL                               |
+| 0x5C  | 0x5F | Unknown Padding ?                                                                                               |
+| 0x60  | 0x63 | Checksum3 - Checksum of the next 92 bytes (0x64-0xBF)                                                           |
+| 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x0000168) |
+| 0x68  | 0x6B | Standard timezone - 4 character Standard TZ name; NULL fill remainder if shorter (e.g., CST\\0, ACST)           |
+| 0x6C  | 0x6F | Daylight timezone - 4 character Daylight TZ name; NULL fill remainder if shorter (e.g., CDT\\0, ACDT)           |
+| 0x70  | 0x77 | Unknown Padding ?                                                                                               |
+| 0x78  | 0x7B | Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                                     |
+| 0x7C  | 0x7F | Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                             |
+| 0x80  | 0x87 | Unknown Padding ?                                                                                               |
+| 0x88  | 0x8B | Standard Timezone Bias; if not DST, 0 (0x00000000) minute time adjust                                           |
+| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute time adjust                                         |
+| 0x90  | 0x93 | Language ID                                                                                                     |
+| 0x94  | 0x97 | Video Settings; Offset 0x96, 0x??=Normal, 0xB0=Widescreen and 0xB4=Letterbox                                    |
+| 0x98  | 0x9B | Audio Settings                                                                                                  |
+| 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                                                           |
+| 0xA0  | 0xA3 | Parental Control Passcode; 4 button sequence (0x07=X, 0x08=Y, 0x0B=LTrigger, 0x0C=RTrigger) (0 = disabled)      |
+| 0xA4  | 0xA7 | Parental Control Movies (0=Max rating)                                                                          |
+| 0xA8  | 0xAB | XBOX Live IP Address..                                                                                          |
+| 0xAC  | 0xAF | XBOX Live DNS Server..                                                                                          |
+| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                                                     |
+| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                                                         |
+| 0xB8  | 0xBB | Other XBLive settings ?                                                                                         |
+| 0xBC  | 0xBF | DVD Playback Kit Zone                                                                                           |
+| 0xC0  | 0xFF | Unknown Codes / History ? do not change any values in this region                                               |
 ||
 
 Note: Info in above table comes from XKUtils
