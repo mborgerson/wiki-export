@@ -60,14 +60,13 @@ Contents
 Note: Info in above table comes from XKUtils
 [XKEEPROM.h](https://svn.exotica.org.uk:8443/xbmc4xbox/tags/3.5.3/xbmc/xbox/XKEEPROM.h).
 
-<sup>\*</sup>Configmagic-FINAL-1.6 used the wrong size when computing
+<sup>\*</sup>Configmagic-FINAL-1.6 uses the wrong size when computing
 Checksum2 (40 instead of 44 bytes) and Checksum3 (96 instead of 92
 bytes). Checksum2 value computed was correct only because the extra 4
 bytes not used in the CRC computation were all 0's which does not change
 the CRC value. However, a similiar problem with computation of Checksum3
-is present. The extra 4 bytes used are all 0's on all but v1.6 Xbox's.
-The CRC computed for v1.6 Xbox's is incorrect as the 4 extra bytes are
-not 0's as on earlier versions.
+is present. The CRC computed for v1.6 Xbox's is incorrect as the 4 extra
+bytes are not 0's as on earlier versions.
 
 Reading/Writing the EEPROM
 --------------------------
