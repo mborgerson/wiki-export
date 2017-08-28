@@ -405,7 +405,7 @@ There is no internal hub in this device.
 {| class="wikitable"
 ! EMS TopGun II !! Xbox Gamepad !! Notes
 |-
-| Stick || Directional Pad ||
+| Stick || {{input-d}} ||
 |-
 | Trigger || {{input-a}} || rowspan="4" | Digital only, either 0 or 255
 |-

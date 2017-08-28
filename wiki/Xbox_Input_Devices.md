@@ -292,17 +292,17 @@ The gun presents itself as a standard Xbox gamepad. It uses a different
 USB descriptor for Xbox (X) and the other mode (P). There is no internal
 hub in this device.
 
-| EMS TopGun II    | Xbox Gamepad    | Notes                                        |
-|------------------|-----------------|----------------------------------------------|
-| Stick            | Directional Pad |                                              |
-| Trigger          |                 | Digital only, either 0 or 255                |
-| Grip             |                 |
-| A                |                 |
-| B                |                 |
-| START            |                 |                                              |
-| SE/BA            |                 |                                              |
-| Aim Left / Right |                 | Absolute position using the full stick range |
-| Aim Up / Down    |                 |
+| EMS TopGun II    | Xbox Gamepad | Notes                                        |
+|------------------|--------------|----------------------------------------------|
+| Stick            |              |                                              |
+| Trigger          |              | Digital only, either 0 or 255                |
+| Grip             |              |
+| A                |              |
+| B                |              |
+| START            |              |                                              |
+| SE/BA            |              |                                              |
+| Aim Left / Right |              | Absolute position using the full stick range |
+| Aim Up / Down    |              |
 
 There is no right thumbstick, thumbstick presses, black/white button or
 trigger buttons (All of those read constant zeros).
