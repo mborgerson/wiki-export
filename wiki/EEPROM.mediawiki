@@ -32,7 +32,10 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x2C
 | 0x2F
-| RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)
+| RC4 Encrypted Region code
+* 0x01 = North America
+* 0x02 = Japan
+* 0x04 = Europe
 |-
 | 0x30
 | 0x33
@@ -56,7 +59,10 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x58
 | 0x5B
-| Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J,  0x00800300 = PAL
+| Video Standard
+* 0x00400100 = NTSC-M
+* 0x00400200 = NTSC-J
+* 0x00800300 = PAL
 |-
 | 0x5C
 | 0x5F
@@ -109,7 +115,12 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x94
 | 0x97
-| Video Settings; Offset 0x96, 0x??=Normal, 0xB0=Widescreen and 0xB4=Letterbox
+| Video Settings
+
+Offset 0x96:
+* 0x??=Normal{{FIXME}}
+* 0xB0=Widescreen
+* 0xB4=Letterbox
 |-
 | 0x98
 | 0x9B
@@ -117,15 +128,20 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x9C
 | 0x9F
-| Parental Control Games (0=MAX rating)
+| Parental Control Games (0 = Max rating)
 |-
 | 0xA0
 | 0xA3
-| Parental Control Passcode; 4 button sequence (0x07=X, 0x08=Y, 0x0B=LTrigger, 0x0C=RTrigger) (0 = disabled)
+| Parental Control Passcode; 4 button sequence
+* 0x07 = {{input-x}}
+* 0x08 = {{input-y}}
+* 0x0B = {{input-lt}}
+* 0x0C = {{input-rt}}
+* 0 = Disabled{{FIXME|reason=Is this 0x00000000 only, or are shorter codes possible? can a middle section be 0x00 or would that end the sequence?}}
 |-
 | 0xA4
 | 0xA7
-| Parental Control Movies (0=Max rating)
+| Parental Control Movies (0 = Max rating)
 |-
 | 0xA8
 | 0xAB

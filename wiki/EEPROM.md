@@ -24,13 +24,21 @@ Contents
 | 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                                                 |
 | 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                                                     |
 | 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                           |
-| 0x2C  | 0x2F | RC4 Encrypted Region code (0x01 North America, 0x02 Japan, 0x04 Europe)                                         |
+| 0x2C  | 0x2F | RC4 Encrypted Region code                                                                                       
+                                                                                                                    
+   -   0x01 = North America                                                                                         
+   -   0x02 = Japan                                                                                                 
+   -   0x04 = Europe                                                                                                |
 | 0x30  | 0x33 | Checksum2 - Checksum of next 44 (0x2C) bytes (0x34 - 0x5F)<sup>\*</sup>                                         |
 | 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                        |
 | 0x40  | 0x45 | Ethernet MAC address                                                                                            |
 | 0x46  | 0x47 | Unknown Padding ?                                                                                               |
 | 0x48  | 0x57 | Online Key ?                                                                                                    |
-| 0x58  | 0x5B | Video Standard 0x00400100 = NTSC-M, 0x00400200 = NTSC-J, 0x00800300 = PAL                                       |
+| 0x58  | 0x5B | Video Standard                                                                                                  
+                                                                                                                    
+   -   0x00400100 = NTSC-M                                                                                          
+   -   0x00400200 = NTSC-J                                                                                          
+   -   0x00800300 = PAL                                                                                             |
 | 0x5C  | 0x5F | Unknown Padding ?                                                                                               |
 | 0x60  | 0x63 | Checksum3 - Checksum of the next 92 (0x5C) bytes (0x64 - 0xBF)<sup>\*</sup>                                     |
 | 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x0000168) |
@@ -43,11 +51,23 @@ Contents
 | 0x88  | 0x8B | Standard Timezone Bias; if not DST, 0 (0x00000000) minute time adjust                                           |
 | 0x8C  | 0x8F | Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute time adjust                                         |
 | 0x90  | 0x93 | Language ID                                                                                                     |
-| 0x94  | 0x97 | Video Settings; Offset 0x96, 0x??=Normal, 0xB0=Widescreen and 0xB4=Letterbox                                    |
+| 0x94  | 0x97 | Video Settings                                                                                                  
+                                                                                                                    
+   Offset 0x96:                                                                                                     
+                                                                                                                    
+   -   0x??=Normal                                                                                                  
+   -   0xB0=Widescreen                                                                                              
+   -   0xB4=Letterbox                                                                                               |
 | 0x98  | 0x9B | Audio Settings                                                                                                  |
-| 0x9C  | 0x9F | Parental Control Games (0=MAX rating)                                                                           |
-| 0xA0  | 0xA3 | Parental Control Passcode; 4 button sequence (0x07=X, 0x08=Y, 0x0B=LTrigger, 0x0C=RTrigger) (0 = disabled)      |
-| 0xA4  | 0xA7 | Parental Control Movies (0=Max rating)                                                                          |
+| 0x9C  | 0x9F | Parental Control Games (0 = Max rating)                                                                         |
+| 0xA0  | 0xA3 | Parental Control Passcode; 4 button sequence                                                                    
+                                                                                                                    
+   -   0x07 =                                                                                                       
+   -   0x08 =                                                                                                       
+   -   0x0B =                                                                                                       
+   -   0x0C =                                                                                                       
+   -   0 = Disabled                                                                                                 |
+| 0xA4  | 0xA7 | Parental Control Movies (0 = Max rating)                                                                        |
 | 0xA8  | 0xAB | XBOX Live IP Address..                                                                                          |
 | 0xAC  | 0xAF | XBOX Live DNS Server..                                                                                          |
 | 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                                                     |
