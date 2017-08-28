@@ -292,27 +292,27 @@ The gun presents itself as a standard Xbox gamepad. It uses a different
 USB descriptor for Xbox (X) and the other mode (P). There is no internal
 hub in this device.
 
-| EMS TopGun II    | Xbox Gamepad                                  | Notes                                        |
-|------------------|-----------------------------------------------|----------------------------------------------|
-| Stick            | Directional Pad                               |                                              |
-| Trigger          | A                                             | Digital only, either 0 or 255                |
-| Grip             | B                                             |
-| A                | X                                             |
-| B                | Y                                             |
-| START            | Start                                         |                                              |
-| SE/BA            | Back                                          |                                              |
-| Aim Left / Right | Negative / Positive on left thumbstick X axis | Absolute position using the full stick range |
-| Aim Up / Down    | Positive / Negative on left thumbstick Y axis |
+| EMS TopGun II    | Xbox Gamepad    | Notes                                        |
+|------------------|-----------------|----------------------------------------------|
+| Stick            | Directional Pad |                                              |
+| Trigger          |                 | Digital only, either 0 or 255                |
+| Grip             |                 |
+| A                |                 |
+| B                |                 |
+| START            |                 |                                              |
+| SE/BA            |                 |                                              |
+| Aim Left / Right |                 | Absolute position using the full stick range |
+| Aim Up / Down    |                 |
 
 There is no right thumbstick, thumbstick presses, black/white button or
 trigger buttons (All of those read constant zeros).
 
 ##### Turbo Mode
 
--   Turbo mode 0 keeps A pressed while trigger is held
--   Turbo mode 1 toggles A rapidly while trigger is held
--   Turbo mode 2 toggles A rapidly and once in a while B while trigger
-    is held
+-   Turbo mode 0 keeps pressed while trigger is held
+-   Turbo mode 1 toggles rapidly while trigger is held
+-   Turbo mode 2 toggles rapidly and once in a while while trigger is
+    held
 
 ##### Force Feedback
 

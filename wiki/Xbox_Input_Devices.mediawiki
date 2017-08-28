@@ -407,30 +407,30 @@ There is no internal hub in this device.
 |-
 | Stick || Directional Pad ||
 |-
-| Trigger || A || rowspan="4" | Digital only, either 0 or 255
+| Trigger || {{input-a}} || rowspan="4" | Digital only, either 0 or 255
 |-
-| Grip || B
+| Grip || {{input-b}}
 |-
-| A || X
+| A || {{input-x}}
 |-
-| B || Y
+| B || {{input-y}}
 |-
-| START || Start ||
+| START || {{input-start}} ||
 |-
-| SE/BA || Back ||
+| SE/BA || {{input-back}} ||
 |-
-| Aim Left / Right || Negative / Positive on left thumbstick X axis || rowspan="2" | Absolute position using the full stick range
+| Aim Left / Right || {{input-lx}} || rowspan="2" | Absolute position using the full stick range
 |-
-| Aim Up / Down || Positive / Negative on left thumbstick Y axis
+| Aim Up / Down || {{input-ly}}
 |}
 
 There is no right thumbstick, thumbstick presses, black/white button or trigger buttons (All of those read constant zeros).
 
 ===== Turbo Mode =====
 
-* Turbo mode 0 keeps A pressed  while trigger is held
-* Turbo mode 1 toggles A rapidly while trigger is held
-* Turbo mode 2 toggles A rapidly and once in a while B while trigger is held
+* Turbo mode 0 keeps {{input-a}} pressed  while trigger is held
+* Turbo mode 1 toggles {{input-a}} rapidly while trigger is held
+* Turbo mode 2 toggles {{input-a}} rapidly and once in a while {{input-b}} while trigger is held
 
 ===== Force Feedback =====
 
