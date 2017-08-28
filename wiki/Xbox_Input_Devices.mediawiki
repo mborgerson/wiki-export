@@ -91,105 +91,105 @@ See https://github.com/xboxdrv/xboxdrv/blob/stable/src/xpad_device.cpp for a lis
 !Mask
 !Notes
 |-
-|DPAD_UP
+|{{input-dy+}}
 |2
 |0x01
 |
 |-
-|DPAD_DOWN
+|{{input-dy-}}
 |2
 |0x02
 |
 |-
-|DPAD_LEFT
+|{{input-dx-}}
 |2
 |0x04
 |
 |-
-|DPAD_RIGHT
+|{{input-dx+}}
 |2
 |0x08
 |
 |-
-|START
+|{{input-start}}
 |2
 |0x10
 |
 |-
-|BACK
+|{{input-back}}
 |2
 |0x20
 |
 |-
-|LEFT_THUMB
+|{{input-ls}}
 |2
 |0x40
 |
 |-
-|RIGHT_THUMB
+|{{input-rs}}
 |2
 |0x80
 |
 |-
-|A
+|{{input-a}}
 |4
 |0xFF
 |Button is analog
 |-
-|B
+|{{input-b}}
 |5
 |0xFF
 |Button is analog
 |-
-|X
+|{{input-x}}
 |6
 |0xFF
 |Button is analog
 |-
-|Y
+|{{input-y}}
 |7
 |0xFF
 |Button is analog
 |-
-|BLACK
+|{{input-black}}
 |8
 |0xFF
 |Button is analog
 |-
-|WHITE
+|{{input-white}}
 |9
 |0xFF
 |Button is analog
 |-
-|LEFT_TRIGGER
+|{{input-lt}}
 |10
 |0xFF
 |Trigger is analog
 |-
-|RIGHT_TRIGGER
+|{{input-rt}}
 |11
 |0xFF
 |Trigger is analog
 |-
-|sThumbLX
+|{{input-lx}}
 |12
 |0xFFFF
-|
+|Negative = Left; Positive = Right
 |-
-|sThumbLY
+|{{input-ly}}
 |14
 |0xFFFF
-|
+|Negative = Down; Positive = Up
 |-
-|sThumbRX
+|{{input-rx}}
 |16
 |0xFFFF
-|
+|Negative = Left; Positive = Right
 |-
-|sThumbRY
+|{{input-ry}}
 |18
 |0xFFFF
-|
+|Negative = Down; Positive = Up
 |}
 
 === Xbox to Controller ===

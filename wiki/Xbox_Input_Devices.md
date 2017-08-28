@@ -72,28 +72,28 @@ a list of devices.
 
 20 bytes
 
-| Field          | Offset (Bytes) | Mask   | Notes             |
-|----------------|----------------|--------|-------------------|
-| DPAD\_UP       | 2              | 0x01   |                   |
-| DPAD\_DOWN     | 2              | 0x02   |                   |
-| DPAD\_LEFT     | 2              | 0x04   |                   |
-| DPAD\_RIGHT    | 2              | 0x08   |                   |
-| START          | 2              | 0x10   |                   |
-| BACK           | 2              | 0x20   |                   |
-| LEFT\_THUMB    | 2              | 0x40   |                   |
-| RIGHT\_THUMB   | 2              | 0x80   |                   |
-| A              | 4              | 0xFF   | Button is analog  |
-| B              | 5              | 0xFF   | Button is analog  |
-| X              | 6              | 0xFF   | Button is analog  |
-| Y              | 7              | 0xFF   | Button is analog  |
-| BLACK          | 8              | 0xFF   | Button is analog  |
-| WHITE          | 9              | 0xFF   | Button is analog  |
-| LEFT\_TRIGGER  | 10             | 0xFF   | Trigger is analog |
-| RIGHT\_TRIGGER | 11             | 0xFF   | Trigger is analog |
-| sThumbLX       | 12             | 0xFFFF |                   |
-| sThumbLY       | 14             | 0xFFFF |                   |
-| sThumbRX       | 16             | 0xFFFF |                   |
-| sThumbRY       | 18             | 0xFFFF |                   |
+| Field | Offset (Bytes) | Mask   | Notes                             |
+|-------|----------------|--------|-----------------------------------|
+|       | 2              | 0x01   |                                   |
+|       | 2              | 0x02   |                                   |
+|       | 2              | 0x04   |                                   |
+|       | 2              | 0x08   |                                   |
+|       | 2              | 0x10   |                                   |
+|       | 2              | 0x20   |                                   |
+|       | 2              | 0x40   |                                   |
+|       | 2              | 0x80   |                                   |
+|       | 4              | 0xFF   | Button is analog                  |
+|       | 5              | 0xFF   | Button is analog                  |
+|       | 6              | 0xFF   | Button is analog                  |
+|       | 7              | 0xFF   | Button is analog                  |
+|       | 8              | 0xFF   | Button is analog                  |
+|       | 9              | 0xFF   | Button is analog                  |
+|       | 10             | 0xFF   | Trigger is analog                 |
+|       | 11             | 0xFF   | Trigger is analog                 |
+|       | 12             | 0xFFFF | Negative = Left; Positive = Right |
+|       | 14             | 0xFFFF | Negative = Down; Positive = Up    |
+|       | 16             | 0xFFFF | Negative = Left; Positive = Right |
+|       | 18             | 0xFFFF | Negative = Down; Positive = Up    |
 
 ### Xbox to Controller
 
