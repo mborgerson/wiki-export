@@ -155,9 +155,9 @@ header:
 
 |            |                     |
 |------------|---------------------|
-| 1          | North America       |
-| 2          | Japan               |
-| 4          | Europe/Australia    |
+| 0x00000001 | North America       |
+| 0x00000002 | Japan               |
+| 0x00000004 | Europe / Australia  |
 | 0x80000000 | Manufacturing plant |
 
 The Serial Number
