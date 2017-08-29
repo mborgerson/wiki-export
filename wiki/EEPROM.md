@@ -210,16 +210,16 @@ Contents
 <tr class="even">
 <td><p>0xA0</p></td>
 <td><p>0xA3</p></td>
-<td><p>Parental Control Passcode; 4 button sequence (each key stored in a nibble not byte)</p>
+<td><p>Parental Control Passcode; 4 button sequence (each key stored in a nibble)</p>
 <ul>
-<li>0x01 = </li>
-<li>0x02 = </li>
-<li>0x03 = </li>
-<li>0x04 = </li>
-<li>0x07 = </li>
-<li>0x08 = </li>
-<li>0x0B = </li>
-<li>0x0C = </li>
+<li>0x1 =  or </li>
+<li>0x2 =  or </li>
+<li>0x3 =  or </li>
+<li>0x4 =  or </li>
+<li>0x7 = </li>
+<li>0x8 = </li>
+<li>0xB = </li>
+<li>0xC = </li>
 <li>0 = Disabled</li>
 </ul>
 <p><code>Note:</code><br />

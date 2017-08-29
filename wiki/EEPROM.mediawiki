@@ -156,15 +156,15 @@ Offset 0x96:
 |-
 | 0xA0
 | 0xA3
-| Parental Control Passcode; 4 button sequence (each key stored in a nibble not byte)
-* 0x01 = {{input-up}}
-* 0x02 = {{input-down}}
-* 0x03 = {{input-left}}
-* 0x04 = {{input-right}}
-* 0x07 = {{input-x}}
-* 0x08 = {{input-y}}
-* 0x0B = {{input-lt}}
-* 0x0C = {{input-rt}}
+| Parental Control Passcode; 4 button sequence (each key stored in a nibble)
+* 0x1 = {{input-dy+}} or {{input-ly+}}
+* 0x2 = {{input-dy-}} or {{input-ly-}}
+* 0x3 = {{input-dx-}} or {{input-lx-}}
+* 0x4 = {{input-dx+}} or {{input-lx+}}
+* 0x7 = {{input-x}}
+* 0x8 = {{input-y}}
+* 0xB = {{input-lt}}
+* 0xC = {{input-rt}}
 * 0 = Disabled{{FIXME|reason=Is this 0x00000000 only, or are shorter codes possible? can a middle section be 0x00 or would that end the sequence?}}
  Note:{{FIXME|reason=Not sure this is the proper place to describe and formatting sucks not used mediawiki that much still learning}}
  * EEPROM offset 0xA0: 23 14 00 00 
