@@ -128,21 +128,82 @@ Offset 0x96:
 |-
 | 0x9C
 | 0x9F
-| Parental Control Games (0 = Max rating)
+| Games Parental Control (0 = Max rating) 1 byte at offset 0x9C data 4-byte aligned adds the 3 remaining bytes of 0x00
+{| class="wikitable"
+! Xbox Game Rating !! EEPROM Value @ 0x9C
+|-
+| (RP) Rating Pending	(Max)
+| 0x00
+|-
+| (AO) Adults Only		
+| 0x01
+|-
+| (M) Mature				
+| 0x02
+|-
+| (T) Teen				
+| 0x03
+|-
+| (E) Everyone			
+| 0x04
+|-
+| (K-A) Kids to Adults	
+| 0x05
+|-
+| (EC) Early Childhood	
+| 0x06
+|}
 |-
 | 0xA0
 | 0xA3
-| Parental Control Passcode; 4 button sequence
+| Parental Control Passcode; 4 button sequence (each key stored in a nibble not byte)
+* 0x01 = {{input-up}}
+* 0x02 = {{input-down}}
+* 0x03 = {{input-left}}
+* 0x04 = {{input-right}}
 * 0x07 = {{input-x}}
 * 0x08 = {{input-y}}
 * 0x0B = {{input-lt}}
 * 0x0C = {{input-rt}}
 * 0 = Disabled{{FIXME|reason=Is this 0x00000000 only, or are shorter codes possible? can a middle section be 0x00 or would that end the sequence?}}
+    Note:
+    EEPROM offset 0xA0: 23 14 00 00 
+    Little Endian value 0x00001423.
+    The pass code is D-pad directions up (0x01), right (0x04), down (0x02), left (0x03). 
+    Pass code is only 2 bytes not 4, each button is stored as a nibble in the word.  First button in the most significant nibble and last in the least significant nibble.  
+    Data in the EEPROM is aligned to double word (4-byte) boundaries. Thus, the two extra bytes at 0xA2 and 0xA3 of 0x00.
 |-
 | 0xA4
 | 0xA7
-| Parental Control Movies (0 = Max rating)
+| Movies Parental Control (0 = Max rating) only 1 byte necessary, the 3 remaining bytes for multiple of 4-byte data alignment{{FIXME|reason=Re-word alignment description. The reason for the extra 3 bytes.}}
+{| class="wikitable"
+! Xbox Movie Rating !! EEPROM Value @ 0xA4
 |-
+| 8 (Max)
+| 0x00
+|-
+| 7 (NC-17)	
+| 0x01
+|-
+| 6 (R)
+| 0x02	
+|-
+| 5
+| 0x03	
+|-
+| 4 (PG-13)
+| 0x04
+|-
+| 3 (PG)
+| 0x05
+|-
+| 2
+| 0x06		
+|-
+| 1 (G)
+| 0x07		
+|}
+|- 
 | 0xA8
 | 0xAB
 | XBOX Live IP Address..
