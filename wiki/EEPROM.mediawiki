@@ -461,16 +461,16 @@ This DWORD corresponds to the region code for playback of DVD movies:
 
 {| class="wikitable"
 |-
-|  0x00
+|  0x00000000
 |  None
 |-
-|  0x01
+|  0x00000001
 |  Region 1
 |-
 |  ...
 |  ...
 |-
-|  0x06
+|  0x00000006
 |  Region 6
 |}
 

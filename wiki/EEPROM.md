@@ -198,12 +198,12 @@ DVD Region
 
 This DWORD corresponds to the region code for playback of DVD movies:
 
-|      |          |
-|------|----------|
-| 0x00 | None     |
-| 0x01 | Region 1 |
-| ...  | ...      |
-| 0x06 | Region 6 |
+|            |          |
+|------------|----------|
+| 0x00000000 | None     |
+| 0x00000001 | Region 1 |
+| ...        | ...      |
+| 0x00000006 | Region 6 |
 
 Checksum Algorithm
 ------------------
