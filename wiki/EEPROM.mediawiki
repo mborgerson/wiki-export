@@ -166,12 +166,13 @@ Offset 0x96:
 * 0xB = {{input-lt}}
 * 0xC = {{input-rt}}
 * 0 = Disabled{{FIXME|reason=Is this 0x00000000 only, or are shorter codes possible? can a middle section be 0x00 or would that end the sequence?}}
- Note:{{FIXME|reason=Not sure this is the proper place to describe and formatting sucks not used mediawiki that much still learning}}
- * EEPROM offset 0xA0: 23 14 00 00 
- * Little Endian value 0x00001423.
- * The pass code is D-pad directions up (0x01), right (0x04), down (0x02), left (0x03). 
- * Pass code is only 2 bytes not 4, each button is stored as a nibble in the word.  First button in the most significant nibble and last in the least significant nibble.  
- * Data in the EEPROM is aligned to double word (4-byte) boundaries. Thus, the two extra bytes at 0xA2 and 0xA3 of 0x00.
+
+Note:{{FIXME|reason=Not sure this is the proper place to describe and formatting sucks not used mediawiki that much still learning}}
+* EEPROM offset 0xA0: <code>23 14 00 00</code>
+* Little Endian value 0x00001423.
+* The pass code is D-pad directions up (0x01), right (0x04), down (0x02), left (0x03). 
+* Pass code is only 2 bytes not 4, each button is stored as a nibble in the word.  First button in the most significant nibble and last in the least significant nibble.  
+* Data in the EEPROM is aligned to double word (4-byte) boundaries. Thus, the two extra bytes at 0xA2 and 0xA3 of 0x00.
 |-
 | 0xA4
 | 0xA7
