@@ -5,23 +5,8 @@ layout: wiki
 ---
 
 The Xbox contains a DVD Drive which can read [Xbox Game
-Discs](/wiki/Xbox_Game_Disc "wikilink").
-
-There are four retail drives known to be used by Microsoft in the retail
-version of the console. any xbox dvd drive can be used in any retail
-xbox. Development kits can use and read debug signed code from these
-drives. Other drives that might work are firmware modded PC drives like
-Kreon drives.
-
-List of Xbox DVD Drive manufacturers
-
--   Thomson
--   Philips
--   Samsung
--   Hitachi-LG (mainly 1.6?)
-
-![Xbox DVD Drive
-determination](Xbox_drivedetermination.png "Xbox DVD Drive determination")
+Discs](/wiki/Xbox_Game_Disc "wikilink"). For a list of drives Microsoft used
+in the Xbox, see [Hardware Revisions](/wiki/Hardware_Revisions "wikilink").
 
 Extra commands / modifications
 ------------------------------
