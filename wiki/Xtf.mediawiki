@@ -5,6 +5,7 @@ It became famous for being [[Exploits#Font hacks|exploited]].
 | name = Xtf
 | title = Xtf Font Format
 | image = [[File:http://i.imgur.com/u2P069H.png]]
+}}
 
 === File format ===
 
