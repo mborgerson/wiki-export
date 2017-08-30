@@ -12,7 +12,7 @@ They contain 7365 glyphs each.
 
 A monospace font.
 
-<div style="display: inline-block;">[[File:Xbox-xtf.png|frame|Xbox.xtf from [[Dashboard]].{{FIXME|reason=Broken kerning}}]]</div>
+<div style="display: inline-block;">[[File:Xbox-xtf.png|frame|Xbox.xtf from [[Dashboard]].]]</div>
 
 === XBox Book.xtf ===
 
