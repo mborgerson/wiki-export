@@ -21,8 +21,7 @@ each.
 A monospace font.
 
 <div style="display: inline-block;">
-![Xbox.xtf from
-[Dashboard](/wiki/Dashboard "wikilink").](Xbox-xtf.png "Xbox.xtf from Dashboard.")
+<img src="Xbox-xtf.png" title="Xbox.xtf from Dashboard." alt="Xbox.xtf from Dashboard." width="800" />
 
 </div>
 ### XBox Book.xtf
