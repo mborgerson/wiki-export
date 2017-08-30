@@ -3,6 +3,21 @@
 xtf is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
 
-=== File format ===
+== Dashboard fonts ==
+
+The dashboard fonts were designed by [[Wikipedia:Steve Matteson|Steve Matteson]].
+They contain 7365 glyphs each.
+
+=== Xbox.xtf ===
+
+A monospace font.
+
+<div style="display: inline-block;">[[File:Xbox-xtf.png|frame|Xbox.xtf from [[Dashboard]].{{FIXME|reason=Broken kerning}}]]</div>
+
+=== XBox Book.xtf ===
+
+<div style="display: inline-block;">[[File:XBox Book-xtf.png|frame|XBox Book.xtf from [[Dashboard]].{{FIXME|reason=Broken kerning}}]]</div>
+
+== File format ==
 
 {{FIXME}}
