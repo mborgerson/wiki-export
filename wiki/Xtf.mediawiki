@@ -1,4 +1,4 @@
-[[File:http://i.imgur.com/u2P069H.png|thumb|200px|Remote and Receiver]]
+[[File:Xbox-dashboard-font-specimen.png|thumb|200px|Xbox Font Specimen]]
 
 xtf is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
