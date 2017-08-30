@@ -86,7 +86,7 @@ Contents
                                                                                                                                                                               
    -   EEPROM offset 0xA0: `23 14 00 00`                                                                                                                                      
    -   Little Endian value 0x00001423.                                                                                                                                        
-   -   The pass code is D-pad directions up (0x01), right (0x04), down (0x02), left (0x03).                                                                                   
+   -   The pass code is D-pad directions up (0x1), right (0x4), down (0x2), left (0x3).                                                                                       
    -   Pass code is only 2 bytes not 4, each button is stored as a nibble in the word. First button in the most significant nibble and last in the least significant nibble.  
    -   Data in the EEPROM is aligned to double word (4-byte) boundaries. Thus, the two extra bytes at 0xA2 and 0xA3 of 0x00.                                                  |
 | 0xA4  | 0xA7 | Movies Parental Control (0 = Max rating) only 1 byte necessary, the 3 remaining bytes for multiple of 4-byte data alignment                                               
