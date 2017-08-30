@@ -75,7 +75,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 | 0x64
 | 0x67
 | Zone Bias - Offset in # minutes to subtract from GMT time 
-(e.g., for GMT-06 Central; 6hr = 360min = 0x0000168)
+(e.g., for GMT-06 Central; 6hr = 360min = 0x00000168)
 |-
 | 0x68
 | 0x6B

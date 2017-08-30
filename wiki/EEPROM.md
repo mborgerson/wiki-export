@@ -41,7 +41,7 @@ Contents
    -   0x00800300 = PAL                                                                                                                                                       |
 | 0x5C  | 0x5F | Unknown Padding ?                                                                                                                                                         |
 | 0x60  | 0x63 | Checksum3 - Checksum of the next 92 (0x5C) bytes (0x64 - 0xBF)<sup>\*</sup>                                                                                               |
-| 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x0000168)                                                           |
+| 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x00000168)                                                          |
 | 0x68  | 0x6B | Standard Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CST\\0, ACST)                                                                                 |
 | 0x6C  | 0x6F | Daylight Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CDT\\0, ACDT)                                                                                 |
 | 0x70  | 0x77 | Unknown Padding ?                                                                                                                                                         |
