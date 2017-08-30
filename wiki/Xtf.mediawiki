@@ -1,6 +1,11 @@
 xtf is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
 
+{{Sidebar
+| name = Xtf
+| title = Xtf Font Format
+| image = [[File:http://i.imgur.com/u2P069H.png]]
+
 === File format ===
 
 {{FIXME}}
