@@ -143,6 +143,7 @@ The following table is based on a Xbox 1.0{{citation needed}} retail board and c
 |}
 
 Only the 1.0 and 1.1 {{citation needed}} had a USB daugtherboard
+Correction: only the 1.0 has the USB daughterboard, a GPU fan and the MCPX 1.0
 {| class="wikitable"
 !| Device
 ! Part Number

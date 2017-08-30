@@ -37,7 +37,8 @@ to PiXEL8
 | U7D1     | D-7  | M29F080A                 | ST Microelectronics        | 8 MBit (1MB X8, Uniform block) single supply flash memory     |
 | U7P1     | P-7  | <empty>                  | <n/a>                      | <n/a>                                                         |
 
-Only the 1.0 and 1.1 had a USB daugtherboard
+Only the 1.0 and 1.1 had a USB daugtherboard Correction: only the 1.0
+has the USB daughterboard, a GPU fan and the MCPX 1.0
 
 | | Device | Part Number | Manufacture       | Description                                           |
 |----------|-------------|-------------------|-------------------------------------------------------|
