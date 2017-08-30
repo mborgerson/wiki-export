@@ -1,4 +1,4 @@
-The original Xbox hard disk drive was 8GB in size.  Later releases, 1.3 and 1.4's had Seagate 10GB drives; however, only the first 8GB of the drive was used.
+The original Xbox hard disk drive was 8 GB in size.  Later releases, 10 GB drives; however, only the first 8 GB of the drive was used. See [[Hardware Revisions]] for more information.
 
 == Partitions ==
 The Xbox hard disk contains multiple partitions. Unlike a PC, which typically contains either a [https://en.wikipedia.org/wiki/Master_boot_record Master Boot Record] or [https://en.wikipedia.org/wiki/GUID_Partition_Table GUID Partition Table] to specify the partition information, the Xbox kernel uses a fixed partition layout. The file system used on the Xbox is [[FATX]], a variant of FAT16/32 developed by Microsoft specifically for the Xbox.
