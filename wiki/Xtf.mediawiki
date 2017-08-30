@@ -16,7 +16,7 @@ A monospace font.
 
 === XBox Book.xtf ===
 
-<div style="display: inline-block;">[[File:XBox Book-xtf.png|frame|XBox Book.xtf from [[Dashboard]].]]</div>
+<div style="display: inline-block;">[[File:XBox Book-xtf.png|800px|thumb|XBox Book.xtf from [[Dashboard]].]]</div>
 
 == File format ==
 

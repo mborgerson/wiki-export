@@ -27,8 +27,7 @@ A monospace font.
 ### XBox Book.xtf
 
 <div style="display: inline-block;">
-![XBox Book.xtf from
-[Dashboard](/wiki/Dashboard "wikilink").](XBox_Book-xtf.png "XBox Book.xtf from Dashboard.")
+<img src="XBox_Book-xtf.png" title="XBox Book.xtf from Dashboard." alt="XBox Book.xtf from Dashboard." width="800" />
 
 </div>
 File format
