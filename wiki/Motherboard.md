@@ -4,13 +4,15 @@ permalink: wiki/Motherboard/
 layout: wiki
 ---
 
+For a list of differences between these mainboards, also see [Hardware
+Revisions](/wiki/Hardware_Revisions "wikilink").
+
+Xbox 1.0
+--------
+
 <img src="Xbox-Motherboard-BR.jpg" title="Xbox Version 1.0 Motherboard" alt="Xbox Version 1.0 Motherboard" width="400" />
 
-Mainboard
----------
-
-The following table is based on a Xbox 1.0 retail board and credits go
-to PiXEL8
+The following table is based on a Xbox 1.0 retail board.
 
 | | Device | Loc. | Part Number              | Manufacture                | Description                                                   |
 |----------|------|--------------------------|----------------------------|---------------------------------------------------------------|
@@ -37,15 +39,33 @@ to PiXEL8
 | U7D1     | D-7  | M29F080A                 | ST Microelectronics        | 8 MBit (1MB X8, Uniform block) single supply flash memory     |
 | U7P1     | P-7  | <empty>                  | <n/a>                      | <n/a>                                                         |
 
-Only the 1.0 and 1.1 had a USB daugtherboard Correction: only the 1.0
-has the USB daughterboard, a GPU fan and the MCPX 1.0
+### USB Daughterboard
 
 | | Device | Part Number | Manufacture       | Description                                           |
 |----------|-------------|-------------------|-------------------------------------------------------|
 | U2       | TUSB2046B   | Texas Instruments | 4-Port Hub for USB w/Optional Serial EEPROM Interface |
 
+Xbox 1.1
+--------
+
+Xbox 1.2
+--------
+
+Xbox 1.3
+--------
+
+Xbox 1.4
+--------
+
+Xbox 1.5
+--------
+
+Xbox 1.6
+--------
+
 References
 ----------
 
--   [<http://console-dev.com:80/IC.htm>](https://web.archive.org/web/20040826151041/http://console-dev.com:80/IC.htm)
+-   [<http://console-dev.com:80/IC.htm> Documentation by
+    PiXEL8](https://web.archive.org/web/20040826151041/http://console-dev.com:80/IC.htm)
 
