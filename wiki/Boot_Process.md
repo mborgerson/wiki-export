@@ -134,7 +134,7 @@ versions 3944, 4034, and 4134.
 The [RC4 Key-Scheduling
 Algorithm](https://en.wikipedia.org/wiki/RC4#Key-scheduling_algorithm_.28KSA.29)
 is used to initialize the RC4 “S” array, first initializing the identity
-permutation (writing 1, 2, ..., 255 to 0x8f000 to 0x850FF), then
+permutation (writing 1, 2, ..., 255 to 0x8F000 to 0x8F0FF), then
 processed in a way similar to the PRGA to mix in the key.
 
     uint8_t  *s = (uint8_t *)0x8f000;

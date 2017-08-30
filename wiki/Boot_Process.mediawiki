@@ -102,7 +102,7 @@ The RC4 algorithm was included as part of MCPX 1.0 and seems to work fine with B
 
 ==== Stage 1: Key Scheduling ====
 
-The [https://en.wikipedia.org/wiki/RC4#Key-scheduling_algorithm_.28KSA.29 RC4 Key-Scheduling Algorithm] is used to initialize the RC4 “S” array, first initializing the identity permutation (writing 1, 2, ..., 255 to 0x8f000 to 0x850FF), then processed in a way similar to the PRGA to mix in the key.
+The [https://en.wikipedia.org/wiki/RC4#Key-scheduling_algorithm_.28KSA.29 RC4 Key-Scheduling Algorithm] is used to initialize the RC4 “S” array, first initializing the identity permutation (writing 1, 2, ..., 255 to 0x8F000 to 0x8F0FF), then processed in a way similar to the PRGA to mix in the key.
 
 <pre>
 uint8_t  *s = (uint8_t *)0x8f000;
