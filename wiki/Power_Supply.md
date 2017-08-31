@@ -184,4 +184,6 @@ Related links
 
 -   [Describes how to turn an ATX Power-Supply to Xbox
     PSU](http://brandonw.net/consoles/xbox/)
+-   [Powercord recall blog with exacter cable
+    numbers](https://web.archive.org/web/20060421203325/https://msmvps.com/blogs/matthewsoft/archive/2005/02/17/36238.aspx)
 
