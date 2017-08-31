@@ -503,6 +503,174 @@ Device Status:     0x0000
   (Bus Powered)
 </pre>
 
+=== Joytech Sharp Shooter ===
+The third party light gun from Joytech reports itself as 2 devices and mentions pattent [http://www.google.com/patents/US6287198 US6287198]
+it came with a detachable viewfinder scope without any magnification. a red dot apears in the viewfinder, its a reflection of a red led, powered by the gun over usb.
+
+model numer: JS-901D
+
+{| class="wikitable"
+! Joytech Sharp Shooter !! Xbox Gamepad !! Notes
+|-
+| Stick || {{input-d}} ||
+|-
+| Trigger || {{input-a}} || rowspan="4" | Digital only, either 0 or 255 {{citation needed}}
+|-
+| B button || {{input-b}} | both sides
+|-
+| x || {{input-x}}
+|-
+| y || {{input-y}}
+|-
+| START || {{input-start}} ||
+|-
+| BACK || {{input-back}} ||
+|-
+| Aim Left / Right || {{input-lx}} || {{citation needed}}
+|-
+| Aim Up / Down || {{input-ly}} || {{citation needed}}
+|-
+| Magazine button || {{input-b}}
+|}
+
+There is no right thumbstick, thumbstick presses, black/white button or trigger buttons {{citation needed}}
+
+===== Fire/Reload Mode =====
+
+* Normal mode does nothing, normal operation
+* Auto reload mode toggles {{input-b}} rapidly to rappidly reload {{citation needed}} 
+* Auto fire+reload mode toggles {{input-a}}+ {{input-b}} rapidly  {{citation needed}}
+
+codeasm has to verify the toggle modes, they where more anyonging than helpfull.
+
+==== USB Descriptors ====
+
+<pre>
+
+Bus 003 Device 025: ID 1292:3006 Innomedia 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 
+  bMaxPacketSize0         8
+  idVendor           0x1292 Innomedia
+  idProduct          0x3006 
+  bcdDevice            1.50
+  iManufacturer           0 
+  iProduct                0 
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           32
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          1 (error)
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              100mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass        88 Xbox
+      bInterfaceSubClass     66 Controller
+      bInterfaceProtocol      0 
+      iInterface              2 (error)
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0020  1x 32 bytes
+        bInterval               4
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x02  EP 2 OUT
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0020  1x 32 bytes
+        bInterval               4
+
+Bus 003 Device 024: ID 1292:3006 Innomedia 
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            9 Hub
+  bDeviceSubClass         0 
+  bDeviceProtocol         0 Full speed (or root) hub
+  bMaxPacketSize0         8
+  idVendor           0x1292 Innomedia
+  idProduct          0x3006 
+  bcdDevice            1.50
+  iManufacturer           1 (c) 2004 R0R3 Inc.
+  iProduct                2 US Patent 6,287,198
+  iSerial                 0 
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           25
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          4 (c) R0R3 Devices Inc. US Patent 6,287,19Ē
+    bmAttributes         0xa0
+      (Bus Powered)
+      Remote Wakeup
+    MaxPower               64mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           1
+      bInterfaceClass         9 Hub
+      bInterfaceSubClass      0 
+      bInterfaceProtocol      0 Full speed (or root) hub
+      iInterface              5 (error)
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x81  EP 1 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0001  1x 1 bytes
+        bInterval             255
+Hub Descriptor:
+  bLength               9
+  bDescriptorType      41
+  nNbrPorts             3
+  wHubCharacteristic 0x000d
+    Per-port power switching
+    Compound device
+    Per-port overcurrent protection
+  bPwrOn2PwrGood       32 * 2 milli seconds
+  bHubContrCurrent     64 milli Ampere
+  DeviceRemovable    0x02
+  PortPwrCtrlMask    0x0e
+ Hub Port Status:
+   Port 1: 0000.0103 power enable connect
+   Port 2: 0000.0100 power
+   Port 3: 0100.0100 power
+Device Status:     0x0000
+  (Bus Powered)
+</pre>
+
 == Steel Battalion Controller ==
 
 === USB Descriptors ===
