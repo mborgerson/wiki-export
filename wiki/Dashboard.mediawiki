@@ -40,10 +40,41 @@ If you press a button on the controller or let the message play through to the e
 === Parental Control Bypass ===
 
 If Parental Control is enabled and the password set has been forgotten, all is not lost.  Use the following sequence:
-* X, Y, Left trigger, X
+* {{input-x}} {{input-y}} {{input-lt}} {{input-x}}
 SET PASS CODE, MOVIES and GAMES level can now be modified and the pass code removed if so desired.
 
-With SET PASS CODE selected, press "A" twice to be prompted, "Do you wish to delete the current pass code?". Select Yes or No.
+With SET PASS CODE selected, press {{input-a}} or {{input-start}} to change the current pass code and once more to be prompted, "Do you wish to delete the current pass code?". Select Yes or No then {{input-a}}.
+
+=== Format Admin Codes ===
+
+Secret Xbox format codes to format all drives except C. The code is different for all versions of the Xbox. If you find your code, please post it here along with your xbox version (at least the last 2 digits of the serial number - the factory code where it was manufactured).
+
+==== Different Xboxes Use Different Codes ====
+
+MS support techs under certain conditions would ask for your serial number and verify registration of your Xbox before giving you a code to clear/format your Xbox's UDD that was acting up. What part(s) of the serial number they used to determine the correct code is unknown?
+
+More data is needed to sort out which Xbox a particular code works on, and what other codes exist.
+
+Is it based on Xbox scene version numbers?  Most likely, NOT!  Is it based on factory of production? Is it based on BIOS version?  Does anyone know?   
+
+
+All of these codes are entered at the MS Dashboard's "System Info" screen. (UNTESTED here, codes posted as given at original source site.)
+
+
+Xbox v1.0: {{input-x}} {{input-y}}  {{input-ly+}} {{input-lx-}} {{input-a}}
+
+
+Unknown version: {{input-y}} {{input-ly+}} {{input-ly-}} {{input-x}} {{input-a}}.
+
+(This one seems to work with most XBOXes sold in the United States) 
+
+
+Unknown version: {{input-y}} {{input-lx-}} {{input-x}} {{input-a}} {{input-lx-}} 
+
+(This one worked with the XBOXes manufactured in Hungary, serial numbers ending in 03) 
+
+
+Source: Wayback Machine [https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/docs/FormatAdminCode  unmodded.mine.nu/docs/FormatAdminCode]
 
 == See Also ==
 
