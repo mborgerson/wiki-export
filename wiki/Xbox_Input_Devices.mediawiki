@@ -544,8 +544,6 @@ There is no right thumbstick, thumbstick presses, black/white button or trigger 
 * Auto reload mode toggles {{input-b}} rapidly to rappidly reload {{citation needed}} 
 * Auto fire+reload mode toggles {{input-a}}+ {{input-b}} rapidly  {{citation needed}}
 
-codeasm has to verify the toggle modes, they where more anyonging than helpfull.
-
 ==== USB Descriptors ====
 
 <pre>

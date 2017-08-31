@@ -419,9 +419,6 @@ trigger buttons
 -   Auto reload mode toggles rapidly to rappidly reload
 -   Auto fire+reload mode toggles + rapidly
 
-codeasm has to verify the toggle modes, they where more anyonging than
-helpfull.
-
 #### USB Descriptors
 
 
