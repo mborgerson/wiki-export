@@ -26,12 +26,12 @@ The rated output currents are also noted on the PCB
 === Foxlink Technology LTD ===
 
 {{FIXME|reason=I dont own any US xboxes to compare US foxlinks with}}On the lower heatsink, there is a sticker with the following markings and versions:
-* MODEL: FTPS-0001 REV:B {citation needed} (120V)
+* MODEL: FTPS-0001 REV:B {{citation needed}} (120V)
 * MODEL: FTPS-0002 REV:B (from a 2002 PAL (240V))
 * MODEL: FTPS-0002 REV:H (from a 2003 PAL (240V))
-* MODEL: FTPS-0002 REV:G {citation needed} (240V)
-* MODEL: FTPS-0007 REV:B {citation needed} (120V) (are these after the powercord recall?)
-* MODEL: FTPS-0007 REV:D {citation needed} (120V) (are these after the powercord recall?)
+* MODEL: FTPS-0002 REV:G {{citation needed}} (240V)
+* MODEL: FTPS-0007 REV:B {{citation needed}} (120V) (are these after the powercord recall?)
+* MODEL: FTPS-0007 REV:D {{citation needed}} (120V) (are these after the powercord recall?)
 
 The rated output currents are also noted on the sticker
 
@@ -44,7 +44,7 @@ The rated output currents are also noted on the sticker
 ==== power cord recall ====
 
 
-Microsoft started an powercord recall, or more like a replacement program [https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm xbox.com]for what apeared to be Foxlink powersupplies having a bad powerplug connector on the back of the console and where installed in 1.0 and 1.1 xboxes.{citation needed}. 
+Microsoft started an powercord recall, or more like a replacement program [https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm xbox.com]for what apeared to be Foxlink powersupplies having a bad powerplug connector on the back of the console and where installed in 1.0 and 1.1 xboxes.{{citation needed}}. 
  '''Does my console require a replacement cord?'''
  If it was manufactured before October 23, 2003, your console requires a replacement cord (except for consoles purchased in Continental Europe, where consoles manufactured prior to January 13, 2004 require a replacement cord). Consoles manufactured after October 23, 2003 (after January 13, 2004 for consoles purchased in Continental Europe) do not require replacement cords because design improvements to the cord and console already protect against the problems that are addressed by the replacement cords.
 source: [https://web.archive.org/web/20050223041403/http://replacements.webprogram.com:80/en-us/faqs.asp#Q-7 Xbox powercord recall program faq]

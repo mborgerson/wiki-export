@@ -41,14 +41,14 @@ The rated output currents are also noted on the PCB
 On the lower heatsink, there is a sticker with the following markings
 and versions:
 
--   MODEL: FTPS-0001 REV:B {citation needed} (120V)
+-   MODEL: FTPS-0001 REV:B (120V)
 -   MODEL: FTPS-0002 REV:B (from a 2002 PAL (240V))
 -   MODEL: FTPS-0002 REV:H (from a 2003 PAL (240V))
--   MODEL: FTPS-0002 REV:G {citation needed} (240V)
--   MODEL: FTPS-0007 REV:B {citation needed} (120V) (are these after the
-    powercord recall?)
--   MODEL: FTPS-0007 REV:D {citation needed} (120V) (are these after the
-    powercord recall?)
+-   MODEL: FTPS-0002 REV:G (240V)
+-   MODEL: FTPS-0007 REV:B (120V) (are these after the powercord
+    recall?)
+-   MODEL: FTPS-0007 REV:D (120V) (are these after the powercord
+    recall?)
 
 The rated output currents are also noted on the sticker
 
@@ -65,7 +65,7 @@ program
 [xbox.com](https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm)for
 what apeared to be Foxlink powersupplies having a bad powerplug
 connector on the back of the console and where installed in 1.0 and 1.1
-xboxes.{citation needed}.
+xboxes..
 
 **`Does`` ``my`` ``console`` ``require`` ``a`` ``replacement`` ``cord?`**  
 `If it was manufactured before October 23, 2003, your console requires a replacement cord (except for consoles purchased in Continental Europe, where consoles manufactured prior to January 13, 2004 require a replacement cord). Consoles manufactured after October 23, 2003 (after January 13, 2004 for consoles purchased in Continental Europe) do not require replacement cords because design improvements to the cord and console already protect against the problems that are addressed by the replacement cords.`
