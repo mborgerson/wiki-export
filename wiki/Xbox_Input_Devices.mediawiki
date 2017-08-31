@@ -521,7 +521,7 @@ model numer: JS-901D
 |-
 | B (Left side) || rowspan="2" | {{input-b}}
 |-
-| B (Bottom)
+| B (Right side)
 |-
 | x || {{input-x}}
 |-
