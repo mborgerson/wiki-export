@@ -403,13 +403,13 @@ model numer: JS-901D
 | Trigger               |              | Digital only, either 0 or 255 |
 | B (Left side)         |              |
 | B (Right side)        |
+| Magazine button       |
 | x                     |              |
 | y                     |              |
 | START                 |              |                               |
 | BACK                  |              |                               |
 | Aim Left / Right      |              |                               |
 | Aim Up / Down         |              |                               |
-| Magazine button       |              |
 
 There is no right thumbstick, thumbstick presses, black/white button or
 trigger buttons
