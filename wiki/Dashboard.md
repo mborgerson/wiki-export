@@ -95,8 +95,10 @@ the serial number - the factory code where it was manufactured).
 
 MS support techs under certain conditions would ask for your serial
 number and verify registration of your Xbox before giving you a code to
-clear/format your Xbox's UDD that was acting up. What part(s) of the
-serial number they used to determine the correct code is unknown?
+clear/format your fouled Xbox's HDD.
+
+What part(s) of the serial number they used to determine the correct
+code is unknown?
 
 More data is needed to sort out which Xbox a particular code works on,
 and what other codes exist.
