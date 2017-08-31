@@ -87,6 +87,42 @@ type of cable you recieve by means of serial number.
 An more in detail video of whats inside an european (UK) “AFCI”
 [2](https://www.youtube.com/watch?v=C0wQikAO-yA)
 
+##### AFCI
+
+An european AFCI ordered from MS for free had the following on the
+bottom label.
+
+|             |                          |
+|-------------|--------------------------|
+| Part number | X800925-100              |
+|             | 200-240V~,50/60HZ, 610mA |
+| MFG Code    | DN0855                   |
+
+The cable that is wired to the AFCI has the following markings:
+
+| top    | bottom  |
+|--------|---------|
+| JI-HAW | JHT-031 |
+
+##### Old and New cords
+
+The replacement cable has the following markings:
+
+| top     | bottom |
+|---------|--------|
+| JHT-031 |        |
+
+The older cable that needed replacement was:
+
+| top      | bottom    |
+|----------|-----------|
+| NITTO SS | W41-27854 |
+| JHT-013  | N15905    |
+| JI-HAW   |           |
+| E147422  |           |
+
+Presumely this one doesnt come with tighter tolerances.
+
 ### Samsung “TUSCANY”
 
 Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main
