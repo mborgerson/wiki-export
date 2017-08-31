@@ -418,7 +418,7 @@ trigger buttons
 
 -   Normal mode does nothing, normal operation
 -   Auto reload mode toggles rapidly to rappidly reload
--   Auto fire+reload mode toggles + rapidly
+-   Auto fire+reload mode toggles  + rapidly
 
 #### USB Descriptors
 
