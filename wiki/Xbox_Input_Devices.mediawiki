@@ -517,7 +517,7 @@ model numer: JS-901D
 |-
 | Stick || {{input-d}} ||
 |-
-| Trigger || {{input-a}} || rowspan="4" | Digital only, either 0 or 255 {{citation needed}}
+| Trigger || {{input-a}} || rowspan="5" | Digital only, either 0 or 255 {{citation needed}}
 |-
 | B (Left side) || rowspan="2" | {{input-b}}
 |-
