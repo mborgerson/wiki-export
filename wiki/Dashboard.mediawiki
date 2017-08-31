@@ -61,7 +61,7 @@ Is it based on Xbox scene version numbers?  Most likely, NOT!  Is it based on fa
 All of these codes are entered at the MS Dashboard's "System Info" screen. (UNTESTED here, codes posted as given at original source site.)
 
 
-Xbox v1.0: {{input-x}} {{input-y}}  {{input-ly+}} {{input-lx-}} {{input-a}}
+Xbox v1.0: {{input-y}} {{input-x}}  {{input-ly+}} {{input-lx-}} {{input-a}}
 
 
 Unknown version: {{input-y}} {{input-ly+}} {{input-ly-}} {{input-x}} {{input-a}}.
