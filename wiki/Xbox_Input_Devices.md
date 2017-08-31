@@ -387,6 +387,8 @@ This is the descriptor in the Xbox mode (X).
 
 ### Joytech Sharp Shooter
 
+*This is an unlicensed / unofficial Xbox accessory.*
+
 The third party light gun from Joytech reports itself as 2 devices and
 mentions pattent [US6287198](http://www.google.com/patents/US6287198) it
 came with a detachable viewfinder scope without any magnification. a red

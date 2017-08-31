@@ -504,6 +504,9 @@ Device Status:     0x0000
 </pre>
 
 === Joytech Sharp Shooter ===
+
+''This is an unlicensed / unofficial Xbox accessory.''
+
 The third party light gun from Joytech reports itself as 2 devices and mentions pattent [http://www.google.com/patents/US6287198 US6287198]
 it came with a detachable viewfinder scope without any magnification. a red dot apears in the viewfinder, its a reflection of a red led, powered by the gun over usb.
 
