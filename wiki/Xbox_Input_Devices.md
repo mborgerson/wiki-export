@@ -401,7 +401,8 @@ model numer: JS-901D
 |-----------------------|--------------|-------------------------------|
 | Stick                 |              |                               |
 | Trigger               |              | Digital only, either 0 or 255 |
-| B button              | | both sides |
+| B (Left side)         |              |
+| B (Bottom)            |
 | x                     |              |
 | y                     |              |
 | START                 |              |                               |

@@ -519,7 +519,9 @@ model numer: JS-901D
 |-
 | Trigger || {{input-a}} || rowspan="4" | Digital only, either 0 or 255 {{citation needed}}
 |-
-| B button || {{input-b}} | both sides
+| B (Left side) || rowspan="2" | {{input-b}}
+|-
+| B (Bottom)
 |-
 | x || {{input-x}}
 |-
