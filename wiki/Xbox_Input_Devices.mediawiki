@@ -523,7 +523,7 @@ model numer: JS-901D
 |-
 | B (Right side)
 |-
-| Magazine button
+| B (Magazine button)
 |-
 | x || {{input-x}}
 |-

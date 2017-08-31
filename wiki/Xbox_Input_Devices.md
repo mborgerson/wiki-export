@@ -403,7 +403,7 @@ model numer: JS-901D
 | Trigger               |              | Digital only, either 0 or 255 |
 | B (Left side)         |              |
 | B (Right side)        |
-| Magazine button       |
+| B (Magazine button)   |
 | x                     |              |
 | y                     |              |
 | START                 |              |                               |
