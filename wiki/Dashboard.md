@@ -111,18 +111,11 @@ on factory of production? Is it based on BIOS version? Does anyone know?
 All of these codes are entered at the MS Dashboard's “System Info”
 screen. (UNTESTED here, codes posted as given at original source site.)
 
-Xbox v1.0:
+-   Xbox v1.0:
+-   Unknown version:
+-   Unknown version:
 
-Unknown version: .
-
-(This one seems to work with most XBOXes sold in the United States)
-
-Unknown version:
-
-(This one worked with the XBOXes manufactured in Hungary, serial numbers
-ending in 03)
-
-Source: Wayback Machine
+Source:
 [unmodded.mine.nu/docs/FormatAdminCode](https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/docs/FormatAdminCode)
 
 See Also

@@ -63,21 +63,11 @@ Is it based on Xbox scene version numbers?  Most likely, NOT!  Is it based on fa
 
 All of these codes are entered at the MS Dashboard's "System Info" screen. (UNTESTED here, codes posted as given at original source site.)
 
+* Xbox v1.0: {{input-y}} {{input-x}}  {{input-ly+}} {{input-lx-}} {{input-a}}
+* Unknown version{{FIXME|reason=Which? This one seems to work with most Xbox sold in the United States}}: {{input-y}} {{input-ly+}} {{input-ly-}} {{input-x}} {{input-a}}
+* Unknown version{{FIXME|reason=Which? This one worked with the Xbox manufactured in Hungary, serial numbers ending in 03}}: {{input-y}} {{input-lx-}} {{input-x}} {{input-a}} {{input-lx-}}
 
-Xbox v1.0: {{input-y}} {{input-x}}  {{input-ly+}} {{input-lx-}} {{input-a}}
-
-
-Unknown version: {{input-y}} {{input-ly+}} {{input-ly-}} {{input-x}} {{input-a}}.
-
-(This one seems to work with most XBOXes sold in the United States) 
-
-
-Unknown version: {{input-y}} {{input-lx-}} {{input-x}} {{input-a}} {{input-lx-}} 
-
-(This one worked with the XBOXes manufactured in Hungary, serial numbers ending in 03) 
-
-
-Source: Wayback Machine [https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/docs/FormatAdminCode  unmodded.mine.nu/docs/FormatAdminCode]
+Source: [https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/docs/FormatAdminCode  unmodded.mine.nu/docs/FormatAdminCode]
 
 == See Also ==
 
