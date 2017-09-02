@@ -9,13 +9,6 @@ device-specific information. It is connected via I²C and located on
 address 0x54. Parts of the EEPROM are encrypted using
 [Kernel/XboxEEPROMKey](/wiki/Kernel/XboxEEPROMKey "wikilink").
 
-Chip Models
------------
-
-| Xbox Model    | Manufacturer | Model      |
-|---------------|--------------|------------|
-| 1.4 (Others?) | Catalyst     | CAT24WC02J |
-
 Contents
 --------
 
