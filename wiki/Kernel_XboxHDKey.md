@@ -4,7 +4,7 @@ permalink: wiki/Kernel/XboxHDKey/
 layout: wiki
 ---
 
-This key is (amongst other things) used to generate the Xbox recovery
+This key is (amongst other things) used to retreive the Xbox recovery
 key used by the Dashboard. Users could ask MS support for their
 receovery key. So either Microsoft kept a database of all keys / serial
 numbers; or the serial number and this key are related.
