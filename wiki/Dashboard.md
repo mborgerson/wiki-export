@@ -91,20 +91,11 @@ different for all versions of the Xbox. If you find your code, please
 post it here along with your xbox version (at least the last 2 digits of
 the serial number - the factory code where it was manufactured).
 
-#### Different Xboxes Use Different Codes
+#### Different codes based on serial-number
 
 MS support techs under certain conditions would ask for your serial
 number and verify registration of your Xbox before giving you a code to
 clear/format your fouled Xbox's HDD.
-
-What part(s) of the serial number they used to determine the correct
-code is unknown?
-
-More data is needed to sort out which Xbox a particular code works on,
-and what other codes exist.
-
-Is it based on Xbox scene version numbers? Most likely, NOT! Is it based
-on factory of production? Is it based on BIOS version? Does anyone know?
 
 #### List of Xbox Format Admin Codes
 
