@@ -153,32 +153,6 @@ header:
 | 0x00000004 | Europe / Australia  |
 | 0x80000000 | Manufacturing plant |
 
-The Serial Number
------------------
-
-         1166356 20903
-         ||    | |||||__
-         ||    | ||||___ factory number
-         ||    | |||____
-         ||    | ||_____ week of year (starting Mondays)
-         ||    | |______ last digit of year
-         ||    |________
-         ||_____________ number of Xbox within week and factory
-         |______________ production line within factory 
-       
-
-| 1   | 1   | 6   | 6   | 3   | 5   | 6   |     | 2   | 0   | 9   | 0   | 3   |     |                                                             |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------------------------------------------------------------|
-| |   | \\  | \_  | \_  | \_  | \_  | /   |     | |   | |   | |   | \\  | \\  | \_  | Factory Number (02=Mexico, 03=Hungary, 05=China, 06=Taiwan) |
-| |   |     |     | |   | |   |     |     |     | |   | |   | |   |     |     |     |                                                             |
-| |   |     |     | |   | |   |     |     |     | |   | \\  | \\  | \_  | \_  | \_  | week of year (starting Mondays)                             |
-| |   |     |     | |   | |   |     |     |     | |   |     |     |     |     |     |                                                             |
-| |   |     |     | |   | |   |     |     |     | \\  | \_  | \_  | \_  | \_  | \_  | last digit of year (200Y)                                   |
-| |   |     |     | |   | |   |     |     |     |     |     |     |     |     |     |                                                             |
-| |   |     |     | \\  | \\  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | number of Xbox within week and factory                      |
-| |   |     |     |     |     |     |     |     |     |     |     |     |     |     |                                                             |
-| \\  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | \_  | production line within factory                              |
-
 The MAC address
 ---------------
 
