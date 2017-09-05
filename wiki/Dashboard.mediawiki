@@ -12,15 +12,14 @@ the Xbox High Definition AV Pack or cable.
 Repeat button combo to toggle between 480p and 480i.
 
 === Music visualization in fullscreen ===
-Press "Y" then "X" while playing audio CDs or soundtracks stored on the HDD to display full-screen geiss-like music visualization.  Or, press Info button on the DVD Playback Kit remote.
 
-But, wait there's more (only visible with DVD Playback Kit and Remote).
+Press {{input-y}}, {{input-x}} while playing audio CDs or soundtracks stored on the HDD to display full-screen geiss-like music visualization. Or, press "INFO" button on the DVD Playback Kit remote.
 
-Fullscreen Visualization Part 2:
+Only visible with DVD Playback Kit and Remote:
 
 #Start playing a song using either the Xbox controller or playback kit remote.
-#Press "Y" then "X" on the controller or "INFO" on the remote to get the full screen visualization.
-#Here's the part that requires the DVD Playback Kit remote.  Press "STOP" or "PAUSE" (you cannot use the controller to stop the music to see it as doing so goes back to the Music Playback menu with the small visualization area).  Once the music visualization pattern dies down, a full-screen swirling starfield pattern appears.  After some time passes, the screen will be filled with a changing burst of solid color where you can make out the wireframe spinning globe seen encompassing the main dashboard background.  The burst of color fades to black leaving the swirling starfield. The cycle repeats with a random changing solid color burst which fades to the swirling starfield.
+#Press {{input-y}}, {{input-x}} on the controller or "INFO" on the remote to get the full screen visualization.
+#Here's the part that requires the DVD Playback Kit remote.  Press "STOP" or "PAUSE" (you cannot use the controller to stop the music to see it as doing so goes back to the Music Playback menu with the small visualization area).  Once the music visualization pattern dies down, a full-screen swirling starfield pattern appears.  After some time passes, the screen will be filled with a changing burst of solid color where you can make out the wireframe spinning globe seen encompassing the main dashboard background.  The burst of color fades to black leaving the swirling starfield. The cycle repeats with a random changing solid color burst which fades to the swirling starfield{{FIXME|reason=replace lengthy explanation with a video of this}}.
 
 Not quite true about needing the remote control, if playing a CD while full screen visualization is displayed, press the eject button on the front of the Xbox console.
 
