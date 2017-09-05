@@ -109,7 +109,7 @@ screen. (UNTESTED here, codes posted as given at original source site.)
 Source:
 [unmodded.mine.nu/docs/FormatAdminCode](https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/docs/FormatAdminCode)
 
-#### Traveling Main Menu
+### Traveling Main Menu
 
 Turn on your Xbox and go to the dashboard, Press {{ input-x}} at the
 main screen, the main menu will start to slowly move. Press {{ input-x}}
