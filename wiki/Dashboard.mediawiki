@@ -65,7 +65,7 @@ Source: [https://web.archive.org/web/20041010231137/http://unmodded.mine.nu:80/d
 
 === Traveling Menus ===
 
-Turn on your Xbox and go to the dashboard, Press {{input-y}} {{ input-x}} on the main screen not from any sub-menu, the main menu will start to slowly move.  Press {{input-y}} {{ input-x}} to return menu to locked position.  All sub-menus will be moving about as well,  you cannot return to locked position from sub-menus only from main menu.
+Turn on your Xbox and go to the dashboard, press {{input-y}} {{ input-x}} on the main screen not from any sub-menu, the main menu will start to slowly move.  Press {{input-y}} {{ input-x}} to return menu to locked position.  All sub-menus will be moving about as well,  you cannot return to locked position from sub-menus only from main menu.
 
 Source: Shaky Menu at https://www.gamefaqs.com/xbox/915780-xbox/cheats
 

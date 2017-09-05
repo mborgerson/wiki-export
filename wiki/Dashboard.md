@@ -111,7 +111,7 @@ Source:
 
 ### Traveling Menus
 
-Turn on your Xbox and go to the dashboard, Press {{ input-x}} on the
+Turn on your Xbox and go to the dashboard, press {{ input-x}} on the
 main screen not from any sub-menu, the main menu will start to slowly
 move. Press {{ input-x}} to return menu to locked position. All
 sub-menus will be moving about as well, you cannot return to locked
