@@ -26,6 +26,7 @@ However, not all devices are compatible, so the following table gives a list of 
 {| class="wikitable"
 ! Product name !! VID !! PID !! Capacity !! Notes
 |-
+|BESTRUNNER 256MB Speicherstick || 0xABCD || 0x1234 || 256MB ||  
 |}
 == References ==
 

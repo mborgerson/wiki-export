@@ -27,9 +27,9 @@ Aside from the official licensed Memory Units, some standard USB storage
 devices can be reformatted as Xbox Memory Unit. However, not all devices
 are compatible, so the following table gives a list of known devices:
 
-| Product name | VID | PID | Capacity | Notes |
-|--------------|-----|-----|----------|-------|
-||
+| Product name                   | VID    | PID    | Capacity | Notes |
+|--------------------------------|--------|--------|----------|-------|
+| BESTRUNNER 256MB Speicherstick | 0xABCD | 0x1234 | 256MB    |       |
 
 References
 ----------
