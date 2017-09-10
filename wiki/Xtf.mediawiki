@@ -1,6 +1,6 @@
 [[File:Xbox-dashboard-font-specimen.png|thumb|200px|Xbox Font Specimen]]
 
-xtf is a font file format used in the [[Dashboard]].
+XTF is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
 
 == Dashboard fonts ==
@@ -20,4 +20,25 @@ A monospace font.
 
 == File format ==
 
-{{FIXME}}
+* 4 byte (magic)
+* 4 byte (length prefix for following string)
+* zero-terminated string with given buffer length (font-name)
+* [https://msdn.microsoft.com/en-us/library/dd144956%28v=vs.85%29.aspx GLYPHSET] (List of supported glyphs)
+* For each cGlyphsSupported:
+** [https://msdn.microsoft.com/en-us/library/windows/desktop/dd374209(v=vs.85).aspx GLYPHMETRICSFLOAT] (Metrics for each glyph)
+** 4 byte (Offset of glyph in file)
+* For each GLYPHSET range
+** For each glyph in this range
+*** 2 byte (Index count)
+*** 2 byte (Vertex count)
+*** For each index:
+**** 2 byte (Vertex index)
+*** For each vertex:
+**** 4 byte float (X-coordinate)
+**** 4 byte float (Y-coordinate)
+
+{{FIXME|reason=Confirm these findings and format them better}}
+
+== Links ==
+
+* [https://github.com/JayFoxRox/xbox-tools/tree/master/xtf-converter A tool to convert XTF fonts to SVG fonts]
