@@ -27,7 +27,10 @@ However, not all devices are compatible, so the following table gives a list of 
 ! Product name !! VID !! PID !! Capacity !! Notes
 |-
 |BESTRUNNER 256MB Speicherstick || 0xABCD || 0x1234 || 256MB ||  
+|-
+|USB Mass Storage Device || 0x058F || 0x9381 || 64MB || Generic Mass Storage Device
 |}
+
 == References ==
 
 * [http://imgur.com/a/8QmDA Thrustmaster XBOX Memory Unit images by DarkGabz]
