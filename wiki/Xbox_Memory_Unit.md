@@ -24,8 +24,9 @@ Compatible USB sticks
 ---------------------
 
 Aside from the official licensed Memory Units, some standard USB storage
-devices can be reformatted as Xbox Memory Unit. However, not all devices
-are compatible, so the following table gives a list of known devices:
+devices can be reformatted as Xbox Memory Unit. (It is rumored that the
+capacity should not exceed 4GB) However, not all devices are compatible,
+so the following table gives a list of known devices:
 
 | Product name                   | VID    | PID    | Capacity | Notes                       |
 |--------------------------------|--------|--------|----------|-----------------------------|
