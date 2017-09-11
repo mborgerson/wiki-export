@@ -38,7 +38,7 @@ An inner porition with Xbox logo:
     position,(opposite of the “XBOX” text without logo)
     -   4 times a Xbox logo
     -   2 times the word “genuine”
-    -   and in the middel the word ASPnnnn where n is a number
+    -   and in the middle the word ASPnnnn where n is a number
 
 ''' ASP code ''' ![Detail of the DVD hologram, reflecting the ASP5080 by
 the flash of the camera. found on a demodisk
