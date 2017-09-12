@@ -2,6 +2,7 @@
 
 XTF is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
+Both fonts were also used for branding and promotional use.
 
 == Dashboard fonts ==
 

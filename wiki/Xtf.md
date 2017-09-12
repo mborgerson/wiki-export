@@ -8,6 +8,7 @@ layout: wiki
 
 XTF is a font file format used in the [Dashboard](/wiki/Dashboard "wikilink").
 It became famous for being [exploited](/wiki/Exploits#Font_hacks "wikilink").
+Both fonts were also used for branding and promotional use.
 
 Dashboard fonts
 ---------------
