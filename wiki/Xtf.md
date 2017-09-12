@@ -20,7 +20,7 @@ Xbox. Matteson had already created many of Microsoft's
 later create the [Convection fonts used on the Xbox
 360](https://www.fonts.com/font/microsoft/convection).
 
-Each font contain 7365 glyphs each.
+Each font contain 7365 glyphs.
 
 ### Xbox.xtf
 
