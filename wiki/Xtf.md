@@ -45,7 +45,7 @@ File format
         (Metrics for each glyph)
     -   4 byte (Offset of glyph in file)
 -   For each GLYPHSET range
-    -   For each glyph in this range (stored as a triangle list)
+    -   For each glyph in this range
         -   2 byte (Index count)
         -   2 byte (Vertex count)
         -   For each index:
@@ -53,6 +53,8 @@ File format
         -   For each vertex:
             -   4 byte float (X-coordinate)
             -   4 byte float (Y-coordinate)
+
+The mesh data is stored as triangle list. 3 indices per triangle.
 
 Links
 -----
