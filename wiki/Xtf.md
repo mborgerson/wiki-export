@@ -4,23 +4,21 @@ permalink: wiki/Xtf/
 layout: wiki
 ---
 
-<img src="Xbox-dashboard-font-specimen.png" title="Xbox Font Specimen" alt="Xbox Font Specimen" width="200" />
-
 XTF is a font file format used in the [Dashboard](/wiki/Dashboard "wikilink").
 It became famous for being [exploited](/wiki/Exploits#Font_hacks "wikilink").
 
 Dashboard fonts
 ---------------
 
-The dashboard fonts were designed by [Steve
-Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") for use on the Xbox
-Dashboard as well as for promotional materials. Matteson would later
-create the [Convection fonts used on the Xbox
-360](https://www.fonts.com/font/microsoft/convection).
+The fonts were designed by [Steve
+Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") for use in the Xbox
+[Dashboard](/wiki/Dashboard "wikilink") as well as for promotional materials.
 
-Each font contains 7365 glyphs.
+The XTF versions of these fonts contain 7365 glyphs each.
 
 ### Xbox.xtf
+
+<img src="Xbox-dashboard-font-specimen.png" title="Xbox Font Specimen" alt="Xbox Font Specimen" width="200" />
 
 A monospace font.
 
@@ -47,7 +45,7 @@ File format
         (Metrics for each glyph)
     -   4 byte (Offset of glyph in file)
 -   For each GLYPHSET range
-    -   For each glyph in this range (stored as a triangle strip)
+    -   For each glyph in this range (stored as a triangle list)
         -   2 byte (Index count)
         -   2 byte (Vertex count)
         -   For each index:

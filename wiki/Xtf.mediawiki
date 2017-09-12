@@ -1,14 +1,15 @@
-[[File:Xbox-dashboard-font-specimen.png|thumb|200px|Xbox Font Specimen]]
-
 XTF is a font file format used in the [[Dashboard]].
 It became famous for being [[Exploits#Font hacks|exploited]].
+
 == Dashboard fonts ==
 
-The dashboard fonts were designed by [[Wikipedia:Steve Matteson|Steve Matteson]] for use on the Xbox Dashboard as well as for promotional materials. Matteson would later create the [https://www.fonts.com/font/microsoft/convection Convection fonts used on the Xbox 360]. 
+The fonts were designed by [[Wikipedia:Steve Matteson|Steve Matteson]] for use in the Xbox [[Dashboard]] as well as for promotional materials.
 
-Each font contains 7365 glyphs.
+The XTF versions of these fonts contain 7365 glyphs each.
 
 === Xbox.xtf ===
+
+[[File:Xbox-dashboard-font-specimen.png|thumb|200px|Xbox Font Specimen]]
 
 A monospace font.
 
@@ -28,7 +29,7 @@ A monospace font.
 ** [https://msdn.microsoft.com/en-us/library/windows/desktop/dd374209(v=vs.85).aspx GLYPHMETRICSFLOAT] (Metrics for each glyph)
 ** 4 byte (Offset of glyph in file)
 * For each GLYPHSET range
-** For each glyph in this range (stored as a triangle strip)
+** For each glyph in this range (stored as a triangle list)
 *** 2 byte (Index count)
 *** 2 byte (Vertex count)
 *** For each index:
