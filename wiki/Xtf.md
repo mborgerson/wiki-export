@@ -8,17 +8,14 @@ layout: wiki
 
 XTF is a font file format used in the [Dashboard](/wiki/Dashboard "wikilink").
 It became famous for being [exploited](/wiki/Exploits#Font_hacks "wikilink").
-Both fonts were also used for branding and promotional use.
 
 Dashboard fonts
 ---------------
 
 The dashboard fonts were designed by [Steve
-Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") of [Ascdender
-Corporation](/wiki/Wikipedia:Ascender_Corporation "wikilink") for use on the
-Xbox. Matteson had already created many of Microsoft's
-[Windows](/wiki/Wikipedia:Microsoft_Windows "wikilink") core fonts and would
-later create the [Convection fonts used on the Xbox
+Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") for use on the Xbox as
+well as for promotional materials. Matteson would later create the
+[Convection fonts used on the Xbox
 360](https://www.fonts.com/font/microsoft/convection).
 
 Each font contains 7365 glyphs.
