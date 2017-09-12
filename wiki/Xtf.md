@@ -13,8 +13,14 @@ Dashboard fonts
 ---------------
 
 The dashboard fonts were designed by [Steve
-Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink"). They contain 7365 glyphs
-each.
+Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") of [Ascdender
+Corporation](/wiki/Wikipedia:Ascender_Corporation "wikilink") for use on the
+Xbox. Matteson had already created many of Microsoft's
+[Windows](/wiki/Wikipedia:Microsoft_Windows "wikilink") core fonts and would
+later create the [Convection fonts used on the Xbox
+360](https://www.fonts.com/font/microsoft/convection:Link).
+
+Each font contain 7365 glyphs each.
 
 ### Xbox.xtf
 
@@ -51,6 +57,8 @@ File format
         -   For each vertex:
             -   4 byte float (X-coordinate)
             -   4 byte float (Y-coordinate)
+
+Individual character meshes are stored as triangle strips
 
 Links
 -----
