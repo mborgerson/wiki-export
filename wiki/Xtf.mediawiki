@@ -5,7 +5,7 @@ It became famous for being [[Exploits#Font hacks|exploited]].
 
 == Dashboard fonts ==
 
-The dashboard fonts were designed by [[Wikipedia:Steve Matteson|Steve Matteson]] of [[Wikipedia:Ascender Corporation|Ascdender Corporation]] for use on the Xbox. Matteson had already created many of Microsoft's [[Wikipedia:Microsoft Windows|Windows]] core fonts and would later create the [https://www.fonts.com/font/microsoft/convection:Link Convection fonts used on the Xbox 360].
+The dashboard fonts were designed by [[Wikipedia:Steve Matteson|Steve Matteson]] of [[Wikipedia:Ascender Corporation|Ascdender Corporation]] for use on the Xbox. Matteson had already created many of Microsoft's [[Wikipedia:Microsoft Windows|Windows]] core fonts and would later create the [https://www.fonts.com/font/microsoft/convection Convection fonts used on the Xbox 360].
 
 Each font contain 7365 glyphs each.
 

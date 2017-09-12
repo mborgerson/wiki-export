@@ -18,7 +18,7 @@ Corporation](/wiki/Wikipedia:Ascender_Corporation "wikilink") for use on the
 Xbox. Matteson had already created many of Microsoft's
 [Windows](/wiki/Wikipedia:Microsoft_Windows "wikilink") core fonts and would
 later create the [Convection fonts used on the Xbox
-360](https://www.fonts.com/font/microsoft/convection:Link).
+360](https://www.fonts.com/font/microsoft/convection).
 
 Each font contain 7365 glyphs each.
 
