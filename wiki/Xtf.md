@@ -13,9 +13,9 @@ Dashboard fonts
 ---------------
 
 The dashboard fonts were designed by [Steve
-Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") for use on the Xbox as
-well as for promotional materials. Matteson would later create the
-[Convection fonts used on the Xbox
+Matteson](/wiki/Wikipedia:Steve_Matteson "wikilink") for use on the Xbox
+Dashboard as well as for promotional materials. Matteson would later
+create the [Convection fonts used on the Xbox
 360](https://www.fonts.com/font/microsoft/convection).
 
 Each font contains 7365 glyphs.
