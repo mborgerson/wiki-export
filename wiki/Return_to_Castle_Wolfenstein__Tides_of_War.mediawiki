@@ -1,0 +1,2 @@
+{{Game}}
+The source code to the PC version is available at https://github.com/id-Software/RTCW-SP and https://github.com/id-Software/RTCW-MP .
