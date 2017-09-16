@@ -1,0 +1,2 @@
+{{Game}}
+A slightly modified version{{citation needed}} of the PC versions source code is available at https://github.com/TTimo/doom3.gpl
