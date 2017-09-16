@@ -328,6 +328,12 @@ SB00 Kreon 0.80 (September 9th 2006)<br />
 SB01 Kreon 1.00 (October 9th 2007)</p></td>
 </tr>
 <tr class="even">
+<td><p>Toshiba TS-H352C</p></td>
+<td><p>IDE</p></td>
+<td></td>
+<td><p>Kreon </p></td>
+</tr>
+<tr class="odd">
 <td><p>Samsung SH-D162D</p></td>
 <td><p>IDE</p></td>
 <td><p>[<a href="https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200706281644411972_SH-D162D_SB00.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB00]<br />
@@ -337,41 +343,37 @@ SB02<a href="http://www.firmwarehq.com/download_995-file_SH-D162D_SB02.exe.html"
 [<a href="https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200909281412336931_SH-D162D_SB04.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB04]</p></td>
 <td><p>SB00 Kreon 1.00 (November 18th 2007)</p></td>
 </tr>
-<tr class="odd">
-<td><p>Toshiba TS-H352C</p></td>
-<td><p>IDE</p></td>
-<td></td>
-<td><p>Kreon</p></td>
-</tr>
 <tr class="even">
 <td><p>Toshiba TS-H352D</p></td>
 <td><p>IDE</p></td>
 <td></td>
-<td><p>Kreon</p></td>
+<td><p>Kreon </p></td>
 </tr>
 <tr class="odd">
 <td><p>Samsung SH-D163A</p></td>
 <td><p>SATA</p></td>
 <td></td>
-<td><p>SB01 Kreon 1.00 (October 9th 2007)</p></td>
+<td><p>Kreon 0.80 (October 17th 2006)<br />
+SB01 Kreon 1.00 (October 9th 2007)</p></td>
 </tr>
 <tr class="even">
+<td><p>Toshiba TS-H353A</p></td>
+<td><p>SATA</p></td>
+<td></td>
+<td><p>Kreon 0.80 (October 17th 2006) </p></td>
+</tr>
+<tr class="odd">
 <td><p>Samsung SH-D163B</p></td>
 <td><p>SATA</p></td>
 <td></td>
 <td><p>Kreon 1.00 (November 18th 2007)</p></td>
 </tr>
-<tr class="odd">
-<td><p>Toshiba TS-H353A</p></td>
-<td><p>SATA</p></td>
-<td></td>
-<td></td>
-</tr>
 <tr class="even">
 <td><p>Toshiba TS-H353B</p></td>
 <td><p>SATA</p></td>
 <td></td>
-<td></td>
+<td>
+</td>
 </tr>
 </tbody>
 </table>
