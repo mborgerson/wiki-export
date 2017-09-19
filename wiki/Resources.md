@@ -28,4 +28,9 @@ History
     (Video)](https://www.youtube.com/watch?v=rUODlNffWmU)
 -   [Xbox Assembly Line Tour
     (Video)](https://www.youtube.com/watch?v=iWQb7LGH71s)
+-   [XBox Oral History Panel with Nick Baker, Todd Holmdahl, and Albert
+    Penello (Video)](https://www.youtube.com/watch?v=_gOoI57q72M)
+-   [Behind the Code - Interview with Nick Baker (Video) intresting xbox
+    part starts
+    20:48](https://www.youtube.com/watch?v=2VCb-y7MC5U?t=1248)
 
