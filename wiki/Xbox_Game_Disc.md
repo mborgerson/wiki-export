@@ -359,8 +359,8 @@ SB01 Kreon 1.00 (October 9th 2007)</p></td>
 <tr class="even">
 <td><p>Toshiba TS-H353A</p></td>
 <td><p>SATA</p></td>
-<td></td>
-<td><p>Kreon 0.80 (October 17th 2006) </p></td>
+<td><p>[<a href="http://web.archive.org/web/20090601191704/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">http://web.archive.org/web/20090601191704/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200701031704489471_SH-D163A_SB01.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB01]</p></td>
+<td><p>Kreon 1.00 (November 18th 2007)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Samsung SH-D163B</p></td>
