@@ -259,7 +259,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |Toshiba TS-H353A
 |SATA
 |[http://web.archive.org/web/20090601191704/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200701031704489471_SH-D163A_SB01.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB01]
-|Kreon 1.00 (November 18th 2007)
+|Kreon 0.80 (October 17th 2006) <br> Kreon 1.00 (November 18th 2007)
 |-
 |Samsung SH-D163B
 |SATA
