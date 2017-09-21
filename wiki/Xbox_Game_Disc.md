@@ -361,7 +361,7 @@ SB01 Kreon 1.00 (October 9th 2007)</p></td>
 <td><p>SATA</p></td>
 <td></td>
 <td><p>Kreon 0.80 (October 17th 2006)<br />
-Kreon 1.00 (November 18th 2007)</p></td>
+SB01 Kreon 1.00 (October 9th 2007)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Samsung SH-D163B</p></td>
