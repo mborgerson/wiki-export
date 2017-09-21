@@ -221,55 +221,60 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 !Original Firmware download
 !Name of modified Firmware for dumping
 |-
-|{{citation needed}}
+|{{FIXME|reason=Which drives?}}
 |
 |
-|0800
+|
+* 0800{{citation needed}}
 |-
 |Toshiba SD-M2012C
 |IDE
 |
-|Kreon{{citation needed}}
+|
+* Kreon{{citation needed}}
 |-
 |Samsung SH-D162C
 |IDE
 |
-|SB00 Kreon 0.60 (July 30th 2006) <br> SB00 Kreon 0.80 (September 9th 2006) <br> SB01 Kreon 1.00 (October 9th 2007)
+|rowspan=2 |
+* SB00 Kreon 0.60 (July 30th 2006)
+* SB00 Kreon 0.80 (September 9th 2006)
+* SB01 Kreon 1.00 (October 9th 2007)
 |-
 |Toshiba TS-H352C
 |IDE
 |
-|Kreon{{citation needed}} {{FIXME|reason=Same as SH-D162C?}}
 |-
 |Samsung SH-D162D
 |IDE
 |[https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200706281644411972_SH-D162D_SB00.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB00] <br> [https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200811051941150901_SH-D162D_SB01.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB01] <br> SB02{{citation needed}}[http://www.firmwarehq.com/download_995-file_SH-D162D_SB02.exe.html unknown if safe or legit] <br> [https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200903191825218171_SH-D162D_SB03.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB03] <br> [https://web.archive.org/web/20120123040117/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200909281412336931_SH-D162D_SB04.exe&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB04]
-|SB00 Kreon 1.00 (November 18th 2007)
+|rowspan=2 |
+* SB00 Kreon 1.00 (November 18th 2007)
 |-
 |Toshiba TS-H352D
 |IDE
 |
-|Kreon{{citation needed}} {{FIXME|reason=Same as SH-D162D?}}
 |-
 |Samsung SH-D163A
 |SATA
 |[http://web.archive.org/web/20090601191704/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200701031704489471_SH-D163A_SB01.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB01]
-|Kreon 0.80 (October 17th 2006) <br> SB01 Kreon 1.00 (October 9th 2007)
+|rowspan=2 |
+* Kreon 0.80 (October 17th 2006)
+* SB01 Kreon 1.00 (October 9th 2007)
 |-
 |Toshiba TS-H353A
 |SATA
 |
-|Kreon 0.80 (October 17th 2006) <br> SB01 Kreon 1.00 (October 9th 2007)
 |-
 |Samsung SH-D163B
 |SATA
 |
-|Kreon 1.00 (November 18th 2007)
+|rowspan=2 |
+* Kreon 1.00 (November 18th 2007)
 |-
 |Toshiba TS-H353B
 |SATA
 |
-|{{citation needed}} {{FIXME|reason=Same as SH-D163B?}}
 |}
 
 Please note that the modified firmwares are based on copyrighted material and can therefore not be legally shared here.
