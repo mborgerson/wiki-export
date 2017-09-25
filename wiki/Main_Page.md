@@ -27,7 +27,7 @@ Hardware
 -   [MCPX](/wiki/MCPX "wikilink")
     -   [APU](/wiki/APU "wikilink")
     -   [ACI](/wiki/ACI "wikilink")
--   [SMBus](/wiki/SMBus "wikilink")
+-   [SMBus\_Controller](/wiki/SMBus_Controller "wikilink")
 -   [EEPROM](/wiki/EEPROM "wikilink")
 -   [SMC](/wiki/SMC "wikilink")
 -   [Video Encoder](/wiki/Video_Encoder "wikilink")

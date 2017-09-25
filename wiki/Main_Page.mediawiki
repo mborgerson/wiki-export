@@ -19,7 +19,7 @@
 * [[MCPX]]
 ** [[APU]]
 ** [[ACI]]
-* [[SMBus]]
+* [[SMBus_Controller]]
 * [[EEPROM]]
 * [[SMC]]
 * [[Video Encoder]]
