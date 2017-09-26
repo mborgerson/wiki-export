@@ -13,49 +13,39 @@ The controller for the SMBus interface in the Xbox is a PCI device with the DevI
 
 {| class="wikitable"
 |-
-|  '''Port'''
-|  Description''''''
+! Port !! Description
 |-
-|  0xc000
+|  0xC000
 |  '''Status'''
 
-bit 0: abort 
-
-bit 1: collision 
-
-bit 2: protocol error 
-
-bit 3: busy 
-
-bit 4: cycle complete 
-
-bit 5: timeout
+* bit 0: abort 
+* bit 1: collision 
+* bit 2: protocol error 
+* bit 3: busy 
+* bit 4: cycle complete 
+* bit 5: timeout
 
 |-
-|  0xc002
+|  0xC002
 |  '''Control'''
 
-bit 2-0: cycle type 
-
-bit 3: start 
-
-bit 4: enable interrupt 
-
-bit 5: abort
+* bit 2-0: cycle type 
+* bit 3: start 
+* bit 4: enable interrupt 
+* bit 5: abort
 
 |-
-|  0xc004
+|  0xC004
 |  '''Address'''
 |-
-|  0xc006
+|  0xC006
 |  '''Data'''
 |-
-|  0xc008
+|  0xC008
 |  '''Command'''
 |}
 
 This is very similar (but not identical) to the AMD756/AMD766/AMD768 SMBus controllers. The [https://web.archive.org/web/20100617015507/http://www.lm-sensors.nu/ lm_sensors project] includes GPLed Linux kernel code for it since version 2.6.4 (kernel/busses/i2c-amd756.c).
-
 
 ==SMBus Controller Programming==
 

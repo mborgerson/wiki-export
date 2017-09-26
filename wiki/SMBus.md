@@ -28,34 +28,25 @@ the DevID 01B4 and it is built into MPCX southbridge.
 SMBus Controller Port Layout
 ----------------------------
 
-|          |                         |
-|----------|-------------------------|
-| **Port** | Description*'*'         |
-| 0xc000   | **Status**              
-                           
-  bit 0: abort             
-                           
-  bit 1: collision         
-                           
-  bit 2: protocol error    
-                           
-  bit 3: busy              
-                           
-  bit 4: cycle complete    
-                           
-  bit 5: timeout           |
-| 0xc002   | **Control**             
-                           
-  bit 2-0: cycle type      
-                           
-  bit 3: start             
-                           
-  bit 4: enable interrupt  
-                           
-  bit 5: abort             |
-| 0xc004   | **Address**             |
-| 0xc006   | **Data**                |
-| 0xc008   | **Command**             |
+| Port   | Description                 |
+|--------|-----------------------------|
+| 0xC000 | **Status**                  
+                               
+  -   bit 0: abort             
+  -   bit 1: collision         
+  -   bit 2: protocol error    
+  -   bit 3: busy              
+  -   bit 4: cycle complete    
+  -   bit 5: timeout           |
+| 0xC002 | **Control**                 
+                               
+  -   bit 2-0: cycle type      
+  -   bit 3: start             
+  -   bit 4: enable interrupt  
+  -   bit 5: abort             |
+| 0xC004 | **Address**                 |
+| 0xC006 | **Data**                    |
+| 0xC008 | **Command**                 |
 
 This is very similar (but not identical) to the AMD756/AMD766/AMD768
 SMBus controllers. The [lm\_sensors
