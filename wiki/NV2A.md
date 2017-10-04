@@ -49,6 +49,8 @@ Notes
     emulator](https://web-beta.archive.org/web/20030207073141/http://developer.nvidia.com:80/view.asp?IO=nv30_emulation)
     -   [Backup of nv30specs: List of implemented GL extensions for
         NV10-NV30](https://web.archive.org/web/20070105072020/http://www.cs.virginia.edu/~gfx/Courses/2002/RealTime.fall.02/Cg/nv30specs.pdf)
-    -   [nv30specs.pdf, 13 Nov 2006,
-        pp. 368.](https://developer.download.nvidia.com/opengl/specs/nv30specs.pdf)
+    -   \[<https://developer.download.nvidia.com/opengl/specs/nv30specs.pdf>
+        NVIDIA OpenGL
 
+Extension Specifications for the CineFX Architecture (NV3x), 13 Nov
+2006, pp. 368.\]
