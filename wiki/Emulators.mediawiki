@@ -224,7 +224,7 @@ This is a list of known Xbox emulation projects
 |{{Dead}}
 |LLE/HLE Hybrid
 |{{No}}
-|[[Xbox 360 Backward Compatibility]]
+|Fusion[http://michaelbrundage.com/project/xbox-360-emulator/] ([[Xbox 360 Backward Compatibility]])
 |
 |Microsoft
 |Xbox 360
@@ -234,7 +234,7 @@ This is a list of known Xbox emulation projects
 |{{Maintained}}
 |LLE/HLE Hybrid{{citation needed}}
 |{{No}}
-|[[Xbox One Backward Compatibility]]
+|Fission[http://www.ign.com/articles/2017/10/23/the-untold-story-of-xbox-one-backwards-compatibility] ([[Xbox One Backward Compatibility]])
 |[http://www.xbox.com/en-US/xbox-one/backward-compatibility]
 |Microsoft
 |Xbox One
