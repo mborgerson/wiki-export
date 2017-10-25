@@ -1903,22 +1903,22 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |[[Kernel/XProfpControl]]
 |370
 |
-|Profiled builds only
+|Profiling-enabled builds only!
 |-
 |[[Kernel/XProfpGetData]]
 |371
 |
-|Profiled builds only
+|Profiling-enabled builds only!
 |-
 |[[Kernel/IrtClientInitFast]]
 |372
 |
-|Profiled builds only
+|Profiling-enabled builds only!
 |-
 |[[Kernel/IrtSweep]]
 |373
 |
-|Profiled builds only
+|Profiling-enabled builds only!
 |-
 |[[Kernel/MmDbgAllocateMemory]]
 |374
