@@ -1900,25 +1900,25 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |
 |Unused?
 |-
-|
+|[[Kernel/XProfpControl]]
 |370
 |
-|Unused?
+|Profiled builds only
 |-
-|
+|[[Kernel/XProfpGetData]]
 |371
 |
-|Unused?
+|Profiled builds only
 |-
-|
+|[[Kernel/IrtClientInitFast]]
 |372
 |
-|Unused?
+|Profiled builds only
 |-
-|
+|[[Kernel/IrtSweep]]
 |373
 |
-|Unused?
+|Profiled builds only
 |-
 |[[Kernel/MmDbgAllocateMemory]]
 |374
