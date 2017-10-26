@@ -425,20 +425,26 @@ Not described yet, this is complicated. This got a lot more complicated
 when Microsoft started using different RAM sometime after [Hardware
 Revision 1.6](/wiki/Hardware_Revisions#1.6 "wikilink") was already out.
 
-#### Weird stuff 2
+#### Configure LDT bus
 
-This does some PCI config, use unknown.
+DWORD flow control is enabled in the MCPX.
 
     out32(0xCF8, 0x80000854);
     out32(0xCFC, in32(0xCFC) | 0x88000000);
 
+DWORD flow control is also enabled in the NV2A core.
+
     out32(0xCF8, 0x80000064);
     out32(0xCFC, in32(0xCFC) | 0x88000000);
+
+The LDT bus is reset.
 
     out32(0xCF8, 0x8000006C);
     uint32_t tmp = in32(0xCFC);
     out32(0xCFC, tmp & 0xFFFFFFFE);
     out32(0xCFC, tmp);
+
+The rest is unknown.
 
     out32(0xCF8, 0x80000080);
     out32(0xCFC, 0x00000100);
