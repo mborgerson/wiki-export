@@ -443,7 +443,10 @@ This does some PCI config, use unknown.
     out32(0xCF8, 0x80000080);
     out32(0xCFC, 0x00000100);
 
-#### Weird stuff 3
+#### Enable USB ASRC
+
+The USB controller's “automatic slew rate compensation” feature is
+enabled for MCPX revisions D01 and later.
 
     out32(0xCF8, 0x80000808);
     uint8_t mcpx_revision = in8(0xCFC);    
