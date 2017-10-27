@@ -147,13 +147,19 @@ from BIOS to BIOS, but with some differences.
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").
 
-### Unknown
+### MCPX Initialization Table
 
 From 0x00000000 - 0x0000007F
 
-Not sure what this does. Some people think it might be involved with
-initialising the [MCPX](/wiki/MCPX "wikilink"). The Reset Vector on the
-Pentium 3 would mean that this wasn't called before the MCPX ROM.
+The first DWORD is a pointer to a table of values that the MCPX core
+uses to initialize itself, but with the least-significant bit always set
+to 1. The second DWORD is the unmodified table pointer. On all Xbox
+BIOS, the MCPX initialization table is always at file offset 8, virtual
+address 0xFF000008.
+
+The first DWORD of the MCPX initialization table is the magic number
+0x2B16D065 (called the “boot header”). The purpose of the remaining
+values in the table is unknown.
 
 ### xcodes
 
