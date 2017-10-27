@@ -52,7 +52,7 @@ from BIOS to BIOS, but with some differences.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Unknown</p></td>
+<td><p>MCPX Initialization Table</p></td>
 <td><p>0x00000</p></td>
 <td><p>0x00000</p></td>
 <td><p>0x00000</p></td>
