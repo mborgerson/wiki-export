@@ -21,8 +21,11 @@ The BIOS is split into different components. These are largely the same from BIO
 !                     
 !   3944  !!   4034  !!   4134  !!   4817  !!   5101  !!   5530  !!   5713  !!   5838 
 |-
-! MCPX Initialization Table             
+! NV2A Initialization Table             
 | 0x00000 || 0x00000 || 0x00000 || 0x00000 || 0x00000 || 0x00000 || 0x00000 || 0x00000
+|-
+! MCPX Initialization Table
+| 0x00070 || 0x00070 || 0x00070 || 0x00070 || 0x00070 || 0x00070 || 0x00070 || 0x00070
 |-
 ! X-Codes             
 | 0x00080 || 0x00080 || 0x00080 || 0x00080 || 0x00080 || 0x00080 || 0x00080 || 0x00080
@@ -48,13 +51,15 @@ The BIOS is split into different components. These are largely the same from BIO
 
 For information how these sections are used, see [[Boot Process]].
 
+=== NV2A Initialization Table ===
+
+The first DWORD is a pointer to a table of values that the NV2A northbridge uses to initialize itself, but with the least-significant bit always set to 1 (likely some sort of sanity check). The second DWORD is the unmodified table pointer. On all Xbox BIOS, the NV2A initialization table is always at file offset 8, virtual address 0xFF000008.
+
+The first DWORD of the NV2A initialization table is the magic number 0x2B16D065 (called the "boot header"). The purpose of the remaining values in the table is unknown{{FIXME}}.
+
 === MCPX Initialization Table ===
 
-From 0x00000000 - 0x0000007F
-
-The first DWORD is a pointer to a table of values that the MCPX core uses to initialize itself, but with the least-significant bit always set to 1. The second DWORD is the unmodified table pointer. On all Xbox BIOS, the MCPX initialization table is always at file offset 8, virtual address 0xFF000008.
-
-The first DWORD of the MCPX initialization table is the magic number 0x2B16D065 (called the "boot header"). The purpose of the remaining values in the table is unknown{{FIXME}}.
+This is a table of values used to initialize the MCPX southbridge. It ''must'' be placed at offset 0x70 in the ROM image.
 
 === xcodes ===
 

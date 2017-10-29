@@ -52,7 +52,7 @@ from BIOS to BIOS, but with some differences.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>MCPX Initialization Table</p></td>
+<td><p>NV2A Initialization Table</p></td>
 <td><p>0x00000</p></td>
 <td><p>0x00000</p></td>
 <td><p>0x00000</p></td>
@@ -63,6 +63,17 @@ from BIOS to BIOS, but with some differences.
 <td><p>0x00000</p></td>
 </tr>
 <tr class="even">
+<td><p>MCPX Initialization Table</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+<td><p>0x00070</p></td>
+</tr>
+<tr class="odd">
 <td><p>X-Codes</p></td>
 <td><p>0x00080</p></td>
 <td><p>0x00080</p></td>
@@ -73,7 +84,7 @@ from BIOS to BIOS, but with some differences.
 <td><p>0x00080</p></td>
 <td><p>0x00080</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Copyright String</p></td>
 <td><p>0x00CFA</p></td>
 <td><p>0x00CFA</p></td>
@@ -84,7 +95,7 @@ from BIOS to BIOS, but with some differences.
 <td><p>0x00E59</p></td>
 <td><p>0x00DCC</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Kernel</p></td>
 <td><p>0x0619C</p></td>
 <td></td>
@@ -95,7 +106,7 @@ from BIOS to BIOS, but with some differences.
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>Kernel Data Segment</p></td>
 <td><p>0x3944C</p></td>
 <td></td>
@@ -106,7 +117,7 @@ from BIOS to BIOS, but with some differences.
 <td></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>2BL<br />
 <em>Always 0x6000 bytes</em></p></td>
 <td><p>0x39E00</p></td>
@@ -118,7 +129,7 @@ from BIOS to BIOS, but with some differences.
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>FBL<br />
 <em>Always 0x2880 bytes</em></p></td>
 <td></td>
@@ -130,7 +141,7 @@ from BIOS to BIOS, but with some differences.
 <td><p>0x3D400</p></td>
 <td><p>0x3D400</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>Decoy Boot Loader</p></td>
 <td><p>0x3FE00</p></td>
 <td><p>0x3FE00</p></td>
@@ -147,19 +158,23 @@ from BIOS to BIOS, but with some differences.
 For information how these sections are used, see [Boot
 Process](/wiki/Boot_Process "wikilink").
 
-### MCPX Initialization Table
+### NV2A Initialization Table
 
-From 0x00000000 - 0x0000007F
+The first DWORD is a pointer to a table of values that the NV2A
+northbridge uses to initialize itself, but with the least-significant
+bit always set to 1 (likely some sort of sanity check). The second DWORD
+is the unmodified table pointer. On all Xbox BIOS, the NV2A
+initialization table is always at file offset 8, virtual address
+0xFF000008.
 
-The first DWORD is a pointer to a table of values that the MCPX core
-uses to initialize itself, but with the least-significant bit always set
-to 1. The second DWORD is the unmodified table pointer. On all Xbox
-BIOS, the MCPX initialization table is always at file offset 8, virtual
-address 0xFF000008.
-
-The first DWORD of the MCPX initialization table is the magic number
+The first DWORD of the NV2A initialization table is the magic number
 0x2B16D065 (called the “boot header”). The purpose of the remaining
 values in the table is unknown.
+
+### MCPX Initialization Table
+
+This is a table of values used to initialize the MCPX southbridge. It
+*must* be placed at offset 0x70 in the ROM image.
 
 ### xcodes
 
