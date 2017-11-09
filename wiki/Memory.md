@@ -66,7 +66,7 @@ Code for emulating the memory might consist of:
     }
 
     uint16_t get_memory_word(uint32_t location) {
-        return get_memory(location + 1) << 8 | get_memory(location);
+        return get_memory_byte(location + 1) << 8 | get_memory_byte(location);
     }
 
     uint32_t get_memory_dword(uint32_t location) {
