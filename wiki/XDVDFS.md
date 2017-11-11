@@ -49,7 +49,7 @@ Incomplete sectors are padded with 0x00 bytes.
 
 #### Version 4361
 
-First byte read is the first byte in the data partition. Filled with
+Seeded and then starting to emit bytes in data area. Filled with
 algorithm 1 (2048 bytes at a time, even buffer address).
 
 ### Security blocks
