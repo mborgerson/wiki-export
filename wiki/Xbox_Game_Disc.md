@@ -64,6 +64,16 @@ Dumps
 
 ### Files
 
+##### Example timestamps
+
+Timestamps for [Petit Copter](/wiki/Petit_Copter "wikilink"):
+
+    126779196239020000ULL, // XDVDFS timestamp
+    126956823480700000ULL, // SS timestamp
+    126957328439576418ULL, // SS unk3 timestamp
+    126957649743869476ULL, // DMI Timestamp
+    126961143392830592ULL, // SS unk4 timestamp
+
 #### Disc Manufacturing Information (DMI.bin)
 
 READ DVD STRUCTURE with format 0x04
