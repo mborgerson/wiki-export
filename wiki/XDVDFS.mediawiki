@@ -19,7 +19,7 @@ The Volume descriptor is 4096 bytes, but split into 2x 2048 sections.
 
 ==== Examples ====
 
-<!-- The "Wave n" is not a standard naming and I just made it up myself; we should confirm these and possibly find a better name - JayFoxRox
+<!-- The "Wave n" is not a standard naming and I just made it up myself; we should confirm these and possibly find a better name - JayFoxRox -->
 {{FIXME|reason=The tool names appearing in this section are guessed by me, we should confirm each of these - JayFoxRox}}
 {{FIXME|reason=This lacks a couple of XDK versions}}
 {{FIXME|reason=The byte offsets of each version field are missing}}

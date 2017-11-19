@@ -26,7 +26,82 @@ but split into 2x 2048 sections.
 
 #### Examples
 
-====
+##### Wave 1
+
+Developers used xblayout to create DVD layout. Then generated the final
+image using xbpremaster. The final image was submitted to Microsoft.
+
+-   [Azurik - Rise of Perathia](/wiki/Azurik_-_Rise_of_Perathia "wikilink")
+    (NTSC)
+    -   xblayout version: 1.0.3926.1
+    -   xbpremaster version: 1.0.3926.1
+-   [Genma Onimusha](/wiki/Genma_Onimusha "wikilink") (PAL)
+    -   xblayout version: 1.0.4039.1
+    -   xbpremaster version: 1.0.4039.2
+-   [Max Payne](/wiki/Max_Payne "wikilink") (PAL)
+    -   xblayout version: 1.0.4134.1
+    -   xbpremaster version: 1.0.4242.1
+-   [Petit Copter](/wiki/Petit_Copter "wikilink") (Japanese)
+    -   xblayout version: 1.0.4361.1
+    -   xbpremaster version: 1.0.4361.2
+-   [007 - Agent Under Fire](007_-_Agent_Under_Fire "wikilink") (PAL)
+    -   xblayout version: 1.0.4432.1
+    -   xbpremaster version: 1.0.4432.1
+
+##### Wave 2
+
+. Developers used a new version of xblayout and submitted the layout +
+content to Microsoft Microsoft generated the final image.
+
+-   [Metal Gear Solid 2 -
+    Substance](/wiki/Metal_Gear_Solid_2_-_Substance "wikilink") (NTSC)
+    -   xblayout version: 1.0.4721.1
+-   [Battle Engine Aquila](/wiki/Battle_Engine_Aquila "wikilink") (PAL)
+    -   xblayout version: 1.0.4831.1
+
+##### Wave 3
+
+. Same as wave 2, but Microsoft upgraded their tool to use new random
+padding.
+
+-   [Metal Gear Solid 2 -
+    Substance](/wiki/Metal_Gear_Solid_2_-_Substance "wikilink") (PAL)
+    -   xblayout version: 1.0.5120.1
+-   [Shenmue II](/wiki/Shenmue_II "wikilink") (PAL)
+    -   xblayout version: 1.0.5120.1
+
+##### Wave 4
+
+. Same as wave 3, but developers now had to use the xbgamedisc tool
+instead of xblayout. The mastering tool used by microsoft also leaves a
+version identifier now.
+
+-   [Star Wars - Knights of the Old
+    Republic](/wiki/Star_Wars_-_Knights_of_the_Old_Republic "wikilink") (PAL)
+    -   xbgamedisc version: 2.1.0.5233.1
+    -   mastering tool version: 2.1.0.5233.1
+-   [Indiana Jones and the Emperor's
+    Tomb](/wiki/Indiana_Jones_and_the_Emperor's_Tomb "wikilink") (PAL)
+    -   xbgamedisc version: 2.1.0.5233.1
+    -   mastering tool version: 2.1.0.5233.1
+-   [Dynasty Warriors 4](/wiki/Dynasty_Warriors_4 "wikilink") (PAL)
+    -   xbgamedisc version: 2.1.0.5344.1
+    -   mastering tool version: 2.1.0.5344.1
+-   [The Matrix - Path of Neo](/wiki/The_Matrix_-_Path_of_Neo "wikilink")
+    (PAL)
+    -   xbgamedisc version: 2.1.0.5849.1
+    -   mastering tool version: 2.1.0.5849.1
+-   [The Suffering - Ties That
+    Bind](/wiki/The_Suffering_-_Ties_That_Bind "wikilink")
+    -   xbgamedisc version: 2.1.0.5849.1
+    -   mastering tool version: 2.1.0.5849.1
+-   [Reservoir Dogs](/wiki/Reservoir_Dogs "wikilink") (PAL)
+    -   xbgamedisc version: 2.1.0.5849.1
+    -   mastering tool version: 2.1.0.5849.1
+
+### Directory Entry
+
+#### Version 4361
 
 File entry flags:
 
