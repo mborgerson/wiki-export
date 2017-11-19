@@ -17,9 +17,85 @@ The Volume descriptor is 4096 bytes, but split into 2x 2048 sections.
 * '''Section 1:''' The first data is the magic at sector 32. It is always "MICROSOFT*XBOX*MEDIA". {{FIXME|reason=How does this work?}}
 * '''Section 2:''' The first data is the magic at sector 32. It is always "MICROSOFT*XBOX*MEDIA". {{FIXME|reason=Describe version information}}
 
-==== Version 4361 <!-- Game: Petit Copter --> ====
+==== Examples ====
 
-{{FIXME|reason=Info how the header looks in this version}}
+* [[Azurik - Rise of Perathia]] (NTSC)
+** xblayout version: 1.0.3926.1
+** xbpremaster version: 1.0.3926.1
+** Starting bruteforce
+** Found seed 0x7EA870D7
+** Completed bruteforce (Success)
+* [[Genma Onimusha]] (PAL)
+** xblayout version: 1.0.4039.1
+** xbpremaster version: 1.0.4039.2
+** Starting bruteforce
+** Found seed 0x25BAB84C
+** Completed bruteforce (Success)
+* [[Max Payne]] (PAL)
+** xblayout version: 1.0.4134.1
+** xbpremaster version: 1.0.4242.1
+** Starting bruteforce
+** Found seed 0x62BBC340
+** Completed bruteforce (Success)
+* [[Petit Copter]] (Japanese)
+** xblayout version: 1.0.4361.1
+** xbpremaster version: 1.0.4361.2
+** Starting bruteforce
+** Found seed 0xF401863E
+** Completed bruteforce (Success)
+* [[007 - Agent Under Fire]] (PAL)
+** xblayout version: 1.0.4432.1
+** xbpremaster version: 1.0.4432.1
+** Starting bruteforce
+** Found seed 0x1796C12A
+** Completed bruteforce (Success)
+* [[Metal Gear Solid 2 - Substance]] (NTSC)
+** xblayout version: 1.0.4721.1
+** Starting bruteforce
+** Found seed 0xFACBB379
+** Completed bruteforce (Success)
+* [[Battle Engine Aquila]] (PAL)
+** xblayout version: 1.0.4831.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Metal Gear Solid 2 - Substance]] (PAL)
+** xblayout version: 1.0.5120.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Shenmue II]] (PAL)
+** xblayout version: 1.0.5120.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Star Wars - Knights of the Old Republic]] (PAL)
+** xbgamedisc version: 2.1.0.5233.1
+** mastering tool version: 2.1.0.5233.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Indiana Jones and the Emperor's Tomb]] (PAL)
+** xbgamedisc version: 2.1.0.5233.1
+** mastering tool version: 2.1.0.5233.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Dynasty Warriors 4]] (PAL)
+** xbgamedisc version: 2.1.0.5344.1
+** mastering tool version: 2.1.0.5344.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[The Matrix - Path of Neo]] (PAL)
+** xbgamedisc version: 2.1.0.5849.1
+** mastering tool version: 2.1.0.5849.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[The Suffering - Ties That Bind]]
+** xbgamedisc version: 2.1.0.5849.1
+** mastering tool version: 2.1.0.5849.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
+* [[Reservoir Dogs]] (PAL)
+** xbgamedisc version: 2.1.0.5849.1
+** mastering tool version: 2.1.0.5849.1
+** Starting bruteforce
+** Completed bruteforce (Failure)
 
 === Directory Entry ===
 
