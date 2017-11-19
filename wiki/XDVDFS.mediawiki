@@ -19,83 +19,78 @@ The Volume descriptor is 4096 bytes, but split into 2x 2048 sections.
 
 ==== Examples ====
 
+<!-- The "Wave n" is not a standard naming and I just made it up myself; we should confirm these and possibly find a better name - JayFoxRox
+{{FIXME|reason=The tool names appearing in this section are guessed by me, we should confirm each of these - JayFoxRox}}
+{{FIXME|reason=This lacks a couple of XDK versions}}
+{{FIXME|reason=The byte offsets of each version field are missing}}
+
+===== Wave 1 =====
+
+Developers used xblayout to create DVD layout.
+Then generated the final image using xbpremaster.
+The final image was submitted to Microsoft.
+
 * [[Azurik - Rise of Perathia]] (NTSC)
 ** xblayout version: 1.0.3926.1
 ** xbpremaster version: 1.0.3926.1
-** Starting bruteforce
-** Found seed 0x7EA870D7
-** Completed bruteforce (Success)
 * [[Genma Onimusha]] (PAL)
 ** xblayout version: 1.0.4039.1
 ** xbpremaster version: 1.0.4039.2
-** Starting bruteforce
-** Found seed 0x25BAB84C
-** Completed bruteforce (Success)
 * [[Max Payne]] (PAL)
 ** xblayout version: 1.0.4134.1
 ** xbpremaster version: 1.0.4242.1
-** Starting bruteforce
-** Found seed 0x62BBC340
-** Completed bruteforce (Success)
 * [[Petit Copter]] (Japanese)
 ** xblayout version: 1.0.4361.1
 ** xbpremaster version: 1.0.4361.2
-** Starting bruteforce
-** Found seed 0xF401863E
-** Completed bruteforce (Success)
 * [[007 - Agent Under Fire]] (PAL)
 ** xblayout version: 1.0.4432.1
 ** xbpremaster version: 1.0.4432.1
-** Starting bruteforce
-** Found seed 0x1796C12A
-** Completed bruteforce (Success)
+
+===== Wave 2 =====
+
+{{FIXME|reason=This is a theory. Confirm please}}.
+Developers used a new version of xblayout and submitted the layout + content to Microsoft
+Microsoft generated the final image.
+
 * [[Metal Gear Solid 2 - Substance]] (NTSC)
 ** xblayout version: 1.0.4721.1
-** Starting bruteforce
-** Found seed 0xFACBB379
-** Completed bruteforce (Success)
 * [[Battle Engine Aquila]] (PAL)
 ** xblayout version: 1.0.4831.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
+
+===== Wave 3 =====
+
+{{FIXME|reason=This is a theory. Confirm please}}.
+Same as wave 2, but Microsoft upgraded their tool to use new random padding.
+
 * [[Metal Gear Solid 2 - Substance]] (PAL)
 ** xblayout version: 1.0.5120.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[Shenmue II]] (PAL)
 ** xblayout version: 1.0.5120.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
+
+===== Wave 4 =====
+
+{{FIXME|reason=This is a theory. Confirm please}}.
+Same as wave 3, but developers now had to use the xbgamedisc tool instead of xblayout.
+The mastering tool used by microsoft also leaves a version identifier now.
+
 * [[Star Wars - Knights of the Old Republic]] (PAL)
 ** xbgamedisc version: 2.1.0.5233.1
 ** mastering tool version: 2.1.0.5233.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[Indiana Jones and the Emperor's Tomb]] (PAL)
 ** xbgamedisc version: 2.1.0.5233.1
 ** mastering tool version: 2.1.0.5233.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[Dynasty Warriors 4]] (PAL)
 ** xbgamedisc version: 2.1.0.5344.1
 ** mastering tool version: 2.1.0.5344.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[The Matrix - Path of Neo]] (PAL)
 ** xbgamedisc version: 2.1.0.5849.1
 ** mastering tool version: 2.1.0.5849.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[The Suffering - Ties That Bind]]
 ** xbgamedisc version: 2.1.0.5849.1
 ** mastering tool version: 2.1.0.5849.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 * [[Reservoir Dogs]] (PAL)
 ** xbgamedisc version: 2.1.0.5849.1
 ** mastering tool version: 2.1.0.5849.1
-** Starting bruteforce
-** Completed bruteforce (Failure)
 
 === Directory Entry ===
 
