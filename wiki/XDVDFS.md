@@ -31,7 +31,7 @@ but split into 2x 2048 sections.
 Developers used xblayout to create DVD layout. Then generated the final
 image using xbpremaster. The final image was submitted to Microsoft.
 
--   [Azurik - Rise of Perathia](/wiki/Azurik_-_Rise_of_Perathia "wikilink")
+-   [Azurik: Rise of Perathia](/wiki/Azurik:_Rise_of_Perathia "wikilink")
     (NTSC)
     -   xblayout version: 1.0.3926.1
     -   xbpremaster version: 1.0.3926.1

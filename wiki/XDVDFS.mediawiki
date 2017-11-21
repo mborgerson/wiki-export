@@ -30,7 +30,7 @@ Developers used xblayout to create DVD layout.
 Then generated the final image using xbpremaster.
 The final image was submitted to Microsoft.
 
-* [[Azurik - Rise of Perathia]] (NTSC)
+* [[Azurik: Rise of Perathia]] (NTSC)
 ** xblayout version: 1.0.3926.1
 ** xbpremaster version: 1.0.3926.1
 * [[Genma Onimusha]] (PAL)
