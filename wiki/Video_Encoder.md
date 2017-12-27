@@ -61,7 +61,7 @@ capabilities of the Xcalibur chip, however, remain a mystery in this
 regard: it is not known whether it has a scaler.
 
 All video encoders are connected to (and controlled via)
-<a href="/web/20100617022211/http://www.xbox-linux.org/wiki/SMBus_Controller" title="SMBus Controller">IÃÂÃÂÃÂÃÂ²C/SMBus</a>.
+[SMBus](/wiki/SMBus "wikilink").
 
 ### Conexant CX25871
 

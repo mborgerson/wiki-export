@@ -17,7 +17,7 @@ The make and model of the video encoder has varied through the times &ndash; thr
 
 Two of the video encoders (namely, Conexant CX25871 and Focus FS454) also have extensive scaling and filtering functionality, which allows for [https://web.archive.org/web/20100617022211/http://scanline.ca/overscan/ overscan compensation] in desktop-style "TV out" usage. (This means that the GPU can output ordinary VGA resolutions with VGA timings and the video encoder can convert them to SDTV resolutions with TV-style timings on the fly, adding borders around the image so that a projection of the VGA framebuffer image falls within the "safe area" of the video signal.) The capabilities of the Xcalibur chip, however, remain a mystery in this regard: it is not known whether it has a scaler.
 
-All video encoders are connected to (and controlled via) <a href="/web/20100617022211/http://www.xbox-linux.org/wiki/SMBus_Controller" title="SMBus Controller">IÃÂÃÂÃÂÃÂ²C/SMBus</a>.
+All video encoders are connected to (and controlled via) [[SMBus]].
 
 
 === Conexant CX25871 ===
