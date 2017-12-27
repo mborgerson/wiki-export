@@ -1,7 +1,4 @@
-The Xbox does not use an ordinary [https://web.archive.org/web/20100617022211/http://en.wikipedia.org/wiki/RAMDAC RAMDAC] for video output. Instead, it employs a <em>video encoder</em>.
-
-Video encoder is a chip that converts a digital pixel data stream (coming from the nVidia NV2A graphics processor) into analog video signal, just like a RAMDAC would. An ordinary RAMDAC, however, can only output VGA-style RGB signal. The video encoder used in the Xbox is more flexible, and can generate several different types of signals that adhere to various video standards and color formats. These include, but are not necessarily limited to:
-
+The '''video encoder''' is a chip that converts a digital pixel data stream (coming from the nVidia NV2A graphics processor) into analog video signal, just like a [http://en.wikipedia.org/wiki/RAMDAC RAMDAC] would. An ordinary RAMDAC, however, can only output VGA-style RGB signal. The video encoder used in the Xbox is more flexible, and can generate several different types of signals that adhere to various video standards and color formats. These include, but are not necessarily limited to:
 
 * VGA-style &gt;31 kHz RGB, though only with Sync-on-Green sync signals. (If needed, separate HSYNC and VSYNC signals can be obtained from the motherboard, or by building a special video cable with active electronics for stripping and separating the Sync-on-Green sync signal. In any case, separate HSYNC and VSYNC are not available directly through the AV connector.)
 * TV-compatible 15 kHz RGB (with composite sync) &ndash; suitable for European-style SCART RGB output (are progressive 625/50 signals supported?)
@@ -13,27 +10,22 @@ Video encoder is a chip that converts a digital pixel data stream (coming from t
 
 The video encoder is also capable of PALplus style Line 23 Wide Screen Signalling (WSS), and the Xbox PIC is rigged with the capability of controlling Scart pin 8 (the ''function switching pin'', which is used as an alternative method of Wide Screen Signalling) and pin 16 (the ''fast switching pin''.)
 
-The make and model of the video encoder has varied through the times &ndash; three different video encoders have been used this far. All three are very similar in their features; they support various modes and are flexible enough to be able to output a VGA compatible signal (which is not supported by the Xbox kernel.) They are, however, not register-compatible.
+The make and model of the video encoder has varied through the years &ndash; three different video encoders have been used thus far. All three are very similar in their features; they support various modes and are flexible enough to be able to output a VGA compatible signal (which is not supported by the Xbox kernel). They are, however, not register-compatible.
 
-Two of the video encoders (namely, Conexant CX25871 and Focus FS454) also have extensive scaling and filtering functionality, which allows for [https://web.archive.org/web/20100617022211/http://scanline.ca/overscan/ overscan compensation] in desktop-style "TV out" usage. (This means that the GPU can output ordinary VGA resolutions with VGA timings and the video encoder can convert them to SDTV resolutions with TV-style timings on the fly, adding borders around the image so that a projection of the VGA framebuffer image falls within the "safe area" of the video signal.) The capabilities of the Xcalibur chip, however, remain a mystery in this regard: it is not known whether it has a scaler.
+Two of the video encoders (Conexant CX25871 and Focus FS454) also have extensive scaling and filtering functionality, which allows for [http://scanline.ca/overscan/ overscan compensation] in desktop-style "TV out" usage. This means that the GPU can output ordinary VGA resolutions with VGA timings and the video encoder can convert them to SDTV resolutions with TV-style timings on the fly, adding borders around the image so that a projection of the VGA framebuffer image falls within the "safe area" of the video signal. The capabilities of the Xcalibur chip, however, remain a mystery in this regard: it is not known whether it has a scaler.
 
-All video encoders are connected to (and controlled via) [[SMBus]].
-
+All video encoders are connected to (and controlled via) the [[SMBus]].
 
 === Conexant CX25871 ===
 
-[https://web.archive.org/web/20100617022211/http://www.conexant.com:9000/cgi-bin/query?mss=srchprod&amp;pg=q&amp;i=IDXPRODSRCH&amp;q=cx25870 Conexant CX25871] is a close relative of the Brooktree BT868/BT869. There is also a sister model (CX25870) without the Macrovision capability. This chip was used in Xbox versions v1.0 through v1.3. If you follow the link, you will find a product brief and a complete data sheet, with register-level programming information.
-
+The [http://www.alldatasheet.com/datasheet-pdf/pdf/153349/CONEXANT/CX25871.html Conexant CX25871] is a close relative of the Brooktree BT868/BT869. There is also a sister model (CX25870) without the Macrovision capability. This chip was used in Xbox versions 1.0 through 1.3.
 
 === Focus FS454 ===
 
-[https://web.archive.org/web/20100617022211/http://www.focusinfo.com/solutions/catalog.asp?id=30 Focus FS454] was used in v1.4 (and possibly v1.5) Xboxes. There is also a sister model (FS453) without the Macrovision capability. The data sheet containing the necessary programming information is available from the manufacturer by separate request. Copies of it have also been seen floating around the net.
-
+The [https://www.manualslib.com/products/Focus-Fs454-211664.html Focus FS454] was used in v1.4 (and possibly v1.5) Xboxes. There is also a sister model (FS453) without the Macrovision capability.
 
 === Xcalibur ===
 
-The "Xcalibur" video encoder is a custom chip manufactured for Microsoft. It was first used in the Xbox hardware revision 1.6.
+The Xcalibur video encoder is a custom chip manufactured for Microsoft. It was first used in Xbox hardware revision 1.6. Unfortunately, there is no official programming documentation available for this chip. It seems the only way to find out more is through reverse-engineering techniques.
 
-The Xbox-Linux support the Xcalibur video encoders is very limited at present (see <a href="/web/20100617022211/http://www.xbox-linux.org/wiki/Xbox_v1.6_Issues" title="Xbox v1.6 Issues">Xbox v1.6 Issues</a>). The reason for this is that there is, at least currently, no official programming documentation available for this chip. It seems the only way to find out more is through reverse-engineering techniques.
-
-Xboxes that contain the Xcalibur encoder have the firmware ROM and the PIC physically integrated into another MS-specific chip, named Xyclops.
+Xboxes that contain the Xcalibur encoder have the firmware ROM and the PIC physically integrated into another custom chip, named Xyclops.
