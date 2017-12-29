@@ -161,6 +161,18 @@ Packing and shipping
 <File:Manufacturing32.jpg%7CBoxes> are sealed...
 <File:Manufacturing29.jpg>|...and loaded on pallets, ready for shipping.
 
+External Links
+--------------
+
+-   [Xbox Factory Tour Video (Sárvár,
+    Hungary; 2002)](https://www.youtube.com/watch?v=iWQb7LGH71s) -
+    Demonstrates almost the entire assembly process from start to finish
+    (not including case manufacturing).
+-   [Flextronics
+    Advertisement](https://www.youtube.com/watch?v=_iR0eNuyUKI) -
+    Contains still photos of the PCB manufacturing and testing
+    processes.
+
 Credits
 -------
 

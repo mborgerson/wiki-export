@@ -190,6 +190,11 @@ File:Manufacturing32.jpg|Boxes are sealed...
 File:Manufacturing29.jpg|...and loaded on pallets, ready for shipping.
 </gallery>
 
+== External Links ==
+
+* [https://www.youtube.com/watch?v=iWQb7LGH71s Xbox Factory Tour Video (Sárvár, Hungary; 2002)] - Demonstrates almost the entire assembly process from start to finish (not including case manufacturing).
+* [https://www.youtube.com/watch?v=_iR0eNuyUKI Flextronics Advertisement] - Contains still photos of the PCB manufacturing and testing processes.
+
 == Credits ==
 
 This article is adapted from [https://web.archive.org/web/20100617013616/http://www.xbox-linux.org/wiki/Xbox_Manufacturing_Process Xbox Manufacturing Process] by Michael Steil. Its content is reproduced here under the [https://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html GNU Free Documentation License 1.2].
