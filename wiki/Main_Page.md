@@ -43,12 +43,10 @@ Hardware
     -   [Xbox DVD Movie Playback
         Kit](/wiki/Xbox_DVD_Movie_Playback_Kit "wikilink")
 -   [Power Supply](/wiki/Power_Supply "wikilink")
-
-<!-- -->
-
 -   [Development Kits](/wiki/Development_Kits "wikilink")
     -   [Super I/O](/wiki/Super_I/O "wikilink")
     -   [DVD Emulator](/wiki/DVD_Emulator "wikilink")
+-   [Manufacturing Process](/wiki/Manufacturing_Process "wikilink")
 
 System Software
 ---------------

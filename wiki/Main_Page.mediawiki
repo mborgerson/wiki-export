@@ -34,10 +34,10 @@
 ** [[Xbox Live Communicator]] <!-- Maybe rename this to microphones later? -->
 ** [[Xbox DVD Movie Playback Kit]]
 * [[Power Supply]]
-
 * [[Development Kits]]
 ** [[Super I/O]]
 ** [[DVD Emulator]]
+* [[Manufacturing Process]]
 
 == System Software ==
 * [[MCPX ROM]]
