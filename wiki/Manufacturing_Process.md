@@ -7,8 +7,9 @@ layout: wiki
 ![Sárvár, Hungary
 factory](Manufacturing26.jpg "Sárvár, Hungary factory")
 
-The Xbox was manufactured in four locations throughout its lifetime:
-Guadalajara, Mexico; Sárvár, Hungary; Doumen, China; and Taiwan.
+The Xbox was manufactured by Flextronics in four locations throughout
+its lifetime: Guadalajara, Mexico; Sárvár, Hungary; Doumen, China; and
+Taiwan.
 
 Serial Number
 -------------
@@ -161,8 +162,8 @@ Packing and shipping
 <File:Manufacturing32.jpg%7CBoxes> are sealed...
 <File:Manufacturing29.jpg>|...and loaded on pallets, ready for shipping.
 
-External Links
---------------
+Videos
+------
 
 -   [Xbox Factory Tour Video (Sárvár,
     Hungary; 2002)](https://www.youtube.com/watch?v=iWQb7LGH71s) -
@@ -172,6 +173,31 @@ External Links
     Advertisement](https://www.youtube.com/watch?v=_iR0eNuyUKI) -
     Contains still photos of the PCB manufacturing and testing
     processes.
+
+Further Reading
+---------------
+
+-   [Case study - Microsoft
+    Xbox](https://web.archive.org/web/20100617013616/http://www.ifm.eng.cam.ac.uk/ctm/idm/cases/xbox.html),
+    Innovation and Design Management, University of Cambridge
+-   O'Brien, J. [The making of the
+    Xbox](https://web.archive.org/web/20100617013616/http://www.wired.com/wired/archive/9.11/flex_pr.html),
+    Wired, Issue 9.11, November 2001
+-   Shah, J. and Serant, C. [Microsoft's Xbox sets supply chain
+    standard](https://web.archive.org/web/20100617013616/http://www.ebnonline.com/story/OEG20020311S0076),
+    EBN Online, 11 March 2002
+-   Olavsrud, T. [Flextronics relocates Xbox manufacturing
+    facility](https://web.archive.org/web/20100617013616/http://www.internetnews.com/bus-news/article.php/1129171),
+    Internetnews.com, 15 May 2002
+-   Penz, B. [Game Over? Xbox production heads
+    east](https://web.archive.org/web/20100617013616/http://www.amcham.hu/BusinessHungary/16-06/articles/16-06_27.asp),
+    Business Hungary, Vol 16 No 6, June 2002
+-   Carbone, J. [Outsourcing the
+    Xbox](https://web.archive.org/web/20100617013616/http://manufacturing.net/pur/article/CA237778?stt=001&pubdate=08%2F15%2F02),
+    Purchasing Magazine Online, 15 August 2002
+-   Neilley, R. [Molding is big man on this
+    campus](https://web.archive.org/web/20100617013616/http://www.immnet.com/articles?article=1763),
+    PlasticsToday, 1 December 2001
 
 Credits
 -------

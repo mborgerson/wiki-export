@@ -1,6 +1,6 @@
 [[File:Manufacturing26.jpg|thumb|Sárvár, Hungary factory]]
 
-The Xbox was manufactured in four locations throughout its lifetime: Guadalajara, Mexico; Sárvár, Hungary; Doumen, China; and Taiwan{{FIXME|reason=City?}}.
+The Xbox was manufactured by Flextronics in four locations throughout its lifetime: Guadalajara, Mexico; Sárvár, Hungary; Doumen, China; and Taiwan{{FIXME|reason=City?}}.
 
 == Serial Number ==
 
@@ -190,10 +190,20 @@ File:Manufacturing32.jpg|Boxes are sealed...
 File:Manufacturing29.jpg|...and loaded on pallets, ready for shipping.
 </gallery>
 
-== External Links ==
+== Videos ==
 
 * [https://www.youtube.com/watch?v=iWQb7LGH71s Xbox Factory Tour Video (Sárvár, Hungary; 2002)] - Demonstrates almost the entire assembly process from start to finish (not including case manufacturing).
 * [https://www.youtube.com/watch?v=_iR0eNuyUKI Flextronics Advertisement] - Contains still photos of the PCB manufacturing and testing processes.
+
+== Further Reading ==
+
+* [https://web.archive.org/web/20100617013616/http://www.ifm.eng.cam.ac.uk/ctm/idm/cases/xbox.html Case study - Microsoft Xbox], Innovation and Design Management, University of Cambridge
+* O'Brien, J. [https://web.archive.org/web/20100617013616/http://www.wired.com/wired/archive/9.11/flex_pr.html The making of the Xbox], Wired, Issue 9.11, November 2001
+* Shah, J. and Serant, C. [https://web.archive.org/web/20100617013616/http://www.ebnonline.com/story/OEG20020311S0076 Microsoft's Xbox sets supply chain standard], EBN Online, 11 March 2002
+* Olavsrud, T. [https://web.archive.org/web/20100617013616/http://www.internetnews.com/bus-news/article.php/1129171 Flextronics relocates Xbox manufacturing facility], Internetnews.com, 15 May 2002
+* Penz, B. [https://web.archive.org/web/20100617013616/http://www.amcham.hu/BusinessHungary/16-06/articles/16-06_27.asp Game Over? Xbox production heads east], Business Hungary, Vol 16 No 6, June 2002
+* Carbone, J. [https://web.archive.org/web/20100617013616/http://manufacturing.net/pur/article/CA237778?stt=001&pubdate=08%2F15%2F02 Outsourcing the Xbox], Purchasing Magazine Online, 15 August 2002
+* Neilley, R. [https://web.archive.org/web/20100617013616/http://www.immnet.com/articles?article=1763 Molding is big man on this campus], PlasticsToday, 1 December 2001
 
 == Credits ==
 
