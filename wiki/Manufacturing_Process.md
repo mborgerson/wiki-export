@@ -4,6 +4,9 @@ permalink: wiki/Manufacturing_Process/
 layout: wiki
 ---
 
+![Sárvár, Hungary
+factory](Manufacturing26.jpg "Sárvár, Hungary factory")
+
 The Xbox was manufactured in three countries throughout its lifetime:
 Guadalajara, Mexico; Sárvár, Hungary; and Doumen, China.
 
@@ -75,6 +78,27 @@ Controller](/wiki/System_Management_Controller "wikilink") and the BIOS ROM on
 a single die. This meant the BIOS had to be flashed by the chip
 manufacturer instead of on the Xbox production line.
 
+<File:Manufacturing19.jpg%7CPlastic> case molding & assembly.
+<File:Manufacturing18.jpg%7CLids> <File:Manufacturing9.jpg%7CGreen>
+jewels <File:Manufacturing10.jpg%7CGreen> jewels
+<File:Manufacturing16.jpg%7CJewels> are dispensed from hoppers.
+<File:Manufacturing7.jpg%7CLid> shield is positioned.
+<File:Manufacturing3.jpg%7CLid> is placed over shield.
+<File:Manufacturing5.jpg%7CJewel> is aligned...
+<File:Manufacturing4.jpg>|...and then applied.
+<File:Manufacturing6.jpg%7CThe> tape is left on to prevent scratches.
+<File:Manufacturing15.jpg%7CShield> and drive caddies are installed in
+the bottom half. <File:Manufacturing20.jpg%7CAssembled> cases are placed
+on pallets. <File:Manufacturing11.jpg> <File:Manufacturing12.jpg>
+<File:Manufacturing13.jpg> <File:Manufacturing14.jpg%7CCases> ready for
+their electronics. <File:Manufacturing25.jpg%7CComponents> arrive in
+bulk at the assembly line. <File:Manufacturing26.jpg>
+<File:Manufacturing24.jpg%7CTechnicians> assemble components.
+<File:Manufacturing23.jpg> <File:Manufacturing22.jpg>
+<File:Manufacturing27.jpg> <File:Manufacturing28.jpg>
+<File:Manufacturing21.jpg%7CFully> assembled consoles are placed on
+carts, ready for initialization.
+
 Software initialization
 -----------------------
 
@@ -124,6 +148,19 @@ Microsoft to replace broken hard disks without replacing a valid EEPROM
 on an Xbox sent in for repair. Before this change, they had to rewrite
 the EEPROM whenever they replaced the drive.
 
+<File:Manufacturing30.jpg%7CConsoles> are initialized by setup program.
+<File:Manufacturing33.jpg%7CInitialized> consoles undergo final
+integration testing. <File:Manufacturing34.jpg>
+<File:Manufacturing2.jpg>
+
+Packing and shipping
+--------------------
+
+<File:Manufacturing17.jpg%7CStyrofoam> inserts are prepared.
+<File:Manufacturing31.jpg%7CConsoles> are packed into boxes.
+<File:Manufacturing32.jpg%7CBoxes> are sealed...
+<File:Manufacturing29.jpg>|...and loaded on pallets, ready for shipping.
+
 Credits
 -------
 
@@ -132,3 +169,6 @@ Process](https://web.archive.org/web/20100617013616/http://www.xbox-linux.org/wi
 by Michael Steil. Its content is reproduced here under the [GNU Free
 Documentation License
 1.2](https://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html).
+
+Production line photos are from [Andy Rostad's
+gallery](https://web.archive.org/web/20100608022830/http://andy.saturn9.ws:80/Photo%20Albums/Xbox%20Manufacturing%20Facility/).

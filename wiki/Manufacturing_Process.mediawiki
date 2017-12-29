@@ -1,3 +1,5 @@
+[[File:Manufacturing26.jpg|thumb|Sárvár, Hungary factory]]
+
 The Xbox was manufactured in three countries throughout its lifetime: Guadalajara, Mexico; Sárvár, Hungary; and Doumen, China.
 
 == Serial Number ==
@@ -115,6 +117,33 @@ The Xbox was manufactured just like many other mass-produced electronic products
 
 The overall process didn't vary much between hardware revisions. The only notable change was related to the BIOS ROM. Up until version 1.6, the BIOS was flashed onto a TSOP ROM before being soldered to the motherboard. Revision 1.6 introduced the Xyclops chip, which integrated both the [[System Management Controller]] and the BIOS ROM on a single die. This meant the BIOS had to be flashed by the chip manufacturer instead of on the Xbox production line.
 
+<gallery>
+File:Manufacturing19.jpg|Plastic case molding & assembly.
+File:Manufacturing18.jpg|Lids
+File:Manufacturing9.jpg|Green jewels
+File:Manufacturing10.jpg|Green jewels
+File:Manufacturing16.jpg|Jewels are dispensed from hoppers.
+File:Manufacturing7.jpg|Lid shield is positioned.
+File:Manufacturing3.jpg|Lid is placed over shield.
+File:Manufacturing5.jpg|Jewel is aligned...
+File:Manufacturing4.jpg|...and then applied.
+File:Manufacturing6.jpg|The tape is left on to prevent scratches.
+File:Manufacturing15.jpg|Shield and drive caddies are installed in the bottom half.
+File:Manufacturing20.jpg|Assembled cases are placed on pallets.
+File:Manufacturing11.jpg
+File:Manufacturing12.jpg
+File:Manufacturing13.jpg
+File:Manufacturing14.jpg|Cases ready for their electronics.
+File:Manufacturing25.jpg|Components arrive in bulk at the assembly line.
+File:Manufacturing26.jpg
+File:Manufacturing24.jpg|Technicians assemble components.
+File:Manufacturing23.jpg
+File:Manufacturing22.jpg
+File:Manufacturing27.jpg
+File:Manufacturing28.jpg
+File:Manufacturing21.jpg|Fully assembled consoles are placed on carts, ready for initialization.
+</gallery>
+
 == Software initialization ==
 
 When a fully-assembled Xbox reached the end of the production line, it had a:
@@ -145,6 +174,24 @@ A new Xbox still contains the file XMTAXBOX.XBE on the first cache partition, as
 
 Xbox kernels since version 4034 have another backdoor that even works if the EEPROM check succeeds: If bit 30 of the media flag of an XBE is set, the condition of the hard disk is ignored as well. This change allows Microsoft to replace broken hard disks without replacing a valid EEPROM on an Xbox sent in for repair. Before this change, they had to rewrite the EEPROM whenever they replaced the drive.
 
+<gallery>
+File:Manufacturing30.jpg|Consoles are initialized by setup program.
+File:Manufacturing33.jpg|Initialized consoles undergo final integration testing.
+File:Manufacturing34.jpg
+File:Manufacturing2.jpg
+</gallery>
+
+== Packing and shipping ==
+
+<gallery>
+File:Manufacturing17.jpg|Styrofoam inserts are prepared.
+File:Manufacturing31.jpg|Consoles are packed into boxes.
+File:Manufacturing32.jpg|Boxes are sealed...
+File:Manufacturing29.jpg|...and loaded on pallets, ready for shipping.
+</gallery>
+
 == Credits ==
 
 This article is adapted from [https://web.archive.org/web/20100617013616/http://www.xbox-linux.org/wiki/Xbox_Manufacturing_Process Xbox Manufacturing Process] by Michael Steil. Its content is reproduced here under the [https://www.gnu.org/licenses/old-licenses/fdl-1.2.en.html GNU Free Documentation License 1.2].
+
+Production line photos are from [https://web.archive.org/web/20100608022830/http://andy.saturn9.ws:80/Photo%20Albums/Xbox%20Manufacturing%20Facility/ Andy Rostad's gallery].
