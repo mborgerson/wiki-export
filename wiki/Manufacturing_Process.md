@@ -7,8 +7,8 @@ layout: wiki
 ![Sárvár, Hungary
 factory](Manufacturing26.jpg "Sárvár, Hungary factory")
 
-The Xbox was manufactured in three countries throughout its lifetime:
-Guadalajara, Mexico; Sárvár, Hungary; and Doumen, China.
+The Xbox was manufactured in four locations throughout its lifetime:
+Guadalajara, Mexico; Sárvár, Hungary; Doumen, China; and Taiwan.
 
 Serial Number
 -------------
@@ -30,7 +30,7 @@ The first field is the factory production line number. The second field
 is the Xbox's number for the week (for the whole factory, not just the
 one line). The third field is the last digit of the year. The fourth
 field is the week of the year. Finally, the fifth field is the factory
-number. Mexico is 02, Hungary is 03, and China is 05.
+number. Mexico is 02, Hungary is 03, China is 05, and Taiwan is 06.
 
 So this Xbox was the 166,356<sup>th</sup> to be manufactured in week 9
 of the year 2002 on production line 1 in Sárvár, Hungary.
