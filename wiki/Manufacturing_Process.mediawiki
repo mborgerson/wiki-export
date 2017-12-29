@@ -20,6 +20,8 @@ The first field is the factory production line number. The second field is the X
 
 So this Xbox was the 166,356<sup>th</sup> to be manufactured in week 9 of the year 2002 on production line 1 in Sárvár, Hungary.
 
+The bar code is the 12-digit serial number in standard [https://en.wikipedia.org/wiki/Code_39 Code 39] format.
+
 == Timeline ==
 
 {| class="wikitable"

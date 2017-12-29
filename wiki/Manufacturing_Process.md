@@ -36,6 +36,9 @@ number. Mexico is 02, Hungary is 03, China is 05, and Taiwan is 06.
 So this Xbox was the 166,356<sup>th</sup> to be manufactured in week 9
 of the year 2002 on production line 1 in Sárvár, Hungary.
 
+The bar code is the 12-digit serial number in standard [Code
+39](https://en.wikipedia.org/wiki/Code_39) format.
+
 Timeline
 --------
 
