@@ -22,7 +22,7 @@
 
 The '''LPC Debug Port''' is an unpopulated 2x8 2.54mm (0.1") footprint on the Xbox motherboard that provides access to the system's [https://en.wikipedia.org/wiki/Low_Pin_Count Low Pin Count] Bus, as well as the [[SMBus]]. Throughout the Xbox's lifetime, Microsoft modified the LPC port in an attempt to prevent modding and, in some cases, it must be "rebuilt" to restore the port's full functionality. Rebuilding the LPC debug port involves soldering wires between it and very small vias on the motherboard.
 
-The LPC bus is controlled by the [[MCPX MCPX southbridge]], which conforms to the Intel Low Pin Count Specification 1.0.
+The LPC bus is controlled by the [[MCPX|MCPX southbridge]], which conforms to the Intel Low Pin Count Specification 1.0.
 
 == Pins ==
 

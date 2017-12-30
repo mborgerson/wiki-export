@@ -24,9 +24,8 @@ cases, it must be “rebuilt” to restore the port's full functionality.
 Rebuilding the LPC debug port involves soldering wires between it and
 very small vias on the motherboard.
 
-The LPC bus is controlled by the [MCPX MCPX
-southbridge](/wiki/MCPX_MCPX_southbridge "wikilink"), which conforms to the
-Intel Low Pin Count Specification 1.0.
+The LPC bus is controlled by the [MCPX southbridge](/wiki/MCPX "wikilink"),
+which conforms to the Intel Low Pin Count Specification 1.0.
 
 Pins
 ----
