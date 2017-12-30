@@ -4,10 +4,12 @@ permalink: wiki/Super_I/O/
 layout: wiki
 ---
 
-The Super I/O board is a feature of [Development
+The Super I/O board is a feature of some [Development
 Kits](/wiki/Development_Kits "wikilink"). The board is build around a SMSC
 LPC47M157 chip
 ([Datasheet](https://drive.google.com/uc?export=download&id=0BxOesalXbGtOanoxenlqQUh6Y0k))
+and interfaces with the Xbox via a ribbon cable connected to the [LPC
+Debug Port](/wiki/LPC_Debug_Port "wikilink").
 
 The board provides the following ports:
 

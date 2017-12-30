@@ -1,4 +1,4 @@
-The Super I/O board is a feature of [[Development Kits]]. The board is build around a SMSC LPC47M157 chip ([https://drive.google.com/uc?export=download&id=0BxOesalXbGtOanoxenlqQUh6Y0k Datasheet])
+The Super I/O board is a feature of some [[Development Kits]]. The board is build around a SMSC LPC47M157 chip ([https://drive.google.com/uc?export=download&id=0BxOesalXbGtOanoxenlqQUh6Y0k Datasheet]) and interfaces with the Xbox via a ribbon cable connected to the [[LPC Debug Port]].
 
 The board provides the following ports:
 * RS232 (used for [[Kernel Debug | Kernel debugging]], not to be confused with [[Xbox Debug Monitor]])
