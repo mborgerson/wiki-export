@@ -24,6 +24,10 @@ cases, it must be “rebuilt” to restore the port's full functionality.
 Rebuilding the LPC debug port involves soldering wires between it and
 very small vias on the motherboard.
 
+The LPC bus is controlled by the [MCPX MCPX
+southbridge](/wiki/MCPX_MCPX_southbridge "wikilink"), which conforms to the
+Intel Low Pin Count Specification 1.0.
+
 Pins
 ----
 
@@ -40,3 +44,7 @@ Pins
 -   **LFRAME\#** (3) - LPC start-of-cycle signal.
 -   **LCLK** (2) - 33MHz LPC clock signal; same as PCICLK.
 
+The debug port lacks the optional LDRQ\#, SERIRQ, CLKRUN\#, PME\#,
+LPCPD\#, and LSMI\# signals. This means peripherals connected to the
+debug port cannot utilize interrupt, DMA, bus mastering, or power
+management features.
