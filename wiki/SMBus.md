@@ -25,8 +25,8 @@ sent to the device and an 8 or 16 bit answer is expected.
 The controller for the SMBus interface in the Xbox is a PCI device with
 the DevID 01B4 and it is built into MPCX southbridge. It supports bus
 arbitration and the Xbox kernel will retry transactions if a collision
-occurs. This means it is safe to use a second SMBus master (a USB-SMBus
-adapter, for example) while the Xbox is running *as long as the second
+occurs. This means it is safe to use a second SMBus master (like a
+USB-SMBus adapter) while the Xbox is running *as long as the second
 master also supports arbitration*. Adapters based on the Silicon Labs
 CP2112 or Microchip MCP2221 chips will work, for example.
 
