@@ -12,10 +12,10 @@ tested using the DVD emulator software, and hardware for loading speeds
 and posibly potencial faults that could occur.
 
 The Hardware required for this where a Developement kit (with the DVD
-emulation board) a sort of scsi cable and a XDK-Raptor card. two or more
-versions of the PCI scsi card are known:
+emulation board) a sort of scsi cable and a XDK-Raptor card. The
+complete kit, a Raptor PCI Scsi card and Hardisk was numbered: 940-75004
+Rev.01 two or more versions of the PCI scsi card are known:
 
--   940-75004 Rev.01
 -   700-75307 Rev.01
 -   700-75307 Rev 03
     [Assemblergames](https://assemblergames.com/threads/sealed-xbox-raptor-card-for-xdk-dvd-emu.41763/)(posibly
