@@ -6,7 +6,7 @@ this is then tested using the DVD emulator software, and hardware for loading sp
 The Hardware required for this where a Developement kit (with the DVD emulation board) a sort of scsi cable and a XDK-Raptor card.{{citation needed}}
 two versions of the PCI scsi card are known:
 * 940-75004 Rev.01
-* unkown, have to ask.
+* 700-75307 Rev.01
 
 The software was bundled with the official xdk software and a (40GB ?{{citation needed}})Hardisk was connected to the Raptorcard where the DVD mastering image was stored on.
 For development it wasnt the fastest way to get an executable to the xbox, and for homebrew its pretty useless.{{citation needed}}

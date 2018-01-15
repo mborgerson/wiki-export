@@ -16,7 +16,7 @@ emulation board) a sort of scsi cable and a XDK-Raptor card. two
 versions of the PCI scsi card are known:
 
 -   940-75004 Rev.01
--   unkown, have to ask.
+-   700-75307 Rev.01
 
 The software was bundled with the official xdk software and a (40GB
 ?)Hardisk was connected to the Raptorcard where the DVD mastering image
