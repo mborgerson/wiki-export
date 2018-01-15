@@ -26,4 +26,5 @@ The chip is also marked with a revision. Known revisions include:
 -   P01
 -   P2L
 -   D01 (Seen in a debug kit)
+-   D05 (seen in a earlier model chihiro)
 
