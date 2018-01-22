@@ -142,6 +142,18 @@ transformer is, wich also has the detail label on it)
 
 -   MS001A096EMJ
 
+| Minebea Electronics UK LTD | (circuit board)         |
+|----------------------------|-------------------------|
+| DWG No.                    | 1 R26PA-SE300393 REV: E |
+| PART No.                   | 1 1612100002            |
+|                            | 0234-3                  |
+| Sticker:                   |                         |
+| NMB Technologies Corp      | Power Supply Division   |
+| Made in                    | Thailand                |
+| Model:                     | MS001A096EMJ            |
+| REV:                       | 08                      |
+| AC INPUT:100-120V          | 2A 47-63Hz              |
+
 Connector pinout
 ----------------
 
