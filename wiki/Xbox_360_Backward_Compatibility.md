@@ -79,4 +79,7 @@ References and links
     360](http://michaelbrundage.com/project/xbox-360-emulator/)
     -   [More information about the original Xbox emulator in the Xbox
         360](http://michaelbrundage.com/note/2005/05/15/xbox-360-emulator/)
+-   [Modern Vintage Gamer: Revisiting Original Xbox Backward
+    Compatibility on the Xbox
+    360](https://www.youtube.com/watch?v=Da_ont-2AG0)
 
