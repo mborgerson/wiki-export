@@ -53,15 +53,20 @@ goes where:
 
 ### U1 SMsC LPC ic
 
-| | Pin      | to pin            | Note              |
-|------------|-------------------|-------------------|
-| U1 pin 18  | C17(up) and ?     | (not finished)    |
-| U1 pin 6,7 | C17(down) and GND | Both U1 pins yes) |
-| U1 p24     | J9 pin 3          | LFrame            |
-| U1 p29     | J9 pin 1          | LClk              |
-| U1 p30     | J9 pin 16         | (unkown function) |
-| U1 P84     | U3 ???            | RX                |
-| U1 P85     | U3 ???            | TX                |
+| | Pin      | to pin              | Note                                |
+|------------|---------------------|-------------------------------------|
+| U1 pin 18  | C17(up) and ?       | (not finished)                      |
+| U1 pin 6,7 | C17(down) and GND   | Both U1 pins yes)                   |
+| U1 p24     | J9 pin 3            | LFrame                              |
+| U1 p27     | R7                  | Pull up (3.3v)                      |
+| U1 p29     | J9 pin 1            | LClk                                |
+| U1 p30     | J9 pin 16           | (unkown function)                   |
+| U1 p40     | GND                 |                                     |
+| U1 p44     | 3.3v with C2        | Vcc?                                |
+| U1 p45     | R1 (R2 unpopulated) | Pull down (R2 would be pullup 3.3v) |
+| U1 p60     | GND                 |                                     |
+| U1 P84     | U3 P8               | RX                                  |
+| U1 P85     | U3 P6               | TX                                  |
 
 ### J9 LPC header
 
