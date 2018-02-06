@@ -26,6 +26,10 @@ The folowing main parts are populated on the board:
 | U1 
 | SMSC LPC47M157-NC (1996 )
 |-
+| 0
+| U2
+| unpopulated DIP24 MCU(?)
+|-
 |1 
 | U3
 | MAX223EAI (0104, first week 2004?)
@@ -105,11 +109,11 @@ but for now here are the listings of wich pin goes where:
 |
 |-
 |U1 P84
-|U3 P8
+|U3 P8, U2 P18
 |RX 
 |-
 |U1 P85
-|U3 P6
+|U3 P6, U2 P17
 |TX
 |}
 

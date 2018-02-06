@@ -39,6 +39,7 @@ folowing main parts are populated on the board:
 | | total | Labels                                                               | Description                                         |
 |---------|----------------------------------------------------------------------|-----------------------------------------------------|
 | 1       | U1                                                                   | SMSC LPC47M157-NC (1996 )                           |
+| 0       | U2                                                                   | unpopulated DIP24 MCU(?)                            |
 | 1       | U3                                                                   | MAX223EAI (0104, first week 2004?)                  |
 | 1       | Y2                                                                   | CMX-309FB B (14.3181Mhz standard Clock Oscillator ) |
 | 1       | J7                                                                   | AMP rs232 Male connector                            |
@@ -65,8 +66,8 @@ goes where:
 | U1 p44     | 3.3v with C2        | Vcc?                                |
 | U1 p45     | R1 (R2 unpopulated) | Pull down (R2 would be pullup 3.3v) |
 | U1 p60     | GND                 |                                     |
-| U1 P84     | U3 P8               | RX                                  |
-| U1 P85     | U3 P6               | TX                                  |
+| U1 P84     | U3 P8, U2 P18       | RX                                  |
+| U1 P85     | U3 P6, U2 P17       | TX                                  |
 
 ### J9 LPC header
 
