@@ -248,4 +248,4 @@ NOTE: version 1.5 motherboards are missing pins 2 (GND) and 9 (VCC3), and pins 1
 
 * [https://github.com/espes/xqemu/blob/xbox/hw/xbox/lpc47m157.c Super I/O emulation in XQEMU]
 (SMBus?)
-* [http://imgur.com/a/vJi9E Images (CC0 License) by Codeasm with detailed shots of the SuperIO board]
+* [https://imgur.com/a/ROMYa Images (CC0 License) by Codeasm with detailed shots of the SuperIO board]

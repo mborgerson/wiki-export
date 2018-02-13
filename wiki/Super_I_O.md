@@ -106,5 +106,5 @@ Related links
 (SMBus?)
 
 -   [Images (CC0 License) by Codeasm with detailed shots of the SuperIO
-    board](http://imgur.com/a/vJi9E)
+    board](https://imgur.com/a/ROMYa)
 
