@@ -142,8 +142,7 @@ NOTE: version 1.5 motherboards are missing pins 2 (GND) and 9 (VCC3), and pins 1
 | VSS
 | Power
 | System ground
-| (see
-other parts)
+| (see other parts)
 | 
 |-
 | 3
@@ -151,16 +150,14 @@ other parts)
 | Output
 | Frame signal
 | U1 24
-| Indicates start of a new cycle
-and termination of broken cycle.
+| Indicates start of a new cycle and termination of broken cycle.
 |-
 | 4
 | ---
 | ---
 | ---
 | ---
-| Voided to ensure correct ribbon
-cable alignment.
+| Voided to ensure correct ribbon cable alignment.
 |-
 | 5
 | LRST#
@@ -173,33 +170,28 @@ cable alignment.
 | VCC5
 | Power
 | 5V power supply
-| (see
-other parts)
-| C12(e), C13(S), C15(S), U3 Pin
-11
+| (see other parts)
+| C12(e), C13(S), C15(S), U3 11
 |-
 | 7
 | LAD3
 | I/O
 | LPC address/data bus
 | U1 23
-| Multiplexed command, address and
-data bus.
+| Multiplexed command, address and data bus.
 |-
 | 8
 | LAD2
 | I/O
 | LPC address/data bus
 | U1 22
-| Multiplexed command, address and
-data bus.
+| Multiplexed command, address and data bus.
 |-
 | 9
 | VCC3
 | Power
 | 3.3V power supply
-| (see
-other parts)
+| (see other parts)
 | 
 |-
 | 10
@@ -207,23 +199,20 @@ other parts)
 | I/O
 | LPC address/data bus
 | U1 21
-| Multiplexed command, address and
-data bus.
+| Multiplexed command, address and data bus.
 |-
 | 11
 | LAD0
 | I/O
 | LPC address/data bus
 | U1 20
-| Multiplexed command, address and
-data bus.
+| Multiplexed command, address and data bus.
 |-
 | 12
 | VSS
 | Power
 | System ground
-| (see
-other parts)
+| (see other parts)
 | 
 |-
 | 13
@@ -244,18 +233,15 @@ other parts)
 | VCC3
 | Power
 | 3.3V power supply
-| (see
-other parts)
-| Intended to be used for external
-IO board
+| (see other parts)
+| Intended to be used for external IO board
 |-
 | 16
 | L_SER_IRQ
 | Input
 | Serial interrupt requests
 | U1 30
-| Provides a serial interrupt
-request line for mouse/keyboard implementations of the IO board.
+| Provides a serial interrupt request line for mouse/keyboard implementations of the IO board.
 |}
 
 == Related links ==

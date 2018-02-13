@@ -85,7 +85,7 @@ and pins 12 (GND) and 15 (VCC3) haven't been confirmed to work correctly
 | 3     | LFRAME\#    | Output | Frame signal              | U1 24             | Indicates start of a new cycle and termination of broken cycle.                              |
 | 4     | ---         | ---    | ---                       | ---               | Voided to ensure correct ribbon cable alignment.                                             |
 | 5     | LRST\#      | Output | PCI reset                 | U1 26             | Used as LPC interface reset.                                                                 |
-| 6     | VCC5        | Power  | 5V power supply           | (see other parts) | C12(e), C13(S), C15(S), U3 Pin 11                                                            |
+| 6     | VCC5        | Power  | 5V power supply           | (see other parts) | C12(e), C13(S), C15(S), U3 11                                                                |
 | 7     | LAD3        | I/O    | LPC address/data bus      | U1 23             | Multiplexed command, address and data bus.                                                   |
 | 8     | LAD2        | I/O    | LPC address/data bus      | U1 22             | Multiplexed command, address and data bus.                                                   |
 | 9     | VCC3        | Power  | 3.3V power supply         | (see other parts) |                                                                                              |
