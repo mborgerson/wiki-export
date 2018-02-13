@@ -54,20 +54,69 @@ goes where:
 
 ### U1 SMsC LPC ic
 
-| | Pin      | to pin              | Note                                |
-|------------|---------------------|-------------------------------------|
-| U1 pin 18  | C17(up) and ?       | (not finished)                      |
-| U1 pin 6,7 | C17(down) and GND   | Both U1 pins yes)                   |
-| U1 p24     | J9 pin 3            | LFrame                              |
-| U1 p27     | R7                  | Pull up (3.3v)                      |
-| U1 p29     | J9 pin 1            | LClk                                |
-| U1 p30     | J9 pin 16           | (unkown function)                   |
-| U1 p40     | GND                 |                                     |
-| U1 p44     | 3.3v with C2        | Vcc?                                |
-| U1 p45     | R1 (R2 unpopulated) | Pull down (R2 would be pullup 3.3v) |
-| U1 p60     | GND                 |                                     |
-| U1 P84     | U3 P8, U2 P18       | RX                                  |
-| U1 P85     | U3 P6, U2 P17       | TX                                  |
+Still lots to fill out here, but all connections required for kernel
+debugging via null-modem cable tied to TX/RX/GND have been accounted
+for.
+
+| | Pin | Name            | Type   | Description                   | Termination(s)            | Notes                                                                                                                           |
+|-------|-----------------|--------|-------------------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 6     | CLKI32          | Input  | 32.768kHz trickle clock input | GND (C17)                 | Disabled via GND                                                                                                                |
+| 7     | VSS             | Power  | Ground                        | GND (C17)                 |                                                                                                                                 |
+| 18    | VTR             | Power  | 3.3V standby voltage          | C17 bypass to 3.3V        | Connected to VCC because no wakeup functionality is required                                                                    |
+| 19    | CLOCKI          | Input  | 14.318MHz clock input         | Y2 3                      |                                                                                                                                 |
+| 20    | LAD0            | I/O    | LPC address/data bus          | J9 11                     | Multiplexed command, address and data bus.                                                                                      |
+| 21    | LAD1            | I/O    | LPC address/data bus          | J9 10                     | Multiplexed command, address and data bus.                                                                                      |
+| 22    | LAD2            | I/O    | LPC address/data bus          | J9 8                      | Multiplexed command, address and data bus.                                                                                      |
+| 23    | LAD3            | I/O    | LPC address/data bus          | J9 7                      | Multiplexed command, address and data bus.                                                                                      |
+| 24    | LFRAME\#        | Input  | Frame signal                  | J9 3                      | Indicates start of a new cycle and termination of broken cycle.                                                                 |
+| 26    | PCI\_RESET\#    | Input  | PCI reset                     | J9 5                      | Used as LPC interface reset.                                                                                                    |
+| 27    | LPCPD\#         | Input  | Power down signal             | R7 (10k) pull-up to 3.3V  | Indicates that it should prepare for power to be shut down on the LPC interface. Tied high relying on PCI\_RESET to do its job. |
+| 29    | PCI\_CLK        | Input  | PCI clock                     | J9 1                      |                                                                                                                                 |
+| 30    | SER\_IRQ        | Output | Serial interrupt requests     | J9 16                     | Provides a serial interrupt request line for mouse/keyboard implementations of the IO board.                                    |
+| 31    | VSS             | Power  | Ground                        | GND                       |                                                                                                                                 |
+| 32    | GP10/J1B1       |        |                               | Trace open?               |                                                                                                                                 |
+| 33    | GP11/J1B2       |        |                               | Trace open?               |                                                                                                                                 |
+| 34    | GP12/J2B1       |        |                               | Trace open?               |                                                                                                                                 |
+| 37    | GP15/J1Y        |        |                               | Trace open?               |                                                                                                                                 |
+| 38    | GP16/J2X        |        |                               | Trace open?               |                                                                                                                                 |
+| 39    | GP17/J2Y        |        |                               | Trace open?               |                                                                                                                                 |
+| 40    | AVSS            | Power  | Analog ground                 | GND                       |                                                                                                                                 |
+| 42    | GP21/P16/nDS1   |        |                               | Trace open?               |                                                                                                                                 |
+| 44    | VREF            | Power  | 3.3V reference voltage        | C2 bypass to 3.3V         | 5V or 3.3V used for the game port logic                                                                                         |
+| 45    | GP24/SYSOPT     |        |                               | R1 (10k) pull-down to GND | Set the configuration base I/O address of 0x2E (R2 would be a pullup to 3.3V with a different configuration address)            |
+| 47    | GP26/MIDI\_OUT  |        |                               | Trace open?               |                                                                                                                                 |
+| 49    | GP61/LED2       |        |                               | Trace open?               |                                                                                                                                 |
+| 51    | GP30/FAN\_TACH2 |        |                               | Trace open?               |                                                                                                                                 |
+| 53    | VCC             | Power  | 3.3V supply voltage           | C1 bypass to 3.3V         |                                                                                                                                 |
+| 55    | P33/FAN1        |        |                               | Trace open?               |                                                                                                                                 |
+| 57    | KCLK            |        |                               | Trace open?               |                                                                                                                                 |
+| 59    | MCLK            |        |                               | Trace open?               |                                                                                                                                 |
+| 60    | VSS             | Power  | Ground                        | GND                       |                                                                                                                                 |
+| 61    | IRRX2/GP34      |        |                               | Trace open?               |                                                                                                                                 |
+| 65    | VCC             | Power  | 3.3V supply voltage           | C9 bypass to 3.3V         |                                                                                                                                 |
+| 76    | VSS             | Power  | Ground                        | GND (C10)                 |                                                                                                                                 |
+| 84    | RXD1            | Input  |                               | U3 8 U2 18                |                                                                                                                                 |
+| 85    | TXD1            | Output |                               | U3 6 U2 17                |                                                                                                                                 |
+| 86    | nDSR1           | Input  | Data set ready                | U3 ?                      | Optional flow control                                                                                                           |
+| 87    | nRTS1           | Output | Request to send               | U3 ?                      | Optional flow control                                                                                                           |
+| 93    | VCC             | Power  |                               | C21 bypass to 3.3V        |                                                                                                                                 |
+| 95    | RXD2            | Input  |                               | Trace open?               |                                                                                                                                 |
+| 96    | TXD2            | Output |                               | Trace hidden under IC?    |                                                                                                                                 |
+| 97    | nDSR2           | Input  | Data set ready                | Trace open?               | Optional flow control                                                                                                           |
+| 98    | nRTS2           | Output | Request to send               | Trace hidden under IC?    | Optional flow control                                                                                                           |
+| 101   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
+| 102   | HVCC            | Power  |                               | C24 bypass to 3.3V        |                                                                                                                                 |
+| 103   | SDA             | I/O    |                               | J9 14                     |                                                                                                                                 |
+| 104   | SCLK            | I/O    |                               | J9 13                     |                                                                                                                                 |
+| 105   | A0/RESET\#      |        |                               | R10 (10k) pull-up to 3.3V |                                                                                                                                 |
+| 111   | HVCC            | Power  |                               | C32 bypass to 3.3V        |                                                                                                                                 |
+| 112   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
+| 121   | HVCC            | Power  |                               | C33 bypass to 3.3V        |                                                                                                                                 |
+| 122   | HVCC            | Power  |                               | C34 bypass to 3.3V        |                                                                                                                                 |
+| 125   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
+| 126   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
+| 127   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
+| 128   | HVSS            | Power  |                               | GND                       |                                                                                                                                 |
 
 ### J9 LPC header
 
