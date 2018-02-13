@@ -62,6 +62,213 @@ The folowing main parts are populated on the board:
 The connections in the following tables are checked with the continuity test on a VOM(Multimeter).
 but for now here are the listings of wich pin goes where:
 
+=== U3 MAX223EAI [https://datasheets.maximintegrated.com/en/ds/MAX220-MAX249.pdf] ===
+
+{| class="wikitable"
+!| Pin
+! Name
+! Type
+! Description
+! Termination(s)
+! Notes
+|-
+| 1
+| T3OUT
+| 
+| 
+| 
+| 
+|-
+| 2
+| T1OUT
+| 
+| 
+| 
+| 
+|-
+| 3
+| T2OUT
+| 
+| 
+| 
+| 
+|-
+| 4
+| R2IN
+| 
+| 
+| 
+| 
+|-
+| 5
+| R2OUT
+| 
+| 
+| 
+| 
+|-
+| 6
+| T2IN
+| 
+| 
+| 
+| 
+|-
+| 7
+| T1IN
+| 
+| 
+| 
+| 
+|-
+| 8
+| R1OUT
+| 
+| 
+| 
+| 
+|-
+| 9
+| R1IN
+| 
+| 
+| 
+| 
+|-
+| 10
+| GND
+| 
+| 
+| 
+| 
+|-
+| 11
+| VCC
+| Power
+| 5V supply voltage
+| J9 6
+| 
+|-
+| 12
+| C1+
+| 
+| 
+| 
+| 
+|-
+| 13
+| V+
+| 
+| 
+| 
+| 
+|-
+| 14
+| C1-
+| 
+| 
+| 
+| 
+|-
+| 15
+| T4OUT
+| 
+| 
+| 
+| 
+|-
+| 16
+| R3IN
+| 
+| 
+| 
+| 
+|-
+| 17
+| R3OUT
+| 
+| 
+| 
+| 
+|-
+| 18
+| SHDN
+| 
+| 
+| 
+| 
+|-
+| 19
+| EN
+| 
+| 
+| 
+| 
+|-
+| 20
+| R4IN
+| 
+| 
+| 
+| 
+|-
+| 21
+| R4OUT
+| 
+| 
+| 
+| 
+|-
+| 22
+| T4IN
+| 
+| 
+| 
+| 
+|-
+| 23
+| T3IN
+| 
+| 
+| 
+| 
+|-
+| 24
+| R5OUT
+| 
+| 
+| 
+| 
+|-
+| 25
+| R5IN
+| 
+| 
+| 
+| 
+|-
+| 26
+| V-
+| 
+| 
+| 
+| 
+|-
+| 27
+| C2-
+| 
+| 
+| 
+| 
+|-
+| 28
+| C2+
+| 
+| 
+| 
+| 
+|}
+
 === U1 SMsC LPC ic ===
 
 Still lots to fill out here, but all connections required for kernel debugging via null-modem cable tied to TX/RX/GND have been accounted for.
