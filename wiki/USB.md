@@ -20,7 +20,8 @@ turn the TV screen into a mirror temporarily, so players can groom
 themselves before joining a conversation.” [Xbox Live Video Chat in
 Japan](http://theinspirationroom.com/daily/2005/xbox-video-chat/)
 
-Dvd mediaset number: X10-98754 Xbox cam: X10-71835
+-   Dvd mediaset number: X10-98754
+-   Xbox cam: X10-71835
 
 [Borman ptoponline.com photos, he forgot he took the
 pictures](https://imgur.com/a/zbCzl) [eurogamer
