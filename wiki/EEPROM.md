@@ -207,6 +207,40 @@ following code snippet over the area the checksum covers:
              free(CRC_Data);
      }
 
+Read Checksum Algorithm
+-----------------------
+
+When the Xbox reads from the FACTORY\_SETTINGS or the USER\_SETTINGS
+section of the EEPROM, this algorithm is ran over the entire section
+accessed (including the CRC checksum mentioned above) to ensure that the
+data is valid. If the result of the checksum algorithm does not equal
+0xFFFFFFFF, STATUS\_DEVICE\_DATA\_ERROR is returned from the Kernel.
+
+    static uint32_t eeprom_section_checksum(
+        const uint32_t* section_data,
+        uint32_t section_data_length
+    )
+    {
+        const uint32_t bitmask = 0xFFFFFFFF;
+        const uint32_t num_dwords = section_data_length >> 2;
+        uint64_t checksum = 0;
+        uint32_t carry_count = 0;
+
+        for(uint32_t loop_count = num_dwords; loop_count > 0; loop_count--) {
+            checksum += *section_data;
+            if(checksum > bitmask) {
+                carry_count++;
+                checksum &= bitmask;
+            }
+            section_data++;
+        }
+        checksum += carry_count;
+        if(checksum > bitmask) {
+            checksum += 1;
+        }
+        return (uint32_t)(checksum & bitmask);
+    }
+
 Further Reading
 ---------------
 
