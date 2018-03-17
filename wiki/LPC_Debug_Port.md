@@ -35,7 +35,8 @@ Pins
 -   **SCL** (13) - [SMBus](/wiki/SMBus "wikilink") clock signal.
 -   **GND** (12 & 2) - Ground.
 -   **LAD\[3:0\]** (11, 10, 8, 7) - LPC address and data signals.
--   **5V** (6) - Provides 5V while the Xbox is plugged in.
+-   **5V** (6) - Provides 5V while the Xbox is powered on or v1.6 always
+    on when AC plugged in.
 -   **LRESET\#** (5) - LPC reset signal; same as PCIRST\#.
 -   **PWR** (4) - On pre-1.6 hardware, this pin does not physically
     exist. On 1.6 hardware, this pin is connected to the power button.
