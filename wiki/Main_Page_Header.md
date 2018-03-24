@@ -24,7 +24,7 @@ We are not interested in documenting the Xbox 360, Xbox One or any other
 console at this point.
 
 <hr>
-**Interested? Contact us!**
+**Want to help? Contact us!**
 
 This wiki is the place for all remaining Xbox projects to come together.
 Please come chat with us in [\#xqemu on Freenode
