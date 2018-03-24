@@ -24,10 +24,17 @@ We are not interested in documenting the Xbox 360, Xbox One or any other
 console at this point.
 
 <hr>
-This wiki will become the place for all remaining Xbox projects to come
-together. If you are interested in helping or discussing this, please
-come chat with us in \#xqemu on freenode or Cxbx-Reloaded/Lobby on
-gitter.im.
+**Interested? Contact us!**
+
+This wiki is the place for all remaining Xbox projects to come together.
+Please come chat with us in [\#xqemu on Freenode
+IRC](irc://chat.freenode.net/xqemu)
+([Webchat](http://webchat.freenode.net?channels=%23xqemu)),
+[Cxbx-Reloaded on gitter.im](https://gitter.im/Cxbx-Reloaded/Lobby) or
+the [Discord server about Original Xbox
+emulation](https://discord.gg/BZTwPNb).
+
+You'll also get the details for wiki account creation there.
 
 </div>
 </div>
