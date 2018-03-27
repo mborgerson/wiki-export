@@ -29,10 +29,8 @@ console at this point.
 This wiki is the place for all remaining Xbox projects to come together.
 Please come chat with us in [\#xqemu on Freenode
 IRC](irc://chat.freenode.net/xqemu)
-([Webchat](http://webchat.freenode.net?channels=%23xqemu)),
-[Cxbx-Reloaded on gitter.im](https://gitter.im/Cxbx-Reloaded/Lobby) or
-the [Discord server about Original Xbox
-emulation](https://discord.gg/BZTwPNb).
+([Webchat](http://webchat.freenode.net?channels=%23xqemu)) or
+[Cxbx-Reloaded on gitter.im](https://gitter.im/Cxbx-Reloaded/Lobby).
 
 You'll also get the details for wiki account creation there.
 
