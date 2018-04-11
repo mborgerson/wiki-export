@@ -30,9 +30,9 @@ which conforms to the Intel Low Pin Count Specification 1.0.
 Pins
 ----
 
--   **3.3V** (15 & 9) - Provides 3.3V while the Xbox is powered on. (On
+-   **3.3V** (15 & 9) - Provides 3.3V while the Xbox is powered on. On
     1.6 hardware, disconnected reconnect to pin 15 to restore supply
-    voltage.)
+    voltage.
 -   **SDA** (14) - [SMBus](/wiki/SMBus "wikilink") data and address signal.
 -   **SCL** (13) - [SMBus](/wiki/SMBus "wikilink") clock signal.
 -   **GND** (12 & 2) - Ground.
