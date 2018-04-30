@@ -43,7 +43,8 @@ Pins
 -   **PWR** (4) - On pre-1.6 hardware, this pin does not physically
     exist. On 1.6 hardware, this pin is connected to the power button.
     Shorting it to ground will turn the Xbox on and off.
--   **LFRAME\#** (3) - LPC start-of-cycle signal.
+-   **LFRAME\#** (3) - LPC start-of-cycle signal. On 1.3-1.5 hardware,
+    disconnected.
 -   **LCLK** (1) - 33MHz LPC clock signal; same as PCICLK.
 
 The debug port lacks the optional LDRQ\#, SERIRQ, CLKRUN\#, PME\#,

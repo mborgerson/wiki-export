@@ -34,7 +34,7 @@ The LPC bus is controlled by the [[MCPX|MCPX southbridge]], which conforms to th
 * '''5V''' (6) - Provides 5V while the Xbox is powered on or v1.6 always on when AC plugged in.
 * '''LRESET#''' (5) - LPC reset signal; same as PCIRST#.
 * '''PWR''' (4) - On pre-1.6 hardware, this pin does not physically exist. On 1.6 hardware, this pin is connected to the power button. Shorting it to ground will turn the Xbox on and off.
-* '''LFRAME#''' (3) - LPC start-of-cycle signal.
+* '''LFRAME#''' (3) - LPC start-of-cycle signal. On 1.3-1.5 hardware, disconnected.
 * '''LCLK''' (1) - 33MHz LPC clock signal; same as PCICLK.
 
 The debug port lacks the optional LDRQ#, SERIRQ, CLKRUN#, PME#, LPCPD#, and LSMI# signals. This means peripherals connected to the debug port cannot utilize interrupt, DMA, bus mastering, or power management features.
