@@ -169,4 +169,6 @@ References and links
 -   \[<https://www.hanselman.com/blog/FlashingTheFirmwareOfAnXboxMN740WirelessAdapterToADLink108AGToSupportWPASecurity.aspx>:
     Flashing the Firmware of an Xbox MN-740 Wireless Adapter to a D-Link
     108AG to support WPA Security \]
+-   [FCC entry of Xbox MN-740 Wireless Adapter (with IC writing
+    intact)](https://fccid.io/C3KMN740/Internal-Photos/Internal-Photos-360373.iframe)
 
