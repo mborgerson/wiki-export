@@ -6,7 +6,8 @@ layout: wiki
 
 The Xbox contains an Ethernet module and one RJ45 connector.
 Additionally, separate modem and wireless accessories were considered
-when developing the console.
+when developing the console. Eventualy an official wireless adapter was
+released based of a “D-Link 108AG Gaming Adapter” in the end of 2003.
 
 The Xbox has a TCP/IP protocol stack complete with a DNS PPTP, DHCP
 clients.
@@ -18,6 +19,44 @@ Hardware
 
 Integrated in the Nvidia Southbridge MCPX chip which is similar to the
 nForce chips. The Xbox Linux team used the binary drivers from Nvidia.
+
+### Wireless adapter
+
+based on the “D-Link 108AG Gaming Adapter”, the Xbox MN-740 Wireless
+Bridge bundled with a Xbox install disk (wich would update the dashboard
+if nececairy).
+
+#### hardware
+
+-   AR5312 CPU (MIPS 4Kc core?)
+-   AR5212 RoC (Radio on Chip) for 2.4 Ghz 802.11b/g.
+-   KS8721B physical layer transciever
+-   some Eeprom wich hold the MAC adress (based of FCC pictures and
+    Firmware analysis)
+-   IC42S16400 8Mb ram
+-   SST39LF0?0A (1 or 2 Mb) (the FCC picture is unclear on the size part
+    due to writing)
+
+The onboard 3 leds are: Power, Wireless and Xbox(called Ethernet on the
+PCB). The board seems to have Jtag and what apears to be Serial testpins
+exposed.
+
+#### Firmware
+
+The shipped firmware does not support WPA or WPA2. An “firmware” hack
+based on the D-Link firmware adds WPA support, rendering Dashboard
+support unfunctional and changing settings requirs connecting to the LAN
+port using a PC (or webbrowser capable application). The runs closed
+source “ThreadX JADE/Green Hills Version G4.0.4.0” RTOS and the firmware
+holds a copyright string of: “Copyright (c) Microsoft Corporation All
+Rights Reserved Device is Xbox Compatible”
+
+latest firmware is seperated by a boot and runtime firmware :
+
+-   MN740\_01.03.00.0005\_BOOT.bin, “Xbox Wireless Adapter (MN-740) boot
+    firmware”
+-   MN740\_01.00.02.0022\_RUNTIME.bin, “Xbox Wireless Adapter (MN-740)
+    runtime firmware”
 
 System Link
 -----------
@@ -124,4 +163,9 @@ References and links
     information](https://www.google.com/patents/US20030233537)
 -   [Patent: Multiple user authentication for online console-based
     gaming](https://www.google.com/patents/US7218739)
+-   \[<https://web.archive.org/web/20040831091347/http://www.xbox.com:80/assets/en-us/HardwareManuals/Xnewt.pdf>:
+    Xbox Wireless adapter manual\]
+-   \[<https://www.hanselman.com/blog/FlashingTheFirmwareOfAnXboxMN740WirelessAdapterToADLink108AGToSupportWPASecurity.aspx>:
+    Flashing the Firmware of an Xbox MN-740 Wireless Adapter to a D-Link
+    108AG to support WPA Security \]
 
