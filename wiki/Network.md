@@ -43,13 +43,14 @@ exposed.
 
 #### Firmware
 
-The shipped firmware does not support WPA or WPA2. An “firmware” hack
+The shipped firmware does not support WPA or WPA2. A “firmware” hack
 based on the D-Link firmware adds WPA support, rendering Dashboard
-support unfunctional and changing settings requirs connecting to the LAN
-port using a PC (or webbrowser capable application). The runs closed
-source “ThreadX JADE/Green Hills Version G4.0.4.0” RTOS and the firmware
-holds a copyright string of: “Copyright (c) Microsoft Corporation All
-Rights Reserved Device is Xbox Compatible”
+support unfunctional and changing settings require connecting to the LAN
+port using a PC (or webbrowser capable application). This wireless
+bridge runs a closed source version of the“ThreadX JADE/Green Hills
+Version G4.0.4.0” RTOS. The firmware contains a copyright string of:
+“Copyright (c) Microsoft Corporation All Rights Reserved Device is Xbox
+Compatible”
 
 latest firmware is seperated by a boot and runtime firmware :
 
