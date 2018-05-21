@@ -32,7 +32,7 @@ Hardware
     -   [SMC](/wiki/SMC "wikilink")
     -   [Video Encoder](/wiki/Video_Encoder "wikilink")
         -   [AV Cables](/wiki/AV_Cables "wikilink")
--   [Network Controller (NVNet)](/wiki/NVNet "wikilink")
+-   [Network Controller (NVNet)](/wiki/Network "wikilink")
 -   [DVD Drive](/wiki/DVD_Drive "wikilink")
     -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Hard Drive](/wiki/Hard_Drive "wikilink")
