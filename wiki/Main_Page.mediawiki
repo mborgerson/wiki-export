@@ -24,7 +24,7 @@
 ** [[SMC]]
 ** [[Video Encoder]]
 *** [[AV Cables]]
-* [[Network|Network Controller (NVNet)]]
+* [[NVNet|Network Controller (NVNet)]]
 * [[DVD Drive]]
 ** [[Xbox Game Disc]]
 * [[Hard Drive]]
