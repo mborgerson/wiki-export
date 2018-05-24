@@ -2,6 +2,8 @@
 title: Xbe
 permalink: wiki/Xbe/
 layout: wiki
+tags:
+ - Fileformats
 ---
 
 XBE files (XBox Executable) are the main files that are executed in the

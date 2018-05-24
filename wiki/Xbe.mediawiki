@@ -239,3 +239,5 @@ Known differences include that the first bytes of the file are 'XE' instead the 
 
 == Resources and links ==
 * [http://www.caustik.com/cxbx/download/xbe.htm .XBE File Format 1.1]
+
+[[Category:Fileformats]]
