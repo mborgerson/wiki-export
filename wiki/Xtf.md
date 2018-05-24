@@ -2,6 +2,8 @@
 title: Xtf
 permalink: wiki/Xtf/
 layout: wiki
+tags:
+ - Fileformats
 ---
 
 XTF is a font file format used in the [Dashboard](/wiki/Dashboard "wikilink").

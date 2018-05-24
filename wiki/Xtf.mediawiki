@@ -45,3 +45,4 @@ The mesh data is stored as triangle list. 3 indices per triangle.
 == Links ==
 
 * [https://github.com/JayFoxRox/xbox-tools/tree/master/xtf-converter A tool to convert XTF fonts to SVG fonts]
+[[Category:Fileformats]]
