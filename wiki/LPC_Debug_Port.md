@@ -4,16 +4,16 @@ permalink: wiki/LPC_Debug_Port/
 layout: wiki
 ---
 
-| Name       | Pin | Pin | Name     |
-|------------|-----|-----|----------|
-| -          | 16  | 15  | 3.3V     |
-| SDA        | 14  | 13  | SCL      |
-| GND        | 12  | 11  | LAD0     |
-| LAD1       | 10  | 9   | 3.3V     |
-| LAD2       | 8   | 7   | LAD3     |
-| 5V         | 6   | 5   | LRESET\# |
-| PWR (v1.6) | 4   | 3   | LFRAME\# |
-| GND        | 2   | 1   | LCLK     |
+| Name          | Pin | Pin | Name     |
+|---------------|-----|-----|----------|
+| SERIRQ (v1.0) | 16  | 15  | 3.3V     |
+| SDA           | 14  | 13  | SCL      |
+| GND           | 12  | 11  | LAD0     |
+| LAD1          | 10  | 9   | 3.3V     |
+| LAD2          | 8   | 7   | LAD3     |
+| 5V            | 6   | 5   | LRESET\# |
+| PWR (v1.6)    | 4   | 3   | LFRAME\# |
+| GND           | 2   | 1   | LCLK     |
 
 The **LPC Debug Port** is an unpopulated 2x8 2.54mm (0.1") footprint on
 the Xbox motherboard that provides access to the system's [Low Pin

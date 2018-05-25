@@ -3,7 +3,7 @@
 |-
 ! style="text-align:right" | Name !! style="text-align:right" | Pin !! Pin !! Name
 |-
-| style="text-align:right" | - || style="text-align:right" | 16 || 15 || 3.3V
+| style="text-align:right" | SERIRQ (v1.0) || style="text-align:right" | 16 || 15 || 3.3V
 |-
 | style="text-align:right" | SDA || style="text-align:right" | 14 || 13 || SCL
 |-
