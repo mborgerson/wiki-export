@@ -4,18 +4,19 @@ permalink: wiki/AV_Cables/
 layout: wiki
 ---
 
-Microsoft released a handful of AV packs for the Xbox. They are
-connected to the port labelled “Audio Video Input/Output” on the
-backside of the console.
+Microsoft has released a handful of **Audio Video Cables** for the
+[Xbox](/wiki/Xbox "wikilink"), which they refer to internally as **AV Packs**.
+They are connected to the port labelled “Audio Video Input/Output” on
+the backside of the console.
 
 Connector
 ---------
 
 ### Pinout
 
-The following table gives the pins in the way they are arranged on the
-female end of the **XBOX AVIP** cables. The male end is reversed and on
-the console.
+The following table gives the pinout in the way it is are arranged on
+the **XBOX AVIP** cables, or **AV Packs**. The other end is reversed and
+on the console.
 
 | Description | Audio Right | Audio Right GND | SPDIF Digital Audio | V-Sync (VGA Mode) | Mode GND      | Mode GND      | Mode GND      | GND    | Variable | 9 GND    | Variable | 11 GND   |
 |-------------|-------------|-----------------|---------------------|-------------------|---------------|---------------|---------------|--------|----------|----------|----------|----------|
@@ -26,8 +27,8 @@ the console.
 Supported signals / AV cables
 -----------------------------
 
-Below is a table which lists all known officially AV cables released by
-Microsoft and their respective signal. The constants used in the
+Below is a table which lists all known officially **AV cables** released
+by Microsoft and their respective signal. The constants used in the
 av-prefixed Kernel-functions are also listed.
 
 | 19  | 18  | 17  | SMC Constant | Region     | Official Microsoft product name                                                                                                      | Signal                    | 24  | 22  | 11  | 9   | Kernel av-Constant     |
@@ -51,6 +52,10 @@ video-standards (NTSC / PAL / SECAM) using the same cable.
 Related links
 -------------
 
--   [List of signals and
+-   [GamesX List of signals and
     pinout](http://www.gamesx.com/avpinouts/xbox.htm)
+-   [ASSEMBLERgames XBOX AV
+    pinout](https://assemblergames.com/attachments/xboxavippinouttr0-png.13081/)
+-   [uCON64
+    Connectors](http://ucon64.sourceforge.net/ucon64misc/conn.html)
 

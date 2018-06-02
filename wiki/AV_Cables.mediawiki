@@ -1,11 +1,11 @@
-Microsoft released a handful of AV packs for the Xbox. They are connected to the port labelled "Audio Video Input/Output" on the backside of the console.
+Microsoft has released a handful of '''Audio Video Cables''' for the [[Xbox]], which they refer to internally as '''AV Packs'''. They are connected to the port labelled "Audio Video Input/Output" on the backside of the console.
 
 == Connector ==
 
 {{FIXME|reason=Describe the connector here - is it a standard part? add an image, add the pinout graphics (didn't copy from elsewhere because clearly microsoft copyright)}}
 
 === Pinout ===
-The following table gives the pins in the way they are arranged on the female end of the '''XBOX AVIP''' cables. The male end is reversed and on the console.
+The following table gives the pinout in the way it is are arranged on the '''XBOX AVIP''' cables, or '''AV Packs'''. The other end is reversed and on the console.
 
 {| class="wikitable"
 !Description
@@ -67,7 +67,7 @@ The following table gives the pins in the way they are arranged on the female en
 
 == Supported signals / AV cables ==
 
-Below is a table which lists all known officially AV cables released by Microsoft and their respective signal.
+Below is a table which lists all known officially '''AV cables''' released by Microsoft and their respective signal.
 The constants used in the av-prefixed Kernel-functions are also listed.
 
 {| class="wikitable"
@@ -107,4 +107,6 @@ The region only identifies which territory the cable was originally available / 
 
 == Related links ==
 
-* [http://www.gamesx.com/avpinouts/xbox.htm List of signals and pinout]
+* [http://www.gamesx.com/avpinouts/xbox.htm GamesX List of signals and pinout]
+* [https://assemblergames.com/attachments/xboxavippinouttr0-png.13081/ ASSEMBLERgames XBOX AV pinout]
+* [http://ucon64.sourceforge.net/ucon64misc/conn.html uCON64 Connectors]
