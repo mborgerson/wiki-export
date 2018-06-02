@@ -15,4 +15,6 @@ You may also be interested in the following resources.
     Modes](https://en.wikipedia.org/wiki/List_of_Xbox_games_with_alternate_display_modes)
 -   [Wikipedia's List of XBOX Network
     Games](https://en.wikipedia.org/wiki/List_of_Xbox_network_games)
+-   [Wikipedia's List of Sega Arcade Video Games
+    (Chihiro)](https://en.wikipedia.org/wiki/List_of_Sega_arcade_video_games#Chihiro)
 
