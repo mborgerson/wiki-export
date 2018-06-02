@@ -13,35 +13,15 @@ Connector
 
 ### Pinout
 
-| Pin | Description         |
-|-----|---------------------|
-| 1   | Audio Right         |
-| 2   | Audio Right GND     |
-| 3   | SPDIF Digital Audio |
-| 4   | V-Sync (VGA Mode)   |
-| 5   | Mode GND            |
-| 6   | Mode GND            |
-| 7   | Mode GND            |
-| 8   | GND                 |
-| 9   | Variable            |
-| 10  | Pin 9 GND           |
-| 11  | Variable            |
-| 12  | Pin 11 GND          |
+The following table gives the pins in the way they are arranged on the
+female end of the **XBOX AVIP** cables. The male end is reversed and on
+the console.
 
-| Pin | Description       |
-|-----|-------------------|
-| 13  | Vcc               |
-| 14  | Audio Left        |
-| 15  | Audio Left GND    |
-| 16  | H Sync (VGA Mode) |
-| 17  | Mode Select 1     |
-| 18  | Mode Select 2     |
-| 19  | Mode Select 3     |
-| 20  | +12V              |
-| 21  | Pin 22 GND        |
-| 22  | Variable          |
-| 23  | Pin 24 GND        |
-| 24  | Variable          |
+| Description | Audio Right | Audio Right GND | SPDIF Digital Audio | V-Sync (VGA Mode) | Mode GND      | Mode GND      | Mode GND      | GND    | Variable | 9 GND    | Variable | 11 GND   |
+|-------------|-------------|-----------------|---------------------|-------------------|---------------|---------------|---------------|--------|----------|----------|----------|----------|
+| Pin         | 1           | 2               | 3                   | 4                 | 5             | 6             | 7             | 8      | 9        | 10       | 11       | 12       |
+| Pin         | 13          | 14              | 15                  | 16                | 17            | 18            | 19            | 20     | 21       | 22       | 23       | 24       |
+| Description | Vcc         | Audio Left      | Audio Left GND      | H Sync (VGA Mode) | Mode Select 1 | Mode Select 2 | Mode Select 3 | (+12V) | 22 GND   | Variable | 24 GND   | Variable |
 
 Supported signals / AV cables
 -----------------------------
