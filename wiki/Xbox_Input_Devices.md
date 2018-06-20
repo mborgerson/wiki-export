@@ -549,6 +549,8 @@ trigger buttons
 Steel Battalion Controller
 --------------------------
 
+Controller Layout ![](SBC.jpg "fig:SBC.jpg")
+
 ### USB Descriptors
 
 From

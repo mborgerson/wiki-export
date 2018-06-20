@@ -676,6 +676,9 @@ Device Status:     0x0000
 
 == Steel Battalion Controller ==
 
+Controller Layout
+[[File:SBC.jpg]]
+
 === USB Descriptors ===
 
 From http://www.yaronet.com/topics/154490-steel-battalion-controller-homemade#post-15
