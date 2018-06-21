@@ -1,4 +1,5 @@
 {{:Main Page/Header}}
+__NOTOC__
 
 == Hardware ==
 
