@@ -676,8 +676,7 @@ Device Status:     0x0000
 
 == Steel Battalion Controller ==
 
-Controller Layout
-[[File:SBC.jpg]]
+[[File:SBC.jpg|thumb|200px|Steel Battalion Controller Layout]]
 
 === USB Descriptors ===
 
@@ -742,8 +741,8 @@ From http://steelbattalionnet.codeplex.com/SourceControl/latest#SBC/SteelBattali
 |-
 |RightJoyFire
 |2
-|0x03
-|FIXME: WTF?! Mask might be bad?
+|0x03{{FIXME|reason=WTF?! Might be bad?}}
+|
 |-
 |RightJoyLockOn
 |2

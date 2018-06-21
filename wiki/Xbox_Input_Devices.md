@@ -549,7 +549,7 @@ trigger buttons
 Steel Battalion Controller
 --------------------------
 
-Controller Layout ![](SBC.jpg "fig:SBC.jpg")
+<img src="SBC.jpg" title="Steel Battalion Controller Layout" alt="Steel Battalion Controller Layout" width="200" />
 
 ### USB Descriptors
 
@@ -606,7 +606,7 @@ From
 | Field                   | Offset (Bytes) | Mask                             | Notes                                                                                                                                           |
 |-------------------------|----------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | RightJoyMainWeapon      | 2              | 0x01                             |                                                                                                                                                 |
-| RightJoyFire            | 2              | 0x03                             | FIXME: WTF?! Mask might be bad?                                                                                                                 |
+| RightJoyFire            | 2              | 0x03                             |                                                                                                                                                 |
 | RightJoyLockOn          | 2              | 0x04                             |                                                                                                                                                 |
 | Eject                   | 2              | 0x08                             |                                                                                                                                                 |
 | CockpitHatch            | 2              | 0x10                             |                                                                                                                                                 |
