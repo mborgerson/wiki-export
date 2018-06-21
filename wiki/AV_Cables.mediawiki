@@ -71,8 +71,8 @@ Below is a table which lists all known officially '''AV cables''' released by Mi
 The constants used in the av-prefixed Kernel-functions are also listed.
 
 {| class="wikitable"
-! 19 || 18 || 17 || SMC Constant || Region      || Official Microsoft product name
-! Signal                    || 24 || 22 || 11 ||  9 || Kernel av-Constant
+! Pin 19 || Pin 18 || Pin 17 || SMC Constant || Region      || Official Microsoft product name
+! Signal                    || Pin 24 || Pin 22 || Pin 11 || Pin 9 || Kernel av-Constant
 |-
 |  0 ||  0 ||  0 ||       0      || PAL         || [https://web.archive.org/web/20040216131316/http://www.xbox.com:80/en-gb/hardware/scartcable.htm Advanced SCART Cable]
 | SCART (15 kHz RGB) Stereo ||  V ||  R ||  G ||  B || AV_PACK_SCART    = 3
