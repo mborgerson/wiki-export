@@ -1,0 +1,11 @@
+== Minor complaints ==
+
+Cool image, just some minor complaints which can potentially be fixed in the future:
+
+* Image not cropped / centered
+* Comment should say where this file originated (I assume a manual scan?)
+* Bottom of image is cut-off
+* Small vertical seam near center
+* Different font for "Override", why?
+
+--[[User:JayFoxRox|JayFoxRox]] ([[User talk:JayFoxRox|talk]]) 08:10, 21 June 2018 (PDT)
