@@ -22,14 +22,14 @@ This is a list of known Xbox emulation projects
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 |-
 |{{Maintained}}
-|HLE
+|HLE/LLE Hybrid
 |{{No}}
 |[[Cxbx-Reloaded]]
 |[http://cxbx-reloaded.co.uk/][https://github.com/Cxbx-Reloaded/Cxbx-Reloaded]
 |SoullessSentinel
 |Windows
 |
-|At the time of writing Cxbx-Reloaded is almost purely HLE. LLE GPU emulation is planned, but currently not implemented.
+|Cxbx-Reloaded supports LLE GPU emulation which was taken from XQEMU. At the time of writing, it is significantly slower than in XQEMU.
 |-
 |{{Dead}}
 |HLE
