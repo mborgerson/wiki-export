@@ -30,6 +30,29 @@ This is a list of known Xbox emulation projects
 |Windows
 |
 |Cxbx-Reloaded supports LLE GPU emulation which was taken from XQEMU. At the time of writing, it is significantly slower than in XQEMU.
+
+|-
+|{{Dead}}
+|LLE
+|{{No}}
+|Tortoise
+|[https://gitlab.com/kvmbox-reloaded/]
+|JayFoxRox, phire
+|
+|
+|The decision was made to create an HLE / LLE Xbox emulation project which is maintained similar to Dolphin or Citra. A key focus was on design simplicity. The project started as a continuation of kvmbox, with devices being copied from the XQEMU source code. The project was called kvmbox-reloaded, while the name was being decided. The HLE portion was never worked on.
+
+|-
+|{{Dead}}
+|LLE/HLE Hybrid
+|{{No}}
+|OpenXBOX
+|[https://github.com/mborgerson/OpenXBOX]
+|mborgerson
+|
+|
+|
+
 |-
 |{{Dead}}
 |HLE
