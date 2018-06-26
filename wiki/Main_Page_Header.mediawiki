@@ -5,10 +5,12 @@
 
 <hr>
 
-This is an effort to document the inner workings of the original Microsoft Xbox and Xbox-based SEGA Chihiro.
+XboxDevWiki is an effort to document the inner workings of the original Microsoft Xbox and Xbox-based SEGA Chihiro.
 We not only care about technical details about those platforms, but also how to develop homebrew and emulate them.
 
 We are not interested in documenting the Xbox 360, Xbox One or any other console at this point.
+
+Also check out the [https://github.com/xboxdev XboxDev GitHub organization] where we provide tools and code related to Xbox research and development.
 
 <hr>
 
