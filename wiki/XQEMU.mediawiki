@@ -6,6 +6,8 @@ The official homepage can be found at [http://xqemu.com xqemu.com]
 
 The following list was almost entirely created by [https://www.youtube.com/user/pcmaker2 pcmaker (also known as John Godgames)] around 2015.
 
+'''There is also a [https://docs.google.com/spreadsheets/d/1sVtQ9SNPathKAMCqfYtvJQP0bs0UeLzP9otPHvZDMwE/edit#gid=709879345 new compatibility list from 2018] (also by pcmaker)'''
+
 
 Meaning of the status fields:
 

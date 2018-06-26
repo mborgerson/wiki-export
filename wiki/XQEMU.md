@@ -15,6 +15,10 @@ Compatiblity list
 The following list was almost entirely created by [pcmaker (also known
 as John Godgames)](https://www.youtube.com/user/pcmaker2) around 2015.
 
+**There is also a [new compatibility list from
+2018](https://docs.google.com/spreadsheets/d/1sVtQ9SNPathKAMCqfYtvJQP0bs0UeLzP9otPHvZDMwE/edit#gid=709879345)
+(also by pcmaker)**
+
 Meaning of the status fields:
 
 | Status     | Meaning                                                                          |
