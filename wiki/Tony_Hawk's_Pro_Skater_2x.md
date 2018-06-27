@@ -224,8 +224,6 @@ does not come from the game files.
 
 **Constants**
 
--   -c57.xyz = ?
--   -c56.xyz = ?
 -   c-38.xyz = viewport? (D3D boilerplate)
 -   c-37.xyz = viewport? (D3D boilerplate)
 -   c0.xyzw - c3.xyzw = matrix bone\[0\] ?
@@ -235,10 +233,11 @@ does not come from the game files.
 -   c21.xyzw - c24.xyzw = projection-matrix ?
 -   c32.x = CONSTANT() ?
 -   c32.z = CONSTANT(1.0)
+-   c56.xyz - c57.xyz = some normal matrix
 -   c58.xyzw = ?
 -   c59.xyzw = ?
 -   c60.xyzw = ?
--   c90.xyzw = factor for diffuse color
+-   c90.xyzw = light diffuse color ?
 
 **Code**
 
@@ -257,7 +256,7 @@ does not come from the game files.
     dp3 r4.y, v2, c4
     dp3 r4.z, v2, c5
 
-    # r6.xyz = mix(r4.xyz, r3.xyz, v1.x)
+    # Blend normals: r6.xyz = mix(r4.xyz, r3.xyz, v1.x)
     mul r5.xyz, r3.xyz, v1.x
     mad r6.xyz, r4.xyz, r2.x, r5.xyz
 
@@ -271,28 +270,43 @@ does not come from the game files.
     dph r8.y, v0, c4
     dph r8.z, v0, c5
 
+    # Blend vertices: r10.xyz = mix(r8.xyz, r7.xyz, v1.x)
     mul r9.xyz, r7.xyz, v1.x
     mad r10.xyz, r8.xyz, r2.x, r9.xyz
+
+    # Calculation squared normal length
     dp3 r11.w, r6.xyz, r6.xyz
 
-    # Calculate output position
+    # Calculate output position (xy)
     dph oPos.y, r10, c22
     dph oPos.x, r10, c21
+
+    # Turn squared normal length into length: r1.w = 1.0 / length(normal)
     +rsq r1.w, r11.w
+
+    # Calculate output position (z)
     dph oPos.z, r10, c23
+
+    # Multiply normal by it's inverse length: r0.xyz = normalize(normal)
     mul r0.xyz, r6.xyz, r1.w
+
+    # Calculate output position (w)
     dph oPos.w, r10, c24
 
     # Generate fog depth (same as oPos.w - somehow not optimized?)
     dph oFog.x, r10, c24
 
+    # Dead code?
     mov r2, c58
+
+    # Something with normal.xy
     dp3 r3.x, r0, -c56
     dp3 r3.y, r0, -c57
 
     # Forward texture U
     dph oT0.x, v9, c9
 
+    # Something to do with lighting
     max r4.xy, r3.xy, c32.x
     mad r5, r4.x, c59, r2
     mad r6, r4.y, c60, r5
@@ -300,7 +314,7 @@ does not come from the game files.
     # Forward texture V
     dph oT0.y, v9, c10
 
-    # Forward diffuse color
+    # Calculate diffuse color
     mul oD0, r6, c90
 
     # Viewport or something? (D3D boilerplate)
