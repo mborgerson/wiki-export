@@ -108,15 +108,43 @@ does not come from the game files.
 
 ### grass.xvu
 
+**Vertex attributes**
+
+-   v0.xyzw = Position
+-   v3.xyzw = Diffuse color
+-   v9.xy = Texture1 coordinates
+
+**Constants**
+
+-   c-38.xyz = viewport? (D3D boilerplate)
+-   c-37.xyz = viewport? (D3D boilerplate)
+-   c21.xyzw - c24.xyzw = world-view-projection-matrix ?
+-   c32.w = texture scale
+-   c91.xyz = object position
+
+**Code**
+
     xvs.1.1
+
+    # Add object position to vertex position
     add r0.xyz, v0, c91
+
+    # Forward diffuse color
     mov oD0, v3
+
+    # Calculate output position
     dph oPos.x, r0, c21
     dph oPos.y, r0, c22
     dph oPos.z, r0, c23
     dph oPos.w, r0, c24
+
+    # Generate fog depth (same as oPos.w - somehow not optimized?)
     dph oFog.x, r0, c24
+
+    # Scale texture
     mul oT0.xy, v9, c32.w
+
+    # Viewport or something? (D3D boilerplate)
     mul oPos.xyz, r12, c-38
     +rcc r1.x, r12.w
     mad oPos.xyz, r12, r1.x, c-37
