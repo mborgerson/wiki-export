@@ -215,41 +215,95 @@ does not come from the game files.
 
 ### skin.xvu
 
+**Vertex attributes**
+
+-   v0.xyzw = Position
+-   v1.x = vertex weight
+-   v2.xyz = Normal
+-   v9.xyz = Texture1 coordinates
+
+**Constants**
+
+-   -c57.xyz = ?
+-   -c56.xyz = ?
+-   c-38.xyz = viewport? (D3D boilerplate)
+-   c-37.xyz = viewport? (D3D boilerplate)
+-   c0.xyzw - c3.xyzw = matrix bone\[0\] ?
+-   c3.xyzw - c5.xyzw = matrix bone\[1\] ?
+-   c9.xyzw = Texture U matrix
+-   c10.xyzw = Texture V matrix
+-   c21.xyzw - c24.xyzw = projection-matrix ?
+-   c32.x = CONSTANT() ?
+-   c32.z = CONSTANT(1.0)
+-   c58.xyzw = ?
+-   c59.xyzw = ?
+-   c60.xyzw = ?
+-   c90.xyzw = factor for diffuse color
+
+**Code**
+
     xvs.1.1
+
+    # Get (1.0 - vertex weight)
     add r2.x, c32.z, -v1.x
+
+    # Transform bone[0] normal ?
     dp3 r3.x, v2, c0
     dp3 r3.y, v2, c1
     dp3 r3.z, v2, c2
+
+    # Transform bone[1] normal ?
     dp3 r4.x, v2, c3
     dp3 r4.y, v2, c4
     dp3 r4.z, v2, c5
+
+    # r6.xyz = mix(r4.xyz, r3.xyz, v1.x)
     mul r5.xyz, r3.xyz, v1.x
     mad r6.xyz, r4.xyz, r2.x, r5.xyz
+
+    # Transform bone[0] vertex
     dph r7.x, v0, c0
     dph r7.y, v0, c1
     dph r7.z, v0, c2
+
+    # Transform bone[1] vertex
     dph r8.x, v0, c3
     dph r8.y, v0, c4
     dph r8.z, v0, c5
+
     mul r9.xyz, r7.xyz, v1.x
     mad r10.xyz, r8.xyz, r2.x, r9.xyz
     dp3 r11.w, r6.xyz, r6.xyz
+
+    # Calculate output position
     dph oPos.y, r10, c22
     dph oPos.x, r10, c21
     +rsq r1.w, r11.w
     dph oPos.z, r10, c23
     mul r0.xyz, r6.xyz, r1.w
     dph oPos.w, r10, c24
+
+    # Generate fog depth (same as oPos.w - somehow not optimized?)
     dph oFog.x, r10, c24
+
     mov r2, c58
     dp3 r3.x, r0, -c56
     dp3 r3.y, r0, -c57
+
+    # Forward texture U
     dph oT0.x, v9, c9
+
     max r4.xy, r3.xy, c32.x
     mad r5, r4.x, c59, r2
     mad r6, r4.y, c60, r5
+
+    # Forward texture V
     dph oT0.y, v9, c10
+
+    # Forward diffuse color
     mul oD0, r6, c90
+
+    # Viewport or something? (D3D boilerplate)
     mul oPos.xyz, r12, c-38
     +rcc r1.x, r12.w
     mad oPos.xyz, r12, r1.x, c-37
