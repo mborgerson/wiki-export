@@ -111,7 +111,7 @@ mad oPos.xyz, r12, r1.x, c-37
 
 '''Vertex attributes'''
 
-* v0.xyzw = Position
+* v0.xyz = Position
 * v3.xyzw = Diffuse color
 * v9.xy = Texture1 coordinates
 
@@ -120,8 +120,8 @@ mad oPos.xyz, r12, r1.x, c-37
 * c-38.xyz = viewport? (D3D boilerplate)
 * c-37.xyz = viewport? (D3D boilerplate)
 * c21.xyzw - c24.xyzw = world-view-projection-matrix ?
-* c32.w = texture scale
-* c91.xyz = object position
+* c32.w = Texture1 scale
+* c91.xyz = Object position
 
 '''Code'''
 

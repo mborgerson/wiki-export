@@ -110,7 +110,7 @@ does not come from the game files.
 
 **Vertex attributes**
 
--   v0.xyzw = Position
+-   v0.xyz = Position
 -   v3.xyzw = Diffuse color
 -   v9.xy = Texture1 coordinates
 
@@ -119,8 +119,8 @@ does not come from the game files.
 -   c-38.xyz = viewport? (D3D boilerplate)
 -   c-37.xyz = viewport? (D3D boilerplate)
 -   c21.xyzw - c24.xyzw = world-view-projection-matrix ?
--   c32.w = texture scale
--   c91.xyz = object position
+-   c32.w = Texture1 scale
+-   c91.xyz = Object position
 
 **Code**
 
