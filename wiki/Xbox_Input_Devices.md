@@ -42,7 +42,79 @@ Untested / unverified! Take this with a grain of salt.
 
 ### Protocol
 
-#### Controller to Xbox
+XID are similar to HID but have custom Vendor requests
+
+#### Control Transfers
+
+##### GET\_DESCRIPTOR
+
+-   bmRequestType: 0xC1
+-   bRequest: 6
+-   wValue: 0x4200
+-   wIndex: Interface number
+-   wLength: <length of respective report; typically 16>
+
+<!-- -->
+
+    typedef struct XIDDescriptor {
+        uint8_t bLength;
+        uint8_t bDescriptorType;
+        uint16_t bcdXid;
+        uint8_t bType;
+        uint8_t bSubType;
+        uint8_t bMaxInputReportSize;
+        uint8_t bMaxOutputReportSize;
+        uint16_t wAlternateProductIds[4];
+    };
+
+bDescriptorType is probably always 0x42.
+
+====== bType = 1: Xbox Gamecontroller ======
+
+-   bSubType:
+    -   0x01 = Gamepad (Duke)
+    -   0x02 = Gamepad (Controller-S)
+    -   0x10 = Steering wheel
+
+##### GET\_CAPABILITIES
+
+-   bmRequestType: 0xC1
+-   bRequest: 1
+-   wValue:
+    -   0x1000 for input
+    -   0x2000 for output
+-   wIndex: Interface number
+-   wLength: <length of respective report>
+
+<!-- -->
+
+-   STALL if wValue not supported.
+
+<!-- -->
+
+    typedef struct XIDGamepadCapabilities {
+        uint8_t bReportId;
+        uint8_t bLength;
+        <Data>
+    }
+
+The data will be similar to the GET\_REPORT, but instead of storing
+actual values, it will have bits set (1) where the bit is valid in the
+respective report. If the bit is auto-generated, it will be cleared (0).
+
+##### SET\_REPORT
+
+-   bmRequestType: 0xA1
+-   bRequest: 9
+-   wValue: 0x2000
+-   wIndex: Interface number
+-   wLength: <length of report; typically 6>
+
+<!-- -->
+
+-   STALL if wValue not supported.
+
+###### Typical report
 
     typedef struct XIDGamepadReport {
         uint8_t bReportId;
@@ -50,13 +122,32 @@ Untested / unverified! Take this with a grain of salt.
         <Data>
     }
 
-#### Xbox to Controller
+##### GET\_REPORT
+
+-   bmRequestType: 0xA1
+-   bRequest: 1
+-   wValue: 0x1000
+-   wIndex: Interface number
+-   wLength: <length of report; typically 20>
+
+<!-- -->
+
+-   STALL if wValue not supported.
+-   ACK if supported.
+-   NAK if supported but no changes since last ACK.
+
+###### Typical report
 
     typedef struct XIDGamepadOutputReport {
         uint8_t report_id; //FIXME: is this correct?
         uint8_t length;
         <Data>
     }
+
+#### Interrupt transfers
+
+Alternatively interrupt-in and interrupt-out transfers can be used for
+GET\_REPORT and SET\_REPORT respectively.
 
 Standard Gamepads
 -----------------
