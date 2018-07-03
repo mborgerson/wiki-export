@@ -97,8 +97,8 @@ bDescriptorType is probably always 0x42.
 * bmRequestType: 0xC1
 * bRequest: 1
 * wValue:
-** 0x1000 for input
-** 0x2000 for output
+** 0x0100 for input
+** 0x0200 for output
 * wIndex: Interface number
 * wLength: <length of respective report>
 
@@ -118,7 +118,7 @@ If the bit is auto-generated, it will be cleared (0).
 
 * bmRequestType: 0xA1
 * bRequest: 9
-* wValue: 0x2000
+* wValue: 0x0200
 * wIndex: Interface number
 * wLength: <length of report; typically 6>
 
@@ -137,7 +137,7 @@ If the bit is auto-generated, it will be cleared (0).
 
 * bmRequestType: 0xA1
 * bRequest: 1
-* wValue: 0x1000
+* wValue: 0x0100
 * wIndex: Interface number
 * wLength: <length of report; typically 20>
 
