@@ -104,7 +104,7 @@ respective report. If the bit is auto-generated, it will be cleared (0).
 
 ##### SET\_REPORT
 
--   bmRequestType: 0xA1
+-   bmRequestType: 0x21
 -   bRequest: 9
 -   wValue: 0x0200
 -   wIndex: Interface number
