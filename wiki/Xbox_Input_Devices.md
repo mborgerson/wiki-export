@@ -134,7 +134,6 @@ respective report. If the bit is auto-generated, it will be cleared (0).
 
 -   STALL if wValue not supported.
 -   ACK if supported.
--   NAK if supported but no changes since last ACK.
 
 ###### Typical report
 
