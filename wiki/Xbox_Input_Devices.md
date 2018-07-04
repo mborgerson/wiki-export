@@ -148,6 +148,11 @@ respective report. If the bit is auto-generated, it will be cleared (0).
 Alternatively interrupt-in and interrupt-out transfers can be used for
 GET\_REPORT and SET\_REPORT respectively.
 
+In case of the interrupt-in, there is another status which can occur
+now:
+
+-   NAK if supported but no changes since last ACK.
+
 Standard Gamepads
 -----------------
 
