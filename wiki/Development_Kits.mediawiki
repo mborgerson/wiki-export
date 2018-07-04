@@ -19,16 +19,19 @@ The Alpha is build with the following parts or software:
 * Intel VC820, running a prerelease Bios
 * 128Mb RDRAM with an terminator
 * 600Mhz CPU
-* Nvidia Geforece3 NV20 prerelease hardware? {{FIXME| What hardware was this one? or was it just the firmware that got upgraded?}}
-* An OPTI 82C861 2 USB port PCI card 
+* Nvidia Geforce 2 GTS 64MB
+* An xircom PCPGI2(OPTI 82C861) 2 USB port PCI card 
 * Intel 82559(ic) Network card {{FIXME}}
+* Hard drive is a WD205AA (20.5 Gb) or fujitsu MPF3204AT (20.4 Gb)
+* ATNG 250w or a 300w powersupply
 
-These where then programmed by use of a recovery disk that "recovered" 
+These where then programmed by use of a recovery disk that "recovered" the system.
+The case is a customized globalwin ycc-802. (color silver and an added jewel)
 
 === Apha II ===
 The Alpha II was a upgrade kit or constructed the same as a Alpha I with the following upgrades:
-* 733MHz CPU SL3XN{{FIXME|SL3XN for sure in true alpha?}}
-* Nvidia Geforce3 NV20 (64MB ram) with a Preretail firmware 
+* 733MHz CPU SL3XN
+* Nvidia Geforce3 NV20 (64MB ram) with a Preretail firmware (180-p0050-0000-a09)
 
 An supplied Recovery made the nececairy firmware upgrades{{citation needed}} and updated the dashboard.
 
