@@ -69,6 +69,8 @@ XID are similar to HID but have custom Vendor requests
 * wIndex: Interface number
 * wLength: <length of respective report; typically 16>
 
+Actual length is truncated to size of descriptor or wLength. Whichever is smaller. 
+
 <pre>
 typedef struct XIDDescriptor {
     uint8_t bLength;
@@ -90,7 +92,6 @@ bDescriptorType is probably always 0x42.
 ** 0x01 = Gamepad (Duke)
 ** 0x02 = Gamepad (Controller-S)
 ** 0x10 = Steering wheel
-
 
 ===== GET_CAPABILITIES =====
 

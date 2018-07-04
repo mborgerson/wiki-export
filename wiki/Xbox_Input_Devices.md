@@ -54,7 +54,8 @@ XID are similar to HID but have custom Vendor requests
 -   wIndex: Interface number
 -   wLength: <length of respective report; typically 16>
 
-<!-- -->
+Actual length is truncated to size of descriptor or wLength. Whichever
+is smaller.
 
     typedef struct XIDDescriptor {
         uint8_t bLength;
