@@ -90,7 +90,8 @@ bDescriptorType is probably always 0x42.
 
 -   STALL if wValue not supported.
 
-<!-- -->
+Actual length is truncated to size of report or wLength. Whichever is
+smaller.
 
     typedef struct XIDGamepadCapabilities {
         uint8_t bReportId;
@@ -132,7 +133,8 @@ respective report. If the bit is auto-generated, it will be cleared (0).
 
 <!-- -->
 
--   STALL if wValue not supported.
+-   STALL if wValue not supported or if wLength is greater than report
+    size.
 -   ACK if supported.
 
 ###### Typical report
