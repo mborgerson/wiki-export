@@ -51,7 +51,7 @@ front of the Xbox console.
 
 Stored in settings\_adoc.xip (which is actually an XBE file)
 
-#### Steps to activate Soundtrack Easter Egg:
+#### Steps to activate Soundtrack Easter Egg
 
 1.  Insert an audio CD and let it begin to play.
 2.  Stop the disk and step back (press B) in order to “Copy” selected
