@@ -51,6 +51,6 @@ Buffers:
 Related links
 -------------
 
--   [Modernized fork of A56, open-source assembler for the similar 56000
+-   [Modernized fork of a56, open-source assembler for the similar 56000
     architecture](https://github.com/XboxDev/a56)
 
