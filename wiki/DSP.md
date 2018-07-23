@@ -12,6 +12,18 @@ datasheet can be found at
 <http://www.nxp.com/docs/en/data-sheet/DSP56362.pdf> (Also see
 “Documentation” section in said datasheet for the related documentation)
 
+Memory Size
+-----------
+
+|     | Program RAM Size | X Data RAM Size | Y Data RAM Size |
+|-----|------------------|-----------------|-----------------|
+| GP  | 4096 x 24-bit    | 4096 x 24-bit   | 2048 x 24-bit   |
+| EP  | 4096 x 24-bit    | 3072 x 24-bit   | 256 x 24-bit    |
+
+Other datasheets for similar DSPs suggest that the memory sizes might be
+different if instruction cache or switch mode are toggled. It is
+currently unknown if the DSPs in the Xbox APU support a similar feature.
+
 DMA
 ---
 
