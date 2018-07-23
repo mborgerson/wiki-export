@@ -12,12 +12,12 @@ Those are similar to Motorola DSP56362 (DSP56300 Family). If so, the datasheet c
 ! Y Data RAM Size
 |-
 ! GP
-| 4096{{FIXME|reason=Unconfirmed}} x 24-bit
+| 4096 x 24-bit
 | 4096 x 24-bit
 | 2048 x 24-bit
 |-
 ! EP
-| 4096{{FIXME|reason=Unconfirmed}} x 24-bit
+| 4096 x 24-bit
 | 3072 x 24-bit
 | 256 x 24-bit
 |}
