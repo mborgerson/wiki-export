@@ -82,8 +82,16 @@ DSP command blocks are loaded from X-Memory.
        -   0x3 = 32 bit                                                         
        -   0x4                                                                  
        -   0x5                                                                  
-       -   0x6 = 24 bit in LSB (also endianess switched?)                       
-       -   0x7                                                                  |
+       -   0x6 = 24 bit in LSB                                                  
+       -   0x7                                                                  
+                                                                                
+   <!-- -->                                                                     
+                                                                                
+   -   Step size (Bit-offset 14; unknown size).                                 
+       -   0 = Keeps reading from same source offset                            
+       -   1 = Reads every sample                                               
+       -   2 = Reads every second sample                                        
+       -   ...                                                                  |
 | 2    | Transfer sample count      | The number of samples to transfer.                                          |
 | 3    | DSP address                | This is the address in the DSP:                                             
                                                                                 
