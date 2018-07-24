@@ -10,17 +10,22 @@ Those are similar to Motorola DSP56362 (DSP56300 Family). If so, the datasheet c
 ! Program RAM Size
 ! X Data RAM Size
 ! Y Data RAM Size
+! MIXBUF Size
 |-
 ! GP
 | 4096 x 24-bit
 | 4096 x 24-bit
 | 2048 x 24-bit
+| 992{{FIXME|reason=This is probably 1024 words, but the last 32 words were not working as intended during my testing}} x 24-bit
 |-
 ! EP
 | 4096 x 24-bit
 | 3072 x 24-bit
 | 256 x 24-bit
+| n/a
 |}
+
+MIXBUF is accessible at X:$001400 in the GP.
 
 Other datasheets for similar DSPs suggest that the memory sizes might be different if instruction cache or switch mode are toggled.
 It is currently unknown if the DSPs in the Xbox APU support a similar feature{{FIXME}}.

@@ -15,10 +15,12 @@ datasheet can be found at
 Memory Size
 -----------
 
-|     | Program RAM Size | X Data RAM Size | Y Data RAM Size |
-|-----|------------------|-----------------|-----------------|
-| GP  | 4096 x 24-bit    | 4096 x 24-bit   | 2048 x 24-bit   |
-| EP  | 4096 x 24-bit    | 3072 x 24-bit   | 256 x 24-bit    |
+|     | Program RAM Size | X Data RAM Size | Y Data RAM Size | MIXBUF Size  |
+|-----|------------------|-----------------|-----------------|--------------|
+| GP  | 4096 x 24-bit    | 4096 x 24-bit   | 2048 x 24-bit   | 992 x 24-bit |
+| EP  | 4096 x 24-bit    | 3072 x 24-bit   | 256 x 24-bit    | n/a          |
+
+MIXBUF is accessible at X:$001400 in the GP.
 
 Other datasheets for similar DSPs suggest that the memory sizes might be
 different if instruction cache or switch mode are toggled. It is
