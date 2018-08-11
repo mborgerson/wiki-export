@@ -4,6 +4,13 @@ permalink: wiki/Resources/
 layout: wiki
 ---
 
+Xbox Post-Mortems by developers
+-------------------------------
+
+-   <https://sites.google.com/site/richgel99/index#TOC-Shrek-Xbox-and-Deferred-Shading>
+-   <https://sites.google.com/site/richgel99/home>
+-   <https://sites.google.com/site/richgel99/home/xbox-1-g-buffer-attribute-packing-pixel-shader>
+
 Random resources about Xbox hacking
 -----------------------------------
 
