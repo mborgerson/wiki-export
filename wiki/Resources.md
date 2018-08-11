@@ -10,6 +10,7 @@ Xbox Post-Mortems by developers
 -   <https://sites.google.com/site/richgel99/index#TOC-Shrek-Xbox-and-Deferred-Shading>
 -   <https://sites.google.com/site/richgel99/home>
 -   <https://sites.google.com/site/richgel99/home/xbox-1-g-buffer-attribute-packing-pixel-shader>
+-   <https://web.archive.org/web/20171008031141/http://www.tenacioussoftware.com/gdc_2004_deferred_shading.ppt>
 
 Random resources about Xbox hacking
 -----------------------------------
