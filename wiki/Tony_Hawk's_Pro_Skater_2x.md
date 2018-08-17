@@ -33,61 +33,123 @@ does not come from the game files.
 ### cloth.xvu
 
     xvs.1.1
+
+    # Unknown
     mov r2.w, c48.x
     mul r3.w, r2.w, c80.z
     mad r4.xyz, c80.x, v0.xyz, r3.w
+
+    # Get (1.0 - vertex weight)
     add r5.x, c32.z, -v1.x
+
+    # Transform bone[0] vertex.x
     dph r6.x, v0, c0
+
+    # Unknown
     +exp r1.y, r4
+
+    # Transform bone[0] vertex.y
     dph r6.y, v0, c1
+
+    # Unknown
     mul r1.x, r1.y, r1.y
     mul r1.z, r1.x, r1.y
     dp3 r7.x, r1.xyz, c36
+
+    # Transform bone[0] vertex.z
     dph r6.z, v0, c2
+
+    # Unknown
     +exp r1.y, r4.y
+
+    # Transform bone[1] vertex.x
     dph r8.x, v0, c3
+
+    # Unknown
     mul r1.x, r1.y, r1.y
     mul r1.z, r1.x, r1.y
     dp3 r7.y, r1.xyz, c36
+
+    # Transform bone[1] vertex.y
     dph r8.y, v0, c4
+
+    # Unknown
     +exp r1.y, r4.z
+
+    # Transform bone[1] vertex.z
     dph r8.z, v0, c5
+
+    # Unknown
     mul r1.x, r1.y, r1.y
     mul r1.z, r1.x, r1.y
     dp3 r7.z, r1.xyz, c36
+
+    # Blend vertices: r10.xyz = mix(r8.xyz, r6.xyz, v1.x)
     mul r9.xyz, r6.xyz, v1.x
     mad r10.xyz, r8.xyz, r5.x, r9.xyz
+
+    # Unknown
     mul r11.w, v3.y, c80.y
     mul r0.w, r11.w, c92.w
     mad r2.xyz, r7.xyz, r0.w, r10.xyz
     mad r3.xyz, -c92.xyz, v3.z, r2.xyz
+
+    # Transform bone[0] normal ?
     dp3 r4.x, v2, c0
     dp3 r4.y, v2, c1
     dp3 r4.z, v2, c2
+
+    # Transform bone[1] normal ?
     dp3 r6.x, v2, c3
     dp3 r6.y, v2, c4
     dp3 r6.z, v2, c5
+
+    # Blend vertices: r8.xyz = mix(r6.xyz, r4.xyz, v1.x)
     mul r7.xyz, r4.xyz, v1.x
     mad r8.xyz, r6.xyz, r5.x, r7.xyz
+
+    # Calculate output position
     dph oPos.x, r3, c21
     dph oPos.y, r3, c22
     dph oPos.z, r3, c23
     dph oPos.w, r3, c24
+
+    # Calculation squared normal length
     dp3 r8.w, r8.xyz, r8.xyz
+
+    # Forward texture U
     dph oT0.x, v9, c9
+
+    # Unknown
     mov r9, c58
+
+    # Turn squared normal length into length: r1.w = 1.0 / length(normal)
     +rsq r1.w, r8.w
+
+    # Forward texture V
     dph oT0.y, v9, c10
+
+    # Unknown
     mul r10.xyz, r8.xyz, r1.w
     dp3 r11.x, r10, -c56
     dp3 r11.y, r10, -c57
+
+    # Generate fog depth (same as oPos.w - somehow not optimized?)
     dph oFog.x, r3, c24
+
+    # Something to do with lighting
     max r0.xy, r11.xy, c32.x
     mad r2, r0.x, c59, r9
     mad r3, r0.y, c60, r2
+
+    # Viewport or something? (D3D boilerplate part 1)
     mul oPos.xyz, r12, c-38
     +rcc r1.x, r12.w
+
+    # Calculate diffuse color
     mul oD0, r3, c90
+
+    # Viewport or something? (D3D boilerplate part 2)
     mad oPos.xyz, r12, r1.x, c-37
 
 ### geom.xvu
