@@ -82,14 +82,14 @@ Bit 14 is used as End-Of-List marker.
 ** 0xF
 
 * Sample format (Bit-offset 10; 3-bits).
-** 0x0 = 8 bit
+** 0x0 = 7 bit (all values are OR'd with 0x80)
 ** 0x1 = 16 bit
 ** 0x2 = 24 bit in MSB
-** 0x3 = 32 bit
-** 0x4
-** 0x5
+** 0x3 = 32 bit (2 words per value: first word receives 24 bit, the next word only 8 bit)
+** 0x4 = ''Transfer skipped''
+** 0x5 = ''Transfer skipped''
 ** 0x6 = 24 bit in LSB
-** 0x7
+** 0x7 = ''Transfer skipped''
 
 * Step size (Bit-offset 14; unknown size).
 ** 0 = Keeps reading from same source offset
@@ -116,9 +116,6 @@ Bit 14 is used as End-Of-List marker.
 ! 6
 | Buffer limit || The end of the buffer. For 0x1000 bytes, this has to be 0xFFF.{{FIXME|reason=Is this independent of the base?}}
 |}
-
-
-
 
 == Related links ==
 

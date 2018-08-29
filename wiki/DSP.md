@@ -46,63 +46,63 @@ DMA End-Of-List has been encountered.
 
 DSP command blocks are loaded from X-Memory.
 
-| Word | Meaning                    | Notes                                                                       |
-|------|----------------------------|-----------------------------------------------------------------------------|
-| 0    | Next command block address | Memory address of next command block. Bit 14 is used as End-Of-List marker. |
-| 1    | Transfer control word      | Controls the DMA transfer:                                                  
-                                                                                
-   -   Direction (Bit-offset 1; 1-bit).                                         
-       -   0 = Buffer to DSP                                                    
-       -   1 = DSP to buffer                                                    
-                                                                                
-   <!-- -->                                                                     
-                                                                                
-   -   Buffer (Bit-offset 5; 4-bits).                                           
-       -   0x0 = FIFO0                                                          
-       -   0x1 = FIFO1                                                          
-       -   0x2 = FIFO2                                                          
-       -   0x3 = FIFO3                                                          
-       -   0x4                                                                  
-       -   0x5                                                                  
-       -   0x6                                                                  
-       -   0x7                                                                  
-       -   0x8                                                                  
-       -   0x9                                                                  
-       -   0xA                                                                  
-       -   0xB                                                                  
-       -   0xC                                                                  
-       -   0xD                                                                  
-       -   0xE = Circular                                                       
-       -   0xF                                                                  
-                                                                                
-   <!-- -->                                                                     
-                                                                                
-   -   Sample format (Bit-offset 10; 3-bits).                                   
-       -   0x0 = 8 bit                                                          
-       -   0x1 = 16 bit                                                         
-       -   0x2 = 24 bit in MSB                                                  
-       -   0x3 = 32 bit                                                         
-       -   0x4                                                                  
-       -   0x5                                                                  
-       -   0x6 = 24 bit in LSB                                                  
-       -   0x7                                                                  
-                                                                                
-   <!-- -->                                                                     
-                                                                                
-   -   Step size (Bit-offset 14; unknown size).                                 
-       -   0 = Keeps reading from same source offset                            
-       -   1 = Reads every sample                                               
-       -   2 = Reads every second sample                                        
-       -   ...                                                                  |
-| 2    | Transfer sample count      | The number of samples to transfer.                                          |
-| 3    | DSP address                | This is the address in the DSP:                                             
-                                                                                
-   -   0x0000 - 0x17FF = X-Memory                                               
-   -   0x1800 - 0x27FF = Y-Memory                                               
-   -   0x2800 - 0x37FF = P-Memory                                               |
-| 4    | Buffer offset              | This is the address within the buffer where the first sample is accessed.   |
-| 5    | Buffer base                | The start of the buffer.                                                    |
-| 6    | Buffer limit               | The end of the buffer. For 0x1000 bytes, this has to be 0xFFF.              |
+| Word | Meaning                    | Notes                                                                                          |
+|------|----------------------------|------------------------------------------------------------------------------------------------|
+| 0    | Next command block address | Memory address of next command block. Bit 14 is used as End-Of-List marker.                    |
+| 1    | Transfer control word      | Controls the DMA transfer:                                                                     
+                                                                                                   
+   -   Direction (Bit-offset 1; 1-bit).                                                            
+       -   0 = Buffer to DSP                                                                       
+       -   1 = DSP to buffer                                                                       
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Buffer (Bit-offset 5; 4-bits).                                                              
+       -   0x0 = FIFO0                                                                             
+       -   0x1 = FIFO1                                                                             
+       -   0x2 = FIFO2                                                                             
+       -   0x3 = FIFO3                                                                             
+       -   0x4                                                                                     
+       -   0x5                                                                                     
+       -   0x6                                                                                     
+       -   0x7                                                                                     
+       -   0x8                                                                                     
+       -   0x9                                                                                     
+       -   0xA                                                                                     
+       -   0xB                                                                                     
+       -   0xC                                                                                     
+       -   0xD                                                                                     
+       -   0xE = Circular                                                                          
+       -   0xF                                                                                     
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Sample format (Bit-offset 10; 3-bits).                                                      
+       -   0x0 = 7 bit (all values are OR'd with 0x80)                                             
+       -   0x1 = 16 bit                                                                            
+       -   0x2 = 24 bit in MSB                                                                     
+       -   0x3 = 32 bit (2 words per value: first word receives 24 bit, the next word only 8 bit)  
+       -   0x4 = *Transfer skipped*                                                                
+       -   0x5 = *Transfer skipped*                                                                
+       -   0x6 = 24 bit in LSB                                                                     
+       -   0x7 = *Transfer skipped*                                                                
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Step size (Bit-offset 14; unknown size).                                                    
+       -   0 = Keeps reading from same source offset                                               
+       -   1 = Reads every sample                                                                  
+       -   2 = Reads every second sample                                                           
+       -   ...                                                                                     |
+| 2    | Transfer sample count      | The number of samples to transfer.                                                             |
+| 3    | DSP address                | This is the address in the DSP:                                                                
+                                                                                                   
+   -   0x0000 - 0x17FF = X-Memory                                                                  
+   -   0x1800 - 0x27FF = Y-Memory                                                                  
+   -   0x2800 - 0x37FF = P-Memory                                                                  |
+| 4    | Buffer offset              | This is the address within the buffer where the first sample is accessed.                      |
+| 5    | Buffer base                | The start of the buffer.                                                                       |
+| 6    | Buffer limit               | The end of the buffer. For 0x1000 bytes, this has to be 0xFFF.                                 |
 
 Related links
 -------------
