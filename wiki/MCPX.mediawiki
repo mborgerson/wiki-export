@@ -1,3 +1,11 @@
 The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It contains the sound processors ([[APU]] and [[ACI]]) and also the USB, PCI, IDE, etc, controllers[https://web.archive.org/web/20010418214256/http://www.ga-hardware.com:80/preview.cfm?id=NVIDIAMCP], [https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml].
 
 The MCPX is also the home to the secret [[MCPX ROM]].
+
+And it's also the home of the famous PC Speaker Signal. <br \>
+One just has to solder a Speaker on (MXPC pin L21) and it can be used just like on the PC.<br \>
+For some test code see [https://github.com/0DaveX/beep/ https://github.com/0DaveX/beep/]
+
+
+[[File:XboxWithPcSpkr.jpg]] <br \>
+[[File:SolderPoints.jpg]]
