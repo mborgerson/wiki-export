@@ -43,7 +43,17 @@ Contents
 | 0x80  | 0x87 | Unknown Padding ?                                                                                                                                                         |
 | 0x88  | 0x8B | Standard Timezone Bias; if not DST, 0 (0x00000000) minute time adjust                                                                                                     |
 | 0x8C  | 0x8F | Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute time adjust                                                                                                   |
-| 0x90  | 0x93 | Language ID                                                                                                                                                               |
+| 0x90  | 0x93 | Language ID                                                                                                                                                               
+                                                                                                                                                                              
+   -   English 0x01 0x00 0x00 0x00                                                                                                                                            
+   -   Japanese 0x02 0x00 0x00 0x00                                                                                                                                           
+   -   German 0x03 0x00 0x00 0x00                                                                                                                                             
+   -   French 0x04 0x00 0x00 0x00                                                                                                                                             
+   -   Spanish 0x05 0x00 0x00 0x00                                                                                                                                            
+   -   Italian 0x06 0x00 0x00 0x00                                                                                                                                            
+   -   Korean 0x07 0x00 0x00 0x00                                                                                                                                             
+   -   Chinese 0x08 0x00 0x00 0x00                                                                                                                                            
+   -   Portuguese 0x09 0x00 0x00 0x00                                                                                                                                         |
 | 0x94  | 0x97 | Video Settings                                                                                                                                                            
                                                                                                                                                                               
    Offset 0x96:                                                                                                                                                               
