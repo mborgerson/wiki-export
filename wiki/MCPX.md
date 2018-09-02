@@ -19,4 +19,4 @@ For some test code see
 [<https://github.com/0DaveX/beep/>](https://github.com/0DaveX/beep/)
 
 ![](XboxWithPcSpkr.jpg "fig:XboxWithPcSpkr.jpg")  
-![](SolderPoints.jpg "fig:SolderPoints.jpg")
+![](XboxPcSpkrSolderPoints.jpg "fig:XboxPcSpkrSolderPoints.jpg")
