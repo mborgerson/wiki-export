@@ -32,5 +32,5 @@ Resources
 ---------
 
 -   [Images (CC0 License) by Codeasm with detailed shots of the DVD
-    emulation board](http://imgur.com/a/vJi9E)
+    emulation board and serial board](https://imgur.com/a/ROMYa)
 

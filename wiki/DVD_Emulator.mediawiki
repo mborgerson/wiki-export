@@ -17,4 +17,4 @@ For development it wasnt the fastest way to get an executable to the xbox, and f
 [http://codeasm.com/xbox/images/dvt4/SL734877.JPG Picture]{{FIXME|reason=Contact codeasm about more pics / without watermarks}}
 
 == Resources ==
-* [http://imgur.com/a/vJi9E Images (CC0 License) by Codeasm with detailed shots of the DVD emulation board]
+* [https://imgur.com/a/ROMYa Images (CC0 License) by Codeasm with detailed shots of the DVD emulation board and serial board]
