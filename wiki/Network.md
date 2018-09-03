@@ -23,10 +23,10 @@ nForce chips. The Xbox Linux team used the binary drivers from Nvidia.
 ### Wireless adapter
 
 based on the “D-Link 108AG Gaming Adapter”, the Xbox MN-740 Wireless
-Bridge bundled with a Xbox install disk (wich would update the dashboard
-if nececairy).
+Bridge bundled with a Xbox setup disc (wich would update the dashboard
+if necessary).
 
-#### hardware
+#### Hardware
 
 -   AR5312 CPU (MIPS 4Kc core?)
 -   AR5212 RoC (Radio on Chip) for 2.4 Ghz 802.11b/g.
@@ -41,16 +41,12 @@ The onboard 3 leds are: Power, Wireless and Xbox(called Ethernet on the
 PCB). The board seems to have Jtag and what apears to be Serial testpins
 exposed.
 
-#### Firmware
+##### Firmware
 
-The shipped firmware does not support WPA or WPA2. A “firmware” hack
-based on the D-Link firmware adds WPA support, rendering Dashboard
-support unfunctional and changing settings require connecting to the LAN
-port using a PC (or webbrowser capable application). This wireless
-bridge runs a closed source version of the“ThreadX JADE/Green Hills
-Version G4.0.4.0” RTOS. The firmware contains a copyright string of:
-“Copyright (c) Microsoft Corporation All Rights Reserved Device is Xbox
-Compatible”
+This wireless bridge runs a closed source version of the“ThreadX
+JADE/Green Hills Version G4.0.4.0” RTOS. The firmware contains a
+copyright string of: “Copyright (c) Microsoft Corporation All Rights
+Reserved Device is Xbox Compatible”
 
 latest firmware is seperated by a boot and runtime firmware :
 
@@ -58,6 +54,19 @@ latest firmware is seperated by a boot and runtime firmware :
     firmware”
 -   MN740\_01.00.02.0022\_RUNTIME.bin, “Xbox Wireless Adapter (MN-740)
     runtime firmware”
+
+###### WPA2 support
+
+The shipped firmware does not support WPA or WPA2. A “firmware” hack
+based on the D-Link firmware adds WPA support, rendering Dashboard
+support unfunctional and changing settings require connecting to the LAN
+port using a PC (or webbrowser capable application).
+
+#### Software (Xbox setup disc)
+
+The setup disc is a CD[1](http://redump.org/disc/53586/). It contains an
+XISO filesystem that contains only a “default.xbe” which contains a
+dashboard updater.
 
 System Link
 -----------
