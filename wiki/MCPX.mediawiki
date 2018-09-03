@@ -3,7 +3,7 @@ The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It contains the 
 The MCPX is also the home to the secret [[MCPX ROM]].
 
 And it's also the home of the famous PC Speaker Signal. <br \>
-One just has to solder a Speaker on (MXPC pin L21) and it can be used just like on the PC.<br \>
+One just has to solder a Speaker on (MCPX pin L21) and it can be used just like on the PC.<br \>
 For some test code see [https://github.com/0DaveX/beep/ https://github.com/0DaveX/beep/]
 
 
