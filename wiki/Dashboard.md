@@ -120,5 +120,6 @@ Source: Shaky Menu at <https://www.gamefaqs.com/xbox/915780-xbox/cheats>
 See Also
 --------
 
-[Hard Drive Files](/wiki/Hard_Drive_Files "wikilink")
-[Soundtracks](/wiki/Soundtracks "wikilink")
+-   [Hard Drive Files](/wiki/Hard_Drive_Files "wikilink")
+-   [Soundtracks](/wiki/Soundtracks "wikilink")
+
