@@ -47,6 +47,7 @@ __NOTOC__
 ** [[XBE]] (Executable file format)
 * [[FATX]] (Filesystem)
 * [[Dashboard]]
+** [[Soundtracks]]
 * [[Exploits]]
 
 == Development Kits and Tools ==

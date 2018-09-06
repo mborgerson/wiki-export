@@ -57,6 +57,7 @@ System Software
     -   [XBE](/wiki/XBE "wikilink") (Executable file format)
 -   [FATX](/wiki/FATX "wikilink") (Filesystem)
 -   [Dashboard](/wiki/Dashboard "wikilink")
+    -   [Soundtracks](/wiki/Soundtracks "wikilink")
 -   [Exploits](/wiki/Exploits "wikilink")
 
 Development Kits and Tools
