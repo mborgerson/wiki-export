@@ -51,35 +51,28 @@ File Layout:
 
 ### Soundtrack Struct
 
-| Type  | Description           | Comment                    |
-|-------|-----------------------|----------------------------|
-| int32 | magic                 | always 0x71 0x13 0x02 0x00 |
-| int32 | id                    |                            |
-| int32 | numSongGroups         |                            |
-| int32 | songGroupIds          |                            |
-| int32 | totalTimeMilliseconds |                            |
-| wchar | name\[64\]            | Unicode string             |
-| char  | padding\[64\]         |                            |
+| Type   | Description           | Comment                    |
+|--------|-----------------------|----------------------------|
+| int32  | magic                 | always 0x71 0x13 0x02 0x00 |
+| int32  | id                    |                            |
+| uint32 | numSongGroups         |                            |
+| int32  | songGroupIds          |                            |
+| int32  | totalTimeMilliseconds |                            |
+| wchar  | name\[64\]            | Unicode string             |
+| char   | padding\[64\]         |                            |
 
 ### Song Group Struct
 
-| Type        | Description   | Comment                    |
-|-------------|---------------|----------------------------|
-| int32       | magic         | always 0x73 0x10 0x03 0x00 |
-| int32       | soundtrackId  |                            |
-| int32       | id            |                            |
-| int32       | padding       |                            |
-| Song Struct | songs\[6\]    |                            |
-| char        | padding\[64\] |                            |
-
-### Song Struct
-
-| Type  | Description      | Comment        |
-|-------|------------------|----------------|
-| int32 | id               |                |
-| int32 | timeMilliseconds |                |
-| wchar | name\[64\]       | Unicode string |
-| char  | padding\[64\]    |                |
+| Type  | Description               | Comment                                         |
+|-------|---------------------------|-------------------------------------------------|
+| int32 | magic                     | always 0x73 0x10 0x03 0x00                      |
+| int32 | soundtrackId              |                                                 |
+| int32 | id                        |                                                 |
+| int32 | padding                   |                                                 |
+| int32 | songId\[6\]               |                                                 |
+| int32 | songTimeMilliseconds\[6\] |                                                 |
+| wchar | songName\[384\]           | 6 Unicode strings, each padded to 64 characters |
+| char  | padding\[64\]             |                                                 |
 
 Default Encoding Settings
 -------------------------

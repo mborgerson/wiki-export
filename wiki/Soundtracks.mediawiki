@@ -63,7 +63,7 @@ CC00  [Song Group 2]
 | id
 |
 |-
-| int32
+| uint32
 | numSongGroups
 |
 |-
@@ -106,32 +106,17 @@ CC00  [Song Group 2]
 | padding
 |
 |-
-| Song Struct
-| songs[6]
-|
-|-
-| char
-| padding[64]
-|
-|}
-
-=== Song Struct ===
-{| class="wikitable"
-! Type
-! Description
-! Comment
-|-
 | int32
-| id
+| songId[6]
 |
 |-
 | int32
-| timeMilliseconds
+| songTimeMilliseconds[6]
 |
 |-
 | wchar
-| name[64]
-| Unicode string
+| songName[384]
+| 6 Unicode strings, each padded to 64 characters
 |-
 | char
 | padding[64]
