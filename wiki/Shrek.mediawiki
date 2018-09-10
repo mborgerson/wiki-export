@@ -1,2 +1,11 @@
 {{Game}}
-* [https://sites.google.com/site/richgel99/home Deferred Rendering in Shrek]
+
+=== Deferred Rendering ===
+
+[[File:shrek-albedo.png|thumb|Albedo]]
+[[File:shrek-normals.png|thumb|Normals]]
+[[File:shrek-unk0.png|thumb|Lighting pass{{FIXME|reason=Might be something else}}]]
+[[File:shrek-unk1.png|thumb|Lighting pass{{FIXME|reason=Might be something else}}]]
+[[File:shrek-final.png|thumb|Final composition]]
+
+Shrek uses [[wikipedia:Deferred Rendering]]. Rich Geldreich, a developer of the game, has written multiple articles about the topic[https://sites.google.com/site/richgel99/home].
