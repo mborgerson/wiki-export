@@ -12,7 +12,7 @@ pass](shrek-unk0.png "fig:Lighting pass") ![Lighting
 pass](shrek-unk1.png "fig:Lighting pass") ![Final
 composition](shrek-final.png "fig:Final composition")
 
-Shrek uses [wikipedia:Deferred
+Shrek uses [Deferred
 Rendering](wikipedia:Deferred_Rendering "wikilink"). Rich Geldreich, a
 developer of the game, has written multiple articles about the
 topic[1](https://sites.google.com/site/richgel99/home).
