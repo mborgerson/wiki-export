@@ -24,9 +24,10 @@ ST.DB
 
 The ST.DB file contains information about soundtracks loaded on the
 Xbox. Up to 100 soundtracks with 500 songs each can be used. Each header
-and struct described below is padded to 512 bytes.
+and struct described below is padded to 512 bytes, and all values are
+stored as little-endian.
 
-File Layout:
+**File Layout:**
 
     (start of file)
     0000  Main Header
@@ -39,8 +40,6 @@ File Layout:
     (end of file)
 
 ### Main Header
-
-All values are little-endian.
 
 | Type  | Description          | Comment           |
 |-------|----------------------|-------------------|

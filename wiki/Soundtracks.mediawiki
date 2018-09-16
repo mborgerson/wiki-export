@@ -4,9 +4,9 @@ The Xbox allows for soundstracks to be stored on the harddrive and played in-gam
 All soundtrack related data is stored in E:\TDATA\fffe0000. Songs are organized into groups of folders containing up to 6 WMA files. Zero-padded 4 decimal integers are used for the folder names, and zero-padded 8 decimal integers are used for the WMA file names. Metadata such as song title and which soundtrack a song belongs to is stored in the ST.DB file
 
 == ST.DB ==
-The ST.DB file contains information about soundtracks loaded on the Xbox. Up to 100 soundtracks with 500 songs each can be used. Each header and struct described below is padded to 512 bytes.
+The ST.DB file contains information about soundtracks loaded on the Xbox. Up to 100 soundtracks with 500 songs each can be used. Each header and struct described below is padded to 512 bytes, and all values are stored as little-endian.
 
-File Layout:
+'''File Layout:'''
 
 <pre>(start of file)
 0000  Main Header
@@ -19,8 +19,6 @@ CC00  [Song Group 2]
 (end of file)
 </pre>
 === Main Header ===
-All values are little-endian.
-
 {| class="wikitable"
 ! Type
 ! Description
