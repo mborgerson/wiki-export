@@ -19,6 +19,8 @@ CC00  [Song Group 2]
 (end of file)
 </pre>
 === Main Header ===
+All values are little-endian.
+
 {| class="wikitable"
 ! Type
 ! Description
@@ -26,7 +28,7 @@ CC00  [Song Group 2]
 |-
 | int32
 | magic
-| always 0x01 0x00 0x00 0x00 {{FIXME|reason=Is this 0x00000001 or 0x01000000 when read as int32_t via CPU? Is the type int32_t or uint8_t[4]?}}
+| always 0x00000001
 |-
 | int32
 | numSoundtracks
@@ -57,7 +59,7 @@ CC00  [Song Group 2]
 |-
 | int32
 | magic
-| always 0x71 0x13 0x02 0x00 {{FIXME|reason=Is this 0x00021371 or 0x71130200 when read as int32_t via CPU? Is the type int32_t or uint8_t[4]?}}
+| always 0x00021371
 |-
 | int32
 | id
@@ -92,7 +94,7 @@ CC00  [Song Group 2]
 |-
 | int32
 | magic
-| always 0x73 0x10 0x03 0x00 {{FIXME|reason=Is this 0x00031073 or 0x73100300 when read as int32_t via CPU? Is the type int32_t or uint8_t[4]?}}
+| always 0x00031073
 |-
 | int32
 | soundtrackId

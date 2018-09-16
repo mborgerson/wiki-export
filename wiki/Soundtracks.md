@@ -40,32 +40,34 @@ File Layout:
 
 ### Main Header
 
-| Type  | Description          | Comment                    |
-|-------|----------------------|----------------------------|
-| int32 | magic                | always 0x01 0x00 0x00 0x00 |
-| int32 | numSoundtracks       |                            |
-| int32 | nextSoundtrackId     |                            |
-| int32 | soundtrackIds\[100\] |                            |
-| int32 | nextSongId           |                            |
-| char  | padding\[96\]        |                            |
+All values are little-endian.
+
+| Type  | Description          | Comment           |
+|-------|----------------------|-------------------|
+| int32 | magic                | always 0x00000001 |
+| int32 | numSoundtracks       |                   |
+| int32 | nextSoundtrackId     |                   |
+| int32 | soundtrackIds\[100\] |                   |
+| int32 | nextSongId           |                   |
+| char  | padding\[96\]        |                   |
 
 ### Soundtrack Struct
 
-| Type   | Description           | Comment                    |
-|--------|-----------------------|----------------------------|
-| int32  | magic                 | always 0x71 0x13 0x02 0x00 |
-| int32  | id                    |                            |
-| uint32 | numSongGroups         |                            |
-| int32  | songGroupIds          |                            |
-| int32  | totalTimeMilliseconds |                            |
-| wchar  | name\[64\]            | Unicode string             |
-| char   | padding\[64\]         |                            |
+| Type   | Description           | Comment           |
+|--------|-----------------------|-------------------|
+| int32  | magic                 | always 0x00021371 |
+| int32  | id                    |                   |
+| uint32 | numSongGroups         |                   |
+| int32  | songGroupIds          |                   |
+| int32  | totalTimeMilliseconds |                   |
+| wchar  | name\[64\]            | Unicode string    |
+| char   | padding\[64\]         |                   |
 
 ### Song Group Struct
 
 | Type  | Description               | Comment                                         |
 |-------|---------------------------|-------------------------------------------------|
-| int32 | magic                     | always 0x73 0x10 0x03 0x00                      |
+| int32 | magic                     | always 0x00031073                               |
 | int32 | soundtrackId              |                                                 |
 | int32 | id                        |                                                 |
 | int32 | padding                   |                                                 |
