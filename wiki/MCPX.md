@@ -28,5 +28,5 @@ The original Microsoft code does not drive the PC Speaker at all, so
 this otherwise unused pin can also be used for inaudible forms of
 unidirectional communication.
 
-![](XboxWithPcSpkr.jpg "fig:XboxWithPcSpkr.jpg")  
-![](XboxPcSpkrSolderPoints.jpg "fig:XboxPcSpkrSolderPoints.jpg")
+<img src="XboxWithPcSpkr.jpg" title="fig:XboxWithPcSpkr.jpg" alt="XboxWithPcSpkr.jpg" width="500" />  
+<img src="XboxPcSpkrSolderPoints.jpg" title="fig:XboxPcSpkrSolderPoints.jpg" alt="XboxPcSpkrSolderPoints.jpg" width="500" />

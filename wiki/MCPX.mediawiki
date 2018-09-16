@@ -13,5 +13,5 @@ A speaker can be soldered to this pin and to make the signal audible [https://ww
 
 The original Microsoft code does not drive the PC Speaker at all, so this otherwise unused pin can also be used for inaudible forms of unidirectional communication.
 
-[[File:XboxWithPcSpkr.jpg]] <br \>
-[[File:XboxPcSpkrSolderPoints.jpg]]
+[[File:XboxWithPcSpkr.jpg|left|500px]] <br \>
+[[File:XboxPcSpkrSolderPoints.jpg|left|500px]]
