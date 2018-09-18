@@ -28,10 +28,5 @@ The original Microsoft code does not drive the PC Speaker at all, so
 this otherwise unused pin can also be used for inaudible forms of
 unidirectional communication.
 
-Image:XboxWithPcSpkr.jpg|*[Astronotus
-ocellatus](commons:Astronotus_ocellatus "wikilink")* (Oscar)
-Image:XboxPcSpkrTrace.jpg|*[Salmo
-salar](commons:Salmo_salar "wikilink")* (Salmon Larva)
-Image:XboxPcSpkrSolderPoints.jpg|*[Epinephelus
-lanceolatus](commons:Epinephelus_lanceolatus "wikilink")* (Giant
-grouper)
+Image:XboxWithPcSpkr.jpg|'' '' Image:XboxPcSpkrTrace.jpg|'' ''
+Image:XboxPcSpkrSolderPoints.jpg|'' ''

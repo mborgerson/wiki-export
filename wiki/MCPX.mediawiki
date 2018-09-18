@@ -16,7 +16,7 @@ The original Microsoft code does not drive the PC Speaker at all, so this otherw
 
 
 <gallery mode="slideshow">
-Image:XboxWithPcSpkr.jpg|''[[commons:Astronotus ocellatus|Astronotus ocellatus]]'' (Oscar)
-Image:XboxPcSpkrTrace.jpg|''[[commons:Salmo salar|Salmo salar]]'' (Salmon Larva)
-Image:XboxPcSpkrSolderPoints.jpg|''[[commons:Epinephelus lanceolatus|Epinephelus lanceolatus]]'' (Giant grouper)
+Image:XboxWithPcSpkr.jpg|'' ''
+Image:XboxPcSpkrTrace.jpg|'' ''
+Image:XboxPcSpkrSolderPoints.jpg|'' ''
 </gallery>
