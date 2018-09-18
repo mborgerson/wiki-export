@@ -29,4 +29,5 @@ this otherwise unused pin can also be used for inaudible forms of
 unidirectional communication.
 
 <img src="XboxWithPcSpkr.jpg" title="fig:XboxWithPcSpkr.jpg" alt="XboxWithPcSpkr.jpg" width="500" />  
+<img src="XboxPcSpkrTrace.jpg" title="fig:XboxPcSpkrTrace.jpg" alt="XboxPcSpkrTrace.jpg" width="500" />  
 <img src="XboxPcSpkrSolderPoints.jpg" title="fig:XboxPcSpkrSolderPoints.jpg" alt="XboxPcSpkrSolderPoints.jpg" width="500" />
