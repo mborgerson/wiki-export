@@ -28,6 +28,10 @@ The original Microsoft code does not drive the PC Speaker at all, so
 this otherwise unused pin can also be used for inaudible forms of
 unidirectional communication.
 
-<img src="XboxWithPcSpkr.jpg" title="fig:XboxWithPcSpkr.jpg" alt="XboxWithPcSpkr.jpg" width="500" />  
-<img src="XboxPcSpkrTrace.jpg" title="fig:XboxPcSpkrTrace.jpg" alt="XboxPcSpkrTrace.jpg" width="500" />  
-<img src="XboxPcSpkrSolderPoints.jpg" title="fig:XboxPcSpkrSolderPoints.jpg" alt="XboxPcSpkrSolderPoints.jpg" width="500" />
+Image:XboxWithPcSpkr.jpg|*[Astronotus
+ocellatus](commons:Astronotus_ocellatus "wikilink")* (Oscar)
+Image:XboxPcSpkrTrace.jpg|*[Salmo
+salar](commons:Salmo_salar "wikilink")* (Salmon Larva)
+Image:XboxPcSpkrSolderPoints.jpg|*[Epinephelus
+lanceolatus](commons:Epinephelus_lanceolatus "wikilink")* (Giant
+grouper)
