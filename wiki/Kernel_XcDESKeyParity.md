@@ -4,6 +4,9 @@ permalink: wiki/Kernel/XcDESKeyParity/
 layout: wiki
 ---
 
+The *XcDESKeyParity* function turns a key into a DES key which requires
+odd-parity per byte.
+
 ### Pseudocode
 
     XBAPI VOID NTAPI XcDESKeyParity(IN OUT PUCHAR pbKey, IN ULONG dwKeyLength) {

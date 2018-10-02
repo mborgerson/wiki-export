@@ -1,4 +1,8 @@
+The ''XcDESKeyParity'' function turns a key into a DES key which requires odd-parity per byte.
+
 === Pseudocode ===
+
+{{FIXME|reason=This should be removed from here, and instead we should just link to an actual implementation of the algorithm}}
 
 <pre>
 XBAPI VOID NTAPI XcDESKeyParity(IN OUT PUCHAR pbKey, IN ULONG dwKeyLength) {
