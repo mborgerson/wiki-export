@@ -7,25 +7,8 @@ layout: wiki
 The *XcDESKeyParity* function turns a key into a DES key which requires
 odd-parity per byte.
 
-### Pseudocode
+### Links
 
-    XBAPI VOID NTAPI XcDESKeyParity(IN OUT PUCHAR pbKey, IN ULONG dwKeyLength) {
+-   [XcDESKeyParity implementation in
+    Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/blob/f73114df61d943ba73b329a6e4bd6805254af243/src/CxbxKrnl/EmuKrnlXc.cpp#L234)
 
-      // For each number between 0x0 and 0xF, this tells how many set bits there are.
-      const uint8_t parity_table[] = {
-        0x00, 0x01, 0x01, 0x02, 0x01, 0x02, 0x02, 0x03,
-        0x01, 0x02, 0x02, 0x03, 0x02, 0x03, 0x03, 0x04
-      };
-
-      // Count number of set bits in each byte, and flip the lowest bit if there's an even number.
-      // This forces each byte to have odd parity, as required by DES.
-      for(ULONG i = 0; i < dwKeyLength; i++) {
-        high_parity = parity_table[(pbKey[i] >> 4) & 0xF];
-        low_parity = parity_table[(pbKey[i] >> 0) & 0xF];
-        if ((high_parity + low_parity) % 2) == 0 {
-          pbKey[i] ^= 0x01;
-        }
-      }
-
-      return;
-    }
