@@ -11,7 +11,7 @@ The Xbox MAC address is stored in the [[EEPROM]].
 The network driver, including the protocol stack is contained in the XDK.
 The kernel only contains a small number of exports to reset and get the state of the NIC.
 
-The Xbox Linux team used the binary drivers from Nvidia{{citation-needed}}{{FIXME|reason=Wasn't the open-source forcedeth driver used?}}.
+The Xbox Linux team used the binary drivers from Nvidia{{citation needed}}{{FIXME|reason=Wasn't the open-source forcedeth driver used?}}.
 
 ==== Heartbeat ====
 
