@@ -6,21 +6,40 @@ layout: wiki
 
 The Xbox contains an Ethernet module and one RJ45 connector.
 Additionally, separate modem and wireless accessories were considered
-when developing the console. Eventualy an official wireless adapter was
+when developing the console. Eventually an official wireless adapter was
 released based of a “D-Link 108AG Gaming Adapter” in the end of 2003.
 
-The Xbox has a TCP/IP protocol stack complete with a DNS PPTP, DHCP
-clients.
+The XDK provides a TCP/IP protocol stack complete with a DNS PPTP, DHCP
+clients. The IANA registered port 3074 (UDP / TCP) is reserved for Xbox
+communications (See [System Link](/wiki/System_Link "wikilink") and [Xbox
+Live](/wiki/Xbox_Live "wikilink")).
 
-Port 3074 UDP/TCP is reserved for Xbox communications.
-
-Hardware
---------
+Integrated network adapter
+--------------------------
 
 Integrated in the Nvidia Southbridge MCPX chip which is similar to the
-nForce chips. The Xbox Linux team used the binary drivers from Nvidia.
+nForce chips.
 
-### Wireless adapter
+The Xbox MAC address is stored in the [EEPROM](/wiki/EEPROM "wikilink"). The
+network driver, including the protocol stack is contained in the XDK.
+The kernel only contains a small number of exports to reset and get the
+state of the NIC.
+
+The Xbox Linux team used the binary drivers from Nvidia.
+
+#### Heartbeat
+
+`   Ethernet II, Src: Microsof_f2:00:00 (00:50:f2:f2:00:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)`  
+`   MS Network Load Balancing`  
+`       Signature: Unknown (0x584f4258)`  
+`       Version: 1.1`  
+`       Unique Host ID: 3118682055`  
+`       Cluster IP: 167.102.81.132 (167.102.81.132)`  
+`       Host IP: 4.89.169.109 (4.89.169.109)`  
+`       Signature Data - Unknown (1481589336)`
+
+Wireless adapter
+----------------
 
 based on the “D-Link 108AG Gaming Adapter”, the Xbox MN-740 Wireless
 Bridge bundled with a Xbox setup disc (wich would update the dashboard
@@ -67,18 +86,6 @@ port using a PC (or webbrowser capable application).
 The setup disc is a CD[1](http://redump.org/disc/53586/). It contains an
 XISO filesystem that contains only a “default.xbe” which contains a
 dashboard updater.
-
-Heartbeat
----------
-
-`   Ethernet II, Src: Microsof_f2:00:00 (00:50:f2:f2:00:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)`  
-`   MS Network Load Balancing`  
-`       Signature: Unknown (0x584f4258)`  
-`       Version: 1.1`  
-`       Unique Host ID: 3118682055`  
-`       Cluster IP: 167.102.81.132 (167.102.81.132)`  
-`       Host IP: 4.89.169.109 (4.89.169.109)`  
-`       Signature Data - Unknown (1481589336)`
 
 References and links
 --------------------
