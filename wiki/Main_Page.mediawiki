@@ -20,6 +20,7 @@ __NOTOC__
 * [[MCPX]]
 ** [[APU]]
 ** [[ACI]]
+** [[Network]]
 * [[SMBus]]
 ** [[EEPROM]]
 ** [[SMC]]
@@ -54,6 +55,11 @@ __NOTOC__
 * [https://github.com/xqemu/nxdk nxdk (New Xbox Development Kit)]
 * [[OpenXDK]]
 * [[Microsoft XDK]]
+** [[Xbox Title Libraries]]
+** [[Direct3D]]
+** [[DirectSound]]
+** [[System Link]]
+** [[Xbox Live]]
 ** [[Xbox Debug Monitor]]
 ** [[Xbox Neighborhood]]
 ** [[Kernel_Debug| Xbox Kernel Debugging]]
@@ -68,6 +74,5 @@ __NOTOC__
 ** [[Xbox 360 Backward Compatibility]]
 
 == Other ==
-* [[Network]]
 * [[Patents]]
 * Find random stuff in [[Resources]]

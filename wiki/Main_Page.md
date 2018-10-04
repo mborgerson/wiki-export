@@ -27,6 +27,7 @@ Hardware
 -   [MCPX](/wiki/MCPX "wikilink")
     -   [APU](/wiki/APU "wikilink")
     -   [ACI](/wiki/ACI "wikilink")
+    -   [Network](/wiki/Network "wikilink")
 -   [SMBus](/wiki/SMBus "wikilink")
     -   [EEPROM](/wiki/EEPROM "wikilink")
     -   [SMC](/wiki/SMC "wikilink")
@@ -66,6 +67,11 @@ Development Kits and Tools
 -   [nxdk (New Xbox Development Kit)](https://github.com/xqemu/nxdk)
 -   [OpenXDK](/wiki/OpenXDK "wikilink")
 -   [Microsoft XDK](/wiki/Microsoft_XDK "wikilink")
+    -   [Xbox Title Libraries](/wiki/Xbox_Title_Libraries "wikilink")
+    -   [Direct3D](/wiki/Direct3D "wikilink")
+    -   [DirectSound](/wiki/DirectSound "wikilink")
+    -   [System Link](/wiki/System_Link "wikilink")
+    -   [Xbox Live](/wiki/Xbox_Live "wikilink")
     -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
     -   [Xbox Neighborhood](/wiki/Xbox_Neighborhood "wikilink")
     -   [ Xbox Kernel Debugging](/wiki/Kernel_Debug "wikilink")
@@ -87,7 +93,6 @@ Emulation
 Other
 -----
 
--   [Network](/wiki/Network "wikilink")
 -   [Patents](/wiki/Patents "wikilink")
 -   Find random stuff in [Resources](/wiki/Resources "wikilink")
 
