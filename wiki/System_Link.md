@@ -8,18 +8,18 @@ layout: wiki
 
 Xbox network traffic is secured through
 [IPSec](wikipedia:IPSec "wikilink"). The implementation appears to be
-similar to [3498, Section
-2.1](https://tools.ietf.org/html/rfc3948#section-2.1%7CRFC) from 2005
-which was co-authored by Microsoft.
+similar to [RFC 3498, Section
+2.1](https://tools.ietf.org/html/rfc3948#section-2.1) from 2005 which
+was co-authored by Microsoft.
 
 The protocol uses UDP port 3074 which is also registered with the IANA
 for use in the
 Xbox[1](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=3074).
 Each Xbox uses the IP 0.0.0.1, so addressing relies on MAC-addresses.
 
-The specific implementation in the Xbox uses TripleDES
-([1851](https://tools.ietf.org/html/rfc1851%7CRFC)) for encryption, and
-SHA1-96 as [HMAC](wikipedia:HMAC "wikilink").
+The specific implementation in the Xbox uses TripleDES ([RFC
+1851](https://tools.ietf.org/html/rfc1851)) for encryption, and SHA1-96
+as [HMAC](wikipedia:HMAC "wikilink").
 
 #### Key derivation
 
