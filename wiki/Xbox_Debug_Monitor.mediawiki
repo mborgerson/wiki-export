@@ -194,10 +194,12 @@ Set the administrator password to the value of the <code>passwd</code> parameter
 {{XBDM command|text=getfile name=STRING}}
 
 Retrieve the entire contents of the named file.
+The received data is prefixed with a 32 bit little endian value, which contains the number of bytes which have been read.
 
 {{XBDM command|text=getfile name=STRING offset=DWORD size=DWORD}}
 
 Retrieve <code>size</code> bytes starting at <code>offset</code> from the named file.
+The received data is prefixed with a 32 bit little endian value, which contains the number of bytes which have been read.
 
 ====<span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)====
 ====<span id="cmd_getgamma">getgamma</span> (Get gamma table)====

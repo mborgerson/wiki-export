@@ -323,9 +323,13 @@ currently unknown.
 
 #### <span id="cmd_getfile">getfile</span> (Download file)
 
-Retrieve the entire contents of the named file.
+Retrieve the entire contents of the named file. The received data is
+prefixed with a 32 bit little endian value, which contains the number of
+bytes which have been read.
 
-Retrieve `size` bytes starting at `offset` from the named file.
+Retrieve `size` bytes starting at `offset` from the named file. The
+received data is prefixed with a 32 bit little endian value, which
+contains the number of bytes which have been read.
 
 #### <span id="cmd_getfileattributes">getfileattributes</span> (Get file attributes)
 
