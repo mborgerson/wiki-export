@@ -89,3 +89,9 @@ Protocol
 ### Microphone
 
 ### Speaker
+
+#### Links
+
+-   [Code for accessing the communicator microphone and
+    speaker](https://github.com/JayFoxRox/xbox-tools/tree/4bc808e187311010f850d7fbd9af4b76bed90727/communicator-tool)
+
