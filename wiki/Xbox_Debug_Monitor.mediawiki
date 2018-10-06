@@ -179,6 +179,11 @@ Set the administrator password to the value of the <code>passwd</code> parameter
 ====<span id="cmd_dmversion">dmversion</span> (Get debug monitor version)====
 ====<span id="cmd_drivefreespace">drivefreespace</span> (Get free space on drive)====
 ====<span id="cmd_drivelist">drivelist</span> (List drive letters)====
+
+{{XBDM command|text=drivelist}}
+
+Returns a string which contains the drive-letter for each accessible drive.
+
 ====<span id="cmd_dvdblk">dvdblk</span> (Read block from DVD)====
 ====<span id="cmd_dvdperf">dvdperf</span>====
 ====<span id="cmd_fileeof">fileeof</span>====

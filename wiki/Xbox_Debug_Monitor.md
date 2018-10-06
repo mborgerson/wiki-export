@@ -303,6 +303,9 @@ currently unknown.
 
 #### <span id="cmd_drivelist">drivelist</span> (List drive letters)
 
+Returns a string which contains the drive-letter for each accessible
+drive.
+
 #### <span id="cmd_dvdblk">dvdblk</span> (Read block from DVD)
 
 #### <span id="cmd_dvdperf">dvdperf</span>
