@@ -346,7 +346,19 @@ contains the number of bytes which have been read.
 
 #### <span id="cmd_getpid">getpid</span>
 
-#### <span id="cmd_getsum">getsum</span>
+#### <span id="cmd_getsum">getsum (Generate memory checksums)</span>
+
+Generates one or more checksums from memory.
+
+The function will return `length` divided by `blocksize` 32-bit little
+endian checksums for the memory starting at virtual address `addr`.
+
+The `addr`, `length` and `blocksize` must be multiples of 8. Picking bad
+values can lead to crashes.
+
+Each checksum is equal to
+`ReverseBitOrder(CRC32(address + blockoffset, blocksize) XOR 0xFFFFFFFF)`
+for the respective block.
 
 #### <span id="cmd_getsurf">getsurf</span>
 

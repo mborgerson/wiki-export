@@ -212,7 +212,19 @@ The received data is prefixed with a 32 bit little endian value, which contains 
 ====<span id="cmd_getmem2">getmem2</span> (Read memory)====
 ====<span id="cmd_getpalette">getpalette</span>====
 ====<span id="cmd_getpid">getpid</span>====
-====<span id="cmd_getsum">getsum</span>====
+====<span id="cmd_getsum">getsum (Generate memory checksums)</span>====
+
+{{XBDM command|version=5120+|text=getsum addr=DWORD length=DWORD blocksize=DWORD}}
+
+Generates one or more checksums from memory.
+
+The function will return <code>length</code> divided by <code>blocksize</code> 32-bit little endian checksums for the memory starting at virtual address <code>addr</code>.
+
+The <code>addr</code>, <code>length</code> and <code>blocksize</code> must be multiples of 8.
+Picking bad values can lead to crashes.
+
+Each checksum is equal to <code>ReverseBitOrder(CRC32(address + blockoffset, blocksize) XOR 0xFFFFFFFF)</code> for the respective block.
+
 ====<span id="cmd_getsurf">getsurf</span>====
 ====<span id="cmd_getuserpriv">getuserpriv</span> (Get user's privilege level)====
 ====<span id="cmd_getutildrvinfo">getutildrvinfo</span> (Get utility drive information)====
