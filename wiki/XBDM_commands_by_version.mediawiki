@@ -2127,12 +2127,12 @@ The following table shows the commands available in each version of the [[Xbox D
 |{{unknown}}
 |{{unknown}}
 |{{unknown}}
-|{{unknown}}
-|{{unknown}}
-|{{unknown}}
-|{{unknown}}
-|{{unknown}}
 |{{yes}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
 |-
 | style="font-family: monospace; text-align: left" | setsystime
 |{{no}}
