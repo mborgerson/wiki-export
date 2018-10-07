@@ -239,7 +239,14 @@ Each checksum is equal to <code>ReverseBitOrder(CRC32(address + blockoffset, blo
 ====<span id="cmd_keyxchg">keyxchg</span> (Perform key exchange)====
 ====<span id="cmd_lockmode">lockmode</span>====
 ====<span id="cmd_lop">lop</span>====
-====<span id="cmd_magicboot">magicboot</span>====
+====<span id="cmd_magicboot">magicboot (Boot into new title)</span>====
+
+{{XBDM command|text=magicboot title=STRING debug}}
+
+Boots into another title, specified by the path to XBE in <code>title</code>.
+
+If the optional <code>debug</code> is provided, XBDM will remain loaded while the title is running.
+
 ====<span id="cmd_memtrack">memtrack</span>====
 ====<span id="cmd_mkdir">mkdir</span> (Create directory)====
 ====<span id="cmd_mmglobal">mmglobal</span>====

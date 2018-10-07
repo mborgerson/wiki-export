@@ -388,7 +388,12 @@ for the respective block.
 
 #### <span id="cmd_lop">lop</span>
 
-#### <span id="cmd_magicboot">magicboot</span>
+#### <span id="cmd_magicboot">magicboot (Boot into new title)</span>
+
+Boots into another title, specified by the path to XBE in `title`.
+
+If the optional `debug` is provided, XBDM will remain loaded while the
+title is running.
 
 #### <span id="cmd_memtrack">memtrack</span>
 
