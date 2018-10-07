@@ -2108,6 +2108,32 @@ The following table shows the commands available in each version of the [[Xbox D
 |{{yes}}
 |{{yes}}
 |-
+| style="font-family: monospace; text-align: left" | setmem
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{unknown}}
+|{{yes}}
+|-
 | style="font-family: monospace; text-align: left" | setsystime
 |{{no}}
 |{{no}}
