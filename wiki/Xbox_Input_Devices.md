@@ -33,11 +33,11 @@ Untested / unverified! Take this with a grain of salt.
 
 | Pin | Typical cable color | Description                                     |
 |-----|---------------------|-------------------------------------------------|
-| 1   | Green               | USB D-                                          |
+| 1   | Red                 | VCC                                             |
 | 2   | White               | USB D+                                          |
-| 3   | Black               | GND                                             |
-| 4   | Red                 | VCC                                             |
-| 5   | Yellow              | VBlank signal from video output (for Lightguns) |
+| 3   | Green               | USB D-                                          |
+| 4   | Yellow              | VBlank signal from video output (for Lightguns) |
+| 5   | Black               | GND                                             |
 ||
 
 ### Protocol
