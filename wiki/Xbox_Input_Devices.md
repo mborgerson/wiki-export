@@ -31,13 +31,13 @@ acquired cheaply (~$10 USD ea. on 2017.04.30).
 
 Untested / unverified! Take this with a grain of salt.
 
-| Pin | Typical cable color | Description                                     |
-|-----|---------------------|-------------------------------------------------|
-| 1   | Red                 | VCC                                             |
-| 2   | White               | USB D+                                          |
-| 3   | Green               | USB D-                                          |
-| 4   | Yellow              | VBlank signal from video output (for Lightguns) |
-| 5   | Black               | GND                                             |
+| Pin | Typical cable color | Description ![](Xboxmaletousbfemale.png "fig:Xboxmaletousbfemale.png") |
+|-----|---------------------|------------------------------------------------------------------------|
+| 1   | Red                 | VCC                                                                    |
+| 2   | White               | USB D+                                                                 |
+| 3   | Green               | USB D-                                                                 |
+| 4   | Yellow              | VBlank signal from video output (for Lightguns)                        |
+| 5   | Black               | GND                                                                    |
 ||
 
 ### Protocol
