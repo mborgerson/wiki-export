@@ -22,8 +22,11 @@ has drivers for the gamepad. In order to preserve Xbox hardware, please
 do not cut OEM Xbox cables to make an adapter. Decent adapters can be
 acquired cheaply (~$10 USD ea. on 2017.04.30).
 
-![Wiring diagram of a DIY USB
-adapter](Xboxmaletousbfemale.png "Wiring diagram of a DIY USB adapter")
+![Wiring diagram to show how male Xbox controller plug maps to standard
+female USB connector. White cable color is depicted as gray for better
+visibility. The yellow cable is not connected to the USB side, as it's
+exclusive to
+Xbox.](Xboxmaletousbfemale.png "Wiring diagram to show how male Xbox controller plug maps to standard female USB connector. White cable color is depicted as gray for better visibility. The yellow cable is not connected to the USB side, as it's exclusive to Xbox.")
 
 | Port (From) | Plug (To) | Link                                                   |
 |-------------|-----------|--------------------------------------------------------|
