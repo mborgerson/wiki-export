@@ -32,7 +32,6 @@ Untested / unverified! Take this with a grain of salt.
 !Pin
 !Typical cable color
 !Description
-[[File:Xboxmaletousbfemale.png]]
 |-                                                            
 |1
 |Red
