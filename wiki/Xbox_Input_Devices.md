@@ -23,7 +23,7 @@ do not cut OEM Xbox cables to make an adapter. Decent adapters can be
 acquired cheaply (~$10 USD ea. on 2017.04.30).
 
 ![Wiring diagram of a DIY USB
-Adapter](Xboxmaletousbfemale.png "Wiring diagram of a DIY USB Adapter")
+adapter](Xboxmaletousbfemale.png "Wiring diagram of a DIY USB adapter")
 
 | Port (From) | Plug (To) | Link                                                   |
 |-------------|-----------|--------------------------------------------------------|
