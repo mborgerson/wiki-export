@@ -27,8 +27,6 @@ acquired cheaply (~$10 USD ea. on 2017.04.30).
 | Xbox        | USB-A     | [Amazon](https://www.amazon.com/gp/product/B000RT2868) |
 | USB-A       | Xbox      | [Amazon](https://www.amazon.com/gp/product/B00F52LQHO) |
 
-`                                                               `![`Xboxmaletousbfemale.png`](Xboxmaletousbfemale.png "fig:Xboxmaletousbfemale.png")
-
 ### Wiring
 
 Untested / unverified! Take this with a grain of salt.
