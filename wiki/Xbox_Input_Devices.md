@@ -22,6 +22,12 @@ has drivers for the gamepad. In order to preserve Xbox hardware, please
 do not cut OEM Xbox cables to make an adapter. Decent adapters can be
 acquired cheaply (~$10 USD ea. on 2017.04.30).
 
+------------------------------------------------------------------------
+
+![](Xboxmaletousbfemale.png)
+
+------------------------------------------------------------------------
+
 | Port (From) | Plug (To) | Link                                                   |
 |-------------|-----------|--------------------------------------------------------|
 | Xbox        | USB-A     | [Amazon](https://www.amazon.com/gp/product/B000RT2868) |

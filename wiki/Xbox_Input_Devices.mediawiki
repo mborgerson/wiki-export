@@ -6,10 +6,16 @@ The hardware side is USB with a different plug while the software side is USB wi
 Technicly a XID is a USB-hub for the Memory-Units and the XBL Communicator.
 The logical XID gamepad USB device is internally connected to that hub.
 
-=== USB Adapters ===
-The Xbox input devices are USB devices. As such, you can connect a keyboard to the Xbox, or a gamepad to your PC. In fact, Linux already has drivers for the gamepad. In order to preserve Xbox hardware, please do not cut OEM Xbox cables to make an adapter. Decent adapters can be acquired cheaply (~$10 USD ea. on 2017.04.30).
 
-{| class="wikitable"
+=== USB Adapters ===
+The Xbox input devices are USB devices. As such, you can connect a keyboard to the Xbox, or a gamepad to your PC. In fact, Linux already has drivers for the gamepad. In order to preserve Xbox hardware, please do not cut OEM Xbox cables to make an adapter. Decent adapters can be acquired cheaply (~$10 USD ea. on 2017.04.30).                              
+
+----
+[[File:Xboxmaletousbfemale.png|thumb|right|]]                                                                                                                                                                         
+
+
+----
+{| class="wikitable"                                                          
 |- 
 ! Port (From)
 ! Plug (To)
