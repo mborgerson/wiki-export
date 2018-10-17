@@ -32,20 +32,53 @@ a [Fatal Error](/wiki/Fatal_Error "wikilink") screen and halts.
 
 The Xbox uses a chain of trust during the boot process:
 
--   The MCPX ROM contains a key to decrypt the 2BL.
--   The 2BL is run. The MCPX ROM is hidden at this point. The 2BL
-    decryption key is (overwritten with 0x00-Bytes). The 2BL contains a
-    kernel decryption key.
--   Once the kernel is decrypted and initialized, the INIT section is
-    discarded. The kernel decryption key is overwritten with 0x00-Bytes.
--   The kernel only runs signed [XBE](/wiki/XBE "wikilink") files from allowed
-    media.
+**MCPX X2**
 
-There are also a handful of assumptions:
+There's no chain of trust.
 
--   The CPU will start execution in the MCPX ROM.
+It behaves similar to the MCPX X3 1.0 boot, just that the MCPX ROM is
+not available, so the code is loaded from untrusted flash.
+
+There are also different X-Code opcodes and keys.
+
+**MCPX X3 1.0**
+
+-   MCPX ROM:
+    -   Runs untrusted from flash X-Codes in a limited virtual-machine.
+    -   Contains key + decrypts the 2BL using RC4.
+    -   In success case: Go to 2BL.
+    -   In error case: Hides ROM and intends to triple-fault.
+-   2BL:
+    -   The MCPX ROM is hidden.
+    -   The 2BL decryption key is (overwritten with 0x00-Bytes).
+    -   Contains keys for kernel decryption and execution; decrypts
+        kernel using RC4 and extracts using LZX.
+-   Kernel:
+    -   The kernel decryption key is overwritten with 0x00-Bytes.
+    -   The 2BL is overwritten with 0xCC-Bytes.
+    -   Once the kernel is initialized, the INIT section is discarded.
+    -   The kernel only runs signed [XBE](/wiki/XBE "wikilink") files from
+        allowed media.
+
+**MCPX X3 1.1**
+
+-   MCPX ROM:
+    -   Runs untrusted from flash X-Codes in a limited virtual-machine.
+    -   Hashes the unencrypted FBL using TEA encryption.
+    -   In success case: Go to FBL.
+    -   In error case: Hides ROM and intends to triple-fault.
+-   FBL:
+    -   Verify 2BL image.
+    -   Derive key from key stored in MCPX + Flash, and decrypt 2BL.
+    -   Go to 2BL.
+
+The rest of the boot behaves like MCPX X3 1.0.
+
+**Assumptions for chain-of-trust**
+
+-   The CPU will start execution in trusted MCPX ROM.
 -   The MCPX ROM can not be read or modified.
--   The decrpyted 2BL or Kernel can not be read entirely.
+-   The decrypted 2BL or kernel can not be read entirely.
 -   All parts of the software following the MCPX are not-attackable and
     signed.
 
