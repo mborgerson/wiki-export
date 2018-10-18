@@ -19,6 +19,8 @@ References
     cache. It does not contain the Xbox Coppermine-128 with 128kB L2
     cache at 733MHz (S-Spec SL5SN). No such datasheet exists. Both
     differences are pin compatible.
+-   [This specification update should contain the errata for the Xbox
+    CPU](https://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/24542154.pdf)
 -   [CPU upgrading adapter for a Microsoft XboxTM game
     machine](https://www.google.com/patents/US20050282621) US Patent
     Application 20050282621 by Friendtech, filed 2003-08-21.
