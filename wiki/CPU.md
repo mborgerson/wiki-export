@@ -15,12 +15,13 @@ References
 
 -   [Mobile Intel® Celeron® Processor (0.18μ) in BGA2 and Micro-PGA2
     Packages](http://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/28365403.pdf)
-    (This datasheet is for the mobile version Coppermine with 256kB L2
+    This datasheet is for the mobile version Coppermine with 256kB L2
     cache. It does not contain the Xbox Coppermine-128 with 128kB L2
     cache at 733MHz (S-Spec SL5SN). No such datasheet exists. Both
     differences are pin compatible.
--   [This specification update should contain the errata for the Xbox
-    CPU](https://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/24542154.pdf)
+-   [Mobile Intel® Celeron® Processor (0.18μ and 0.13μ) Specification
+    Update](https://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/24542154.pdf)
+    This document should contain the errata for the Xbox CPU.
 -   [CPU upgrading adapter for a Microsoft XboxTM game
     machine](https://www.google.com/patents/US20050282621) US Patent
     Application 20050282621 by Friendtech, filed 2003-08-21.
