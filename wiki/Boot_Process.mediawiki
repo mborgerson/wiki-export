@@ -286,13 +286,13 @@ Now a PDE is prepared at address 0x0000F000:
 {| class="wikitable"
 ! Offset in PDE !! Value !! Notes
 |-
-|0x000 || 0x000000E3 || rowspan="7" | Identity maps the first 256MiB of RAM: 0x00000000 and 0x80000000 will both map to physical page 0 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
+|0x800 || 0x000000E3 || rowspan="7" | Identity maps the first 256MiB of RAM: 0x80000000 and 0x00000000 will each map to physical page 0 <br><br> 0xE3: Flags: <br> * 0x80: 4 MiB page <br> * 0x40: Marked as previously written (Dirty) <br> * 0x20: Marked as previously accessed <br> * 0x02: Read/Write <br> * 0x01: Present
 |-
-|0x800 || 0x000000E3
-|-
-|0x004 || 0x004000E3
+|0x000 || 0x000000E3
 |-
 |0x804 || 0x004000E3
+|-
+|0x004 || 0x004000E3
 |-
 | colspan="2" | ...
 |-

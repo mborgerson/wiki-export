@@ -303,9 +303,9 @@ Now a PDE is prepared at address 0x0000F000:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>0x000</p></td>
+<td><p>0x800</p></td>
 <td><p>0x000000E3</p></td>
-<td><p>Identity maps the first 256MiB of RAM: 0x00000000 and 0x80000000 will both map to physical page 0<br />
+<td><p>Identity maps the first 256MiB of RAM: 0x80000000 and 0x00000000 will each map to physical page 0<br />
 <br />
 0xE3: Flags:<br />
 * 0x80: 4 MiB page<br />
@@ -315,15 +315,15 @@ Now a PDE is prepared at address 0x0000F000:
 * 0x01: Present</p></td>
 </tr>
 <tr class="even">
-<td><p>0x800</p></td>
+<td><p>0x000</p></td>
 <td><p>0x000000E3</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x004</p></td>
+<td><p>0x804</p></td>
 <td><p>0x004000E3</p></td>
 </tr>
 <tr class="even">
-<td><p>0x804</p></td>
+<td><p>0x004</p></td>
 <td><p>0x004000E3</p></td>
 </tr>
 <tr class="odd">
