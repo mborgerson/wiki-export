@@ -83,6 +83,8 @@ Contents
    -   0x2 = or                                                                                                                                                               
    -   0x3 = or                                                                                                                                                               
    -   0x4 = or                                                                                                                                                               
+   -   0x5 =                                                                                                                                                                  
+   -   0x6 =                                                                                                                                                                  
    -   0x7 =                                                                                                                                                                  
    -   0x8 =                                                                                                                                                                  
    -   0xB =                                                                                                                                                                  

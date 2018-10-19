@@ -181,6 +181,8 @@ Offset 0x96:
 * 0x2 = {{input-dy-}} or {{input-ly-}}
 * 0x3 = {{input-dx-}} or {{input-lx-}}
 * 0x4 = {{input-dx+}} or {{input-lx+}}
+* 0x5 = {{input-a}}
+* 0x6 = {{input-b}}
 * 0x7 = {{input-x}}
 * 0x8 = {{input-y}}
 * 0xB = {{input-lt}}
