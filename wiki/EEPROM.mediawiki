@@ -23,7 +23,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 | RC4 Encrypted Region code
 * 0x01 = North America
 * 0x02 = Japan
-* 0x04 = Europe
+* 0x04 = Europe & Australia
 |-
 | 0x30
 | 0x33

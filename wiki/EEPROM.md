@@ -21,7 +21,7 @@ Contents
                                                                                                                                                                               
    -   0x01 = North America                                                                                                                                                   
    -   0x02 = Japan                                                                                                                                                           
-   -   0x04 = Europe                                                                                                                                                          |
+   -   0x04 = Europe & Australia                                                                                                                                              |
 | 0x30  | 0x33 | Checksum2 - Checksum of next 44 (0x2C) bytes (0x34 - 0x5F)<sup>\*</sup>                                                                                                   |
 | 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                                                                                  |
 | 0x40  | 0x45 | Ethernet MAC address                                                                                                                                                      |
