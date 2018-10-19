@@ -35,7 +35,7 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 |-
 | 0x40
 | 0x45
-| Ethernet MAC address
+| Ethernet MAC address (Microsoft Xbox - 00:50:F2:xx:xx:xx)
 |-
 | 0x46
 | 0x47

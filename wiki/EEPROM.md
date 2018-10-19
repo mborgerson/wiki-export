@@ -24,7 +24,7 @@ Contents
    -   0x04 = Europe & Australia                                                                                                                                              |
 | 0x30  | 0x33 | Checksum2 - Checksum of next 44 (0x2C) bytes (0x34 - 0x5F)<sup>\*</sup>                                                                                                   |
 | 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                                                                                  |
-| 0x40  | 0x45 | Ethernet MAC address                                                                                                                                                      |
+| 0x40  | 0x45 | Ethernet MAC address (Microsoft Xbox - 00:50:F2:xx:xx:xx)                                                                                                                 |
 | 0x46  | 0x47 | Unknown Padding ?                                                                                                                                                         |
 | 0x48  | 0x57 | Online Key ?                                                                                                                                                              |
 | 0x58  | 0x5B | Video Standard                                                                                                                                                            
