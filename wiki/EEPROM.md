@@ -29,9 +29,11 @@ Contents
 | 0x48  | 0x57 | Online Key ?                                                                                                                                                              |
 | 0x58  | 0x5B | Video Standard                                                                                                                                                            
                                                                                                                                                                               
+   -   0x00000000 = not set (INVALID)                                                                                                                                         
    -   0x00400100 = NTSC-M                                                                                                                                                    
    -   0x00400200 = NTSC-J                                                                                                                                                    
-   -   0x00800300 = PAL                                                                                                                                                       |
+   -   0x00800300 = PAL-I                                                                                                                                                     
+   -   0x00400400 = PAL-M                                                                                                                                                     |
 | 0x5C  | 0x5F | Unknown Padding ?                                                                                                                                                         |
 | 0x60  | 0x63 | Checksum3 - Checksum of the next 92 (0x5C) bytes (0x64 - 0xBF)<sup>\*</sup>                                                                                               |
 | 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x00000168)                                                          |

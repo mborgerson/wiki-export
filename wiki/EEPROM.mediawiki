@@ -48,9 +48,11 @@ Parts of the EEPROM are encrypted using [[Kernel/XboxEEPROMKey]].
 | 0x58
 | 0x5B
 | Video Standard
+* 0x00000000 = not set (INVALID)
 * 0x00400100 = NTSC-M
 * 0x00400200 = NTSC-J
-* 0x00800300 = PAL
+* 0x00800300 = PAL-I
+* 0x00400400 = PAL-M
 |-
 | 0x5C
 | 0x5F
