@@ -1678,7 +1678,7 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |[[Kernel/XboxSignatureKey]]
 |325
 |
-|Variable: XBOX_KEY_DATA
+|Variable: XBOX_KEY_DATA; modified by active XBE Certificate
 |-
 |[[Kernel/XeImageFileName]]
 |326
@@ -1818,12 +1818,12 @@ INIT also contains the [[Boot Animation]], so once the kernel has finished booti
 |[[Kernel/XboxLANKey]]
 |353
 |
-|Variable: XBOX_KEY_DATA
+|Variable: XBOX_KEY_DATA; modified by active XBE Certificate
 |-
 |[[Kernel/XboxAlternateSignatureKeys]]
 |354
 |
-|Variable: XBOX_KEY_DATA[XBEIMAGE_ALTERNATE_TITLE_ID_COUNT]
+|Variable: XBOX_KEY_DATA[XBEIMAGE_ALTERNATE_TITLE_ID_COUNT]; modified by active XBE Certificate
 |-
 |[[Kernel/XePublicKeyData]]
 |355
