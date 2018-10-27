@@ -7,7 +7,26 @@ layout: wiki
 These are the errors which will be displayed
 <img src="Fatal_Error_13.png" title="fig:Fatal Error 13 being displayed" alt="Fatal Error 13 being displayed" width="300" />
 
-| Value (2 digit decimal) | Meaning                                                                                                    |
+Checked after cold-boot, in this particular order:
+
+| Value (2 digit decimal) | Step / Condition                                             |
+|-------------------------|--------------------------------------------------------------|
+| 07                      | Harddrive never left busy state (after reset from cold-boot) |
+| 09                      | Setting Harddrive PIO mode failed                            |
+| 09                      | Setting Harddrive DMA mode failed                            |
+| 08                      | Harddrive ATA identify device command failed                 |
+| 09                      | Harddrive is too small for cache partitions                  |
+| 06                      | Unable to unlock Harddrive                                   |
+| 08                      | Harddrive ATA identify device after unlock command failed    |
+| 08                      | Setting Harddrive device parameters failed                   |
+| 10                      | DVD Drive never left busy state (after reset from cold-boot) |
+| 12                      | Setting DVD Drive PIO mode failed                            |
+| 12                      | Setting DVD Drive DMA mode failed                            |
+| 11                      | DVD Drive ATAPI identify device command failed               |
+
+Additional error codes, or no precise order known:
+
+| Value (2 digit decimal) | Generic meaning                                                                                            |
 |-------------------------|------------------------------------------------------------------------------------------------------------|
 | 00                      | No error (used internally to clear error flags from EEPROM)                                                |
 | 01                      |                                                                                                            |
@@ -15,13 +34,6 @@ These are the errors which will be displayed
 | 03                      |                                                                                                            |
 | 04                      | RAM bad                                                                                                    |
 | 05                      | Harddrive not locked                                                                                       |
-| 06                      | Unable to unlock Harddrive                                                                                 |
-| 07                      | Harddrive unresponsive                                                                                     |
-| 08                      | Harddrive missing                                                                                          |
-| 09                      | Wrong Harddrive                                                                                            |
-| 10                      | DVD Drive unresponsive                                                                                     |
-| 11                      | DVD Drive missing                                                                                          |
-| 12                      | Wrong DVD Drive                                                                                            |
 | 13                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 0` (MainMenu) |
 | 14                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 1` (Error)    |
 | 15                      |                                                                                                            |

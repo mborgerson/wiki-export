@@ -1,8 +1,53 @@
 These are the errors which will be displayed [[File:Fatal_Error_13.png|300px|thumb|right|Fatal Error 13 being displayed]]
 
+Checked after cold-boot, in this particular order{{FIXME|reason=We should split this into larger blocks, like HDD initalization, DVD initialization, .. and then explain the steps in each}}:
+
 {| class="wikitable"
 !Value (2 digit decimal)
-!Meaning
+!Step / Condition
+|-
+|07
+|Harddrive never left busy state (after reset from cold-boot)
+|-
+|09
+|Setting Harddrive PIO mode failed
+|-
+|09
+|Setting Harddrive DMA mode failed
+|-
+|08
+|Harddrive ATA identify device command failed
+|-
+|09
+|Harddrive is too small for cache partitions
+|-
+|06
+|Unable to unlock Harddrive
+|-
+|08
+|Harddrive ATA identify device after unlock command failed
+|-
+|08
+|Setting Harddrive device parameters failed
+|-
+|10
+|DVD Drive never left busy state (after reset from cold-boot)
+|-
+|12
+|Setting DVD Drive PIO mode failed
+|-
+|12
+|Setting DVD Drive DMA mode failed
+|-
+|11
+|DVD Drive ATAPI identify device command failed
+|}
+
+Additional error codes, or no precise order known{{FIXME|reason=Figure out the order}}:
+
+{| class="wikitable"
+!Value (2 digit decimal)
+!Generic meaning
 |-
 |00
 |No error (used internally to clear error flags from EEPROM)
@@ -20,28 +65,7 @@ These are the errors which will be displayed [[File:Fatal_Error_13.png|300px|thu
 |RAM bad
 |-
 |05
-|Harddrive not locked
-|-
-|06
-|Unable to unlock Harddrive
-|-
-|07
-|Harddrive unresponsive{{citation needed}}
-|-
-|08
-|Harddrive missing
-|-
-|09
-|Wrong Harddrive{{citation needed}}
-|-
-|10
-|DVD Drive unresponsive
-|-
-|11
-|DVD Drive missing
-|-
-|12
-|Wrong DVD Drive{{citation needed}}
+|Harddrive not locked{{FIXME|reason=When is this actually checked?}}
 |-
 |13
 |Dashboard broken, while [[Kernel/LaunchDataPage]] <code>reason == 0</code> (MainMenu)
