@@ -23,6 +23,12 @@ Checked after cold-boot, in this particular order:
 | 12                      | Setting DVD Drive PIO mode failed                            |
 | 12                      | Setting DVD Drive DMA mode failed                            |
 | 11                      | DVD Drive ATAPI identify device command failed               |
+| 05                      | Harddrive not locked; Not reported if either:                
+                                                                
+  -   XBE is allowed to run from unlocked HDD                   
+  -   Xbox is in manufacturing region                           
+  -   Kernel is made for Chihiro                                
+  -   Kernel is made for XDK                                    |
 
 Additional error codes, or no precise order known:
 
@@ -33,7 +39,6 @@ Additional error codes, or no precise order known:
 | 02                      | EEPROM Checksum failure                                                                                    |
 | 03                      |                                                                                                            |
 | 04                      | RAM bad                                                                                                    |
-| 05                      | Harddrive not locked                                                                                       |
 | 13                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 0` (MainMenu) |
 | 14                      | Dashboard broken, while [Kernel/LaunchDataPage](/wiki/Kernel/LaunchDataPage "wikilink") `reason == 1` (Error)    |
 | 15                      |                                                                                                            |

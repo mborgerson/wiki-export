@@ -5,6 +5,11 @@ Checked after cold-boot, in this particular order{{FIXME|reason=We should split 
 {| class="wikitable"
 !Value (2 digit decimal)
 !Step / Condition
+<!--
+
+IDE / Harddive initialization
+
+-->
 |-
 |07
 |Harddrive never left busy state (after reset from cold-boot)
@@ -29,6 +34,11 @@ Checked after cold-boot, in this particular order{{FIXME|reason=We should split 
 |-
 |08
 |Setting Harddrive device parameters failed
+<!--
+
+IDE / DVD Drive initialization
+
+-->
 |-
 |10
 |DVD Drive never left busy state (after reset from cold-boot)
@@ -41,6 +51,19 @@ Checked after cold-boot, in this particular order{{FIXME|reason=We should split 
 |-
 |11
 |DVD Drive ATAPI identify device command failed
+<!--
+
+XBE Loader
+
+-->
+|-
+|05
+|Harddrive not locked; Not reported if either:
+* XBE is allowed to run from unlocked HDD
+* Xbox is in manufacturing region
+* Kernel is made for Chihiro
+* Kernel is made for XDK
+
 |}
 
 Additional error codes, or no precise order known{{FIXME|reason=Figure out the order}}:
@@ -63,9 +86,6 @@ Additional error codes, or no precise order known{{FIXME|reason=Figure out the o
 |-
 |04
 |RAM bad
-|-
-|05
-|Harddrive not locked{{FIXME|reason=When is this actually checked?}}
 |-
 |13
 |Dashboard broken, while [[Kernel/LaunchDataPage]] <code>reason == 0</code> (MainMenu)
