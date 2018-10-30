@@ -91,8 +91,6 @@ References and links
 --------------------
 
 -   [<https://xboxlivehacking.blogspot.de/>](https://xboxlivehacking.blogspot.de/)
--   [<https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp>](https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp)
--   [<http://discerning.com/pdfbox/test/input/authentication.pdf>](http://discerning.com/pdfbox/test/input/authentication.pdf)
 -   [Patent: Managing access to
     content](https://www.google.com/patents/US20040009815)
 -   [Patent: Network architecture for secure communications between two

@@ -62,8 +62,6 @@ The setup disc is a CD[http://redump.org/disc/53586/]. It contains an XISO files
 == References and links ==
 
 * [https://xboxlivehacking.blogspot.de/ https://xboxlivehacking.blogspot.de/]
-* [https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp https://github.com/grayj/Jedi-Academy/blob/master/codemp/xbox/XBLive.cpp]
-* [http://discerning.com/pdfbox/test/input/authentication.pdf http://discerning.com/pdfbox/test/input/authentication.pdf]
 * [https://www.google.com/patents/US20040009815 Patent: Managing access to content]
 * [https://www.google.com/patents/US20030093669 Patent: Network architecture for secure communications between two console-based gaming systems]
 * [https://www.google.com/patents/US20030093668 Patent: Architecture for manufacturing authenticatable gaming systems ]
