@@ -5,7 +5,10 @@ layout: wiki
 ---
 
 These are the errors which will be displayed
-<img src="Fatal_Error_13.png" title="fig:Fatal Error 13 being displayed" alt="Fatal Error 13 being displayed" width="300" />
+<img src="Fatal_Error_13.png" title="fig:Fatal Error 13 being displayed" alt="Fatal Error 13 being displayed" width="300" />.
+
+Kernel version 3944 is the only known official kernel which doesn't show
+an error code in the corner.
 
 Checked after cold-boot, in this particular order:
 

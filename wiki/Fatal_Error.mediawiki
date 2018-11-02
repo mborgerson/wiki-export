@@ -1,4 +1,6 @@
-These are the errors which will be displayed [[File:Fatal_Error_13.png|300px|thumb|right|Fatal Error 13 being displayed]]
+These are the errors which will be displayed [[File:Fatal_Error_13.png|300px|thumb|right|Fatal Error 13 being displayed]].
+
+Kernel version 3944 is the only known official kernel which doesn't show an error code in the corner{{FIXME|reason=Does it still pulse the hardware pin? does it still set error code in the SMC?}}.
 
 Checked after cold-boot, in this particular order{{FIXME|reason=We should split this into larger blocks, like HDD initalization, DVD initialization, .. and then explain the steps in each}}:
 
