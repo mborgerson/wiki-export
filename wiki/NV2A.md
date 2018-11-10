@@ -46,7 +46,7 @@ Notes
 -----
 
 -   [NV30 information and
-    emulator](https://web-beta.archive.org/web/20030207073141/http://developer.nvidia.com:80/view.asp?IO=nv30_emulation)
+    emulator](https://web.archive.org/web/20031004105935/http://developer.nvidia.com:80/object/nv30_emulation.html)
 -   [List of implemented GL extensions for NV10-NV30: “NVIDIA OpenGL
     Extension Specifications for the CineFX Architecture (NV3x)”, 13
     Nov.
