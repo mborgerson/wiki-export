@@ -21,6 +21,7 @@ __NOTOC__
 ** [[APU]]
 ** [[ACI]]
 ** [[Network]]
+* [[PCI]]
 * [[SMBus]]
 ** [[EEPROM]]
 ** [[SMC]]

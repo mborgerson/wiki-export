@@ -28,6 +28,7 @@ Hardware
     -   [APU](/wiki/APU "wikilink")
     -   [ACI](/wiki/ACI "wikilink")
     -   [Network](/wiki/Network "wikilink")
+-   [PCI](/wiki/PCI "wikilink")
 -   [SMBus](/wiki/SMBus "wikilink")
     -   [EEPROM](/wiki/EEPROM "wikilink")
     -   [SMC](/wiki/SMC "wikilink")
