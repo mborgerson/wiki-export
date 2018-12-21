@@ -103,6 +103,8 @@ Historical Pages
 -   [Xbox Hard Disk
     Partitioning](/wiki/Xbox_Hard_Disk_Partitioning "wikilink")
 -   [Xbox Manufacturing Process](/wiki/Xbox_Manufacturing_Process "wikilink")
+-   [The Hidden Boot Code of the
+    Xbox](/wiki/The_Hidden_Boot_Code_of_the_Xbox "wikilink")
 -   [PIC](/wiki/PIC "wikilink")
 -   [SMBus](/wiki/SMBus "wikilink")
 -   [NForce](/wiki/NForce "wikilink")

@@ -80,6 +80,7 @@ __NOTOC__
 * [[Xbox Hard Disk Technical_Details]]
 * [[Xbox Hard Disk Partitioning]]
 * [[Xbox Manufacturing Process]]
+* [[The Hidden Boot Code of the Xbox]]
 * [[PIC]]
 * [[SMBus]]
 * [[NForce]]
