@@ -72,6 +72,20 @@ __NOTOC__
 ** [[XQEMU]]
 ** [[Xbox 360 Backward Compatibility]]
 
+== Historical Pages ==
+(archived from the xbox-linux wiki)
+* [[Xbox Hard Drive Locking Mechanism]]
+* [[Xbox Savegame System]]
+* [[Xbox Hardware Overview]]
+* [[Xbox Hard Disk Technical_Details]]
+* [[Xbox Hard Disk Partitioning]]
+* [[Xbox Manufacturing Process]]
+* [[PIC]]
+* [[SMBus]]
+* [[NForce]]
+* [[17 Mistakes Microsoft Made in the Xbox Security System]]
+* [[Porting an Operating System to the Xbox HOWTO]]
+
 == Other ==
 * [[Patents]]
-* Find random stuff in [[Resources]]
+* [[Resources]]

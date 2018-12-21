@@ -89,9 +89,31 @@ Emulation
     -   [Xbox 360 Backward
         Compatibility](/wiki/Xbox_360_Backward_Compatibility "wikilink")
 
+Historical Pages
+----------------
+
+(archived from the xbox-linux wiki)
+
+-   [Xbox Hard Drive Locking
+    Mechanism](/wiki/Xbox_Hard_Drive_Locking_Mechanism "wikilink")
+-   [Xbox Savegame System](/wiki/Xbox_Savegame_System "wikilink")
+-   [Xbox Hardware Overview](/wiki/Xbox_Hardware_Overview "wikilink")
+-   [Xbox Hard Disk
+    Technical\_Details](/wiki/Xbox_Hard_Disk_Technical_Details "wikilink")
+-   [Xbox Hard Disk
+    Partitioning](/wiki/Xbox_Hard_Disk_Partitioning "wikilink")
+-   [Xbox Manufacturing Process](/wiki/Xbox_Manufacturing_Process "wikilink")
+-   [PIC](/wiki/PIC "wikilink")
+-   [SMBus](/wiki/SMBus "wikilink")
+-   [NForce](/wiki/NForce "wikilink")
+-   [17 Mistakes Microsoft Made in the Xbox Security
+    System](17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System "wikilink")
+-   [Porting an Operating System to the Xbox
+    HOWTO](/wiki/Porting_an_Operating_System_to_the_Xbox_HOWTO "wikilink")
+
 Other
 -----
 
 -   [Patents](/wiki/Patents "wikilink")
--   Find random stuff in [Resources](/wiki/Resources "wikilink")
+-   [Resources](/wiki/Resources "wikilink")
 
