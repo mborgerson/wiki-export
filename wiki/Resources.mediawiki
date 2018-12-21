@@ -11,7 +11,7 @@
 * https://www.youtube.com/watch?v=6fOjGLCctEY
 * [http://www.bunniestudios.com/bunnie/proj/anatak/xboxmod.html Bunnies original Xbox page]
 * [https://www.nostarch.com/xboxfree Bunnies "Hacking the Xbox" e-book for free]
-* [https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
+* [http://web.archive.org/web/20010417064218/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics Article about Xbox Graphics (before release) from Dr. Dobbs]
 * [http://www.anandtech.com/show/853 Technical article about the Xbox by AnandTech]
 
 == History ==

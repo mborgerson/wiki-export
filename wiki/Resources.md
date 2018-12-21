@@ -25,7 +25,7 @@ Random resources about Xbox hacking
 -   [Bunnies “Hacking the Xbox” e-book for
     free](https://www.nostarch.com/xboxfree)
 -   [Article about Xbox Graphics (before release) from Dr.
-    Dobbs](https://web-beta.archive.org/web/20010827184126/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics)
+    Dobbs](http://web.archive.org/web/20010417064218/ddj.com/articles/2000/0008/0008a/0008a.htm?topic=graphics)
 -   [Technical article about the Xbox by
     AnandTech](http://www.anandtech.com/show/853)
 
