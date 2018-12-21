@@ -230,7 +230,7 @@ This is a list of known Xbox emulation projects
 |[https://github.com/monocasa/xbvm XBVM]
 |
 |monocasa
-|Windows
+|Linux
 |
 |
 |-
