@@ -51,9 +51,29 @@ DSP command blocks are loaded from X-Memory.
 | 0    | Next command block address | Memory address of next command block. Bit 14 is used as End-Of-List marker.                    |
 | 1    | Transfer control word      | Controls the DMA transfer:                                                                     
                                                                                                    
+   -   Unknown (Bit-offset 0; 1-bit).                                                              
+       -   0 = ?                                                                                   
+       -   1 = ?                                                                                   
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
    -   Direction (Bit-offset 1; 1-bit).                                                            
        -   0 = Buffer to DSP                                                                       
        -   1 = DSP to buffer                                                                       
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Unknown (Bit-offset 2; 2-bit).                                                              
+       -   0 = ?                                                                                   
+       -   1 = ?                                                                                   
+       -   2 = ?                                                                                   
+       -   3 = ?                                                                                   
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Unknown (Bit-offset 4; 1-bit).                                                              
+       -   0 = ?                                                                                   
+       -   1 = ?                                                                                   
                                                                                                    
    <!-- -->                                                                                        
                                                                                                    
@@ -77,6 +97,12 @@ DSP command blocks are loaded from X-Memory.
                                                                                                    
    <!-- -->                                                                                        
                                                                                                    
+   -   Unknown (Bit-offset 9; 1-bit).                                                              
+       -   0 = ?                                                                                   
+       -   1 = ?                                                                                   
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
    -   Sample format (Bit-offset 10; 3-bits).                                                      
        -   0x0 = 7 bit (all values are OR'd with 0x80)                                             
        -   0x1 = 16 bit                                                                            
@@ -86,6 +112,12 @@ DSP command blocks are loaded from X-Memory.
        -   0x5 = *Transfer skipped*                                                                
        -   0x6 = 24 bit in LSB                                                                     
        -   0x7 = *Transfer skipped*                                                                
+                                                                                                   
+   <!-- -->                                                                                        
+                                                                                                   
+   -   Unknown (Bit-offset 13; 1-bit).                                                             
+       -   0 = ?                                                                                   
+       -   1 = ?                                                                                   
                                                                                                    
    <!-- -->                                                                                        
                                                                                                    
