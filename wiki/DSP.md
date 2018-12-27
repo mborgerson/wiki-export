@@ -105,25 +105,28 @@ DSP command blocks are loaded from X-Memory.
                                                                                                                                           
    -   Sample format (Bit-offset 10; 3-bits).                                                                                             
        -   0x0 = 8 bit (1 DSP word / 1 byte); *sample-count must be multiple of 4, or transfer is skipped; rounded; byte MSB is flipped*  
-           -   Buffer to DSP: bytes 0x12,0x34,0x56,0x78 are written to words 0x920000, 0xB40000, 0xD60000, 0xF80000                       
-           -   Buffer to DSP: bytes 0x92,0xB4,0xD6,0xF8 are written to words 0x120000, 0x340000, 0x560000, 0x780000                       
-           -   DSP to buffer: words 0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF are written to bytes: 0x12,0x34,0x56,0x78 *(Rounded down)*     
-           -   DSP to buffer: words 0x928000, 0xB48000, 0xD68000, 0xF88000 are written to bytes: 0x13,0x35,0x57,0x79 *(Rounded up)*       
+           -   Buffer to DSP: bytes: `0x12,0x34,0x56,0x78` → words: `0x920000, 0xB40000, 0xD60000, 0xF80000`                              
+           -   Buffer to DSP: bytes: `0x92,0xB4,0xD6,0xF8` → words: `0x120000, 0x340000, 0x560000, 0x780000`                              
+           -   DSP to buffer: words: `0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF` → bytes: `0x12,0x34,0x56,0x78` *(Rounded down)*             
+           -   DSP to buffer: words: `0x928000, 0xB48000, 0xD68000, 0xF88000` → bytes: `0x13,0x35,0x57,0x79` *(Rounded up)*               
        -   0x1 = 16 bit (1 DSP word / 2 bytes) *sample-count must be multiple of 2, or transfer is skipped; truncated*                    
-           -   Buffer to DSP: bytes 0x34,0x12 are written to word: 0x123400                                                               
-           -   DSP to buffer: DSP word 0x12347F is written to bytes: 0x34,0x12 *(Truncated)*                                              
-           -   DSP to buffer: DSP word 0x123480 is written to bytes: 0x34,0x12 *(Truncated)*                                              
-       -   0x2 = 24 bit in MSB (1 DSP word / 4 bytes)                                                                                     
-           -   Buffer to DSP: bytes 0x00,0x56,0x34,0x12 are written to                                                                    
-           -   DSP to buffer: word 0x123456 is written to bytes: 0x00,0x56,0x34,0x12                                                      
-       -   0x3 = 32 bit (2 DSP words / 4 bytes)                                                                                           
-           -   Buffer to DSP: bytes 0x12,0xBC,0x9A,0x78 are written to                                                                    
-           -   DSP to buffer: words 0x123456, 0x789ABC are written to bytes: 0x12,0xBC,0x9A,0x78                                          
+           -   Buffer to DSP: bytes: `0x34,0x12` → word: `0x123400`                                                                       
+           -   DSP to buffer: word: `0x1234FF` → bytes: `0x34,0x12` *(Truncated)*                                                         
+           -   DSP to buffer: word: `0x123400` → bytes: `0x34,0x12` *(Truncated)*                                                         
+       -   0x2 = 24 bit in MSB (1 DSP word / 4 bytes); *padded*                                                                           
+           -   Buffer to DSP: bytes: `0x00,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                         
+           -   Buffer to DSP: bytes: `0xFF,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                         
+           -   DSP to buffer: word: `0x123456` → bytes: `0x00,0x56,0x34,0x12` *(Zero padding)*                                            
+       -   0x3 = 32 bit (2 DSP words / 4 bytes); *trunacted*                                                                              
+           -   Buffer to DSP: bytes: `0x12,0xBC,0x9A,0x78` → words: `0x120000, 0x789ABC`                                                  
+           -   DSP to buffer: words: `0x12FFFF, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                    
+           -   DSP to buffer: words: `0x120000, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                    
        -   0x4 = *Transfer skipped*                                                                                                       
        -   0x5 = *Transfer skipped*                                                                                                       
-       -   0x6 = 24 bit in LSB (1 DSP word / 4 bytes)                                                                                     
-           -   Buffer to DSP: bytes 0x56,0x34,0x12,0x00 are written to                                                                    
-           -   DSP to buffer: word 0x123456 is written to bytes: 0x56,0x34,0x12,0x00                                                      
+       -   0x6 = 24 bit in LSB (1 DSP word / 4 bytes); *padded*                                                                           
+           -   Buffer to DSP: bytes: `0x56,0x34,0x12,0x00` → word: `0x123456` *(Padding ignored)*                                         
+           -   Buffer to DSP: bytes: `0x56,0x34,0x12,0xFF` → word: `0x123456` *(Padding ignored)*                                         
+           -   DSP to buffer: word: `0x123456` → bytes: `0x56,0x34,0x12,0x00` *(Zero padding)*                                            
        -   0x7 = *Transfer skipped*                                                                                                       
                                                                                                                                           
    <!-- -->                                                                                                                               
