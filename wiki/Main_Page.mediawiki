@@ -19,6 +19,7 @@ __NOTOC__
 * [[Flash ROM]]
 * [[MCPX]]
 ** [[APU]]
+*** [[DSP]]
 ** [[ACI]]
 ** [[Network]]
 * [[PCI]]
