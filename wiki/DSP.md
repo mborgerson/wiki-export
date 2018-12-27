@@ -4,8 +4,8 @@ permalink: wiki/DSP/
 layout: wiki
 ---
 
-The DSPs in the APU are probably “Parthus MediaStream” DSP core
-(DSP2410/DSP2420?).
+The DSPs in the APU are probably “Parthus MediaStream” DSP cores
+(probably the 24-bit DSP2420 “Mozart” code).
 
 Those are similar to Motorola DSP56362 (DSP56300 Family). If so, the
 datasheet can be found at
