@@ -131,4 +131,6 @@ Further Reading
 
 -   [Xbox Partitioning and Filesystem
     Details](http://hackipedia.org/Disk%20formats/Partition%20tables/X-Box/Xbox_Partitioning_and_Filesystem_Details.htm)
+-   [XBOX DISK LAYOUT
+    v0.13](https://web.archive.org/web/20020617181617/http://www.tardis.ed.ac.uk:80/~lucien/computing/projects/xbox/XBOX-disk-layout.htm)
 
