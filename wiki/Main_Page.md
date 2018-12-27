@@ -58,6 +58,7 @@ System Software
     -   [Boot Process](/wiki/Boot_Process "wikilink")
     -   [XBE](/wiki/XBE "wikilink") (Executable file format)
 -   [FATX](/wiki/FATX "wikilink") (Filesystem)
+-   [Xbox ADPCM](/wiki/Xbox_ADPCM "wikilink")
 -   [Dashboard](/wiki/Dashboard "wikilink")
     -   [Soundtracks](/wiki/Soundtracks "wikilink")
 -   [Exploits](/wiki/Exploits "wikilink")

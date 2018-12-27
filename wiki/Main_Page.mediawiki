@@ -48,6 +48,7 @@ __NOTOC__
 ** [[Boot Process]]
 ** [[XBE]] (Executable file format)
 * [[FATX]] (Filesystem)
+* [[Xbox ADPCM]]
 * [[Dashboard]]
 ** [[Soundtracks]]
 * [[Exploits]]
