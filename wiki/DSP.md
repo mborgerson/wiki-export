@@ -58,8 +58,8 @@ DSP command blocks are loaded from X-Memory.
    <!-- -->                                                                                                                               
                                                                                                                                           
    -   Direction (Bit-offset 1; 1-bit).                                                                                                   
-       -   0 = Buffer to DSP                                                                                                              
-       -   1 = DSP to buffer                                                                                                              
+       -   0 = Buffer to DSP (In)                                                                                                         
+       -   1 = DSP to buffer (Out)                                                                                                        
                                                                                                                                           
    <!-- -->                                                                                                                               
                                                                                                                                           
@@ -78,21 +78,21 @@ DSP command blocks are loaded from X-Memory.
    <!-- -->                                                                                                                               
                                                                                                                                           
    -   Buffer (Bit-offset 5; 4-bits).                                                                                                     
-       -   0x0 = FIFO0                                                                                                                    
-       -   0x1 = FIFO1                                                                                                                    
-       -   0x2 = FIFO2                                                                                                                    
-       -   0x3 = FIFO3                                                                                                                    
-       -   0x4                                                                                                                            
-       -   0x5                                                                                                                            
-       -   0x6                                                                                                                            
-       -   0x7                                                                                                                            
-       -   0x8                                                                                                                            
-       -   0x9                                                                                                                            
-       -   0xA                                                                                                                            
-       -   0xB                                                                                                                            
-       -   0xC                                                                                                                            
-       -   0xD                                                                                                                            
-       -   0xE = Scratch-Circular                                                                                                         
+       -   0x0 = FIFO0 (In / Out)                                                                                                         
+       -   0x1 = FIFO1 (In / Out)                                                                                                         
+       -   0x2 = FIFO2 (Out only; Buffer to DSP is ignored)                                                                               
+       -   0x3 = FIFO3 (Out only; Buffer to DSP is ignored)                                                                               
+       -   0x4 = ?                                                                                                                        
+       -   0x5 = ?                                                                                                                        
+       -   0x6 = ?                                                                                                                        
+       -   0x7 = ?                                                                                                                        
+       -   0x8 = ?                                                                                                                        
+       -   0x9 = ?                                                                                                                        
+       -   0xA = ?                                                                                                                        
+       -   0xB = ?                                                                                                                        
+       -   0xC = ?                                                                                                                        
+       -   0xD = ?                                                                                                                        
+       -   0xE = Scratch (Circular)                                                                                                       
        -   0xF = Scratch                                                                                                                  
                                                                                                                                           
    <!-- -->                                                                                                                               

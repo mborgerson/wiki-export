@@ -64,8 +64,8 @@ Bit 14 is used as End-Of-List marker.
 ** 1 = ?
 
 * Direction (Bit-offset 1; 1-bit).
-** 0 = Buffer to DSP
-** 1 = DSP to buffer
+** 0 = Buffer to DSP (In)
+** 1 = DSP to buffer (Out)
 
 * Unknown (Bit-offset 2; 2-bit).
 ** 0 = ?
@@ -78,21 +78,21 @@ Bit 14 is used as End-Of-List marker.
 ** 1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers
 
 * Buffer (Bit-offset 5; 4-bits).
-** 0x0 = FIFO0{{FIXME|reason=Confirmed for DSP to buffer [GPOF*0]; unknown for buffer to DSP}}
-** 0x1 = FIFO1{{FIXME|reason=Confirmed for DSP to buffer [GPOF*1]; unknown for buffer to DSP}}
-** 0x2 = FIFO2{{FIXME|reason=Confirmed for DSP to buffer [GPOF*2]; unknown for buffer to DSP}}
-** 0x3 = FIFO3{{FIXME|reason=Confirmed for DSP to buffer [GPOF*3]; unknown for buffer to DSP}}
-** 0x4
-** 0x5
-** 0x6
-** 0x7
-** 0x8
-** 0x9
-** 0xA
-** 0xB
-** 0xC
-** 0xD
-** 0xE = Scratch-Circular
+** 0x0 = FIFO0 (In / Out)
+** 0x1 = FIFO1 (In / Out)
+** 0x2 = FIFO2 (Out only; Buffer to DSP is ignored)
+** 0x3 = FIFO3 (Out only; Buffer to DSP is ignored)
+** 0x4 = ?
+** 0x5 = ?
+** 0x6 = ?
+** 0x7 = ?
+** 0x8 = ?
+** 0x9 = ?
+** 0xA = ?
+** 0xB = ?
+** 0xC = ?
+** 0xD = ?
+** 0xE = Scratch (Circular)
 ** 0xF = Scratch
 
 * Unknown (Bit-offset 9; 1-bit).
