@@ -144,7 +144,8 @@ Bit 14 is used as End-Of-List marker.
 * 0x2800 - 0x37FF = P-Memory
 |-
 ! 4
-| Buffer offset || This is the address within the buffer where the first sample is accessed.
+| Buffer offset || ''Only used for scratch buffers, ignored otherwise.''{{FIXME|reason=Assumption; effect in buffers 0xE / 0xF; didn't seem to do anything for buffer 0x0}}
+This is the address within the buffer where the first sample is accessed.
 |-
 ! 5
 | Buffer base || ''Only used for circular buffers, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
