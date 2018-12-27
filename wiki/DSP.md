@@ -109,6 +109,7 @@ DSP command blocks are loaded from X-Memory.
            -   Buffer to DSP: bytes: `0x92,0xB4,0xD6,0xF8` → words: `0x120000, 0x340000, 0x560000, 0x780000`                              
            -   DSP to buffer: words: `0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF` → bytes: `0x12,0x34,0x56,0x78` *(Rounded down)*             
            -   DSP to buffer: words: `0x928000, 0xB48000, 0xD68000, 0xF88000` → bytes: `0x13,0x35,0x57,0x79` *(Rounded up)*               
+           -   DSP to buffer: words: `0x800000, 0x7E7FFF, 0x7E8000, 0x7FFFFF` → bytes: `0x00,0xFE,0xFF,0xFF` *(Saturated)*                
        -   0x1 = 16 bit (1 DSP word / 2 bytes) *sample-count must be multiple of 2, or transfer is skipped; truncated*                    
            -   Buffer to DSP: bytes: `0x34,0x12` → word: `0x123400`                                                                       
            -   DSP to buffer: word: `0x1234FF` → bytes: `0x34,0x12` *(Truncated)*                                                         
