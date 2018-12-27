@@ -155,4 +155,10 @@ Related links
 
 -   [Modernized fork of a56, open-source assembler for the similar 56000
     architecture](https://github.com/XboxDev/a56)
+-   [MediaStream product
+    page](https://web.archive.org/web/20010212122052/http://www.parthus.com:80/platforms/parthus_mediastream/index.html)
+-   [First Silicon MediaStream
+    tools](https://web.archive.org/web/20011130084353/http://www.fs2.com:80/parthus_download/)
+-   [Tasking MediaStream
+    compiler](https://web.archive.org/web/20020213235936/http://www.tasking.com/products/MediaStream/index.html)
 
