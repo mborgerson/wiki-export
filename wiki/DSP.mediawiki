@@ -78,10 +78,10 @@ Bit 14 is used as End-Of-List marker.
 ** 1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers
 
 * Buffer (Bit-offset 5; 4-bits).
-** 0x0 = FIFO0
-** 0x1 = FIFO1
-** 0x2 = FIFO2{{citation needed}}
-** 0x3 = FIFO3{{citation needed}}
+** 0x0 = FIFO0{{FIXME|reason=Confirmed for DSP to buffer [GPOF*0]; unknown for buffer to DSP}}
+** 0x1 = FIFO1{{FIXME|reason=Confirmed for DSP to buffer [GPOF*1]; unknown for buffer to DSP}}
+** 0x2 = FIFO2{{FIXME|reason=Confirmed for DSP to buffer [GPOF*2]; unknown for buffer to DSP}}
+** 0x3 = FIFO3{{FIXME|reason=Confirmed for DSP to buffer [GPOF*3]; unknown for buffer to DSP}}
 ** 0x4
 ** 0x5
 ** 0x6
