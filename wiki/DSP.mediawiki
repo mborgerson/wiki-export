@@ -75,7 +75,7 @@ Bit 14 is used as End-Of-List marker.
 
 * Buffer offset writeback (Bit-offset 4; 1-bit).
 ** 0 = Don't update buffer offset (Word 4)
-** 1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers
+** 1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers ''Only used for scratch buffers, ignored otherwise.''{{FIXME|reason=Assumption; Didn't do anything for FIFO0. Not sure if I documented this for 0xE or 0xF}}
 
 * Buffer (Bit-offset 5; 4-bits).
 ** 0x0 = FIFO0 (In / Out)
