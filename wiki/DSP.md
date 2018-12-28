@@ -150,6 +150,13 @@ DSP command blocks are loaded from X-Memory.
 | 5    | Buffer base                | *Only used for circular buffers, ignored otherwise.* The start of the buffer.                                                                     |
 | 6    | Buffer size                | *Only used for circular buffers, ignored otherwise.* Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.                |
 
+### FIFO
+
+If the current address is below the base address when starting a
+transfer, it is moved to the base address. If the current address is
+above or equal to the end address when starting a transfer, the DSP
+hangs.
+
 Related links
 -------------
 

@@ -156,6 +156,12 @@ The start of the buffer.
 Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.
 |}
 
+
+=== FIFO ===
+
+If the current address is below the base address when starting a transfer, it is moved to the base address.
+If the current address is above or equal to the end address when starting a transfer, the DSP hangs{{FIXME|reason=Needed to reboot Xbox to start new DMA, even DSP reset did not work}}.
+
 == Related links ==
 
 * [https://github.com/XboxDev/a56 Modernized fork of a56, open-source assembler for the similar 56000 architecture]
