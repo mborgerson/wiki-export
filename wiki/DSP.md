@@ -160,7 +160,7 @@ DSP command blocks are loaded from X-Memory.
                                                                                                                                        
    **Block count (Bit-offset 4; 20-bits):**                                                                                            
                                                                                                                                        
-   The number of blocks.                                                                                                               |
+   The number of blocks to be transferred.                                                                                             |
 | 3    | DSP address                | This is the address in the DSP:                                                                                                    
                                                                                                                                        
    -   0x0000 - 0x17FF = X-Memory                                                                                                      

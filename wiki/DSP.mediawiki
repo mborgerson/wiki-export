@@ -161,7 +161,7 @@ Used in DSP address calculation
 : The number of channels minus 1. For 3 channels, this has to be 0x2.
 :
 : '''Block count (Bit-offset 4; 20-bits):'''
-: The number of blocks.
+: The number of blocks to be transferred.
 :
 :
 |-
