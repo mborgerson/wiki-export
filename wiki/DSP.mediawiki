@@ -178,11 +178,11 @@ This is the offset within the buffer where the first sample is accessed.
 If this is above or equal to the buffer end (buffer base + buffer size), then the write will behave like a non circular write.
 |-
 ! 5
-| Buffer base || ''Only used for circular buffers, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
+| Buffer base || ''Only used for circular scratch buffer, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
 The start address of the buffer.
 |-
 ! 6
-| Buffer size || ''Only used for circular buffers, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
+| Buffer size || ''Only used for circular scratch buffer, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
 Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.
 |}
 
