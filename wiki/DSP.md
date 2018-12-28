@@ -146,8 +146,10 @@ DSP command blocks are loaded from X-Memory.
    -   0x0000 - 0x17FF = X-Memory                                                                                                                     
    -   0x1800 - 0x27FF = Y-Memory                                                                                                                     
    -   0x2800 - 0x37FF = P-Memory                                                                                                                     |
-| 4    | Buffer offset              | *Only used for scratch buffers, ignored otherwise.* This is the address within the buffer where the first sample is accessed.                     |
-| 5    | Buffer base                | *Only used for circular buffers, ignored otherwise.* The start of the buffer.                                                                     |
+| 4    | Buffer offset              | *Only used for scratch buffers, ignored otherwise.* This is the offset within the buffer where the first sample is accessed.                      
+                                                                                                                                                      
+   If this is above or equal to the buffer end (buffer base + buffer size), then the write will behave like a non circular write.                     |
+| 5    | Buffer base                | *Only used for circular buffers, ignored otherwise.* The start address of the buffer.                                                             |
 | 6    | Buffer size                | *Only used for circular buffers, ignored otherwise.* Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.                |
 
 ### FIFO

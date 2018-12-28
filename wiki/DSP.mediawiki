@@ -145,17 +145,18 @@ Bit 14 is used as End-Of-List marker.
 |-
 ! 4
 | Buffer offset || ''Only used for scratch buffers, ignored otherwise.''{{FIXME|reason=Assumption; effect in buffers 0xE / 0xF; didn't seem to do anything for buffer 0x0}}
-This is the address within the buffer where the first sample is accessed.
+This is the offset within the buffer where the first sample is accessed.
+
+If this is above or equal to the buffer end (buffer base + buffer size), then the write will behave like a non circular write.
 |-
 ! 5
 | Buffer base || ''Only used for circular buffers, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
-The start of the buffer.
+The start address of the buffer.
 |-
 ! 6
 | Buffer size || ''Only used for circular buffers, ignored otherwise.''{{FIXME|reason=Assumption; it happens for buffer 0xE, but not for buffer 0xF}}
 Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.
 |}
-
 
 === FIFO ===
 
