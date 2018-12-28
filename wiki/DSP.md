@@ -46,111 +46,131 @@ DMA End-Of-List has been encountered.
 
 DSP command blocks are loaded from X-Memory.
 
-| Word | Meaning                    | Notes                                                                                                                                 |
-|------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| 0    | Next command block address | Memory address of next command block. Bit 14 is used as End-Of-List marker.                                                           |
-| 1    | Transfer control word      | Controls the DMA transfer:                                                                                                            
-                                                                                                                                          
-   -   Unknown (Bit-offset 0; 1-bit).                                                                                                     
-       -   0 = ?                                                                                                                          
-       -   1 = ?                                                                                                                          
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Direction (Bit-offset 1; 1-bit).                                                                                                   
-       -   0 = Buffer to DSP (In)                                                                                                         
-       -   1 = DSP to buffer (Out)                                                                                                        
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Unknown (Bit-offset 2; 2-bit).                                                                                                     
-       -   0 = ?                                                                                                                          
-       -   1 = ?                                                                                                                          
-       -   2 = ?                                                                                                                          
-       -   3 = ?                                                                                                                          
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Buffer offset writeback (Bit-offset 4; 1-bit). *Only used for scratch buffers, behaves like 0 otherwise.*                          
-       -   0 = Don't update buffer offset (Word 4)                                                                                        
-       -   1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers                                          
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Buffer (Bit-offset 5; 4-bits).                                                                                                     
-       -   0x0 = FIFO0 (In / Out)                                                                                                         
-       -   0x1 = FIFO1 (In / Out)                                                                                                         
-       -   0x2 = FIFO2 (Out only; Buffer to DSP is ignored)                                                                               
-       -   0x3 = FIFO3 (Out only; Buffer to DSP is ignored)                                                                               
-       -   0x4 = ?                                                                                                                        
-       -   0x5 = ?                                                                                                                        
-       -   0x6 = ?                                                                                                                        
-       -   0x7 = ?                                                                                                                        
-       -   0x8 = ?                                                                                                                        
-       -   0x9 = ?                                                                                                                        
-       -   0xA = ?                                                                                                                        
-       -   0xB = ?                                                                                                                        
-       -   0xC = ?                                                                                                                        
-       -   0xD = ?                                                                                                                        
-       -   0xE = Scratch (Circular)                                                                                                       
-       -   0xF = Scratch                                                                                                                  
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Unknown (Bit-offset 9; 1-bit).                                                                                                     
-       -   0 = ?                                                                                                                          
-       -   1 = ?                                                                                                                          
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Sample format (Bit-offset 10; 3-bits).                                                                                             
-       -   0x0 = 8 bit (1 DSP word / 1 byte); *sample-count must be multiple of 4, or transfer is skipped; rounded; byte MSB is flipped*  
-           -   Buffer to DSP: bytes: `0x12,0x34,0x56,0x78` → words: `0x920000, 0xB40000, 0xD60000, 0xF80000`                              
-           -   Buffer to DSP: bytes: `0x92,0xB4,0xD6,0xF8` → words: `0x120000, 0x340000, 0x560000, 0x780000`                              
-           -   DSP to buffer: words: `0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF` → bytes: `0x12,0x34,0x56,0x78` *(Rounded down)*             
-           -   DSP to buffer: words: `0x928000, 0xB48000, 0xD68000, 0xF88000` → bytes: `0x13,0x35,0x57,0x79` *(Rounded up)*               
-           -   DSP to buffer: words: `0x800000, 0x7E7FFF, 0x7E8000, 0x7FFFFF` → bytes: `0x00,0xFE,0xFF,0xFF` *(Saturated)*                
-       -   0x1 = 16 bit (1 DSP word / 2 bytes) *sample-count must be multiple of 2, or transfer is skipped; truncated*                    
-           -   Buffer to DSP: bytes: `0x34,0x12` → word: `0x123400`                                                                       
-           -   DSP to buffer: word: `0x1234FF` → bytes: `0x34,0x12` *(Truncated)*                                                         
-           -   DSP to buffer: word: `0x123400` → bytes: `0x34,0x12` *(Truncated)*                                                         
-       -   0x2 = 24 bit in MSB (1 DSP word / 4 bytes); *padded*                                                                           
-           -   Buffer to DSP: bytes: `0x00,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                         
-           -   Buffer to DSP: bytes: `0xFF,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                         
-           -   DSP to buffer: word: `0x123456` → bytes: `0x00,0x56,0x34,0x12` *(Zero padding)*                                            
-       -   0x3 = 32 bit (2 DSP words / 4 bytes); *trunacted*                                                                              
-           -   Buffer to DSP: bytes: `0x12,0xBC,0x9A,0x78` → words: `0x120000, 0x789ABC`                                                  
-           -   DSP to buffer: words: `0x12FFFF, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                    
-           -   DSP to buffer: words: `0x120000, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                    
-       -   0x4 = *Transfer skipped*                                                                                                       
-       -   0x5 = *Transfer skipped*                                                                                                       
-       -   0x6 = 24 bit in LSB (1 DSP word / 4 bytes); *padded*                                                                           
-           -   Buffer to DSP: bytes: `0x56,0x34,0x12,0x00` → word: `0x123456` *(Padding ignored)*                                         
-           -   Buffer to DSP: bytes: `0x56,0x34,0x12,0xFF` → word: `0x123456` *(Padding ignored)*                                         
-           -   DSP to buffer: word: `0x123456` → bytes: `0x56,0x34,0x12,0x00` *(Zero padding)*                                            
-       -   0x7 = *Transfer skipped*                                                                                                       
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   Unknown (Bit-offset 13; 1-bit).                                                                                                    
-       -   0 = ?                                                                                                                          
-       -   1 = ?                                                                                                                          
-                                                                                                                                          
-   <!-- -->                                                                                                                               
-                                                                                                                                          
-   -   DSP address step size (Bit-offset 14; unknown size).                                                                               
-       -   Each DSP word is addressed using `dsp_address + sample_index * step_size`                                                      |
-| 2    | Transfer sample count      | The number of samples to transfer.                                                                                                    |
-| 3    | DSP address                | This is the address in the DSP:                                                                                                       
-                                                                                                                                          
-   -   0x0000 - 0x17FF = X-Memory                                                                                                         
-   -   0x1800 - 0x27FF = Y-Memory                                                                                                         
-   -   0x2800 - 0x37FF = P-Memory                                                                                                         |
-| 4    | Buffer offset              | *Only used for scratch buffers, ignored otherwise.* This is the offset within the buffer where the first sample is accessed.          
-                                                                                                                                          
-   If this is above or equal to the buffer end (buffer base + buffer size), then the write will behave like a non circular write.         |
-| 5    | Buffer base                | *Only used for circular buffers, ignored otherwise.* The start address of the buffer.                                                 |
-| 6    | Buffer size                | *Only used for circular buffers, ignored otherwise.* Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.    |
+| Word | Meaning                    | Notes                                                                                                                              |
+|------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| 0    | Next command block address | Memory address of next command block. Bit 14 is used as End-Of-List marker.                                                        |
+| 1    | Transfer control word      | Controls the DMA transfer:                                                                                                         
+                                                                                                                                       
+   **DSP address interleave (Bit-offset 0; 1-bit):**                                                                                   
+                                                                                                                                       
+   -   0 = Addressing using:                                                                                                           
+           for (sample_index = 0; sample_index < sample_count; sample_index++) {                                                       
+             transfer_dsp_word(dsp_address + sample_index * dsp_step_size)                                                             
+           }                                                                                                                           
+                                                                                                                                       
+   -   1 = Addressing using:                                                                                                           
+           for (block_index = 0; block_index < block_count; block_index++) {                                                           
+             for (channel_index = 0; channel_index < channel_count; channel_index++) {                                                 
+               transfer_dsp_word(dsp_address + block_index + channel_index * dsp_step_size)                                            
+             }                                                                                                                         
+           }                                                                                                                           
+                                                                                                                                       
+   **Direction (Bit-offset 1; 1-bit):**                                                                                                
+                                                                                                                                       
+   -   0 = Buffer to DSP (In)                                                                                                          
+   -   1 = DSP to buffer (Out)                                                                                                         
+                                                                                                                                       
+   **Unknown (Bit-offset 2; 2-bits):**                                                                                                 
+                                                                                                                                       
+   -   0 = ?                                                                                                                           
+   -   1 = ?                                                                                                                           
+   -   2 = ?                                                                                                                           
+   -   3 = ?                                                                                                                           
+                                                                                                                                       
+   **Buffer offset writeback (Bit-offset 4; 1-bit):** *Only used for scratch buffers, behaves like 0 otherwise.*                       
+                                                                                                                                       
+   -   0 = Don't update buffer offset (Word 4)                                                                                         
+   -   1 = Update buffer offset (Word 4); this respects address wrapping of circular buffers                                           
+                                                                                                                                       
+   **Buffer (Bit-offset 5; 4-bits):**                                                                                                  
+                                                                                                                                       
+   -   0x0 = FIFO0 (In / Out)                                                                                                          
+   -   0x1 = FIFO1 (In / Out)                                                                                                          
+   -   0x2 = FIFO2 (Out only; Buffer to DSP is ignored)                                                                                
+   -   0x3 = FIFO3 (Out only; Buffer to DSP is ignored)                                                                                
+   -   0x4 = ?                                                                                                                         
+   -   0x5 = ?                                                                                                                         
+   -   0x6 = ?                                                                                                                         
+   -   0x7 = ?                                                                                                                         
+   -   0x8 = ?                                                                                                                         
+   -   0x9 = ?                                                                                                                         
+   -   0xA = ?                                                                                                                         
+   -   0xB = ?                                                                                                                         
+   -   0xC = ?                                                                                                                         
+   -   0xD = ?                                                                                                                         
+   -   0xE = Scratch (Circular)                                                                                                        
+   -   0xF = Scratch                                                                                                                   
+                                                                                                                                       
+   **Unknown (Bit-offset 9; 1-bit):**                                                                                                  
+                                                                                                                                       
+   -   0 = ?                                                                                                                           
+   -   1 = ?                                                                                                                           
+                                                                                                                                       
+   **Sample format (Bit-offset 10; 3-bits):** **                                                                                       
+                                                                                                                                       
+   -   0x0 = 8 bit (1 DSP word / 1 byte); *sample-count must be multiple of 4, or transfer is skipped; rounded; byte MSB is flipped*   
+       -   Buffer to DSP: bytes: `0x12,0x34,0x56,0x78` → words: `0x920000, 0xB40000, 0xD60000, 0xF80000`                               
+       -   Buffer to DSP: bytes: `0x92,0xB4,0xD6,0xF8` → words: `0x120000, 0x340000, 0x560000, 0x780000`                               
+       -   DSP to buffer: words: `0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF` → bytes: `0x12,0x34,0x56,0x78` *(Rounded down)*              
+       -   DSP to buffer: words: `0x928000, 0xB48000, 0xD68000, 0xF88000` → bytes: `0x13,0x35,0x57,0x79` *(Rounded up)*                
+       -   DSP to buffer: words: `0x800000, 0x7E7FFF, 0x7E8000, 0x7FFFFF` → bytes: `0x00,0xFE,0xFF,0xFF` *(Saturated)*                 
+   -   0x1 = 16 bit (1 DSP word / 2 bytes) *sample-count must be multiple of 2, or transfer is skipped; truncated*                     
+       -   Buffer to DSP: bytes: `0x34,0x12` → word: `0x123400`                                                                        
+       -   DSP to buffer: word: `0x1234FF` → bytes: `0x34,0x12` *(Truncated)*                                                          
+       -   DSP to buffer: word: `0x123400` → bytes: `0x34,0x12` *(Truncated)*                                                          
+   -   0x2 = 24 bit in MSB (1 DSP word / 4 bytes); *padded*                                                                            
+       -   Buffer to DSP: bytes: `0x00,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                          
+       -   Buffer to DSP: bytes: `0xFF,0x56,0x34,0x12` → word: `0x123456` *(Padding ignored)*                                          
+       -   DSP to buffer: word: `0x123456` → bytes: `0x00,0x56,0x34,0x12` *(Zero padding)*                                             
+   -   0x3 = 32 bit (2 DSP words / 4 bytes); *trunacted*                                                                               
+       -   Buffer to DSP: bytes: `0x12,0xBC,0x9A,0x78` → words: `0x120000, 0x789ABC`                                                   
+       -   DSP to buffer: words: `0x12FFFF, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                     
+       -   DSP to buffer: words: `0x120000, 0x789ABC` → bytes: `0x12,0xBC,0x9A,0x78` *(Truncated)*                                     
+   -   0x4 = *Transfer skipped*                                                                                                        
+   -   0x5 = *Transfer skipped*                                                                                                        
+   -   0x6 = 24 bit in LSB (1 DSP word / 4 bytes); *padded*                                                                            
+       -   Buffer to DSP: bytes: `0x56,0x34,0x12,0x00` → word: `0x123456` *(Padding ignored)*                                          
+       -   Buffer to DSP: bytes: `0x56,0x34,0x12,0xFF` → word: `0x123456` *(Padding ignored)*                                          
+       -   DSP to buffer: word: `0x123456` → bytes: `0x56,0x34,0x12,0x00` *(Zero padding)*                                             
+   -   0x7 = *Transfer skipped*                                                                                                        
+                                                                                                                                       
+   **Unknown (Bit-offset 13; 1-bit):**                                                                                                 
+                                                                                                                                       
+   -   0 = ?                                                                                                                           
+   -   1 = ?                                                                                                                           
+                                                                                                                                       
+   **DSP address step size (Bit-offset 14; 10-bits):**                                                                                 
+                                                                                                                                       
+   Used in DSP address calculation                                                                                                     |
+| 2    | Sample count               | Behaviour depends on interleave setting                                                                                            
+                                                                                                                                       
+   -   Non-interleaved mode:                                                                                                           
+                                                                                                                                       
+                                                                                                                                       
+   **Sample count (Bit-offset 0; 24-bits):**                                                                                           
+                                                                                                                                       
+   The number of samples to be transferred                                                                                             
+                                                                                                                                       
+   -   Interleaved mode:                                                                                                               
+                                                                                                                                       
+                                                                                                                                       
+   **Channel count (Bit-offset 0; 4-bits):**                                                                                           
+                                                                                                                                       
+   The number of channels minus 1. For 3 channels, this has to be 0x2.                                                                 
+                                                                                                                                       
+   **Block count (Bit-offset 4; 20-bits):**                                                                                            
+                                                                                                                                       
+   The number of blocks.                                                                                                               |
+| 3    | DSP address                | This is the address in the DSP:                                                                                                    
+                                                                                                                                       
+   -   0x0000 - 0x17FF = X-Memory                                                                                                      
+   -   0x1800 - 0x27FF = Y-Memory                                                                                                      
+   -   0x2800 - 0x37FF = P-Memory                                                                                                      |
+| 4    | Buffer offset              | *Only used for scratch buffers, ignored otherwise.* This is the offset within the buffer where the first sample is accessed.       
+                                                                                                                                       
+   If this is above or equal to the buffer end (buffer base + buffer size), then the write will behave like a non circular write.      |
+| 5    | Buffer base                | *Only used for circular buffers, ignored otherwise.* The start address of the buffer.                                              |
+| 6    | Buffer size                | *Only used for circular buffers, ignored otherwise.* Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF. |
 
 ### FIFO
 
