@@ -155,7 +155,7 @@ Used in DSP address calculation
 : The number of samples to be transferred
 :
 :
-* Interleaved mode:{{FIXME|reason=What's the new buffer address when using buffer offset writeback?}}
+* Interleaved mode:
 :
 : '''Channel count (Bit-offset 0; 4-bits):'''
 : The number of channels minus 1. For 3 channels, this has to be 0x2.
