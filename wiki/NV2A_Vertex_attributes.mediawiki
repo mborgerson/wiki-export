@@ -69,3 +69,6 @@ Each 32 bit attribute is consisting of 11 bit X, 11 bit Y, 10 bit Z.
 Each component is signed and will be mapped into the range -1.0 to 1.0.
 FIXME: Verify
 FIXME: Is the attribute count ignored?
+
+
+[[Category:NV2A]]

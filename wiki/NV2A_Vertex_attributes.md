@@ -2,6 +2,8 @@
 title: NV2A/Vertex attributes
 permalink: wiki/NV2A/Vertex_attributes/
 layout: wiki
+tags:
+ - NV2A
 ---
 
 This article documents the attribute types which are supported by the
