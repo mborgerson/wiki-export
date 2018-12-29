@@ -2,6 +2,8 @@
 title: APU
 permalink: wiki/APU/
 layout: wiki
+tags:
+ - APU
 ---
 
 The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
