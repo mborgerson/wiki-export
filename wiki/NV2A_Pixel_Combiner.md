@@ -2,6 +2,8 @@
 title: NV2A/Pixel Combiner
 permalink: wiki/NV2A/Pixel_Combiner/
 layout: wiki
+tags:
+ - NV2A
 ---
 
 The NV2A implements at least parts of the following OpenGL extensions:
