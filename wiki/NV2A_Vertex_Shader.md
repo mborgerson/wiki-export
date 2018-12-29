@@ -2,6 +2,8 @@
 title: NV2A/Vertex Shader
 permalink: wiki/NV2A/Vertex_Shader/
 layout: wiki
+tags:
+ - NV2A
 ---
 
 The Xbox implements the 2 GL extensions
