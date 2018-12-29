@@ -2,6 +2,8 @@
 title: NV2A
 permalink: wiki/NV2A/
 layout: wiki
+tags:
+ - NV2A
 ---
 
 The northbridge of the chipset, and is the GPU
