@@ -2,6 +2,8 @@
 title: Xbox ADPCM
 permalink: wiki/Xbox_ADPCM/
 layout: wiki
+tags:
+ - APU
 ---
 
 Xbox used it's own WAV file format to encode data using
