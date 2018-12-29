@@ -2,6 +2,8 @@
 title: DSP
 permalink: wiki/DSP/
 layout: wiki
+tags:
+ - APU
 ---
 
 The DSPs in the APU are probably “Parthus MediaStream” DSP cores
