@@ -59,7 +59,7 @@ Bit 14 is used as End-Of-List marker.
 ! 1
 | Transfer control word || Controls the DMA transfer:
 
-'''DSP address interleave (Bit-offset 0; 1-bit):'''
+'''DSP address interleave (Bit-offset 0; 1-bit):'''{{FIXME|reason=How is addressing affected with sample format 0x3 = 32 bit words?}}
 <ul>
 <li>0 = Addressing using:<pre>
 for (sample_index = 0; sample_index < sample_count; sample_index++) {
@@ -111,7 +111,7 @@ for (block_index = 0; block_index < block_count; block_index++) {
 * 1 = ?
 
 '''Sample format (Bit-offset 10; 3-bits):''' ''{{FIXME|reason=Some of these need tests with signed datatypes}}''
-* 0x0 = 8 bit (1 DSP word / 1 byte); ''sample-count must be multiple of 4, or transfer is skipped; rounded; byte MSB is flipped''
+* 0x0 = 8 bit (1 DSP word / 1 byte); ''sample-count must be multiple of 4, or transfer is skipped; rounded; byte MSB is flipped''{{FIXME|reason=How are negative input words affected by rounding? 0x123000 etc.}}
 ** Buffer to DSP: bytes: <code>0x12,0x34,0x56,0x78</code> &rarr; words: <code>0x920000, 0xB40000, 0xD60000, 0xF80000</code>
 ** Buffer to DSP: bytes: <code>0x92,0xB4,0xD6,0xF8</code> &rarr; words: <code>0x120000, 0x340000, 0x560000, 0x780000</code>
 ** DSP to buffer: words: <code>0x927FFF, 0xB47FFF, 0xD67FFF, 0xF87FFF</code> &rarr; bytes: <code>0x12,0x34,0x56,0x78</code> ''(Rounded down)''
