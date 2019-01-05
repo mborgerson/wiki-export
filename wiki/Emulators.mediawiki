@@ -10,6 +10,7 @@ This is a list of known Xbox emulation projects
 !Platform
 !License
 !Notes
+
 |-
 |{{Maintained}}
 |LLE
@@ -17,9 +18,10 @@ This is a list of known Xbox emulation projects
 |[[XQEMU]]
 |[http://xqemu.com/][https://github.com/xqemu/][https://github.com/espes/xqemu]
 |espes
-|Windows/Linux/Mac/Others	
+|Windows/macOS/Linux/Others	
 |
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
+
 |-
 |{{Maintained}}
 |HLE/LLE Hybrid
@@ -29,7 +31,7 @@ This is a list of known Xbox emulation projects
 |SoullessSentinel
 |Windows
 |
-|Cxbx-Reloaded supports LLE GPU emulation which was taken from XQEMU. At the time of writing, it is significantly slower than in XQEMU.
+|Cxbx-Reloaded supports LLE GPU emulation which was taken from XQEMU. At the time of writing, the LLE GPU is significantly slower than in XQEMU.
 
 |-
 |{{Dead}}
@@ -54,6 +56,17 @@ This is a list of known Xbox emulation projects
 |
 
 |-
+|{{Maintained}}
+|LLE/HLE Hybrid
+|{{No}}
+|viXen
+|[https://github.com/StrikerX3/viXen]
+|StrikerX3
+|
+|Windows/Linux
+|A fork of OpenXBOX, which was turned into a separate project.
+
+|-
 |{{Dead}}
 |HLE
 |{{No}}
@@ -73,6 +86,7 @@ This is a list of known Xbox emulation projects
 |Windows
 |
 |The project was started on March 23rd 2008. It is an improved port of Cxbx to the Delphi programming language.
+
 |-
 |{{Unknown}}
 |Unknown
