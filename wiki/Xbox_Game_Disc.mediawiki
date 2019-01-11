@@ -311,8 +311,9 @@ There are many USB-IDE/SATA adapters on the market. The following have been know
 |-
 | [https://www.amazon.com/Sabrent-5-25-INCH-Converter-Activity-USB-DSC9/dp/B00DQJME7Y Sabrent USB-DSC9]
 <code>1f75:0611 Innostor Technology Corporation</code>
-| SH-D162D (<code>H/W:A Ver.D JULY 2007</code>)
-| Ubuntu 18.04 host with VirtualBox WinXP VM. USB pass-thru of adapter. Drive flashed. Works with Xbox Backup Creator.
+| SH-D162D/BEWE
+<code>H/W:A Ver.D JULY 2007</code>
+| Ubuntu 18.04 host with VirtualBox WinXP VM. USB pass-thru of adapter. No extra drivers required. Drive flashed. Works with Xbox Backup Creator.
 |}
 
 === Xbox related commands ===

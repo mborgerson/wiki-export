@@ -415,9 +415,9 @@ Project](http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/).
 There are many USB-IDE/SATA adapters on the market. The following have
 been known to work well with the Kreon-compatible drives.
 
-| Adapter Model / USB VID:DID                                                                                                                        | Drive Model                        | Notes                                                                                                                |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Sabrent USB-DSC9](https://www.amazon.com/Sabrent-5-25-INCH-Converter-Activity-USB-DSC9/dp/B00DQJME7Y) `1f75:0611 Innostor Technology Corporation` | SH-D162D (`H/W:A Ver.D JULY 2007`) | Ubuntu 18.04 host with VirtualBox WinXP VM. USB pass-thru of adapter. Drive flashed. Works with Xbox Backup Creator. |
+| Adapter Model / USB VID:DID                                                                                                                        | Drive Model                           | Notes                                                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Sabrent USB-DSC9](https://www.amazon.com/Sabrent-5-25-INCH-Converter-Activity-USB-DSC9/dp/B00DQJME7Y) `1f75:0611 Innostor Technology Corporation` | SH-D162D/BEWE `H/W:A Ver.D JULY 2007` | Ubuntu 18.04 host with VirtualBox WinXP VM. USB pass-thru of adapter. No extra drivers required. Drive flashed. Works with Xbox Backup Creator. |
 
 ### Xbox related commands
 
