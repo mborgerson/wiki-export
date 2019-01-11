@@ -300,6 +300,21 @@ Flashing software:
 
 For current dumping instructions see [http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/ the Dumping Guide by the Redump Project].
 
+==== USB Adapters ====
+
+There are many USB-IDE/SATA adapters on the market. The following have been known to work well with the Kreon-compatible drives.
+
+{|class="wikitable"
+! Adapter Model / USB VID:DID
+! Drive Model
+! Notes
+|-
+| [https://www.amazon.com/Sabrent-5-25-INCH-Converter-Activity-USB-DSC9/dp/B00DQJME7Y Sabrent USB-DSC9]
+<code>1f75:0611 Innostor Technology Corporation</code>
+| SH-D162D (<code>H/W:A Ver.D JULY 2007</code>)
+| Ubuntu 18.04 host with VirtualBox WinXP VM. USB pass-thru of adapter. Drive flashed. Works with Xbox Backup Creator.
+|}
+
 === Xbox related commands ===
 
 ==== Enable Unlock 1 (xtreme) state ====
