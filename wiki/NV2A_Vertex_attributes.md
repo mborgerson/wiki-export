@@ -56,9 +56,8 @@ Attribute Types
 
 Unsigned bytes aranged as ZYXW (BGRA) in memory (Also see [this GL
 extension](http://www.opengl.org/registry/specs/ARB/vertex_array_bgra.txt)).
-This is commonly used with an attribute count of 4. FIXME: Does this
-still work with attribute count =/= 4 ? Each byte will be mapped into
-the range 0.0 to 1.0. FIXME: Verify
+This is commonly used with an attribute count of 4. Each byte will be
+mapped into the range 0.0 to 1.0.
 
 ### Normalized unsigned byte (GL)
 
