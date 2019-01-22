@@ -16,6 +16,12 @@ Data uploaded and decoded through PGRAPH methods.
 ==== NV097_SET_VERTEX_DATA2F_M ... NV097_SET_VERTEX_DATA2F_M + 0x7c ====
 ==== NV097_SET_VERTEX_DATA4F_M ... NV097_SET_VERTEX_DATA4F_M + 0xfc ====
 ==== NV097_SET_VERTEX_DATA2S ... NV097_SET_VERTEX_DATA2S + 0x3c ====
+
+Vertex attribute values provided via NV097_SET_VERTEX_DATA2S are
+apparently two 16-bit signed integers, packed into 32 bits, which are
+then to be directly mapped to floating point values in the range
+[-32768.0, 32767.0].
+
 ==== NV097_SET_VERTEX_DATA4UB ... NV097_SET_VERTEX_DATA4UB + 0x3c ====
 ==== NV097_SET_VERTEX_DATA4S_M ... NV097_SET_VERTEX_DATA4S_M + 0x7c ====
 
