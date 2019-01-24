@@ -254,8 +254,8 @@ This is a list of known Xbox emulation projects
 |LLE
 |{{Yes}}
 |[http://mamedev.org/ MAME]
-|
-|MAME Team
+|[http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=chihiro][http://emulation.gametechwiki.com/index.php/MAME_compatibility_list#Xbox][http://emulation.gametechwiki.com/index.php/MAME_compatibility_list#Chihiro_Arcade]
+|[https://github.com/mamedev/mame/commits?author=yz70s yz70s] (Samuele Zannoli) and MAME Team
 |Windows/Linux/Mac/Others
 |
 |Focus seems to be on Chihiro emulation. Does Xbox (non-Chihiro) emulation exist yet?{{citation needed}}
