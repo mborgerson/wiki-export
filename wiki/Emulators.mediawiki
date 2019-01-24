@@ -18,7 +18,7 @@ This is a list of known Xbox emulation projects
 |[[XQEMU]]
 |[http://xqemu.com/][https://github.com/xqemu/][https://github.com/espes/xqemu]
 |espes
-|Windows/macOS/Linux/Others	
+|Windows/MacOS/Linux/Others	
 |
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 
@@ -54,6 +54,28 @@ This is a list of known Xbox emulation projects
 |
 |
 |
+
+|-
+|{{Dead}}
+|LLE/HLE Hybrid
+|{{No}}
+|xexec
+|[http://xboxdevwiki.net/User:Haxar/NV2A]
+|Haxar
+|Linux
+|
+|Xexec is an Xbox executable loader & emulator for x86/x64 Linux; handles direct execution of x86 code, executing Xbox game code directly on the CPU, in userspace Linux; All Windows kernel calls from Xbox game code are translated into POSIX syscalls, with no dependency on Wine.
+
+|-
+|{{Dead}}
+|LLE/HLE Hybrid
+|{{No}}
+|[https://github.com/blueshogun96/MacBox MacBox]
+|[http://shogun3d-cxbx.blogspot.com/2017/01/the-macos-experiment-part-1.html][http://shogun3d-cxbx.blogspot.com/2017/01/around-beginning-of-new-year-i.html]
+|blueshogun96
+|MacOS
+|
+|"The macOS Experiment" - An experimental VM for Macs that don't have support for the official VM framework. A simple proof of concept.
 
 |-
 |{{Maintained}}
