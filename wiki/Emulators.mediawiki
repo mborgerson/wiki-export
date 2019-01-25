@@ -18,7 +18,7 @@ This is a list of known Xbox emulation projects
 |[[XQEMU]]
 |[http://xqemu.com/][https://github.com/xqemu/][https://github.com/espes/xqemu]
 |espes
-|Windows/MacOS/Linux/Others	
+|Windows/macOS/Linux/Others	
 |
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 
@@ -57,7 +57,7 @@ This is a list of known Xbox emulation projects
 
 |-
 |{{Dead}}
-|LLE/HLE Hybrid
+|HLE/LLE Hybrid
 |{{No}}
 |xexec
 |
@@ -73,7 +73,7 @@ This is a list of known Xbox emulation projects
 |[https://github.com/blueshogun96/MacBox MacBox]
 |[http://shogun3d-cxbx.blogspot.com/2017/01/the-macos-experiment-part-1.html][http://shogun3d-cxbx.blogspot.com/2017/01/around-beginning-of-new-year-i.html]
 |blueshogun96
-|MacOS
+|macOS
 |
 |"The macOS Experiment" - An experimental VM for Macs that don't have support for the official VM framework. A simple proof of concept.
 
@@ -146,7 +146,7 @@ This is a list of known Xbox emulation projects
 |[https://github.com/daeken/Zookeeper Zookeeper]
 |[https://www.reddit.com/r/EmuDev/comments/4isyvu/project_zookeeper_a_new_xbox_emulator/]
 |daeken
-|Mac
+|macOS
 |
 |Using Apple's Hypervisor.framework to run a custom kernel (NightBeliever in the repo) and then running Xbox code from there
 |-
@@ -256,7 +256,7 @@ This is a list of known Xbox emulation projects
 |[http://mamedev.org/ MAME]
 |[http://adb.arcadeitalia.net/?mame=chihiro][http://emulation.gametechwiki.com/index.php/MAME_compatibility_list#Xbox][http://emulation.gametechwiki.com/index.php/MAME_compatibility_list#Chihiro_Arcade]
 |[https://github.com/mamedev/mame/commits?author=yz70s yz70s] (Samuele Zannoli) and MAME Team
-|Windows/Linux/Mac/Others
+|Windows/macOS/Linux/Others
 |
 |Focus seems to be on Chihiro emulation. Does Xbox (non-Chihiro) emulation exist yet?{{citation needed}}
 |-
