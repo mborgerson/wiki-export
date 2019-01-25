@@ -188,6 +188,24 @@ Size of buffer minus 1. For a buffer with 0x1000 bytes, this has to be 0xFFF.
 
 === FIFO ===
 
+{{FIXME|reason=Document register names? The FIFO registers are already defined in the XQEMU source}}
+
+Each of the DSP has 4 output FIFOs, and 2 input FIFOs.
+
+All FIFOs belonging to the same DSP share the memory view. The memory view is controlled in the DSPs FIFO Scatter-Gather entries.
+
+Each FIFO has 3 address registers, which define a ringbuffer:
+
+* Base address: The address of the first byte in the FIFO.
+* End address: The address of the first byte that's no longer part of the FIFO (so this address is exclusive).
+* Current address: The absolute address of the next byte that will be written.
+
+During a transfer, the current address is incremented.
+If the current address hits the end address during a transfer, the current address is moved to the base, where the transfer continues.
+
+If the transfer length is greater than the FIFO length when using the output FIFO, the transfer will continue normally and overwrite previously transferred bytes.
+If the transfer length is greater than the FIFO length when using the input FIFO, the transfer will continue normally and read previously transferred bytes again.
+
 If the current address is below the base address when starting a transfer, it is moved to the base address.
 If the current address is above or equal to the end address when starting a transfer, the DSP hangs{{FIXME|reason=Needed to reboot Xbox to start new DMA, even DSP reset did not work}}.
 
