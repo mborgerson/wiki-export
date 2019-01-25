@@ -154,7 +154,7 @@ This is a list of known Xbox emulation projects
 |Unknown
 |{{No}}
 |[http://ngemu.com/threads/.154342/ XbeNext]
-|
+|[https://github.com/LoveMHz/XBENext]
 |LoveMHz
 |Windows
 |
