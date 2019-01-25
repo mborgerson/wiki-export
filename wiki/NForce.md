@@ -80,7 +80,7 @@ There is the following rumour, which is not fully verified yet:
     and nVidia to make the video hardware.
 -   When alpha hardware had already bee built, Intel made a better deal
 -   Microsoft agreed to have Intel CPUs; Intel had to modify AMD's
-    chipset to support an AMD CPU
+    chipset to support an Intel CPU
 -   Intel insisted that the brand name AMD could not be associated with
     the Xbox, so nVidia licensed the AMD chipset. Now the Xbox chipset
     was by nVidia.
