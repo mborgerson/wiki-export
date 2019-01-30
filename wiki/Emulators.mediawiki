@@ -12,7 +12,7 @@ This is a list of known Xbox emulation projects
 !Notes
 
 |-
-|{{Maintained}}
+|{{Yes|Maintained}}
 |LLE
 |{{Yes}}
 |[[XQEMU]]
@@ -23,7 +23,7 @@ This is a list of known Xbox emulation projects
 |XQEMU supports hardware-acceleration for the CPU emulation on Linux through KVM.
 
 |-
-|{{Maintained}}
+|{{Yes|Maintained}}
 |HLE/LLE Hybrid
 |{{No}}
 |[[Cxbx-Reloaded]]
@@ -34,7 +34,7 @@ This is a list of known Xbox emulation projects
 |Cxbx-Reloaded supports LLE GPU emulation which was taken from XQEMU. At the time of writing, the LLE GPU is significantly slower than in XQEMU.
 
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE
 |{{No}}
 |Tortoise
@@ -45,7 +45,7 @@ This is a list of known Xbox emulation projects
 |The decision was made to create an HLE / LLE Xbox emulation project which is maintained similar to Dolphin or Citra. A key focus was on design simplicity. The project started as a continuation of kvmbox, with devices being copied from the XQEMU source code. The project was called kvmbox-reloaded, while the name was being decided. The HLE portion was never worked on.
 
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE/HLE Hybrid
 |{{No}}
 |OpenXBOX
@@ -56,7 +56,7 @@ This is a list of known Xbox emulation projects
 |
 
 |-
-|{{Dead}}
+|{{No|Dead}}
 |HLE/LLE Hybrid
 |{{No}}
 |xexec
@@ -67,7 +67,7 @@ This is a list of known Xbox emulation projects
 |Xexec is an Xbox executable loader & emulator for x86/x64 Linux; handles direct execution of x86 code, executing Xbox game code directly on the CPU, in userspace Linux; All Windows kernel calls from Xbox game code are translated into POSIX syscalls, with no dependency on Wine.
 
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE/HLE Hybrid
 |{{No}}
 |[https://github.com/blueshogun96/MacBox MacBox]
@@ -78,7 +78,7 @@ This is a list of known Xbox emulation projects
 |"The macOS Experiment" - An experimental VM for Macs that don't have support for the official VM framework. A simple proof of concept.
 
 |-
-|{{Maintained}}
+|{{Yes|Maintained}}
 |LLE/HLE Hybrid
 |{{No}}
 |viXen
@@ -89,7 +89,7 @@ This is a list of known Xbox emulation projects
 |A fork of OpenXBOX, which was turned into a separate project.
 
 |-
-|{{Dead}}
+|{{No|Dead}}
 |HLE
 |{{No}}
 |[[Cxbx]]
@@ -99,7 +99,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Dead}}
+|{{No|Dead}}
 |HLE
 |{{No}}
 |Dxbx
@@ -160,7 +160,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Dead}}
+|{{No|Dead}}
 |HLE
 |{{No}}
 |[http://ngemu.com/forums/.65/ Xeon]
@@ -190,7 +190,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE/HLE Hybrid
 |{{Yes}}
 |Hackbox
@@ -250,7 +250,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Maintained}}
+|{{Yes|Maintained}}
 |LLE
 |{{Yes}}
 |[http://mamedev.org/ MAME]
@@ -260,7 +260,7 @@ This is a list of known Xbox emulation projects
 |
 |Focus seems to be on Chihiro emulation.
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE
 |{{No}}
 |[https://github.com/monocasa/xbvm XBVM]
@@ -270,7 +270,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Dead}}
+|{{No|Dead}}
 |
 |{{No}}
 |[http://xenoborg-emu.blogspot.com/ Xenoborg]
@@ -280,7 +280,7 @@ This is a list of known Xbox emulation projects
 |
 |
 |-
-|{{Dead}}
+|{{No|Dead}}
 |LLE/HLE Hybrid
 |{{No}}
 |Fusion[http://michaelbrundage.com/project/xbox-360-emulator/] ([[Xbox 360 Backward Compatibility]])
@@ -290,7 +290,7 @@ This is a list of known Xbox emulation projects
 |Proprietary
 |
 |-
-|{{Maintained}}
+|{{Yes|Maintained}}
 |LLE/HLE Hybrid{{citation needed}}
 |{{No}}
 |Fission[http://www.ign.com/articles/2017/10/23/the-untold-story-of-xbox-one-backwards-compatibility] ([[Xbox One Backward Compatibility]])
