@@ -8,9 +8,40 @@ tags:
 
 The [MCPX](/wiki/MCPX "wikilink") contains an APU (Audio Processing Unit).
 
--   SSL = Stream Segment List
--   SGE = Scatter Gather Entry
+The APU consists of 3 main components for audio-processing:
+
+-   VP: A fixed-function block, that generates 32 channel mono audio
+    from voices; the audio is output to the GP MIXBUF.
+-   GP: A programmable DSP, it is intended for general-purpose audio
+    processing (programmable audio effects for example).
+-   EP: A programmable DSP, it is intended for audio encoding (5.1 AC3
+    encoding for example).
+
+VP and GP are connected by the MIXBUF, but GP and EP are entirely
+independent, and no special-purpose memory area connects them.
+Therefore, the communication between the GP and EP typically happens
+through programmable DMA transfers (via FIFO or scratch memory).
+
+The GP and EP are based on the same DSP architecture, run at the same
+clockrate, and have the same functionality (the EP has less memory, and
+no direct access to the MIXBUF). So, theoretically, nothing prevents the
+GP from doing EP tasks or vice versa.
+
+The APU does only audio-processing but no audio output. Hence, one of
+the DSPs typically uses programmable DMA to transfer the finished audio
+to system memory, where it can be read by other components (such as
+AC97).
+
+All audio processing by the APU is typically done in 24bit PCM at
+48000Hz. An APU audio frame is 32 samples long, so there are 1500 frames
+per second. The MIXBUF therefore holds 1024 samples (32 channels \* 32
+samples/channel).
+
+### Glossary
+
 -   PRD = Physical Resource Descriptor (Same thing as SGE?!)
+-   SGE = Scatter Gather Entry
+-   SSL = Stream Segment List
 
 Frontend Engine (FE)
 --------------------
