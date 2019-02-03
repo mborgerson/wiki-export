@@ -209,6 +209,10 @@ Related links
 
 -   [Modernized fork of a56, open-source assembler for the similar 56000
     architecture](https://github.com/XboxDev/a56)
+-   [Script to analyze DSP
+    instructions](https://github.com/JayFoxRox/xbox-tools/pull/70)
+-   [Script to control DSP
+    DMA](https://github.com/JayFoxRox/xbox-tools/pull/60)
 -   [MediaStream product
     page](https://web.archive.org/web/20010212122052/http://www.parthus.com:80/platforms/parthus_mediastream/index.html)
 -   [First Silicon MediaStream
