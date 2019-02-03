@@ -1,6 +1,6 @@
 The DSPs in the APU are probably "Parthus MediaStream" DSP cores (probably the 24-bit DSP2420 "Mozart" core).
 
-Those are similar to Motorola DSP56362 (DSP56300 Family). If so, the datasheet can be found at http://www.nxp.com/docs/en/data-sheet/DSP56362.pdf (Also see "Documentation" section in said datasheet for the related documentation)
+Those are similar to Motorola DSP56362 (DSP56300 Family). If so, the datasheet can be found at http://www.nxp.com/docs/en/data-sheet/DSP56362.pdf (Also see "Documentation" section in said datasheet for the related documentation, like [https://www.nxp.com/docs/en/reference-manual/DSP56300FM.pdf the family manual])
 
 == Memory Size ==
 
