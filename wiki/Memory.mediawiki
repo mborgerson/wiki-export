@@ -8,26 +8,26 @@ The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash R
 ! Debug/Chihiro Range
 |-
 |Main Memory
-|0x00000000 - 0x04000000
-|0x00000000 - 0x08000000
+|0x00000000 - 0x03FFFFFF
+|0x00000000 - 0x07FFFFFF
 |-
 |[[GPU|GPU (NV2A) Registers]]
-|colspan="2"|0xFD000000 - 0xFE000000
+|colspan="2"|0xFD000000 - 0xFDFFFFFF
 |-
 |APU Registers
-|colspan="2"|0xFE800000 - 0xFE880000
+|colspan="2"|0xFE800000 - 0xFE87FFFF
 |-
 |ACI (AC97) Registers
-|colspan="2"|0xFEC00000 - 0xFEC01000
+|colspan="2"|0xFEC00000 - 0xFEC00FFF
 |-
 |USB 0 Registers
-|colspan="2"|0xFED00000 - 0xFED01000
+|colspan="2"|0xFED00000 - 0xFED00FFF
 |-
 |USB 1 Registers
-|colspan="2"|0xFED08000 - 0xFED09000
+|colspan="2"|0xFED08000 - 0xFED08FFF
 |-
 |NIC (NVNet) Registers
-|colspan="2"|0xFEF00000 - 0xFEF00400
+|colspan="2"|0xFEF00000 - 0xFEF003FF
 |-
 |[[Flash]]
 |colspan="2"|0xFF000000 - 0xFFFFFFFF
