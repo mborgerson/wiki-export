@@ -19,12 +19,12 @@ they don't contain an MCPX ROM.
 |----------------------------------------|-------------------------|-------------------------|
 | Main Memory                            | 0x00000000 - 0x03FFFFFF | 0x00000000 - 0x07FFFFFF |
 | [GPU (NV2A) Registers](/wiki/GPU "wikilink") | 0xFD000000 - 0xFDFFFFFF |
-| APU Registers                          | 0xFE800000 - 0xFE87FFFF |
+| [APU Registers](/wiki/APU "wikilink")        | 0xFE800000 - 0xFE87FFFF |
 | ACI (AC97) Registers                   | 0xFEC00000 - 0xFEC00FFF |
 | USB 0 Registers                        | 0xFED00000 - 0xFED00FFF |
 | USB 1 Registers                        | 0xFED08000 - 0xFED08FFF |
 | NIC (NVNet) Registers                  | 0xFEF00000 - 0xFEF003FF |
-| [Flash](/wiki/Flash "wikilink")              | 0xFF000000 - 0xFFFFFFFF |
+| [Flash ROM](/wiki/Flash_ROM "wikilink")      | 0xFF000000 - 0xFFFFFFFF |
 | [MCPX ROM](/wiki/MCPX_ROM "wikilink")        | 0xFFFFFE00 - 0xFFFFFFFF | N/A                     |
 
 Code for emulating the memory might consist of:

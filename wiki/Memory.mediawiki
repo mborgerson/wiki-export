@@ -14,7 +14,7 @@ The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash R
 |[[GPU|GPU (NV2A) Registers]]
 |colspan="2"|0xFD000000 - 0xFDFFFFFF
 |-
-|APU Registers
+|[[APU|APU Registers]]
 |colspan="2"|0xFE800000 - 0xFE87FFFF
 |-
 |ACI (AC97) Registers
@@ -29,7 +29,7 @@ The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash R
 |NIC (NVNet) Registers
 |colspan="2"|0xFEF00000 - 0xFEF003FF
 |-
-|[[Flash]]
+|[[Flash ROM]]
 |colspan="2"|0xFF000000 - 0xFFFFFFFF
 |-
 |[[MCPX ROM]]
