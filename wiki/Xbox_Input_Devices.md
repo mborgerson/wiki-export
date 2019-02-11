@@ -208,6 +208,9 @@ a list of devices.
 | Left actuator strength  | 2              | 0xFFFF |       |
 | Right actuator strength | 4              | 0xFFFF |       |
 
+Xbox games use the full range from 0x0000 to 0xFFFF for both the left
+and right actuators.
+
 The Microsoft Controller S will not react to packets which don't have a
 value of 6 in the `length` field of the header. The Fanatec Speedster 3
 ForceShock will still react to those. Further testing is necessary with
