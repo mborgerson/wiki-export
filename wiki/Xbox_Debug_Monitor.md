@@ -293,7 +293,11 @@ currently unknown.
 
 #### <span id="cmd_deftitle">deftitle</span>
 
-#### <span id="cmd_delete">delete</span> (Delete file)
+#### <span id="cmd_delete">delete</span> (Delete file or directory)
+
+Deletes a file or directory.
+
+To delete a directory, the optional `dir` attribute must be present.
 
 #### <span id="cmd_dirlist">dirlist</span> (List files in directory)
 
