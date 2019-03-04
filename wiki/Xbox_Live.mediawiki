@@ -50,10 +50,10 @@ Kerberos Authentication Server: macs.xboxlive.com
 |When a title calls XOnlineLogon to sign in, instead of blocking until the authentication completes, an asynchronous task handle is returned. As part of the authentication process a title must specify which services it will be using (XBLservices, SERVICE_COUNT). 
 |-
 |XOnlineTaskContinue(XONLINETASK_HANDLE logonHandle)
-|Called to check the status of XOnlineLogon.
+|Called to check the status of XOnlineLogon. It will return XONLINETASK_S_RUNNING while the login process has not been completed.
 |-
 |XOnlineLogonTaskGetResults(XONLINETASK_HANDLE logonHandle)
-|
+|Will return XONLINE_S_LOGON_CONNECTION_ESTABLISHED when the task is successfully completed. Otherwise it will return an error code.
 |-
 |XOnlineGetLogonUsers()
 |This returns a pointer to an array of XONLINE USER structures. This array is similar the XONLINE USER array we populated and passed into XOnlineLogon, but is updated with error status and permission flags for each user.
