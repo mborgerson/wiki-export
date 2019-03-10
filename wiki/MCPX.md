@@ -36,7 +36,7 @@ Image:XboxPcSpkrSolderPoints.jpg|'' ''
 See Also
 --------
 
-[NForce](/wiki/NForce "wikilink")
+-   [NForce](/wiki/NForce "wikilink")
+-   [Die
+    Inspection](http://siliconpr0n.org/archive/doku.php?id=azonenberg:nvidia:mcpx)
 
-[Die
-Inspection](http://siliconpr0n.org/archive/doku.php?id=azonenberg:nvidia:mcpx)

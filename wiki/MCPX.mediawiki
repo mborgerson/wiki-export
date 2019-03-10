@@ -23,6 +23,5 @@ Image:XboxPcSpkrSolderPoints.jpg|'' ''
 
 
 == See Also ==
-[[NForce]]
-
-[http://siliconpr0n.org/archive/doku.php?id=azonenberg:nvidia:mcpx Die Inspection]
+* [[NForce]]
+* [http://siliconpr0n.org/archive/doku.php?id=azonenberg:nvidia:mcpx Die Inspection]
