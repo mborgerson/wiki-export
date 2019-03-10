@@ -1,10 +1,10 @@
-The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It contains the sound processors ([[APU]] and [[ACI]]) and also the USB, PCI, IDE, etc, controllers[https://web.archive.org/web/20010418214256/http://www.ga-hardware.com:80/preview.cfm?id=NVIDIAMCP], [https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml].
+The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It contains the sound processors ([[APU]] and [[ACI]]) and also the USB, PCI, IDE, etc, controllers [https://web.archive.org/web/20010418214256/http://www.ga-hardware.com:80/preview.cfm?id=NVIDIAMCP], [https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml].
 
-=== ROM ===
+== ROM ==
 
 The MCPX is home to the secret [[MCPX ROM]].
 
-=== Pin L21: PC Speaker ===
+== Pin L21: PC Speaker ==
 
 The MCPX has PC Speaker pin which can be controlled using [https://wiki.osdev.org/PC_Speaker the standard PC Speaker interface].
 However, no actual speaker is connected to the pin, so while the signal exists, there will be no audible sound on a stock Xbox.
@@ -20,3 +20,9 @@ Image:XboxWithPcSpkr.jpg|'' ''
 Image:XboxPcSpkrTrace.jpg|'' ''
 Image:XboxPcSpkrSolderPoints.jpg|'' ''
 </gallery>
+
+
+== See Also ==
+[[NForce]]
+
+[http://siliconpr0n.org/archive/doku.php?id=azonenberg:nvidia:mcpx Die Inspection]
