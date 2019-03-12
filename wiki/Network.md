@@ -43,7 +43,8 @@ Wireless adapter
 
 based on the “D-Link 108AG Gaming Adapter”, the Xbox MN-740 Wireless
 Bridge bundled with a Xbox setup disc (wich would update the dashboard
-if necessary).
+if necessary). It was also [described on Micosofts
+website](https://web.archive.org/web/20040508051958/http://www.xbox.com/en-US/live/connect/msmn740.htm).
 
 #### Hardware
 
@@ -73,6 +74,16 @@ latest firmware is seperated by a boot and runtime firmware :
     firmware”
 -   MN740\_01.00.02.0022\_RUNTIME.bin, “Xbox Wireless Adapter (MN-740)
     runtime firmware”
+
+There were at least 2 firmware updates for download:
+
+-   [MN740
+    1.01](https://web.archive.org/web/20031210155952/http://www.microsoft.com/hardware/broadbandnetworking/readme/readme_mn740_101.htm)
+-   [MN740
+    1.02](https://web.archive.org/web/20040602231929/http://www.microsoft.com/hardware/broadbandnetworking/readme/readme_mn740_102.htm)
+
+Judging by the firmware filenames above, there should also be a MN740
+1.00 and MN740 1.03.
 
 ###### WPA2 support
 
