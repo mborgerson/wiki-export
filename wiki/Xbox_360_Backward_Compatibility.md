@@ -75,10 +75,13 @@ References and links
 
 -   [Official compatibility list by
     Microsoft](http://support.xbox.com/en-US/legacy-devices/original-console/play-original-games)
--   [Michael Brundages page about the original Xbox emulator in the Xbox
+-   [Michael Brundages (Microsoft) page about the original Xbox emulator
+    in the Xbox
     360](http://michaelbrundage.com/project/xbox-360-emulator/)
     -   [More information about the original Xbox emulator in the Xbox
         360](http://michaelbrundage.com/note/2005/05/15/xbox-360-emulator/)
+-   [Blog post about FMA math emulation by Bruce Dawson
+    (Microsoft)](https://randomascii.wordpress.com/2019/03/20/exercises-in-emulation-xbox-360s-fma-instruction/)
 -   [Modern Vintage Gamer: Revisiting Original Xbox Backward
     Compatibility on the Xbox
     360](https://www.youtube.com/watch?v=Da_ont-2AG0)
