@@ -172,18 +172,18 @@ the back of the Xbox.
 
 | Pin    | Usage         |
 |--------|---------------|
-| Pin 1  | +12V          |
-| Pin 2  | +5V           |
-| Pin 3  | +5V           |
-| Pin 4  | +5V           |
-| Pin 5  | +3.3V         |
-| Pin 6  | +3.3V Standby |
-| Pin 7  | GND           |
-| Pin 8  | GND           |
-| Pin 9  | GND           |
-| Pin 10 | GND           |
-| Pin 11 | POWON         |
-| Pin 12 | POWOK         |
+| Pin 1  | POWOK         |
+| Pin 2  | POWON         |
+| Pin 3  | GND           |
+| Pin 4  | GND           |
+| Pin 5  | GND           |
+| Pin 6  | GND           |
+| Pin 7  | +3.3V Standby |
+| Pin 8  | +3.3V         |
+| Pin 9  | +5V           |
+| Pin 10 | +5V           |
+| Pin 11 | +5V           |
+| Pin 12 | +12V          |
 
 ### Xbox 1.2, 1.3, 1.4, and 1.5
 
@@ -192,18 +192,18 @@ columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 2 being
 the top right pin. The top being the side closest to the back of the
 Xbox.
 
-| Pin Column 1 | Usage         | Pin Column 2 | Usage |
-|--------------|---------------|--------------|-------|
-| Pin 1        | +12V          | Pin 1        | +5V   |
-| Pin 2        | None          | Pin 2        | +5V   |
-| Pin 3        | +5V           | Pin 3        | +5V   |
-| Pin 4        | GND           | Pin 4        | None  |
-| Pin 5        | +3.3V Standby | Pin 5        | GND   |
-| Pin 6        | GND           | Pin 4        | None  |
-| Pin 7        | None          | Pin 7        | +3.3V |
-| Pin 8        | +3.3V         | Pin 8        | None  |
-| Pin 9        | GND           | Pin 9        | GND   |
-| Pin 10       | PowON         | Pin 11       | PowOK |
+| Pin Column 1 | Usage | Pin Column 2 | Usage         |
+|--------------|-------|--------------|---------------|
+| Pin 1        | PowOK | Pin 1        | PowON         |
+| Pin 2        | GND   | Pin 2        | GND           |
+| Pin 3        | None  | Pin 3        | +3.3V         |
+| Pin 4        | +3.3V | Pin 4        | None          |
+| Pin 5        | None  | Pin 5        | GND           |
+| Pin 6        | GND   | Pin 6        | +3.3V Standby |
+| Pin 7        | None  | Pin 7        | GND           |
+| Pin 8        | +5V   | Pin 8        | +5V           |
+| Pin 9        | +5V   | Pin 9        | None          |
+| Pin 10       | +5V   | Pin 10       | +12V          |
 
 ### Xbox 1.6
 
@@ -212,18 +212,18 @@ top left pin. Pin 1, Column 2 being the top right pin. The top being the
 side closest to the back of the Xbox. This is the same connector as a
 1.2, 1.3, 1.4, and 1.5 xboxes, with a different pinout.
 
-| Pin Column 1 | Usage       | Pin Column 2 | Usage |
-|--------------|-------------|--------------|-------|
-| Pin 1        | +12V        | Pin 1        | +5V   |
-| Pin 2        | GND         | Pin 2        | +5V   |
-| Pin 3        | +5V         | Pin 3        | +5V   |
-| Pin 4        | GND         | Pin 4        | GND   |
-| Pin 5        | +5V Standby | Pin 5        | GND   |
-| Pin 6        | GND         | Pin 4        | GND   |
-| Pin 7        | None        | Pin 7        | None  |
-| Pin 8        | None        | Pin 8        | None  |
-| Pin 9        | GND         | Pin 9        | GND   |
-| Pin 10       | PowON       | Pin 11       | PowOK |
+| Pin Column 1 | Usage | Pin Column 2 | Usage       |
+|--------------|-------|--------------|-------------|
+| Pin 1        | PowOK | Pin 1        | PowON       |
+| Pin 2        | GND   | Pin 2        | GND         |
+| Pin 3        | None  | Pin 3        | None        |
+| Pin 4        | None  | Pin 4        | None        |
+| Pin 5        | GND   | Pin 5        | GND         |
+| Pin 6        | GND   | Pin 6        | +5V Standby |
+| Pin 7        | GND   | Pin 7        | GND         |
+| Pin 8        | +5V   | Pin 8        | +5V         |
+| Pin 9        | +5V   | Pin 9        | GND         |
+| Pin 10       | +5V   | Pin 10       | +12V        |
 
 Related links
 -------------
