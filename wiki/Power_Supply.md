@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 It's either a Foxlink or Delta Electronics power supply for most xboxes.
-Some are rumoured to be shipped with a Minebea brand and 1.6 xboxes are
+Some are rumored to be shipped with a Minebea brand and 1.6 xboxes are
 found with a “tuscany” made probably by Samsung.
 
 On a 1.0 xbox supply, there seems to be 2 types for the US 120V and EU
@@ -31,10 +31,13 @@ might be worth to check if the installed type can handle 2.3 amps.
 
 The rated output currents are also noted on the PCB
 
--   3V3 Standby 0.075A
--   3V3 4.8A
--   5V 13.2A
--   12V 1.2A
+|              |               |
+|--------------|---------------|
+| Power Rail   | Rated Current |
+| 3.3V Standby | 0.075A        |
+| 3.3V         | 4.8A          |
+| 5V           | 13.2A         |
+| 12V          | 1.2A          |
 
 ### Foxlink Technology LTD
 
@@ -52,18 +55,22 @@ and versions:
 
 The rated output currents are also noted on the sticker
 
--   96W Max output power
--   3V3 Standby 0.045A
--   3V3 4.8A
--   5V 13.2A
--   12V 1.2A
+96W Max output power
+
+|              |               |
+|--------------|---------------|
+| Power Rail   | Rated Current |
+| 3.3V Standby | 0.045A        |
+| 3.3V         | 4.8A          |
+| 5V           | 13.2A         |
+| 12V          | 1.2A          |
 
 #### Powercord recall
 
 Microsoft started an powercord recall, or more like a replacement
 program
 [xbox.com](https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm)for
-what apeared to be Foxlink powersupplies having a bad powerplug
+what appeared to be Foxlink powersupplies having a bad powerplug
 connector on the back of the console and where installed in 1.0 and 1.1
 Xboxes.. Microsoft tried to resolve this by offering free replacement
 powercords and advising to trow out the old ones. [More to the power
@@ -87,10 +94,10 @@ cords.[1](https://web.archive.org/web/20050223041403/http://replacements.webprog
 
 The old page describing how to order has been archived here:
 [2](https://web.archive.org/web/20050223060900/http://replacements.webprogram.com:80/en-us/programoverview.asp)
-One would either recieve a thicker but very similiar powercord or an
+One would either receive a thicker but very similar powercord or an
 actual [GFI](https://simple.wikipedia.org/wiki/GFCI) (Ground Fault
-Circuit Interupter). a online form would then be used to determine wich
-type of cable you recieve by means of serial number.
+Circuit Interrupter). a online form would then be used to determine
+which type of cable you receive by means of serial number.
 
 ##### AFCI
 
@@ -129,12 +136,12 @@ The older cable that needed replacement was:
 | JI-HAW   |           |
 | E147422  |           |
 
-Presumely this one doesnt come with tighter tolerances.
+Presumably this one doesn't come with tighter tolerances.
 
 ### Samsung “TUSCANY”
 
 Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main
-transformer is, wich also has the detail label on it)
+transformer is, which also has the detail label on it)
 
 -   PSCD101301A
 
@@ -159,45 +166,63 @@ Connector pinout
 
 ### Xbox 1.0 and 1.1
 
-| Pin    | Usage       |
-|--------|-------------|
-| Pin 1  | +12V        |
-| Pin 2  | +5V         |
-| Pin 3  | +5V         |
-| Pin 4  | +5V         |
-| Pin 5  | +3.3V       |
-| Pin 6  | +3V Standby |
-| Pin 7  | GND         |
-| Pin 8  | GND         |
-| Pin 9  | GND         |
-| Pin 10 | GND         |
-| Pin 11 | POWON       |
-| Pin 12 | POWOK       |
+The power supply connector for 1.0 & 1.1 is a single column of pins
+described by the following chart. Pin 1 is the connector pin closest to
+the back of the Xbox.
 
-### Xbox 1.2 and later
+| Pin    | Usage         |
+|--------|---------------|
+| Pin 1  | +12V          |
+| Pin 2  | +5V           |
+| Pin 3  | +5V           |
+| Pin 4  | +5V           |
+| Pin 5  | +3.3V         |
+| Pin 6  | +3.3V Standby |
+| Pin 7  | GND           |
+| Pin 8  | GND           |
+| Pin 9  | GND           |
+| Pin 10 | GND           |
+| Pin 11 | POWON         |
+| Pin 12 | POWOK         |
 
-| Pin    | Usage       |
-|--------|-------------|
-| Pin 1  | +5V         |
-| Pin 2  | +5V         |
-| Pin 3  | +5V         |
-| Pin 4  | None        |
-| Pin 5  | GND         |
-| Pin 6  | None        |
-| Pin 7  | +3.3V       |
-| Pin 8  | None        |
-| Pin 9  | GND         |
-| Pin 10 | POWOK       |
-| Pin 11 | +12V        |
-| Pin 12 | None        |
-| Pin 13 | +5V         |
-| Pin 14 | GND         |
-| Pin 15 | +3V Standby |
-| Pin 16 | GND         |
-| Pin 17 | None        |
-| Pin 18 | +3.3V       |
-| Pin 19 | GND         |
-| Pin 20 | POWON       |
+### Xbox 1.2 to 1.5
+
+The connector for the 1.2 -&gt; 1.5 Xbox is two columns. Pin 1, Column 1
+being the top left pin. Pin 1, Column 1 being the top right pin. The top
+being the side closest to the back of the Xbox.
+
+| Pin Column 1 | Usage         | Pin Column 2 | Usage |
+|--------------|---------------|--------------|-------|
+| Pin 1        | +12V          | Pin 1        | +5V   |
+| Pin 2        | None          | Pin 2        | +5V   |
+| Pin 3        | +5V           | Pin 3        | +5V   |
+| Pin 4        | GND           | Pin 4        | None  |
+| Pin 5        | +3.3V Standby | Pin 5        | GND   |
+| Pin 6        | GND           | Pin 4        | None  |
+| Pin 7        | None          | Pin 7        | +3.3V |
+| Pin 8        | +3.3V         | Pin 8        | None  |
+| Pin 9        | GND           | Pin 9        | GND   |
+| Pin 10       | PowON         | Pin 11       | PowOK |
+
+### Xbox 1.6+
+
+The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being
+the top left pin. Pin 1, Column 2 being the top right pin. The top being
+the side closest to the back of the Xbox. This is the same connector as
+a 1.2 -&gt; 1.5 xbox, with a different pinout.
+
+| Pin Column 1 | Usage       | Pin Column 2 | Usage |
+|--------------|-------------|--------------|-------|
+| Pin 1        | +12V        | Pin 1        | +5V   |
+| Pin 2        | GND         | Pin 2        | +5V   |
+| Pin 3        | +5V         | Pin 3        | +5V   |
+| Pin 4        | GND         | Pin 4        | GND   |
+| Pin 5        | +5V Standby | Pin 5        | GND   |
+| Pin 6        | GND         | Pin 4        | GND   |
+| Pin 7        | None        | Pin 7        | None  |
+| Pin 8        | None        | Pin 8        | None  |
+| Pin 9        | GND         | Pin 9        | GND   |
+| Pin 10       | PowON       | Pin 11       | PowOK |
 
 Related links
 -------------

@@ -1,5 +1,5 @@
 It's either a Foxlink{{citation needed}} or Delta Electronics power supply for most xboxes.
-Some are rumoured to be shipped with a Minebea brand and 1.6 xboxes are found with a "tuscany" made probably by Samsung.
+Some are rumored to be shipped with a Minebea brand and 1.6 xboxes are found with a "tuscany" made probably by Samsung.
 
 On a 1.0 xbox supply, there seems to be 2{{citation needed|reason=2 per region, or 2 overall? and, what about foxlink?}} types for the US 120V and EU 240V market.
 
@@ -18,14 +18,26 @@ This could make sense as it has to handle double the current. So, before experim
 
 The rated output currents are also noted on the PCB
 
-* 3V3 Standby  0.075A
-* 3V3  4.8A
-* 5V   13.2A
-* 12V  1.2A
+{| class="wikitable"
+| Power Rail
+| Rated Current
+|-
+| 3.3V Standby
+| 0.075A
+|-
+| 3.3V
+| 4.8A
+|-
+| 5V
+| 13.2A
+|-
+| 12V
+| 1.2A
+|}
 
 === Foxlink Technology LTD ===
 
-{{FIXME|reason=I dont own any US xboxes to compare US foxlinks with}}On the lower heatsink, there is a sticker with the following markings and versions:
+{{FIXME|reason=I don't own any US xboxes to compare US foxlinks with}}On the lower heatsink, there is a sticker with the following markings and versions:
 * MODEL: FTPS-0001 REV:B {{citation needed}} (120V)
 * MODEL: FTPS-0002 REV:B (from a 2002 PAL (240V))
 * MODEL: FTPS-0002 REV:H (from a 2003 PAL (240V))
@@ -35,15 +47,28 @@ The rated output currents are also noted on the PCB
 
 The rated output currents are also noted on the sticker
 
-* 96W Max output power
-* 3V3 Standby  0.045A
-* 3V3  4.8A
-* 5V   13.2A
-* 12V  1.2A
+96W Max output power
+
+{| class="wikitable"
+| Power Rail
+| Rated Current
+|-
+| 3.3V Standby
+| 0.045A
+|-
+| 3.3V
+| 4.8A
+|-
+| 5V
+| 13.2A
+|-
+| 12V
+| 1.2A
+|}
 
 ==== Powercord recall ====
 
-Microsoft started an powercord recall, or more like a replacement program [https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm xbox.com]for what apeared to be Foxlink powersupplies having a bad powerplug connector on the back of the console and where installed in 1.0 and 1.1 Xboxes.{{citation needed}}.
+Microsoft started an powercord recall, or more like a replacement program [https://web.archive.org/web/20050301093947/http://www.xbox.com:80/en-US/news/0502/powercordannouncement.htm xbox.com]for what appeared to be Foxlink powersupplies having a bad powerplug connector on the back of the console and where installed in 1.0 and 1.1 Xboxes.{{citation needed}}.
 Microsoft tried to resolve this by offering free replacement powercords and advising to trow out the old ones. [https://web.archive.org/web/20120722175134/http://www.xbox-scene.com/xbox1data/sep/EEpAEAylAluZlwSlOJ.php More to the power cord replacement than meets the eye?]{{FIXME|reason=why is this link here and where could / should it be instead? I think it's misplaced here}}.
 
 From the Microsoft powercord replacement FAQ:
@@ -52,7 +77,7 @@ From the Microsoft powercord replacement FAQ:
 : If it was manufactured before October 23, 2003, your console requires a replacement cord (except for consoles purchased in Continental Europe, where consoles manufactured prior to January 13, 2004 require a replacement cord). Consoles manufactured after October 23, 2003 (after January 13, 2004 for consoles purchased in Continental Europe) do not require replacement cords because design improvements to the cord and console already protect against the problems that are addressed by the replacement cords.[https://web.archive.org/web/20050223041403/http://replacements.webprogram.com:80/en-us/faqs.asp#Q-7]
 
 The old page describing how to order has been archived here: [https://web.archive.org/web/20050223060900/http://replacements.webprogram.com:80/en-us/programoverview.asp] 
-One would either recieve a thicker but very similiar powercord or an actual [https://simple.wikipedia.org/wiki/GFCI GFI] (Ground Fault Circuit Interupter). a online form would then be used to determine wich type of cable you recieve by means of serial number. {{FIXME|reason=I cant seem to find a source for these details yet, but I personaly requested 2, 1 for my own Xbox (a 1.4, with a confirmed Delta. never replaced it.) and recieved a normal cable (EU). A friends xbox was older, 1.1/1.2?) and we got a european fusebox brick for his. looks like the UK one, but with the Benelux plug. It was all for free in Europe I remember the part number on my normal cable to be different (higher) for the newer one... ill check if I have it in the original box still}}
+One would either receive a thicker but very similar powercord or an actual [https://simple.wikipedia.org/wiki/GFCI GFI] (Ground Fault Circuit Interrupter). a online form would then be used to determine which type of cable you receive by means of serial number. {{FIXME|reason=I cant seem to find a source for these details yet, but I personally requested 2, 1 for my own Xbox (a 1.4, with a confirmed Delta. never replaced it.) and received a normal cable (EU). A friends xbox was older, 1.1/1.2?) and we got a european fusebox brick for his. looks like the UK one, but with the Benelux plug. It was all for free in Europe I remember the part number on my normal cable to be different (higher) for the newer one... ill check if I have it in the original box still}}
 
 ===== AFCI =====
 
@@ -106,10 +131,10 @@ The older cable that needed replacement was:
 | E147422
 |
 |}
-Presumely this one doesnt come with tighter tolerances.
+Presumably this one doesn't come with tighter tolerances.
 
 === Samsung "TUSCANY"===
-Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transformer is, wich also has the detail label on it)
+Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transformer is, which also has the detail label on it)
 {{FIXME|reason=There are TUSCANY powersuplies in some 1.6 xboxes?}}
 * PSCD101301A
 
@@ -154,6 +179,8 @@ Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transfo
 
 === Xbox 1.0 and 1.1 ===
 
+The power supply connector for 1.0 & 1.1 is a single column of pins described by the following chart. Pin 1 is the connector pin closest to the back of the Xbox.
+
 {| class="wikitable"
 ! Pin || Usage
 |-
@@ -167,7 +194,7 @@ Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transfo
 |-
 | Pin 5 || +3.3V
 |-
-| Pin 6 || +3V Standby
+| Pin 6 || +3.3V Standby
 |-
 | Pin 7 || GND
 |-
@@ -182,51 +209,58 @@ Found in 1.6 xboxes and seems to be made by Samsung (or atleast the main transfo
 | Pin 12 || POWOK
 |}
 
-=== Xbox 1.2 and later ===
-
+=== Xbox 1.2 to 1.5 ===
+The connector for the 1.2 -> 1.5 Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 1 being the top right pin. The top being the side closest to the back of the Xbox.
 
 {| class="wikitable"
-! Pin || Usage
+! Pin Column 1 || Usage || Pin Column 2 || Usage
 |-
-| Pin 1 || +5V
+| Pin 1 || +12V || Pin 1 || +5V
 |-
-| Pin 2 || +5V
+| Pin 2 || None || Pin 2 || +5V
 |-
-| Pin 3 || +5V
+| Pin 3 || +5V || Pin 3 || +5V
 |-
-| Pin 4 || None
+| Pin 4 || GND || Pin 4 || None
 |-
-| Pin 5 || GND
+| Pin 5 || +3.3V Standby || Pin 5 || GND
 |-
-| Pin 6 || None
+| Pin 6 || GND || Pin 4 || None
 |-
-| Pin 7 || +3.3V
+| Pin 7 || None || Pin 7 || +3.3V
 |-
-| Pin 8 || None
+| Pin 8 || +3.3V || Pin 8 || None
 |-
-| Pin 9 || GND
+| Pin 9 || GND || Pin 9 || GND
 |-
-| Pin 10 || POWOK
+| Pin 10 || PowON || Pin 11 || PowOK
+|}
+
+=== Xbox 1.6+ ===
+The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 2 being the top right pin. The top being the side closest to the back of the Xbox. This is the same connector as a 1.2 -> 1.5 xbox, with a different pinout. {{citation needed|reason=Need to validate this pinout on an actual machine, I don't have one to test.}}
+
+{| class="wikitable"
+! Pin Column 1 || Usage || Pin Column 2 || Usage
 |-
-| Pin 11 || +12V
+| Pin 1 || +12V || Pin 1 || +5V
 |-
-| Pin 12 || None
+| Pin 2 || GND || Pin 2 || +5V
 |-
-| Pin 13 || +5V
+| Pin 3 || +5V || Pin 3 || +5V
 |-
-| Pin 14 || GND
+| Pin 4 || GND || Pin 4 || GND
 |-
-| Pin 15 || +3V Standby
+| Pin 5 || +5V Standby {{citation needed}} || Pin 5 || GND
 |-
-| Pin 16 || GND
+| Pin 6 || GND || Pin 4 || GND
 |-
-| Pin 17 || None
+| Pin 7 || None || Pin 7 || None {{citation needed}}
 |-
-| Pin 18 || +3.3V
+| Pin 8 || None {{citation needed}} || Pin 8 || None
 |-
-| Pin 19 || GND
+| Pin 9 || GND || Pin 9 || GND
 |-
-| Pin 20 || POWON
+| Pin 10 || PowON || Pin 11 || PowOK
 |}
 
 == Related links ==
