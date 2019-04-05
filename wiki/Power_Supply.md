@@ -166,7 +166,7 @@ Connector pinout
 
 ### Xbox 1.0 and 1.1
 
-The power supply connector for 1.0 & 1.1 is a single column of pins
+The power supply connector for 1.0 and 1.1 is a single column of pins
 described by the following chart. Pin 1 is the connector pin closest to
 the back of the Xbox.
 
@@ -185,11 +185,12 @@ the back of the Xbox.
 | Pin 11 | POWON         |
 | Pin 12 | POWOK         |
 
-### Xbox 1.2 to 1.5
+### Xbox 1.2, 1.3, 1.4, and 1.5
 
-The connector for the 1.2 to 1.5 Xbox is two columns. Pin 1, Column 1
-being the top left pin. Pin 1, Column 1 being the top right pin. The top
-being the side closest to the back of the Xbox.
+The power supply connector for the 1.2, 1.3, 1.4, and 1.5 xboxes is two
+columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 1 being
+the top right pin. The top being the side closest to the back of the
+Xbox.
 
 | Pin Column 1 | Usage         | Pin Column 2 | Usage |
 |--------------|---------------|--------------|-------|
@@ -204,12 +205,12 @@ being the side closest to the back of the Xbox.
 | Pin 9        | GND           | Pin 9        | GND   |
 | Pin 10       | PowON         | Pin 11       | PowOK |
 
-### Xbox 1.6+
+### Xbox 1.6
 
-The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being
-the top left pin. Pin 1, Column 2 being the top right pin. The top being
-the side closest to the back of the Xbox. This is the same connector as
-a 1.2 to 1.5 xbox, with a different pinout.
+The connector for the 1.6 Xbox is two columns. Pin 1, Column 1 being the
+top left pin. Pin 1, Column 2 being the top right pin. The top being the
+side closest to the back of the Xbox. This is the same connector as a
+1.2, 1.3, 1.4, and 1.5 xboxes, with a different pinout.
 
 | Pin Column 1 | Usage       | Pin Column 2 | Usage |
 |--------------|-------------|--------------|-------|
