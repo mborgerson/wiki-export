@@ -46,4 +46,13 @@ Kerberos Authentication Server: macs.xboxlive.com
 | XOnlineGetServiceInfo(Service, ?)                                                                                                 | XOnlineGetServiceInfo returns the connection status for a service                                                                                                                                                                                                      |
 | XOnlineNotificationSetState                                                                                                       |                                                                                                                                                                                                                                                                        |
 
+Discontinuation of service
+--------------------------
 
+The service was officially discontinued on April 15th, 2010.
+
+12 players decided to stay in a lobby of *Halo 2* 24/7 to keep a server
+running. The final player, Apache N4SIR was streaming the entire event,
+as the player count of 12 twindeled down to just him. At 11:40 PM PDT,
+on May 11th 2010, Apache N4SIR was booted from the
+game[1](http://i.imgur.com/oQw6k5H.jpg).
