@@ -212,18 +212,18 @@ top left pin. Pin 1, Column 2 being the top right pin. The top being the
 side closest to the back of the Xbox. This is the same connector as a
 1.2, 1.3, 1.4, and 1.5 xboxes, with a different pinout.
 
-| Pin Column 1 | Usage | Pin Column 2 | Usage       |
-|--------------|-------|--------------|-------------|
-| Pin 1        | PowOK | Pin 1        | PowON       |
-| Pin 2        | GND   | Pin 2        | GND         |
-| Pin 3        | None  | Pin 3        | None        |
-| Pin 4        | None  | Pin 4        | None        |
-| Pin 5        | GND   | Pin 5        | GND         |
-| Pin 6        | GND   | Pin 6        | +5V Standby |
-| Pin 7        | GND   | Pin 7        | GND         |
-| Pin 8        | +5V   | Pin 8        | +5V         |
-| Pin 9        | +5V   | Pin 9        | GND         |
-| Pin 10       | +5V   | Pin 10       | +12V        |
+| Pin Column 1 | Usage                | Pin Column 2 | Usage                 |
+|--------------|----------------------|--------------|-----------------------|
+| Pin 1        | PowOK (3.3V Standby) | Pin 1        | PowON (3.3V)          |
+| Pin 2        | GND                  | Pin 2        | GND                   |
+| Pin 3        | None                 | Pin 3        | None                  |
+| Pin 4        | None                 | Pin 4        | None                  |
+| Pin 5        | GND                  | Pin 5        | GND                   |
+| Pin 6        | GND                  | Pin 6        | +5V (0.12V Standby)   |
+| Pin 7        | GND                  | Pin 7        | GND                   |
+| Pin 8        | +5V Standby          | Pin 8        | +5V Standby           |
+| Pin 9        | +5V Standby          | Pin 9        | GND                   |
+| Pin 10       | +5V Standby          | Pin 10       | +12V (0.532V Standby) |
 
 Related links
 -------------
