@@ -188,7 +188,7 @@ the back of the Xbox.
 ### Xbox 1.2, 1.3, 1.4, and 1.5
 
 The power supply connector for the 1.2, 1.3, 1.4, and 1.5 xboxes is two
-columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 1 being
+columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 2 being
 the top right pin. The top being the side closest to the back of the
 Xbox.
 
