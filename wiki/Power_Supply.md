@@ -172,8 +172,8 @@ the back of the Xbox.
 
 | Pin    | Usage         |
 |--------|---------------|
-| Pin 1  | POWOK         |
-| Pin 2  | POWON         |
+| Pin 1  | PowOK         |
+| Pin 2  | PowON         |
 | Pin 3  | GND           |
 | Pin 4  | GND           |
 | Pin 5  | GND           |

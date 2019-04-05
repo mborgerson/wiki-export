@@ -184,9 +184,9 @@ The power supply connector for 1.0 and 1.1 is a single column of pins described 
 {| class="wikitable"
 ! Pin || Usage
 |-
-| Pin 1 || POWOK
+| Pin 1 || PowOK
 |-
-| Pin 2 || POWON
+| Pin 2 || PowON
 |-
 | Pin 3 || GND
 |-
