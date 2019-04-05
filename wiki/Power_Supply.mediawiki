@@ -210,7 +210,7 @@ The power supply connector for 1.0 & 1.1 is a single column of pins described by
 |}
 
 === Xbox 1.2 to 1.5 ===
-The connector for the 1.2 -> 1.5 Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 1 being the top right pin. The top being the side closest to the back of the Xbox.
+The connector for the 1.2 to 1.5 Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 1 being the top right pin. The top being the side closest to the back of the Xbox.
 
 {| class="wikitable"
 ! Pin Column 1 || Usage || Pin Column 2 || Usage
@@ -237,7 +237,7 @@ The connector for the 1.2 -> 1.5 Xbox is two columns. Pin 1, Column 1 being the 
 |}
 
 === Xbox 1.6+ ===
-The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 2 being the top right pin. The top being the side closest to the back of the Xbox. This is the same connector as a 1.2 -> 1.5 xbox, with a different pinout. {{citation needed|reason=Need to validate this pinout on an actual machine, I don't have one to test.}}
+The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being the top left pin. Pin 1, Column 2 being the top right pin. The top being the side closest to the back of the Xbox. This is the same connector as a 1.2 to 1.5 xbox, with a different pinout. {{citation needed|reason=Need to validate this pinout on an actual machine, I don't have one to test.}}
 
 {| class="wikitable"
 ! Pin Column 1 || Usage || Pin Column 2 || Usage

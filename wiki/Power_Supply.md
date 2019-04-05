@@ -187,7 +187,7 @@ the back of the Xbox.
 
 ### Xbox 1.2 to 1.5
 
-The connector for the 1.2 -&gt; 1.5 Xbox is two columns. Pin 1, Column 1
+The connector for the 1.2 to 1.5 Xbox is two columns. Pin 1, Column 1
 being the top left pin. Pin 1, Column 1 being the top right pin. The top
 being the side closest to the back of the Xbox.
 
@@ -209,7 +209,7 @@ being the side closest to the back of the Xbox.
 The connector for the 1.6+ Xbox is two columns. Pin 1, Column 1 being
 the top left pin. Pin 1, Column 2 being the top right pin. The top being
 the side closest to the back of the Xbox. This is the same connector as
-a 1.2 -&gt; 1.5 xbox, with a different pinout.
+a 1.2 to 1.5 xbox, with a different pinout.
 
 | Pin Column 1 | Usage       | Pin Column 2 | Usage |
 |--------------|-------------|--------------|-------|
