@@ -40,7 +40,7 @@ Here a list of patents that might be related to the original Xbox:
     <https://www.google.com/patents/US8493326> “Controller with
     removably attachable text input device” (an early keypad, later
     revered to by the 360 keypad patent)
--   Filed 2003-05-09 by Micorsoft:
+-   Filed 0023-05-09 by Micorsoft:
     <https://www.google.com/patents/US7116311> "Embedded text input "
     (reffered to by the 360 chatpad)
 -   Filed 2006-07-03 by Micorsoft:
@@ -72,6 +72,18 @@ Here a list of patents that might be related to the original Xbox:
 -   Filed 2001-04-30 by Microsoft:
     <https://www.google.com/patents/US20020160654> “Breakaway cable
     connector” (filed by Microsofts attorneys)
+-   Filed 2004-22-02 by Microsoft:
+    <https://patents.google.com/patent/US7303476> “Method and apparatus
+    for creating and playing soundtracks in a gaming system”
+-   Filed 2002-05-16 by Microsoft:
+    <https://patents.google.com/patent/US6935959> “Use of multiple
+    player real-time voice communications on a gaming device”
+-   Filed 2001-03-09 by Microsoft:
+    <https://patents.google.com/patent/US7218739B2> “Multiple user
+    authentication for online console-based gaming”
+-   Filed 2005-03-09 by Microsoft:
+    <https://patents.google.com/patent/US7811174B2> “Method and
+    apparatus for managing data in a gaming system”
 
 Possibly unrelated :
 

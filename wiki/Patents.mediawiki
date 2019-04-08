@@ -11,7 +11,7 @@ Here a list of patents that might be related to the original Xbox:
 * Filed 2001-01-11 by Microsoft: https://www.google.com/patents/USD452534 "Portion of an electronic housing" (not a dupe, its the top X shape in detail)
 * Filed 2001-01-11 by Microsoft: https://www.google.com/patents/USD451513 "Computer input device" (describes the original Xbox controller, a.k.a. : "the Duke")
 * Filed 2003-05-09 by Microsoft: https://www.google.com/patents/US8493326 "Controller with removably attachable text input device" (an early keypad, later revered to by the 360 keypad patent)
-* Filed 2003-05-09 by Micorsoft: https://www.google.com/patents/US7116311 "Embedded text input " (reffered to by the 360 chatpad)
+* Filed 0023-05-09 by Micorsoft: https://www.google.com/patents/US7116311 "Embedded text input " (reffered to by the 360 chatpad)
 * Filed 2006-07-03 by Micorsoft: https://www.google.com/patents/US7804484 "Embedded text input " (probably a corrected version of US7116311, reffered to by the 360 chatpad, a picture of the "Baretta" chatpad, https://assemblergames.com/threads/xbox-chatpad-unreleased.54523/
 * Filed 2001-06-19 by Nvidia: https://www.google.com/patents/US6870540 "System, method and computer program product for a programmable pixel processing model with instruction set"
 * Filed 2002-06-07 by Microsoft: https://www.google.com/patents/US6907522 "Use of hashing in a secure boot loader" (mentions "NV2A")
@@ -20,6 +20,10 @@ Here a list of patents that might be related to the original Xbox:
 * Filed 2005-01-07 by Microsoft: https://www.google.com/patents/US7676840 "Use of hashing in a secure boot loader" (a continuation of patent US6907522)
 * Filed 2005-05-17 by Nvidia: https://www.google.com/patents/US7793029 "Translation device apparatus for configuring printed circuit board connectors " (describes coupling two PCI Express connectors, possibly for the secondary Chihiro board, mentions "Xbox")
 * Filed 2001-04-30 by Microsoft: https://www.google.com/patents/US20020160654 "Breakaway cable connector" (filed by Microsofts attorneys)
+* Filed 2004-22-02 by Microsoft: https://patents.google.com/patent/US7303476 "Method and apparatus for creating and playing soundtracks in a gaming system"
+* Filed 2002-05-16 by Microsoft: https://patents.google.com/patent/US6935959 "Use of multiple player real-time voice communications on a gaming device"
+* Filed 2001-03-09 by Microsoft: https://patents.google.com/patent/US7218739B2 "Multiple user authentication for online console-based gaming"
+* Filed 2005-03-09 by Microsoft: https://patents.google.com/patent/US7811174B2 "Method and apparatus for managing data in a gaming system"
 
 Possibly unrelated :
 * Filed 1989-12-29 by Dolby Laboratories: https://www.google.com/patents/US5109417 "Low bit rate transform coder, decoder, and encoder/decoder for high-quality audio"
