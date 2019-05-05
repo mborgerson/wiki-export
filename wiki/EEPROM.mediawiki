@@ -365,11 +365,11 @@ When the Xbox reads from the FACTORY_SETTINGS or the USER_SETTINGS section of th
 )
 {
     const uint32_t bitmask = 0xFFFFFFFF;
-    const uint32_t num_dwords = section_data_length >> 2;
     uint64_t checksum = 0;
     uint32_t carry_count = 0;
 
-    for(uint32_t loop_count = num_dwords; loop_count > 0; loop_count--) {
+    // Process the data in 32 bit steps
+    for(unsigned int i = 0; i < section_data_length / 4; i++) {
         checksum += *section_data;
         if(checksum > bitmask) {
             carry_count++;
