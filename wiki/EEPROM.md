@@ -12,111 +12,105 @@ address 0x54. Parts of the EEPROM are encrypted using
 Contents
 --------
 
-| Start | End  | Notes                                                                                                                                                                     |
-|-------|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                                                                                                           |
-| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                                                                                                               |
-| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                                                                                     |
-| 0x2C  | 0x2F | RC4 Encrypted Region code                                                                                                                                                 
-                                                                                                                                                                              
-   -   0x01 = North America                                                                                                                                                   
-   -   0x02 = Japan                                                                                                                                                           
-   -   0x04 = Europe & Australia                                                                                                                                              |
-| 0x30  | 0x33 | Checksum2 - Checksum of next 44 (0x2C) bytes (0x34 - 0x5F)<sup>\*</sup>                                                                                                   |
-| 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                                                                                  |
-| 0x40  | 0x45 | Ethernet MAC address (Microsoft Xbox - 00:50:F2:xx:xx:xx)                                                                                                                 |
-| 0x46  | 0x47 | Unknown Padding ?                                                                                                                                                         |
-| 0x48  | 0x57 | Online Key ?                                                                                                                                                              |
-| 0x58  | 0x5B | Video Standard                                                                                                                                                            
-                                                                                                                                                                              
-   -   0x00000000 = not set (INVALID)                                                                                                                                         
-   -   0x00400100 = NTSC-M                                                                                                                                                    
-   -   0x00400200 = NTSC-J                                                                                                                                                    
-   -   0x00800300 = PAL-I                                                                                                                                                     
-   -   0x00400400 = PAL-M                                                                                                                                                     |
-| 0x5C  | 0x5F | Unknown Padding ?                                                                                                                                                         |
-| 0x60  | 0x63 | Checksum3 - Checksum of the next 92 (0x5C) bytes (0x64 - 0xBF)<sup>\*</sup>                                                                                               |
-| 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x00000168)                                                          |
-| 0x68  | 0x6B | Standard Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CST\\0, ACST)                                                                                 |
-| 0x6C  | 0x6F | Daylight Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CDT\\0, ACDT)                                                                                 |
-| 0x70  | 0x77 | Unknown Padding ?                                                                                                                                                         |
-| 0x78  | 0x7B | Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                                                                                               |
-| 0x7C  | 0x7F | Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                                                                                       |
-| 0x80  | 0x87 | Unknown Padding ?                                                                                                                                                         |
-| 0x88  | 0x8B | Standard Timezone Bias; if not DST, 0 (0x00000000) minute time adjust                                                                                                     |
-| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute time adjust                                                                                                   |
-| 0x90  | 0x93 | Language ID (0 = not set) 1 byte at offset 0x90 data 4-byte aligned adds the 3 remaining bytes of 0x00                                                                    
-                                                                                                                                                                              
-   | Language   | EEPROM Value @ 0x90 |                                                                                                                                       
-   |------------|---------------------|                                                                                                                                       
-   | English    | 0x01                |                                                                                                                                       
-   | Japanese   | 0x02                |                                                                                                                                       
-   | German     | 0x03                |                                                                                                                                       
-   | French     | 0x04                |                                                                                                                                       
-   | Spanish    | 0x05                |                                                                                                                                       
-   | Italian    | 0x06                |                                                                                                                                       
-   | Korean     | 0x07                |                                                                                                                                       
-   | Chinese    | 0x08                |                                                                                                                                       
-   | Portuguese | 0x09                |                                                                                                                                       |
-| 0x94  | 0x97 | Video Settings                                                                                                                                                            
-                                                                                                                                                                              
-   Offset 0x96:                                                                                                                                                               
-                                                                                                                                                                              
-   -   0x??=Normal                                                                                                                                                            
-   -   0xB0=Widescreen                                                                                                                                                        
-   -   0xB4=Letterbox                                                                                                                                                         |
-| 0x98  | 0x9B | Audio Settings                                                                                                                                                            |
-| 0x9C  | 0x9F | Games Parental Control (0 = Max rating) 1 byte at offset 0x9C data 4-byte aligned adds the 3 remaining bytes of 0x00                                                      
-                                                                                                                                                                              
-   | Xbox Game Rating          | EEPROM Value @ 0x9C |                                                                                                                        
-   |---------------------------|---------------------|                                                                                                                        
-   | (RP) Rating Pending (Max) | 0x00                |                                                                                                                        
-   | (AO) Adults Only          | 0x01                |                                                                                                                        
-   | (M) Mature                | 0x02                |                                                                                                                        
-   | (T) Teen                  | 0x03                |                                                                                                                        
-   | (E) Everyone              | 0x04                |                                                                                                                        
-   | (K-A) Kids to Adults      | 0x05                |                                                                                                                        
-   | (EC) Early Childhood      | 0x06                |                                                                                                                        |
-| 0xA0  | 0xA3 | Parental Control Passcode; 4 button sequence (each key stored in a nibble)                                                                                                
-                                                                                                                                                                              
-   -   0x1 = or                                                                                                                                                               
-   -   0x2 = or                                                                                                                                                               
-   -   0x3 = or                                                                                                                                                               
-   -   0x4 = or                                                                                                                                                               
-   -   0x5 =                                                                                                                                                                  
-   -   0x6 =                                                                                                                                                                  
-   -   0x7 =                                                                                                                                                                  
-   -   0x8 =                                                                                                                                                                  
-   -   0xB =                                                                                                                                                                  
-   -   0xC =                                                                                                                                                                  
-   -   0 = Disabled                                                                                                                                                           
-                                                                                                                                                                              
-   Note:                                                                                                                                                                      
-                                                                                                                                                                              
-   -   EEPROM offset 0xA0: `23 14 00 00`                                                                                                                                      
-   -   Little Endian value 0x00001423.                                                                                                                                        
-   -   The pass code is D-pad directions up (0x1), right (0x4), down (0x2), left (0x3).                                                                                       
-   -   Pass code is only 2 bytes not 4, each button is stored as a nibble in the word. First button in the most significant nibble and last in the least significant nibble.  
-   -   Data in the EEPROM is aligned to double word (4-byte) boundaries. Thus, the two extra bytes at 0xA2 and 0xA3 of 0x00.                                                  |
-| 0xA4  | 0xA7 | Movies Parental Control (0 = Max rating) only 1 byte necessary, the 3 remaining bytes for multiple of 4-byte data alignment                                               
-                                                                                                                                                                              
-   | Xbox Movie Rating | EEPROM Value @ 0xA4 |                                                                                                                                
-   |-------------------|---------------------|                                                                                                                                
-   | 8 (Max)           | 0x00                |                                                                                                                                
-   | 7 (NC-17)         | 0x01                |                                                                                                                                
-   | 6 (R)             | 0x02                |                                                                                                                                
-   | 5                 | 0x03                |                                                                                                                                
-   | 4 (PG-13)         | 0x04                |                                                                                                                                
-   | 3 (PG)            | 0x05                |                                                                                                                                
-   | 2                 | 0x06                |                                                                                                                                
-   | 1 (G)             | 0x07                |                                                                                                                                |
-| 0xA8  | 0xAB | XBOX Live IP Address..                                                                                                                                                    |
-| 0xAC  | 0xAF | XBOX Live DNS Server..                                                                                                                                                    |
-| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                                                                                                               |
-| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                                                                                                                   |
-| 0xB8  | 0xBB | Other XBLive settings ?                                                                                                                                                   |
-| 0xBC  | 0xBF | DVD Playback Kit Zone                                                                                                                                                     |
-| 0xC0  | 0xFF | Unknown Codes / History ? do not change any values in this region                                                                                                         |
+| Start | End  | Notes                                                                                                                                                                                                                                             |
+|-------|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0x00  | 0x13 | HMAC\_SHA1 Hash                                                                                                                                                                                                                                   |
+| 0x14  | 0x1B | RC4 Encrypted Confounder ??                                                                                                                                                                                                                       |
+| 0x1C  | 0x2B | RC4 Encrypted HDD key                                                                                                                                                                                                                             |
+| 0x2C  | 0x2F | RC4 Encrypted Region code                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                      
+   -   0x00000001 = North America                                                                                                                                                                                                                     
+   -   0x00000002 = Japan                                                                                                                                                                                                                             
+   -   0x00000004 = Europe & Australia                                                                                                                                                                                                                
+   -   0x80000000 = Manufacturing plant                                                                                                                                                                                                               |
+| 0x30  | 0x33 | Checksum2 - Checksum of next 44 (0x2C) bytes (0x34 - 0x5F)<sup>\*</sup>                                                                                                                                                                           |
+| 0x34  | 0x3F | Xbox serial number - (ASCII chars 0x30 - 0x39 to match each digit in SN)                                                                                                                                                                          |
+| 0x40  | 0x45 | Ethernet MAC address (Microsoft Xbox - 00:50:F2:xx:xx:xx) This is the MAC address of the Ethernet hardware, which has been [issued by the IEEE](https://web.archive.org/web/20100617020733/http://standards.ieee.org/regauth/oui/oui_public.txt). |
+| 0x46  | 0x47 | Unknown Padding ?                                                                                                                                                                                                                                 |
+| 0x48  | 0x57 | Online Key ?                                                                                                                                                                                                                                      |
+| 0x58  | 0x5B | Video Standard                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+   -   0x00000000 = not set (INVALID)                                                                                                                                                                                                                 
+   -   0x00400100 = NTSC-M                                                                                                                                                                                                                            
+   -   0x00400200 = NTSC-J                                                                                                                                                                                                                            
+   -   0x00800300 = PAL-I                                                                                                                                                                                                                             
+   -   0x00400400 = PAL-M                                                                                                                                                                                                                             |
+| 0x5C  | 0x5F | Unknown Padding ?                                                                                                                                                                                                                                 |
+| 0x60  | 0x63 | Checksum3 - Checksum of the next 92 (0x5C) bytes (0x64 - 0xBF)<sup>\*</sup>                                                                                                                                                                       |
+| 0x64  | 0x67 | Zone Bias - Offset in \# minutes to subtract from GMT time (e.g., for GMT-06 Central; 6hr = 360min = 0x00000168)                                                                                                                                  |
+| 0x68  | 0x6B | Standard Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CST\\0, ACST)                                                                                                                                                         |
+| 0x6C  | 0x6F | Daylight Timezone Name: 4 characters, NULL fill remainder if shorter (e.g., CDT\\0, ACDT)                                                                                                                                                         |
+| 0x70  | 0x77 | Unknown Padding ?                                                                                                                                                                                                                                 |
+| 0x78  | 0x7B | Standard Time Starts 10-05-00-02 (Month-Day-DayOfWeek-Hour)                                                                                                                                                                                       |
+| 0x7C  | 0x7F | Daylight Savings Time Starts 04-01-00-02 (Month-Day-DayOfWeek-Hour)                                                                                                                                                                               |
+| 0x80  | 0x87 | Unknown Padding ?                                                                                                                                                                                                                                 |
+| 0x88  | 0x8B | Standard Timezone Bias; if not DST, 0 (0x00000000) minute time adjust                                                                                                                                                                             |
+| 0x8C  | 0x8F | Daylight Savings Time Bias; if DST, -60 (0xFFFFFFC4) minute time adjust                                                                                                                                                                           |
+| 0x90  | 0x93 | Language ID (0 = not set)                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                      
+   -   0x00000001 = English                                                                                                                                                                                                                           
+   -   0x00000002 = Japanese                                                                                                                                                                                                                          
+   -   0x00000003 = German                                                                                                                                                                                                                            
+   -   0x00000004 = French                                                                                                                                                                                                                            
+   -   0x00000005 = Spanish                                                                                                                                                                                                                           
+   -   0x00000006 = Italian                                                                                                                                                                                                                           
+   -   0x00000007 = Korean                                                                                                                                                                                                                            
+   -   0x00000008 = Chinese                                                                                                                                                                                                                           
+   -   0x00000009 = Portuguese                                                                                                                                                                                                                        |
+| 0x94  | 0x97 | Video Settings                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                      
+   Offset 0x96:                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                      
+   -   0x??=Normal                                                                                                                                                                                                                                    
+   -   0xB0=Widescreen                                                                                                                                                                                                                                
+   -   0xB4=Letterbox                                                                                                                                                                                                                                 |
+| 0x98  | 0x9B | Audio Settings                                                                                                                                                                                                                                    |
+| 0x9C  | 0x9F | Games Parental Control (0 = Max rating)                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                      
+   -   0x00000000 = Rating Pending (RP)                                                                                                                                                                                                               
+   -   0x00000001 = Adults Only (AO)                                                                                                                                                                                                                  
+   -   0x00000002 = Mature (M)                                                                                                                                                                                                                        
+   -   0x00000003 = Teen (T)                                                                                                                                                                                                                          
+   -   0x00000004 = Everyone (E)                                                                                                                                                                                                                      
+   -   0x00000005 = Kids to Adults (K-A)                                                                                                                                                                                                              
+   -   0x00000006 = Early Childhood (EC)                                                                                                                                                                                                              |
+| 0xA0  | 0xA3 | Parental Control Passcode; 4 button sequence (each key stored in a nibble)                                                                                                                                                                        
+                                                                                                                                                                                                                                                      
+   -   0x1 = or                                                                                                                                                                                                                                       
+   -   0x2 = or                                                                                                                                                                                                                                       
+   -   0x3 = or                                                                                                                                                                                                                                       
+   -   0x4 = or                                                                                                                                                                                                                                       
+   -   0x5 =                                                                                                                                                                                                                                          
+   -   0x6 =                                                                                                                                                                                                                                          
+   -   0x7 =                                                                                                                                                                                                                                          
+   -   0x8 =                                                                                                                                                                                                                                          
+   -   0xB =                                                                                                                                                                                                                                          
+   -   0xC =                                                                                                                                                                                                                                          
+   -   0x0 = Disabled                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                      
+   *Note*:                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                      
+   -   A passcode 0x00001423 is D-pad directions up (0x1), right (0x4), down (0x2), left (0x3).                                                                                                                                                       
+   -   Pass code only uses the lower 16 bits; each button is stored as a nibble in the word. First button in the most significant nibble and last in the least significant nibble.                                                                    |
+| 0xA4  | 0xA7 | Movies Parental Control (0 = Max rating)                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                      
+   -   0x00000001 = Adults Only (NC-17)                                                                                                                                                                                                               
+   -   0x00000002 = Restricted (R)                                                                                                                                                                                                                    
+   -   0x00000004 = Parents Strongly Cautioned (PG-13)                                                                                                                                                                                                
+   -   0x00000005 = Parental Guidance Suggested (PG)                                                                                                                                                                                                  
+   -   0x00000007 = General Audiences (G)                                                                                                                                                                                                             |
+| 0xA8  | 0xAB | XBOX Live IP Address..                                                                                                                                                                                                                            |
+| 0xAC  | 0xAF | XBOX Live DNS Server..                                                                                                                                                                                                                            |
+| 0xB0  | 0xB3 | XBOX Live Gateway Address..                                                                                                                                                                                                                       |
+| 0xB4  | 0xB7 | XBOX Live Subnet Mask..                                                                                                                                                                                                                           |
+| 0xB8  | 0xBB | Other XBLive settings ?                                                                                                                                                                                                                           |
+| 0xBC  | 0xBF | DVD Playback Kit Zone                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                      
+   -   0x00000000 = None                                                                                                                                                                                                                              
+   -   0x00000001 = Region 1                                                                                                                                                                                                                          
+   -   ...                                                                                                                                                                                                                                            
+   -   0x00000006 = Region 6                                                                                                                                                                                                                          |
+| 0xC0  | 0xFF | Unknown Codes / History ? do not change any values in this range                                                                                                                                                                                  |
 ||
 
 Note: Info in above table comes from XKUtils
@@ -155,38 +149,6 @@ The HMAC HDD Key
 
 The HMAC HDD Key is generated out of the first 48 bytes. This section
 has been identified clearly.
-
-The Region Code
----------------
-
-This DWORD is encrypted. It corresponds to the region code in the XBE
-header:
-
-|            |                     |
-|------------|---------------------|
-| 0x00000001 | North America       |
-| 0x00000002 | Japan               |
-| 0x00000004 | Europe / Australia  |
-| 0x80000000 | Manufacturing plant |
-
-The MAC address
----------------
-
-This is the MAC address of the Ethernet hardware, which has been [issued
-by the
-IEEE](https://web.archive.org/web/20100617020733/http://standards.ieee.org/regauth/oui/oui_public.txt).
-
-DVD Region
-----------
-
-This DWORD corresponds to the region code for playback of DVD movies:
-
-|            |          |
-|------------|----------|
-| 0x00000000 | None     |
-| 0x00000001 | Region 1 |
-| ...        | ...      |
-| 0x00000006 | Region 6 |
 
 Checksum Algorithm
 ------------------
