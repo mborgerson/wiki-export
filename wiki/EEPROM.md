@@ -200,27 +200,32 @@ following code snippet over the area the checksum covers:
       *
       * Rewritten to ANSI C by David Pye (dmp@davidmpye.dyndns.org)
       *
-      * Thanks! */
-     void EepromCRC(unsigned char *crc, unsigned char *data, long dataLen) {
-             unsigned char* CRC_Data = (unsigned char *)malloc(dataLen+4);
-             int pos=0;
-             memset(crc,0x00,4);
+      * Adapted for XboxDevWiki
+      */
+     uint32_t EepromCRC(unsigned char *data, long dataLen) {
+
+             // Initialize result to zero
+             uint8_t crc[4] = { 0x00, 0x00, 0x00, 0x00 };
      
-             memset(CRC_Data,0x00, dataLen+4);
              //Circle shift input data one byte right
-             memcpy(CRC_Data + 0x01 , data, dataLen-1);
-             memcpy(CRC_Data, data + dataLen-1, 0x01);
+             unsigned char* CRC_Data = (unsigned char *)malloc(dataLen + 4);
+             memset(CRC_Data, 0x00, dataLen + 4);
+             memcpy(CRC_Data + 0x01 , data, dataLen - 1);
+             memcpy(CRC_Data, data + dataLen - 1, 0x01);
      
-             for (pos=0; pos&lt;4; ++pos) {
+             // Calculate checksum
+             for (unsigned int i = 0; i < 4; i++) {
                      unsigned short CRCPosVal = 0xFFFF;
-                     unsigned long l;
-                     for (l=pos; l&lt;dataLen; l+=4) {
+                     for (unsigned long l = i; l < dataLen; l += 4) {
                              CRCPosVal -= *(unsigned short*)(&amp;CRC_Data[l]);
                      }
-                     CRCPosVal &amp;= 0xFF00;
-                     crc[pos] = (unsigned char) (CRCPosVal &gt;&gt; 8);
+                     CRCPosVal &= 0xFF00;
+                     crc[i] = (unsigned char) (CRCPosVal << 8);
              }
+
              free(CRC_Data);
+
+             return *(uint32_t*)&checksum;
      }
 
 Read Checksum Algorithm
