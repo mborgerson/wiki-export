@@ -17,8 +17,7 @@ The time slot used for the first color in a cycle depends on when
 (specific timing TBD) the SMBus set led command was executed relative to
 the PIC startup, therefore we cannot easily predict which color gets the
 additional 20 ms via emulation at the moment; what we can assume however
-is each full pattern takes 740 ms and each emulated blink should take
-185 ms to account for the 20 ms delay evenly dispersed throughout.
+is each full cycle takes 740 ms.
 
 An LED cycle can be interrupted (specific timing TBD) but the currently
 shown color is displayed for its full time slot before honoring the new
