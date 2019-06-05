@@ -776,47 +776,63 @@ Device Status:     0x0000
 
 === USB Descriptors ===
 
-From http://www.yaronet.com/topics/154490-steel-battalion-controller-homemade#post-15
-
-<pre>bcdUSB:             0x0110
-bDeviceClass:         0x00
-bDeviceSubClass:      0x00
-bDeviceProtocol:      0x00
-bMaxPacketSize0:      0x08 (8)
-idVendor:           0x0A7B
-idProduct:          0xD000
-bcdDevice:          0x0100
-iManufacturer:        0x00
-iProduct:             0x00
-iSerialNumber:        0x00
-bNumConfigurations:   0x01
-
-ConnectionStatus: DeviceConnected
-Current Config Value: 0x00
-Device Bus Speed:     Full
-Device Address:       0x03
-Open Pipes:              0
-
-Configuration Descriptor:
-wTotalLength:       0x0020
-bNumInterfaces:       0x01
-bConfigurationValue:  0x01
-iConfiguration:       0x00
-bmAttributes:         0x80 (Bus Powered )
-MaxPower:             0xFA (500 Ma)
-
-Interface Descriptor:
-bInterfaceNumber:     0x00
-bAlternateSetting:    0x00
-bNumEndpoints:        0x02
-bInterfaceClass:      0x58
-bInterfaceSubClass:   0x42
-bInterfaceProtocol:   0x00
-iInterface:           0x00
-
-Endpoint Descriptor:
-bEndpointAddress:     0x82
-Transfer Type:   Interrupt</pre>
+<pre>
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               1.10
+  bDeviceClass            0 (Defined at Interface level)
+  bDeviceSubClass         0
+  bDeviceProtocol         0
+  bMaxPacketSize0         8
+  idVendor           0x0a7b
+  idProduct          0xd000
+  bcdDevice            1.00
+  iManufacturer           0
+  iProduct                0
+  iSerial                 0
+  bNumConfigurations      1
+  Configuration Descriptor:
+    bLength                 9
+    bDescriptorType         2
+    wTotalLength           32
+    bNumInterfaces          1
+    bConfigurationValue     1
+    iConfiguration          0
+    bmAttributes         0x80
+      (Bus Powered)
+    MaxPower              500mA
+    Interface Descriptor:
+      bLength                 9
+      bDescriptorType         4
+      bInterfaceNumber        0
+      bAlternateSetting       0
+      bNumEndpoints           2
+      bInterfaceClass        88 Xbox
+      bInterfaceSubClass     66 Controller
+      bInterfaceProtocol      0
+      iInterface              0
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x82  EP 2 IN
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0020  1x 32 bytes
+        bInterval               4
+      Endpoint Descriptor:
+        bLength                 7
+        bDescriptorType         5
+        bEndpointAddress     0x01  EP 1 OUT
+        bmAttributes            3
+          Transfer Type            Interrupt
+          Synch Type               None
+          Usage Type               Data
+        wMaxPacketSize     0x0020  1x 32 bytes
+        bInterval               4
+</pre>
 
 === Controller to Xbox ===
 
