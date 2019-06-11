@@ -31,6 +31,7 @@ __NOTOC__
 * [[DVD Drive]]
 ** [[Xbox Game Disc]]
 * [[Hard Drive]]
+** [[Config Sector]]
 * [[USB]]
 ** [[Xbox Input Devices]]
 ** [[Xbox Memory Unit]]

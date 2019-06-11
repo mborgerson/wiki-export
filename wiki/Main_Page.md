@@ -38,6 +38,7 @@ Hardware
 -   [DVD Drive](/wiki/DVD_Drive "wikilink")
     -   [Xbox Game Disc](/wiki/Xbox_Game_Disc "wikilink")
 -   [Hard Drive](/wiki/Hard_Drive "wikilink")
+    -   [Config Sector](/wiki/Config_Sector "wikilink")
 -   [USB](/wiki/USB "wikilink")
     -   [Xbox Input Devices](/wiki/Xbox_Input_Devices "wikilink")
     -   [Xbox Memory Unit](/wiki/Xbox_Memory_Unit "wikilink")
