@@ -6,7 +6,7 @@ The Xbox hard disk contains multiple partitions. Unlike a PC, which typically co
 
 {| class="wikitable"
 |-
-! Drive Letter
+! Drive Letter{{FIXME|reason=This is under control of running application / variation even in official products?}}
 ! Description
 ! Offset (bytes)
 ! Size (bytes)
@@ -14,7 +14,7 @@ The Xbox hard disk contains multiple partitions. Unlike a PC, which typically co
 ! Device Object (MS Retail Kernel)
 |-
 | N/A
-| Config Area
+| [[Config Sector|Config Area]]
 | 0x00000000
 | 0x00080000
 | Fixed Structure
@@ -57,8 +57,8 @@ The Xbox hard disk contains multiple partitions. Unlike a PC, which typically co
 |}
 
 ::::::::::::::::::::::''side note: CD/DVD Drive "D:" <=> "\Device\CdRom0"''
-::::::::::::::::::::::''and usually: added Drive "F:" <=> "\Device\Harddisk0\Partition6"''
-:::::::::::::::::::::::::&nbsp;&nbsp;&nbsp;''added Drive "G:" <=> "\Device\Harddisk0\Partition7"''
+::::::::::::::::::::::''and usually: added Drive "F:" <=> "\Device\Harddisk0\Partition6"''{{FIXME|reason=Mark as unofficial / homebrew}}
+:::::::::::::::::::::::::&nbsp;&nbsp;&nbsp;''added Drive "G:" <=> "\Device\Harddisk0\Partition7"''{{FIXME|reason=Mark as unofficial / homebrew}}
 
 '''Debug/Devkit HDD:'''
 {| class="wikitable"

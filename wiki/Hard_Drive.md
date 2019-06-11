@@ -21,14 +21,14 @@ partition layout. The file system used on the Xbox is
 [FATX](/wiki/FATX "wikilink"), a variant of FAT16/32 developed by Microsoft
 specifically for the Xbox.
 
-| Drive Letter | Description | Offset (bytes) | Size (bytes) | Filesystem      | Device Object (MS Retail Kernel) |
-|--------------|-------------|----------------|--------------|-----------------|----------------------------------|
-| N/A          | Config Area | 0x00000000     | 0x00080000   | Fixed Structure | N/A                              |
-| X            | Game Cache  | 0x00080000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition3  |
-| Y            | Game Cache  | 0x2ee80000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition4  |
-| Z            | Game Cache  | 0x5dc80000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition5  |
-| C            | System      | 0x8ca80000     | 0x1f400000   | FATX            | \\Device\\Harddisk0\\Partition2  |
-| E            | Data        | 0xabe80000     | 0x131f00000  | FATX            | \\Device\\Harddisk0\\Partition1  |
+| Drive Letter | Description                             | Offset (bytes) | Size (bytes) | Filesystem      | Device Object (MS Retail Kernel) |
+|--------------|-----------------------------------------|----------------|--------------|-----------------|----------------------------------|
+| N/A          | [Config Area](/wiki/Config_Sector "wikilink") | 0x00000000     | 0x00080000   | Fixed Structure | N/A                              |
+| X            | Game Cache                              | 0x00080000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition3  |
+| Y            | Game Cache                              | 0x2ee80000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition4  |
+| Z            | Game Cache                              | 0x5dc80000     | 0x2ee00000   | FATX            | \\Device\\Harddisk0\\Partition5  |
+| C            | System                                  | 0x8ca80000     | 0x1f400000   | FATX            | \\Device\\Harddisk0\\Partition2  |
+| E            | Data                                    | 0xabe80000     | 0x131f00000  | FATX            | \\Device\\Harddisk0\\Partition1  |
 
   
   
