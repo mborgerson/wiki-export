@@ -38,5 +38,6 @@ References
 ----------
 
 -   [Xbox live (accounts, xqemu and MU) | ASSEMbler - Home of the
-    obscure (archive.org)](https://archive.fo/c9s3B)
+    obscure
+    (archive.org)](https://web.archive.org/web/20190604222002/https://assemblergames.com/threads/xbox-live-accounts-xqemu-and-mu.60352/)
 
