@@ -130,6 +130,13 @@ This is the MAC address of the Ethernet hardware, which has been [https://web.ar
 | 0x98
 | 0x9B
 | Audio Settings
+* Channels
+* 0x00000000 = Stereo
+* 0x00000001 = Mono
+* 0x00000002 = Surround
+* Flags
+* 0x00010000 = Enable AC3
+* 0x00020000 = Enable DTS
 |-
 | 0x9C
 | 0x9F
