@@ -119,7 +119,7 @@ This is the MAC address of the Ethernet hardware, which has been [https://web.ar
 | Video Settings
 
 Offset 0x96:
-* 0x??=Normal{{FIXME}}
+* 0x00=Normal
 * 0xB0=Widescreen
 * 0xB4=Letterbox
 |-
