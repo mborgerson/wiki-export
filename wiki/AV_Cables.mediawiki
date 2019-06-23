@@ -5,7 +5,7 @@ Microsoft has released a handful of '''Audio Video Cables''' for the [[Xbox]], w
 {{FIXME|reason=Describe the connector here - is it a standard part? add an image, add the pinout graphics (didn't copy from elsewhere because clearly microsoft copyright)}}
 
 === Pinout ===
-The following table gives the pinout in the way it is are arranged on the '''XBOX AVIP''' cables, or '''AV Packs'''. The other end is reversed and on the console.
+The following table gives the pinout in the way it is arranged on the '''XBOX AVIP''' cables, or '''AV Packs'''. The other end is reversed and on the console.
 
 {| class="wikitable"
 !Description

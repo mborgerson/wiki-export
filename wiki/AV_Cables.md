@@ -14,9 +14,9 @@ Connector
 
 ### Pinout
 
-The following table gives the pinout in the way it is are arranged on
-the **XBOX AVIP** cables, or **AV Packs**. The other end is reversed and
-on the console.
+The following table gives the pinout in the way it is arranged on the
+**XBOX AVIP** cables, or **AV Packs**. The other end is reversed and on
+the console.
 
 | Description | Audio Right | Audio Right GND | SPDIF Digital Audio | V-Sync (VGA Mode) | Mode GND      | Mode GND      | Mode GND      | GND    | Variable | 9 GND    | Variable | 11 GND   |
 |-------------|-------------|-----------------|---------------------|-------------------|---------------|---------------|---------------|--------|----------|----------|----------|----------|
