@@ -1,6 +1,22 @@
 
 
 == Texture formats ==
+
+* [http://download.nvidia.com/developer/OpenGL_Texture_Formats/nv_ogl_texture_formats.pdf List of implemented texture formats, according to NVIDIA]
+
+=== Texture decoding / sampling ===
+
+The textures are sampled by the texture shader portion of [[NV2A/Pixel_Combiner]].
+
+==== Texture signedness ====
+
+Each component of the texture can be either signed (two's-complement) or unsigned.[https://github.com/xqemu/xqemu/issues/75]{{FIXME|reason=Research and collect information here}}.
+
+==== Texture filtering ====
+
+The GPU implements the standard texture filters as known from OpenGL.
+In addition, it supports convolution filters[https://github.com/xqemu/xqemu/issues/238]{{FIXME|reason=Research and collect information here}}.
+
 == Framebuffer formats ==
 
 [[Category:NV2A]]
