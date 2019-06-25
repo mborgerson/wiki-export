@@ -164,8 +164,8 @@ Texturing modes
 <tr class="even">
 <td><p>0x09</p></td>
 <td><p>PS_TEXTUREMODES_DOT_ST</p></td>
-<td><p>texm3x2tex?</p></td>
-<td><p>DOT_PRODUCT_NV</p></td>
+<td><p>texm3x2tex</p></td>
+<td><p>DOT_PRODUCT_TEXTURE_2D_NV</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -175,8 +175,8 @@ Texturing modes
 <tr class="odd">
 <td><p>0x0A</p></td>
 <td><p>PS_TEXTUREMODES_DOT_ZW</p></td>
-<td><p>texm3x2tex?</p></td>
-<td><p>DOT_PRODUCT_NV</p></td>
+<td><p>texm3x2depth</p></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -197,7 +197,7 @@ Texturing modes
 <tr class="odd">
 <td><p>0x0C</p></td>
 <td><p>PS_TEXTUREMODES_DOT_RFLCT_SPEC</p></td>
-<td><p>texm3x3spec</p></td>
+<td><p>texm3x3vspec</p></td>
 <td><p>DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV</p></td>
 <td></td>
 <td></td>
@@ -283,6 +283,10 @@ PIX from the Microsoft XDK provides great debugging capabilities.
 References and links
 --------------------
 
+-   [Overview about programmable fragment
+    shading](http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf)
+-   [Code from nvparse (NVIDIA SDK 9.52) in nxdk, which handles shader
+    to OpenGL
+    conversion](https://github.com/XboxDev/nxdk/blob/77b5de45f0c64e70f2ff68248873448d5edccc71/tools/fp20compiler/ps1.0_program.cpp#L227)
 -   <http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf>
--   <http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf>
 

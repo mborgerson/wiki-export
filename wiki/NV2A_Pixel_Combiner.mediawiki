@@ -142,8 +142,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x09
 |PS_TEXTUREMODES_DOT_ST
-|texm3x2tex?{{citation needed}}
-|DOT_PRODUCT_NV{{citation needed}}
+|texm3x2tex
+|DOT_PRODUCT_TEXTURE_2D_NV
 |{{no}}
 |{{no}}
 |{{yes}}
@@ -152,8 +152,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0A
 |PS_TEXTUREMODES_DOT_ZW
-|texm3x2tex?{{citation needed}}
-|DOT_PRODUCT_NV{{citation needed}}
+|texm3x2depth
+|
 |{{no}}
 |{{no}}
 |{{yes}}
@@ -172,8 +172,8 @@ It is also not yet known how exactly conversion or negation of these types would
 |-
 |0x0C
 |PS_TEXTUREMODES_DOT_RFLCT_SPEC
-|texm3x3spec
-|DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV{{citation needed}}
+|texm3x3vspec
+|DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV
 |{{no}}
 |{{no}}
 |{{no}}
@@ -247,7 +247,8 @@ PIX from the Microsoft XDK provides great debugging capabilities.
 
 == References and links ==
 
+* [http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf Overview about programmable fragment shading] <!-- Mirror: https://www.nvidia.com/object/programmable_texture_blending.html -->
+* [https://github.com/XboxDev/nxdk/blob/77b5de45f0c64e70f2ff68248873448d5edccc71/tools/fp20compiler/ps1.0_program.cpp#L227 Code from nvparse (NVIDIA SDK 9.52) in nxdk, which handles shader to OpenGL conversion]
 * http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf
-* http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf
 
 [[Category:NV2A]]
