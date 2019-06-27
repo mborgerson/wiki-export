@@ -19,4 +19,33 @@ In addition, it supports convolution filters[https://github.com/xqemu/xqemu/issu
 
 == Framebuffer formats ==
 
+Surfaces are rendertargets of the GPU, they can be swizzled or linear.
+Additionally, they can be optimized using tiling{{FIXME|reason=Document tiling}}.
+
+{{FIXME|reason=Link to nouveau documentation instead; this section shouldn't be here}}
+
+=== Color ===
+
+Z and O stand for Zero and One respectively. These fields will always be cleared (Zero) or all bis will be set (One).
+
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X1R5G5B5_Z1R5G5B5
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X1R5G5B5_O1R5G5B5
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_R5G6B5
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X8R8G8B8_Z8R8G8B8
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X8R8G8B8_O8R8G8B8
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X1A7R8G8B8_Z1A7R8G8B8
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_X1A7R8G8B8_O1A7R8G8B8
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_A8R8G8B8
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_B8 (not suitable for displaying)
+* NV097_SET_SURFACE_FORMAT_COLOR_LE_G8B8 (not suitable for displaying)
+
+=== Depth ===
+
+The depth buffer can be configured to be fixed point or floating point.
+
+Additionally, the GPU allows hardware Z-Buffer compression{{FIXME|reason=Document compression}}.
+
+* NV097_SET_SURFACE_FORMAT_ZETA_Z16
+* NV097_SET_SURFACE_FORMAT_ZETA_Z24S8
+
 [[Category:NV2A]]
