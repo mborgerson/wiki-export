@@ -170,7 +170,7 @@ the title.
 -   Game ratings
 -   Disk number
 -   Version
--   LAN key raw data
+-   LAN key raw data used for [System Link](/wiki/System_Link "wikilink")
 -   Signature key raw data (used to sign savefiles)
 -   Alternate signature keys
 -   Original size of the certificate
