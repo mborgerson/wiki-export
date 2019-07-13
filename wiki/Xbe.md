@@ -154,6 +154,29 @@ The .rdata section contains the [kernel thunk table](/wiki/Kernel "wikilink").
 The ordinals in the table are to be resolved to the kernel's actual
 calling routine, when loaded.
 
+Certificate
+-----------
+
+Each Xbox executable has a certificate that contains information about
+the title.
+
+-   Time and date when the certificate was created
+-   Title ID
+-   Title name
+-   Alternative title IDs
+-   Allowed types of media that the executable can be run from (HD, DVD,
+    CD, etc.)
+-   Game region
+-   Game ratings
+-   Disk number
+-   Version
+-   LAN key raw data
+-   Signature key raw data (used to sign savefiles)
+-   Alternate signature keys
+-   Original size of the certificate
+-   Online service name (not present in early executables)
+-   Run time security flags (not present in early executables)
+
 Xbox Alpha executable format
 ----------------------------
 
