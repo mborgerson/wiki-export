@@ -1,5 +1,31 @@
 {{DISPLAYTITLE:XBE}}
-XBE files (XBox Executable) are the main files that are executed in the Xbox System. In official games, these files are created by game developers, and then signed by Microsoft.
+XBE files (XBox Executable) are the main files that are executed in the Xbox System. In official games, these files are created by game developers, and then signed by Microsoft. 
+
+The file structure is adapted from Windows PE files. It is very similar, however it has important changes for the Xbox. The file is composed of an image header, a certificate, a collection of section headers, a collection of library versions, thread local storage data, a Microsoft bitmap, and the sections that contain the code and resources.
+
+= Image Header = 
+
+The image header contains the information that describes where the other parts of the executable are located within the file, and how the executable should be treated and loaded. It always starts with the "Magic number" 0x48454258, which translates to "XBEH". Right after the header comes the digital signature for the executable. This signature is 256 bytes. 
+
+= Certificate =
+
+Each Xbox executable has a certificate that contains information about the title.
+
+* Time and date when the certificate was created
+* Title ID
+* Title name
+* Alternative title IDs
+* Allowed types of media that the executable can be run from (HD, DVD, CD, etc.)
+* Game region
+* Game ratings
+* Disk number
+* Version
+* LAN key raw data used for [[System Link]]
+* Signature key raw data (used to sign [[Xbox Savegame System|savegames]])
+* Alternate signature keys
+* Original size of the certificate
+* Online service name (not present in early executables)
+* Run time security flags (not present in early executables)
 
 === Title ID ===
 
@@ -222,37 +248,21 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 * DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game number 004, version 04, region Europe)
 * Title ID: 4D530004 [MS-004]
 
-=== Sections ===
+= Sections =
+The sections are described by the section headers. The section headers start right after the certificate and contain describe where in the file the actual sections reside. Each header contains a hash of the section that is checked by the Xbox to ensure the integrity of the sections. 
 
-==== .text ====
+At least two sections are always present in an Xbox executable: .text and .rdata. There might be more sections that contain either executable code or resources such as images, text, etc.
+
+== .text ==
 
 The .text section contains all x86 subroutines to be executed by the [[CPU|processor]].
 
-==== .rdata ====
+== .rdata ==
 
 The .rdata section contains the [[Kernel|kernel thunk table]]. The ordinals in the table are to be resolved to the kernel's actual calling routine, when loaded.
 
-== Certificate ==
 
-Each Xbox executable has a certificate that contains information about the title.
-
-* Time and date when the certificate was created
-* Title ID
-* Title name
-* Alternative title IDs
-* Allowed types of media that the executable can be run from (HD, DVD, CD, etc.)
-* Game region
-* Game ratings
-* Disk number
-* Version
-* LAN key raw data used for [[System Link]]
-* Signature key raw data (used to sign [[Xbox Savegame System|savegames]])
-* Alternate signature keys
-* Original size of the certificate
-* Online service name (not present in early executables)
-* Run time security flags (not present in early executables)
-
-== Xbox Alpha executable format==
+= Xbox Alpha executable format=
 
 Binaries from early Xbox development (Alpha units), are using a different binary format. There are no known public tools that can read them.
 Known differences include that the first bytes of the file are 'XE' instead the 'XBEH' from the final XBE format. The format is rumored to be more like the Windows PE format.{{citation needed}}
