@@ -171,7 +171,8 @@ the title.
 -   Disk number
 -   Version
 -   LAN key raw data used for [System Link](/wiki/System_Link "wikilink")
--   Signature key raw data (used to sign savefiles)
+-   Signature key raw data (used to sign
+    [savegames](/wiki/Xbox_Savegame_System "wikilink"))
 -   Alternate signature keys
 -   Original size of the certificate
 -   Online service name (not present in early executables)

@@ -246,7 +246,7 @@ Each Xbox executable has a certificate that contains information about the title
 * Disk number
 * Version
 * LAN key raw data used for [[System Link]]
-* Signature key raw data (used to sign savefiles)
+* Signature key raw data (used to sign [[Xbox Savegame System|savegames]])
 * Alternate signature keys
 * Original size of the certificate
 * Online service name (not present in early executables)
