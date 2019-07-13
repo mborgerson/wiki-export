@@ -248,6 +248,38 @@ The game number is expressed in 3 decimal digits here which suggests that it wil
 * DMI and mastering code: MS00404E (Meaning: publisher Microsoft, game number 004, version 04, region Europe)
 * Title ID: 4D530004 [MS-004]
 
+== Allowed media types ==
+Allowed media types off which the executable is allowed to be run from. The following values are known:
+{| class=wikitable
+! Media type !! Value
+|-
+|HARD_DISK        || 0x00000001
+|-
+|DVD_X2           || 0x00000002
+|-
+|DVD_CD           || 0x00000004
+|-
+|CD               || 0x00000008
+|-
+|DVD_5_RO         || 0x00000010
+|-
+|DVD_9_RO         || 0x00000020
+|-
+|DVD_5_RW         || 0x00000040
+|-
+|DVD_9_RW         || 0x00000080
+|-
+|DONGLE           || 0x00000100
+|-
+|MEDIA_BOARD      || 0x00000200
+|-
+|NONSECURE_HARD_DISK || 0x40000000
+|-
+|NONSECURE_MODE   || 0x80000000
+|-
+|MEDIA_MASK       || 0x00FFFFFF
+|}
+
 = Sections =
 The sections are described by the section headers. The section headers start right after the certificate and contain describe where in the file the actual sections reside. Each header contains a hash of the section that is checked by the Xbox to ensure the integrity of the sections. 
 

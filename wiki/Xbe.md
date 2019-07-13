@@ -181,6 +181,28 @@ here which suggests that it will always be below 1000.
     number 004, version 04, region Europe)
 -   Title ID: 4D530004 \[MS-004\]
 
+Allowed media types
+-------------------
+
+Allowed media types off which the executable is allowed to be run from.
+The following values are known:
+
+| Media type            | Value      |
+|-----------------------|------------|
+| HARD\_DISK            | 0x00000001 |
+| DVD\_X2               | 0x00000002 |
+| DVD\_CD               | 0x00000004 |
+| CD                    | 0x00000008 |
+| DVD\_5\_RO            | 0x00000010 |
+| DVD\_9\_RO            | 0x00000020 |
+| DVD\_5\_RW            | 0x00000040 |
+| DVD\_9\_RW            | 0x00000080 |
+| DONGLE                | 0x00000100 |
+| MEDIA\_BOARD          | 0x00000200 |
+| NONSECURE\_HARD\_DISK | 0x40000000 |
+| NONSECURE\_MODE       | 0x80000000 |
+| MEDIA\_MASK           | 0x00FFFFFF |
+
 Sections
 ========
 
