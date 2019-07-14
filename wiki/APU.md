@@ -32,9 +32,9 @@ the DSPs typically uses programmable DMA to transfer the finished audio
 to system memory, where it can be read by other components (such as
 AC97).
 
-All audio processing by the APU is typically done in 24bit PCM. An APU
-audio frame is 32 samples long with a duration of 0.ms at 48000Hz,
-giving a total of 1500 frames per second. The MIXBUF therefore holds
+All audio processing by the APU is typically done in 24bit PCM at
+48000Hz. An APU audio frame is 32 samples long. Therefore, there are
+1500 frames per second, with a duration of 0.ms each. The MIXBUF holds
 1024 samples (32 channels \* 32 samples/channel).
 
 ### Glossary
