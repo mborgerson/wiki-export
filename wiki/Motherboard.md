@@ -12,7 +12,7 @@ Xbox 1.0
 
 <img src="Xbox-Motherboard-BR.jpg" title="Xbox Version 1.0 Motherboard" alt="Xbox Version 1.0 Motherboard" width="400" />
 
-The following table is based on a Xbox 1.0 retail board.
+The following table is based on an Xbox 1.0 retail board.
 
 | | Device | Loc. | Part Number              | Manufacture                | Description                                                   |
 |----------|------|--------------------------|----------------------------|---------------------------------------------------------------|

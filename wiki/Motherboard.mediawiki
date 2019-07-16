@@ -4,7 +4,7 @@ For a list of differences between these mainboards, also see [[Hardware Revision
 
 [[File:Xbox-Motherboard-BR.jpg|400px|thumb|right|Xbox Version 1.0 Motherboard]]
 
-The following table is based on a Xbox 1.0{{citation needed}} retail board.
+The following table is based on an Xbox 1.0{{citation needed}} retail board.
 
 {| class="wikitable"
 !| Device
