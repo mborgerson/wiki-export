@@ -12,7 +12,7 @@ chip](/wiki/Wikipedia:Flash_memory "wikilink") and connected to the
 bus.
 
 The Flash ROM is mapped at 0xFFF00000 (if the ROM is 1 MiB; 0xFFFC0000,
-if the ROM is 256 kiB) into the but the Xbox kernel.
+if the ROM is 256 kiB) in the Xbox kernel.
 
 For the content of the Microsoft flash images see
 [BIOS](/wiki/BIOS "wikilink").
