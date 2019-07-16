@@ -1,6 +1,6 @@
 The Xbox has 64MB Memory. This could be expanded to 128MB of memory (and the motherboard has empty spots where these could have been) but no games took advantage of it. The debug Xbox and the Chihiro both contained 128MB Memory.
 
-The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash ROM]] and [[MCPX ROM]] are also mapped to memory at the top 16 MiB and the top 512 Bytes respectively. On Debug Xboxs and Chihiro, only the Flash is mapped as they don't contain an MCPX ROM.
+The memory was shared between the CPU and GPU. On the retail Xbox, the [[Flash ROM]] and [[MCPX ROM]] are also mapped to memory at the top 16 MiB and the top 512 Bytes respectively. However on Debug Xboxes and Chihiro, only the Flash is mapped as they don't contain an MCPX ROM.
 
 {| class="wikitable" style="text-align: center;"
 ! Memory Type
