@@ -6,7 +6,7 @@ tags:
  - NV2A
 ---
 
-The northbridge of the chipset, and is the GPU
+The NV2A is the northbridge of the chipset, as well as the GPU.
 
 GPU
 ---
