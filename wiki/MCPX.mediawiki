@@ -1,4 +1,4 @@
-The MCPX is the southbridge chip of the Xbox chipset by Nvidia. It contains the sound processors ([[APU]] and [[ACI]]) and also the USB, PCI, IDE, etc, controllers [https://web.archive.org/web/20010418214256/http://www.ga-hardware.com:80/preview.cfm?id=NVIDIAMCP], [https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml].
+The MCPX is the southbridge chip of the Xbox chipset made by Nvidia. It contains the sound processors ([[APU]] and [[ACI]]) as well as the USB, PCI, IDE, etc, controllers [https://web.archive.org/web/20010418214256/http://www.ga-hardware.com:80/preview.cfm?id=NVIDIAMCP], [https://web.archive.org/web/20010410003338/http://www.nvnews.net/previews/mcpx/mcpx.shtml].
 
 == ROM ==
 
