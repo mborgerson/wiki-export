@@ -18,12 +18,13 @@ The MCPX is home to the secret [MCPX ROM](/wiki/MCPX_ROM "wikilink").
 Pin L21: PC Speaker
 -------------------
 
-The MCPX has PC Speaker pin which can be controlled using [the standard
-PC Speaker interface](https://wiki.osdev.org/PC_Speaker). However, no
-actual speaker is connected to the pin, so while the signal exists,
-there will be no audible sound on a stock Xbox.
+The MCPX has a PC Speaker pin which can be controlled using [the
+standard PC Speaker interface](https://wiki.osdev.org/PC_Speaker).
+However, no actual speaker is connected to the pin, so while the signal
+exists, there will be no audible sound on a stock Xbox.
 
-A speaker can be soldered to this pin and to make the signal audible
+A speaker can be soldered to this pin in order to make the signal
+audible
 [3](https://www.youtube.com/watch?v=Te4MSskbBEE)[4](https://github.com/0DaveX/beep/)
 
 The original Microsoft code does not drive the PC Speaker at all, so
