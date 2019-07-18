@@ -29,3 +29,4 @@ The [https://www.manualslib.com/products/Focus-Fs454-211664.html Focus FS454] wa
 The Xcalibur video encoder is a custom chip manufactured for Microsoft. It was first used in Xbox hardware revision 1.6. Unfortunately, there is no official programming documentation available for this chip. It seems the only way to find out more is through reverse-engineering techniques.
 
 Xboxes that contain the Xcalibur encoder have the firmware ROM and the PIC physically integrated into another custom chip, named Xyclops.
+the ROM is put on the LPC bus [[https://web.archive.org/web/20180401042955/http://www.eurasia.nu/wiki/index.php/XboxXyclopsEventLog]]

@@ -82,4 +82,6 @@ no official programming documentation available for this chip. It seems
 the only way to find out more is through reverse-engineering techniques.
 
 Xboxes that contain the Xcalibur encoder have the firmware ROM and the
-PIC physically integrated into another custom chip, named Xyclops.
+PIC physically integrated into another custom chip, named Xyclops. the
+ROM is put on the LPC bus
+<https://web.archive.org/web/20180401042955/http://www.eurasia.nu/wiki/index.php/XboxXyclopsEventLog>
