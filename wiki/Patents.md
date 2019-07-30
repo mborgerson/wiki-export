@@ -40,7 +40,7 @@ Here a list of patents that might be related to the original Xbox:
     <https://www.google.com/patents/US8493326> “Controller with
     removably attachable text input device” (an early keypad, later
     revered to by the 360 keypad patent)
--   Filed 0023-05-09 by Micorsoft:
+-   Filed 2003-05-09 by Micorsoft:
     <https://www.google.com/patents/US7116311> "Embedded text input "
     (reffered to by the 360 chatpad)
 -   Filed 2006-07-03 by Micorsoft:
