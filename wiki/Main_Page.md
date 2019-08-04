@@ -77,7 +77,7 @@ Development Kits and Tools
     -   [Xbox Live](/wiki/Xbox_Live "wikilink")
     -   [Xbox Debug Monitor](/wiki/Xbox_Debug_Monitor "wikilink")
     -   [Xbox Neighborhood](/wiki/Xbox_Neighborhood "wikilink")
-    -   [ Xbox Kernel Debugging](/wiki/Kernel_Debug "wikilink")
+    -   [Xbox Kernel Debugging](/wiki/Kernel_Debug "wikilink")
 
 Games
 -----

@@ -65,7 +65,7 @@ __NOTOC__
 ** [[Xbox Live]]
 ** [[Xbox Debug Monitor]]
 ** [[Xbox Neighborhood]]
-** [[Kernel_Debug| Xbox Kernel Debugging]]
+** [[Kernel_Debug|Xbox Kernel Debugging]]
 
 == Games ==
 * [[:Category:Games|Games]]
