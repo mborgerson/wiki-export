@@ -44,11 +44,41 @@ Pins
     exist. On 1.6 hardware, this pin is connected to the power button.
     Shorting it to ground will turn the Xbox on and off.
 -   **LFRAME\#** (3) - LPC start-of-cycle signal. On 1.3-1.5 hardware,
-    disconnected. Can be reconnected though. ([LFRAME\#
-    reconnect](/wiki/LFRAME#_reconnect "wikilink"))
+    this pin is disconnected. See [LFRAME\#
+    reconnect](/wiki/LPC_Debug_Port#LFRAME.23_reconnect "wikilink") for a
+    possible reconnection.
 -   **LCLK** (1) - 33MHz LPC clock signal; same as PCICLK.
 
 The debug port lacks the optional LDRQ\#, SERIRQ, CLKRUN\#, PME\#,
 LPCPD\#, and LSMI\# signals. This means peripherals connected to the
 debug port cannot utilize interrupt, DMA, bus mastering, or power
 management features.
+
+LFRAME\# reconnect
+------------------
+
+It is possible to reconnect this pin on 1.3-1.5 hardware by tapping the
+MCPX soldermask and soldering a jumper wire to the disconnected pin on
+the LPC port.
+
+Result should look similar to this in the end:
+[1](https://photos.app.goo.gl/wUvAwm3KS3ePSnYj8) (Image provided by
+dreimer)
+
+In the end, we can gain kernel debug output from Super I/O serial again:
+[2](https://cdn.discordapp.com/attachments/603568167255801861/607540322871803904/unknown.png)
+(Image provided by dreimer)
+
+This reconnection was tested on 1.3 hardware, and should work on 1.4 and
+1.5 revisions, as the MCPX is the same.
+
+References
+----------
+
+-   [LFRAME-for-v1\_3-and-up.pdf](https://web.archive.org/web/20140805105234/http://dwl.xbox-scene.com/~xbox/xbox-scene/tutorials/LFRAME-for-v1_3-and-up.pdf)
+    An old manual from Xbox-Scene that explains how to reconnect
+    **LFRAME\#** (3) for a Cheapmod. This we don't care about, but is
+    what we want for [kernel debugging](/wiki/Kernel_Debug "wikilink") via
+    [Super I/O](/wiki/Super_I/O "wikilink"). Thanks to dreimer for finding and
+    testing this documentation.
+
