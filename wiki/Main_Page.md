@@ -25,6 +25,7 @@ Hardware
 -   [Memory](/wiki/Memory "wikilink")
 -   [Flash ROM](/wiki/Flash_ROM "wikilink")
 -   [MCPX](/wiki/MCPX "wikilink")
+    -   [LPC](/wiki/LPC_Debug_Port "wikilink")
     -   [APU](/wiki/APU "wikilink")
         -   [DSP](/wiki/DSP "wikilink")
     -   [ACI](/wiki/ACI "wikilink")

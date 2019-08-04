@@ -18,6 +18,7 @@ __NOTOC__
 * [[Memory]]
 * [[Flash ROM]]
 * [[MCPX]]
+** [[LPC_Debug_Port|LPC]]
 ** [[APU]]
 *** [[DSP]]
 ** [[ACI]]
