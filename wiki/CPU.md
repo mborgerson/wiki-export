@@ -21,8 +21,9 @@ References
 -   [Mobile Intel® Celeron® Processor (0.18μ and 0.13μ) Specification
     Update](https://www.intel.com/content/dam/support/us/en/documents/processors/mobile/celeron/sb/24542154.pdf)
     This document should contain the errata for the Xbox CPU.
--   Wikipedia - List of Intel Pentium III microprocessors -
-    [1](https://en.wikipedia.org/wiki/List_of_Intel_Pentium_III_microprocessors#%22Coppermine-128%22_(180_nm))
+-   [Wikipedia - List of Intel Pentium III microprocessors: “Coppermine”
+    (180
+    nm)](https://en.wikipedia.org/wiki/List_of_Intel_Pentium_III_microprocessors#%22Coppermine%22_(180_nm))
 -   [CPU upgrading adapter for a Microsoft XboxTM game
     machine](https://www.google.com/patents/US20050282621) US Patent
     Application 20050282621 by Friendtech, filed 2003-08-21.
