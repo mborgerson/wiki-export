@@ -263,6 +263,25 @@ The connector for the 1.6 Xbox is two columns. Pin 1, Column 1 being the top lef
 | Pin 10 || +5V Standby || Pin 10 || +12V (0.532V Standby)
 |}
 
+== Real world power usage ==
+
+As measured on a v1.0 Xbox with a Fluke 376 clamp meter around the PSU to Motherboard connections. HDD not included in measurements and the DVD drive and controller rumble were not used.
+{| class="wikitable"
+!  || Power off || Unleash X || Halo 2 Menu || DolphinClassic || Maximum Observed
+|-
+| GND || 0A || 5.9A || 5.8A || 6.0A || 6.2A
+|-
+| 3.3v Standby || 0.2A || 0.3A || 0.3A || 0.3A || 0.3A
+|-
+| 3.3v || 0A || 2.5A || 2.2A || 2.7A || 2.7A
+|-
+| 5v || 0A || 7.1A || 7.2A || 7.0A || 7.2A
+|-
+| 12v || 0A || 0.3A || 0.4A || 0.4A || 0.4A
+|-
+|}
+TODO: Measure other hardware revisions and more usage scenarios.
+
 == Related links ==
 
 * [http://brandonw.net/consoles/xbox/ Describes how to turn an ATX Power-Supply to Xbox PSU]
