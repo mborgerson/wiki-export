@@ -228,9 +228,11 @@ side closest to the back of the Xbox. This is the same connector as a
 Real world power usage
 ----------------------
 
-As measured on a v1.0 Xbox with a Fluke 376 clamp meter around the PSU
-to Motherboard connections. HDD not included in measurements and the DVD
-drive and controller rumble were not used.
+DC amperage as measured on a v1.0 Xbox with a Fluke 376 clamp meter
+around the PSU to Motherboard connections. HDD not included in
+measurements and the DVD drive and controller rumble were not used.
+
+AC wattage measured at 120v 60Hz using a 'KILL A WATT' meter.
 
 |              | Power off | Unleash X | Halo 2 Menu | DolphinClassic | Maximum Observed |
 |--------------|-----------|-----------|-------------|----------------|------------------|
@@ -239,6 +241,7 @@ drive and controller rumble were not used.
 | 3.3v         | 0A        | 2.5A      | 2.2A        | 2.7A           | 2.7A             |
 | 5v           | 0A        | 7.1A      | 7.2A        | 7.0A           | 7.2A             |
 | 12v          | 0A        | 0.3A      | 0.4A        | 0.4A           | 0.4A             |
+| ~120VAC      | 2.1W      | 67.4W     | 65.3W       | 68.5W          | 68.5W            |
 ||
 
 TODO: Measure other hardware revisions and more usage scenarios.
