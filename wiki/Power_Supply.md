@@ -232,7 +232,8 @@ DC amperage as measured on a v1.0 Xbox with a Fluke 376 clamp meter
 around the PSU to Motherboard connections. HDD not included in
 measurements and the DVD drive and controller rumble were not used.
 
-AC wattage measured at 120v 60Hz using a 'KILL A WATT' meter.
+AC wattage measured at 120v 60Hz using a 'KILL A WATT' meter includes
+all system components but DVD drive and controller rumble were not used.
 
 |              | Power off | Unleash X | Halo 2 Menu | DolphinClassic | Maximum Observed |
 |--------------|-----------|-----------|-------------|----------------|------------------|
