@@ -228,14 +228,13 @@ side closest to the back of the Xbox. This is the same connector as a
 Real world power usage
 ----------------------
 
-DC amperage as measured on a v1.0 Xbox with a Fluke 376 clamp meter
-around the PSU to Motherboard connections. HDD not included in
-measurements and the DVD drive and controller rumble were not used.
+DC amperage as measured on with a Fluke 376 clamp meter around the PSU
+to Motherboard connections. HDD not included in measurements and the DVD
+drive and controller rumble were not used. AC wattage measured at 120v
+60Hz using a 'KILL A WATT' meter includes all system components but DVD
+drive and controller rumble were not used.
 
-AC wattage measured at 120v 60Hz using a 'KILL A WATT' meter includes
-all system components but DVD drive and controller rumble were not used.
-
-|              | Power off | Unleash X | Halo 2 Menu | DolphinClassic | Maximum Observed |
+| XBOX V1.0    | Power off | Unleash X | Halo 2 Menu | DolphinClassic | Maximum Observed |
 |--------------|-----------|-----------|-------------|----------------|------------------|
 | GND          | 0A        | 5.9A      | 5.8A        | 6.0A           | 6.2A             |
 | 3.3v Standby | 0.2A      | 0.3A      | 0.3A        | 0.3A           | 0.3A             |
@@ -243,6 +242,16 @@ all system components but DVD drive and controller rumble were not used.
 | 5v           | 0A        | 7.1A      | 7.2A        | 7.0A           | 7.2A             |
 | 12v          | 0A        | 0.3A      | 0.4A        | 0.4A           | 0.4A             |
 | ~120VAC      | 2.1W      | 67.4W     | 65.3W       | 68.5W          | 68.5W            |
+||
+
+| XBOX V1.3    | Power off | Unleash X | Halo 2 Menu | DolphinClassic | Maximum Observed |
+|--------------|-----------|-----------|-------------|----------------|------------------|
+| GND          | 0A        | 8.5A      | 8.1A        | 8.6A           | 8.6A             |
+| 3.3v Standby | 0.4A      | 0.5A      | 0.5A        | 0.5A           | 0.5A             |
+| 3.3v         | 0A        | 3.7A      | 2.9A        | 3.7A           | 3.7A             |
+| 5v           | 0A        | 6.4A      | 6.7A        | 6.5A           | 6.7A             |
+| 12v          | 0A        | 0.2A      | 0.3A        | 0.2A           | 0.3A             |
+| ~120VAC      | 1.2W      | 64.6W     | 62.2W       | 64.3W          | 64.6W            |
 ||
 
 TODO: Measure other hardware revisions and more usage scenarios.
