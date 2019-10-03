@@ -41,7 +41,7 @@ The following table is based on an Xbox 1.0 retail board.
 
 ### USB Daughterboard
 
-<img src="USB_Daughterboard_front.png" title="Xbox Version 1.0 USB Daughterboard" alt="Xbox Version 1.0 USB Daughterboard" width="400" />
+<img src="USB_Daughterboard_front.png" title="Xbox Version 1.0 USB Daughterboard" alt="Xbox Version 1.0 USB Daughterboard" width="100" />
 
 | | Device | Part Number | Manufacture       | Description                                           |
 |----------|-------------|-------------------|-------------------------------------------------------|

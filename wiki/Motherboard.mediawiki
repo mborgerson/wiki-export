@@ -148,7 +148,7 @@ The following table is based on an Xbox 1.0{{citation needed}} retail board.
 
 === USB Daughterboard ===
 
-[[File:USB_Daughterboard_front.png|400px|thumb|right|Xbox Version 1.0 USB Daughterboard]]
+[[File:USB_Daughterboard_front.png|100px|thumb|right|Xbox Version 1.0 USB Daughterboard]]
 
 {| class="wikitable"
 !| Device
