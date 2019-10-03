@@ -259,7 +259,7 @@ TODO: Measure other hardware revisions and more usage scenarios.
 Related links
 -------------
 
--   [Eevblog takes a look inside the replacement coord as well as the
+-   [EEVblog takes a look inside the replacement coord as well as the
     power supply itself](https://www.youtube.com/watch?v=LBoF1e5YDdQ)
 -   [Describes how to turn an ATX Power-Supply to Xbox
     PSU](http://brandonw.net/consoles/xbox/)

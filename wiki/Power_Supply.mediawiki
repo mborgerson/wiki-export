@@ -306,6 +306,6 @@ TODO: Measure other hardware revisions and more usage scenarios.
 
 == Related links ==
 
-* [https://www.youtube.com/watch?v=LBoF1e5YDdQ Eevblog takes a look inside the replacement coord as well as the power supply itself]
+* [https://www.youtube.com/watch?v=LBoF1e5YDdQ EEVblog takes a look inside the replacement coord as well as the power supply itself]
 * [http://brandonw.net/consoles/xbox/ Describes how to turn an ATX Power-Supply to Xbox PSU]
 * [https://web.archive.org/web/20060421203325/https://msmvps.com/blogs/matthewsoft/archive/2005/02/17/36238.aspx Powercord recall blog with exacter cable numbers]
