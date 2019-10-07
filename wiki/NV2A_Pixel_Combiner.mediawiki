@@ -152,7 +152,7 @@ The NV2A implements at least parts of the following OpenGL extensions:
 |0x0A
 |PS_TEXTUREMODES_DOT_ZW
 |texm3x2depth
-|
+|DOT_PRODUCT_DEPTH_REPLACE_NV
 |{{no}}
 |{{no}}
 |{{yes}}
