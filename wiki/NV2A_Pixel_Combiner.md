@@ -287,8 +287,8 @@ There's some additional features and oddities.
 
 ### DISCARD and ZERO are the same register
 
-On NV2A the ZERO and DISCARD register are the same index: writes are
-discard / reads return zero.
+On NV2A the DISCARD and ZERO register are the same index: writes are
+discarded / reads return zero.
 
 This is different from NV\_register\_combiners where 2 different
 constants are used.
