@@ -1,12 +1,3 @@
-The NV2A implements at least parts of the following OpenGL extensions:
-
-* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt NV_texture_shader]
-* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt NV_texture_shader2]
-* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt NV_texture_shader3]{{citation needed}}
-* [https://www.opengl.org/registry/specs/NV/register_combiners.txt NV_register_combiners]
-* [https://www.opengl.org/registry/specs/NV/register_combiners2.txt NV_register_combiners2]
-
-
 == Data types ==
 
 NV_texture_shader suggests that: ''"The 8-bit and 16-bit signed fixed-point types are used for signed internal texture formats, while the 9-bit signed fixed-point type is used for register combiners computations."''
@@ -37,7 +28,15 @@ This means:
 It is not known if the NV2A really implements these 3 datatypes.
 It is also not yet known how exactly conversion or negation of these types would work.
 
-== Texturing modes ==
+== Texture Shaders ==
+
+The NV2A implements at least parts of the following OpenGL extensions:
+
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader.txt NV_texture_shader]
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader2.txt NV_texture_shader2]
+* [https://www.khronos.org/registry/OpenGL/extensions/NV/NV_texture_shader3.txt NV_texture_shader3]{{citation needed}}
+
+=== Texturing modes ===
 
 {|class="wikitable"
 !ID
@@ -241,13 +240,69 @@ It is also not yet known how exactly conversion or negation of these types would
 |
 |}
 
+== Register combiners ==
+
+The NV2A implements at least parts of the following OpenGL extensions:
+
+* [https://www.opengl.org/registry/specs/NV/register_combiners.txt NV_register_combiners]
+* [https://www.opengl.org/registry/specs/NV/register_combiners2.txt NV_register_combiners2]
+
+There's some additional features and oddities.
+
+=== DISCARD and ZERO are the same register ===
+
+On NV2A the ZERO and DISCARD register are the same index: writes are discard / reads return zero.
+
+This is different from NV_register_combiners where 2 different constants are used.
+
+=== Encoding of input swizzle ===
+
+NV2A uses a single ALPHA flag to specify the swizzle of inputs:
+* 0 for <code>.rgb</code> (RGB portion only) and <code>.b</code> (ALPHA portion only).
+* 1 for <code>.aaa</code> (RGB portion only) and <code>.a</code> (ALPHA portion only).
+
+This is different from NV_register_combiners where each swizzle has its own constant.
+
+=== Per stage constant-colors ===
+
+The combiner setup switches between using the same <code>const0</code> and <code>const1</code> for all stages (<code>FACTOR#_SAME_FACTOR_ALL</code>), or using different constant-colors per stage (<code>FACTOR#_EACH_STAGE</code>).
+
+On NV2A, the final-combiner does always have unique constants (even using <code>FACTOR#_SAME_FACTOR_ALL</code>) from all other stages.
+If <code>FACTOR#_SAME_FACTOR_ALL</code> is used, the constant-colors for all other stages are taken from the very first stage.
+This setting can be controlled independently for <code>const0</code> and <code>const1</code>.
+
+This is different from NV_register_combiners2. If that GL extension isn't available / enabled, then the constants are shared between general combiner stages and the final combiner (which doesn't have unique colors then). Additionally, the GL extension can only control this for both constant-colors at the same time.
+
+=== Encoding of constant-colors ===
+
+On NV2A, the constant-colors are encoded as 8-bit unsigned int values, packed into a 32-bit ARGB value (<code>(a<<24 | r<<16 | g<<8 | b)</code>).
+
+This is different from NV_register_combiners where constant-colors are specified as floats in RGBA format.
+
+=== BLUETOALPHA in RGB portion ===
+
+NV2A has a special flag to write the blue result (RGB portion) of the A/B and C/D computations to the alpha channel of the RGB portion output register. There's no such option for the AB/CD result.
+{{FIXME|reason=Document specifics, tests proposed on https://github.com/JayFoxRox/nxdk/pull/33}}
+
+This feature isn't available in GL, probably.
+This is different from NV_register_combiners where the RGB portion always writes to <code>.rgb</code> of the output.
+
+=== Special "or" operation (MUX) modifier ===
+
+NV2A has a special flag to switch between MSB and LSB{{FIXME|reason=Unconfirmed / untested - doesn't make a lot of sense}} for the special "or" operation (MUX).
+{{FIXME|reason=Check the comparison type}}
+
+This feature isn't available in GL, probably.
+This is different from NV_register_combiners where the special "or" operation (MUX) is always doing: <code>spare0_alpha >= 0.5 ? C*D : A*B</code>.
+
 == Debugging ==
 
 PIX from the Microsoft XDK provides great debugging capabilities.
 
-== References and links ==
+=== References and links ===
 
-* [http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf Overview about programmable fragment shading] <!-- Mirror: https://www.nvidia.com/object/programmable_texture_blending.html -->
+* [http://developer.download.nvidia.com/assets/gamedev/docs/ProgrammableTextureBlending.pdf Overview about programmable texture blending] <!-- Mirror: https://www.nvidia.com/object/programmable_texture_blending.html -->
+* [http://developer.download.nvidia.com/assets/gamedev/docs/combiners.pdf Overview of register combiners]
 * [https://github.com/XboxDev/nxdk/blob/77b5de45f0c64e70f2ff68248873448d5edccc71/tools/fp20compiler/ps1.0_program.cpp#L227 Code from nvparse (NVIDIA SDK 9.52) in nxdk, which handles shader to OpenGL conversion]
 * http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf
 
