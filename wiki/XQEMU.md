@@ -12,22 +12,28 @@ The official homepage can be found at [xqemu.com](http://xqemu.com)
 Compatiblity list
 -----------------
 
-The following list was almost entirely created by [pcmaker (also known
-as John Godgames)](https://www.youtube.com/user/pcmaker2) around 2015.
-
-**There is also a [new compatibility list from
+There is a temporary compatibility list that was almost entirely created
+by [pcmaker (also known as John
+Godgames)](https://www.youtube.com/user/pcmaker2) since 2015. The
+[newest compatibility list from
 2018](https://docs.google.com/spreadsheets/d/1sVtQ9SNPathKAMCqfYtvJQP0bs0UeLzP9otPHvZDMwE/edit#gid=709879345)
-(also by pcmaker)**
+still has some problems though. You should not blindly trust these
+reports.
 
-Meaning of the status fields:
+A major issue is that the version information for some reports is
+incorrect. This means that some games are reported as working, when they
+don't work in official versions (yet). They were tested with development
+versions build by developers, using incomplete features. Some of those
+features might also not be public anymore, so you can't even repeat
+those tests. XQEMU is also under development, new features in the
+official versions might have resolved some issues, or caused new ones.
 
-| Status     | Meaning                                                                          |
-|------------|----------------------------------------------------------------------------------|
-| Nothing    | Not showing anything due to error                                                |
-| Intro      | Shows something as Intro / Menu                                                  |
-| Ingame     | Ingame (Graphical bugs)                                                          |
-| Playable\* | Partially playable or expected to be fully playable but not tested completly yet |
-| Playable   | Partially playable / Fully playable                                              |
+You should only use these compatibility reports to get a rough idea
+about the state of XQEMU and where development is heading. You can also
+search for XQEMU videos on YouTube (like “XQEMU Halo”) and you'll
+usually find something. Note that many of those videos are also made
+using development builds that aren't always public. Typically, the video
+descriptions contain more information about the used builds.
 
 XQEMU-JFR
 ---------
