@@ -57,20 +57,22 @@ management features.
 LFRAME\# reconnect
 ------------------
 
-It is possible to reconnect this pin on 1.3-1.5 hardware by tapping the
-MCPX soldermask and soldering a jumper wire to the disconnected pin on
-the LPC port.
+<img src="LFRAME-for-v1_3-and-up.png" title="Disconnected LFRAME# can be reconstructed with via found on all MCPX revisions" alt="Disconnected LFRAME# can be reconstructed with via found on all MCPX revisions" width="200" />
 
-Result should look similar to this in the end:
-[1](https://photos.app.goo.gl/wUvAwm3KS3ePSnYj8) (Image provided by
-dreimer)
+It is possible to reconnect the LFRAME\# signal to the LPC port on
+1.3-1.5 hardware by tapping the MCPX soldermask and soldering a jumper
+wire from the via to the disconnected pin on the LPC port.
+
+Result should look similar to this:
+
+<img src="Dreimer-lframe-v1-3-reconnect.jpg" title="Image provided by dreimer" alt="Image provided by dreimer" width="500" />
 
 In the end, we can gain kernel debug output from Super I/O serial again:
-[2](https://cdn.discordapp.com/attachments/603568167255801861/607540322871803904/unknown.png)
-(Image provided by dreimer)
 
-This reconnection was tested on 1.3 hardware, and should work on 1.4 and
-1.5 revisions, as the MCPX is the same.
+<img src="Dreimer-lframe-v1-3-windbg.png" title="Image provided by dreimer" alt="Image provided by dreimer" width="500" />
+
+This reconnection was tested on 1.3 hardware, and should also work with
+the later 1.4 and 1.5 revisions.
 
 References
 ----------
