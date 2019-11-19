@@ -11,41 +11,44 @@ The official XDK (Xbox Development Kit) was only released to licensed developers
 ! 3521
 | May XDK 2001
 |-
-! 3911
-| August XDK 2001 (( Final Hardware Recovery) (build on WIN2000 5. 2134/2195 ? 5.1.2258.400)(*)
+! 3911(*)
+| August XDK 2001 (( Final Hardware Recovery) (build on WIN2000 5. 2134/2195 ? 5.1.2258.400)
 |-
-! 3925
-| Retail? XDK(*)
+! 3925(*)
+| Retail? XDK
 |-
-! 3936
-| (*)
+! 3936(*)
+| 
 |-
-! 3937
-| (*)
+! 3937(*)
+| 
 |-
-! 3941
-| (*)
+! 3941(*)
+| 
 |-
-! 3948
-| (*)
+! 3944(*)
+| Seen in 5933 symbols folder
 |-
-! 3950
-| (*)
+! 3948(*)
+| 
 |-
-! 4020
+! 3950(*)
+| 
+|-
+! 4020(*)
 | Seen on an official Xbox recovery tool
 |-
-! 4034
-| (*)
+! 4034(*)
+| 
 |-
-! 4039
-| (*)
+! 4039(*)
+| 
 |-
-! 4134
-| December 2001 XDK (*)
+! 4134(*)
+| December 2001 XDK
 |-
-! 4242
-| February 2002 XDK (*)
+! 4242(*)
+| February 2002 XDK
 |-
 ! 4361
 | March 2002 XDK
