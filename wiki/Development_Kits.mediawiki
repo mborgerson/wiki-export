@@ -67,7 +67,7 @@ These are results from recovery 3521 as earlier ones did not work on the Alpha u
 * Tested Slot 4 as good
 * Tested Slot 5 as not good
 
-These might be wrong for official alphas or only for the particular motherboard that was being tested.
+These might be wrong for official alphas, or only for the particular motherboard that was being tested.
 
 == Debug ==
 Shaped and main parts consist of retail hardware with the following differences:

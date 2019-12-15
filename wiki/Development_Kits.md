@@ -117,7 +117,7 @@ Network on wrong pci lane or no screen connected (VGA or S-video)
 -   Tested Slot 4 as good
 -   Tested Slot 5 as not good
 
-These might be wrong for official alphas or only for the particular
+These might be wrong for official alphas, or only for the particular
 motherboard that was being tested.
 
 Debug
