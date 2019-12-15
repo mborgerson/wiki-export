@@ -13,10 +13,11 @@ exist:
 -   DVT4 Development Kits
 -   Debug kits
 
-Further more are differences internally from diferent MCP revisions, GPU
-revisions and board layouts. Sega Chihiro boards seem to be based on
-DVT4 Development/Debug kits. either using overproduction or on purpose
-produced MCPX-X2 as found in the development kits and debugkits.
+Further more there are differences internally from different MCPX
+revisions, and GPU revisions, to different board layouts. Sega Chihiro
+boards seem to be based on DVT4 Development/Debug kits. either using
+overproduction or on purpose produced MCPX-X2 as found in the
+development kits and debugkits.
 
 Some rare boards are found with different MCPX chips that also have a
 special port near the CPU, and a extra USB port on the backside of the
