@@ -141,7 +141,7 @@ case. According to some sources, the DVT3 cannot be updated to further
 kernels/dashboards than 3911, the lowest/oldest being 3823.1(Borman said
 this?)
 
-All functions a debug with the addition of:
+Has all the functions of a debug, with the addition of:
 
 -   [ DVD emulation](/wiki/DVD_Emulator "wikilink")
 -   [ Kernel\_Debug](/wiki/Kernel_Debugging "wikilink") over a dedicated [ IO
