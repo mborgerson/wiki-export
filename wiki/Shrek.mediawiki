@@ -9,3 +9,7 @@
 [[File:shrek-final.png|thumb|Final composition]]
 
 Shrek uses [[wikipedia:Deferred Rendering|Deferred Rendering]]. Rich Geldreich, a developer of the game, has written multiple articles about the topic[https://sites.google.com/site/richgel99/home].
+
+=== Notes ===
+
+* [https://twitter.com/richgel999/status/1208238264240361472 Tweet by Rich Geldreich about development in preparation for E3 demo of Shrek]
