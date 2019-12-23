@@ -10,6 +10,9 @@ Revisions](/wiki/Hardware_Revisions "wikilink").
 Xbox 1.0
 --------
 
+-   [Some measurements of passive components by Redherring32 (The
+    Fish)](https://docs.google.com/spreadsheets/d/1oT4OtE95sguxA5KZrlwC_XEF3nlpzrql1ESycBGPtDA/edit#gid=0)
+
 <img src="Xbox-Motherboard-BR.jpg" title="Xbox Version 1.0 Motherboard" alt="Xbox Version 1.0 Motherboard" width="400" />
 
 The following table is based on an Xbox 1.0 retail board.
@@ -41,6 +44,9 @@ The following table is based on an Xbox 1.0 retail board.
 
 ### USB Daughterboard
 
+-   [Homemade PCB remake by
+    Teufelchen](https://github.com/Teufelchen1/XBOX-USB-HUB)
+
 <img src="USB_Daughterboard_front.png" title="Xbox Version 1.0 USB Daughterboard" alt="Xbox Version 1.0 USB Daughterboard" width="100" />
 
 | | Device | Part Number | Manufacture       | Description                                           |
@@ -49,6 +55,9 @@ The following table is based on an Xbox 1.0 retail board.
 
 Xbox 1.1
 --------
+
+-   [PCB scan by
+    SICKmods](https://web.archive.org/web/20180210173816/http://diy.sickmods.net/Tutorials/Xbox1/Hi-Res_Scans/)
 
 Xbox 1.2
 --------
@@ -59,11 +68,17 @@ Xbox 1.3
 Xbox 1.4
 --------
 
+-   [PCB scan by
+    LoveMHz](https://drive.google.com/drive/folders/17s6jIVTE3YztuqDr-ZxkhhXRutcDdY9O)
+
 Xbox 1.5
 --------
 
 Xbox 1.6
 --------
+
+-   [PCB scan by
+    SICKmods](https://web.archive.org/web/20180210173816/http://diy.sickmods.net/Tutorials/Xbox1/Hi-Res_Scans/)
 
 References
 ----------

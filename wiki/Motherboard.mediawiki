@@ -2,6 +2,8 @@ For a list of differences between these mainboards, also see [[Hardware Revision
 
 == Xbox 1.0 ==
 
+* [https://docs.google.com/spreadsheets/d/1oT4OtE95sguxA5KZrlwC_XEF3nlpzrql1ESycBGPtDA/edit#gid=0 Some measurements of passive components by Redherring32 (The Fish)]{{FIXME|reason=Taken from https://discordapp.com/channels/428359196719972353/428359434230693899/592363537343447040}}
+
 [[File:Xbox-Motherboard-BR.jpg|400px|thumb|right|Xbox Version 1.0 Motherboard]]
 
 The following table is based on an Xbox 1.0{{citation needed}} retail board.
@@ -148,6 +150,8 @@ The following table is based on an Xbox 1.0{{citation needed}} retail board.
 
 === USB Daughterboard ===
 
+* [https://github.com/Teufelchen1/XBOX-USB-HUB Homemade PCB remake by Teufelchen]
+
 [[File:USB_Daughterboard_front.png|100px|thumb|right|Xbox Version 1.0 USB Daughterboard]]
 
 {| class="wikitable"
@@ -164,6 +168,8 @@ The following table is based on an Xbox 1.0{{citation needed}} retail board.
 
 == Xbox 1.1 ==
 
+* [https://web.archive.org/web/20180210173816/http://diy.sickmods.net/Tutorials/Xbox1/Hi-Res_Scans/ PCB scan by SICKmods]{{FIXME|reason=Should live in some repo or something; we also have permission to this; https://discordapp.com/channels/428359196719972353/428359434230693899/561462101214756876 / https://media.discordapp.net/attachments/428359434230693899/561462101214756874/image0.png}}
+
 {{FIXME}}
 
 == Xbox 1.2 ==
@@ -176,6 +182,8 @@ The following table is based on an Xbox 1.0{{citation needed}} retail board.
 
 == Xbox 1.4 ==
 
+* [https://drive.google.com/drive/folders/17s6jIVTE3YztuqDr-ZxkhhXRutcDdY9O PCB scan by LoveMHz]{{FIXME|reason=Should live in some repo or something}}
+
 {{FIXME}}
 
 == Xbox 1.5 ==
@@ -183,6 +191,8 @@ The following table is based on an Xbox 1.0{{citation needed}} retail board.
 {{FIXME}}
 
 == Xbox 1.6 ==
+ 
+* [https://web.archive.org/web/20180210173816/http://diy.sickmods.net/Tutorials/Xbox1/Hi-Res_Scans/ PCB scan by SICKmods]{{FIXME|reason=Should live in some repo or something; we also have permission to this; https://discordapp.com/channels/428359196719972353/428359434230693899/561462101214756876 / https://media.discordapp.net/attachments/428359434230693899/561462101214756874/image0.png}}
 
 {{FIXME}}
 
