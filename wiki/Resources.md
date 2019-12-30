@@ -64,8 +64,10 @@ History
     part starts
     20:48](https://www.youtube.com/watch?v=2VCb-y7MC5U?t=1248)
 
-Background knowledge about related topics and interesting effects
------------------------------------------------------------------
+Background knowledge about related topics
+-----------------------------------------
+
+### Graphics programming
 
 -   Meltdown 2001 (Microsoft Game development conference): [Presentation
     slides](https://web.archive.org/web/20060203201117/https://www.microsoft.com/mscorp/corpevents/meltdown2001/presentations.asp)
@@ -90,4 +92,7 @@ Background knowledge about related topics and interesting effects
 -   [Publications by Valve
     Software](https://www.valvesoftware.com/en/publications)
 -   <http://graphics.uni-konstanz.de/publikationen/Luft2006ImageEnhancementUnsharp/Luft2006ImageEnhancementUnsharp.pdf>
+-   [Masa's Column (DOUBLE-S.T.E.A.L / Wrecked
+    developer)](https://web.archive.org/web/20090518092325/http://www.daionet.gr.jp:80/~masa/column/index.html)
+-   [Blog by ryg](https://fgiesen.wordpress.com/)
 

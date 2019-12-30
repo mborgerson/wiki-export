@@ -36,7 +36,9 @@
 * [https://www.youtube.com/watch?v=_gOoI57q72M XBox Oral History Panel with Nick Baker, Todd Holmdahl, and Albert Penello (Video)]
 * [https://www.youtube.com/watch?v=2VCb-y7MC5U?t=1248 Behind the Code - Interview with Nick Baker (Video) intresting xbox part starts 20:48]
 
-== Background knowledge about related topics and interesting effects ==
+== Background knowledge about related topics ==
+
+=== Graphics programming ===
 
 * Meltdown 2001 (Microsoft Game development conference): [https://web.archive.org/web/20060203201117/https://www.microsoft.com/mscorp/corpevents/meltdown2001/presentations.asp Presentation slides]
 * GDC2001: [http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf DirectX8 Pixel Shaders]
@@ -52,3 +54,5 @@
 * https://www.gdcvault.com/play/247/CRYSIS-Next-Gen ''(Contains some parts which are also applicable to original Xbox)''
 * [https://www.valvesoftware.com/en/publications Publications by Valve Software]
 * http://graphics.uni-konstanz.de/publikationen/Luft2006ImageEnhancementUnsharp/Luft2006ImageEnhancementUnsharp.pdf
+* [https://web.archive.org/web/20090518092325/http://www.daionet.gr.jp:80/~masa/column/index.html Masa's Column (DOUBLE-S.T.E.A.L / Wrecked developer)]
+* [https://fgiesen.wordpress.com/ Blog by ryg]
