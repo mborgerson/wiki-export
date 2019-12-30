@@ -168,6 +168,10 @@ little-endian DWORDS describing the operation. Word 0 is inused.
 Related links
 -------------
 
+-   nvidia resources
+    -   [WhereIsThatVertexShaderInstruction.pdf](https://www.nvidia.com/attach/6559)
+        /
+        [WhereIsThatVertexShaderInstruction.doc](https://www.nvidia.com/attach/6560)
 -   [Code which appears to implement bit-accurate emulation of some
     instructions](https://github.com/envytools/envytools/blob/master/nvhw/pgraph_celsius_xfrm.c)
 
