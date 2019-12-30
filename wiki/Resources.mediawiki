@@ -4,6 +4,15 @@
 
 * GDC2002: [https://www.powershow.com/download/6f1ff7-NmE2O/Xbox_Launch_Lessons_Learned_powerpoint_ppt_presentation Xbox Launch: Lessons Learned] ([https://www.gdcvault.com/play/1022522/Xbox-Launch-Lessons Audio])
 
+=== Post processing ===
+
+* CEDEC2002: [https://web.archive.org/web/20031212044938/http://www.daionet.gr.jp/~masa/column/2002-09-22.html DOUBLE-S.T.E.A.L techniques] ''(Japanese)''
+* GDC2003: [https://web.archive.org/web/20031212140633/http://www.daionet.gr.jp/~masa/column/2003-03-21.html Frame Buffer Postprocessing Effects in DOUBLE-S.T.E.A.L (Wreckless)] ''(English)''
+
+=== HDR rendering ===
+
+* GDC2004: [https://web.archive.org/web/20060404103630/http://www.daionet.gr.jp/~masa/column/2004-04-04.html Practical Implementation of High Dynamic Range Rendering]
+
 === Deferred Shading ===
 
 * https://sites.google.com/site/richgel99/index#TOC-Shrek-Xbox-and-Deferred-Shading

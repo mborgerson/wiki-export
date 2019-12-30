@@ -13,6 +13,20 @@ Xbox Post-Mortems by developers
     Learned](https://www.powershow.com/download/6f1ff7-NmE2O/Xbox_Launch_Lessons_Learned_powerpoint_ppt_presentation)
     ([Audio](https://www.gdcvault.com/play/1022522/Xbox-Launch-Lessons))
 
+### Post processing
+
+-   CEDEC2002: [DOUBLE-S.T.E.A.L
+    techniques](https://web.archive.org/web/20031212044938/http://www.daionet.gr.jp/~masa/column/2002-09-22.html)
+    *(Japanese)*
+-   GDC2003: [Frame Buffer Postprocessing Effects in DOUBLE-S.T.E.A.L
+    (Wreckless)](https://web.archive.org/web/20031212140633/http://www.daionet.gr.jp/~masa/column/2003-03-21.html)
+    *(English)*
+
+### HDR rendering
+
+-   GDC2004: [Practical Implementation of High Dynamic Range
+    Rendering](https://web.archive.org/web/20060404103630/http://www.daionet.gr.jp/~masa/column/2004-04-04.html)
+
 ### Deferred Shading
 
 -   <https://sites.google.com/site/richgel99/index#TOC-Shrek-Xbox-and-Deferred-Shading>
