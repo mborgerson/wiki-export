@@ -275,6 +275,18 @@ texm3x2pad</p></td>
 </tbody>
 </table>
 
+### 0x08: PS\_TEXTUREMODES\_BRDF / texbrdf
+
+The BRDF texture shader is probably only exposed on original Xbox, but
+not in standard OpenGL or D3D drivers.
+
+These are some generic resources about BRDFs:
+
+-   [Collection of BRDF
+    information](https://math.nist.gov/~FHunt/appearance/brdf.html)
+-   [BRDF viewer](http://www-graphics.stanford.edu/~smr/brdf/bv/)
+-   [BRDF Database by Mitsubishi](https://www.merl.com/brdf/)
+
 Register combiners
 ------------------
 

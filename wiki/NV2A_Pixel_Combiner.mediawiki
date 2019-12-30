@@ -240,6 +240,19 @@ The NV2A implements at least parts of the following OpenGL extensions:
 |
 |}
 
+=== 0x08: PS_TEXTUREMODES_BRDF / texbrdf ===
+
+The BRDF texture shader is probably only exposed on original Xbox, but not in standard OpenGL or D3D drivers.
+
+These are some generic resources about BRDFs:
+
+* [https://math.nist.gov/~FHunt/appearance/brdf.html Collection of BRDF information]
+* [http://www-graphics.stanford.edu/~smr/brdf/bv/ BRDF viewer]{{FIXME|reason=Find alternative; this one is hard to compile}}
+* [https://www.merl.com/brdf/ BRDF Database by Mitsubishi]
+
+{{FIXME|reason=Describe Xbox specific BRDF texture shader}}
+{{FIXME|reason=Describe Xbox specific BRDF texture shader}}
+
 == Register combiners ==
 
 The NV2A implements at least parts of the following OpenGL extensions:
