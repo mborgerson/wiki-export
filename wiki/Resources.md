@@ -50,9 +50,11 @@ History
     part starts
     20:48](https://www.youtube.com/watch?v=2VCb-y7MC5U?t=1248)
 
-Background knowledge about related topics
------------------------------------------
+Background knowledge about related topics and interesting effects
+-----------------------------------------------------------------
 
+-   Meltdown 2001 (Microsoft Game development conference): [Presentation
+    slides](https://web.archive.org/web/20060203201117/https://www.microsoft.com/mscorp/corpevents/meltdown2001/presentations.asp)
 -   GDC2001: [DirectX8 Pixel
     Shaders](http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf)
 -   [Papers by nvidia from Xbox
@@ -66,4 +68,12 @@ Background knowledge about related topics
 -   [Tools by nvidia from Xbox
     era](http://download.nvidia.com/developer/Tools/)
 -   <http://download.nvidia.com/developer/Third_Party/>
+-   <http://iquilezles.org/www/index.htm>
+-   <https://web.archive.org/web/20150408045127/http://freespace.virgin.net/hugo.elias/>
+-   <http://www.mvps.org/directx/indexes/>
+-   <https://www.gdcvault.com/play/247/CRYSIS-Next-Gen> *(Contains some
+    parts which are also applicable to original Xbox)*
+-   [Publications by Valve
+    Software](https://www.valvesoftware.com/en/publications)
+-   <http://graphics.uni-konstanz.de/publikationen/Luft2006ImageEnhancementUnsharp/Luft2006ImageEnhancementUnsharp.pdf>
 
