@@ -7,6 +7,14 @@ layout: wiki
 Xbox Post-Mortems by developers
 -------------------------------
 
+### Xbox Launch
+
+-   GDC2002: [Xbox Launch: Lessons
+    Learned](https://www.powershow.com/download/6f1ff7-NmE2O/Xbox_Launch_Lessons_Learned_powerpoint_ppt_presentation)
+    ([Audio](https://www.gdcvault.com/play/1022522/Xbox-Launch-Lessons))
+
+### Deferred Shading
+
 -   <https://sites.google.com/site/richgel99/index#TOC-Shrek-Xbox-and-Deferred-Shading>
 -   <https://sites.google.com/site/richgel99/home>
 -   <https://sites.google.com/site/richgel99/home/xbox-1-g-buffer-attribute-packing-pixel-shader>
@@ -41,4 +49,21 @@ History
 -   [Behind the Code - Interview with Nick Baker (Video) intresting xbox
     part starts
     20:48](https://www.youtube.com/watch?v=2VCb-y7MC5U?t=1248)
+
+Background knowledge about related topics
+-----------------------------------------
+
+-   GDC2001: [DirectX8 Pixel
+    Shaders](http://developer.download.nvidia.com/assets/gamedev/docs/GDC2K1_DX8_Pixel_Shaders.pdf)
+-   [Papers by nvidia from Xbox
+    era](http://download.nvidia.com/developer/Papers/)
+-   [Presentation slides by nvidia from Xbox
+    era](http://download.nvidia.com/developer/presentations/)
+-   [Presentation recordings by nvidia from Xbox
+    era](http://download.nvidia.com/developer/movies/)
+-   [Texturing tools by nvidia from Xbox
+    era](http://download.nvidia.com/developer/NVTextureSuite/)
+-   [Tools by nvidia from Xbox
+    era](http://download.nvidia.com/developer/Tools/)
+-   <http://download.nvidia.com/developer/Third_Party/>
 
