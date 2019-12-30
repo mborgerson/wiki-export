@@ -250,7 +250,13 @@ These are some generic resources about BRDFs:
 * [http://www-graphics.stanford.edu/~smr/brdf/bv/ BRDF viewer]{{FIXME|reason=Find alternative; this one is hard to compile}}
 * [https://www.merl.com/brdf/ BRDF Database by Mitsubishi]
 
-{{FIXME|reason=Describe Xbox specific BRDF texture shader}}
+* nvidia resources ''(The code and technique is probably not using the texture shader that is described here)'':
+** [http://www.nvidia.in/attach/6670 BRDFs.pdf] / [http://www.nvidia.in/attach/6669 BRDFs.ppt]
+** [https://www.nvidia.com/attach/6568 BRDFIntro.pdf] / [https://www.nvidia.com/attach/6569 BRDFIntro.doc]
+** [https://www.nvidia.com/attach/6567 BRDFSeparable.pdf] / [https://www.nvidia.com/attach/6566 BRDFSeparable.doc]
+** [https://www.nvidia.com/attach/6570 brdfseparate.zip]
+** [https://www.nvidia.com/attach/6571 brdfview.zip]
+
 {{FIXME|reason=Describe Xbox specific BRDF texture shader}}
 
 == Register combiners ==

@@ -287,6 +287,19 @@ These are some generic resources about BRDFs:
 -   [BRDF viewer](http://www-graphics.stanford.edu/~smr/brdf/bv/)
 -   [BRDF Database by Mitsubishi](https://www.merl.com/brdf/)
 
+<!-- -->
+
+-   nvidia resources *(The code and technique is probably not using the
+    texture shader that is described here)*:
+    -   [BRDFs.pdf](http://www.nvidia.in/attach/6670) /
+        [BRDFs.ppt](http://www.nvidia.in/attach/6669)
+    -   [BRDFIntro.pdf](https://www.nvidia.com/attach/6568) /
+        [BRDFIntro.doc](https://www.nvidia.com/attach/6569)
+    -   [BRDFSeparable.pdf](https://www.nvidia.com/attach/6567) /
+        [BRDFSeparable.doc](https://www.nvidia.com/attach/6566)
+    -   [brdfseparate.zip](https://www.nvidia.com/attach/6570)
+    -   [brdfview.zip](https://www.nvidia.com/attach/6571)
+
 Register combiners
 ------------------
 
