@@ -295,7 +295,7 @@ These are some generic resources about BRDFs:
         [BRDFs.ppt](http://www.nvidia.in/attach/6669)
     -   [BRDFIntro.pdf](https://www.nvidia.com/attach/6568) /
         [BRDFIntro.doc](https://www.nvidia.com/attach/6569)
-    -   [BRDFSeparable.pdf](https://www.nvidia.com/attach/6567) /
+    -   [BRDFSeparable.pdf](https://www.nvidia.co.uk/attach/6567) /
         [BRDFSeparable.doc](https://www.nvidia.com/attach/6566)
     -   [brdfseparate.zip](https://www.nvidia.com/attach/6570)
     -   [brdfview.zip](https://www.nvidia.com/attach/6571)
