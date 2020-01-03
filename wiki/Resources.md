@@ -95,4 +95,5 @@ Background knowledge about related topics
 -   [Masa's Column (DOUBLE-S.T.E.A.L / Wrecked
     developer)](https://web.archive.org/web/20090518092325/http://www.daionet.gr.jp:80/~masa/column/index.html)
 -   [Blog by ryg](https://fgiesen.wordpress.com/)
+-   [Filmic Worlds](http://filmicworlds.com/blog/)
 
