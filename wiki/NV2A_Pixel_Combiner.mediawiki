@@ -246,6 +246,8 @@ The BRDF texture shader is probably only exposed on original Xbox, but not in st
 
 These are some generic resources about BRDFs:
 
+* [http://www.disneyanimation.com/technology/brdf.html Walt Disney BRDF Explorer]
+* [https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf Walt Disney BRDF Paper]
 * [https://math.nist.gov/~FHunt/appearance/brdf.html Collection of BRDF information]
 * [http://www-graphics.stanford.edu/~smr/brdf/bv/ BRDF viewer]{{FIXME|reason=Find alternative; this one is hard to compile}}
 * [https://www.merl.com/brdf/ BRDF Database by Mitsubishi]

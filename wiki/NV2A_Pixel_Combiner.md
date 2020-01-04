@@ -282,6 +282,10 @@ not in standard OpenGL or D3D drivers.
 
 These are some generic resources about BRDFs:
 
+-   [Walt Disney BRDF
+    Explorer](http://www.disneyanimation.com/technology/brdf.html)
+-   [Walt Disney BRDF
+    Paper](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf)
 -   [Collection of BRDF
     information](https://math.nist.gov/~FHunt/appearance/brdf.html)
 -   [BRDF viewer](http://www-graphics.stanford.edu/~smr/brdf/bv/)
