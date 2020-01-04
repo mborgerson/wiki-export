@@ -96,4 +96,6 @@ Background knowledge about related topics
     developer)](https://web.archive.org/web/20090518092325/http://www.daionet.gr.jp:80/~masa/column/index.html)
 -   [Blog by ryg](https://fgiesen.wordpress.com/)
 -   [Filmic Worlds](http://filmicworlds.com/blog/)
+-   [AMD CubeMapGen tool for mipmapping
+    cubemaps](https://gpuopen.com/archive/gamescgi/cubemapgen/)
 

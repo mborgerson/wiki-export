@@ -57,3 +57,4 @@
 * [https://web.archive.org/web/20090518092325/http://www.daionet.gr.jp:80/~masa/column/index.html Masa's Column (DOUBLE-S.T.E.A.L / Wrecked developer)]
 * [https://fgiesen.wordpress.com/ Blog by ryg]
 * [http://filmicworlds.com/blog/ Filmic Worlds]
+* [https://gpuopen.com/archive/gamescgi/cubemapgen/ AMD CubeMapGen tool for mipmapping cubemaps]
