@@ -111,5 +111,5 @@ This is the most accurate method to backup your hard disk. This method requires 
 Unlock the HDD, connect it to your PC using a USB-IDE adapter ([https://www.amazon.com/Sabrent-USB-DSC9-SATA-Drive-Converter/dp/B00DQJME7Y available for ~$20USD]).  In GNU/Linux and other *NIX variants, DD can be used to perform the block copy. For example: <code>sudo dd if=/dev/sdb of=xbox_hdd.raw bs=512</code>. append <code>status=progress</code> to see the progress during copying if you run a recent distro, like so: <code>sudo dd if=/dev/sdb of=xbox_hdd.raw bs=512 status=progress</code>.If you're dumping an original Xbox HDD (capacity 8G or 10G), this will finish pretty quickly. The files can be extracted by mounting the filesystems in the image (see [[FATX]]).
 
 == Further Reading ==
-* [http://hackipedia.org/Disk%20formats/Partition%20tables/X-Box/Xbox_Partitioning_and_Filesystem_Details.htm Xbox Partitioning and Filesystem Details]
+* [https://web.archive.org/web/20150502210033/http://hackipedia.org/Disk%20formats/Partition%20tables/X-Box/Xbox_Partitioning_and_Filesystem_Details.htm Xbox Partitioning and Filesystem Details]
 * [https://web.archive.org/web/20020617181617/http://www.tardis.ed.ac.uk:80/~lucien/computing/projects/xbox/XBOX-disk-layout.htm XBOX DISK LAYOUT v0.13]
