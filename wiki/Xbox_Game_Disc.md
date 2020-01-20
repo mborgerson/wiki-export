@@ -410,11 +410,15 @@ patch original firmwares into dumping-firmwares would be appreciated.
 
 Flashing software:
 
--   TSDNMAC for MacOS
+-   [TSDNMAC](https://web.archive.org/web/20160904080433/http://www.tsstodd.com:80/TotalLib/popup/Download.asp?path=program&lang=eng&fname=TSDNMAC.ZIP)
+    for MacOS
 -   [SFDNWIN](http://web.archive.org/web/20070301000000/http://www.samsungodd.com/KorLib/File/sfdnwin.exe)
     for Microsoft Windows 2000 and XP
--   TSDNWIN for Microsoft Windows Vista and 7
--   Dell SFDNDOS and the newer TSDNDOS for Microsoft DOS
+-   [TSDNWIN](https://web.archive.org/web/20100105230358/http://samsungodd.com/KorLib/File/Tsdnwin.exe)
+    for Microsoft Windows Vista and 7
+-   [SFDNDOS](https://web.archive.org/web/20060328075340/http://www.samsungodd.com/eng/information/Application/Files/sfdndos.exe)
+    [SNFDOSM](https://web.archive.org/web/20060328072528/http://www.samsungodd.com/eng/information/Application/Files/Sfdndosm.exe)
+    and the newer TSDNDOS for Microsoft DOS
 
 For current dumping instructions see [the Dumping Guide by the Redump
 Project](http://forum.redump.org/topic/6073/xbox-1-360-dumping-instructions/).
