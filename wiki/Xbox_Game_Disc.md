@@ -397,7 +397,7 @@ CM01<br />
 <tr class="even">
 <td><p>Toshiba TS-H353B</p></td>
 <td><p>SATA</p></td>
-<td><p><a href="https://web.archive.org/web/*/http://samsungodd.com/chn/globalLib/Download.asp?path=Info_FWDownload&amp;fname=200904281544595271_TS-H353B_CH01.exe">CH01</a></p></td>
+<td><p>CH01</p></td>
 </tr>
 </tbody>
 </table>

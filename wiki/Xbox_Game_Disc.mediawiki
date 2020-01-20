@@ -288,7 +288,7 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |-
 |Toshiba TS-H353B
 |SATA
-|[https://web.archive.org/web/*/http://samsungodd.com/chn/globalLib/Download.asp?path=Info_FWDownload&fname=200904281544595271_TS-H353B_CH01.exe CH01]
+|CH01{{FIXME|reason=https://web.archive.org/web/*/http://samsungodd.com/chn/globalLib/Download.asp?path=Info_FWDownload&fname=200904281544595271_TS-H353B_CH01.exe dead}}
 |}
 
 Please note that the modified firmwares are based on copyrighted material and can therefore not be legally shared here.
