@@ -336,7 +336,11 @@ firmwares:
 <tr class="odd">
 <td><p>Samsung SH-D162C</p></td>
 <td><p>IDE</p></td>
-<td></td>
+<td><p>[<a href="https://web.archive.org/web/20091206023615/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20091206023615/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200506021808200872_SH-D162C_TS02.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS02]<br />
+[<a href="https://web.archive.org/web/20090604123608/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090604123608/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200509161625477201_SH-D162C_TS03.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/KOR/ TS03<sup>Korean</sup>]<br />
+[<a href="https://web.archive.org/web/20091105003814/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20091105003814/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200509261128121531_SH-D162C_TS03.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS03]<br />
+[<a href="https://web.archive.org/web/20100217012245/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20100217012245/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200512221448334972_SH-D162C_TS04.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/KOR/ TS04<sup>Korean</sup>]<br />
+[<a href="https://web.archive.org/web/20110920084807/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20110920084807/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200701091709466301_SH-D162C_TS05.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS05]</p></td>
 <td><ul>
 <li>SB00 Kreon 0.60 (July 30th 2006)</li>
 <li>SB00 Kreon 0.80 (September 9th 2006)</li>
@@ -346,7 +350,7 @@ firmwares:
 <tr class="even">
 <td><p>Toshiba TS-H352C</p></td>
 <td><p>IDE</p></td>
-<td></td>
+<td><p>[<a href="https://web.archive.org/web/20110921065924/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20110921065924/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200505121909111802_TS-H352C_SC00.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/KOR/ SC00<sup>Korean</sup>]</p></td>
 </tr>
 <tr class="odd">
 <td><p>Samsung SH-D162D</p></td>
@@ -363,7 +367,9 @@ SB02<a href="http://www.firmwarehq.com/download_995-file_SH-D162D_SB02.exe.html"
 <tr class="even">
 <td><p>Toshiba TS-H352D</p></td>
 <td><p>IDE</p></td>
-<td></td>
+<td><p>CH01<br />
+CM01<br />
+<a href="https://web.archive.org/web/20100105234118/http://samsungodd.com/korLib/download.asp?no=200910081442017201_TS-H352D_CM02.exe&amp;fname=200910081442017201_TS-H352D_CM02.exe&amp;path=/chn/UploadFiles/FW/FWDOWNLOAD/">CM02</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Samsung SH-D163A</p></td>
@@ -382,7 +388,8 @@ SB02<a href="http://www.firmwarehq.com/download_995-file_SH-D162D_SB02.exe.html"
 <tr class="odd">
 <td><p>Samsung SH-D163B</p></td>
 <td><p>SATA</p></td>
-<td></td>
+<td><p>[<a href="https://web.archive.org/web/20090402052540/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090402052540/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200903191824214901_SH-D163B_SB03.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB03]<br />
+[<a href="https://web.archive.org/web/20091204131429/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20091204131429/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200910081448023301_SH-D163B_SB04.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB04]</p></td>
 <td><ul>
 <li>Kreon 1.00 (November 18th 2007)</li>
 </ul></td>
@@ -390,7 +397,7 @@ SB02<a href="http://www.firmwarehq.com/download_995-file_SH-D162D_SB02.exe.html"
 <tr class="even">
 <td><p>Toshiba TS-H353B</p></td>
 <td><p>SATA</p></td>
-<td></td>
+<td><p><a href="https://web.archive.org/web/*/http://samsungodd.com/chn/globalLib/Download.asp?path=Info_FWDownload&amp;fname=200904281544595271_TS-H353B_CH01.exe">CH01</a></p></td>
 </tr>
 </tbody>
 </table>
