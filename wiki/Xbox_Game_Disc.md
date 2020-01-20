@@ -336,7 +336,11 @@ firmwares:
 <tr class="odd">
 <td><p>Samsung SH-D162C</p></td>
 <td><p>IDE</p></td>
-<td></td>
+<td><p>[<a href="https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090601193905/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200706281644411972_SH-D162D_SB00.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB00]<br />
+[<a href="https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090916202345/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200811051941150901_SH-D162D_SB01.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB01]<br />
+SB02<br />
+[<a href="https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20090402052613/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200903191825218171_SH-D162D_SB03.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB03]<br />
+[<a href="https://web.archive.org/web/20120123082109/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20120123082109/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200909281412336931_SH-D162D_SB04.exe&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ SB04]</p></td>
 <td><ul>
 <li>SB00 Kreon 0.60 (July 30th 2006)</li>
 <li>SB00 Kreon 0.80 (September 9th 2006)</li>
