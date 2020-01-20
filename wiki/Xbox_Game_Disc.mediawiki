@@ -249,9 +249,11 @@ To dump Xbox Game Discs you need one of the following drives / firmwares:
 |[https://web.archive.org/web/20091206023615/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200506021808200872_SH-D162C_TS02.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS02] <br> [https://web.archive.org/web/20090604123608/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200509161625477201_SH-D162C_TS03.bin&path=/UploadFiles/FW/FWDOWNLOAD/KOR/ TS03<sup>Korean</sup>] <br> [https://web.archive.org/web/20091105003814/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200509261128121531_SH-D162C_TS03.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS03] <br> [https://web.archive.org/web/20100217012245/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200512221448334972_SH-D162C_TS04.bin&path=/UploadFiles/FW/FWDOWNLOAD/KOR/ TS04<sup>Korean</sup>] <br> [https://web.archive.org/web/20110920084807/http://www.samsungodd.com:80/korlib/download.asp?no=&fname=200701091709466301_SH-D162C_TS05.bin&path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS05]
 
 |rowspan=2 |
-* SB00 Kreon 0.60 (July 30th 2006)
-* SB00 Kreon 0.80 (September 9th 2006)
-* SB01 Kreon 1.00 (October 9th 2007)
+* TS04 Kreon 0.5 (June 23rd 2006)
+* TS04 Kreon 0.60 (July 30th 2006)
+* TS04 Kreon 0.80 (September 9th 2006)
+* TS04{{FIXME|reason=README claims SB00}} Kreon 0.81 (October 4th 2006)
+* TS05{{FIXME|reason=README claims SB01}} Kreon 1.00 (October 9th 2007)
 |-
 |Toshiba TS-H352C
 |IDE

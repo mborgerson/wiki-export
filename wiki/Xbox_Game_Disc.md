@@ -342,9 +342,11 @@ firmwares:
 [<a href="https://web.archive.org/web/20100217012245/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20100217012245/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200512221448334972_SH-D162C_TS04.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/KOR/ TS04<sup>Korean</sup>]<br />
 [<a href="https://web.archive.org/web/20110920084807/http://www.samsungodd.com:80/korlib/download.asp?no" class="uri">https://web.archive.org/web/20110920084807/http://www.samsungodd.com:80/korlib/download.asp?no</a>=&amp;fname=200701091709466301_SH-D162C_TS05.bin&amp;path=/UploadFiles/FW/FWDOWNLOAD/ENG/ TS05]</p></td>
 <td><ul>
-<li>SB00 Kreon 0.60 (July 30th 2006)</li>
-<li>SB00 Kreon 0.80 (September 9th 2006)</li>
-<li>SB01 Kreon 1.00 (October 9th 2007)</li>
+<li>TS04 Kreon 0.5 (June 23rd 2006)</li>
+<li>TS04 Kreon 0.60 (July 30th 2006)</li>
+<li>TS04 Kreon 0.80 (September 9th 2006)</li>
+<li>TS04 Kreon 0.81 (October 4th 2006)</li>
+<li>TS05 Kreon 1.00 (October 9th 2007)</li>
 </ul></td>
 </tr>
 <tr class="even">
